@@ -24,3 +24,5 @@ and problem-solvers in industry to help them understand current
 developments and best practices at the cutting edge of creativity, to invent
 new paradigms and solutions, and challenge Creatives to push boundaries
 to design bigger and better than before.
+
+# Generative Art with JavaScript and SVG Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design
