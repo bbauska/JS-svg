@@ -157,7 +157,7 @@
 #### Circularity 196
 #### Slices of PI 198
 #### Sine and Cosine 200
-Animating Our Circles 200
+#### Animating Our Circles 200
 ### Summary 202
 
 ## Chapter 8: Filter Effects 205
