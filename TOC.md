@@ -1,8 +1,8 @@
 # Table of Contents
-About the Author xv
-About the Technical Reviewer xvii
-Acknowledgments xix
-Introduction xxi
+### About the Author xv
+### About the Technical Reviewer xvii
+### Acknowledgments xix
+### Introduction xxi
 
 ## Chapter 1: The Beginner’s Path 1
 Why JavaScript and SvJs? 1
@@ -16,7 +16,7 @@ Initializing and Installing SvJs 9
 Scaffolding Our Sketches 10
 Serving Our Sketches 12
 Our First Generative Sketch 13
-Summary 16
+### Summary 16
 
 ## Chapter 2: A Programming Primer 19
 Syntax 19
@@ -54,7 +54,7 @@ Null and NaN Weirdness 51
 Table of ConTenTs ix
 Secret Casting 51
 Semicolon Uncertainty 52
-Summary 53
+### Summary 53
 
 ## Chapter 3: All About SVG 55
 The Parent SVG Element 55
@@ -71,7 +71,7 @@ Definitions 75
 Gradients 76
 Patterns 78
 Grouping and Reusing Elements 83
-Summary 84
+### Summary 84
 
 ## Chapter 4: Randomness and Regularity 85
 Analogue and Digital Randomness 85
@@ -94,8 +94,9 @@ Uniform Distribution 108
 Gaussian Distribution 109
 Pareto Distribution 113
 Masking Our Content 115
-Summary 118
-Chapter 5: The Need for Noise 119
+### Summary 118
+
+## Chapter 5: The Need for Noise 119
 Random Limits 119
 Making Noise 119
 Noise Explained 120
@@ -107,10 +108,11 @@ Optimize with Style 129
 Spinning Noise 130
 Mapping and Constraining 132
 Rotating and Translating 133
-Summary 134
+### Summary 134
 
 ## Table of ConTenTs xi
-Chapter 6: The All-Powerful Path 137
+
+## Chapter 6: The All-Powerful Path 137
 The Path Element 137
 D for Data 138
 Path Commands 138
@@ -132,8 +134,9 @@ Cubic Control Points 156
 S for Symmetry 158
 Organic Curves 159
 An Easier Option 163
-Summary 165
-Chapter 7: Motion and Interactivity 167
+### Summary 165
+
+## Chapter 7: Motion and Interactivity 167
 Event Listeners 167
 Event Types 168
 Event Parameters 169
@@ -156,8 +159,9 @@ Circularity 196
 Slices of PI 198
 Sine and Cosine 200
 Animating Our Circles 200
-Summary 202
-Chapter 8: Filter Effects 205
+### Summary 202
+
+## Chapter 8: Filter Effects 205
 Filter Fundamentals 205
 The Ins and Outs 207
 The SvJs createFilter( ) Method 209
@@ -166,25 +170,25 @@ Filter Effects 101 212
 Shadows 212
 Coloring 213
 Blending 216
-
 Table of ConTenTs xiii
+Compositing 217
+Noise and Distortion 221
+Turbulence 221
+Displacement 223
+Creating a Cosmic Bubble 224
+Lighting and Texture 228
+Diffuse and Specular Lighting 230
+Light Sources 231
+Simulating Textures 232
+Generative Textures 235
+### Summary 240
 
-Compositing �������������������������������������������������������������������������������������������������217
-Noise and Distortion ������������������������������������������������������������������������������������������221
-Turbulence ���������������������������������������������������������������������������������������������������221
-Displacement �����������������������������������������������������������������������������������������������223
-Creating a Cosmic Bubble ���������������������������������������������������������������������������224
-Lighting and Texture ������������������������������������������������������������������������������������������228
-Diffuse and Specular Lighting ���������������������������������������������������������������������230
-Light Sources �����������������������������������������������������������������������������������������������231
-Simulating Textures �������������������������������������������������������������������������������������232
-Generative Textures �������������������������������������������������������������������������������������235
-Summary�����������������������������������������������������������������������������������������������������������240
-Chapter 9: The Generative Way ���������������������������������������������������������243
-The Journey So Far �������������������������������������������������������������������������������������������243
-The Voyage Forward ������������������������������������������������������������������������������������������244
-Trigonometry �����������������������������������������������������������������������������������������������244
-Fractals ��������������������������������������������������������������������������������������������������������246
-Systems Simulations �����������������������������������������������������������������������������������249
-Closing Comments ��������������������������������������������������������������������������������������������251
-Index �������������������������������������������������������������������������������������������������253
+## Chapter 9: The Generative Way 243
+The Journey So Far 243
+The Voyage Forward 244
+Trigonometry 244
+Fractals 246
+Systems Simulations 249
+Closing Comments 251
+### Index 253
+
