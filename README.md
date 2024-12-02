@@ -33,193 +33,193 @@ detailed information, please visit
 
 <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2>
 
-<ol start="1.1">
-  <li>Why JavaScript and SvJs? 1</li>
-  <li>Introducing Scalable Vector Graphics 2</li>
-  <li>Native SVG 3</li>
+<ol start=".1">
+  <li>1.1 Why JavaScript and SvJs?</li>
+  <li>1.2 Introducing Scalable Vector Graphics</li>
+  <li>1.3 Native SVG</li>
+  <li>1.4 Generating SVG</li>
+  <li>1.5 Getting Set Up</li>
+  <li>1.6 The Code Editor</li>
+  <li>1.7 Nodejs and NPM</li>
+  <li>1.8 Initializing and Installing SvJs</li>
+  <li>1.9 Scaffolding Our Sketches</li>
+  <li>1.10 Serving Our Sketches</li>
+  <li>1.11 Our First Generative Sketch</li>
+  <li>1.12 Summary</li>
 </ol>
-**Generating SVG 5**
-**Getting Set Up 8**
-**The Code Editor 8**
-**Nodejs and NPM 8**
-**Initializing and Installing SvJs 9**
-**Scaffolding Our Sketches 10**
-**Serving Our Sketches 12**
-**Our First Generative Sketch 13**
-**Summary 16**
 
 <h2 id="ch2">Chapter 2: A Programming Primer 19</h2>
 
-**Syntax 19**
-**Case Sensitivity 20**
-**Spacing 20**
-**Semicolons 20**
-**Comments 21**
-**Values 22**
-**Numbers 22**
-**Strings 22**
-**Booleans 24**
-**Empty Values 24**
-**Variables 25**
-**Operators 26**
-**Arithmetic Operators 26**
-**Comparison Operators 29**
-**Logical Operators 30**
-**Conditional Statements 31**
-**Loops 33**
-**The While Loop 34**
-**The For Loop 35**
-**Functions 37**
-**Function Parameters 37**
-**Invoking Functions 38**
-**Scope 40**
-**Anonymous Functions 42**
-**Arrow Functions 42**
-**Objects and Arrays 44**
-**Arrays 44**
-**Objects 47**
-**Classes 49**
-**Idiosyncrasies and Other Features 50**
-**Null and NaN Weirdness 51**
-**Secret Casting 51**
-**Semicolon Uncertainty 52**
-**Summary 53**
+  <li>Syntax 19</li>
+  <li>Case Sensitivity 20</li>
+  <li>Spacing 20</li>
+  <li>Semicolons 20</li>
+  <li>Comments 21</li>
+  <li>Values 22</li>
+  <li>Numbers 22</li>
+  <li>Strings 22</li>
+  <li>Booleans 24</li>
+  <li>Empty Values 24</li>
+  <li>Variables 25</li>
+  <li>Operators 26</li>
+  <li>Arithmetic Operators 26</li>
+  <li>Comparison Operators 29</li>
+  <li>Logical Operators 30</li>
+  <li>Conditional Statements 31</li>
+  <li>Loops 33</li>
+  <li>The While Loop 34</li>
+  <li>The For Loop 35</li>
+  <li>Functions 37</li>
+  <li>Function Parameters 37</li>
+  <li>Invoking Functions 38</li>
+  <li>Scope 40</li>
+  <li>Anonymous Functions 42</li>
+  <li>Arrow Functions 42</li>
+  <li>Objects and Arrays 44</li>
+  <li>Arrays 44</li>
+  <li>Objects 47</li>
+  <li>Classes 49</li>
+  <li>Idiosyncrasies and Other Features 50</li>
+  <li>Null and NaN Weirdness 51</li>
+  <li>Secret Casting 51</li>
+  <li>Semicolon Uncertainty 52</li>
+  <li>Summary 53</li>
 
 <h2 id="ch3">Chapter 3: All About SVG 55</h2>
 
-**The Parent SVG Element 55**
-**The Viewport and ViewBox 57**
-**Setting and Getting Values 59**
-**Quicker Element Creation 60**
-**Lines and Shapes 61**
-**Rectangles and Squares 61**
-**First Strokes 63**
-**Circles and Ellipses 66**
-**Lines, Polylines, and Polygons 68**
-**Text and Titles 72**
-**Definitions 75**
-**Gradients 76**
-**Patterns 78**
-**Grouping and Reusing Elements 83**
-**Summary 84**
+  <li>The Parent SVG Element 55</li>
+  <li>The Viewport and ViewBox 57</li>
+  <li>Setting and Getting Values 59</li>
+  <li>Quicker Element Creation 60</li>
+  <li>Lines and Shapes 61</li>
+  <li>Rectangles and Squares 61</li>
+  <li>First Strokes 63</li>
+  <li>Circles and Ellipses 66</li>
+  <li>Lines, Polylines, and Polygons 68</li>
+  <li>Text and Titles 72</li>
+  <li>Definitions 75</li>
+  <li>Gradients 76</li>
+  <li>Patterns 78</li>
+  <li>Grouping and Reusing Elements 83</li>
+  <li>Summary 84</li>
 
 <h2 id="ch4">Chapter 4: Randomness and Regularity 85</h2>
 
-**Analogue and Digital Randomness 85**
-**The SvJs Genrandom( ) Function 87**
-**Elements Everywhere All at Once 88**
-**Varying Color and Opacity 89**
-**Varying Element Selection 91**
-**Regular Grids 94**
-**The Nested For Loop 94**
-**A More Flexible Grid 96**
-**Clip Paths and Color Palettes 98**
-**Arrays of Colors 98**
-**Clipping Our Content 100**
-**Choice and Chance 105**
-**The SvJs Genchance( ) Function 105**
-**Chance in Action 106**
-**Probability Distributions 108**
-**Uniform Distribution 108**
-**Gaussian Distribution 109**
-**Pareto Distribution 113**
-**Masking Our Content 115**
-**Summary 118**
+  <li>Analogue and Digital Randomness 85</li>
+  <li>The SvJs Genrandom( ) Function 87</li>
+  <li>Elements Everywhere All at Once 88</li>
+  <li>Varying Color and Opacity 89</li>
+  <li>Varying Element Selection 91</li>
+  <li>Regular Grids 94</li>
+  <li>The Nested For Loop 94</li>
+  <li>A More Flexible Grid 96</li>
+  <li>Clip Paths and Color Palettes 98</li>
+  <li>Arrays of Colors 98</li>
+  <li>Clipping Our Content 100</li>
+  <li>Choice and Chance 105</li>
+  <li>The SvJs Genchance( ) Function 105</li>
+  <li>Chance in Action 106</li>
+  <li>Probability Distributions 108</li>
+  <li>Uniform Distribution 108</li>
+  <li>Gaussian Distribution 109</li>
+  <li>Pareto Distribution 113</li>
+  <li>Masking Our Content 115</li>
+  <li>Summary 118</li>
 
 <h2 id="ch5">Chapter 5: The Need for Noise 119</h2>
 
-**Random Limits 119**
-**Making Noise 119 Noise Explained 120**
-**The SvJs Noise Module 122**
-**Into the Noise Matrix 124**
-**A Noisy Grid 124**
-**Mapping the Noise Values 128**
-**Optimize with Style 129**
-**Spinning Noise 130 Mapping and Constraining 132**
-**Rotating and Translating 133**
-**Summary 134**
+  <li>Random Limits 119</li>
+  <li>Making Noise 119 Noise Explained 120</li>
+  <li>The SvJs Noise Module 122</li>
+  <li>Into the Noise Matrix 124</li>
+  <li>A Noisy Grid 124</li>
+  <li>Mapping the Noise Values 128</li>
+  <li>Optimize with Style 129</li>
+  <li>Spinning Noise 130 Mapping and Constraining 132</li>
+  <li>Rotating and Translating 133</li>
+  <li>Summary 134</li>
 
 <h2 id="ch6">Chapter 6: The All-Powerful Path 137</h2>
 
-**The Path Element 137**
-**D for Data 138**
-**Path Commands 138**
-**Starting and Ending a Path 139**
-**Straight Lines 140**
-**The Simple L 140**
-**Horizontal and Vertical Varieties 142**
-**Further Economies 143**
-**Quadratic Bezier Curves 144**
-**Control Points 144**
-**A Smooth Shortcut 145**
-**A Quadratic Slinky 147**
-**Elliptical Arcs 150**
-**Setting the Flags 151**
-**Irregular Radii 152**
-**Generative Arcs 153**
-**Cubic Bezier Curves 156**
-**Cubic Control Points 156**
-**S for Symmetry158**
-**Organic Curves 159**
-**An Easier Option 163**
-**Summary165**
+  <li>The Path Element 137</li>
+  <li>D for Data 138</li>
+  <li>Path Commands 138</li>
+  <li>Starting and Ending a Path 139</li>
+  <li>Straight Lines 140</li>
+  <li>The Simple L 140</li>
+  <li>Horizontal and Vertical Varieties 142</li>
+  <li>Further Economies 143</li>
+  <li>Quadratic Bezier Curves 144</li>
+  <li>Control Points 144</li>
+  <li>A Smooth Shortcut 145</li>
+  <li>A Quadratic Slinky 147</li>
+  <li>Elliptical Arcs 150</li>
+  <li>Setting the Flags 151</li>
+  <li>Irregular Radii 152</li>
+  <li>Generative Arcs 153</li>
+  <li>Cubic Bezier Curves 156</li>
+  <li>Cubic Control Points 156</li>
+  <li>S for Symmetry158</li>
+  <li>Organic Curves 159</li>
+  <li>An Easier Option 163</li>
+  <li>Summary165</li>
 
 <h2 id="ch7">Chapter 7: Motion and Interactivity 167</h2>
 
-**Event Listeners 167**
-**Event Types 168**
-**Event Parameters 169**
-**Triggering the SvJs Save Method 170**
-**Creative Cursor Tracking 171**
-**The SvJs trackCursor( ) Method 171**
-**Interactive Ellipses 172**
-**Programming Motion 174**
-**CSS Keyframes 177**
-**The SMIL Way 179**
-**The Web Animations API 181**
-**The requestAnimationFrame( ) Method 184**
-**Methods Summarized 188**
-**Collision Detection 190**
-**Setting Boundaries 190**
-**Initializing and Extending Our Shapes 191**
-**Frame-by-Frame Calculations 193**
-**Circularity 196**
-**Slices of PI 198**
-**Sine and Cosine 200**
-**Animating Our Circles 200**
-**Summary 202**
+  <li>Event Listeners 167</li>
+  <li>Event Types 168</li>
+  <li>Event Parameters 169</li>
+  <li>Triggering the SvJs Save Method 170</li>
+  <li>Creative Cursor Tracking 171</li>
+  <li>The SvJs trackCursor( ) Method 171</li>
+  <li>Interactive Ellipses 172</li>
+  <li>Programming Motion 174</li>
+  <li>CSS Keyframes 177</li>
+  <li>The SMIL Way 179</li>
+  <li>The Web Animations API 181</li>
+  <li>The requestAnimationFrame( ) Method 184</li>
+  <li>Methods Summarized 188</li>
+  <li>Collision Detection 190</li>
+  <li>Setting Boundaries 190</li>
+  <li>Initializing and Extending Our Shapes 191</li>
+  <li>Frame-by-Frame Calculations 193</li>
+  <li>Circularity 196</li>
+  <li>Slices of PI 198</li>
+  <li>Sine and Cosine 200</li>
+  <li>Animating Our Circles 200</li>
+  <li>Summary 202</li>
 
 <h2 id="ch8">Chapter 8: Filter Effects 205</h2>
 
-**Filter Fundamentals 205**
-**The Ins and Outs 207**
-**The SvJs createFilter( ) Method 209**
-**The Filter Region 210**
-**Filter Effects 101 212**
-**Shadows 212**
-**Coloring 213**
-**Blending 216**
-**Compositing 217**
-**Noise and Distortion 221**
-**Turbulence 221**
-**Displacement 223**
-**Creating a Cosmic Bubble 224**
-**Lighting and Texture 228**
-**Diffuse and Specular Lighting 230**
-**Light Sources 231**
-**Simulating Textures 232**
-**Generative Textures 235**
-**Summary 240**
+  <li>Filter Fundamentals 205</li>
+  <li>The Ins and Outs 207</li>
+  <li>The SvJs createFilter( ) Method 209</li>
+  <li>The Filter Region 210</li>
+  <li>Filter Effects 101 212</li>
+  <li>Shadows 212</li>
+  <li>Coloring 213</li>
+  <li>Blending 216</li>
+  <li>Compositing 217</li>
+  <li>Noise and Distortion 221</li>
+  <li>Turbulence 221</li>
+  <li>Displacement 223</li>
+  <li>Creating a Cosmic Bubble 224</li>
+  <li>Lighting and Texture 228</li>
+  <li>Diffuse and Specular Lighting 230</li>
+  <li>Light Sources 231</li>
+  <li>Simulating Textures 232</li>
+  <li>Generative Textures 235</li>
+  <li>Summary 240</li>
 
 <h2 id="ch9">Chapter 9: The Generative Way 243</h2>
 
-**The Journey So Far 243**
-**The Voyage Forward 244**
-**Trigonometry 244**
-**Fractals 246**
-**Systems Simulations 249**
-**Closing Comments 251**
-**Index 253**
+  <li>The Journey So Far 243</li>
+  <li>The Voyage Forward 244</li>
+  <li>Trigonometry 244</li>
+  <li>Fractals 246</li>
+  <li>Systems Simulations 249</li>
+  <li>Closing Comments 251</li>
+  <li>Index 253</li>
 
 **Introduction**
 
