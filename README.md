@@ -33,7 +33,7 @@ detailed information, please visit
 
 <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2>
 
-<ol start=".1">
+<ol start="1.1">
   <li>1.1 Why JavaScript and SvJs?</li>
   <li>1.2 Introducing Scalable Vector Graphics</li>
   <li>1.3 Native SVG</li>
@@ -50,6 +50,7 @@ detailed information, please visit
 
 <h2 id="ch2">Chapter 2: A Programming Primer 19</h2>
 
+<ol start="2.1">
   <li>Syntax 19</li>
   <li>Case Sensitivity 20</li>
   <li>Spacing 20</li>
@@ -84,9 +85,11 @@ detailed information, please visit
   <li>Secret Casting 51</li>
   <li>Semicolon Uncertainty 52</li>
   <li>Summary 53</li>
+</ol>
 
 <h2 id="ch3">Chapter 3: All About SVG 55</h2>
 
+<ol start="3.1">
   <li>The Parent SVG Element 55</li>
   <li>The Viewport and ViewBox 57</li>
   <li>Setting and Getting Values 59</li>
@@ -102,9 +105,11 @@ detailed information, please visit
   <li>Patterns 78</li>
   <li>Grouping and Reusing Elements 83</li>
   <li>Summary 84</li>
+</ol>
 
 <h2 id="ch4">Chapter 4: Randomness and Regularity 85</h2>
 
+<ol start="4.1">
   <li>Analogue and Digital Randomness 85</li>
   <li>The SvJs Genrandom( ) Function 87</li>
   <li>Elements Everywhere All at Once 88</li>
@@ -125,9 +130,11 @@ detailed information, please visit
   <li>Pareto Distribution 113</li>
   <li>Masking Our Content 115</li>
   <li>Summary 118</li>
+</ol>
 
 <h2 id="ch5">Chapter 5: The Need for Noise 119</h2>
 
+<ol start="5.1">
   <li>Random Limits 119</li>
   <li>Making Noise 119 Noise Explained 120</li>
   <li>The SvJs Noise Module 122</li>
@@ -138,9 +145,11 @@ detailed information, please visit
   <li>Spinning Noise 130 Mapping and Constraining 132</li>
   <li>Rotating and Translating 133</li>
   <li>Summary 134</li>
+</ol>
 
 <h2 id="ch6">Chapter 6: The All-Powerful Path 137</h2>
 
+<ol start="6.1">
   <li>The Path Element 137</li>
   <li>D for Data 138</li>
   <li>Path Commands 138</li>
@@ -163,9 +172,11 @@ detailed information, please visit
   <li>Organic Curves 159</li>
   <li>An Easier Option 163</li>
   <li>Summary165</li>
+</ol>
 
 <h2 id="ch7">Chapter 7: Motion and Interactivity 167</h2>
 
+<ol start="7.1">
   <li>Event Listeners 167</li>
   <li>Event Types 168</li>
   <li>Event Parameters 169</li>
@@ -188,9 +199,11 @@ detailed information, please visit
   <li>Sine and Cosine 200</li>
   <li>Animating Our Circles 200</li>
   <li>Summary 202</li>
+</ol>
 
 <h2 id="ch8">Chapter 8: Filter Effects 205</h2>
 
+<ol start="8.1">
   <li>Filter Fundamentals 205</li>
   <li>The Ins and Outs 207</li>
   <li>The SvJs createFilter( ) Method 209</li>
@@ -210,9 +223,11 @@ detailed information, please visit
   <li>Simulating Textures 232</li>
   <li>Generative Textures 235</li>
   <li>Summary 240</li>
+</ol>
 
 <h2 id="ch9">Chapter 9: The Generative Way 243</h2>
 
+<ol start="9.1">
   <li>The Journey So Far 243</li>
   <li>The Voyage Forward 244</li>
   <li>Trigonometry 244</li>
@@ -220,6 +235,7 @@ detailed information, please visit
   <li>Systems Simulations 249</li>
   <li>Closing Comments 251</li>
   <li>Index 253</li>
+</ol>
 
 **Introduction**
 
