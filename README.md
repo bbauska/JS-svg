@@ -35,9 +35,9 @@ detailed information, please visit
 
 <ol style="list-style-type: decimal-leading-zero;" start="01">
   <li id="#ch1">Chapter 1: The Beginner's Path
-    <ol>
+    <ol type="1">
 	  <li id="#ch1-1">Why JavaScript and SvJs?
-	    <ol>
+	    <ol type="I">
 	  <li id="#ch1-1-a">Introducing Scalable Vector Graphics</li>
 	  <li id="#ch1-1-b">Native SVG</li>
 	  <li id="#ch1-1-c">Generating SVG</li>
