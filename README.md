@@ -496,6 +496,7 @@ premium. File sizes had to be super small if you wanted a page to load
 in your lifetime, and bitmap images, such as JPGs and PNGs, were the
 main bandwidth bottleneck.
 
+
 Bitmap images -- also known as raster images -- are comprised of large
 chunks of data (or bits), and generally speaking, if you want a larger
 image, you need more bits, which means a bigger file size. SVG, on the
@@ -507,6 +508,7 @@ paint the image to the screen, but rather describes the image to be
 rendered at a more abstract, semantic level. And it does this in much
 the same way that HTML describes the structure and content of a web page. 
 As the Mozilla Developer Network puts it
+
 <blockquote>
 SVG is, essentially, to graphics what HTML is to text.
 </blockquote>
