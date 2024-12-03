@@ -1,5 +1,6 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>JS - SVG (Scalable Vector Graphics)</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Generative Art with JavaScript and SVG</h2>
 <h3>Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design</h3>
 
@@ -27,65 +28,90 @@ in this book is available to readers on the Github repository. For more
 detailed information, please visit 
 <a href="https://www.apress.com/gp/services/source-code">Source code (SVG)</a>.</p>
 
-<h3 id="toc">Table of Contents</h3>
-
-<h4 id="intro">Introduction</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="#toc">Table of Contents</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2> -->
 
 <ol>
   <li id="#ch1">Chapter 1: The Beginner's Path
     <ol>
-	  <li id="#ch1-1">Why JavaScript and SvJs?</li>
-	  <li id="#ch1-2">Introducing Scalable Vector Graphics</li>
-	  <li id="#ch1-3">Native SVG</li>
-	  <li id="#ch1-4">Generating SVG</li>
-	  <li id="#ch1-5">Getting Set Up</li>
-	  <li id="#ch1-6">The Code Editor</li>
-	  <li id="#ch1-7">Nodejs and NPM</li>
-	  <li id="#ch1-8">Initializing and Installing SvJs</li>
-	  <li id="#ch1-9">Scaffolding Our Sketches</li>
-	  <li id="#ch1-10">Serving Our Sketches</li>
-	  <li id="#ch1-11">Our First Generative Sketch</li>
-	  <li id="#ch1-12">Summary</li>
+	  <li id="#ch1-1">Why JavaScript and SvJs?
+	    <ol>
+	  <li id="#ch1-1-a">Introducing Scalable Vector Graphics</li>
+	  <li id="#ch1-1-b">Native SVG</li>
+	  <li id="#ch1-1-c">Generating SVG</li>
+	    </ol>
+	  </li>
+	  <li id="#ch1-2">Getting Set Up
+	    <ol>
+		<li id="#ch1-2-a">The Code Editor</li>
+	  <li id="#ch1-2-b">Nodejs and NPM</li>
+	  <li id="#ch1-2-c">Initializing and Installing SvJs</li>
+	  <li id="#ch1-2-d">Scaffolding Our Sketches</li>
+	  <li id="#ch1-2-e">Serving Our Sketches</li>
+	    </ol>
+	  </li>
+	  <li id="#ch1-3">Our First Generative Sketch</li>
+	  <li id="#ch1-4">Summary</li>
     </ol>
   </li>
   <li id="#ch2">Chapter 2: A Programming Primer
     <ol>
-	  <li id="ch2-1">Syntax 19</li>
-	  <li id="ch2-2">Case Sensitivity 20</li>
-	  <li id="ch2-3">Spacing 20</li>
-	  <li id="ch2-4">Semicolons 20</li>
-	  <li id="ch2-5">Comments 21</li>
-	  <li id="ch2-6">Values 22</li>
-	  <li id="ch2-7">Numbers 22</li>
-	  <li id="ch2-8">Strings 22</li>
-	  <li id="ch2-9">Booleans 24</li>
-	  <li id="ch2-10">Empty Values 24</li>
-	  <li id="ch2-11">Variables 25</li>
-	  <li id="ch2-12">Operators 26</li>
-	  <li id="ch2-13">Arithmetic Operators 26</li>
-	  <li id="ch2-14">Comparison Operators 29</li>
-	  <li id="ch2-15">Logical Operators 30</li>
-	  <li id="ch2-16">Conditional Statements 31</li>
-	  <li id="ch2-17">Loops 33</li>
-	  <li id="ch2-18">The While Loop 34</li>
-	  <li id="ch2-19">The For Loop 35</li>
-	  <li id="ch2-20">Functions 37</li>
-	  <li id="ch2-21">Function Parameters 37</li>
-	  <li id="ch2-22">Invoking Functions 38</li>
-	  <li id="ch2-23">Scope 40</li>
-	  <li id="ch2-24">Anonymous Functions 42</li>
-	  <li id="ch2-25">Arrow Functions 42</li>
-	  <li id="ch2-26">Objects and Arrays 44</li>
-	  <li id="ch2-27">Arrays 44</li>
-	  <li id="ch2-28">Objects 47</li>
-	  <li id="ch2-29">Classes 49</li>
-	  <li id="ch2-30">Idiosyncrasies and Other Features 50</li>
-	  <li id="ch2-31">Null and NaN Weirdness 51</li>
-	  <li id="ch2-32">Secret Casting 51</li>
-	  <li id="ch2-33">Semicolon Uncertainty 52</li>
-	  <li id="ch2-34">Summary 53</li>
+	  <li id="ch2-1">Syntax
+	    <ol>
+		  <li id="ch2-1-a">Case Sensitivity 20</li>
+		  <li id="ch2-1-b">Spacing 20</li>
+		  <li id="ch2-1-c">Semicolons 20</li>
+		  <li id="ch2-1-d">Comments 21</li>
+		</ol>
+	  </li>
+	  <li id="ch2-2">Values
+		<ol>
+		  <li id="ch2-2-a">Numbers 22</li>
+		  <li id="ch2-2-b">Strings 22</li>
+		  <li id="ch2-2-c">Booleans 24</li>
+		  <li id="ch2-2-d">Empty Values 24</li>
+		</ol>
+	  </li>
+	  <li id="ch2-3">Variables 25</li>
+	  <li id="ch2-4">Operators
+	  <li id="ch2-4-a">Arithmetic Operators 26</li>
+	  <li id="ch2-4-b">Comparison Operators 29</li>
+	  <li id="ch2-4-c">Logical Operators 30</li>
+	  </ol>
+	  </li>
+	  <li id="ch2-5">Conditional Statements 31</li>
+	  <li id="ch2-6">Loops
+	    <ol>
+		  <li id="ch2-6-a">The While Loop 34</li>
+		  <li id="ch2-6-b">The For Loop 35</li>
+	    </ol>
+	  </li>
+	  <li id="ch2-7">Functions
+	    <ol>
+		  <li id="ch2-7-a">Function Parameters 37</li>
+          <li id="ch2-7-b">Invoking Functions 38</li>
+	      <li id="ch2-7-c">Scope 40</li>
+	      <li id="ch2-7-d">Anonymous Functions 42</li>
+	      <li id="ch2-7-e">Arrow Functions 42</li>
+		</ol>
+	  </li>
+	  <li id="ch2-8">Objects and Arrays
+	    <ol>
+		  <li id="ch2-8-a">Arrays 44</li>
+          <li id="ch2-8-b">Objects 47</li>
+		</ol>
+	  </li>
+      <li id="ch2-9">Classes 49</li>
+	  <li id="ch2-10">Idiosyncrasies and Other Features 50
+	    <ol>
+		  <li id="ch2-10a">Null and NaN Weirdness 51</li>
+		  <li id="ch2-10-b">Secret Casting 51</li>
+		  <li id="ch2-10-c">Semicolon Uncertainty 52</li>
+		</ol>
+	  </li>
+	  <li id="ch2-11">Summary 53</li>
     </ol>
   </li>
   <li id="ch3">Chapter 3: All About SVG 55
@@ -233,8 +259,9 @@ detailed information, please visit
   </li>
 </ol>
 
-**Introduction**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="intro">Introduction</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A caveat before we begin: generative art, and creative coding more
 generally, can become an all-consuming addiction. "Just one more
 iteration" is a refrain you might hear from those unfortunate artists
@@ -334,9 +361,7 @@ should have a good overview of the following:
 
 InTroduCTIon
 
--   Creating iterative variations of sketches by randomizing
-
-> parameters
+-   Creating iterative variations of sketches by randomizing parameters
 
 -   Using noise to create organic variance
 
@@ -366,19 +391,18 @@ of problems that need fixing, like the loose hinges on that crooked
 cabinet you're going to tighten any day now. Tools tend to be more
 functional than fun, and I'd like you to have some fun with this book.
 
-<h1 id="ch1">CHAPTER 1</h1>
-
-**The Beginner's Path**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1 id="ch1">CHAPTER 1: The Beginner's Path</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before journeying along any path, the groundwork needs to be in place.
 In this opening chapter, that's what we'll do, lay the groundwork. We'll
 introduce SVG, explain what makes it a uniquely powerful image format,
 and show how it can be used with JavaScript to create generative art. In
 the process, we'll set up our tools and a template we can use for
 subsequent sketches.
-
-**Why JavaScript and SvJs?**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch1-1">1.1 Why JavaScript and SvJs?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most books about generative art use a Java-based language called
 Processing, or its JavaScript port p5.js. Processing was created
 specifically for artists and designers new to coding and has a large and
@@ -406,7 +430,9 @@ Canvas -- was still resolution-dependent bitmap graphics, devoid of any
 semantic content. What does that mean, and why does it matter (to me at
 least)? Let me explain.
 
-**Introducing Scalable Vector Graphics**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch1-2">1.2 Introducing Scalable Vector Graphics</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Back in the early days of the Web, when dial-up modems were dominant and
 connecting to the Internet was anything but instant, bandwidth came at a
@@ -423,12 +449,8 @@ file size, and it is always dazzlingly sharp and crisp. This is possible
 because it doesn't bother itself with the bits (i.e., pixels) needed to
 paint the image to the screen, but rather describes the image to be
 rendered at a more abstract, semantic level. And it does this in much
-the same way that
-
-HTML describes the structure and content of a web page. As the Mozilla
-Developer Network puts it
-
-> SVG is, essentially, to graphics what HTML is to text.
+the same way that HTML describes the structure and content of a web page. As the Mozilla
+Developer Network puts it SVG is, essentially, to graphics what HTML is to text.
 
 The SVG format was not only a powerful solution to a practical bandwidth
 problem; it was a nonproprietary format officially standardized by the
@@ -447,7 +469,9 @@ These days we can use the format freely without worry, but to use it for
 the odd icon and logo is one thing; to tap its full potential is
 another.
 
-**Native SVG**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch1-3">1.3 Native SVG</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
@@ -519,7 +543,9 @@ oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
 ultimately it gives you more creative control.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Generating SVG**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
@@ -575,7 +601,9 @@ extend its functionality with a plug-in, but this plug-in soon grew to
 the point where it made more sense to write my own library with a
 specific focus on generative art. This was how SvJs came to be.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Getting Set Up**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Enough with the preamble. Let's get ourselves set up to write some code.
 
@@ -658,21 +686,16 @@ the very basics we'll copy from one sketch to another. Inside 00-
 template create a file called index.html and another called sketch.js.
 Once you've done that, you should have a folder structure like this:
 
+<blockquote>
 generative-svg
-
 \|\-- node_modules
-
 \|\-- sketches
-
-\|\-- 00-template
-
-\|\-- index.html
-
-\|\-- sketch.js
-
+  \|\-- 00-template
+    \|\-- index.html
+    \|\-- sketch.js
 \|\-- package-lock.json
-
 \|\-- package.json
+</blockquote>
 
 Open the index.html file. It's worth noting that VS Code can generate
 some boilerplate markup for you if you type ! and press the tab key, but
@@ -682,43 +705,33 @@ the "control-c-control-v" activity where possible, as you're less likely
 to learn this way. Here, however, it's fine, as HTML and CSS aren't our
 focus.
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"UTF-8\"\>
-
-\<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"\>
-
-\<meta name=\"viewport\" content=\"width=device-width, initial-
-scale=1.0\"\>
-
-\<style\> body { margin: 0; background-color: #202020;
-
-}
-
-#container { display: flex; justify-content: center; align-items:
-center; height: 100vh;
-
-}
-
-\</style\>
-
-\<title\>SvJs Template\</title\>
-
-\</head\>
-
-\<body\>
-
-\<div id=\"container\"\>\</div\>
-
-\<script src=\"./sketch.js\" type=\"module\"\>\</script\>
-
-\</body\>
-
-\</html\>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { 
+      margin: 0; 
+      background-color: #202020;
+    }
+    #container {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh;
+    }
+  </style>
+  <title>SvJs Template</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="./sketch.js" type="module"></script>
+</body>
+</html>
+```
 
 There's just a couple of things worth pointing out about the preceding
 code: our \<div id=\"container\"\> will be where the generative art
@@ -737,8 +750,10 @@ import the SvJs library.
 
 > Open up the sketch.js file and include this as your first two lines:
 
-// Import the SvJs library. import { SvJs } from
-\'../../node_modules/svjs/src/index.js\';
+```
+// Import the SvJs library. 
+import { SvJs } from '../../node_modules/svjs/src/index.js';
+```
 
 Our template is now complete, ready to be copied for subsequent
 sketches. Well done!
@@ -758,9 +773,9 @@ having to manually refresh our browser each time (which becomes a pain
 after a while). There's a neat little package called live-server that
 takes care of this for us. To install it, run the following in the
 terminal:
-
+```
 npm install live-server -g
-
+```
 The -g flag tells npm to install this package globally on our machine,
 rather than locally to the project in question. As it's more a general-
 purpose utility than a project-specific dependency, this is what we
@@ -790,64 +805,67 @@ you go (the lines starting with //), which I've purposely kept quite
 verbose so you can get a better handle on what's happening.
 
 ```
-// Import the SvJs library. import { SvJs } from
-\'../../node_modules/svjs/src/index.js\';
+// Import the SvJs library. 
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Create some global variables. const svgSize = window.innerWidth \>
-window.innerHeight ?
-
-window.innerHeight : window.innerWidth; const bgColor = \'#181818\';
+// Create some global variables. 
+const svgSize = window.innerWidth > window.innerHeight ?
+window.innerHeight : window.innerWidth; 
+const bgColor = '#181818';
 
 // Create an object to store some of our randomised parameters.
 const randomised = { 
-  hue: random(0, 360), rotation: random(-180, 180),
+  hue: random(0, 360), 
+  rotation: random(-180, 180),
   iterations: random(10, 100)
 }
-// Create our parent SVG and attach it to the element with id
-\'container\'. const svg = new SvJs(); svg.addTo(document.
-getElementById(\'container\'));
-```
 
-// Set the width and height of the viewBox and the displayed size of the
-SVG. svg.set({ viewBox: \'0 0 1000 1000\', width: svgSize, height:
-svgSize });
+// Create our parent SVG and attach it to the element with id 'container'. 
+const svg = new SvJs(); 
+svg.addTo(document.getElementById('container'));
+
+// Set the width and height of the viewBox and the displayed size of the SVG.
+svg.set({ viewBox: \'0 0 1000 1000\', width: svgSize, height: svgSize });
 
 // Create a background layer - a rectangle the full size of our viewBox.
+const rect = svg.create(\'rect\'); rect.set({ x: 0, y: 0, width: 1000, height: 1000, fill: bgColor });
 
-const rect = svg.create(\'rect\'); rect.set({ x: 0, y: 0, width: 1000,
-height: 1000, fill: bgColor });
+// Run a loop a random number of times to create our ellipses. 
+for (let i = 0; i \< randomised.iterations; i += 1) {
 
-// Run a loop a random number of times to create our ellipses. for (let
-i = 0; i \< randomised.iterations; i += 1) {
-
-// Set the centre point, the x and y radii of our ellipse and its
-rotation.
-
-let center = 500; let radiusX = 100 + (i \* 3); let radiusY = 300 + (i
-\* 2); let rotation = randomised.rotation + (i \* 2);
-
-// If our random hue is less than 180, increment it. Otherwise decrement
-it. 
-```
-let hue; if (randomised.hue \< 180) { hue = randomised.hue + (i \*
-3);
-} else {
-hue = randomised.hue - (i \* 3);
+  // Set the centre point, the x and y radii of our ellipse and its rotation.
+  let center = 500; 
+  let radiusX = 100 + (i * 3);
+  let radiusY = 300 + (i * 2);
+  let rotation = randomised.rotation + (i * 2);
+  // If our random hue is less than 180, increment it. Otherwise decrement it. 
+  let hue; 
+  if (randomised.hue < 180) { 
+    hue = randomised.hue + (i * 3);
+  } else {
+    hue = randomised.hue - (i * 3);
+  }
+  // Create our ellipse. 
+  let ellipse = svg.create('ellipse');
+  ellipse.set({
+    cx: center, 
+	cy: center, 
+	rx: radiusX, 
+	ry: radiusY, 
+	fill: 'none', 
+	stroke: `hsl(${hue} 80% 80% / 0.6)`, 
+	transform: `rotate(${rotation} ${center} ${center})`
+  });
+}
+/** 
+ * Gets a random number between a minimum and maximum value.
+ */
+function random(min, max, integer = true) {
+  let random = Math.random() * (max - min) + min; 
+  let number = integer ? Math.floor(random) : random; 
+  return number; 
 }
 ```
-
-// Create our ellipse. 
-let ellipse = svg.create(\'ellipse\');
-ellipse.set({ cx: center, cy: center, rx: radiusX, ry: radiusY, fill:
-\'none\', stroke: \`hsl(\${hue} 80% 80% / 0.6)\`, transform:
-\`rotate(\${rotation} \${center} \${center})\`
-});
-}
-/\*\* \* Gets a random number between a minimum and maximum value.
-\*/
-function random(min, max, integer = true) { let random = Math.random()
-\* (max - min) + min; let number = integer ? Math.floor(random) :
-random; return number; }
 
 Ok, so quite the code dump! It will no doubt overwhelm anyone new to
 coding, so if you fall into this category and find yourself balking at
@@ -860,7 +878,14 @@ When you save the aforementioned, you should see something like Figure
 you see will no doubt differ in some respects. But that, dear reader, is
 part of the joy of generative art.
 
-> ![](./images/media/image9.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 09. first generative sketch (1 variation of many) (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image009.jpg"
+  style="width:3.15in"
+  title="Our first generative sketch (one variation of many)"
+  alt="Our first generative sketch (one variation of many)." />
+<!-- ![](./images/media/image9.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 1-3.** Our first generative sketch (one variation of many)*
 
@@ -7838,158 +7863,118 @@ generative endeavors:
 -   And finally, appreciate your own efforts, regardless of the results.
     Output isn't everything, and your generative journey is your own.
 
-**Index**
-
-**A**
-
-A (or a) command, 150 addEventListener(), 168 animate() function, 185,
-187
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="index">Index</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>A</h3>
+A (or a) command, 150
+addEventListener(), 168
+animate() function, 185, 187
 Automatism, 86
 
-**B**
-
+<h3>B</h3>
 Bitmap images, 2
 
-**C**
-
+<h3>C</h3>
 callback functions, 47, 168--171
-
 C command, 156
-
-Circularity animating circles, 200--202 PI slices, 198, 199
-
-randomized variables, 197 sine/cosine, 200
-
-Collision detection frame-by-frame
-
-> calculations, 193--196
-
-initializing/extending shapes,
-
-> 191, 192 setting boundaries, 190
-
+Circularity animating circles, 200--202 
+PI slices, 198, 199
+randomized variables, 197 
+sine/cosine, 200
+Collision detection frame-by-frame calculations, 193--196
+initializing/extending shapes, 191, 192
+setting boundaries, 190
 Comparison operators, 29
-
 Conditional statements, 31--33, 53
-
 © David Matthew 2024
-
 createCurve() method, 163
-
 createGradient() method, 76, 77
-
 createPattern() method, 209
+Cubic Bezier curve control point coordinates, 156, 157
+organic curves, 159, 160, 162, 163
+symmetry, 158 
+varying curve factor, 165
 
-Cubic Bezier curve control point coordinates,
-
-> 156, 157 organic curves, 159, 160,
->
-> 162, 163 symmetry, 158 varying curve factor, 165
-
-**D**
+<h3>D</h3>
 
 defs element, 75, 77--79, 209, 225
 
-**E**
-
-Elliptical arcs arguments, 150 generative arcs, 153, 155, 156
-
+<h3>E</h3>
+Elliptical arcs arguments, 150 
+generative arcs, 153, 155, 156
 irregular radii, 152
-
 setting flags, 151, 152
-
 Event listeners cursor tracking, creating, 171--173
+event types, 168, 169 
+JavaScript programmers, 167 parameters, 169 
+SvJs save method, 170, 171
 
-event types, 168, 169 JavaScript programmers, 167 parameters, 169 SvJs
-save method, 170, 171
-
-  -----------------------------------------------------------------------
   D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
   <https://doi.org/10.1007/979-8-8688-0086-3>
-  -----------------------------------------------------------------------
-
-  -----------------------------------------------------------------------
 
 253
 
-INDEX
+<h3>F</h3>
+feBlend primitive, 216, 217, 220 
+feComposite primitive, 208, 209, 218, 239 
+feDiffuseLighting primitive, 228--231, 233 
+feSpecularLighting primitive, 228, 230, 231 
+feTurbulence primitive, 241 
+  Filters 
+    createFilter() method, 209, 210
+    diffuse/specular lighting, 230 
+    effects 101
+      blending, 216, 217
+      coloring, 213--216 
+	  compositing, 218--220 
+	  shadows, 212
+    element, 206 
+    generative textures, 235--240
+    ins/outs, 207--209
+    lighting sources, 231 
+    lighting/texturing 
+	  bump map, 228
+    noise/distortion
+      cosmic bubble, 224, 226--228 
+      displacement, 223, 224 
+      turbulence, 221--223
+    primitives, 205 
+    region, 210, 211
+  simulating textures, 232, 234, 235 
+  for loop, 35--36, 66, 73, 88, 91 
+  Fractals, 246--248 254
 
-**F**
-
-feBlend primitive, 216, 217, 220 feComposite primitive, 208, 209,
-
-218, 239 feDiffuseLighting primitive,
-
-228--231, 233 feSpecularLighting primitive, 228,
-
-230, 231 feTurbulence primitive, 241
-
-Filters createFilter() method, 209, 210 diffuse/specular lighting, 230
-effects 101
-
-> blending, 216, 217
->
-> coloring, 213--216 compositing, 218--220 shadows, 212
->
-> element, 206 generative textures, 235--240
->
-> ins/outs, 207--209 lighting sources, 231 lighting/texturing bump map,
-> 228
->
-> noise/distortion
->
-> cosmic bubble, 224, 226--228 displacement, 223, 224 turbulence,
-> 221--223
->
-> primitives, 205 region, 210, 211 simulating textures, 232,
-
-234, 235 for loop, 35--36, 66, 73, 88, 91 Fractals, 246--248
-
-254
-
-**G**
-
-Gen.chance() function, 105--107,
-
-> 126, 154, 192
-
+<h3>G</h3>
+Gen.chance() function, 105--107, 126, 154, 192
 Gen.constrain() function, 110, 114, 132
-
 Gen.gaussian() function, 110, 112
-
-Gen.random() function, 87, 88, 98,
-
-108, 109, 112, 114, 238 getCentre() method, 95 Gradients, 76--78
-
-GreenSock Animation
-
-Platform (GSAP), 189
-
+Gen.random() function, 87, 88, 98, 108, 109, 112, 114, 238 
+getCentre() method, 95 Gradients, 76--78
+GreenSock Animation Platform (GSAP), 189
 gySVG library, 7
 
-**H, I**
-
+<h3>H, I</h3>
 hsl() function, 89, 126, 127, 214
 
 H or V commands, 142
 
-**J, K**
+<h3>J, K</h3>
 
 JavaScript Web Animations API, 196
 
-**L**
+<h3>L</h3>
 
 L command, 140--142
 
 Logical operators, 30--31 Loops, 33--34, 36, 103
 
-**M**
+<h3>M</h3>
 
 Math.min() function, 124 M (or m) command, 139 moveTo() method, 95, 96,
 127, 160
 
-**N, O**
+<h3>N, O</h3>
 
 Node.js, 8
 
@@ -8011,196 +7996,131 @@ Noise module computer graphics, 120
 >
 > SvJs library, 122, 123
 
-**P**
-
+<h3>P</h3>
 package.json, 9 Pareto distribution, 113--115
-
 Pareto probability distributions, 244
-
 Paths element
-
-> commands, 138, 139 d attribute, 138
->
-> starting/ending, 139 straight lines
->
-> economies, 143
-
-INDEX
-
-> horizontal/vertical varieties, 142
-
-L command, 140--142
-
-Patterns, 78--83 p5.js library, 2 Probability distributions Gaussian,
-109, 110, 112 masking content, 115--117 pareto, 113, 114
-
-> uniform, 108
+  commands, 138, 139 
+  d attribute, 138
+  starting/ending, 139 
+  straight lines economies, 143
+  horizontal/vertical varieties, 142
+  L command, 140--142
+Patterns, 78--83 
+p5.js library, 2 
+Probability distributions Gaussian, 109, 110, 112 
+  masking content, 115--117 
+pareto, 113, 114
+  uniform, 108
 
 Programming
+  arrays, 44--47 classes, 49, 50
+  conditional statements, 31--33
+  functions
+  anonumous, 42 
+  arrow, 42, 43 
+  invoking, 38--40 
+  parameters, 37  
+  "#"function-parameters
+  scope, 40, 41 #scope
+  standard, 37
+  idiosyncrasies, features, 51, 52
+  JavaScript characteristics, 19
+  looops, 33--36
+  objects, 47--49
+  operators, 26--31
+  syntax, 19--21
+  values, 22--24
+  variables, 25, 26
 
-> arrays, 44--47 classes, 49, 50
->
-> conditional statements, 31--33
->
-> functions
+Programming motion CSS keyframes, 177, 179 
+  methods, 188, 189 255
+Programming motion (*cont*.) requestAnimationFrame() method, 184, 185, 187, 188
 
-[anonumous, 42 arrow, 42, 43 invoking, 38--40 parameters,
-[37](#function-parameters)](#function-parameters)
+shapes, 177
+SMIL, 179--181
+technique, 175
+WAAPI, 181--183
 
-[scope, 40, [41](#scope)](#scope)
+<h3>Q</h3>
+Quadratic Bezier curves control points, 144, 145 
+  coordinates, 144
+  Slinky, 147, 148, 150 
+  smooth shortcut, 145, 147
 
-> standard, 37
->
-> idiosyncrasies, features, 51, 52
->
-> JavaScript characteristics, 19
->
-> looops, 33--36
->
-> objects, 47--49
->
-> operators, 26--31 syntax, 19--21 values, 22--24
->
-> variables, 25, 26
-
-Programming motion CSS keyframes, 177, 179 methods, 188, 189
-
-255
-
-INDEX
-
-Programming motion (*cont*.) requestAnimationFrame() method, 184, 185,
-187, 188
-
-> shapes, 177 SMIL, 179--181
->
-> technique, 175 WAAPI, 181--183
-
-**Q**
-
-Quadratic Bezier curves control points, 144, 145 coordinates, 144
-Slinky, 147, 148, 150 smooth shortcut, 145, 147
-
-**R**
-
+<h3>R</h3>
 Randomness
+  analog/digital, 85, 86 
+  clip paths/color palettes arrays of color, 98--100 
+  clipping content, 100, 101, 103, 104
+  Gen.chance() function, 105--107
+  Gen.random() function, 87--89 
+  parameters, 85 
+  regular grids flexible grid, 96--98 
+  nested for loop, 94, 96
+  varying color/opacity, 89, 90
+  varying element selection, 91--93
+requestAnimationFrame() method, 175, 184--190, 193 256
 
-> analog/digital, 85, 86 clip paths/color palettes
->
-> arrays of color, 98--100 clipping content, 100, 101,
->
-> 103, 104
->
-> Gen.chance() function, 105--107
->
-> Gen.random() function, 87--89 parameters, 85 regular grids
->
-> flexible grid, 96--98 nested for loop, 94, 96
->
-> varying color/opacity, 89, 90 varying element selection, 91--93
-
-requestAnimationFrame() method, 175, 184--190, 193
-
-256
-
-**S**
-
+<h3>S</h3>
 save() method, 170, 171
-
 Scalable Vector Graphics (SVG) bitmap images, 2
-
-> element creation, 60
->
-> file sizes, 2
->
-> grouping/reusing
->
-> elements, 83, 84
-
-imperative approach, 5 native, 3, 5 parent element, 55, 57
-setting/getting values, 59, 60 shapes type, 61
-
-SvJs, 7 texts, 72, 73, 75 tiles, 72, 73, 75 viewBox, 58
-
-viewport, 57
-
+  element creation, 60
+  file sizes, 2
+  grouping/reusing
+  elements, 83, 84
+  imperative approach, 5 
+  native, 3, 5 
+  parent element, 55, 57
+setting/getting values, 59, 60
+shapes type, 61
+SvJs, 7 
+  texts, 72, 73, 75 
+  tiles, 72, 73, 75 
+  viewBox, 58
+  viewport, 57
 S command, 158, 163
-
 set() method, 59, 61, 192, 211
-
-Shapes, SVG
-
-circles, 66, 68 ellipses, 68 lines, 68, 69, 71, 72 polygons, 68, 69, 71,
-72
-
-polylines, 68, 69, 71, 72
-
-rectangle, 61, 62
-
-squares, 62
-
-strokes, 63--65
-
-SimplexJS, 134
-
-stroke-width attribute, 63
-
-svg.create()
-
-method, 72
-
-SvJs setup
-
-> base template, 17 code editor, 8 generative sketch, 14, 15
->
-> initializing/installing, 9
->
-> Node.js, 8
->
-> NPM, 8
->
-> generative sketch, 13, 16
->
-> sketches, 10, 11
->
-> serving sketches, 12
-
+Shapes, SVG circles, 66, 68 
+  ellipses, 68 
+  lines, 68, 69, 71, 72 
+  polygons, 68, 69, 71, 72
+  polylines, 68, 69, 71, 72
+  rectangle, 61, 62
+  squares, 62
+  strokes, 63--65
+  SimplexJS, 134
+  stroke-width attribute, 63
+  svg.create() method, 72
+SvJs setup base template, 17 
+  code editor, 8 
+  generative sketch, 14, 15
+  initializing/installing, 9
+  Node.js, 8
+  NPM, 8
+  generative sketch, 13, 16
+sketches, 10, 11
+serving sketches, 12
 SvJs create() method, 60, 137
-
 SvJs createCurve() method, 166
-
-SvJs library, 5, 8, 9, 12, 49, 59, 87,
-
-> 122, 243
-
+SvJs library, 5, 8, 9, 12, 49, 59, 87, 122, 243
 Systems simulations, 249, 250
 
-**T, U**
+<h3>T, U</h3>
+text.set() method, 130 
+trackCursor() method, 171--173
+transform_origin attribute, 175 
+Trigonometry, 196, 244--246
 
-text.set() method, 130 trackCursor() method, 171--173
+<h3>V</h3>
+viewBox, 57, 58, 60, 62, 73, 78, 83, 88, 96, 110, 111, 125, 171, 200 
+viewport, 57, 58, 60, 62, 78, 83
 
-INDEX
-
-transform_origin attribute, 175 Trigonometry, 196, 244--246
-
-**V**
-
-viewBox, 57, 58, 60, 62, 73, 78, 83, 88,
-
-96, 110, 111, 125, 171, 200 viewport, 57, 58, 60, 62, 78, 83
-
-**W, X, Y**
-
-Web Animations API (WAAPI), 175,
-
-181--184, 189, 202, 203 while loops, 34--35, 53
-
+<h3>W, X, Y</h3>
+Web Animations API (WAAPI), 175, 181--184, 189, 202, 203 
+while loops, 34--35, 53
 World Wide Web
+  Consortium, 3, 181
 
-> Consortium, 3, 181
-
-**Z**
-
-Z command, 139, 232
-
-257
+<h3>Z</h3>
+Z command, 139, 232 257
