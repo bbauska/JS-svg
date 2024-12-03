@@ -3151,11 +3151,9 @@ There are more ways to customize gradients that we won't get into here,
 but if you're interested, check out the MDN documentation for more on
 the gradient spreadMethod and varying the focal points of radial
 gradients.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Patterns**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Like gradients, patterns reside in the defs element to be referenced
 later rather than rendered directly. They have their own viewport (i.e.,
 width and height) and optional viewBox, which can seem a little
@@ -3231,8 +3229,8 @@ out the code that created the white rectangle pattern (but keep the
 shape it's applied to).
 
 ```
-// Create our pattern. const pattern = svg.createPattern(\'illusion\',
-100, 200);
+// Create our pattern. 
+const pattern = svg.createPattern('illusion', 100, 200);
 
 // Create a white rectangle within the pattern.
 // pattern.create('rect').set({
@@ -3277,8 +3275,8 @@ rudimentary pixel art. To complete the illusion, we need our separators.
 
 ```
 // Create 4 x thin grey rectangles to separate the squares.
-for (let i = 0; i \< 4; i += 1) { pattern.create(\'rect\').set({ x: 0,
-y: 45 + (i \* 50), width: 100, height: 5, fill: \'#666\'
+for (let i = 0; i < 4; i += 1) { pattern.create('rect').set({ x: 0,
+y: 45 + (i * 50), width: 100, height: 5, fill: '#666'
 });
 }
 ```
@@ -3294,7 +3292,6 @@ particularly those you're not directly focusing on. Hopefully this will
 give you some sense of the power of patterns! We've touched on the main
 points, but they can be customized extensively with further parameters
 if needed.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Grouping and Reusing Elements**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3307,7 +3304,8 @@ to simply group items together to better organize your SVG.
 
 ```
 // Create a circle and add it to a group.
-const circle = svg.create(\'circle\'); const group = svg.create(\'g\');
+const circle = svg.create('circle'); 
+const group = svg.create('g');
 circle.addTo(group);
 ```
 
@@ -3317,22 +3315,25 @@ like patterns, can have their own viewport and viewBox. But they are
 called via the use element rather than applied to a fill or stroke.
 
 ```
-// Create a symbol consisting of a circle and square. const symbol =
-svg.create(\'symbol\'); symbol.set({ id: \'mySymbol\', width: 100,
-height: 100 {); symbol.create(\'circle\').set({ \... });
-symbol.create(\'rect\').set({ \... });
+// Create a symbol consisting of a circle and square. 
+const symbol = svg.create('symbol'); 
+symbol.set({ 
+  id: 'mySymbol', 
+  width: 100,
+  height: 100 {); 
+  symbol.create('circle').set({ ... });
+  symbol.create('rect').set({ ... });
 
 // Using the symbol three times but varying its co-ordinates.
-svg.create(\'use\').set({ href: \'#mySymbol\', x: 0, y: 0 });
-svg.create(\'use\').set({ href: \'#mySymbol\', x: 200, y: 200 });
-svg.create(\'use\').set({ href: \'#mySymbol\', x: 400, y: 400 });
+svg.create('use').set({ href: '#mySymbol', x: 0, y: 0 });
+svg.create('use').set({ href: '#mySymbol', x: 200, y: 200 });
+svg.create('use').set({ href: '#mySymbol', x: 400, y: 400 });
 ```
 
 Symbols don't have quite the same appeal outside of a declarative
 context, so going forward we won't be relying on them for our
 imperative- based creations. But there's plenty more to unpack if you
 want to explore further on MDN.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Summary**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3357,13 +3358,11 @@ To recap, we've covered the following in this chapter:
 
 In the next chapter, we'll explore how we can combine regularity with
 randomness to create truly generative compositions.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **CHAPTER 4**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Randomness and Regularity**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 So far, all of our sketches (bar the first one) have lacked a certain
 ingredient usually considered foundational to the very genre of
 generative art:
@@ -3379,11 +3378,9 @@ also cover a popular generative technique that involves constructing
 regular grids and randomizing their contents. We'll then learn how to
 apply randomness to the construction of the grids themselves so that the
 underlying structure of our compositions can be varied.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Analogue and Digital Randomness**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Techniques to incorporate randomness into art began long before the
 digital age. As far back as the fifteenth century, Leonardo da Vinci
 suggested that artists take inspiration from sources rich in random and
@@ -3440,7 +3437,7 @@ top of our sketches. Modify the template sketch to include this as the
 first line (replacing the previous import statement):
 
 ```
-import { SvJs, Gen } from \'../../node_modules/svjs/src/ index.js\';
+import { SvJs, Gen } from '../../node_modules/svjs/src/ index.js';
 ```
 
 Now we can call Gen.random() and any of the other Gen methods
@@ -5478,12 +5475,14 @@ When you're ready, set up a group below the background that will contain
 our arc curves. After that, we'll set up some randomized variables we'll
 utilize in the loop that follows.
 
+```
 // Set up a container group for our arc curves.
-
-let arcs = svg.create(\'g\');
-
-// Randomise some variables. let rx = Gen.random(5, 350); let ry =
-Gen.random(5, 350); let hue = Gen.random(0, 360);
+let arcs = svg.create('g');
+// Randomise some variables. 
+let rx = Gen.random(5, 350); 
+let ry = Gen.random(5, 350); 
+let hue = Gen.random(0, 360);
+```
 
 Next we'll start our loop, which will run 360 times. Inside it, we'll
 randomize some further variables: the arc's rotation, which will have
@@ -5491,12 +5490,14 @@ the effect of distending the curve in a particular direction, and the
 large-arc- flag, which, thanks to our Gen.chance() function, will have a
 50% chance of being either 0 or 1.
 
-for (let i = 0; i \< 360; i += 1) {
-
-// Randomise the rotation and large arc flag.
-
-let rotation = Gen.random(0, 180); let largeArc = Gen.chance() ? 1 : 0;
+```
+for (let i = 0; 
+i < 360; i += 1) {
+  // Randomise the rotation and large arc flag.
+  let rotation = Gen.random(0, 180); 
+  let largeArc = Gen.chance() ? 1 : 0;
 }
+```
 
 Next (and still within our loop) create the first set of clockwise arc
 curves. Remember, what makes them run either clockwise or anticlockwise
@@ -5504,13 +5505,12 @@ is the sweep-flag, which is the fifth argument of the A command. Here,
 after our largeArc variable, we're setting the sweep-flag to 1, meaning
 clockwise.
 
+```
 // Create a first set of clockwise arc curves (sweep = 1).
-arcs.create(\'path\').set({ fill: \'none\', stroke: \`hsl(\${hue} 75%
-75% / 0.05)\`,
-
-d: \`M 275 500 A \${rx} \${ry} \${rotation} \${largeArc} 1 725 500\`
-
+arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue} 75% 75% / 0.05)`,
+d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 1 725 500`
 });
+```
 
 The second set of arc curves will be identical, bar two small changes.
 The sweep-flag we'll set to 0, making this set anticlockwise, and the
@@ -5518,27 +5518,27 @@ hue we'll offset by 60, just to add a bit of contrast to the colors. And
 before we close out the loop, we'll increment the hue using the
 aforementioned modulo operator.
 
+```
 // Create a second set of counter-clockwise arc curves (sweep = 0).
-arcs.create(\'path\').set({ fill: \'none\', stroke: \`hsl(\${hue + 60}
-75% 75% / 0.05)\`,
-
-d: \`M 275 500 A \${rx} \${ry} \${rotation} \${largeArc} 0 725 500\`
-
+arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue + 60}
+75% 75% / 0.05)`,
+d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
 });
-
-// Increment the hue. hue = (hue % 360) + 0.5;
+// Increment the hue. 
+hue = (hue % 360) + 0.5;
+```
 
 If you run the sketch at this point, you'll see some nicely varied
 generative arcs (example output in Figure 6-9). If you want to inject a
 little more dynamism though, you could add the following line after the
 loop:
 
+```
 // Apply a random rotation.
-
 arcs.rotate(Gen.random(0, 360));
+```
 
-> ![](./images/media/image48.jpg){width="3.9366666666666665in"
-> height="2.315in"}
+![](./images/media/image48.jpg){width="3.9366666666666665in" height="2.315in"}
 
 ***Figure 6-9.** Two renders of our generative arcs*
 
@@ -5552,11 +5552,11 @@ two sets of control points, so the syntax is a little more complex than
 its quadratic counterpart, but it's easier to grapple with than the
 elliptical arc curve.
 
+```
 // Syntax of the C/c command.
-
-\'C \[cpx1 cpy1 cpx2 cpy2 x y\] \...\'
-
-\'c \[dcpx1 dcpy1 dcpx2 dcpy2 dx dy\] \...\'
+'C [cpx1 cpy1 cpx2 cpy2 x y] ...'
+'c [dcpx1 dcpy1 dcpx2 dcpy2 dx dy] ...'
+```
 
 <h2>Cubic Control Points</h2>
 
@@ -5568,8 +5568,10 @@ control point coordinates cpx2 and cpy2 shapes the curve of the
 destination point, and this point is defined by the final two
 coordinates: x and y. Here's an example:
 
-// Creating a single cubic bezier curve. svg.create(\'path\').set({ d:
-\'M 75,75 C 140,330 360,330 425,75\' });
+```
+// Creating a single cubic bezier curve. 
+svg.create('path').set({ d: 'M 75,75 C 140,330 360,330 425,75' });
+```
 
 The preceding path is illustrated in Figure 6-10, where you can see the
 initial M point in yellow, and in red, the three points that comprise
@@ -5577,7 +5579,7 @@ the cubic Bezier curve itself. The colored dots and dashed lines are
 just for illustrative purposes; these wouldn't be rendered in the final
 SVG.
 
-> ![](./images/media/image49.jpg){width="3.15in" height="2.52in"}
+![](./images/media/image49.jpg){width="3.15in" height="2.52in"}
 
 ***Figure 6-10.** A cubic Bezier curve with the control points
 visualized*
