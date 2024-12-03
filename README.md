@@ -6,19 +6,21 @@
 <h2>Generative Art with JavaScript and SVG</h2>
 <h3>Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design</h3>
 
-With design and innovation being two key driving principles, this series
-focuses on, but is not limited to, the following areas and topics:
+<p>With design and innovation being two key driving principles, this series
+focuses on, but is not limited to, the following areas and topics:</p>
 
--   User Interface (UI) and User Experience (UX) Design
--   Psychology of Design
--   Human-Computer Interaction (HCI)
--   Ergonomic Design
--   Product Development and Management
--   Virtual and Mixed Reality (VR/XR)
--   User-Centered Built Environments and Smart Homes
--   Accessibility, Sustainability and Environmental Design
--   Learning and Instructional Design
--   Strategy and best practices
+<ul>
+  <li>User Interface (UI) and User Experience (UX) Design</li>
+  <li>Psychology of Design</li>
+  <li>Human-Computer Interaction (HCI)</li>
+  <li>Ergonomic Design</li>
+  <li>Product Development and Management</li>
+  <li>Virtual and Mixed Reality (VR/XR)</li>
+  <li>User-Centered Built Environments and Smart Homes</li>
+  <li>Accessibility, Sustainability and Environmental Design</li>
+  <li>Learning and Instructional Design</li>
+  <li>Strategy and best practices</li>
+</ul>
 
 ***Generative Art with JavaScript and SVG: Utilizing Scalable Vector***
 ***Graphics and Algorithms for Creative Coding and Design***
@@ -336,7 +338,6 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
     </ol>
   </li>
 </ol>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="0-intro">Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -365,7 +366,7 @@ just a little about their creative possibilities -- possibilities that
 extend beyond the field of art into those of design and web development
 -- this book will have more than done its job.
 
-InTroduCTIon
+<h2>Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch0-know">What You Should Know</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -399,7 +400,7 @@ edge to another.
 I mentioned previously that I'll be equipping you with some new tools and techniques. 
 Let's flesh these out.
 
-InTroduCTIon **Tools**
+Introduction **Tools**
 
 On the tool end of things, we'll be using the following:
 
@@ -415,18 +416,16 @@ On the tool end of things, we'll be using the following:
 	into as a developer).</li>
 </ol>
 
-All code examples are available on both GitHub and CodePen, so feel free
-to follow along whichever way you prefer. You can of course do both,
-work locally with a code editor but check out CodePen examples online
-for quick inspiration. For convenience, I'll organize and embed all
-CodePen examples at <a href="https://davidmatthew.ie/generative-art-javascript-svg" 
+All code examples are available on both GitHub and CodePen, so feel free to follow along 
+whichever way you prefer. You can of course do both, work locally with a code editor but 
+check out CodePen examples online for quick inspiration. For convenience, I'll organize 
+and embed all CodePen examples at <a href="https://davidmatthew.ie/generative-art-javascript-svg" 
 target="_blank" rel="noreferrer noopener">davidmatthew.ie/generative-art-javascript-svg</a>.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Techniques</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In terms of the techniques we'll tackle, by the end of this book, you
-should have a good overview of the following:
+In terms of the techniques we'll tackle, by the end of this book, you should have a good 
+overview of the following:
 <ul>
   <li>The main functionality of the SvJs library and how it relates to the SVG spec,</li>
   <li>Creating generative art sketches with JavaScript using ES6+ syntax,</li>
@@ -439,63 +438,55 @@ should have a good overview of the following:
   <li>Using SVG filters generatively.</li>
 </ul>
 
-We'll be covering a lot of ground, so don't put yourself under pressure
-to understand everything. I must have encountered certain programming
-concepts umpteen times before the proverbial penny finally dropped
-(JavaScript promises anyone?), and whenever understanding did finally
-dawn, it would usually be because I was experimenting with something I
-*wanted* to build, rather than repeating tutorial steps by rote.
-Tutorials and instructional books certainly have their place (I wouldn't
-be writing this book otherwise), but it's important that you take what
-*you* want from them, rather than seeing them as syllabi to be strictly
-followed.
+We'll be covering a lot of ground, so don't put yourself under pressure to understand 
+everything. I must have encountered certain programming concepts umpteen times before 
+the proverbial penny finally dropped (JavaScript promises anyone?), and whenever 
+understanding did finally dawn, it would usually be because I was experimenting with 
+something I *wanted* to build, rather than repeating tutorial steps by rote. Tutorials 
+and instructional books certainly have their place (I wouldn't be writing this book 
+otherwise), but it's important that you take what *you* want from them, rather than 
+seeing them as syllabi to be strictly followed.
 
-A sense of play is important, particularly when it comes to art. And
-although I mentioned tools previously, I would prefer if you viewed this
-book as more of a toybox than a toolbox. When I think of tools, I think
-of problems that need fixing, like the loose hinges on that crooked
-cabinet you're going to tighten any day now. Tools tend to be more
-functional than fun, and I'd like you to have some fun with this book.
+A sense of play is important, particularly when it comes to art. And although I 
+mentioned tools previously, I would prefer if you viewed this book as more of a toybox 
+than a toolbox. When I think of tools, I think of problems that need fixing, like the 
+loose hinges on that crooked cabinet you're going to tighten any day now. Tools tend to 
+be more functional than fun, and I'd like you to have some fun with this book.
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch1">CHAPTER 1: The Beginner's Path</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Before journeying along any path, the groundwork needs to be in place.
-In this opening chapter, that's what we'll do, lay the groundwork. We'll
-introduce SVG, explain what makes it a uniquely powerful image format,
-and show how it can be used with JavaScript to create generative art. In
-the process, we'll set up our tools and a template we can use for
-subsequent sketches.
+Before journeying along any path, the groundwork needs to be in place. In this opening 
+chapter, that's what we'll do, lay the groundwork. We'll introduce SVG, explain what 
+makes it a uniquely powerful image format, and show how it can be used with JavaScript 
+to create generative art. In the process, we'll set up our tools and a template we can 
+use for subsequent sketches.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1">1.1 Why JavaScript and SvJs?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Most books about generative art use a Java-based language called
-Processing, or its JavaScript port p5.js. Processing was created
-specifically for artists and designers new to coding and has a large and
-active community. So why doesn't this book use it?
+Most books about generative art use a Java-based language called Processing, or its 
+JavaScript port p5.js. Processing was created specifically for artists and designers new 
+to coding and has a large and active community. So why doesn't this book use it?
 
-My first forays into generative art were with Processing, so I certainly
-acknowledge its value. I quickly moved to p5.js when the library was
-first released in 2013, which allowed generative sketches to be written
-directly in JavaScript, the language of the Web. But when I wanted to
-integrate some of my own sketches into real-world web development
-projects, its limitations quickly showed. It's a *large* library,
-clocking in at close to a megabyte at last check, and while that may not
-sound like much, it's a lot by web development standards.
-
+My first forays into generative art were with Processing, so I certainly acknowledge its 
+value. I quickly moved to p5.js when the library was first released in 2013, which 
+allowed generative sketches to be written directly in JavaScript, the language of the 
+Web. But when I wanted to integrate some of my own sketches into real-world web 
+development projects, its limitations quickly showed. It's a *large* library, clocking in 
+at close to a megabyte at last check, and while that may not sound like much, it's a lot 
+by web development standards.
 
 <!-- © David Matthew 2024 1
 D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_1> -->
 <!-- page 2 -->
 
-The p5.js library is built on top of the HTML Canvas API, which I soon
-discovered is actually quite straightforward to use. Using this API
-directly, I was able to achieve much the same results as with p5.js, so
-that became my go-to. However, the output of all my sketches -- p5.js or
-Canvas -- was still resolution-dependent bitmap graphics, devoid of any
-semantic content. What does that mean, and why does it matter (to me at
-least)? Let me explain.
+The p5.js library is built on top of the HTML Canvas API, which I soon discovered is 
+actually quite straightforward to use. Using this API directly, I was able to achieve 
+much the same results as with p5.js, so that became my go-to. However, the output of all 
+my sketches -- p5.js or Canvas -- was still resolution-dependent bitmap graphics, devoid 
+of any semantic content. What does that mean, and why does it matter (to me at least)? 
+Let me explain.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1-a">1.1a Introducing Scalable Vector Graphics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -515,7 +506,7 @@ because it doesn't bother itself with the bits (i.e., pixels) needed to
 paint the image to the screen, but rather describes the image to be
 rendered at a more abstract, semantic level. And it does this in much
 the same way that HTML describes the structure and content of a web page. 
-As the Mozilla Developer Network puts it 
+As the Mozilla Developer Network puts it
 <blockquote>
 SVG is, essentially, to graphics what HTML is to text.
 </blockquote>
@@ -537,11 +528,9 @@ shine.
 These days we can use the format freely without worry, but to use it for
 the odd icon and logo is one thing; to tap its full potential is
 another.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1-b">1.1b Native SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
 written using opening and closing angle brackets and contain attributes
@@ -608,11 +597,9 @@ of well-defined steps or instructions and have your ingredients and your
 oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
 ultimately it gives you more creative control.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1-c">1.1c Generating SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
 SVG, and this is where JavaScript and SvJs come into play.
@@ -834,8 +821,7 @@ Open up the sketch.js file and include this as your first two lines:
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 ```
 
-Our template is now complete, ready to be copied for subsequent
-sketches. Well done!
+Our template is now complete, ready to be copied for subsequent sketches. Well done!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2e">1.2e Serving Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -959,7 +945,6 @@ When you save the aforementioned, you should see something like Figure
 1-3. Each refresh of the browser will render a unique version, so what
 you see will no doubt differ in some respects. But that, dear reader, is
 part of the joy of generative art.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 09. first generative sketch (1 variation of many) (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -970,7 +955,6 @@ part of the joy of generative art.
 <!-- ![](./images/media/image9.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 1-3.** Our first generative sketch (one variation of many)*
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-4">1.4 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1158,7 +1142,6 @@ class="intro"> <p>My name is ${name} and I am ${age} years of age.</p>
 As you can see, it is much more readable and concise. As a rule,
 whenever you want to mix string values with anything else, backticks are
 the best choice.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Booleans</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1167,12 +1150,11 @@ named after George Boole, inventor of Boolean algebra.
 
 They can be useful for representing any binary state: yes or no, on or
 off, alive or dead, etc. They are written as simply true or false.
-
+```
 let alive = true; // phew let kicking = false; // just sitting
-
+```
 Booleans make conditional statements and comparisons possible, which
 we'll get to a little later.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Empty Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1187,7 +1169,6 @@ think of it is this: when JavaScript tells you a variable called x is
 null, it's saying "yeah I know about x, but x doesn't have any value so
 far as I can see." If, on the other hand, it tells you that x is
 undefined, it is essentially saying "What the \*\*\*\* is x? Ain't no x around here."
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Variables**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1247,11 +1228,9 @@ An operator is a symbol that performs operations on values. We've
 actually come across one already: the assignment operator ( = ), which
 assigns a value to a variable. Let's see what other kinds of operators
 are available to us.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Arithmetic Operators</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 As you might have guessed, arithmetic operators allow us to perform
 mathematical operations. The addition operator ( + ) allows us to add
 numbers, but it also allows us to concatenate strings.
@@ -1545,7 +1524,7 @@ follows:
 
 ```
 while (condition === true) {
-// run code here while condition is true.
+  // run code here while condition is true.
 }
 ```
 
@@ -1688,7 +1667,6 @@ function squareNumber(number) { return number * number; }
 The preceding function, when called, will return the result we're
 looking for, that is, the square of the number we supply it. But how do
 we actually do this in practice?
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Invoking Functions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2104,11 +2082,9 @@ This is a good way of getting around the issue of global variables I
 mentioned earlier. Using an object, we can make our settings globally
 available without relying on global variables. This can keep our code
 tidier and less likely to cause conflicts.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Classes**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 A class is like a blueprint, or template, for creating objects. The
 objects that are created are then said to be *instances* of that class.
 A class can include both data and functions to work on that data. This
@@ -2148,17 +2124,14 @@ svg.addTo(document.getElementById('container'));
 
 This is the extent to which we will be working with classes; writing
 them won't be part of this book.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Idiosyncrasies and Other Features**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 JavaScript offers plenty of other features, including closures, error
 catching, proxies, promises, and more, but I can't cover them all here.
 What I will point out here are some of the oddities -- or quirks if
 we're being kinder -- associated with JavaScript that may confound
 coders coming from another language.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Null and NaN Weirdness</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2167,14 +2140,14 @@ information. Isn't it strange then that null is also considered an
 object? We can confirm this by using the typeof check.
 
 ```
-typeof null; -\> object
+typeof null; -> object
 ```
 
 Despite this, null is not considered an instance *of* an object. We can
 confirm this by using the instanceof check.
 
 ```
-null instanceof Object; -\> false
+null instanceof Object; -> false
 ```
 
 NaN (not a number) also presents us with some quantum-level weirdness
@@ -2376,7 +2349,6 @@ const svg = new SvJs().addTo(document.getElementById('container'));
 Concision doesn't always beat clarity however, so if this one-liner is a
 little too compressed for your liking, keep your template code as is, no
 need to replace it with the aforementioned.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **The Viewport and ViewBox**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2442,17 +2414,14 @@ interact with it. With that in mind, I built a little CodePen sketch (or
 viewBox values, so you can see how they can be used together to scale
 and
 
-crop the content visible within the SVG viewport. You can find the pen
-at
+crop the content visible within the SVG viewport. You can find the pen at
 [davidmatthew.ie/generative-art-javascript-svg#viewBox](https://davidmatthew.ie/generative-art-javascript-svg#viewBox)
 
 At this point, we have the values we need for our viewBox and viewport,
 but we haven't yet learned how to put them to use.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Setting and Getting Values**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Every SvJs instance, whether it's the parent SVG or one of its child
 elements, has a set() method. This method allows us to set the values of
 an element's attributes.
@@ -2471,7 +2440,9 @@ more structured definition of each method.
 Getting back to setting values, the set() method accepts an object as
 its argument and takes the following format:
 
+```
 svg.set({ attribute1: value1, attribute2: value2, attributeN: valueN )};
+```
 
 If you're setting a large number of properties at once, you might
 consider adjusting the formatting for the sake of readability.
@@ -2513,11 +2484,9 @@ console.log(svg.get('viewBox'));
 Fetching attribute values via the get() method can be useful when
 working with event listeners, or in other cases where the values are
 being updated dynamically.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Quicker Element Creation**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 If we had to call the new SvJs constructor and the addTo method each
 time we created a new SVG element, it might get a little tiresome after
 a while. This is where the SvJs create() method comes in, as it combines
@@ -2558,11 +2527,9 @@ The SVG spec defines six primitive shape types:
 -   Rectangles
 
 As we need to set up a background, let's start with the rectangle.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Rectangles and Squares</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 A rectangle is a rect in the SVG spec, so to create one, we'd write
 
 ```
@@ -2752,7 +2719,6 @@ will get partly painted over by the stroke), but sometimes it can be
 useful to have stroke come first, as only then will we see the full fill
 dimensions painted (remove paint_order: \'stroke\' from the code and
 you'll see what I mean).
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Circles and Ellipses</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6208,28 +6174,20 @@ effect) before returning it to its original dimensions. And finally we
 assign the animation to the cssShape element, specifying the duration,
 iteration count, and timing function.
 
+```
 // Set an id for our first shape. shapes\[0\].set({ id: \'cssShape\' });
-
 // Animate this shape with CSS. svg.create(\'style\').content(\`
-
-\@keyframes scaleRotate {
-
+@keyframes scaleRotate {
 0% { transform: rotate(0) scale(1, 1) }
-
 50% { transform: rotate(180deg) scale(0.5, 1.5) }
-
 100% { transform: rotate(360deg) scale(1, 1) }
-
 }
-
 #cssShape {
-
 animation-name: scaleRotate; animation-duration: 5s;
 animation-iteration-count: infinite; animation-timing-function: linear;
-
 }
-
-\`);
+`);
+```
 
 You should now see our outer square slowly rotate and stretch, while the
 others remain static. It's also possible to use the shorthand animation
@@ -6239,15 +6197,13 @@ version though, as the order of values -- while not especially strict --
 can lead to unanticipated behavior if you're not familiar with all the
 possible values that can be accepted.
 
-svg.create(\'style\').content(\` \...
-
-#cssShape {
-
-animation: scaleRotate 5s infinite linear;
-
-}
-
-\`);
+```
+svg.create('style').content(` ...
+  #cssShape {
+    animation: scaleRotate 5s infinite linear;
+  }
+`);
+```
 
 <h2>The SMIL Way</h2>
 
@@ -6258,12 +6214,12 @@ we're using SvJs, we will be interfacing with SMIL via JavaScript.
 Before we do so however, here's a quick peek at how it looks in its
 original form.
 
-\<circle cx=\"50\" cy=\"50\" r=\"25\" fill=\"red\"\>
-
-\<animate attributeName=\"r\" from=\"25\" to=\"40\" dur=\"2s\"
-repeatCount=\"indefinite\" /\>
-
-\</circle\>
+```
+<circle cx="50" cy="50" r="25" fill="red">
+  <animate attributeName="r" from="25" to="40" dur="2s"
+    repeatCount="indefinite" />
+</circle>
+```
 
 As you can see, the animation is an actual SVG element, nested inside
 the element it animates (a \<circle\> in this case). The \<animate\>
@@ -6282,10 +6238,12 @@ and to directives to cover these. We then set the duration (dur) and
 iteration count (repeatCount), and that's the first transform taken care
 of.
 
+```
 // Rotate the second shape using SMIL.
-shapes\[1\].create(\'animateTransform\').set({ attributeName:
-\'transform\', type: \'rotate\', from: \'0\', to: \'360\', dur: \'5s\',
-repeatCount: \'indefinite\' });
+shapes[1].create('animateTransform').set({ attributeName:
+'transform', type: 'rotate', from: '0', to: '360', dur: '5s',
+repeatCount: 'indefinite' });
+```
 
 The second transform is a little more complicated. It has more than two
 states, so instead of the from and to attributes, we have a values
@@ -6295,9 +6253,11 @@ include an additional additive attribute with a value of sum so that the
 scale transform adds to (and doesn't overwrite) the previous rotate
 transform. // Scale the second shape using SMIL.
 
-shapes\[1\].create(\'animateTransform\').set({ attributeName:
-\'transform\', type: \'scale\', values: \'1 1; 0.5 1.5; 1 1\', dur:
-\'5s\', additive: \'sum\', repeatCount: \'indefinite\' });
+```
+shapes[1].create('animateTransform').set({ attributeName:
+'transform', type: 'scale', values: '1 1; 0.5 1.5; 1 1', dur:
+'5s', additive: 'sum', repeatCount: 'indefinite' });
+```
 
 The second shape should now be slowly rotating and stretching, and the
 motion should be perfectly synchronized with our CSS keyframes example.
@@ -6323,31 +6283,22 @@ in milliseconds -- or as an object containing one or more time-related
 properties. Say we wanted to animate the value of a circle's radius r.
 The following is how this could be achieved using both syntax formats:
 
+```
 // Format one for keyframes.
-
-let keyframes = \[
-
+let keyframes = [
 { r: 25 },
-
 { r: 40 },
-
 { r: 25 }
-
-\];
-
+];
 // Format two for keyframes.
-
-let keyframes = { r: \[25, 40, 25\] };
+let keyframes = { r: [25, 40, 25] };
 
 // Format one for timing options. let options = 2000; // 2 seconds.
-
 // Format two for timing options.
-
 let options = { duration: 2000, iterations: Infinity,
-
-// \... etc
-
+// ... etc
 };
+```
 
 I prefer the second keyframe format as it is more concise in most cases.
 Before we implement the rotation and scaling example, there's one more
@@ -6361,29 +6312,25 @@ equivalent of 0%, 50%, and 100% in CSS). But we can define custom
 offsets if needs be. In the following example, the second keyframe will
 trigger at 0.75 instead of the default 0.5.
 
+```
 // Explicitly defining offsets.
-
-let keyframes = { r: \[25, 40, 25\], offset: \[0, 0.75, 1\] };
+let keyframes = { r: [25, 40, 25], offset: [0, 0.75, 1] };
+```
 
 Let's get back to our sketch now and implement the rotation and scaling
 of our third shape using the WAAPI method. Below our SMIL
 implementation, set up the animation as follows.
 
-let keyframes = { transform: \[
-
-\'rotate(0deg) scale(1, 1)\',
-
-\'rotate(180deg) scale(0.5, 1.5)\',
-
-\'rotate(360deg) scale(1, 1)\'
-
-\]
-
+```
+let keyframes = { transform: [
+'rotate(0deg) scale(1, 1)',
+'rotate(180deg) scale(0.5, 1.5)',
+'rotate(360deg) scale(1, 1)'
+]
 };
-
 let options = { duration: 5000, iterations: Infinity };
-
-shapes\[2\].animate(keyframes, options);
+shapes[2].animate(keyframes, options);
+```
 
 Now all but one of our shapes should be on the move. Note how similar
 the WAAPI keyframes syntax is to our CSS keyframes example; this isn't
@@ -6413,16 +6360,14 @@ per-frame basis. We then pass this custom function as an argument to
 requestAnimationFrame, so it is called recursively on each screen
 repaint. Here's a basic example of how this works.
 
+```
 // Define the function.
-
-function customFunction() { // do stuff here\...
-
+function customFunction() { // do stuff here...
 // Make the recursive call to requestAnimationFrame()).
 requestAnimationFrame(customFunction); }
-
 // Call the function.
-
 customFunction();
+```
 
 Additionally, requestAnimationFrame() can pass a timestamp to our custom
 function so that we can sync our animation with real-time values rather
@@ -6434,18 +6379,15 @@ can use it to increment the angle of rotation. This works because
 rotation values can increment indefinitely beyond 360° and still remain
 valid.
 
+```
 // Animate the last shape using requestAnimationFrame. function
 animate(time) {
-
 // Rotate the angle. let angle = time;
-
 // Apply the rotation.
-
-shapes\[3\].set({ transform: \`rotate(\${angle})\` });
-
+shapes[3].set({ transform: `rotate(${angle})` });
 // The recursive bit.
-
 requestAnimationFrame(animate); } animate();
+```
 
 Ok, so this code gets our final shape moving, but we've got a couple of
 problems. One, our shape is rotating at a breakneck speed, wildly out of
@@ -6458,9 +6400,10 @@ just need to reassign the time variable to a value of 0 if it is
 undefined. Include the following code before the angle is declared, and
 that should soothe our console's concerns:
 
+```
 // Prevent errors when the time is undefined on first frame.
-
 if (time === undefined) time = 0;
+```
 
 Now let's address the speed of rotation. We could try dividing the time
 by arbitrary amounts until it slows down to the point of synchronization
@@ -6479,7 +6422,9 @@ the exact speed by which to rotate our shape: 0.072° per millisecond
 (360° divided by 5,000 milliseconds). Update the previous statement
 where angle simply equals time with the following:
 
-// Rotate 360° in 5000ms: 360/5000 = 0.072. let angle = time \* 0.072;
+```
+// Rotate 360° in 5000ms: 360/5000 = 0.072. let angle = time * 0.072;
+```
 
 This should rotate our shape in sync with the others. Getting it to
 scale in sync, however, is more of a challenge. For that, we first need
@@ -6499,9 +6444,10 @@ indefinitely.
 With the aforementioned in mind, let's initialize the following
 variables before the animate() function:
 
+```
 let isPositive = true;
-
 let scale = 0, tick = 0, prevTime = 0;
+```
 
 Update the animation loop as follows. The comments do the explanatory
 heavy-lifting here, so to better understand each step, be sure to read
@@ -6509,40 +6455,29 @@ the comments carefully. The main takeaway here is just how much more
 work we need to do with requestAnimationFrame() compared to the other
 methods.
 
-// Animate the final shape using requestAnimationFrame. function
-animate(time) {
-
-// Prevent errors when the time is undefined on first frame. if (time
-=== undefined) time = 0;
-
-// Rotate 360° in 5000ms: 360/5000 = 0.072. let angle = time \* 0.072;
-
-// We need a constant tick value that doesn\'t increment indefinitely.
-
+```
+// Animate the final shape using requestAnimationFrame. 
+function animate(time) {
+// Prevent errors when the time is undefined on first frame. 
+if (time === undefined) time = 0;
+// Rotate 360° in 5000ms: 360/5000 = 0.072. 
+let angle = time * 0.072;
+// We need a constant tick value that doesn't increment indefinitely.
 tick = time - prevTime;
-
 // Scale by 0.5 in 2500ms: 0.5/2500 = 0.0002.
-
-scale = isPositive ? scale + (tick \* 0.0002) : scale - (tick \*
-0.0002);
-
-// Apply the rotation and scale values. shapes\[3\].set({
-
-transform: \`rotate(\${angle}) scale(\${1 - scale}, \${1 + scale})\`
-
+scale = isPositive ? scale + (tick * 0.0002) : scale - (tick * 0.0002);
+// Apply the rotation and scale values. 
+shapes[3].set({
+  transform: `rotate(${angle}) scale(${1 - scale}, ${1 + scale})`
 });
-
 // Flip the polarity if the scale value falls outside these bounds.
-
-if (scale \< 0 \|\| scale \> 0.5) isPositive = !isPositive;
-
-// Capture the time before it increments. prevTime = time;
-
+if (scale < 0 || scale > 0.5) isPositive = !isPositive;
+// Capture the time before it increments. 
+prevTime = time;
 // The recursive bit.
-
 requestAnimationFrame(animate); }
-
 animate();
+```
 
 We should now have the final shape rotating and scaling in sync (give or
 take) with the other shapes. In some cases, you might see some slight
@@ -6616,7 +6551,6 @@ So the usual drill -- create a new folder from the template, rename it
 to
 
 19-collision-detection, and begin coding below the background. The
-
 first thing we'll do is create a rect styled like a picture frame. This
 effect is achieved by using a slightly transparent stroke over the fill;
 half the stroke is painted outside the frame and half inside (something
@@ -6625,15 +6559,15 @@ The size of this frame will be randomized, so we'll set up a frameSize
 variable to capture this and also use it to keep other element (like the
 stroke-width) in proportion.
 
+```
 // Create a frame to act as the boundary.
-
 let frameSize = Gen.random(350, 700); let frame =
-svg.create(\'rect\').set({ x: (1000 - frameSize) / 2, y: (1000 -
-frameSize) / 2, width: frameSize, height: frameSize, fill: \'#252525\',
-stroke: \`hsl(\${Gen.random(0, 360)} 80% 80% / 0.25)\`, stroke_width:
+svg.create('rect').set({ x: (1000 - frameSize) / 2, y: (1000 -
+frameSize) / 2, width: frameSize, height: frameSize, fill: '#252525',
+stroke: `hsl(${Gen.random(0, 360)} 80% 80% / 0.25)`, stroke_width:
 frameSize / 10,
-
 });
+```
 
 <h2>Initializing and Extending Our Shapes</h2>
 
@@ -6701,7 +6635,7 @@ let velocityX = Gen.random(0.1, 5, true);
 let velocityY = Gen.random(0.1, 5, true);
 
 // Apply the above variables and randomise the hue.
-let circle = svg.create(\'circle\').set({ 
+let circle = svg.create('circle').set({ 
   cx: 500, 
   cy: 500, 
   r: radius,
@@ -6830,7 +6764,7 @@ taken the first steps on the road to full-on physics simulations (a
 topic way beyond the scope of this book, but I'd encourage you to
 explore it independently).
 
-> ![](./images/media/image55.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image55.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-3.** Colorful collision detection*
 
@@ -6900,7 +6834,7 @@ circumference.
 
 And half of 6.28 is 𝝅, or 3.14.
 
-> ![](./images/media/image57.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image57.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-5.** How radians relate to* 𝝅 *and the circumference*
 
@@ -6915,9 +6849,10 @@ iterator to move on to the next "slice," so to speak.
 Within the loop, after we define our circle element, include the
 following line:
 
+```
 // Calculate the current angle.
-
 let angle = Math.PI \* 2 / numCircles \* i;
+```
 
 <h2>Sine and Cosine</h2>
 
@@ -6926,9 +6861,10 @@ values, which you can think of as the x and y coordinates. We won't go
 into too much detail here; suffice to say, the methods Math.sin() and
 Math.cos() work together perfectly to create circular motion.
 
+```
 // Get the sine and cosine of the angle.
-
 let sin = Math.sin(angle); let cos = Math.cos(angle);
+```
 
 It's also worth noting that these are extremely useful methods in their
 own right, particularly for motion, due to the smooth, oscillating
@@ -6943,8 +6879,10 @@ on both the x and y axes) and re-map them so that they span a range of
 700. This gives us 150 and 850, that is, -350 and +350 either side of
 the center.
 
+```
 // Map the sine and cosine to the desired range. let cx = Gen.map(sin,
 -1, 1, 200, 800, false); let cy = Gen.map(cos, -1, 1, 200, 800, false);
+```
 
 <h2>Animating Our Circles</h2>
 
@@ -6952,15 +6890,13 @@ We can now try our hand at a basic animation. We'll start simple and
 move our circles outward from the center toward the cx and cy
 coordinates we defined earlier.
 
+```
 // Move from (500, 500) to (cx, cy).
-
 circle.animate({
-
-cx: \[500, cx, 500\], cy: \[500, cy, 500\],
-
+cx: [500, cx, 500], cy: [500, cy, 500],
 }, {
-
-duration: 10000, iterations: Infinity, easing: \[\'ease-in-out\'\] });
+duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
+```
 
 This gets things moving, but it's not an especially interesting
 sequence. Let's add more variety to it by setting an initial and target
@@ -6969,25 +6905,23 @@ the entire animation while we're at it. And just before we close out the
 loop, let's increment the hue relative to the number of circles to get a
 nice color distribution.
 
+```
 // Set the initial and target radii. let r1 = baseRadius \* 2 + (i \*
 10); let r2 = baseRadius / (i + 10);
 
 // Move from (500, 500) to (cx, cy), reduce the radius, rotate.
 circle.animate({ cx: \[500, cx, 500\], cy: \[500, cy, 500\], r: \[r1,
 r2, r1\], transform: \[\'rotate(0deg)\', \'rotate(360deg)\'\]
-
 }, {
-
 duration: 10000, iterations: Infinity, easing: \[\'ease-in-out\'\] });
-
 // Increment the hue.
-
 hue = (hue % 360) + (180 / numCircles);
+```
 
 There... That gets us much closer to achieving that hypnotic pull. See
 Figure 7-6 for a snapshot of this animation at about 15% progression.
 
-> ![](./images/media/image58.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image58.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-6.** A circular loop with the Web Animations API*
 
@@ -7017,9 +6951,7 @@ along. To quickly recap, we've covered the following:
 
 In the next and final full chapter, we'll focus on SVG filters.
 
-**CHAPTER 8**
-
-**Filter Effects**
+<h2 id="ch8">CHAPTER 8: Filter Effects</h2>
 
 In addition to all the vector functionality offered by SVG (as you'd
 expect from a format called Scalable Vector Graphics), SVG also provides
@@ -7071,9 +7003,7 @@ As you can see, the \<filter\> element must be nested inside a \<defs\>
 element; in common with gradients and patterns, it only gets rendered
 when referenced via a url link to its id. In the preceding case, a
 yellow circle calls the filter via its own filter attribute, and the
-result (shown in
-
-Figure 8-1) is a soft blur, controlled by a primitive named feGaussianBlur.
+result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feGaussianBlur.
 
 ![](./images/media/image59.jpg){width="3.15in" height="3.15in"}
 
@@ -7140,7 +7070,6 @@ effect to it. The result (or output) is then named blur.
 
 We'll go into some of these primitives in more detail later, but next
 we'll look at how to move from markup to scripting filters with SvJs.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>The SvJs createFilter( ) Method</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7255,7 +7184,6 @@ filter: 'url(#shadow)' });
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Coloring</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 We mentioned earlier some attributes called flood-colour and flood-
 opacity that can be used with the feDropShadow primitive. There's
 another primitive these can also be applied to and to which they
