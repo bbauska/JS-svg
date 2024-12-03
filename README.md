@@ -1,4 +1,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md for JS-SVG.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>JS - SVG (Scalable Vector Graphics)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Generative Art with JavaScript and SVG</h2>
@@ -23,11 +25,10 @@ focuses on, but is not limited to, the following areas and topics:
 
 Copyright © 2024 by David Matthew
 
-<p>Any source code or other supplementary material referenced by the author
-in this book is available to readers on the Github repository. For more
-detailed information, please visit 
-<a href="https://www.apress.com/gp/services/source-code">Source code (SVG)</a>.</p>
-
+<p>Any source code or other supplementary material referenced by the author in this book 
+is available to readers on the Github repository. For more detailed information, please 
+visit <a href="https://www.apress.com/gp/services/source-code" target="_blank" 
+rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="#toc">Table of Contents</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -176,7 +177,7 @@ detailed information, please visit
 	  <li id="ch4-6-d">4.6d Masking Our Content 115</li>
 	    </ol>
 		</li>
-	  <li id="ch4-7">4.7 Summary 118</li>
+	  <li id="ch4-7">Summary 118</li>
     </ol>
   </li>
   <li id="ch5">Chapter 5: The Need for Noise
@@ -337,7 +338,7 @@ detailed information, please visit
 </ol>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="intro">Introduction</h2>
+<h2 id="0-intro">Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A caveat before we begin: generative art, and creative coding more
 generally, can become an all-consuming addiction. "Just one more
@@ -366,36 +367,32 @@ extend beyond the field of art into those of design and web development
 
 InTroduCTIon
 
-**What You Should Know**
+<h2 id="ch0-know">What You Should Know</h2>
 
-As a reader, what should you know before tackling this book? It will no
-doubt be easier if you are comfortable with the core concepts of
-programming, like variables, functions, loops, and conditionals. These
-kinds of concepts carry over from language to language, differing mainly
-with respect to syntax, so if you come from a language other than
+As a reader, what should you know before tackling this book? It will no doubt be easier 
+if you are comfortable with the core concepts of programming, like variables, functions, 
+loops, and conditionals. These kinds of concepts carry over from language to language, 
+differing mainly with respect to syntax, so if you come from a language other than
 JavaScript, then that's completely fine.
 
-If you have no prior programming experience, we will be covering the
-concepts required in Chapter 2, but I should emphasize that this book is
-not intended to be an introduction to programming. The second chapter is
-best thought of as a primer, a jumping-off point for a deeper dive
-elsewhere. A short introductory course would really benefit you here.
-Personally I'd recommend the wonderful
-[freeCodeCamp.com](https://freeCodeCamp.com/), a site I've spent many
-hours using myself. It offers free interactive tutorials on the basics
-of HTML, CSS, and JavaScript, and much more besides.
+If you have no prior programming experience, we will be covering the concepts required in 
+Chapter 2, but I should emphasize that this book is not intended to be an introduction to 
+programming. The second chapter is best thought of as a primer, a jumping-off point for a 
+deeper dive elsewhere. A short introductory course would really benefit you here. Personally 
+I'd recommend the wonderful <a href="https://freeCodeCamp.com/" target="_blank" 
+rel="noreferrer noopener">freeCodeCamp.com</a>, a site I've spent many hours using myself. It 
+offers free interactive tutorials on the basics of HTML, CSS, and JavaScript, and much more besides.
 
-For those coming from another language, like Python, PHP, or C#, the
-second chapter may still be valuable, to be sure you're acquainted with
-the syntax and some of the idiosyncrasies of JavaScript.
+For those coming from another language, like Python, PHP, or C#, the second chapter may 
+still be valuable, to be sure you're acquainted with the syntax and some of the 
+idiosyncrasies of JavaScript.
 
-If you're already a practicing web developer, you could skip (or quickly
-skim) Chapter 2, depending on your level of experience. If you're
-unfamiliar with any of the techniques or syntax used in our opening
-example (which we'll end Chapter 1 with), I'd encourage you to give the
-second chapter a read, where they'll be fully explained. The field of
-web development is vast enough that what is bread and butter to one
-developer might be bleeding edge to another.
+If you're already a practicing web developer, you could skip (or quickly skim) Chapter 2, 
+depending on your level of experience. If you're unfamiliar with any of the techniques or 
+syntax used in our opening example (which we'll end Chapter 1 with), I'd encourage you to 
+give the second chapter a read, where they'll be fully explained. The field of web 
+development is vast enough that what is bread and butter to one developer might be bleeding 
+edge to another.
 
 **What You Will Learn**
 
@@ -422,7 +419,8 @@ All code examples are available on both GitHub and CodePen, so feel free
 to follow along whichever way you prefer. You can of course do both,
 work locally with a code editor but check out CodePen examples online
 for quick inspiration. For convenience, I'll organize and embed all
-CodePen examples at <a href="https://davidmatthew.ie/generative-art-javascript-svg">davidmatthew.ie/generative-art-javascript-svg</a>.
+CodePen examples at <a href="https://davidmatthew.ie/generative-art-javascript-svg" 
+target="_blank" rel="noreferrer noopener">davidmatthew.ie/generative-art-javascript-svg</a>.
 
 <h2>Techniques</h2>
 
@@ -2026,20 +2024,23 @@ myComputer\[processor\]; -\> \"Core i5\"
 
 We can also update and create new object properties via the same syntax.
 
+```
 // Updating an object\'s property. myComputer.inSleepMode = true;
-
 // Creating a new object property. myComputer.storage = \"512 GB SSD\";
+```
 
 If you take a look back at our first sketch again, you'll notice that I
 used an object to store some randomized settings that are later called
 in the sketch:
 
+```
 \...
 
 const randomised = { hue: random(0, 360), rotation: random(-180, 180),
 iterations: random(10, 100) }
 
 \... let rotation = randomised.rotation + (i \* 2);
+```
 
 This is a good way of getting around the issue of global variables I
 mentioned earlier. Using an object, we can make our settings globally
@@ -2060,22 +2061,22 @@ class based.
 To create an instance of a class, we use the new keyword, followed by
 the class name with brackets. This calls the class constructor.
 
+```
 // Defining a class.
-
 class StarShip {
-
 \...
-
 }
-
 // Instantiating (or constructing) a class. const prometheus = new
 StarShip();
+```
 
 Functions that are part of a class are known as methods. A class will
 usually have, at the very least, methods to get and set its properties.
 
+```
 prometheus.setDestination = \'Moon LV-223, Zeta 2 Reticuli\';
 prometheus.takeOff();
+```
 
 When we created our first generative SVG in Chapter 1, we began by
 creating an SvJs class instance and calling some of its methods.
@@ -2101,12 +2102,16 @@ We learned previously that null is essentially the absence of
 information. Isn't it strange then that null is also considered an
 object? We can confirm this by using the typeof check.
 
+```
 typeof null; -\> object
+```
 
 Despite this, null is not considered an instance *of* an object. We can
 confirm this by using the instanceof check.
 
+```
 null instanceof Object; -\> false
+```
 
 NaN (not a number) also presents us with some quantum-level weirdness
 that would have Schrodinger's cat perk up its ears. It is apparently not
@@ -2144,21 +2149,21 @@ type coercion). That's why we're always better off using the strict
 equality operator in JavaScript, something that doesn't exist in many
 other languages.
 
+```
 1 === \"1\";
-
 -\> false
+```
 
 This kind of casting also occurs when we try to add numbers to strings,
 but it works in the opposite direction; the numbers in this case are
 converted to strings.
 
-1 + \"2\";
-
--\> \"12\"
-
-\"2\" + 3;
-
--\> \"23\"
+```
+1 + "2";
+-> "12"
+"2" + 3;
+-> "23"
+```
 
 To avoid the pitfalls of this kind of implicit type coercion, functions
 like parseInt(), parseFloat(), and toString() can be used to re-cast or
@@ -2170,16 +2175,19 @@ I mentioned at the start of the chapter that you can write JavaScript
 without semicolons if you wish, but that in some edge cases, it can
 result in unexpected behavior. Here's one such edge case.
 
+```
 return 1 + 2
-
--\> undefined
+-> undefined
+```
 
 Spacing doesn't matter in JavaScript, so what is going on here? Why
 isn't the expression returning 3? Well, here the Automatic Semicolon
 Insertion feature is being invoked under the hood. The actual code being
 evaluated is this:
 
+```
 return; 1 + 2;
+```
 
 To avoid this, either familiarize yourself with such edge cases or just
 use semicolons.
@@ -2214,9 +2222,7 @@ starting point and you've still kept up, well done!
 In the next chapter, we'll explore the main functionality of the SvJs
 library and get comfortable creating basic shapes, lines, and colors.
 
-**CHAPTER 3**
-
-**All About SVG**
+<h2 id="ch3">CHAPTER 3: All About SVG</h2>
 
 With the basics of JavaScript under your belt, you're now ready for
 SvJs, which you can think of as your generative brush and palette.
@@ -2236,11 +2242,11 @@ fragment as it's also known, is that SVG element whose parent element
 (if it has one) is not in the SVG namespace. An example would be an SVG
 attached to an HTML DOM node.
 
-\<div id=\"container\"\>
-
-\<svg\>\</svg\>
-
-\</div\>
+```
+<div id="container">
+<svg></svg>
+</div>
+```
 
 This is worth mentioning only because SVGs can contain other SVGs; in
 these cases, only one of those can be considered the parent SVG element.
@@ -2255,27 +2261,36 @@ Let's reopen the JavaScript template file we set up in Chapter 1 (it
 should be located in sketches/00-template/sketch.js) and add the
 following line to it:
 
-// Parent SVG. const svg = new SvJs();
+```
+// Parent SVG. 
+const svg = new SvJs();
+```
 
 The new SvJs() constructor, if called without any arguments, creates an
 SVG element. It can also be used to create any other SVG element by
 passing in the name of that element as a string.
 
-// Using the SvJs constructor to create a circle element. const circle =
-new SvJs(\'circle\');
+```
+// Using the SvJs constructor to create a circle element. 
+const circle = new SvJs('circle');
+```
 
 To add our parent SVG element to our web page, we use the SvJs addTo()
 method. In this case, we'll pass in the \<div\> with the id of container
 that we set up earlier in our HTML (see Chapter 1). Add the following to
 the template sketch:
 
-const container = document.getElementById(\'container\'); svg.
-addTo(container);
+```
+const container = document.getElementById('container'); 
+svg.addTo(container);
+```
 
 Most functions in SvJs are chainable, meaning you can chain them
 together using dot notation, like so:
 
+```
 methodOne().methodTwo();
+```
 
 The new SvJs() constructor method is no exception, so our new parent SVG
 element can actually be immediately attached to a DOM element once
@@ -2284,9 +2299,10 @@ method chain (think of the dot as the link). And if we pass the
 getElementById() DOM method as an argument instead of assigning it to a
 variable, we can condense our code down to a single line:
 
-// Parent SVG. const svg = new SvJs().addTo(document.
-
-getElementById(\'container\'));
+```
+// Parent SVG. 
+const svg = new SvJs().addTo(document.getElementById('container'));
+```
 
 Concision doesn't always beat clarity however, so if this one-liner is a
 little too compressed for your liking, keep your template code as is, no
@@ -2314,8 +2330,10 @@ ternary operator that we covered in the previous chapter is particularly
 useful for these kinds of checks. Include it as follows in the template
 to initialize the svgSize variable:
 
-// Viewport size (1:1 aspect ratio). const svgSize = window.innerWidth
-\> window.innerHeight ? window.innerHeight : window.innerWidth;
+```
+// Viewport size (1:1 aspect ratio). 
+const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+```
 
 The viewBox is another important top-level SVG attribute. It is related
 to the viewport but has more powerful (and more complex) capabilities.
@@ -2532,50 +2550,81 @@ sketch is a Josef Albers--inspired color illusion and shows that with
 just plain rectangles, it's possible to create a somewhat interesting
 composition (illustrated in Figure 3-1).
 
-import { SvJs } from \'../../node_modules/svjs/src/index.js\';
+```
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Viewport size (1:1 aspect ratio). const svgSize = window.innerWidth
-\> window.innerHeight ? window.innerHeight : window.innerWidth;
+// Viewport size (1:1 aspect ratio). 
+const svgSize = window.innerWidth > window.innerHeight 
+  ? window.innerHeight : window.innerWidth;
 
-// Parent SVG. const svg = new SvJs().addTo(document.
-
-getElementById(\'container\')); svg.set({ width: svgSize, height:
-svgSize, viewBox: \'0 0 1000 1000\' });
+// Parent SVG. 
+const svg = new SvJs().addTo(document.getElementById('container')); 
+svg.set({ 
+  width: svgSize, 
+  height: svgSize, 
+  viewBox: '0 0 1000 1000' 
+});
 
 // Background.
+svg.create('rect').set({ 
+  x: 0, 
+  y: 0, 
+  width: 1000, 
+  height: 1000, 
+  fill: '#181818' 
+});
 
-svg.create(\'rect\').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-\'#181818\' });
-
-// Main orange square. svg.create(\'rect\').set({ x: 150, y: 200, width:
-700, height: 600, rx: 15, fill:
-
-\'#e56411\', stroke: \'#fff\', stroke_width: 30, paint_order: \'stroke\'
+// Main orange square. 
+svg.create('rect').set({ 
+  x: 150, 
+  y: 200, 
+  width: 700, 
+  height: 600, 
+  rx: 15, 
+  fill: '#e56411', 
+  stroke: '#fff', 
+  stroke_width: 30, 
+  paint_order: 'stroke'
 });
 
 // Blue rectangle.
-
-svg.create(\'rect\').set({ x: 650, y: 200, width: 200, height: 600, rx:
-15, fill: \'#69969f\'
-
+svg.create('rect').set({ 
+  x: 650, 
+  y: 200, 
+  width: 200, 
+  height: 600, 
+  rx: 15, 
+  fill: '#69969f'
 });
 
-// Smaller orange rectangle. svg.create(\'rect\').set({ x: 200, y: 425,
-width: 600, height: 150, rx: 20, fill: \'#b84b08\'
-
+// Smaller orange rectangle. 
+svg.create('rect').set({ 
+  x: 200, 
+  y: 425,
+  width: 600, 
+  height: 150, 
+  rx: 20, 
+  fill: '#b84b08'
 });
 
-// Yellow rectangle. svg.create(\'rect\').set({ x: 325, y: 200, width:
-175, height: 600, fill: \'#fed322\'
-
+// Yellow rectangle. 
+svg.create('rect').set({ 
+  x: 325, 
+  y: 200, 
+  width: 175, 
+  height: 600, 
+  fill: '#fed322'
 });
 
 // Purple rectangle.
+svg.create('rect').set({ 
+  x: 500, 
+  y: 200, 
+  width: 175, height: 600,
+  fill: '#49283c\' });
+```
 
-svg.create(\'rect\').set({ x: 500, y: 200, width: 175, height: 600,
-fill: \'#49283c\' });
-
-> ![](./images/media/image11.jpg){width="3.15in" height="3.15in"}
+> ![](./images/image011.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 3-1.** A Josef Albers--inspired color illusion*
 
@@ -2605,8 +2654,13 @@ The circle is the simplest (and arguably the most perfect) of all
 shapes. We define the position of its center via cx and cy attributes
 and its radius via the r attribute.
 
-// A simple circle example. svg.create(\'circle\').set({ cx: 50, cy: 50,
-r: 25 });
+```
+// A simple circle example. 
+svg.create('circle').set({ 
+  cx: 50, 
+  cy: 50,
+  r: 25 });
+```
 
 In the next sketch, let's shift things up a gear with a for loop. We're
 going to play with the effect of layering semitransparent circles of
@@ -2617,30 +2671,49 @@ maintain a modicum of organization).
 
 Beneath where we defined our background, include the following code:
 
-// Circle overlay loop. for (let i = 1; i \<= 6; i += 1) {
+```
+// Circle overlay loop. 
+for (let i = 1; 
+i <= 6; i += 1) {
 
-// Vary the radius, and the two vertical centre points.
+  // Vary the radius, and the two vertical centre points.
+  let r = 50 * i; 
+  let cx = 500; 
+  let cy1 = 800 - r; 
+  let cy2 = 200 + r; 
+  
+  // Create the blueish circle set.
+  svg.create('circle').set({ 
+    cx: cx, 
+	cy: cy1, 
+	r: r, 
+	fill: '#99eeff',
+    fill_opacity: 0.1 
+  });
 
-let r = 50 \* i; let cx = 500; let cy1 = 800 - r; let cy2 = 200 + r; //
-Create the blueish circle set.
-
-svg.create(\'circle\').set({ cx: cx, cy: cy1, r: r, fill: \'#99eeff\',
-fill_opacity: 0.1 });
-
-// Create the greenish circle set.
-
-svg.create(\'circle\').set({ cx: cx, cy: cy2, r: r, fill: \'#aaffee\',
-fill_opacity: 0.1
-
-});
-
+  // Create the greenish circle set.
+  svg.create('circle').set({ 
+    cx: cx, 
+	cy: cy2, 
+	r: r, 
+	fill: '#aaffee', 
+	fill_opacity: 0.1
+  });
 }
 
-// Create a subtle outline. svg.create(\'circle\').set({ cx: 500, cy:
-500, r: 320, fill: \'none\', stroke: \'#aaffee\', stroke_width: 2,
-stroke_opacity: 0.1 });
+// Create a subtle outline. 
+svg.create('circle').set({ 
+  cx: 500, 
+  cy: 500, 
+  r: 320, 
+  fill: 'none', 
+  stroke: '#aaffee', 
+  stroke_width: 2,
+  stroke_opacity: 0.1 
+});
+```
 
-> ![](./images/media/image12.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image12.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 3-2.** The result of our circle overlay loop*
 
@@ -2654,12 +2727,17 @@ Ellipses are similar to circles but offer two radii attributes -- rx and
 ry -- instead of the single r. In the first generative sketch from
 Chapter 1, we saw the ellipse in action. Here's the relevant snippet:
 
-// Create our ellipse. let ellipse = svg.create(\'ellipse\');
-ellipse.set({ cx: center, cy: center, rx: radiusX, ry: radiusY,
-
-\...
-
+```
+// Create our ellipse. 
+let ellipse = svg.create('ellipse');
+ellipse.set({ 
+  cx: center, 
+  cy: center, 
+  rx: radiusX, 
+  ry: radiusY,
+  ...
 });
+```
 
 <h2>Lines, Polylines, and Polygons</h2>
 
@@ -2668,12 +2746,16 @@ you'd use the line element. It requires two sets of coordinates: x1 and
 y1 to define the initial position and x2 and y2 to define the endpoint.
 It also requires the stroke to be defined (as it is a line after all).
 
+```
 // The humble line.
-
-svg.create(\'line\').set({ x1: 10, y1: 10, x2: 90, y2: 90, stroke:
-\'#333\'
-
+svg.create('line').set({ 
+  x1: 10, 
+  y1: 10, 
+  x2: 90, 
+  y2: 90, 
+  stroke: '#333'
 });
+```
 
 This is a good opportunity to showcase some other stroke-related
 attributes that can alter the appearance of a line. The first is stroke-
@@ -2684,7 +2766,7 @@ of square will close it off with -- you guessed it -- a square. Figure
 3-3 shows the different values, with vertical lines on either side to
 delineate where the values come into effect.
 
-> ![](./images/media/image13.jpg){width="3.15in" height="1.575in"}
+![](./images/media/image13.jpg){width="3.15in" height="1.575in"}
 
 ***Figure 3-3.** Values of butt, round, and square (top to bottom)*
 
@@ -2704,11 +2786,11 @@ creating a repeating pattern.
 There isn't a strict upper limit on the amount of values you provide, so
 there is scope to get quite creative here.
 
+```
 // Setting an irregular stroke-dasharray.
-
-svg.create(\'line\').set({
-
-\... stroke_dasharray: 10 30 60 });
+svg.create('line').set({
+  ... stroke_dasharray: 10 30 60 });
+```
 
 In Figure 3-4, from top to bottom, we see the following stroke-
 dasharray values (all relative to a viewBox width of 1000):
@@ -2721,7 +2803,7 @@ dasharray values (all relative to a viewBox width of 1000):
 
 -   50 100 200 100
 
-> ![](./images/media/image14.jpg){width="3.15in" height="1.575in"}
+![](./images/media/image14.jpg){width="3.15in" height="1.575in"}
 
 ***Figure 3-4.** Various stroke-dasharray values*
 
@@ -2732,21 +2814,24 @@ points needs to be converted to a string before being set as the
 attribute value. I show how to do this in the following example using
 the join() array method. The result is shown in Figure 3-5.
 
-// An array of points. let pointsArray = \[
-
-100, 250, 250, 250, 285, 175, 325, 325, 390, 50, 450, 400, 500, 200,
-515, 250, 900, 250
-
-\];
+```
+// An array of points. let pointsArray = [
+  100, 250, 250, 250, 285, 175, 325, 325, 390, 50, 450, 400, 500, 200,
+  515, 250, 900, 250
+];
 
 // A polyline element, mimicking a heartbeat.
-svg.create(\'polyline\').set({ points: pointsArray.join(\' \'), stroke:
-\'#6df876\', fill: \'none\', stroke_width: 10, stroke_linecap:
-\'round\', stroke_linejoin: \'round\'
-
+svg.create('polyline').set({ 
+  points: pointsArray.join(' '), 
+  stroke: '#6df876', 
+  fill: 'none', 
+  stroke_width: 10, 
+  stroke_linecap: 'round', 
+  stroke_linejoin: 'round'
 });
+```
 
-> ![](./images/media/image15.jpg){width="3.15in" height="1.575in"}
+![](./images/media/image15.jpg){width="3.15in" height="1.575in"}
 
 ***Figure 3-5.** A polyline element in action*
 
@@ -2758,7 +2843,7 @@ closed shapes, that is, where the start and end points connect. In
 Figure 3-6, we see an arrangement of polygons that might be familiar to
 gamers of a particular platform.
 
-> ![](./images/media/image16.jpg){width="3.15in" height="1.575in"}
+![](./images/media/image16.jpg){width="3.15in" height="1.575in"}
 
 ***Figure 3-6.** Polygons for the players*
 
@@ -2777,17 +2862,24 @@ a minimum, we need to define the x and y coordinates of where we want it
 to appear (relative to the bottom left corner of the text's bounding
 box), its color, and its content.
 
-// Creating text. let text = svg.create(\'text\').set({ x: 20, y: 30,
-fill: \'white\' });
+```
+// Creating text. 
+let text = svg.create('text').set({ 
+  x: 20, 
+  y: 30,
+  fill: 'white' 
+});
+```
 
 So how do we define the textual content if the content isn't itself an
 attribute? It's not a child node either, so creating a string and
 appending it wouldn't work. Instead, what we need to do is use the SvJs
 content() method.
 
+```
 // Using the content() method to insert text.
-
-text.content(\'I have an unhealthy obsession with SVG.\');
+text.content('I have an unhealthy obsession with SVG.');
+```
 
 What if we wanted to get a bit more elaborate with our text and style
 them with some web fonts? There are a few ways we could do this, but
@@ -2805,9 +2897,10 @@ so switch over to the index.html file and add the following line to the
 \<head\> section. This calls in a Google font called Mynerve, which has
 the handwritten look we're going for.
 
-\<link href=\"https://fonts.googleapis.com/css2?family=Mynerve
-
-&display=swap\" rel=\"stylesheet\"\>
+```
+<link href="https://fonts.googleapis.com/css2?family=Mynerve
+&display=swap" rel="stylesheet">
+```
 
 If Bart had the option of running a for loop to minimize the repetitive
 nature of his punishment, I'm sure he would have taken it. Let's do this
@@ -2825,20 +2918,25 @@ viewport.
 
 > The output is shown in Figure 3-7.
 
-// The line to use for the gag. let line = \'\"Bart Bucks\" are not
-legal tender.\'; line = line.toUpperCase();
+```
+// The line to use for the gag. 
+let line = '"Bart Bucks" are not legal tender.'; 
+  line = line.toUpperCase();
+  // Run a loop, creating 12 (960 / 80) lines of text.
+  for (let i = 0; i < 960; i += 80) { 
+    let text = svg.create('text');
+    text.content(line); 
+	text.set({ 
+	  x: 20, 
+	  y: 80 + i, 
+	  fill: '#fff',
+      font_size: 52, 
+	  font_family: 'Mynerve'
+    });
+  }
+```
 
-// Run a loop, creating 12 (960 / 80) lines of text.
-
-for (let i = 0; i \< 960; i += 80) { let text = svg.create(\'text\');
-text.content(line); text.set({ x: 20, y: 80 + i, fill: \'#fff\',
-font_size: 52, font_family: \'Mynerve\'
-
-});
-
-}
-
-> ![](./images/media/image17.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image17.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 3-7.** The "Bart Bucks" chalkboard gag*
 
@@ -4679,11 +4777,10 @@ chapter:
 
 In the next chapter, we're going to cover a fundamental part of the SVG
 spec: the very powerful path element.
-
-**CHAPTER 6**
-
-**The All-Powerful Path**
-
+<!-- page 137 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6">CHAPTER 6: The All-Powerful Path</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Paths are perhaps the most important and most powerful part of the SVG
 spec. Most SVG files, be they simple icons or complex artworks, consist
 primarily of path data. If, for example, you draw anything more advanced
@@ -4697,8 +4794,9 @@ which are sufficiently numerous to need their own subsections. Paths can
 get complicated quickly, so we'll also be covering some SvJs methods to
 make our lives easier.
 
-**The Path Element**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-1">6.1 The Path Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's simple to set up a path; we just call the SvJs create() method as
 we would with most other elements: let path = svg.create(\'path\');
 
@@ -6301,23 +6399,30 @@ all of them bouncing off the frame borders as they encounter them. In
 the following, we'll start by initializing the circles and filling up an
 array as we've done in our previous examples.
 
-// Randomise the number of circles and set up an empty array. let
-numCircles = Math.floor(frameSize / 20); let circles = \[\];
+```
+// Randomise the number of circles and set up an empty array. 
+let numCircles = Math.floor(frameSize / 20); 
+let circles = [];
 
-// Populate this array. for (let i = 0; i \< numCircles; i += 1) {
+// Populate this array. 
+for (let i = 0; 
+  i < numCircles; i += 1) {
 
-// Randomise the radius relative to the frame size.
+    // Randomise the radius relative to the frame size.
+    let radius = Gen.random(frameSize / 100, frameSize / 25);
 
-let radius = Gen.random(frameSize / 100, frameSize / 25);
-
-// Apply the above variables and randomise the hue.
-
-let circle = svg.create(\'circle\').set({ cx: 500, cy: 500, r: radius,
-fill: \`hsl(\${Gen.random(0, 360)} 80% 80% / 0.5)\` });
-
-// Store the circle in the array.
-
-circles.push(circle); }
+    // Apply the above variables and randomise the hue.
+    let circle = svg.create('circle').set({ 
+	  cx: 500, 
+	  cy: 500, 
+	  r: radius,
+      fill: `hsl(${Gen.random(0, 360)} 80% 80% / 0.5)` 
+	});
+	
+    // Store the circle in the array.
+    circles.push(circle); 
+  }
+```
 
 We have our circles all clustered in the center now, but they're not yet
 primed for movement. We have a way to track their position (via the cx
@@ -6345,18 +6450,21 @@ the attributes we'll set will be simply vx and vy, and we'll randomize
 their polarity using Gen.chance() (so they'll have a 50/50 chance of
 being either positive or negative). Update the relevant code as follows:
 
+```
 // Create variables to control the speed on the x and y axes.
-
-let velocityX = Gen.random(0.1, 5, true); let velocityY =
-Gen.random(0.1, 5, true);
+let velocityX = Gen.random(0.1, 5, true); 
+let velocityY = Gen.random(0.1, 5, true);
 
 // Apply the above variables and randomise the hue.
-
-let circle = svg.create(\'circle\').set({ cx: 500, cy: 500, r: radius,
-vx: Gen.chance() ? velocityX : -velocityX, vy: Gen.chance() ? velocityY
-: -velocityY, fill: \`hsl(\${Gen.random(0, 360)} 80% 80% / 0.5)\`
-
+let circle = svg.create(\'circle\').set({ 
+  cx: 500, 
+  cy: 500, 
+  r: radius,
+  vx: Gen.chance() ? velocityX : -velocityX, 
+  vy: Gen.chance() ? velocityY : -velocityY, 
+  fill: `hsl(${Gen.random(0, 360)} 80% 80% / 0.5)`
 });
+```
 
 <h2>Frame-by-Frame Calculations</h2>
 
@@ -6390,42 +6498,44 @@ circle:
 
 -   Finally, we apply the updated variables to the circle element.
 
-> Here's the concrete coded version:
+<h4> Here's the concrete coded version:</h4>
 
+```
 // Get the lower and upper bounds (the frame edges) for use in the loop.
+let lowerBound = Number(frame.get('x'));
+let upperBound = lowerBound + frameSize;
 
-let lowerBound = Number(frame.get(\'x\')); let upperBound = lowerBound +
-frameSize;
+// The animation loop. 
+function animate() {
 
-// The animation loop. function animate() {
+  // Check collisions for each circle. 
+  circles.forEach((circle) => {
 
-// Check collisions for each circle. circles.forEach((circle) =\> {
+    // Retrieve the position and velocity.
+    let cx = Number(circle.get('cx')); 
+	let cy = Number(circle.get('cy')); 
+	let vx = Number(circle.get('vx')); 
+	let vy = Number(circle.get('vy'));
 
-// Retrieve the position and velocity.
+    // Check for collisions, and if found reverse the polarity.
+    if (cx <= lowerBound || cx >= upperBound) vx = -vx; 
+	if (cy <= lowerBound || cy >= upperBound) vy = -vy;
 
-let cx = Number(circle.get(\'cx\')); let cy =
-Number(circle.get(\'cy\')); let vx = Number(circle.get(\'vx\')); let vy
-= Number(circle.get(\'vy\'));
+    // Update the position.
+    cx += vx; 
+	cy += vy;
 
-// Check for collisions, and if found reverse the polarity.
+    // Set the new values. 
+	circle.set({ cx: cx, cy: cy, vx: vx, vy: vy });
+  });
 
-if (cx \<= lowerBound \|\| cx \>= upperBound) vx = -vx; if (cy \<=
-lowerBound \|\| cy \>= upperBound) vy = -vy;
-
-// Update the position.
-
-cx += vx; cy += vy;
-
-// Set the new values. circle.set({ cx: cx, cy: cy, vx: vx, vy: vy });
-});
-
-// The recursive bit.
-
-requestAnimationFrame(animate); }
+  // The recursive bit.
+  requestAnimationFrame(animate); 
+}
 
 // Call the animation.
-
 animate();
+```
 
 If you watch the animation at this point, you'll notice that the circles
 do indeed rebound within the vicinity of the frame edge, but it's far
@@ -6441,27 +6551,31 @@ can be captured outside the loop and used later inside it: the frame
 edge and frame inset. Delete the lower bound and upper bound variables
 and replace them with the following:
 
+```
 // Get the frame edge point (x or y) and the inset.
-
-let frameEdge = Number(frame.get(\'x\'));
-
-let frameInset = Number(frame.get(\'stroke-width\')) / 2;
+let frameEdge = Number(frame.get('x'));
+let frameInset = Number(frame.get('stroke-width')) / 2;
+```
 
 Now, inside the loop, we can work out the proper lower bound and upper
 bound values.
 
-// The animation loop. function animate() {
+```
+// The animation loop. 
+function animate() {
 
-// Check collisions for each circle. circles.forEach((circle) =\> {
+  // Check collisions for each circle. 
+  circles.forEach((circle) => {
 
-// Calculate the lower and upper bounds for each circle. let radius =
-Number(circle.get(\'r\')); let lowerBound = frameEdge + radius +
-frameInset; let upperBound = frameEdge + frameSize - radius -
-frameInset;
-
-// \... remainder of code is unchanged.
-
+    // Calculate the lower and upper bounds for each circle. 
+	let radius = Number(circle.get('r')); 
+	let lowerBound = frameEdge + radius + frameInset; 
+	let upperBound = frameEdge + frameSize - radius -
+    frameInset;
+	
+    // ... remainder of code is unchanged.
 }
+```
 
 This should result in accurate collision detection; Figure 7-3 shows a
 freezeframe of this in action. There are a lot of ways you could take
@@ -6490,10 +6604,12 @@ kinds of animations hold high hypnotic potential. We'll start in the
 usual place below our background, initializing some randomized
 variables.
 
+```
 // Randomise some variables.
-
-let numCircles = Gen.random(20, 35); let baseRadius = Gen.random(5, 25,
-true); let hue = Gen.random(0, 360);
+let numCircles = Gen.random(20, 35); 
+let baseRadius = Gen.random(5, 25, true); 
+let hue = Gen.random(0, 360);
+```
 
 We'll use numCircles to control how many times our loop runs and also in
 the calculations needed to distribute these circles. The baseRadius and
@@ -6501,14 +6617,19 @@ hue we'll use as starter values. For now, create the loop and the
 circles as follows, omitting the cx and cy attributes (which we'll work
 out in the next section).
 
-// Set up the loop. for (let i = 0; i \< numCircles; i += 1) {
+```
+// Set up the loop. 
+for (let i = 0; i < numCircles; i += 1) {
 
-// Create the circle, but don\'t set the position or radius yet. let
-circle = svg.create(\'circle\').set({ r: baseRadius, fill: \'none\',
-stroke: \`hsl(\${hue} 80% 80% / 0.75)\`, transform_origin: \'500 500\'
-});
-
+  // Create the circle, but don't set the position or radius yet. 
+  let circle = svg.create('circle').set({ 
+    r: baseRadius, 
+	fill: 'none',
+    stroke: `hsl(${hue} 80% 80% / 0.75)`, 
+	transform_origin: '500 500'
+  });
 }
+```
 
 <h2>Slices of PI</h2>
 
@@ -6521,7 +6642,7 @@ the ratio of a circle's circumference (the length along its perimeter)
 to its diameter (double the radius). Figure 7-4 illustrates these
 values.
 
-> ![](./images/media/image56.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image56.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-4.** The circumference, diameter, and radius of a circle*
 
