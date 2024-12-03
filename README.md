@@ -33,7 +33,7 @@ detailed information, please visit
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2> -->
 
-<ol>
+<ol style="list-style-type: decimal-leading-zero">
   <li id="#ch1">Chapter 1: The Beginner's Path
     <ol>
 	  <li id="#ch1-1">Why JavaScript and SvJs?
