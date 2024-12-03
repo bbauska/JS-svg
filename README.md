@@ -115,8 +115,8 @@ detailed information, please visit
 	  <li id="ch2-11">Summary 53</li>
     </ol>
   </li>
-  <li id="ch3">Chapter 3: All About SVG 55
-    <ol>
+  <li id="ch3">Chapter 3: All About SVG
+    <ol type="1">
 	  <li id="ch3-1">The Parent SVG Element 55</li>
 	  <li id="ch3-2">The Viewport and ViewBox 57</li>
 	  <li id="ch3-3">Setting and Getting Values 59</li>
@@ -138,7 +138,7 @@ detailed information, please visit
 	  </ol>
     </li>
     <li id="ch4">Chapter 4: Randomness and Regularity
-	  <ol>
+    <ol type="1">
 	  <li id="ch4-1">Analogue and Digital Randomness
 	    <ol>
 	      <li id="ch4-1-a">4.1a The SvJs Genrandom( ) Function 87</li>
@@ -180,7 +180,7 @@ detailed information, please visit
     </ol>
   </li>
   <li id="ch5">Chapter 5: The Need for Noise
-    <ol>
+    <ol type="1">
 	  <li id="ch5-1">5.1 Random Limits 119</li>
 	  <li id="ch5-2">5.2 Making Noise
 	    <ol>
@@ -205,7 +205,7 @@ detailed information, please visit
     </ol>
   </li>
   <li id="ch6">Chapter 6: The All-Powerful Path
-    <ol>
+    <ol type="1">
 	  <li id="ch6-1">6.1 The Path Element
 	    <ol>
 	  <li id="ch6-1-a">6.1a D for Data 138</li>
@@ -245,64 +245,93 @@ detailed information, please visit
 	  <li id="ch6-7">6.7 Summary 165</li>
     </ol>
   </li>
-  <li id="ch7">Chapter 7: Motion and Interactivity 167
-    <ol>
-	  <li id="ch7-1">7.1 Event Listeners 167</li>
-	  <li id="ch7-2">7.2 Event Types 168</li>
-	  <li id="ch7-3">7.3 Event Parameters 169</li>
-	  <li id="ch7-4">7.4 Triggering the SvJs Save Method 170</li>
-	  <li id="ch7-5">7.5 Creative Cursor Tracking 171</li>
-	  <li id="ch7-6">7.6 The SvJs trackCursor( ) Method 171</li>
-	  <li id="ch7-7">7.7 Interactive Ellipses 172</li>
-	  <li id="ch7-8">7.8 Programming Motion 174</li>
-	  <li id="ch7-9">7.9 CSS Keyframes 177</li>
-	  <li id="ch7-10">7.10 The SMIL Way 179</li>
-	  <li id="ch7-11">7.11 The Web Animations API 181</li>
-	  <li id="ch7-12">7.12 The requestAnimationFrame( ) Method 184</li>
-	  <li id="ch7-13">7.13 Methods Summarized 188</li>
-	  <li id="ch7-14">7.14 Collision Detection 190</li>
-	  <li id="ch7-15">7.15 Setting Boundaries 190</li>
-	  <li id="ch7-16">7.16 Initializing and Extending Our Shapes 191</li>
-	  <li id="ch7-17">7.17 Frame-by-Frame Calculations 193</li>
-	  <li id="ch7-18">7.18 Circularity 196</li>
-	  <li id="ch7-19">7.19 Slices of PI 198</li>
-	  <li id="ch7-20">7.20 Sine and Cosine 200</li>
-	  <li id="ch7-21">7.21 Animating Our Circles 200</li>
-	  <li id="ch7-22">7.22 Summary 202</li>
+  <li id="ch7">Chapter 7: Motion and Interactivity
+    <ol type="1">
+	  <li id="ch7-1">7.1 Event Listeners
+	    <ol>
+	  <li id="ch7-1-a">7.1a Event Types 168</li>
+	  <li id="ch7-1-b">7.1b Event Parameters 169</li>
+	  <li id="ch7-1-c">7.1c Triggering the SvJs Save Method 170</li>
+	    </ol>
+		</li>
+	  <li id="ch7-2">7.2 Creative Cursor Tracking
+	    <ol>
+	  <li id="ch7-2-a">7.2a The SvJs trackCursor( ) Method 171</li>
+	  <li id="ch7-2-b">7.2b Interactive Ellipses 172</li>
+	    </ol>
+		</li>
+	  <li id="ch7-3">7.3 Programming Motion
+	    <ol>
+	  <li id="ch7-3-a">7.3a CSS Keyframes 177</li>
+	  <li id="ch7-3-b">7.3b The SMIL Way 179</li>
+	  <li id="ch7-3-c">7.3c The Web Animations API 181</li>
+	  <li id="ch7-3-d">7.3d The requestAnimationFrame( ) Method 184</li>
+	  <li id="ch7-3-e">7.3e Methods Summarized 188</li>
+	    </ol>
+		</li>
+	  <li id="ch7-4">7.4 Collision Detection
+	    <ol>
+	  <li id="ch7-4-a">7.4a Setting Boundaries 190</li>
+	  <li id="ch7-4-b">7.4b Initializing and Extending Our Shapes 191</li>
+	  <li id="ch7-4-c">7.4c Frame-by-Frame Calculations 193</li>
+	    </ol>
+		</li>
+	  <li id="ch7-5">7.5 Circularity
+	    <ol>
+	  <li id="ch7-5-a">7.5a Slices of PI 198</li>
+	  <li id="ch7-5-b">7.5b Sine and Cosine 200</li>
+	  <li id="ch7-5-c">7.5c Animating Our Circles 200</li>
+	    </ol>
+		</li>
+	  <li id="ch7-6">7.6 Summary 202</li>
     </ol>
   </li>
-  <li id="ch8">Chapter 8: Filter Effects 205
-    <ol>
-	  <li id="ch8-1">8.1 Filter Fundamentals 205</li>
-	  <li id="ch8-2">8.2 The Ins and Outs 207</li>
-	  <li id="ch8-3">8.3 The SvJs createFilter( ) Method 209</li>
-	  <li id="ch8-4">8.4 The Filter Region 210</li>
-	  <li id="ch8-5">8.5 Filter Effects 101 212</li>
-	  <li id="ch8-6">8.6 Shadows 212</li>
-	  <li id="ch8-7">8.7 Coloring 213</li>
-	  <li id="ch8-8">8.8 >Blending 216</li>
-	  <li id="ch8-9">8.9 Compositing 217</li>
-	  <li id="ch8-10">8.10 Noise and Distortion 221</li>
-	  <li id="ch8-11">8.11 Turbulence 221</li>
-	  <li id="ch8-12">8.12 Displacement 223</li>
-	  <li id="ch8-13">8.13 Creating a Cosmic Bubble 224</li>
-	  <li id="ch8-14">8.14 Lighting and Texture 228</li>
-	  <li id="ch8-15">8.15 Diffuse and Specular Lighting 230</li>
-	  <li id="ch8-16">8.16 Light Sources 231</li>
-	  <li id="ch8-17">8.17 Simulating Textures 232</li>
-	  <li id="ch8-18">8.18 Generative Textures 235</li>
-	  <li id="ch8-19">8.19 Summary 240</li>
+  <li id="ch8">Chapter 8: Filter Effects
+    <ol type="1">
+	  <li id="ch8-1">8.1 Filter Fundamentals
+	    <ol>
+	  <li id="ch8-1-a">8.1a The Ins and Outs 207</li>
+	  <li id="ch8-1-b">8.1b The SvJs createFilter( ) Method 209</li>
+	  <li id="ch8-1-c">8.1c The Filter Region 210</li>
+	    </ol>
+		</li>
+	  <li id="ch8-2">8.2 Filter Effects 101
+	    <ol>
+	  <li id="ch8-2-a">8.2a Shadows 212</li>
+	  <li id="ch8-2-b">8.2b Coloring 213</li>
+	  <li id="ch8-2-c">8.2c Blending 216</li>
+	  <li id="ch8-2-d">8.2d Compositing 217</li>
+	    </ol>
+		</li>
+	  <li id="ch8-3">8.3 Noise and Distortion
+	    <ol>
+	  <li id="ch8-3-a">8.3a Turbulence 221</li>
+	  <li id="ch8-3-b">8.3b Displacement 223</li>
+	  <li id="ch8-3-c">8.3c Creating a Cosmic Bubble 224</li>
+	    </ol>
+		</li>
+	  <li id="ch8-4">8.4 Lighting and Texture
+	    <ol>
+	  <li id="ch8-4-a">8.4a Diffuse and Specular Lighting 230</li>
+	  <li id="ch8-4-b">8.4b Light Sources 231</li>
+	  <li id="ch8-4-c">8.4c Simulating Textures 232</li>
+	  <li id="ch8-4-d">8.4d Generative Textures 235</li>
+	    </ol>
+		</li>
+	  <li id="ch8-5">8.19 Summary 240</li>
     </ol>
   </li>
   <li id="#ch9">Chapter 9: The Generative Way
-    <ol>
+    <ol type="1">
 	  <li id="ch9-1">The Journey So Far 243</li>
-	  <li id="ch9-2">The Voyage Forward 244</li>
-	  <li id="ch9-3">Trigonometry 244</li>
-	  <li id="ch9-4">Fractals 246</li>
-	  <li id="ch9-5">Systems Simulations 249</li>
-	  <li id="ch9-6">Closing Comments 251</li>
-	  <li id="ch9-7">Index 253</li>
+	  <li id="ch9-2">The Voyage Forward
+	    <ol>
+	  <li id="ch9-2-a">Trigonometry 244</li>
+	  <li id="ch9-2-b">Fractals 246</li>
+	  <li id="ch9-2-c">Systems Simulations 249</li>
+	    </ol>
+		</li>
+	  <li id="ch9-3">Closing Comments 251</li>
     </ol>
   </li>
 </ol>
