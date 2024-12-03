@@ -121,81 +121,128 @@ detailed information, please visit
 	  <li id="ch3-2">The Viewport and ViewBox 57</li>
 	  <li id="ch3-3">Setting and Getting Values 59</li>
 	  <li id="ch3-4">Quicker Element Creation 60</li>
-	  <li id="ch3-5">Lines and Shapes 61</li>
-	  <li id="ch3-6">Rectangles and Squares 61</li>
-	  <li id="ch3-7">First Strokes 63</li>
-	  <li id="ch3-8">Circles and Ellipses 66</li>
-	  <li id="ch3-9">Lines, Polylines, and Polygons 68</li>
-	  <li id="ch3-10">Text and Titles 72</li>
-	  <li id="ch3-11">Definitions 75</li>
-	  <li id="ch3-12">Gradients 76</li>
-	  <li id="ch3-13">Patterns 78</li>
-	  <li id="ch3-14">Grouping and Reusing Elements 83</li>
-	  <li id="ch3-15">Summary 84</li>
+	  <li id="ch3-5">Lines and Shapes
+	    <ol>
+	      <li id="ch3-5-a">Rectangles and Squares 61</li>
+          <li id="ch3-5-b">First Strokes 63</li>
+          <li id="ch3-5-c">Circles and Ellipses 66</li>
+          <li id="ch3-5-d">Lines, Polylines, and Polygons 68</li>
+		</ol>
+	  </li>
+	  <li id="ch3-6">Text and Titles 72</li>
+	  <li id="ch3-7">Definitions 75</li>
+	  <li id="ch3-8">Gradients 76</li>
+	  <li id="ch3-9">Patterns 78</li>
+	  <li id="ch3-10">Grouping and Reusing Elements 83</li>
+	  <li id="ch3-11">Summary 84</li>
 	  </ol>
     </li>
     <li id="ch4">Chapter 4: Randomness and Regularity
 	  <ol>
-	  <li id="ch4-1">4.1 Analogue and Digital Randomness 85</li>
-	  <li id="ch4-2">4.2 The SvJs Genrandom( ) Function 87</li>
-	  <li id="ch4-3">4.3 Elements Everywhere All at Once 88</li>
-	  <li id="ch4-4">4.4 Varying Color and Opacity 89</li>
-	  <li id="ch4-5">4.5 Varying Element Selection 91</li>
-	  <li id="ch4-6">4.6 Regular Grids 94</li>
-	  <li id="ch4-7">4.7 The Nested For Loop 94</li>
-	  <li id="ch4-8">4.8 A More Flexible Grid 96</li>
-	  <li id="ch4-9">4.9 Clip Paths and Color Palettes 98</li>
-	  <li id="ch4-10">4.10 Arrays of Colors 98</li>
-	  <li id="ch4-11">4.11 Clipping Our Content 100</li>
-	  <li id="ch4-12">4.12 Choice and Chance 105</li>
-	  <li id="ch4-13">4.13 The SvJs Genchance( ) Function 105</li>
-	  <li id="ch4-14">4.14 Chance in Action 106</li>
-	  <li id="ch4-15">4.15 Probability Distributions 108</li>
-	  <li id="ch4-16">4.16 Uniform Distribution 108</li>
-	  <li id="ch4-17">4.17 Gaussian Distribution 109</li>
-	  <li id="ch4-18">4.18 Pareto Distribution 113</li>
-	  <li id="ch4-19">4.19 Masking Our Content 115</li>
-	  <li id="ch4-20">4.20 Summary 118</li>
+	  <li id="ch4-1">Analogue and Digital Randomness
+	    <ol>
+	      <li id="ch4-1-a">4.1a The SvJs Genrandom( ) Function 87</li>
+		</ol>
+	  </li>
+	  <li id="ch4-2">4.2 Elements Everywhere All at Once
+	    <ol>
+	  <li id="ch4-2-a">4.2a Varying Color and Opacity 89</li>
+	  <li id="ch4-2-b">4.2b Varying Element Selection 91</li>
+	    </ol>
+		</li>
+	  <li id="ch4-3">4.3 Regular Grids 94
+	    <ol>
+	  <li id="ch4-3-a">4.3a The Nested For Loop 94</li>
+	  <li id="ch4-3-b">4.3b A More Flexible Grid 96</li>
+	    </ol>
+		</li>
+	  <li id="ch4-4">4.4 Clip Paths and Color Palettes
+	    <ol>
+	  <li id="ch4-4-a">4.4a Arrays of Colors 98</li>
+	  <li id="ch4-4-b">4.4b Clipping Our Content 100</li>
+	    </ol>
+		</li>
+	  <li id="ch4-5">4.5 Choice and Chance 105</li>
+	    <ol>
+	  <li id="ch4-5-a">4.5a The SvJs Genchance( ) Function 105</li>
+	  <li id="ch4-5-b">4.5b Chance in Action 106</li>
+	    </ol>
+		</li>
+	  <li id="ch4-6">4.6 Probability Distributions
+	    <ol>
+	  <li id="ch4-6-a">4.6a Uniform Distribution 108</li>
+	  <li id="ch4-6-b">4.6b Gaussian Distribution 109</li>
+	  <li id="ch4-6-c">4.6c Pareto Distribution 113</li>
+	  <li id="ch4-6-d">4.6d Masking Our Content 115</li>
+	    </ol>
+		</li>
+	  <li id="ch4-7">4.7 Summary 118</li>
     </ol>
   </li>
   <li id="ch5">Chapter 5: The Need for Noise
     <ol>
 	  <li id="ch5-1">5.1 Random Limits 119</li>
-	  <li id="ch5-2">5.2 Making Noise 119 Noise Explained 120</li>
-	  <li id="ch5-3">5.3 The SvJs Noise Module 122</li>
-	  <li id="ch5-4">5.4 Into the Noise Matrix 124</li>
-	  <li id="ch5-5">5.5 A Noisy Grid 124</li>
-	  <li id="ch5-6">5.6 Mapping the Noise Values 128</li>
-	  <li id="ch5-7">5.7 Optimize with Style 129</li>
-	  <li id="ch5-8">5.8 Spinning Noise 130 Mapping and Constraining 132</li>
-	  <li id="ch5-9">5.9 Rotating and Translating 133</li>
-	  <li id="ch5-10">5.10 Summary 134</li>
+	  <li id="ch5-2">5.2 Making Noise
+	    <ol>
+	  <li id="ch5-2-a">5.2a Noise Explained 120</li>
+	  <li id="ch5-2-b">5.2b The SvJs Noise Module 122</li>
+	    </ol>
+		</li>
+	  <li id="ch5-3">5.3 Into the Noise Matrix
+	    <ol>
+	  <li id="ch5-3-a">5.3a A Noisy Grid 124</li>
+	  <li id="ch5-3-b">5.3b Mapping the Noise Values 128</li>
+	  <li id="ch5-3-c">5.3c Optimize with Style 129</li>
+	    </ol>
+		</li>
+	  <li id="ch5-4">5.4 Spinning Noise
+	    <ol>
+	  <li id="ch5-4-a">5.4a Mapping and Constraining 132</li>
+	  <li id="ch5-4-b">5.4b Rotating and Translating 133</li>
+	    </ol>
+		</li>
+	  <li id="ch5-5">5.5 Summary 134</li>
     </ol>
   </li>
   <li id="ch6">Chapter 6: The All-Powerful Path
     <ol>
-	  <li id="ch6-1">6.1 The Path Element 137</li>
-	  <li id="ch6-2">6.2 D for Data 138</li>
-	  <li id="ch6-3">6.3 Path Commands 138</li>
-	  <li id="ch6-4">6.4 Starting and Ending a Path 139</li>
-	  <li id="ch6-5">6.5 Straight Lines 140</li>
-	  <li id="ch6-6">6.6 The Simple L 140</li>
-	  <li id="ch6-7">6.7 Horizontal and Vertical Varieties 142</li>
-	  <li id="ch6-8">6.8 Further Economies 143</li>
-	  <li id="ch6-9">6.9 Quadratic Bezier Curves 144</li>
-	  <li id="ch6-10">6.10 Control Points 144</li>
-	  <li id="ch6-11">6.11 A Smooth Shortcut 145</li>
-	  <li id="ch6-12">6.12 A Quadratic Slinky 147</li>
-	  <li id="ch6-13">6.13 Elliptical Arcs 150</li>
-	  <li id="ch6-14">6.14 Setting the Flags 151</li>
-	  <li id="ch6-15">6.15 Irregular Radii 152</li>
-	  <li id="ch6-16">6.16 Generative Arcs 153</li>
-	  <li id="ch6-17">6.17 Cubic Bezier Curves 156</li>
-	  <li id="ch6-18">6.18 Cubic Control Points 156</li>
-	  <li id="ch6-19">6.19 S for Symmetry158</li>
-	  <li id="ch6-20">6.20 Organic Curves 159</li>
-	  <li id="ch6-21">6.21 An Easier Option 163</li>
-	  <li id="ch6-22">6.22 Summary165</li>
+	  <li id="ch6-1">6.1 The Path Element
+	    <ol>
+	  <li id="ch6-1-a">6.1a D for Data 138</li>
+	  <li id="ch6-1-b">6.1b Path Commands 138</li>
+	    </ol>
+		</li>
+	  <li id="ch6-2">6.2 Starting and Ending a Path 139</li>
+	  <li id="ch6-3">6.3 Straight Lines
+	    <ol>
+	  <li id="ch6-3-a">6.3a The Simple L 140</li>
+	  <li id="ch6-3-b">6.3b Horizontal and Vertical Varieties 142</li>
+	  <li id="ch6-3-c">6.3c Further Economies 143</li>
+	    </ol>
+		</li>
+	  <li id="ch6-4">6.4 Quadratic Bezier Curves
+	    <ol>
+	  <li id="ch6-4-a">6.4a Control Points 144</li>
+	  <li id="ch6-4-b">6.4b A Smooth Shortcut 145</li>
+	  <li id="ch6-4-c">6.4c A Quadratic Slinky 147</li>
+	    </ol>
+		</li>
+	  <li id="ch6-5">6.5 Elliptical Arcs
+	    <ol>
+	  <li id="ch6-5-a">6.5a Setting the Flags 151</li>
+	  <li id="ch6-5-b">6.5b Irregular Radii 152</li>
+	  <li id="ch6-5-c">6.5c Generative Arcs 153</li>
+	    </ol>
+		</li>
+	  <li id="ch6-6">6.6 Cubic Bezier Curves
+	    <ol>
+	  <li id="ch6-6-a">6.6a Cubic Control Points 156</li>
+	  <li id="ch6-6-b">6.6b S for Symmetry158</li>
+	  <li id="ch6-6-c">6.6c Organic Curves 159</li>
+	  <li id="ch6-6-d">6.6d An Easier Option 163</li>
+	    </ol>
+		</li>
+	  <li id="ch6-7">6.7 Summary 165</li>
     </ol>
   </li>
   <li id="ch7">Chapter 7: Motion and Interactivity 167
