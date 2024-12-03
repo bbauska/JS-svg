@@ -33,11 +33,11 @@ detailed information, please visit
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2> -->
 
-<ol style="list-style-type: decimal-leading-zero;" start="01">
+<ol style="list-style-type: decimal-leading-zero;" start="01"
   <li id="#ch1">Chapter 1: The Beginner's Path
     <ol type="1">
 	  <li id="#ch1-1">Why JavaScript and SvJs?
-	    <ol type="I">
+	    <ol type="a">
 	  <li id="#ch1-1-a">Introducing Scalable Vector Graphics</li>
 	  <li id="#ch1-1-b">Native SVG</li>
 	  <li id="#ch1-1-c">Generating SVG</li>
@@ -57,7 +57,7 @@ detailed information, please visit
     </ol>
   </li>
   <li id="#ch2">Chapter 2: A Programming Primer
-    <ol>
+    <ol type="1">
 	  <li id="ch2-1">Syntax
 	    <ol>
 		  <li id="ch2-1-a">Case Sensitivity 20</li>
@@ -75,11 +75,11 @@ detailed information, please visit
 		</ol>
 	  </li>
 	  <li id="ch2-3">Variables 25</li>
-	  <li id="ch2-4">Operators
-	  <li id="ch2-4-a">Arithmetic Operators 26</li>
-	  <li id="ch2-4-b">Comparison Operators 29</li>
-	  <li id="ch2-4-c">Logical Operators 30</li>
-	  </ol>
+		  <li id="ch2-4">Operators
+		  <li id="ch2-4-a">Arithmetic Operators 26</li>
+		  <li id="ch2-4-b">Comparison Operators 29</li>
+		  <li id="ch2-4-c">Logical Operators 30</li>
+		  </ol>
 	  </li>
 	  <li id="ch2-5">Conditional Statements 31</li>
 	  <li id="ch2-6">Loops
