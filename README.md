@@ -2026,7 +2026,7 @@ be anything you want: strings, booleans, functions, arrays, or even
 other objects. Almost anything you can think of can be represented as an
 object. Let's take my laptop as an example.
 
-````
+```
 const myLaptop = { 
   processor: "Core i5", 
   screenSize: "14 inches",
@@ -2110,7 +2110,7 @@ Functions that are part of a class are known as methods. A class will
 usually have, at the very least, methods to get and set its properties.
 
 ```
-prometheus.setDestination = \'Moon LV-223, Zeta 2 Reticuli\';
+prometheus.setDestination = 'Moon LV-223, Zeta 2 Reticuli';
 prometheus.takeOff();
 ```
 
