@@ -75,11 +75,12 @@ detailed information, please visit
 		</ol>
 	  </li>
 	  <li id="ch2-3">Variables 25</li>
-		  <li id="ch2-4">Operators
+	  <li id="ch2-4">Operators
+	    <ol>
 		  <li id="ch2-4-a">Arithmetic Operators 26</li>
 		  <li id="ch2-4-b">Comparison Operators 29</li>
 		  <li id="ch2-4-c">Logical Operators 30</li>
-		  </ol>
+        </ol>
 	  </li>
 	  <li id="ch2-5">Conditional Statements 31</li>
 	  <li id="ch2-6">Loops
