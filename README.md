@@ -59,7 +59,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="#ch1-4">Summary</li>
     </ol>
   </li>
-  <li id="#ch2">Chapter 2: A Programming Primer
+  <li id="#ch2"><a href="#ch2">Chapter 2: A Programming Primer</a>
     <ol type="1">
 	  <li id="ch2-1">Syntax
 	    <ol>
@@ -118,7 +118,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch2-11">Summary 53</li>
     </ol>
   </li>
-  <li id="ch3">Chapter 3: All About SVG
+  <li id="ch3"><a href="#ch3">Chapter 3: All About SVG</a>
     <ol type="1">
 	  <li id="ch3-1">The Parent SVG Element 55</li>
 	  <li id="ch3-2">The Viewport and ViewBox 57</li>
@@ -140,7 +140,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch3-11">Summary 84</li>
 	  </ol>
     </li>
-    <li id="ch4">Chapter 4: Randomness and Regularity
+    <li id="ch4"><a href="#ch4">Chapter 4: Randomness and Regularity</a>
     <ol type="1">
 	  <li id="ch4-1">Analogue and Digital Randomness
 	    <ol>
@@ -182,7 +182,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch4-7">Summary 118</li>
     </ol>
   </li>
-  <li id="ch5">Chapter 5: The Need for Noise
+  <li id="ch5"><a href="#ch5">Chapter 5: The Need for Noise</a>
     <ol type="1">
 	  <li id="ch5-1">5.1 Random Limits 119</li>
 	  <li id="ch5-2">5.2 Making Noise
@@ -207,7 +207,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch5-5">5.5 Summary 134</li>
     </ol>
   </li>
-  <li id="ch6">Chapter 6: The All-Powerful Path
+  <li id="ch6"><a href="#ch6">Chapter 6: The All-Powerful Path</a>
     <ol type="1">
 	  <li id="ch6-1">6.1 The Path Element
 	    <ol>
@@ -248,7 +248,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch6-7">6.7 Summary 165</li>
     </ol>
   </li>
-  <li id="ch7">Chapter 7: Motion and Interactivity
+  <li id="ch7"><a href="#ch7">Chapter 7: Motion and Interactivity</a>
     <ol type="1">
 	  <li id="ch7-1">7.1 Event Listeners
 	    <ol>
@@ -289,7 +289,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch7-6">7.6 Summary 202</li>
     </ol>
   </li>
-  <li id="ch8">Chapter 8: Filter Effects
+  <li id="ch8"><a href="#ch8">Chapter 8: Filter Effects</a>
     <ol type="1">
 	  <li id="ch8-1">8.1 Filter Fundamentals
 	    <ol>
@@ -324,7 +324,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li id="ch8-5">8.19 Summary 240</li>
     </ol>
   </li>
-  <li id="#ch9">Chapter 9: The Generative Way
+  <li id="#ch9"><a href="#ch9">Chapter 9: The Generative Way</a>
     <ol type="1">
 	  <li id="ch9-1">The Journey So Far 243</li>
 	  <li id="ch9-2">The Voyage Forward
