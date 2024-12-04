@@ -490,7 +490,7 @@ my sketches -- p5.js or Canvas -- was still resolution-dependent bitmap graphics
 of any semantic content. What does that mean, and why does it matter (to me at least)? 
 Let me explain.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1a">1.1a Introducing Scalable Vector Graphics</h2>
+<h3 id="ch1-1a">1.1a Introducing Scalable Vector Graphics</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Back in the early days of the Web, when dial-up modems were dominant and
 connecting to the Internet was anything but instant, bandwidth came at a
@@ -532,7 +532,7 @@ shine.</p>
 the odd icon and logo is one thing; to tap its full potential is
 another.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1b">1.1b Native SVG</h2>
+<h3 id="ch1-1b">1.1b Native SVG</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
@@ -601,7 +601,7 @@ oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
 ultimately it gives you more creative control.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1c">1.1c Generating SVG</h2>
+<h3 id="ch1-1c">1.1c Generating SVG</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
@@ -667,7 +667,7 @@ specific focus on generative art. This was how SvJs came to be.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Enough with the preamble. Let's get ourselves set up to write some code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2a">1.2a The Code Editor</h3>
+<h3 id="ch1-2a">1.2a The Code Editor</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you don't have VS Code already running on your machine, head on over
 to [code.visualstudio.com] and download and install the
@@ -684,7 +684,7 @@ the CodePen versions with some minimal differences (such as how we
 import the SvJs library and the lack of HTML boilerplate which CodePen
 automatically provides).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2b">1.2b Node.js and NPM</h2>
+<h3 id="ch1-2b">1.2b Node.js and NPM</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can skip this part if you intend to use CodePen only, but I would
 still recommend getting familiar with Node.js if you have any plans on
@@ -699,7 +699,7 @@ support) version.</p>
 
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2c">1.2c Initializing and Installing SvJs</h2>
+<h3 id="ch1-2c">1.2c Initializing and Installing SvJs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Create a base folder where you'll save all the work related to this
 book, and name it something like generative-svg.</p>
@@ -741,7 +741,7 @@ folder, where SvJs and any of its dependencies are stored (it doesn't
 have any so you won't see additional folders here).</p>
 <!-- page 10 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2d">1.2d Scaffolding Our Sketches</h2>
+<h3 id="ch1-2d">1.2d Scaffolding Our Sketches</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Our first sketch will require a little HTML and CSS before we tackle the
 JavaScript. We'll keep this markup and styling minimal and more or less
@@ -827,7 +827,7 @@ import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 <p>Our template is now complete, ready to be copied for subsequent sketches. Well done!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2e">1.2e Serving Our Sketches</h2>
+<h3 id="ch1-2e">1.2e Serving Our Sketches</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you navigate to the 00-template folder at this point and double-click
 on index.html to open it in a web browser, you'll see some errors in the
@@ -2180,7 +2180,6 @@ NaN === NaN
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10b">2.10b Secret Casting</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 JavaScript does some things behind the scenes that programmers from
 stricter languages may not always appreciate. It is, for example,
 notoriously loose with data types and will convert variables of
@@ -2611,9 +2610,9 @@ svg.create('rect').set({
 Any further code we write will be specific to the sketch we're working
 on. Make sure you've saved your changes before copying the 00-template
 folder and its contents, renaming it to 02-basic-shapes.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5b">3.5b First Strokes</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are two important attributes that can be used on practically every
 graphical SVG element (i.e., elements that are intended to appear on
 screen). These are an element's fill and stroke. As we've already seen,
@@ -3443,8 +3442,9 @@ The limitation of this function is that it only returns a number between
 we want, but what if we needed a number within a specific range? Or
 wanted to choose an item at random from an array?
 
-<h2>The SvJs Gen.random( ) Function</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-1a">4.1a The SvJs Gen.random( ) Function</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thankfully the SvJs library comes armed with some extras: specifically,
 an optional module called Gen that contains a number of useful functions
 for generative artists. One of these is the Gen.random() function.
@@ -3501,7 +3501,9 @@ selected from that array. I purposely used colors in the example
 functionality is particularly useful when selecting colors from a
 predefined palette.
 
-**Elements Everywhere All at Once**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-2">4.2 Elements Everywhere All at Once</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's create a sketch and put Gen.random() to work. Copy the 00-template
 file as we usually do and rename it to something like 06-elements-
@@ -3539,9 +3541,8 @@ for (let i = 0;
 ***Figure 4-1.** A random spattering of circles*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Varying Color and Opacity</h2>
+<h3 id="ch4-2a">4.2a Varying Color and Opacity</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 At this point, we have colorless spatters randomly speckling the canvas.
 Let's change this up by varying the hue and opacity of the fill. We'll
 do this with the hsl() function, which is something we'll be drawing
@@ -3574,9 +3575,8 @@ considerably, so we'll step through it slowly.
 ***Figure 4-2.** A more colorful spatter*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Varying Element Selection</h2>
+<h3 id="ch4-2b">4.2b Varying Element Selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Below our iterations variable, create an array called elements and
 populate it with a circle, a line, and a rect: let elements =
 \[\'circle\', \'line\', \'rect\'\];
@@ -3663,14 +3663,16 @@ more in the way of variety and visual interest.
 ***Figure 4-3.** A confetti-like scattering of random elements*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Regular Grids**
+<h2 id="ch4-3">4.3 Regular Grids</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Unrestrained randomness will only get us so far; we need techniques to
 tame and constrain it. One particularly prominent technique in the
 generative art world is to work with grids, which allow us to structure
 our randomness.
 
-<h2>The Nested For Loop</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-3a">4.3a The Nested For Loop</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The nested for loop consists of one loop running within another. Because
 grids are comprised of columns (along the x axis) and rows (along the y
@@ -3760,7 +3762,7 @@ shown in Figure 4-4.
 ***Figure 4-4.** A regular, centered grid*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>A More Flexible Grid</h2>
+<h3 id="ch4-3b">4.3b A More Flexible Grid</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So far we have hard-coded our grid values. By this, I mean we have used
 values directly to control the grid divisions, cell spacing, size, etc.,
@@ -3816,7 +3818,7 @@ height="1.5316666666666667in"}
 ***Figure 4-5.** Variations of our regular grid*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Clip Paths and Color Palettes**
+<h2 id="ch4-4">4.4 Clip Paths and Color Palettes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now that we have our regular grid in place, we need to breathe some life
 into it. The changes we're going to make are significant enough to
@@ -3825,7 +3827,9 @@ we've done so far as a template, save and copy the existing sketch
 folder and rename it to something like 08-colourful-grids, which will
 give you a clue where we're taking this.
 
-<h2>Arrays of Colors</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-4a">4.4a Arrays of Colors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In our previous "Elements Everywhere" sketch, we used Gen.random() to
 generate our colors on the fly. But what if we wanted a particular color
@@ -3871,7 +3875,10 @@ height="2.0616666666666665in"}
 Next, we're going to randomly select one of these palettes and store it
 in a variable that we can call on later.
 
-// Pick a random palette. let pickedPalette = Gen.random(palettes);
+```
+// Pick a random palette. 
+let pickedPalette = Gen.random(palettes);
+```
 
 Now on to our grid variables. You can leave this as they were from the
 last sketch, but I'm not going to randomize the gridSize or spacing this
@@ -3882,8 +3889,9 @@ let gridSize = 600; let rows = Gen.random(3, 10); let spacing = 10; let
 increment = gridSize / rows; let cellSize = Math.abs(increment -
 spacing);
 
-<h2>Clipping Our Content</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-4b">4.4b Clipping Our Content</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The next step in developing our grid-based composition will involve
 something called a clipPath. Essentially what a clipPath does is define
 the visible region of the shape it's applied to, in much the same way a
@@ -4040,7 +4048,7 @@ height="1.6483333333333334in"}
 
 ***Figure 4-8.** Colorful clip path grid patterns*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Choice and Chance**
+<h2 id="ch4-5">4.5 Choice and Chance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What if we were to bring an element of chance into choosing whether or
 not to populate a given cell in our grid? This can lead to a less
@@ -4048,9 +4056,8 @@ rigid-looking composition -- which isn't necessarily better, but it can
 offer more in the way of variety.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>The SvJs Gen.chance( ) Function</h2>
+<h3 id="ch4-5a">4.5a The SvJs Gen.chance( ) Function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 When we talk about probability, what we're usually trying to establish
 are the chances, or the odds, of something occurring. This something
 will either happen or it won't, so what we want is a binary response --
@@ -4083,7 +4090,7 @@ Gen.chance(7, 2);
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Chance in Action</h2>
+<h3 id="ch4-5b">4.5b Chance in Action</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's create a new sketch, using Gen.chance() to determine whether or
 not the cells within our grid get populated with content. Copy the
@@ -4144,7 +4151,7 @@ Figure 4-9.
 ***Figure 4-9.** Gen.chance() in action*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Probability Distributions**
+<h2 id="ch4-6">4.6 Probability Distributions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Probability distributions describe how numbers are spread out (or
@@ -4156,7 +4163,7 @@ We've actually been using a particular kind of probability distribution
 already but just haven't attached the name to it.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Uniform Distribution</h2>
+<h3 id="ch4-6a">4.6a Uniform Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Gen.random() function is an example of *uniform* distribution, where
 every number within the range has an equal chance of being chosen. In
@@ -4175,7 +4182,7 @@ along the x axis.
 ***Figure 4-10.** Uniform distribution of vertical lines*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Gaussian Distribution</h2>
+<h3 id="ch4-6b">4.6b Gaussian Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In real-life measurements (i.e., those outside the binary world of ones
@@ -4289,7 +4296,9 @@ but with a lot of digits) or an integer (whole number). Dealing in whole
 numbers decreases the generated markup by roughly a factor of two in
 this case.
 
-<h2>Pareto Distribution</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-6c">4.6c Pareto Distribution</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Pareto distribution, also known as the Pareto Principle or the 80-20
 rule
@@ -4389,7 +4398,9 @@ flat-looking, and I'd like it to be framed within a circle and for the
 colors to look like they're emanating outward. To achieve this, I'm
 going to use something called a mask.
 
-<h2>Masking Our Content</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-6d">4.6d Masking Our Content</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A mask is very similar to a clipPath, except that it allows for degrees
 of transparency. A clipPath is an all-or-nothing affair; you're either
@@ -4484,7 +4495,7 @@ is and the uses to which it can be put, and by the end, we'll have added
 a significant technique to our generative arsenal.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Random Limits**
+<h2 id="ch5-1">5.1 Random Limits</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Sometimes randomness is just too, well ... random. Even when we shape
@@ -4502,7 +4513,7 @@ that has an organic quality to it with randomness alone. For this, we
 need noise.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Making Noise**
+<h2 id="ch5-2">5.2 Making Noise</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In 1997, Ken Perlin won an Oscar. What made this award unprecedented was
@@ -4528,7 +4539,7 @@ So Perlin noise is everywhere in the graphical domain. But what exactly
 is it?
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Noise Explained</h2>
+<h3 id="ch5-2a">5.2a Noise Explained</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Technically, noise functions do produce random numbers, but they do so
@@ -4571,7 +4582,9 @@ textures.
 ***Figure 5-2.** A two-dimensional representation of Perlin noise
 values*
 
-<h2>The SvJs Noise Module</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2b">5.2b The SvJs Noise Module</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The SvJs library comes with its own implementation of noise, designed to
 be simple to use and to have as light a footprint as possible. It
@@ -4622,7 +4635,7 @@ is minimal; comparatively large leaps (e.g., by whole numbers) won't
 yield usable results.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Into the Noise Matrix**
+<h2 id="ch5-3">5.3 Into the Noise Matrix</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's copy our template and set up a new sketch folder called 12-noise-
@@ -4675,6 +4688,7 @@ The next block of code should hopefully look familiar. We're setting
 some grid-related variables, and this time we'll omit the spacing and
 cellSize variables we used in previous sketches and set the gridSize to
 cover the entire viewBox.
+
 ```
 // Set some grid-related variables. 
 let noiseGrid = svg.create('g');
@@ -4772,7 +4786,9 @@ with Math.abs() to force the negative numbers into a positive range,
 that would destroy the very raison d'être of noise -- its smoothly
 transitioning values. So what's the solution?
 
-<h2>Mapping the Noise Values</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3a">5.3a Mapping the Noise Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This is actually a common challenge in generative art -- mapping a
 series of values from one range to another. Thankfully the Gen module
@@ -4819,8 +4835,9 @@ essentially let the operating system decide which default font to
 render. For this reason, what you see may differ slightly from Figure
 5-3.
 
-<h2>Optimize with Style</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3b">5.3b Optimize with Style</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We could leave it there and make no further changes to the sketch, but
 there's one little niggle I can't leave alone. In total, we have 2,500
 text elements in this sketch, and for each of these elements, the
@@ -4828,7 +4845,7 @@ font-size and font-family attributes remain static throughout. This
 seems quite wasteful.
 
 ```
-<text x=\"740" y="200" font-size="16" font-family="serif"
+<text x="740" y="200" font-size="16" font-family="serif"
 fill="hsl(120 20%
 50%)">1</text>
 ```
@@ -4861,7 +4878,7 @@ the way. In this particular sketch, taking this measure resulted in a
 40% reduction in the rendered markup -- not bad!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Spinning Noise**
+<h2 id="ch5-4">5.4 Spinning Noise</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In our next sketch, to consolidate some of the concepts covered already,
@@ -4897,7 +4914,7 @@ nX = 0; let noiseSpeed = 0.025; let lines = svg.create(\'g\'); let hue =
 Gen.random(0, 360); let iterations = Gen.random(60, 100);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Mapping and Constraining</h2>
+<h2 id="ch5-4a">5.4a Mapping and Constraining</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We can now run the loop. We'll offset our iteration start point by 10 ;
 for this particular sketch, this value just worked better than starting
@@ -4946,7 +4963,7 @@ stroke: `hsl(${Gen.constrain(hue - hueShift, 0, 360)} 80% 80%
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Rotating and Translating</h2>
+<h2 id="ch5-4b">5.4b Rotating and Translating</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The final step will involve some transforms and the usual incrementation
@@ -5048,7 +5065,7 @@ D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_6>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>D for Data</h2>
+<h3 id="ch6-1a">6.1a D for Data</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The d attribute allows us to populate a path with data. This data
 consists of a series of path commands and accompanying numeric values
@@ -5078,7 +5095,7 @@ be written with or without commas to separate values and with or without
 spaces to separate commands.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Path Commands</h2>
+<h3 id="ch6-1b">6.1b Path Commands</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 You can think of path commands as drawing instructions. Each command is
@@ -5098,9 +5115,8 @@ commands are more common than others, some more complex, and some we'll
 demonstrate the once and won't use again.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Starting and Ending a Path**
+<h2 id="ch6-2">6.2 Starting and Ending a Path</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 All paths start somewhere. And where SVG is concerned, all paths start
 at the point to which we move our virtual pen. We use the M (or m)
 command for this, which means "move to." We follow this with an x and y
@@ -5136,13 +5152,15 @@ identical operations, as no values follow them. This means you can use
 them interchangeably.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Straight Lines**
+<h2 id="ch6-3">6.3 Straight Lines</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To ease us into path creation, we'll start with the straight line. There
 are actually a few different commands that can draw a straight line, but
 we'll start with the most obvious.
 
-<h2>The Simple L</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3a">6.3a The Simple L</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The L command allows us to draw straight lines defined by an x and y
 coordinate pair. The lowercase l does the same but uses coordinates
@@ -5181,12 +5199,13 @@ disturbing its shape; with absolute coordinates, we'd have to change all
 the subsequent numbers, whereas with relative coordinates, we'd only
 have to change the initial M point.
 
-> ![](./images/media/image40.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image40.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 6-1.** Two L\'s drawn by two L commands*
 
-<h2>Horizontal and Vertical Varieties</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3b">6.3b Horizontal and Vertical Varieties</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If the lines that we're drawing are either horizontal or vertical, we
 can use the H or V commands as a shortcut, as they only need the one
 parameter; in the case of H or h, the x coordinate, and in the case of V
@@ -5215,8 +5234,9 @@ svg.create('path').set({ d: 'M 300 200 V 800 H 600' });
 svg.create('path').set({ d: 'M 675 825 v -600 h -300' });
 ```
 
-<h2>Further Economies</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3c">6.3c Further Economies</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before we move on to curves, it's worth pointing out if we are using
 successive path commands of the same type, the command itself can be
 removed rather than repeated. SVG renderers are intelligent enough to
@@ -5234,13 +5254,14 @@ svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
 });
 ```
 
-> ![](./images/media/image41.jpg){width="3.5433333333333334in"
-> height="0.9616666666666667in"}
+![](./images/media/image41.jpg){width="3.5433333333333334in"
+height="0.9616666666666667in"}
 
 ***Figure 6-2.** Omitting repetitive commands*
 
-**Quadratic Bezier Curves**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6-4">6.4 Quadratic Bezier Curves</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The first curve we'll cover is the quadratic Bezier curve. Don't worry
 -- the rather daunting name doesn't reflect its complexity. As far as
 curves go, it's relatively simple. Two sets of coordinates are required:
@@ -5253,8 +5274,9 @@ moment), and the second the destination point.
 'q [dcpx dcpy dx dy] ...'
 ```
 
-<h2>Control Points</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4a">6.4a Control Points</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you imagine a control point as a force of attraction, or pull, toward
 which a curve bends, you'll have the right idea. Control points aren't
 themselves rendered, but if you look at the dot and dashed line in
@@ -5274,7 +5296,9 @@ example, the dot represents the control point coordinates of \[150,
 A quadratic Bezier curve has just the one control point, whereas the
 cubic Bezier curve (explored in a later section), has two.
 
-<h2>A Smooth Shortcut</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4b">6.4b A Smooth Shortcut</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Say we wanted to extend the path from Figure 6-3 and draw a smooth set
 of waves repeating at regular intervals. The difficulty in doing this
@@ -5324,7 +5348,9 @@ height="1.2883333333333333in"}
 
 ***Figure 6-5.** A smooth quadratic curve*
 
-<h2>A Quadratic Slinky</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4c">6.4c A Quadratic Slinky</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's use the quadratic Bezier curve in a simple sketch to create a
 Slinky- esque array of paths. If you don't know what a Slinky is, it's a
@@ -5422,8 +5448,9 @@ slinky.moveTo(500, 500);
 
 ***Figure 6-6.** Quadratic curves in a slinky formation*
 
-**Elliptical Arcs**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6-5">6.5 Elliptical Arcs</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Time to embark on the arc! The elliptical arc curve (Figure 6-7) is a
 complicated beast, and the syntax is quite difficult to comprehend
 without some visual examples. The A (or a) command is used to initialize
@@ -5449,7 +5476,9 @@ explaining.
 
 ***Figure 6-7.** An elliptical arc curve*
 
-<h2>Setting the Flags</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-5a">6.5a Setting the Flags</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 What's really happening when we draw an elliptical arc curve is that two
 interlocking ellipses are used as guides behind the scenes to determine
@@ -5480,7 +5509,9 @@ However, it helps us understand the underlying structure of the
 elliptical arc when we see all the possible curves rendered
 simultaneously.
 
-<h2>Irregular Radii</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-5b">6.5b Irregular Radii</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 One of the other potential confusions about the elliptical arc curve is
 that the two radius values rx and ry work a little differently to how we
@@ -5508,7 +5539,9 @@ interactive pen that shows the effect of altering both the radii and the
 flag values. You can find the pen at
 [davidmatthew.ie/generative-art-javascript-svg#arc-curve](https://davidmatthew.ie/generative-art-javascript-svg#arc-curve).
 
-<h2>Generative Arcs</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-5c">6.5c Generative Arcs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's take a break from further wrestling with the theoretical
 intricacies of elliptical arc curves and put them to some practical,
@@ -5590,7 +5623,9 @@ arcs.rotate(Gen.random(0, 360));
 
 ***Figure 6-9.** Two renders of our generative arcs*
 
-**Cubic Bezier Curves**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6-6">6.6 Cubic Bezier Curves</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The final curve we'll cover is the cubic Bezier curve, called by the C
 command. This is the most versatile of all the vector curves available
@@ -5606,8 +5641,9 @@ elliptical arc curve.
 'c [dcpx1 dcpy1 dcpx2 dcpy2 dx dy] ...'
 ```
 
-<h2>Cubic Control Points</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-6a">6.6a Cubic Control Points</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The first set of control point coordinates cpx1 and cpy1 shapes the
 curve from the side of the starting point. This starting point is
 declared prior to the C command -- it might be a set of M coordinates,
@@ -5639,8 +5675,9 @@ Judicious use of these curves and their "handles" (visualized as the
 dashed lines in Figure 6-10) can make the difference between smooth,
 graceful line art and awkward, clunky clip art.
 
-<h2>S for Symmetry</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-6b">6.6b S for Symmetry</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Like the quadratic Bezier curve, the cubic Bezier curve has a related
 command that can be called if you want to extend the curve with another
 that is smoothly connected to it. The command to use for this is S (or s
@@ -5663,7 +5700,9 @@ height="2.1266666666666665in"}
 
 ***Figure 6-11.** A smoothly extended cubic Bezier curve*
 
-<h2>Organic Curves</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-6c">6.6c Organic Curves</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's put the preceding knowledge to use in a composition, the aim of
 which will be to create a series of smooth, organic-looking curves. To
@@ -5801,8 +5840,9 @@ svg.create('circle').set({ r: Gen.random(5, 50), cx: Gen.random(150,
 
 ***Figure 6-12.** Noise-modulated organic curves*
 
-<h2>An Easier Option</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-6d">6.6d An Easier Option</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Having to juggle six coordinates for every curve segment (or four when
 we use the S command) can get a little trying at times. Wouldn't it be
 nice to be able to connect a series of single points with a smooth
@@ -5856,8 +5896,9 @@ height="2.5316666666666667in"}
 
 ***Figure 6-13.** Varying the curve factor using values of 0, 1, and 5*
 
-**Summary**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6-7">6.7 Summary</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With paths now a part of your generative arsenal, so many more
 possibilities open up for you. To recap, we've covered the following:
 
@@ -5884,10 +5925,9 @@ possibilities open up for you. To recap, we've covered the following:
 In the next chapter, we'll explore motion, animation, and how to make
 our sketches interactive.
 
-**CHAPTER 7**
-
-**Motion and Interactivity**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1 id="ch7">CHAPTER 7: Motion and Interactivity</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 One characteristic that tends to distinguish generative art from other
 art forms is its ability to incorporate interactivity, and, as a result,
 active audience participation. This audience -- whether it be a single
@@ -5903,8 +5943,9 @@ different methods that can be used to animate SVG and discuss their
 strengths and weaknesses before deciding on the method we'll adopt for
 the remainder of the chapter.
 
-**Event Listeners**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-1">7.1 Event Listeners</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A mouse click is an event, as is hitting a key on your keyboard, or
 tapping your tablet's touchscreen display. When events like this occur
 in the context of a web browser, as JavaScript programmers, we can prick
@@ -5948,8 +5989,9 @@ element.addEventListener('eventType', () => {
 });
 ```
 
-<h2>Event Types</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-1a">7.1a Event Types</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are numerous types of events we can choose to listen out for, but
 we will focus on a small subset useful for generative art: keyboard,
 form, and pointer event types.
@@ -5974,8 +6016,9 @@ element.addEventListener('pointermove', () => {
 });
 ```
 
-<h2>Event Parameters</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-1b">7.1b Event Parameters</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 When an event listener is attached to an element and captures an event,
 that event can then be passed to the callback function as an argument.
 For example, if we were to add an event listener to our HTML
@@ -6002,8 +6045,9 @@ MDN
 including comprehensive documentation covering the full range of DOM
 events.
 
-<h2>Triggering the SvJs Save Method</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-1c">7.1c Triggering the SvJs Save Method</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Say we have a sketch we're happy with, and we wanted to save the actual
 SVG markup generated by our JavaScript -- how would we go about it?
 Perhaps the quickest way is to open up our browser's developer tools,
@@ -6040,8 +6084,9 @@ incidentally, the save() method can be called on any SVG element,
 meaning you can save just a portion of your SVG if you prefer -- though
 the use cases for this are rarer.
 
-**Creative Cursor Tracking**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-2">7.2 Creative Cursor Tracking</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In our first example of an event listener in action, we showed how
 tracking the mouse cursor might be achieved. We simply had to query the
 clientX and clientY coordinates of the mouse event. This was purposely
@@ -6049,8 +6094,9 @@ simplified, as accurately tracking the position of our mouse relative to
 the SVG viewport (which uses its own coordinate space) is a bit
 trickier.
 
-<h2>The SvJs trackCursor( ) Method</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-2a">7.2a The SvJs trackCursor( ) Method</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To solve this, SvJs has a built-in trackCursor() method that can be
 called on the root SVG element. It automatically takes care of attaching
 the relevant event listeners (pointermove and pointerleave),
@@ -6077,8 +6123,9 @@ svg.trackCursor(() => {
 });
 ```
 
-<h2>Interactive Ellipses</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-2b">7.2b Interactive Ellipses</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's set up a new sketch to show how trackCursor() can be put to
 creative use. Copy our template folder and call it something like
 17-cursor-tracking. We're going to re-create a variation of our very
@@ -6154,8 +6201,9 @@ happen if we had to click a button).
 Now that we know how to achieve movement via interactivity, it's time to
 learn how to make things move independently of our input.
 
-**Programming Motion**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-3">7.3 Programming Motion</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As mentioned previously, we have several different methods at our
 disposal for animating SVG. The first one we'll explore is CSS
 keyframes, which will be familiar territory to most web developers. The
@@ -6216,8 +6264,9 @@ shapes.push(shape);
 
 ***Figure 7-2.** The four shapes we\'ll make move*
 
-<h2>CSS Keyframes</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-3a">7.3a CSS Keyframes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Animated sequences can be created with CSS using a \@keyframes rule.
 Much like traditional keyframes used in animation, motion graphics, and
 video editing software, CSS \@keyframes define the state of certain
@@ -6285,8 +6334,9 @@ svg.create('style').content(` ...
 `);
 ```
 
-<h2>The SMIL Way</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-3b">7.3b The SMIL Way</he>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now let's try to achieve the same thing with SMIL. SMIL, which stands
 for Synchronized Multimedia Integration Language, is the animation
 method native to SVG itself, requiring no CSS or JavaScript. However, as
@@ -6342,8 +6392,9 @@ shapes[1].create('animateTransform').set({ attributeName:
 The second shape should now be slowly rotating and stretching, and the
 motion should be perfectly synchronized with our CSS keyframes example.
 
-<h2>The Web Animations API</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-3c">7.3c The Web Animations API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Web Animations API, or WAAPI, is the most modern of the methods
 we'll be covering. It is being actively worked on by the W3C (World Wide
 Web Consortium) and is intended to provide the future direction for
@@ -6427,8 +6478,9 @@ up possibilities previously only attainable through the use of third-
 party libraries, but it isn't the only game in town where native
 JavaScript animation techniques are concerned.
 
-<h2>The requestAnimationFrame( ) Method</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-3d">7.3d The requestAnimationFrame( ) Method</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Meet the requestAnimationFrame() method, a low-level recursive technique
 that allows us to tap into the browser's screen repainting process. This
 is a very different approach from the methods we've covered previously;
@@ -6583,8 +6635,9 @@ requestAnimationFrame() itself. These animation methods weren't designed
 to be combined as we've done in this sketch; normally you'll choose one
 method and stick to it, depending on what you're trying to achieve.
 
-<h2>Methods Summarized</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-3e">7.3e Methods Summarized</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So which method should you choose for generative art? There's no
 definitive answer to this, but for what it's worth, here's my advice
 (with the caveat that this is not a comprehensive analysis of the pros
@@ -6630,8 +6683,9 @@ offers robust performance and impressive backward compatibility. It's
 not open source however, and some of its plug-ins are for paid
 subscribers only. Anime.js is a nice open source alternative.
 
-**Collision Detection**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-4">7.4 Collision Detection</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's one thing to interact ourselves with a generative piece to
 influence the output, but it's another thing entirely when it begins to
 interact with *itself*. This is in essence what collision detection
@@ -6639,8 +6693,9 @@ entails. We'll explore an example using the bounds of a rectangle as a
 basic collision barrier, and we'll utilize the requestAnimationFrame()
 method while it's still relatively fresh in our minds.
 
-<h2>Setting Boundaries</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-4a">7.4a Setting Boundaries</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So the usual drill -- create a new folder from the template, rename it to
 19-collision-detection, and begin coding below the background. The
 first thing we'll do is create a rect styled like a picture frame. This
@@ -6661,8 +6716,9 @@ frameSize / 10,
 });
 ```
 
-<h2>Initializing and Extending Our Shapes</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-4b">7.4b Initializing and Extending Our Shapes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With the frame now in place, let's fill it with some circles of various
 sizes. The aim will be to have these circles burst out from the center
 in all directions, some rushing rapidly and others ambling slowly, and
@@ -6737,8 +6793,9 @@ let circle = svg.create('circle').set({
 });
 ```
 
-<h2>Frame-by-Frame Calculations</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-4c">7.4c Frame-by-Frame Calculations</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Calculating whether or not one of our circles collides with a boundary
 (i.e., the edge of our frame) involves keeping a constant check on each
 circle's position. For this reason, requestAnimationFrame() is really
@@ -6860,8 +6917,9 @@ explore it independently).
 
 ***Figure 7-3.** Colorful collision detection*
 
-**Circularity**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-5">7.5 Circularity</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We'll round off the chapter with a return to the JavaScript Web
 Animations API. We'll touch on trigonometry in the process, but only
 tangentially (if you got that pun, you're doing well!), as the main
@@ -6902,8 +6960,9 @@ for (let i = 0; i < numCircles; i += 1) {
 }
 ```
 
-<h2>Slices of PI</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-5a">7.5a Slices of PI</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here comes the trigonometry tangent we mentioned earlier. To calculate
 the distribution of each of our circles (i.e., their cx and cy
 coordinates), we need to draw upon some built-in JavaScript Math methods
@@ -6946,8 +7005,9 @@ following line:
 let angle = Math.PI * 2 / numCircles * i;
 ```
 
-<h2>Sine and Cosine</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-5b">7.5b Sine and Cosine</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Once we have the angle, we need to get the corresponding sine and cosine
 values, which you can think of as the x and y coordinates. We won't go
 into too much detail here; suffice to say, the methods Math.sin() and
@@ -6977,8 +7037,9 @@ let cx = Gen.map(sin, -1, 1, 200, 800, false);
 let cy = Gen.map(cos, -1, 1, 200, 800, false);
 ```
 
-<h2>Animating Our Circles</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-5c">7.5c Animating Our Circles</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We can now try our hand at a basic animation. We'll start simple and
 move our circles outward from the center toward the cx and cy
 coordinates we defined earlier.
@@ -7019,8 +7080,9 @@ Figure 7-6 for a snapshot of this animation at about 15% progression.
 
 ***Figure 7-6.** A circular loop with the Web Animations API*
 
-**Summary**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch7-6">7.6 Summary</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This has been perhaps the densest of all chapters so far in terms of
 concepts and content, but I hope you've also had some fun following
 along. To quickly recap, we've covered the following:
@@ -7045,8 +7107,9 @@ along. To quickly recap, we've covered the following:
 
 In the next and final full chapter, we'll focus on SVG filters.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8">CHAPTER 8: Filter Effects</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In addition to all the vector functionality offered by SVG (as you'd
 expect from a format called Scalable Vector Graphics), SVG also provides
 some very powerful pixel-based effects in the form of the \<filter\>
@@ -7063,8 +7126,9 @@ I'll aim to avoid this pitfall and will be presenting a subset of
 filters more from the perspective of the generative artist than the
 image editor.
 
-**Filter Fundamentals**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch8-1">8.1 Filter Fundamentals</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before we explore specific filter effects in any depth, we need to know
 how they're structured. A filter consists of a single \<filter\> element
 and one or more filter primitives. These primitives, which are also
@@ -7103,8 +7167,9 @@ result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feG
 
 ***Figure 8-1.** A blurred circle*
 
-<h2>The Ins and Outs</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-1a">8.1a The Ins and Outs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's inspect a slightly more involved example, this time illustrating
 how filter primitives can be connected together. The result will be a
 drop shadow applied to a circle's stroke, as shown in Figure 8-2.
@@ -7165,9 +7230,8 @@ effect to it. The result (or output) is then named blur.
 We'll go into some of these primitives in more detail later, but next
 we'll look at how to move from markup to scripting filters with SvJs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>The SvJs createFilter( ) Method</h2>
+<h3 id="ch8-1b">8.1b The SvJs createFilter( ) Method</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Perhaps unsurprisingly, SvJs has its own createFilter() method to speed
 up the filter creation process. It requires just one argument: an id,
 and this id is used when applying the filter to the target element. As
@@ -7193,8 +7257,9 @@ filter:
 });
 ```
 
-<h2>The Filter Region</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-1c">8.1c The Filter Region</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 When a filter is applied to an element, its active region extends beyond
 that element. This allows a certain amount of space into which the
 effect can "bleed," to use a print analogy. This space is known as the
@@ -7231,7 +7296,7 @@ filter.set({
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Filter Effects 101**
+<h2 id="ch8-2">8.2 Filter Effects 101</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's move on to some simple custom filter effects. We've already seen
 the feGaussianBlur primitive in action so I won't give it its own
@@ -7246,9 +7311,8 @@ filter.create('feGaussianBlur').set({ stdDeviation: '20 0' });
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Shadows</h2>
+<h3 id="ch8-2a">8.2a Shadows</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 We implemented a drop shadow earlier using three connected filter
 primitives, but there's actually a much easier way to do this. In a more
 recent revision of the SVG spec, the primitive feDropShadow was
@@ -7277,7 +7341,7 @@ filter: 'url(#shadow)' });
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Coloring</h2>
+<h3 id="ch8-2b">8.2b Coloring</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We mentioned earlier some attributes called flood-colour and flood-
 opacity that can be used with the feDropShadow primitive. There's
@@ -7386,7 +7450,7 @@ simply floods the canvas, covering everything else. We need a way to
 blend it with the result of the feColorMatrix desaturation.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Blending</h2>
+<h3 id="ch8-2c">8.2c Blending</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most vector and image editing applications have blending capabilities
 built in, in the form of layer blending modes. SVG supports this feature
@@ -7441,7 +7505,7 @@ point in colorized form, but we've still got our flood color in the
 foreground. We need a way to strip this out, which brings us to the next
 section.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Compositing</h2>
+<h3 id="ch8-2d">8.2d Compositing</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you've ever watched the behind-the-scenes footage of some of your
 favorite films, you'll likely have come across the green-screen
@@ -7535,16 +7599,15 @@ achieve without filters.
 
 ***Figure 8-6.** The result of the composite operation*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Noise and Distortion**
+<h2 id="ch8-3">8.3 Noise and Distortion</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 In this section, we'll introduce a new kind of noise, one that's
 actually built in to the SVG spec itself. And we'll also explore how to
 add some distortion to our filter pipeline. With these two ingredients,
 along with the basics covered earlier, a whole world of effects opens up
 to us.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Turbulence</h2>
+<h3 id="ch8-3a">8.3a Turbulence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In Chapter 5, we introduced the SvJs Noise module, which allowed us to
 use Perlin noise in our sketches. SVG also implements Perlin noise
@@ -7614,11 +7677,9 @@ produce a huge variety of interesting textures. Very high baseFrequency
 values can be useful however if you want to simulate something more
 granular, like the classic film grain effect or a sandpaper-like
 texture.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Displacement</h2>
+<h3 id="ch8-3b">8.3b Displacement</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 One filter primitive that works particularly well alongside feTurbulence
 is feDisplacementMap. This primitive allows us to distort the first
 input, in, using values from the second input, in2. This second input
@@ -7651,9 +7712,8 @@ height="1.3083333333333333in"}
 
 ***Figure 8-8.** Using turbulence as a displacement map source*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Creating a Cosmic Bubble</h2>
+<h3 id="ch8-3c">8.3c Creating a Cosmic Bubble</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 This next example will piece together several of the filter primitives
 we've covered so far and apply it to the simplest of source graphics:
 the circle. Our aim will be to create something a little "cosmic" by
@@ -7753,7 +7813,7 @@ filter.create('feComposite').set({ in: 'distortion', in2:
 ***Figure 8-10.** One possible iteration of the Hubble Bubble sketch*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Lighting and Texture**
+<h2 id="ch8-4">8.4 Lighting and Texture</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Despite SVG being, by definition, a format for two-dimensional vector
 graphics, among its filter primitives, you'll find two lighting effects:
@@ -7797,7 +7857,7 @@ feDiffuseLighting and feDisplacementMap to simulate a rough, ripped
 paper effect. But first, we need to delve a little more into the details
 of the two aforementioned lighting primitives.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Diffuse and Specular Lighting</h2>
+<h3 id="ch8-4a">8.4a Diffuse and Specular Lighting</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The feDiffuseLighting primitive simulates diffuse reflection. What this
 means is that the light that strikes the surface of a diffuse-lit object
@@ -7826,7 +7886,7 @@ additional attribute called specularExponent, which controls the focal
 point strength (in Figure 8-12, this would determine the size of the
 point light's reflection).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Light Sources</h2>
+<h3 id="ch8-4b">8.4b Light Sources</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I've mentioned distant lights and point lights a couple of times now but
 haven't explained them. These refer to the type of light emitted by
@@ -7865,7 +7925,7 @@ correspond with the elevation or height of the light source, and the x
 and y attributes refer to the standard two-dimensional position in the
 current coordinate space.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Simulating Textures</h2>
+<h3 id="ch8-4c">8.4c Simulating Textures</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's start a new sketch and flesh out some of the theory mentioned
 previously. Copy our template folder and rename it to 23-rough-paper,
@@ -7986,8 +8046,9 @@ other generative compositions.
 
 ***Figure 8-13.** Our rough and ready paper texture*
 
-<h2>Generative Textures</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-4d">8.4d Generative Textures</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The previous example lays the groundwork for what we'll try next.
 Simulating textures is all well and good, but for the next example,
 we'll go full generative, that is, relinquish some control and relish
@@ -8149,7 +8210,7 @@ are quite a few primitives I didn't have the space to touch on. It
 definitely warrants (and rewards) further independent exploration.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Summary**
+<h2 id="ch8-xx">8.xx Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's do a quick recap of what was covered in this our penultimate
@@ -8189,7 +8250,7 @@ chapter in little chunks, and we'll wrap up by previewing some of the
 paths you might pursue next in your generative journey.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**The Journey So Far**
+<h2 id="ch9-1">9.1 The Journey So Far</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We began with an introduction to SVG and what sets it apart from raster
 formats like PNG and JPG. We then moved on to the SvJs library and
@@ -8235,7 +8296,7 @@ artist, and we learned how to connect these primitives together to
 achieve a variety of different effects.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**The Voyage Forward**
+<h2 id="ch9-2">9.2 The Voyage Forward</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So where do you go from here? Have we fully explored the field of
 generative art, mapped all the territory? Not in the slightest! We've
@@ -8246,7 +8307,7 @@ that the material we've covered so far could be expanded upon ad
 infinitum).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Trigonometry</h2>
+<h3 id="ch9-2a">9.2a Trigonometry</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I was only able to offer a very cursory treatment of trigonometry in
 Chapter 7, so if this was your first time encountering the likes of
@@ -8284,7 +8345,7 @@ of it to tap into its creative possibilities, and this doesn't have to
 involve complicated equations.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Fractals</h2>
+<h3 id="ch9-2b">9.2b Fractals</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Another subject that doesn't necessitate complicated equations or mind-
@@ -8339,8 +8400,9 @@ If your interest is piqued at this point, I've pooled together further
 resources at <a href="https://davidmatthew.ie/generative-art-javascript-svg/#fractals﻿">
 davidmatthew.ie/generative-art-javascript-svg/#fractals</a> that I'd encourage you to explore.
 
-<h2>Systems Simulations</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch9-2c">9.2c Systems Simulations</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 From simple rules, unexpected complexity often emerges; this is not only
 true for fractals, but for a number of natural systems. Simulating such
 systems is usually the business of serious science, but in the more
@@ -8392,7 +8454,7 @@ I'll link to more examples for you to play with at
 davidmatthew.ie/generative-art-javascript-svg/#systems-simulations</a>,
 including other kinds of simulations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch9-4">9.4 Closing Comments</h2>
+<h2 id="ch9-3">9.3 Closing Comments</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 At this stage, I've done enough summarizing, so I'd like to leave you
 with some (rather opinionated) parting tips to support you in your
