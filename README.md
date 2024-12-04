@@ -1135,7 +1135,8 @@ let oldWay = '' +
 ' <p>My name is ' + name + ' and I am ' + age + ' years of age.
 </p>\n'
 'n' + ' </div>\n';
-// And here's how the same thing can be done now. let newWay = ` <div
+// And here's how the same thing can be done now. 
+let newWay = ` <div
 class="intro"> <p>My name is ${name} and I am ${age} years of age.</p>
 </div>`;
 ```
@@ -1152,7 +1153,8 @@ named after George Boole, inventor of Boolean algebra.
 They can be useful for representing any binary state: yes or no, on or
 off, alive or dead, etc. They are written as simply true or false.
 ```
-let alive = true; // phew let kicking = false; // just sitting
+let alive = true; // phew 
+let kicking = false; // just sitting
 ```
 Booleans make conditional statements and comparisons possible, which
 we'll get to a little later.
@@ -1392,8 +1394,7 @@ the computer "is at least one of these conditions true?"
 ```
 true || false -> true
 false || true -> true
-false || false
--> false
+false || false -> false
 ```
 
 Finally, we have the negation operator !. This "flips" the condition
@@ -1557,7 +1558,8 @@ incrementing and decrementing -- or indeed multiplying and dividing --
 variable values:
 
 ```
-// Long way. i = i + 1 i = i * 2 i = i -- 1 i = i / 2
+// Long way. 
+i = i + 1 i = i * 2 i = i -- 1 i = i / 2
 // Shorter way.
 i += 1 i *= 2 i -= 1 i /= 2
 // Even shorter way (only valid for adding or subtracting by 1).
@@ -1566,7 +1568,6 @@ i++ i--
 
 The shorthand notation is what you'll likely encounter in practice, so
 we'll continue to use it here.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>The For Loop</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1575,9 +1576,11 @@ iterator and incrementation into a single line. Its typical structure is
 as follows:
 
 ```
-for (let i = startingNumber; i < upperLimit; i += increment) {
-// run some code while i is less than the upperLimit.
-}
+for (let i = startingNumber; 
+  i < upperLimit; 
+    i += increment) {
+    // run some code while i is less than the upperLimit.
+  }
 ```
 
 The for loop structure is succinctly divided into three sections. We
@@ -1587,7 +1590,8 @@ version of our previous example, where we logged the value of i to the
 browser console on each iteration.
 
 ```
-for (let i = 0; i <= 99; i++) { console.log(i); }
+for (let i = 0; i <= 99; 
+  i++) { console.log(i); }
 ```
 
 You don't always have to increment the iterator. You can just as easily
@@ -1595,7 +1599,8 @@ reverse the loop and have it count down from 99 to 0 by making a few
 tweaks.
 
 ```
-for (let i = 99; i >= 0; i--) { console.log(i); }
+for (let i = 99; i >= 0; 
+  i--) { console.log(i); }
 ```
 
 It is common to use the value of the iterator in the body of the for
@@ -1605,10 +1610,12 @@ increase the radiusX and radiusY of each ellipse.
 
 ```
 // Run a loop (a randomised number of times) to create our ellipses.
-for (let i = 0; i < randomised.iterations; i += 1) {
-// ... code.
-let radiusX = 100 + (i * 3); let radiusY = 300 + (i * 2);
-// ... more code.
+for (let i = 0; 
+  i < randomised.iterations; i += 1) {
+  // ... code.
+  let radiusX = 100 + (i * 3); 
+  let radiusY = 300 + (i * 2);
+  // ... more code.
 }
 ```
 
@@ -1647,9 +1654,9 @@ the function name.
 ```
 // A function with parameters.
 function sayHello(name) {
-
-// Greet the user the Irish way. 
-console.log(\`Howaya \${name}, what\'s the craic?\`); }
+  // Greet the user the Irish way. 
+  console.log(`Howaya ${name}, what's the craic?`); 
+}
 ```
 
 Functions may or may not explicitly return a value, and if they do, only
@@ -1676,7 +1683,8 @@ synonymous with calling or executing the function. It can be done like
 so:
 
 ```
-// Invoking a function. performSomeTask();
+// Invoking a function. 
+performSomeTask();
 ```
 
 To invoke a function that has parameters as part of its definition, we
@@ -1811,8 +1819,8 @@ in order to return a value. Anonymous functions can also be assigned to
 variables that then store the returned value.
 
 ```
-// An anonymous function expression assigned to a variable. const sum =
-function(a, b) { return a + b; }
+// An anonymous function expression assigned to a variable. 
+const sum = function(a, b) { return a + b; }
 ```
 
 In the preceding example, the variable can be used to execute the
@@ -1993,6 +2001,7 @@ manner are known as callback functions.
 ```
 // Set up an sample array. 
 const someNumbers = [2, 4, 6, 8, 10];
+
 // Call the forEach method on each array item.
 someNumbers.forEach((item) => { 
   console.log(item * 2); 
@@ -2060,8 +2069,10 @@ myComputer[processor];
 We can also update and create new object properties via the same syntax.
 
 ```
-// Updating an object's property. myComputer.inSleepMode = true;
-// Creating a new object property. myComputer.storage = "512 GB SSD";
+// Updating an object's property. 
+myComputer.inSleepMode = true;
+// Creating a new object property. 
+myComputer.storage = "512 GB SSD";
 ```
 
 If you take a look back at our first sketch again, you'll notice that I
@@ -2569,7 +2580,8 @@ template sketch.js file in full:
 ```
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Parent SVG. const svg = new SvJs().addTo(document.
+// Parent SVG. 
+const svg = new SvJs().addTo(document.
 getElementById('container'));
 
 // Viewport and viewBox (1:1 aspect ratio). 
@@ -3463,10 +3475,11 @@ Gen.random(50, 100);
 // Return a floating point number between 10 and 20.
 Gen.random(10, 20, true);
 -> 17.98188644344106
-// Return a random item from an array. let rainbow = ['red',
-'yellow', 'pink', 'green', 'purple',
-'orange', 'blue'];
-Gen.random(rainbow);
+
+// Return a random item from an array. 
+let rainbow = ['red', 'yellow', 'pink', 
+  'green', 'purple', 'orange', 'blue'];
+  Gen.random(rainbow);
 -> 'purple'
 ```
 
@@ -3506,11 +3519,15 @@ radius will be between 1 and 10. This should create an effect not too
 dissimilar to the spattering of paint (illustrated in Figure 4-1).
 
 ```
-for (let i = 0; i \< iterations; i += 1) { svg.create(\'circle\').set({
-cx: Gen.random(0, 1000),
-cy: Gen.random(0, 1000), r: Gen.random(1, 10)
-});
-}
+for (let i = 0; 
+  i < iterations; 
+  i += 1) { 
+    svg.create('circle').set({
+      cx: Gen.random(0, 1000),
+      cy: Gen.random(0, 1000), 
+      r: Gen.random(1, 10)
+    });
+  }
 ```
 
 ![](./images/image021.jpg){width="3.15in" height="3.15in"}
@@ -3539,7 +3556,7 @@ In our loop, add the following line below the radius (making sure to
 separate the lines with a comma):
 
 ```
-fill: \`hsl(\${Gen.random(0, 360)} 80% 80% / \${Gen. random(5, 40)}%)\`
+fill: `hsl(${Gen.random(0, 360)} 80% 80% / ${Gen. random(5, 40)}%)`
 ```
 
 Now our speckles have come a little more to life (see Figure 4-2). But
@@ -3597,16 +3614,17 @@ allows us to populate the props variable on a case-by-case basis (quite
 literally, as you'll see).
 
 ```
-// Initialise the properties variable. let props;
+// Initialise the properties variable. 
+let props;
 // Populate the properties depending on the element chosen.
-switch(element) { case \'circle\': props = { cx: x, cy: y, r:
+switch(element) { case 'circle': props = { cx: x, cy: y, r:
 Gen.random(1, 10), fill: fill, stroke: stroke, stroke_width: strokeWidth
-}; break; case \'line\': props = { x1: x, y1: y, x2: x +
+}; break; case 'line': props = { x1: x, y1: y, x2: x +
 (Gen.random(-20, 20)), y2: y + (Gen.random(-20, 20)), stroke: stroke
-}; break; case \'rect\': props = { x: x, y: y, width: Gen.random(5, 25),
+}; break; case 'rect': props = { x: x, y: y, width: Gen.random(5, 25),
 height:
 Gen.random(5, 25), fill: fill, stroke: stroke, stroke_width:
-strokeWidth, transform: \`rotate(\${Gen.random(0, 360)} 500 500)\`
+strokeWidth, transform: `rotate(${Gen.random(0, 360)} 500 500)`
 };
 }
 ```
@@ -3665,7 +3683,7 @@ populating the x axis.
 
 ```
 // Example nested loop structure.
-for (let y = 0; y \< height; y += 1) { for (let x = 0; x \< width; x
+for (let y = 0; y < height; y += 1) { for (let x = 0; x < width; x
 += 1) {
 
 // Code goes here.
@@ -3679,7 +3697,7 @@ we'll set up a group element to act as our grid container.
 
 ```
 // Create our grid container group.
-let grid = svg.create(\'g\');
+let grid = svg.create('g');
 ```
 
 Now we'll run our for loop, appending a rect element to the grid on each
@@ -3912,12 +3930,12 @@ internal url reference, much like gradients and patterns. Let's get back
 to our sketch now and apply this same logic within our loop. First,
 create the nested loop as we did before:
 
+```
 for (let y = 0; y \< gridSize; y += increment) { for (let x = 0; x \<
 gridSize; x += increment) {
-
 }
-
 }
+```
 
 Next, create the clipPath. We need to create a unique id for each
 instance, so we can't pass in a static string as we did previously --
@@ -3925,17 +3943,20 @@ otherwise, the id would be duplicated on each loop iteration. Instead
 what we can do is use the x and y iterator variables to generate a
 dynamic string, using template literal syntax like so:
 
+```
 // Create our clip path with a unique id. let clip =
 svg.create(\'clipPath\').set({ id: \`\${x}\${y}\` });
+```
 
 Now we can create the actual shape of the clipPath. We'll keep it
 straightforward and make it square, that is, a rect with a width and
 height equal to our cellSize.
 
+```
 // Create the clip path shape.
-
 clip.create(\'rect\').set({ x: x, y: y, width: cellSize, height:
 cellSize });
+```
 
 With the clipPath in place, we need to decide what to put into it.
 Here's where we can get creative! There are four corners of each cell,
@@ -3944,19 +3965,17 @@ these four positions. The coordinates of these positions are determined
 by the current x and y values, along with the cellSize. Here's how we'd
 calculate these positions and choose one of them at random:
 
-// Define our possible positions. let positions = \[
-
-\[x, y\], // top left
-
-\[x + cellSize, y\], // top right
-
-\[x + cellSize, y + cellSize\], // bottom right
-
-\[x, y + cellSize\] // bottom left
-
-\];
-
-// Pick a random position. let pickedPosition = Gen.random(positions);
+```
+// Define our possible positions. 
+let positions = [
+[x, y], // top left
+[x + cellSize, y], // top right
+[x + cellSize, y + cellSize], // bottom right
+[x, y + cellSize] // bottom left
+];
+// Pick a random position. 
+let pickedPosition = Gen.random(positions);
+```
 
 Now, to create the circle group. This will involve a third loop (so a
 loop within a loop within a loop -- loopception if you will), where we
@@ -3964,20 +3983,18 @@ will create five circles radiating out from a randomly chosen center
 point. And let's not forget about our palette picked out earlier; the
 fill of each circle will be colored accordingly.
 
-// Create a group for our circles. let circles = grid.create(\'g\');
+```
+// Create a group for our circles. 
+let circles = grid.create('g');
 
 // Create the circles, applying the picked position and palette.
-
-for (let i = 0; i \< 5; i += 1) { circles.create(\'circle\').set({ cx:
-pickedPosition\[0\], cy: pickedPosition\[1\],
-
-r: cellSize - (i \* (cellSize / 5)), // this took a bit of tweaking
-
-fill: pickedPalette\[i\]
-
+for (let i = 0; i < 5; i += 1) { circles.create('circle').set({ cx:
+pickedPosition[0], cy: pickedPosition[1],
+r: cellSize - (i * (cellSize / 5)), // this took a bit of tweaking
+fill: pickedPalette[i]
 });
-
 }
+```
 
 We have a couple more steps to go. We haven't actually *applied* the
 clipPath to anything yet, so if we were to run our sketch at this point,
@@ -4039,10 +4056,8 @@ there's a 22% chance of some winnings (2 / (7 + 2) x 100 = 22.22).
 
 How could we work this kind of logic into our compositions? It's
 actually quite simple to do with plain JavaScript and Math.random(), but
-SvJs offers a more intuitive, less verbose alternative with its
-Gen.chance()
-
-function.
+SvJs offers a more intuitive, less verbose alternative with its 
+Gen.chance() function.
 
 By default (i.e., without any arguments), Gen.chance() returns either
 true or false based on odds of 50/50, or 50%. If we supply a single
@@ -4074,7 +4089,8 @@ loop). Next, replace the palettes array and pickedPalette variable with
 a randomly generated hue.
 
 ```
-// Pick a random hue. let hue = Gen.random(0, 360);
+// Pick a random hue. 
+let hue = Gen.random(0, 360);
 ```
 
 You can leave the grid-related variables as they are, or tweak them if
@@ -4082,12 +4098,13 @@ you prefer. Next, *between* the x and y loops (so within the first loop
 but before the second), increment the hue like so:
 
 ```
-// A nested loop to create the grid. for (let y = 0; y \< gridSize; y +=
+// A nested loop to create the grid. 
+for (let y = 0; y < gridSize; y +=
 increment) {
 
 // Increment the hue relative to the rows, keeping it within 0 and 360.
-hue = (hue \>= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
-for (let x = 0; x \< gridSize; x += increment) { \...
+hue = (hue >= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
+for (let x = 0; x < gridSize; x += increment) { ...
 ```
 
 This might seem like an overly complex way of increasing the hue value,
@@ -4149,7 +4166,7 @@ variation of the x coordinate in the placement of 1000 vertical lines.
 The lines are all scattered with equal chance of appearing anywhere
 along the x axis.
 
-> ![](./images/media/image30.jpg){width="4.725in" height="0.55in"}
+![](./images/media/image30.jpg){width="4.725in" height="0.55in"}
 
 ***Figure 4-10.** Uniform distribution of vertical lines*
 
@@ -4242,10 +4259,11 @@ emphasize the shape of the distribution with a series of fading circular
 strokes.
 
 ```
-// Create a series of circles to frame the distribution. for (let i = 0;
-i \< 10; i += 1) { svg.create(\'circle\').set({ cx: 500, cy: 500, r:
-25 + (i \* 25), fill: \'none\', stroke: \`hsl(0 0% 0% / \${0.25 - (i /
-50)})\`, stroke\_ width: 15
+// Create a series of circles to frame the distribution. 
+for (let i = 0;
+i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
+25 + (i * 25), fill: 'none', stroke: `hsl(0 0% 0% / ${0.25 - (i /
+50)})`, stroke_ width: 15
 });
 }
 ```
@@ -4279,8 +4297,8 @@ was the 1890's mind, so had Pareto made the same observations today, we
 might be discussing the 99-1 rule! Be that as it may, the basic idea
 remains the same: there is a lot with a little and a little with a lot.
 
-> ![](./images/media/image33.jpg){width="4.725in"
-> height="0.5066666666666667in"}
+![](./images/media/image33.jpg){width="4.725in"
+height="0.5066666666666667in"}
 
 ***Figure 4-13.** Pareto distribution of vertical lines*
 
@@ -4303,7 +4321,7 @@ background, create a group that will contain our cityscape.
 
 ```
 // Create a group for our generative city.
-let portoPareto = svg.create(\'g\');
+let portoPareto = svg.create('g');
 ```
 
 The cityscape will have three main elements: the sky, the river (or
@@ -4557,7 +4575,7 @@ resides in its own module, so like the Gen module, we have to import it
 before we can use it.
 
 ```
-import { Noise } from \'../../node_modules/svjs/src/index.js\';
+import { Noise } from '../../node_modules/svjs/src/index.js';
 ```
 
 Unlike Gen, which is a collection of functions, the Noise module is
@@ -4671,8 +4689,9 @@ method, passing in the nX and nY values we initialized earlier.
 
 ```
 // Create the noise matrix.
-for (let x = 0; x \< gridSize; x += increment) { for (let y = 0; y \<
-gridSize; y += increment) { // Fetch the noise value. let noiseValue =
+for (let x = 0; x < gridSize; x += increment) { for (let y = 0; y <
+gridSize; y += increment) { // Fetch the noise value. 
+let noiseValue =
 noise.get(nX, nY);
 }
 }
@@ -4685,8 +4704,8 @@ simplest way to do this, combined with a ternary operator.
 
 ```
 // Create text displaying either 0 or 1 (50% chance).
-let text = noiseGrid.create(\'text\'); text.content(Gen.chance() ? \'1\'
-: \'0\');
+let text = noiseGrid.create('text'); text.content(Gen.chance() ? '1'
+: '0');
 ```
 
 Now we need to set the position of the digit with respect to the x and y
@@ -4695,8 +4714,8 @@ lightness component of the hsl() function) with the noiseValue variable.
 We should also set a font size and font family while we're at it.
 
 ```
-text.set({ x: x, y: y, font_size: 16, font_family: \'serif\', fill:
-\`hsl(120 20% \${noiseValue}%)\` });
+text.set({ x: x, y: y, font_size: 16, font_family: 'serif', fill:
+`hsl(120 20% ${noiseValue}%)` });
 ```
 
 And before we close out our loop, we'll want to increment our nX and nY
@@ -4708,7 +4727,8 @@ To finish off the sketch, outside
 the loop, call the moveTo() function to shift the grid to the center of
 the canvas.
 ```
-// Centre the grid within the viewBox. noiseGrid.moveTo(500, 500);
+// Centre the grid within the viewBox. 
+noiseGrid.moveTo(500, 500);
 ```
 You should now see a grid of zeros and ones when you run your sketch.
 But ... they're all black. The color lightness isn't visibly changing,
@@ -4719,22 +4739,22 @@ If you inspect some of the text elements in the browser console, you'll
 see something like the following:
 
 ```
-\<text x=\"860\" y=\"960\" font-size=\"16\" font-family=\'serif\'
-fill=\"hsl(120 20%
+<text x="860" y="960" font-size="16" font-family='serif'
+fill="hsl(120 20%
 
--0.11888951723051341%)\"\>0\</text\>
+-0.11888951723051341%)">0</text>
 
-\<text x=\"860\" y=\"980\" font-size=\"16\" font-family=\'serif\'
-fill=\"hsl(120 20%
+<text x="860" y="980" font-size="16" font-family='serif'
+fill="hsl(120 20%
 
--0.06168012594419729%)\"\>1\</text\>
+-0.06168012594419729%)">1</text>
 
-\<text x=\"880\" y=\"0\" font-size=\"16\" font-family=\'serif\'
-fill=\"hsl(120 20%
+<text x="880" y="0" font-size="16" font-family='serif'
+fill="hsl(120 20%
 
-0.061791625695004807%)\"\>0\</text\> \<text x=\"880\" y=\"20\"
-font-size=\"16\" font-family=\'serif\' fill=\"hsl(120 20%
-0.1202821001266494%)\"\>1\</text\>
+0.061791625695004807%)">0</text> <text x="880" y="20"
+font-size="16" font-family='serif' fill="hsl(120 20%
+0.1202821001266494%)">1</text>
 ```
 
 The point to note here is that when we call the noise.get() method, the
@@ -4765,8 +4785,9 @@ setting it to false rounds the result to the nearest integer. The
 following is an example:
 
 ```
-// Map a number (5) from one range (0, 10) to another (0, 100). let num
-= 5; num = Gen.map(num, 0, 10, 0, 100); console.log(num); -\> 50
+// Map a number (5) from one range (0, 10) to another (0, 100). 
+let num = 5; num = Gen.map(num, 0, 10, 0, 100); 
+console.log(num); -> 50
 ```
 
 If we apply the Gen.map() function to our noiseValue variable, we can
@@ -4775,9 +4796,10 @@ new variable, or as the preceding example shows us, we can simply
 reassign the original variable.
 
 ```
-// Fetch the noise value. let noiseValue = noise.get(nX, nY);
-// Map the noise value to a useful range. noiseValue =
-Gen.map(noiseValue, -1, 1, 0, 100, false);
+// Fetch the noise value. 
+let noiseValue = noise.get(nX, nY);
+// Map the noise value to a useful range. 
+noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
 ```
 
 Once you've done this, you should see some color injected into our
@@ -4802,15 +4824,17 @@ font-size and font-family attributes remain static throughout. This
 seems quite wasteful.
 
 ```
-\<text x=\"740\" y=\"200\" font-size=\"16\" font-family=\"serif\"
-fill=\"hsl(120 20%
-50%)\"\>1\</text\>
+<text x=\"740" y="200" font-size="16" font-family="serif"
+fill="hsl(120 20%
+50%)">1</text>
 ```
 
 What we can do is first remove the font attributes set within the loop
 so that the text.set() method looks like the following:
 
-text.set({ x: x, y: y, fill: \`hsl(120 20% \${noiseValue}%)\` });
+```
+text.set({ x: x, y: y, fill: `hsl(120 20% ${noiseValue}%)` });
+```
 
 Then we can create a style element and within it, target all our text
 elements at once. Near the top of our sketch, after the parent SVG
@@ -4818,10 +4842,10 @@ declaration, include the following code:
 
 ```
 // Set some text styling.
-svg.create(\'style\').content(\` text { font-size: 16px; font-family:
+svg.create('style').content(` text { font-size: 16px; font-family:
 serif;
 }
-\`);
+`);
 ```
 
 Note the use of backticks here; this allows us to indent our code just
@@ -4846,18 +4870,18 @@ Copy the previous sketch folder and name it something like
 background so that we're left with the following boilerplate code:
 
 ```
-import { SvJs, Gen, Noise } from \'../../node_modules/svjs/src/
-index.js\';
+import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
+index.js';
 
-// Parent SVG. const svg = new SvJs().addTo(document.
-getElementById(\'container\'));
+// Parent SVG. 
+const svg = new SvJs().addTo(document.getElementById('container'));
 // Viewport and viewBox (1:1 aspect ratio).
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
-svg.set({ width: svgSize, height: svgSize, viewBox: \'0 0 1000 1000\'
+svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
 });
 // Background.
-svg.create(\'rect\').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-\'#181818\' });
+svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
+'#181818' });
 ```
 
 We'll then set up our noise-related variables, along with a couple of
@@ -4879,7 +4903,8 @@ the value to different ranges. One will control how much we shift the
 hue, and the other will control the length of each line.
 
 ```
-// Start the dance. for (let i = 10; i \< iterations; i += 1) { let
+// Start the dance. 
+for (let i = 10; i < iterations; i += 1) { let
 noiseValue = noise.get(nX); let hueShift = Gen.map(noiseValue, -1, 1,
 -180, 180, false); let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000,
 false); }
@@ -4898,10 +4923,10 @@ the hsl() function) and the stroke-width to 0.5, which will keep the
 line nice and delicate.
 
 ```
-let l1 = lines.create(\'line\').set({ x1: 0, y1: 0, x2: 0, y2:
+let l1 = lines.create('line').set({ x1: 0, y1: 0, x2: 0, y2:
 lineLength,
-stroke: \`hsl(\${Gen.constrain(hue + hueShift, 0, 360)} 80% 80%
-/ 0.5)\`, stroke_width: 0.5
+stroke: `hsl(${Gen.constrain(hue + hueShift, 0, 360)} 80% 80%
+/ 0.5)`, stroke_width: 0.5
 });
 ```
 
@@ -4910,10 +4935,10 @@ stretch the lineLength a little, shift the hue in the opposite
 direction, and also reduce its opacity.
 
 ```
-let l2 = lines.create(\'line\').set({ x1: 0, y1: 0, x2: 0, y2:
-lineLength \* 1.1,
-stroke: \`hsl(\${Gen.constrain(hue - hueShift, 0, 360)} 80% 80%
-/ 0.25)\`, stroke_width: 0.5 });
+let l2 = lines.create('line').set({ x1: 0, y1: 0, x2: 0, y2:
+lineLength * 1.1,
+stroke: `hsl(${Gen.constrain(hue - hueShift, 0, 360)} 80% 80%
+/ 0.25)`, stroke_width: 0.5 });
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5033,11 +5058,15 @@ character length, like the d attribute to which they are passed, and the
 values that accompany the commands can also be flexibly formatted to
 conserve space.
 
-// An example of a string of path data. path.set({ d: \'M 20,20 L 30,20
-L 30,30 L 20,30 Z\' });
+```
+// An example of a string of path data. 
+path.set({ d: 'M 20,20 L 30,20
+L 30,30 L 20,30 Z' });
 
-// An identical path using a more concise string. path.set({ d: \'M20
-20L30 20L30 30L20 30Z\' });
+// An identical path using a more concise string. 
+path.set({ d: 'M20
+20L30 20L30 30L20 30Z' });
+```
 
 We'll go into more detail in later sections as to how examples like the
 aforementioned work; for now, just note that the very same path data can
@@ -5191,15 +5220,15 @@ know that if a path command is omitted, the last-known command should be
 used. Let's show a quick example (the output of which is shown in Figure
 6-2).
 
-// The first path, with repeating L commands. svg.create(\'path\').set({
-d: \'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10\' });
+```
+// The first path, with repeating L commands. svg.create('path').set({
+d: 'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10' });
 
 // The second (identical) path, with the repeating L commands omitted.
-
-svg.create(\'path\').set({ d: \'M 10 10 L 20 20 30 10 40 20 50 10 60 20
-70 10\'
-
+svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
+70 10'
 });
+```
 
 > ![](./images/media/image41.jpg){width="3.5433333333333334in"
 > height="0.9616666666666667in"}
@@ -5214,11 +5243,11 @@ curves go, it's relatively simple. Two sets of coordinates are required:
 the first set defines the control point (which we'll explain in a
 moment), and the second the destination point.
 
+```
 // Syntax for the Q/q command.
-
-\'Q \[cpx cpy x y\] \...\'
-
-\'q \[dcpx dcpy dx dy\] \...\'
+'Q [cpx cpy x y] ...'
+'q [dcpx dcpy dx dy] ...'
+```
 
 <h2>Control Points</h2>
 
@@ -5230,9 +5259,11 @@ exerts over its curve (in this case, a quadratic Bezier curve). In this
 example, the dot represents the control point coordinates of \[150,
 350\], given the following path:
 
-\'M 50 150 Q 150 350 250 150\'
+```
+'M 50 150 Q 150 350 250 150'
+```
 
-> ![](./images/media/image42.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image42.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 6-3.** The control point of a quadratic Bezier curve*
 
@@ -5249,7 +5280,7 @@ curve (see Figure 6-4). Now, in this particular case, it's not that
 arduous a job to calculate a control point that would correct this, but
 in more complex cases, this can become a challenge.
 
-> ![](./images/media/image43.jpg){width="3.15in" height="1.89in"}
+![](./images/media/image43.jpg){width="3.15in" height="1.89in"}
 
 ***Figure 6-4.** A kink in the curve*
 
@@ -5259,11 +5290,11 @@ curve based on the previous curve's control point, essentially
 symmetric control point, and it requires just a single set of
 coordinates.
 
+```
 // Syntax for the T/t command.
-
-\'T \[x y\]\'
-
-\'t \[dx dy\]\'
+'T [x y]'
+'t [dx dy]'
+```
 
 Let's extend the curve from Figure 6-4, adding a few extra undulations
 to it. In the following example code, I'm adding some commas to the
@@ -5273,19 +5304,19 @@ need to repeat the T command when using it several times consecutively.
 This is why you'll only see it used once for the four coordinates that
 follow.
 
+```
 // Extending a quadratic curve with the smooth T command.
-svg.create(\'path\').set({
-
-d: \'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150\'
-
+svg.create('path').set({
+d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
 });
+```
 
 Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
 purple second point) from the four additional T points (in red).
 
-> ![](./images/media/image44.jpg){width="4.725in"
-> height="1.2883333333333333in"}
+![](./images/media/image44.jpg){width="4.725in"
+height="1.2883333333333333in"}
 
 ***Figure 6-5.** A smooth quadratic curve*
 
@@ -5301,36 +5332,41 @@ Copy the template folder and rename it to 14-quadratic-slinky. Below the
 parent SVG, set some styles to target the path elements that we'll later
 set up as children of a group to which we'll give an id of slinky.
 
+```
 // Style the slinky.
-
-svg.create(\'style\').content(\`
-
+svg.create('style').content(`
 #slinky path { fill: none; stroke-width: 0.75; stroke-linecap: round;
-
-}\`
-
+}`
 );
+```
 
 Next set up the usual background, initialize a random hue, and create
 the aforementioned slinky group.
 
+```
 // Background.
+svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
+'#181818' });
 
-svg.create(\'rect\').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-\'#181818\' });
+// Choose a random starting hue. 
+let hue = Gen.random(0, 360);
 
-// Choose a random starting hue. let hue = Gen.random(0, 360);
-
-// Set up the slinky path group. let slinky = svg.create(\'g\').set({
-id: \'slinky\' });
+// Set up the slinky path group. 
+let slinky = svg.create('g').set({
+id: 'slinky' });
+```
 
 In the next step, we'll fire up the loop and create a couple of control
 points we'll use to shape our quadratic curve.
 
-// Start the loop. for (let i = 0; i \< 500; i += 5) {
-
-// Create the control points. let cpx = Gen.random(200, 400); let cpy =
-i - 400; }
+```
+// Start the loop. 
+for (let i = 0; 
+i < 500; i += 5) {
+// Create the control points. 
+let cpx = Gen.random(200, 400); 
+let cpy = i - 400; }
+```
 
 The width of our curve will be 600 units (relative to the viewBox), so
 our halfway point will be 300. On the x axis, the cpx variable is
@@ -5339,11 +5375,14 @@ point, to give our slinky some "wobble." The cpy variable is more
 straightforward; it moves down the screen on each iteration, with an
 offset of 400 units that will "pull" the curve upward.
 
-> Next, let's create the actual curve (keeping within the loop).
+Next, let's create the actual curve (keeping within the loop).
 
-// Create the quadratic curve. slinky.create(\'path\').set({ stroke:
-\`hsl(\${hue} 90% 80% / 0.85)\`, d: \`M 0 \${i} q \${cpx} \${cpy} 600
-0\` });
+```
+// Create the quadratic curve. 
+slinky.create('path').set({ stroke:
+`hsl(${hue} 90% 80% / 0.85)`, d: `M 0 ${i} q ${cpx} ${cpy} 600
+0` });
+```
 
 Here, we're setting the hue as we've done many times before, and for the
 path, we're drawing one simple curve starting with the M command. For
@@ -5358,7 +5397,9 @@ remainder after division. This can be useful to cycle within predefined
 ranges, such as the 0 to 360 constraints of a color's hue. Add the
 following as the final line before the end of the loop:
 
+```
 // Increment the hue. hue = (hue % 360) + 1.5;
+```
 
 A quick explanation of how this works: say our random hue is initialized
 to 350. The expression hue % 360 will return 350, because 350 / 360 is
@@ -5369,9 +5410,11 @@ remainder of 0. This is how it cycles back to the start of the range.
 Now that our loop is done, we can add one more line outside it to ensure
 the content is centered. The result should resemble Figure 6-6.
 
+```
 slinky.moveTo(500, 500);
+```
 
-> ![](./images/media/image45.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image45.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 6-6.** Quadratic curves in a slinky formation*
 
@@ -5382,11 +5425,11 @@ complicated beast, and the syntax is quite difficult to comprehend
 without some visual examples. The A (or a) command is used to initialize
 it, and it is followed by no less than seven arguments.
 
+```
 // Syntax for the A/a command.
-
-\'A \[rx ry rotation large-arc-flag sweep-flag x y\] \...\'
-
-\'a \[rx ry rotation large-arc-flag sweep-flag dx dy\] \...\'
+'A [rx ry rotation large-arc-flag sweep-flag x y] ...'
+'a [rx ry rotation large-arc-flag sweep-flag dx dy] ...'
+```
 
 The first two arguments and the last two arguments aren't anything we
 haven't encountered before: rx and ry refer to the radii of the x and y
@@ -5398,7 +5441,7 @@ largearc-flag and sweep-flag are both booleans in numeric form, 0
 meaning false and 1 meaning true. What they do though takes a little
 explaining.
 
-> ![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
+![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
 
 ***Figure 6-7.** An elliptical arc curve*
 
@@ -5424,7 +5467,7 @@ are shown.
 -   In the lowermost path, the large-arc-flag is set to 1 and the
     sweep-flag is set to 0.
 
-> ![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
+![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
 
 ***Figure 6-8.** Four possible arcs*
 
@@ -5602,15 +5645,17 @@ control point that mirrors the control point of the preceding curve and
 as a result allows us to omit the first set of control point
 coordinates.
 
+```
 // Extending a cubic bezier curve with the S command.
-svg.create(\'path\').set({ d: \'M 50,150 C 100,250 200,50 250,150 S
-400,50 450,150\' });
+svg.create('path').set({ d: 'M 50,150 C 100,250 200,50 250,150 S
+400,50 450,150' });
+```
 
 In Figure 6-11, the faintest of the dashed lines indicates where the S
 command has automatically generated a symmetrical control point.
 
-> ![](./images/media/image50.jpg){width="3.5433333333333334in"
-> height="2.1266666666666665in"}
+![](./images/media/image50.jpg){width="3.5433333333333334in"
+height="2.1266666666666665in"}
 
 ***Figure 6-11.** A smoothly extended cubic Bezier curve*
 
@@ -5622,8 +5667,10 @@ this end, our friend Noise will nudge us in the right direction. First,
 do the usual and copy the template folder, calling it something like
 16-organic-curves. Ensure you have the following imports at the top:
 
-import { SvJs, Gen, Noise } from \'../../node_modules/svjs/src/
-index.js\';
+```
+import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
+index.js';
+```
 
 The parent SVG and background will then follow, at which point we'll
 create some noise-related variables. I'm including a new one here called
@@ -5632,15 +5679,20 @@ amplifier; this will be used when we map the noise value to a new range
 
 // Noise-related.
 
+```
 let noise = new Noise(); let n = Gen.random(0, 1000); let speed = 0.05;
-
 let amplifier = Gen.random(200, 500);
+```
 
 Next we'll set up variables relating to colors and the curves
 themselves, which we'll contain within a group.
 
-// Curve and colour-related. let curves = svg.create(\'g\'); let
-numCurves = Gen.random(75, 125); let hue = Gen.random(0, 360);
+```
+// Curve and colour-related. 
+let curves = svg.create('g'); 
+let numCurves = Gen.random(75, 125); 
+let hue = Gen.random(0, 360);
+```
 
 It's generally good practice to group your variables meaningfully in
 this manner, with some comments to add clarity. Otherwise when you later
@@ -5658,17 +5710,14 @@ original starting point, but wrap around them more naturally. Outside
 the loop, include the moveTo() method to center-align our curve group.
 for (let i = 0; i \< numCurves; i += 1) {
 
+```
 // Retrieve and map our noise value.
-
 let noiseValue = noise.get(n);
-
 noiseValue = Gen.map(noiseValue, -1, 1, -amplifier,
-
-> amplifier, false);
-
+amplifier, false);
 }
-
 curves.moveTo(500, 500);
+```
 
 Next come the curve coordinates. For clarity, we'll set variables for
 each command we call, to make the construction of the path data (or d
@@ -5677,13 +5726,25 @@ within the loop. The shape of the curve we're aiming for isn't too
 dissimilar to the one shown in Figure 6-10. Other than that, the values
 provided are fairly arbitrary, so feel free to tweak them.
 
-// M command co-ordinates. let mx = 0; let my = 0 + (i \* 5);
+```
+// M command co-ordinates. 
+let mx = 0; 
+let my = 0 + (i * 5);
 
-// C command co-ordinates. let cpx1 = 0 + noiseValue; let cpy1 = -100;
-let cpx2 = 250 + noiseValue; let cpy2 = -100; let x2 = 300; let y2 = 0;
+// C command co-ordinates. 
+let cpx1 = 0 + noiseValue; 
+let cpy1 = -100;
+let cpx2 = 250 + noiseValue; 
+let cpy2 = -100; 
+let x2 = 300; 
+let y2 = 0;
 
-// S command co-ordinates. let spx = 350 + noiseValue; let spy = 100;
-let x3 = 300; let y3 = -50;
+// S command co-ordinates. 
+let spx = 350 + noiseValue; 
+let spy = 100;
+let x3 = 300; 
+let y3 = -50;
+```
 
 With the exception of the initial M command coordinates, we're going to
 build out our curves using relative coordinates (i.e., we'll feed the
@@ -5701,11 +5762,13 @@ literal syntax. In previous sketches, we've been opening and closing our
 braces \${} for each variable. When these variables follow one after the
 other however, we can actually embed them all at once as an array.
 
-// Create the organic curve. curves.create(\'path\').set({ fill:
-\'none\', stroke: \`hsl(\${hue} 80% 80% / 0.8)\`, d: \`M \${\[mx, my\]}
-c \${\[cpx1, cpy1, cpx2, cpy2, x2, y2\]} s \${\[spx, spy, x3, y3\]}\`
-
+```
+// Create the organic curve. 
+curves.create('path').set({ fill:
+'none', stroke: `hsl(${hue} 80% 80% / 0.8)`, d: `M \${[mx, my]}
+c ${[cpx1, cpy1, cpx2, cpy2, x2, y2]} s ${[spx, spy, x3, y3]}`
 });
+```
 
 If you run the sketch at this point, you'll see a series of curves
 alright, but their shape and color will remain uniform throughout. We
@@ -5716,19 +5779,21 @@ this step next and also increase the hue while we're at it, modulating
 it slightly via the noiseValue variable. As a final flourish, we'll
 throw in some randomized "bubbles" (see Figure 6-12). Don't ask me why.
 
-// Increment the noise and hue. n += speed; hue = (hue % 360) +
-(noiseValue / 25);
+```
+// Increment the noise and hue. 
+n += speed; 
+hue = (hue % 360) + (noiseValue / 25);
 
-// 10% chance of spawning a \'bubble\'. if (Gen.chance(10)) {
-svg.create(\'circle\').set({ r: Gen.random(5, 50), cx: Gen.random(150,
-850), cy: Gen.random(150, 850), fill: \`hsl(0 0% 100% / 0.1)\`, stroke:
-\'#888\'
-
+// 10% chance of spawning a 'bubble'. 
+if (Gen.chance(10)) {
+svg.create('circle').set({ r: Gen.random(5, 50), cx: Gen.random(150,
+850), cy: Gen.random(150, 850), fill: `hsl(0 0% 100% / 0.1)`, stroke:
+'#888'
 });
-
 }
+```
 
-> ![](./images/media/image51.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image51.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 6-12.** Noise-modulated organic curves*
 
@@ -5747,8 +5812,10 @@ a large degree of control, but in some cases, we may not need the level
 of fine-tuning that the manual curve commands offer. With the
 createCurve() method, all we need to worry about are the points.
 
-// The syntax of the createCurve() method. createCurve(pointsArray,
-\[curveFactor\]);
+```
+// The syntax of the createCurve() method. 
+createCurve(pointsArray, [curveFactor]);
+```
 
 In crude terms, we can think of this as a join-the-dots method, the main
 difference being that we need to supply the dots rather than do the
@@ -5757,14 +5824,14 @@ array of \[x, y\] coordinate pairs. It can be supplied as either a
 standard one- dimensional array or as a two-dimensional array (i.e., an
 array of arrays).
 
-// A one-dimensional array of points. let points1D = \[25, 30, 45, 20,
-80, 10, 90, 40\];
+```
+// A one-dimensional array of points. 
+let points1D = [25, 30, 45, 20, 80, 10, 90, 40];
 
-// A two-dimensional array of the same points. let points2D = \[
-
-\[25, 30\], \[45, 20\], \[80, 10\], \[90, 40\]
-
-\];
+// A two-dimensional array of the same points. 
+let points2D = [[25, 30], [45, 20], [80, 10], [90, 40]
+];
+```
 
 The curveFactor argument allows us to modify the tension between the
 points. At a value of 0, the points are connected by a straight line. At
@@ -5780,8 +5847,8 @@ bottom curve to 5. The faint dots indicate where our pointsArray
 coordinates are positioned and are shown for illustrative purposes only;
 you wouldn't see these rendered normally.
 
-> ![](./images/media/image52.jpg){width="3.5433333333333334in"
-> height="2.5316666666666667in"}
+![](./images/media/image52.jpg){width="3.5433333333333334in"
+height="2.5316666666666667in"}
 
 ***Figure 6-13.** Varying the curve factor using values of 0, 1, and 5*
 
@@ -5857,8 +5924,10 @@ listening); two, the event type to listen out for (e.g., a mouse click);
 and three, what to do when it hears it (i.e., the action performed by
 the callback function). It takes the following form:
 
+```
 // Adding an event listener to a HTML or SVG element.
-element.addEventListener(\'eventType\', doSomething);
+element.addEventListener('eventType', doSomething);
+```
 
 We are assuming here that the callback function doSomething() is defined
 elsewhere in the code. Note that in this case it is supplied by name
@@ -5867,13 +5936,13 @@ trigger prematurely. The situation is different with anonymous -- or
 arrow -- functions, which can be defined there and then without the
 danger of being immediately invoked.
 
+```
 // Using arrow syntax to define the callback function.
+element.addEventListener('eventType', () => {
 
-element.addEventListener(\'eventType\', () =\> {
-
-// do something here\...
-
+// do something here...
 });
+```
 
 <h2>Event Types</h2>
 
@@ -5893,13 +5962,13 @@ also consider the click event type -- technically a mouse event -- as
 falling under this umbrella, as it can also capture simple touch events
 like a finger tap.
 
+```
 // Capturing the movement of a mouse, stylus or finger over an element.
+element.addEventListener('pointermove', () => {
 
-element.addEventListener(\'pointermove\', () =\> {
-
-// do something here\...
-
+// do something here...
 });
+```
 
 <h2>Event Parameters</h2>
 
@@ -5913,14 +5982,13 @@ Here's how this could work in practice. In the following code, the
 position of the mouse or pointer device is logged to the console each
 time you click anywhere within the body of the HTML page.
 
-// Log the user\'s pointer co-ordinates on click.
-
-document.body.addEventListener(\'click\', (event) =\> { let x =
+```
+// Log the user's pointer co-ordinates on click.
+document.body.addEventListener('click', (event) => { let x =
 event.clientX; let y = event.clientY;
-
-console.log(\`x: \${x}, y: \${y}\`);
-
+console.log(`x: ${x}, y: ${y}`);
 });
+```
 
 The clientX and clientY properties are just a couple of the many
 properties built into a click event. The full list can be found over at
@@ -5956,12 +6024,12 @@ what tells us the actual key that was pressed. We'll trigger the save()
 method only when that key is equal to "s", irrespective of case
 (allowing us to capture the capital "S" too).
 
+```
 // Save the root svg as a downloadable file.
-
-document.addEventListener(\'keydown\', (event) =\> { let key =
-event.key.toLowerCase(); if (key === \'s\') svg.save();
-
+document.addEventListener('keydown', (event) => { let key =
+event.key.toLowerCase(); if (key === 's') svg.save();
 });
+```
 
 Feel free to use the aforementioned for any sketch going forward. And
 incidentally, the save() method can be called on any SVG element,
@@ -5987,7 +6055,9 @@ ensuring the expected behavior also occurs with touchscreen devices. To
 activate it, it just needs to be called on the main SVG element as
 follows:
 
+```
 svg.trackCursor();
+```
 
 Once activated, it updates two properties of the parent SVG: cursorX and
 cursorY, which tell us where in the viewBox (rather than the web browser
@@ -5995,13 +6065,13 @@ window) our cursor is currently located. It also allows us to pass in
 our own custom callback function, to be triggered each time the cursor
 position is updated.
 
+```
 // Passing in a custom callback.
+svg.trackCursor(() => {
 
-svg.trackCursor(() =\> {
-
-// \... do stuff
-
+// ... do stuff
 });
+```
 
 <h2>Interactive Ellipses</h2>
 
@@ -6014,11 +6084,15 @@ Below the background, initialize the following variables. The ellipses
 array is a new addition; we'll use this to store the created ellipses so
 we can iterate through them afterward.
 
-// Randomise some variables. let hue = Gen.random(0, 360); let rotation
-= Gen.random(0, 360); let iterations = Gen.random(50, 100);
+```
+// Randomise some variables. 
+let hue = Gen.random(0, 360);
+let rotation = Gen.random(0, 360); 
+let iterations = Gen.random(50, 100);
 
-// This array will allow us to iterate through our ellipses later. let
-ellipses = \[\];
+// This array will allow us to iterate through our ellipses later. 
+let ellipses = [];
+```
 
 Now for the loop to create the ellipses. The code here is more compact
 than that presented in the first chapter, as we've since covered more
@@ -6026,20 +6100,24 @@ concise ways of achieving certain results (like incrementing our hue).
 Another difference of note is the addition of the ellipses.push()
 method; this is where we add each ellipse to the aforementioned array.
 
-// Run a loop a random number of times to create the ellipses. for (let
-i = 0; i \< iterations; i += 1) {
+```
+// Run a loop a random number of times to create the ellipses. 
+for (let i = 0; i < iterations; i += 1) {
 
 // Create our ellipse.
+let ellipse = svg.create('ellipse'); 
+ellipse.set({ cx: 500, cy: 500,
+rx: 100 + (i * 3),
+ry: 300 + (i * 2), 
+fill: 'none', stroke: `hsl(${hue} 80% 80% /
+0.6)`, transform: `rotate(\${rotation + (i * 2)} 500 500)` });
 
-let ellipse = svg.create(\'ellipse\'); ellipse.set({ cx: 500, cy: 500,
-rx: 100 + (i \* 3),
+// Add the ellipse to the array. 
+ellipses.push(ellipse);
 
-ry: 300 + (i \* 2), fill: \'none\', stroke: \`hsl(\${hue} 80% 80% /
-0.6)\`, transform: \`rotate(\${rotation + (i \* 2)} 500 500)\` });
-
-// Add the ellipse to the array. ellipses.push(ellipse);
-
-// Increment the hue. hue = (hue % 360) + 2; }
+// Increment the hue. 
+hue = (hue % 360) + 2; }
+```
 
 You should now see a static arrangement of ellipses. Our next step is
 make them dynamic. What we'll do is activate the trackCursor() method on
@@ -6048,16 +6126,14 @@ arrow function, we'll iterate through each item in the ellipses array
 using a forEach() loop and adjust the cx and cy coordinates of each
 ellipse relative to our cursor position.
 
+```
 // Adjust the centre point of each ellipse relative to our cursor.
-
-svg.trackCursor(() =\> { ellipses.forEach((ellipse) =\> { ellipse.set({
+svg.trackCursor(() => { ellipses.forEach((ellipse) => { ellipse.set({
 cx: svg.cursorX, cy: svg.cursorY
-
 });
-
 });
-
 });
+```
 
 And with this, we have movement -- our ellipses glide gracefully into
 life as we create a truly dynamic cursor-guided composition! Figure 7-1
@@ -6067,7 +6143,7 @@ to save down Figure 7-1), as it allows us to capture our SVG without
 disturbing the composition with inadvertent cursor movement (as might
 happen if we had to click a button).
 
-> ![](./images/media/image53.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image53.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-1.** A cursor-transformed array of ellipses*
 
@@ -6082,10 +6158,8 @@ keyframes, which will be familiar territory to most web developers. The
 second is the method native to the SVG format itself -- SMIL. The third
 is the Web Animations API (or WAAPI), which is a modern
 JavaScript-driven API. And the final method is a technique popular among
-generative artists (of the
-
-JavaScript variety at least): the recursive requestAnimationFrame
-method.
+generative artists (of the JavaScript variety at least): the recursive 
+requestAnimationFrame method.
 
 Knowledge of each technique and their respective strengths and
 weaknesses should serve you well, irrespective of which one we proceed
@@ -6102,43 +6176,39 @@ ensure more consistent animation behavior across the various methods by
 setting a default point of rotation), there's nothing really new here,
 so feel free to simply copy and paste:
 
-import { SvJs } from \'../../node_modules/svjs/src/index.js\';
+```
+import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Parent SVG. const svg = new SvJs().addTo(document.
-getElementById(\'container\'));
+// Parent SVG. 
+const svg = new SvJs().addTo(document.getElementById('container'));
 
-// Viewport and viewBox (1:1 aspect ratio). const svgSize =
-Math.min(window.innerWidth, window.
-
-innerHeight);
+// Viewport and viewBox (1:1 aspect ratio). 
+const svgSize = Math.min(window.innerWidth, window.innerHeight);
 
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // Background.
-
-svg.create(\'rect\').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-\'#181818\'
-
+svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
+'#181818'
 });
 
 // Arrays to contain our shapes and their colours.
+let palette = ['#34d399','#6ee7b7','#a7f3d0', '#d1fae5']; 
+let shapes = [];
 
-let palette = \[\'#34d399\',\'#6ee7b7\',\'#a7f3d0\', \'#d1fae5\'\]; let
-shapes = \[\];
-
-// Initialise our four shapes. for (let i = 0; i \< 4; i += 1) { let
-size = 500 - (i \* 125); let position = 250 + (i \* 62.5); let shape =
-svg.create(\'rect\').set({ x: position, y: position, width: size,
-height: size, fill: palette\[i\], transform_origin: \'50% 50%\',
-transform: \'rotate(45)\'
-
+// Initialise our four shapes. 
+for (let i = 0; i < 4; i += 1) { let
+size = 500 - (i * 125); 
+let position = 250 + (i * 62.5); 
+let shape = svg.create('rect').set({ x: position, y: position, width: size,
+height: size, fill: palette[i], transform_origin: '50% 50%',
+transform: 'rotate(45)'
 });
-
 shapes.push(shape);
-
 }
+```
 
-> ![](./images/media/image54.jpg){width="3.15in" height="3.15in"}
+![](./images/media/image54.jpg){width="3.15in" height="3.15in"}
 
 ***Figure 7-2.** The four shapes we\'ll make move*
 
@@ -6178,8 +6248,11 @@ assign the animation to the cssShape element, specifying the duration,
 iteration count, and timing function.
 
 ```
-// Set an id for our first shape. shapes\[0\].set({ id: \'cssShape\' });
-// Animate this shape with CSS. svg.create(\'style\').content(\`
+// Set an id for our first shape. 
+shapes[0].set({ id: 'cssShape' });
+
+// Animate this shape with CSS. 
+svg.create('style').content(`
 @keyframes scaleRotate {
 0% { transform: rotate(0) scale(1, 1) }
 50% { transform: rotate(180deg) scale(0.5, 1.5) }
@@ -6293,12 +6366,16 @@ let keyframes = [
 { r: 40 },
 { r: 25 }
 ];
+
 // Format two for keyframes.
 let keyframes = { r: [25, 40, 25] };
 
-// Format one for timing options. let options = 2000; // 2 seconds.
+// Format one for timing options. 
+let options = 2000; // 2 seconds.
+
 // Format two for timing options.
 let options = { duration: 2000, iterations: Infinity,
+
 // ... etc
 };
 ```
@@ -6383,9 +6460,10 @@ rotation values can increment indefinitely beyond 360° and still remain
 valid.
 
 ```
-// Animate the last shape using requestAnimationFrame. function
-animate(time) {
-// Rotate the angle. let angle = time;
+// Animate the last shape using requestAnimationFrame. 
+function animate(time) {
+// Rotate the angle. 
+let angle = time;
 // Apply the rotation.
 shapes[3].set({ transform: `rotate(${angle})` });
 // The recursive bit.
@@ -6426,7 +6504,8 @@ the exact speed by which to rotate our shape: 0.072° per millisecond
 where angle simply equals time with the following:
 
 ```
-// Rotate 360° in 5000ms: 360/5000 = 0.072. let angle = time * 0.072;
+// Rotate 360° in 5000ms: 360/5000 = 0.072. 
+let angle = time * 0.072;
 ```
 
 This should rotate our shape in sync with the others. Getting it to
@@ -6461,22 +6540,30 @@ methods.
 ```
 // Animate the final shape using requestAnimationFrame. 
 function animate(time) {
+
 // Prevent errors when the time is undefined on first frame. 
 if (time === undefined) time = 0;
+
 // Rotate 360° in 5000ms: 360/5000 = 0.072. 
 let angle = time * 0.072;
+
 // We need a constant tick value that doesn't increment indefinitely.
 tick = time - prevTime;
+
 // Scale by 0.5 in 2500ms: 0.5/2500 = 0.0002.
 scale = isPositive ? scale + (tick * 0.0002) : scale - (tick * 0.0002);
+
 // Apply the rotation and scale values. 
 shapes[3].set({
   transform: `rotate(${angle}) scale(${1 - scale}, ${1 + scale})`
 });
+
 // Flip the polarity if the scale value falls outside these bounds.
 if (scale < 0 || scale > 0.5) isPositive = !isPositive;
+
 // Capture the time before it increments. 
 prevTime = time;
+
 // The recursive bit.
 requestAnimationFrame(animate); }
 animate();
@@ -6550,9 +6637,7 @@ method while it's still relatively fresh in our minds.
 
 <h2>Setting Boundaries</h2>
 
-So the usual drill -- create a new folder from the template, rename it
-to
-
+So the usual drill -- create a new folder from the template, rename it to
 19-collision-detection, and begin coding below the background. The
 first thing we'll do is create a rect styled like a picture frame. This
 effect is achieved by using a slightly transparent stroke over the fill;
@@ -6854,7 +6939,7 @@ following line:
 
 ```
 // Calculate the current angle.
-let angle = Math.PI \* 2 / numCircles \* i;
+let angle = Math.PI * 2 / numCircles * i;
 ```
 
 <h2>Sine and Cosine</h2>
@@ -6883,8 +6968,9 @@ on both the x and y axes) and re-map them so that they span a range of
 the center.
 
 ```
-// Map the sine and cosine to the desired range. let cx = Gen.map(sin,
--1, 1, 200, 800, false); let cy = Gen.map(cos, -1, 1, 200, 800, false);
+// Map the sine and cosine to the desired range. 
+let cx = Gen.map(sin, -1, 1, 200, 800, false); 
+let cy = Gen.map(cos, -1, 1, 200, 800, false);
 ```
 
 <h2>Animating Our Circles</h2>
@@ -6909,14 +6995,15 @@ loop, let's increment the hue relative to the number of circles to get a
 nice color distribution.
 
 ```
-// Set the initial and target radii. let r1 = baseRadius \* 2 + (i \*
-10); let r2 = baseRadius / (i + 10);
+// Set the initial and target radii. 
+let r1 = baseRadius * 2 + (i * 10); 
+let r2 = baseRadius / (i + 10);
 
 // Move from (500, 500) to (cx, cy), reduce the radius, rotate.
-circle.animate({ cx: \[500, cx, 500\], cy: \[500, cy, 500\], r: \[r1,
-r2, r1\], transform: \[\'rotate(0deg)\', \'rotate(360deg)\'\]
+circle.animate({ cx: [500, cx, 500], cy: [500, cy, 500], 
+r: [r1, r2, r1], transform: ['rotate(0deg)', 'rotate(360deg)']
 }, {
-duration: 10000, iterations: Infinity, easing: \[\'ease-in-out\'\] });
+duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
 // Increment the hue.
 hue = (hue % 360) + (180 / numCircles);
 ```
@@ -7091,7 +7178,8 @@ previously, applying a soft blur to a yellow circle (Figure 8-1).
 // Initialise the filter.
 let filter = svg.createFilter('blur');
 
-// Create the blur effect. filter.create('feGaussianBlur').set({
+// Create the blur effect. 
+filter.create('feGaussianBlur').set({
 stdDeviation: 10 });
 
 // Apply the filter.
@@ -7348,11 +7436,9 @@ acts as our background color. Our grid should have re-appeared at this
 point in colorized form, but we've still got our flood color in the
 foreground. We need a way to strip this out, which brings us to the next
 section.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Compositing</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 If you've ever watched the behind-the-scenes footage of some of your
 favorite films, you'll likely have come across the green-screen
 technique: the action hero who scales a skyscraper is, in reality,
@@ -7453,11 +7539,9 @@ actually built in to the SVG spec itself. And we'll also explore how to
 add some distortion to our filter pipeline. With these two ingredients,
 along with the basics covered earlier, a whole world of effects opens up
 to us.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Turbulence</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 In Chapter 5, we introduced the SvJs Noise module, which allowed us to
 use Perlin noise in our sketches. SVG also implements Perlin noise
 inside its feTurbulence filter primitive, so what's the difference?
@@ -7562,7 +7646,6 @@ wave-like distortion (right).
 height="1.3083333333333333in"}
 
 ***Figure 8-8.** Using turbulence as a displacement map source*
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Creating a Cosmic Bubble</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7578,8 +7661,9 @@ below the background, let's set up our source graphic in the center of
 the viewBox, randomizing its radius a little.
 
 ```
-// Create the source graphic. svg.create(\'circle\').set({ cx: 500, cy:
-500, r: Gen.random(250, 350), fill: \'#000\', filter: \'url(#cosmic)\'
+// Create the source graphic. 
+svg.create('circle').set({ cx: 500, cy:
+500, r: Gen.random(250, 350), fill: '#000', filter: 'url(#cosmic)'
 });
 ```
 
@@ -7598,11 +7682,13 @@ baseFrequency, and crank up the numOctaves to 4, to bring out some of
 the texture details.
 
 ```
-// Initialise the filter. let filter = svg.createFilter(\'cosmic\');
+// Initialise the filter. 
+let filter = svg.createFilter('cosmic');
+
 // Create a random amount of turbulence.
-filter.create(\'feTurbulence\').set({ type: \'fractalNoise\',
+filter.create('feTurbulence').set({ type: 'fractalNoise',
 baseFrequency: Gen.random(0.002, 0.006, true), seed: Gen.random(0,
-10000), numOctaves: 4, stitchTiles: \'stitch\', result: \'turbulence\'
+10000), numOctaves: 4, stitchTiles: 'stitch', result: 'turbulence'
 });
 ```
 
@@ -7627,12 +7713,12 @@ instead be our displacement map source. Here's how to set up this up
 
 ```
 // Blur the edges of the source graphic.
-filter.create(\'feGaussianBlur\').set({ stdDeviation: Gen.random(10,
-25), in: \'SourceGraphic\', result: \'blurred\' });
+filter.create('feGaussianBlur').set({ stdDeviation: Gen.random(10,
+25), in: 'SourceGraphic', result: 'blurred' });
 
 // Displace the turbulence with the blurred edge of the circle.
-filter.create(\'feDisplacementMap\').set({ in: \'turbulence\', in2:
-\'blurred\', scale: Gen.random(250, 500), result: \'distortion\'
+filter.create('feDisplacementMap').set({ in: 'turbulence', in2:
+'blurred', scale: Gen.random(250, 500), result: 'distortion'
 });
 ```
 
