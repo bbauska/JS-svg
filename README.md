@@ -6,7 +6,7 @@
 <h2>Generative Art with JavaScript and SVG</h2>
 <h3>Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design</h3>
 
-<p>With design and innovation being two key driving principles, this series
+<p>With design and innovation being two key driving principles, this website 
 focuses on, but is not limited to, the following areas and topics:</p>
 
 <ul>
@@ -22,10 +22,10 @@ focuses on, but is not limited to, the following areas and topics:</p>
   <li>Strategy and best practices</li>
 </ul>
 
-***Generative Art with JavaScript and SVG: Utilizing Scalable Vector***
-***Graphics and Algorithms for Creative Coding and Design***
+<p><b><i>Generative Art with JavaScript and SVG: Utilizing Scalable Vector<br/>
+Graphics and Algorithms for Creative Coding and Design</i></b></p>
 
-Copyright © 2024 by David Matthew
+<p><small><small>Copyright © 2024 by David Matthew</small></small></p>
 
 <p>Any source code or other supplementary material referenced by the author in this book 
 is available to readers on the Github repository. For more detailed information, please 
@@ -37,7 +37,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2> -->
 
 <ol type="1" start="01">
-  <li id="#ch1">Chapter 1: The Beginner's Path
+  <li id="#ch1"><a href="#ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
 	  <li id="#ch1-1">Why JavaScript and SvJs?
 	    <ol type="a">
