@@ -37,7 +37,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
 <ol type="1" start="01">
-  <li><a href="#ch1">Chapter 1: The Beginner's Path</a>
+  <li><a href="ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
 	  <li><a id="ch1-1">1.1 Why JavaScript and SvJs?</a>
 	    <ol type="a">
@@ -59,7 +59,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch1-4">1.4 Summary</a></li>
     </ol>
   </li>
-  <li><a href="#ch2">Chapter 2: A Programming Primer</a>
+  <li><a href="ch2">Chapter 2: A Programming Primer</a>
     <ol type="1">
 	  <li><a id="ch2-1">2.1 Syntax</a>
 	    <ol>
@@ -118,7 +118,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch2-11">2.11 Summary 53</a></li>
     </ol>
   </li>
-  <li><a href="#ch3">Chapter 3: All About SVG</a>
+  <li><a href="ch3">Chapter 3: All About SVG</a>
     <ol type="1">
 	  <li><a id="ch3-1">3.1 The Parent SVG Element 55</a></li>
 	  <li><a id="ch3-2">3.2 The Viewport and ViewBox 57</a></li>
@@ -140,7 +140,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch3-11">3.11 Summary 84</a></li>
 	  </ol>
     </li>
-    <li><a href="#ch4">Chapter 4: Randomness and Regularity</a>
+    <li><a href="ch4">Chapter 4: Randomness and Regularity</a>
     <ol type="1">
 	  <li><a id="ch4-1">4.1 Analogue and Digital Randomness</a>
 	    <ol>
@@ -182,7 +182,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch4-7">4.7 Summary 118</a></li>
     </ol>
   </li>
-  <li><a href="#ch5">Chapter 5: The Need for Noise</a>
+  <li><a href="ch5">Chapter 5: The Need for Noise</a>
     <ol type="1">
 	  <li><a id="ch5-1">5.1 Random Limits 119</a></li>
 	  <li><a id="ch5-2">5.2 Making Noise
@@ -207,7 +207,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch5-5">5.5 Summary 134</a></li>
     </ol>
   </li>
-  <li><a href="#ch6">Chapter 6: The All-Powerful Path</a>
+  <li><a href="ch6">Chapter 6: The All-Powerful Path</a>
     <ol type="1">
 	  <li><a id="ch6-1">6.1 The Path Element</a>
 	    <ol>
@@ -248,7 +248,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch6-7">6.7 Summary 165</a></li>
     </ol>
   </li>
-  <li><a href="#ch7">Chapter 7: Motion and Interactivity</a>
+  <li><a href="ch7">Chapter 7: Motion and Interactivity</a>
     <ol><a type="1">
 	  <li><a id="ch7-1">7.1 Event Listeners</a>
 	    <ol>
@@ -289,7 +289,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch7-6">7.6 Summary 202</a></li>
     </ol>
   </li>
-  <li><a href="#ch8">Chapter 8: Filter Effects</a>
+  <li><a href="ch8">Chapter 8: Filter Effects</a>
     <ol type="1">
 	  <li><a id="ch8-1">8.1 Filter Fundamentals</a>
 	    <ol>
@@ -324,7 +324,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch8-5">8.5 Summary 240</a></li>
     </ol>
   </li>
-  <li><a href="#ch9">Chapter 9: The Generative Way</a>
+  <li><a href="ch9">Chapter 9: The Generative Way</a>
     <ol type="1">
 	  <li><a id="ch9-1">9.1 The Journey So Far 243</a></li>
 	  <li><a id="ch9-2">9.2 The Voyage Forward</a>
@@ -664,9 +664,9 @@ specific focus on generative art. This was how SvJs came to be.
 <h2 href="#ch1-2">1.2 Getting Set Up</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Enough with the preamble. Let's get ourselves set up to write some code.
-
-<h2 id="ch1-2a">1.2a The Code Editor</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="#ch1-2a">1.2a The Code Editor</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you don't have VS Code already running on your machine, head on over
 to [code.visualstudio.com]{.underline} and download and install the
 appropriate version for your operating system.
@@ -2263,7 +2263,7 @@ In the next chapter, we'll explore the main functionality of the SvJs
 library and get comfortable creating basic shapes, lines, and colors.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="ch3">CHAPTER 3: All About SVG</h1>
+<h1 id="#ch3">CHAPTER 3: All About SVG</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With the basics of JavaScript under your belt, you're now ready for
 SvJs, which you can think of as your generative brush and palette.
@@ -3360,9 +3360,9 @@ To recap, we've covered the following in this chapter:
 In the next chapter, we'll explore how we can combine regularity with
 randomness to create truly generative compositions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**CHAPTER 4**
+<h1 href="#ch4">CHAPTER 4</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Randomness and Regularity**
+<h2 id="ch4-1">4.1 Randomness and Regularity</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So far, all of our sketches (bar the first one) have lacked a certain
 ingredient usually considered foundational to the very genre of
@@ -4987,7 +4987,7 @@ In the next chapter, we're going to cover a fundamental part of the SVG
 spec: the very powerful path element.
 <!-- page 137 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch6">CHAPTER 6: The All-Powerful Path</h2>
+<h2 href="#ch6">CHAPTER 6: The All-Powerful Path</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Paths are perhaps the most important and most powerful part of the SVG
 spec. Most SVG files, be they simple icons or complex artworks, consist
@@ -5003,7 +5003,7 @@ get complicated quickly, so we'll also be covering some SvJs methods to
 make our lives easier.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-1">6.1 The Path Element</h3>
+<h2 id="ch6-1">6.1 The Path Element</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's simple to set up a path; we just call the SvJs create() method as
 we would with most other elements: let path = svg.create(\'path\');
@@ -9156,4 +9156,3 @@ Ex 2:
 
 </html>
 ```
-
