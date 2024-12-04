@@ -32,7 +32,7 @@ is available to readers on the Github repository. For more detailed information,
 visit <a href="https://www.apress.com/gp/services/source-code" target="_blank" 
 rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="#toc">Table of Contents</h3>
+<h3 id="toc">Table of Contents</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
@@ -339,7 +339,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
   </li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#0-intro">Introduction</h2>
+<h2 id="0-intro">Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A caveat before we begin: generative art, and creative coding more
 generally, can become an all-consuming addiction. "Just one more
@@ -368,7 +368,7 @@ extend beyond the field of art into those of design and web development
 
 <h2>Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch0-know">What You Should Know</h2>
+<h2 id="ch0-know">What You Should Know</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As a reader, what should you know before tackling this book? It will no doubt be easier 
 if you are comfortable with the core concepts of programming, like variables, functions, 
@@ -395,7 +395,7 @@ give the second chapter a read, where they'll be fully explained. The field of w
 development is vast enough that what is bread and butter to one developer might be bleeding 
 edge to another.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch0-learn">What You Will Learn</h2>
+<h2 id="ch0-learn">What You Will Learn</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I mentioned previously that I'll be equipping you with some new tools and techniques. 
 Let's flesh these out.
@@ -454,7 +454,7 @@ loose hinges on that crooked cabinet you're going to tighten any day now. Tools 
 be more functional than fun, and I'd like you to have some fun with this book.
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="#ch1">CHAPTER 1: The Beginner's Path</h1>
+<h1 id="ch1">CHAPTER 1: The Beginner's Path</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before journeying along any path, the groundwork needs to be in place. In this opening 
 chapter, that's what we'll do, lay the groundwork. We'll introduce SVG, explain what 
@@ -462,7 +462,7 @@ makes it a uniquely powerful image format, and show how it can be used with Java
 to create generative art. In the process, we'll set up our tools and a template we can 
 use for subsequent sketches.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-1">1.1 Why JavaScript and SvJs?</h2>
+<h2 id="ch1-1">1.1 Why JavaScript and SvJs?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most books about generative art use a Java-based language called Processing, or its 
 JavaScript port p5.js. Processing was created specifically for artists and designers new 
@@ -488,7 +488,7 @@ my sketches -- p5.js or Canvas -- was still resolution-dependent bitmap graphics
 of any semantic content. What does that mean, and why does it matter (to me at least)? 
 Let me explain.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-1a">1.1a Introducing Scalable Vector Graphics</h2>
+<h2 id="ch1-1a">1.1a Introducing Scalable Vector Graphics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Back in the early days of the Web, when dial-up modems were dominant and
 connecting to the Internet was anything but instant, bandwidth came at a
@@ -530,7 +530,7 @@ These days we can use the format freely without worry, but to use it for
 the odd icon and logo is one thing; to tap its full potential is
 another.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-1b">1.1b Native SVG</h2>
+<h2 id="ch1-1b">1.1b Native SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
@@ -599,7 +599,7 @@ oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
 ultimately it gives you more creative control.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-1c">1.1c Generating SVG</h2>
+<h2 id="ch1-1c">1.1c Generating SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
@@ -661,11 +661,11 @@ the point where it made more sense to write my own library with a
 specific focus on generative art. This was how SvJs came to be.
 <!-- page 8 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2">1.2 Getting Set Up</h2>
+<h2 id="ch1-2">1.2 Getting Set Up</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Enough with the preamble. Let's get ourselves set up to write some code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2a">1.2a The Code Editor</h3>
+<h2 id="ch1-2a">1.2a The Code Editor</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you don't have VS Code already running on your machine, head on over
 to [code.visualstudio.com]{.underline} and download and install the
@@ -682,7 +682,7 @@ the CodePen versions with some minimal differences (such as how we
 import the SvJs library and the lack of HTML boilerplate which CodePen
 automatically provides).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2b">1.2b Node.js and NPM</h2>
+<h2 id="ch1-2b">1.2b Node.js and NPM</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can skip this part if you intend to use CodePen only, but I would
 still recommend getting familiar with Node.js if you have any plans on
@@ -697,7 +697,7 @@ support) version.
 
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2c">1.2c Initializing and Installing SvJs</h2>
+<h2 id="ch1-2c">1.2c Initializing and Installing SvJs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Create a base folder where you'll save all the work related to this
 book, and name it something like generative-svg.
@@ -738,7 +738,7 @@ have any so you won't see additional folders here).
 
 <!-- page 10 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2d">1.2d Scaffolding Our Sketches</h2>
+<h2 id="ch1-2d">1.2d Scaffolding Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Our first sketch will require a little HTML and CSS before we tackle the
 JavaScript. We'll keep this markup and styling minimal and more or less
@@ -824,7 +824,7 @@ import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 Our template is now complete, ready to be copied for subsequent sketches. Well done!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-2e">1.2e Serving Our Sketches</h2>
+<h2 id="ch1-2e">1.2e Serving Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you navigate to the 00-template folder at this point and double-click
 on index.html to open it in a web browser, you'll see some errors in the
@@ -857,7 +857,7 @@ should see your page load free of any console errors. It's also free of
 any content though, so let's write some code to address this.
 <!-- page 13 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-3">1.3 Our First Generative Sketch</h2>
+<h2 id="ch1-3">1.3 Our First Generative Sketch</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As I mentioned previously, our first sketch will serve as a basis for
 explaining the fundamental programming concepts we'll be covering in
@@ -957,7 +957,7 @@ part of the joy of generative art.
 
 ***Figure 1-3.** Our first generative sketch (one variation of many)*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#ch1-4">1.4 Summary</h2>
+<h2 id="ch1-4">1.4 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To recap, we've covered the following in this first chapter:
 
@@ -972,7 +972,7 @@ To recap, we've covered the following in this first chapter:
 
 Coming up next: a programming primer.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="#ch2">CHAPTER 2: A Programming Primer</h1>
+<h1 id="ch2">CHAPTER 2: A Programming Primer</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Although programming can be used to create art, it can also be an art in
 itself. It is part art and part science. When beginning programming, you
@@ -2263,7 +2263,7 @@ In the next chapter, we'll explore the main functionality of the SvJs
 library and get comfortable creating basic shapes, lines, and colors.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="#ch3">CHAPTER 3: All About SVG</h1>
+<h1 id="ch3">CHAPTER 3: All About SVG</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With the basics of JavaScript under your belt, you're now ready for
 SvJs, which you can think of as your generative brush and palette.
