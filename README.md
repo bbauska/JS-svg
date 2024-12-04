@@ -39,323 +39,323 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <ol type="1" start="01">
   <li><a href="#ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
-	  <li><a href="#ch1-1">1.1 Why JavaScript and SvJs?</a>
-	    <ol type="a">
-	  <li><a href="#ch1-1a">1.1a Introducing Scalable Vector Graphics</a></li>
-	  <li><a href="#ch1-1b">1.1b Native SVG</li>
-	  <li><a href="#ch1-1c">1.1c Generating SVG</a></li>
-	    </ol>
-	  </li>
-	  <li><a href="#ch1-2">1.2 Getting Set Up</a>
-	    <ol>
-		<li><a href="#ch1-2a">1.2a The Code Editor</a></li>
-	  <li><a href="#ch1-2b">1.2b Nodejs and NPM</a></li>
-	  <li><a href="#ch1-2c">1.2c Initializing and Installing SvJs</a></li>
-	  <li><a href="#ch1-2d">1.2d Scaffolding Our Sketches</a></li>
-	  <li><a href="#ch1-2e">1.2e Serving Our Sketches</a></li>
-	    </ol>
-	  </li>
-	  <li><a href="#ch1-3">1.3 Our First Generative Sketch</a></li>
-	  <li><a href="#ch1-4">1.4 Summary</a></li>
-    </ol>
+      <li><a href="#ch1-1">1.1 Why JavaScript and SvJs?</a>
+        <ol type="a">
+          <li><a href="#ch1-1a">1.1a Introducing Scalable Vector Graphics</a></li>
+          <li><a href="#ch1-1b">1.1b Native SVG</li>
+          <li><a href="#ch1-1c">1.1c Generating SVG</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch1-2">1.2 Getting Set Up</a>
+        <ol>
+          <li><a href="#ch1-2a">1.2a The Code Editor</a></li>
+          <li><a href="#ch1-2b">1.2b Nodejs and NPM</a></li>
+          <li><a href="#ch1-2c">1.2c Initializing and Installing SvJs</a></li>
+          <li><a href="#ch1-2d">1.2d Scaffolding Our Sketches</a></li>
+          <li><a href="#ch1-2e">1.2e Serving Our Sketches</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch1-3">1.3 Our First Generative Sketch</a></li>
+      <li><a href="#ch1-4">1.4 Summary</a></li>
+    </ol>  <!-- chapter 1 -->
   </li>
   <li><a href="#ch2">Chapter 2: A Programming Primer</a>
     <ol type="1">
-	  <li><a href="#ch2-1">2.1 Syntax</a>
-	    <ol>
-		  <li><a href="#ch2-1a">2.1a Case Sensitivity 20</a></li>
-		  <li><a href="#ch2-1b">2.1b Spacing 20</a></li>
-		  <li><a href="#ch2-1c">2.1c Semicolons 20</a></li>
-		  <li><a href="#ch2-1d">2.1d Comments 21</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch2-2">2.2 Values</a>
-		<ol>
-		  <li><a href="#ch2-2a">2.2a Numbers 22</a></li>
-		  <li><a href="#ch2-2b">2.2b Strings 22</a></li>
-		  <li><a href="#ch2-2c">2.2c Booleans 24</a></li>
-		  <li><a href="#ch2-2d">2.2d Empty Values 24</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch2-3">2.3 Variables 25</a></li>
-	  <li><a href="#ch2-4">2.4 Operators</a>
-	    <ol>
-		  <li><a href="#ch2-4a">2.4a Arithmetic Operators 26</a></li>
-		  <li><a href="#ch2-4b">2.4b Comparison Operators 29</a></li>
-		  <li><a href="#ch2-4c">2.4c Logical Operators 30</a></li>
+      <li><a href="#ch2-1">2.1 Syntax</a>
+        <ol>
+          <li><a href="#ch2-1a">2.1a Case Sensitivity 20</a></li>
+          <li><a href="#ch2-1b">2.1b Spacing 20</a></li>
+          <li><a href="#ch2-1c">2.1c Semicolons 20</a></li>
+          <li><a href="#ch2-1d">2.1d Comments 21</a></li>
         </ol>
-	  </li>
-	  <li><a href="#ch2-5">2.5 Conditional Statements 31</a></li>
-	  <li><a href="#ch2-6">2.6 Loops
-	    <ol>
-		  <li><a href="#ch2-6a">2.6a The While Loop 34</a></li>
-		  <li><a href="#ch2-6b">2.6b The For Loop 35</a></li>
-	    </ol>
-	  </li>
-	  <li><a href="#ch2-7">2.7 Functions</a>
-	    <ol>
-		  <li><a href="#ch2-7a">2.7a Function Parameters 37</a></li>
+      </li>
+      <li><a href="#ch2-2">2.2 Values</a>
+        <ol>
+          <li><a href="#ch2-2a">2.2a Numbers 22</a></li>
+          <li><a href="#ch2-2b">2.2b Strings 22</a></li>
+          <li><a href="#ch2-2c">2.2c Booleans 24</a></li>
+          <li><a href="#ch2-2d">2.2d Empty Values 24</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch2-3">2.3 Variables 25</a></li>
+      <li><a href="#ch2-4">2.4 Operators</a>
+        <ol>
+          <li><a href="#ch2-4a">2.4a Arithmetic Operators 26</a></li>
+          <li><a href="#ch2-4b">2.4b Comparison Operators 29</a></li>
+          <li><a href="#ch2-4c">2.4c Logical Operators 30</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch2-5">2.5 Conditional Statements 31</a></li>
+      <li><a href="#ch2-6">2.6 Loops
+        <ol>
+          <li><a href="#ch2-6a">2.6a The While Loop 34</a></li>
+          <li><a href="#ch2-6b">2.6b The For Loop 35</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch2-7">2.7 Functions</a>
+        <ol>
+          <li><a href="#ch2-7a">2.7a Function Parameters 37</a></li>
           <li><a href="#ch2-7b">2.7b Invoking Functions 38</a></li>
-	      <li><a href="#ch2-7c">2.7c Scope 40</a></li>
-	      <li><a href="#ch2-7d">2.7d Anonymous Functions 42</a></li>
-	      <li><a href="#ch2-7e">2.7e Arrow Functions 42</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch2-8">2.8 Objects and Arrays</a>
-	    <ol>
-		  <li><a href="#ch2-8a">2.8a Arrays 44</a></li>
+          <li><a href="#ch2-7c">2.7c Scope 40</a></li>
+          <li><a href="#ch2-7d">2.7d Anonymous Functions 42</a></li>
+          <li><a href="#ch2-7e">2.7e Arrow Functions 42</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch2-8">2.8 Objects and Arrays</a>
+        <ol>
+          <li><a href="#ch2-8a">2.8a Arrays 44</a></li>
           <li><a href="#ch2-8b">2.8b Objects 47</a></li>
-		</ol>
-	  </li>
+        </ol>
+      </li>
       <li><a href="#ch2-9">2.9 Classes 49</a></li>
-	  <li><a href="#ch2-10">2.10 Idiosyncrasies and Other Features 50</a>
-	    <ol>
-		  <li><a href="#ch2-10a">2.10a Null and NaN Weirdness 51</a></li>
-		  <li><a href="#ch2-10b">2.10b Secret Casting 51</a></li>
-		  <li><a href="#ch2-10c">2.10c Semicolon Uncertainty 52</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch2-11">2.11 Summary 53</a></li>
+      <li><a href="#ch2-10">2.10 Idiosyncrasies and Other Features 50</a>
+        <ol>
+          <li><a href="#ch2-10a">2.10a Null and NaN Weirdness 51</a></li>
+          <li><a href="#ch2-10b">2.10b Secret Casting 51</a></li>
+          <li><a href="#ch2-10c">2.10c Semicolon Uncertainty 52</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch2-11">2.11 Summary 53</a></li>
     </ol>
   </li>
   <li><a href="#ch3">Chapter 3: All About SVG</a>
     <ol type="1">
-	  <li><a href="#ch3-1">3.1 The Parent SVG Element 55</a></li>
-	  <li><a href="#ch3-2">3.2 The Viewport and ViewBox 57</a></li>
-	  <li><a href="#ch3-3">3.3 Setting and Getting Values 59</a></li>
-	  <li><a href="#ch3-4">3.4 Quicker Element Creation 60</a></li>
-	  <li><a href="#ch3-5">3.5 Lines and Shapes</a>
-	    <ol>
-	      <li><a href="#ch3-5a">3.5a Rectangles and Squares 61</a></li>
+      <li><a href="#ch3-1">3.1 The Parent SVG Element 55</a></li>
+      <li><a href="#ch3-2">3.2 The Viewport and ViewBox 57</a></li>
+      <li><a href="#ch3-3">3.3 Setting and Getting Values 59</a></li>
+      <li><a href="#ch3-4">3.4 Quicker Element Creation 60</a></li>
+      <li><a href="#ch3-5">3.5 Lines and Shapes</a>
+        <ol>
+          <li><a href="#ch3-5a">3.5a Rectangles and Squares 61</a></li>
           <li><a href="#ch3-5b">3.5b First Strokes 63</a></li>
           <li><a href="#ch3-5c">3.5c Circles and Ellipses 66</a></li>
           <li><a href="#ch3-5d">3.5d Lines, Polylines, and Polygons 68</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch3-6">3.6 Text and Titles 72</a></li>
-	  <li><a href="#ch3-7">3.7 Definitions 75</a></li>
-	  <li><a href="#ch3-8">3.8 Gradients 76</a></li>
-	  <li><a href="#ch3-9">3.9 Patterns 78</a></li>
-	  <li><a href="#ch3-10">3.10 Grouping and Reusing Elements 83</a></li>
-	  <li><a href="#ch3-11">3.11 Summary 84</a></li>
-	  </ol>
+        </ol>
+      </li>
+      <li><a href="#ch3-6">3.6 Text and Titles 72</a></li>
+      <li><a href="#ch3-7">3.7 Definitions 75</a></li>
+      <li><a href="#ch3-8">3.8 Gradients 76</a></li>
+      <li><a href="#ch3-9">3.9 Patterns 78</a></li>
+      <li><a href="#ch3-10">3.10 Grouping and Reusing Elements 83</a></li>
+      <li><a href="#ch3-11">3.11 Summary 84</a></li>
+      </ol>
     </li>
     <li><a href="#ch4">Chapter 4: Randomness and Regularity</a>
     <ol type="1">
-	  <li><a href="#ch4-1">4.1 Analogue and Digital Randomness</a>
-	    <ol>
-	      <li><a href="#ch4-1a">4.1a The SvJs Genrandom( ) Function 87</a></li>
-		</ol>
-	  </li>
-	  <li><a href="#ch4-2">4.2 Elements Everywhere All at Once</a>
-	    <ol>
-	  <li><a href="#ch4-2a">4.2a Varying Color and Opacity 89</a></li>
-	  <li><a href="#ch4-2b">4.2b Varying Element Selection 91</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch4-3">4.3 Regular Grids 94</a>
-	    <ol>
-	  <li><a href="#ch4-3a">4.3a The Nested For Loop 94</a></li>
-	  <li><a href="#ch4-3b">4.3b A More Flexible Grid 96</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch4-4">4.4 Clip Paths and Color Palettes</a>
-	    <ol>
-	  <li><a href="#ch4-4a">4.4a Arrays of Colors 98</a></li>
-	  <li><a href="#ch4-4b">4.4b Clipping Our Content 100</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch4-5">4.5 Choice and Chance 105</a></li>
-	    <ol>
-	  <li><a href="#ch4-5a">4.5a The SvJs Genchance( ) Function 105</a></li>
-	  <li><a href="#ch4-5b">4.5b Chance in Action 106</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch4-6">4.6 Probability Distributions</a>
-	    <ol>
-	  <li><a href="#ch4-6a">4.6a Uniform Distribution 108</a></li>
-	  <li><a href="#ch4-6b">4.6b Gaussian Distribution 109</a></li>
-	  <li><a href="#ch4-6c">4.6c Pareto Distribution 113</a></li>
-	  <li><a href="#ch4-6d">4.6d Masking Our Content 115</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch4-7">4.7 Summary 118</a></li>
+      <li><a href="#ch4-1">4.1 Analogue and Digital Randomness</a>
+        <ol>
+          <li><a href="#ch4-1a">4.1a The SvJs Genrandom( ) Function 87</a></li>
+        </ol>
+      </li>
+      <li><a href="#ch4-2">4.2 Elements Everywhere All at Once</a>
+        <ol>
+      <li><a href="#ch4-2a">4.2a Varying Color and Opacity 89</a></li>
+      <li><a href="#ch4-2b">4.2b Varying Element Selection 91</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch4-3">4.3 Regular Grids 94</a>
+        <ol>
+      <li><a href="#ch4-3a">4.3a The Nested For Loop 94</a></li>
+      <li><a href="#ch4-3b">4.3b A More Flexible Grid 96</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch4-4">4.4 Clip Paths and Color Palettes</a>
+        <ol>
+      <li><a href="#ch4-4a">4.4a Arrays of Colors 98</a></li>
+      <li><a href="#ch4-4b">4.4b Clipping Our Content 100</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch4-5">4.5 Choice and Chance 105</a></li>
+        <ol>
+      <li><a href="#ch4-5a">4.5a The SvJs Genchance( ) Function 105</a></li>
+      <li><a href="#ch4-5b">4.5b Chance in Action 106</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch4-6">4.6 Probability Distributions</a>
+        <ol>
+      <li><a href="#ch4-6a">4.6a Uniform Distribution 108</a></li>
+      <li><a href="#ch4-6b">4.6b Gaussian Distribution 109</a></li>
+      <li><a href="#ch4-6c">4.6c Pareto Distribution 113</a></li>
+      <li><a href="#ch4-6d">4.6d Masking Our Content 115</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch4-7">4.7 Summary 118</a></li>
     </ol>
   </li>
   <li><a href="#ch5">Chapter 5: The Need for Noise</a>
     <ol type="1">
-	  <li><a href="#ch5-1">5.1 Random Limits 119</a></li>
-	  <li><a href="#ch5-2">5.2 Making Noise
-	    <ol>
-	  <li><a href="#ch5-2a">5.2a Noise Explained 120</a></li>
-	  <li><a href="#ch5-2b">5.2b The SvJs Noise Module 122</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch5-3">5.3 Into the Noise Matrix</a>
-	    <ol>
-	  <li><a href="#ch5-3a">5.3a A Noisy Grid 124</a></li>
-	  <li><a href="#ch5-3b">5.3b Mapping the Noise Values 128</a></li>
-	  <li><a href="#ch5-3c">5.3c Optimize with Style 129</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch5-4">5.4 Spinning Noise</a>
-	    <ol>
-	  <li><a href="#ch5-4a">5.4a Mapping and Constraining 132</a></li>
-	  <li><a href="#ch5-4b">5.4b Rotating and Translating 133</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch5-5">5.5 Summary 134</a></li>
+      <li><a href="#ch5-1">5.1 Random Limits 119</a></li>
+      <li><a href="#ch5-2">5.2 Making Noise
+        <ol>
+      <li><a href="#ch5-2a">5.2a Noise Explained 120</a></li>
+      <li><a href="#ch5-2b">5.2b The SvJs Noise Module 122</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch5-3">5.3 Into the Noise Matrix</a>
+        <ol>
+      <li><a href="#ch5-3a">5.3a A Noisy Grid 124</a></li>
+      <li><a href="#ch5-3b">5.3b Mapping the Noise Values 128</a></li>
+      <li><a href="#ch5-3c">5.3c Optimize with Style 129</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch5-4">5.4 Spinning Noise</a>
+        <ol>
+      <li><a href="#ch5-4a">5.4a Mapping and Constraining 132</a></li>
+      <li><a href="#ch5-4b">5.4b Rotating and Translating 133</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch5-5">5.5 Summary 134</a></li>
     </ol>
   </li>
   <li><a href="#ch6">Chapter 6: The All-Powerful Path</a>
     <ol type="1">
-	  <li><a href="#ch6-1">6.1 The Path Element</a>
-	    <ol>
-	  <li><a href="#ch6-1a">6.1a D for Data 138</a></li>
-	  <li><a href="#ch6-1b">6.1b Path Commands 138</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch6-2">6.2 Starting and Ending a Path 139</a></li>
-	  <li><a href="#ch6-3">6.3 Straight Lines</a>
-	    <ol>
-	  <li><a href="#ch6-3a">6.3a The Simple L 140</a></li>
-	  <li><a href="#ch6-3b">6.3b Horizontal and Vertical Varieties 142</a></li>
-	  <li><a href="#ch6-3c">6.3c Further Economies 143</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch6-4">6.4 Quadratic Bezier Curves</a>
-	    <ol>
-	  <li><a href="#ch6-4a">6.4a Control Points 144</a></li>
-	  <li><a href="#ch6-4b">6.4b A Smooth Shortcut 145</a></li>
-	  <li><a href="#ch6-4c">6.4c A Quadratic Slinky 147</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch6-5">6.5 Elliptical Arcs</a>
-	    <ol>
-	  <li><a href="#ch6-5a">6.5a Setting the Flags 151</a></li>
-	  <li><a href="#ch6-5b">6.5b Irregular Radii 152</a></li>
-	  <li><a href="#ch6-5c">6.5c Generative Arcs 153</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch6-6">6.6 Cubic Bezier Curves</a>
-	    <ol>
-	  <li><a href="#ch6-6a">6.6a Cubic Control Points 156</a></li>
-	  <li><a href="#ch6-6b">6.6b S for Symmetry 158</a></li>
-	  <li><a href="#ch6-6c">6.6c Organic Curves 159</a></li>
-	  <li><a href="#ch6-6d">6.6d An Easier Option 163</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch6-7">6.7 Summary 165</a></li>
+      <li><a href="#ch6-1">6.1 The Path Element</a>
+        <ol>
+      <li><a href="#ch6-1a">6.1a D for Data 138</a></li>
+      <li><a href="#ch6-1b">6.1b Path Commands 138</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch6-2">6.2 Starting and Ending a Path 139</a></li>
+      <li><a href="#ch6-3">6.3 Straight Lines</a>
+        <ol>
+      <li><a href="#ch6-3a">6.3a The Simple L 140</a></li>
+      <li><a href="#ch6-3b">6.3b Horizontal and Vertical Varieties 142</a></li>
+      <li><a href="#ch6-3c">6.3c Further Economies 143</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch6-4">6.4 Quadratic Bezier Curves</a>
+        <ol>
+      <li><a href="#ch6-4a">6.4a Control Points 144</a></li>
+      <li><a href="#ch6-4b">6.4b A Smooth Shortcut 145</a></li>
+      <li><a href="#ch6-4c">6.4c A Quadratic Slinky 147</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch6-5">6.5 Elliptical Arcs</a>
+        <ol>
+      <li><a href="#ch6-5a">6.5a Setting the Flags 151</a></li>
+      <li><a href="#ch6-5b">6.5b Irregular Radii 152</a></li>
+      <li><a href="#ch6-5c">6.5c Generative Arcs 153</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch6-6">6.6 Cubic Bezier Curves</a>
+        <ol>
+      <li><a href="#ch6-6a">6.6a Cubic Control Points 156</a></li>
+      <li><a href="#ch6-6b">6.6b S for Symmetry 158</a></li>
+      <li><a href="#ch6-6c">6.6c Organic Curves 159</a></li>
+      <li><a href="#ch6-6d">6.6d An Easier Option 163</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch6-7">6.7 Summary 165</a></li>
     </ol>
   </li>
   <li><a href="#ch7">Chapter 7: Motion and Interactivity</a>
     <ol><a type="1">
-	  <li><a href="#ch7-1">7.1 Event Listeners</a>
-	    <ol>
-	  <li><a href="#ch7-1a">7.1a Event Types 168</a></li>
-	  <li><a href="#ch7-1b">7.1b Event Parameters 169</a></li>
-	  <li><a href="#ch7-1c">7.1c Triggering the SvJs Save Method 170</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch7-2">7.2 Creative Cursor Tracking</a>
-	    <ol>
-	  <li><a href="#ch7-2a">7.2a The SvJs trackCursor( ) Method 171</a></li>
-	  <li><a href="#ch7-2b">7.2b Interactive Ellipses 172</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch7-3">7.3 Programming Motion</a>
-	    <ol>
-	  <li><a href="#ch7-3a">7.3a CSS Keyframes 177</a></li>
-	  <li><a href="#ch7-3b">7.3b The SMIL Way 179</a></li>
-	  <li><a href="#ch7-3c">7.3c The Web Animations API 181</a></li>
-	  <li><a href="#ch7-3d">7.3d The requestAnimationFrame( ) Method 184</a></li>
-	  <li><a href="#ch7-3e">7.3e Methods Summarized 188</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch7-4">7.4 Collision Detection</a>
-	    <ol>
-	  <li><a href="#ch7-4a">7.4a Setting Boundaries 190</a></li>
-	  <li><a href="#ch7-4b">7.4b Initializing and Extending Our Shapes 191</a></li>
-	  <li><a href="#ch7-4c">7.4c Frame-by-Frame Calculations 193</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch7-5">7.5 Circularity</a>
-	    <ol>
-	  <li><a href="#ch7-5a">7.5a Slices of PI 198</a></li>
-	  <li><a href="#ch7-5b">7.5b Sine and Cosine 200</a></li>
-	  <li><a href="#ch7-5c">7.5c Animating Our Circles 200</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch7-6">7.6 Summary 202</a></li>
+      <li><a href="#ch7-1">7.1 Event Listeners</a>
+        <ol>
+      <li><a href="#ch7-1a">7.1a Event Types 168</a></li>
+      <li><a href="#ch7-1b">7.1b Event Parameters 169</a></li>
+      <li><a href="#ch7-1c">7.1c Triggering the SvJs Save Method 170</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch7-2">7.2 Creative Cursor Tracking</a>
+        <ol>
+      <li><a href="#ch7-2a">7.2a The SvJs trackCursor( ) Method 171</a></li>
+      <li><a href="#ch7-2b">7.2b Interactive Ellipses 172</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch7-3">7.3 Programming Motion</a>
+        <ol>
+      <li><a href="#ch7-3a">7.3a CSS Keyframes 177</a></li>
+      <li><a href="#ch7-3b">7.3b The SMIL Way 179</a></li>
+      <li><a href="#ch7-3c">7.3c The Web Animations API 181</a></li>
+      <li><a href="#ch7-3d">7.3d The requestAnimationFrame( ) Method 184</a></li>
+      <li><a href="#ch7-3e">7.3e Methods Summarized 188</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch7-4">7.4 Collision Detection</a>
+        <ol>
+      <li><a href="#ch7-4a">7.4a Setting Boundaries 190</a></li>
+      <li><a href="#ch7-4b">7.4b Initializing and Extending Our Shapes 191</a></li>
+      <li><a href="#ch7-4c">7.4c Frame-by-Frame Calculations 193</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch7-5">7.5 Circularity</a>
+        <ol>
+      <li><a href="#ch7-5a">7.5a Slices of PI 198</a></li>
+      <li><a href="#ch7-5b">7.5b Sine and Cosine 200</a></li>
+      <li><a href="#ch7-5c">7.5c Animating Our Circles 200</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch7-6">7.6 Summary 202</a></li>
     </ol>
   </li>
   <li><a href="#ch8">Chapter 8: Filter Effects</a>
     <ol type="1">
-	  <li><a href="#ch8-1">8.1 Filter Fundamentals</a>
-	    <ol>
-	  <li><a href="#ch8-1a">8.1a The Ins and Outs 207</a></li>
-	  <li><a href="#ch8-1b">8.1b The SvJs createFilter( ) Method 209</a></li>
-	  <li><a href="#ch8-1c">8.1c The Filter Region 210</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch8-2">8.2 Filter Effects 101</a>
-	    <ol>
-	  <li><a href="#ch8-2a">8.2a Shadows 212</a></li>
-	  <li><a href="#ch8-2b">8.2b Coloring 213</a></li>
-	  <li><a href="#ch8-2c">8.2c Blending 216</a></li>
-	  <li><a href="#ch8-2d">8.2d Compositing 217</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch8-3">8.3 Noise and Distortion</a>
-	    <ol>
-	  <li><a href="#ch8-3a">8.3a Turbulence 221</a></li>
-	  <li><a href="#ch8-3b">8.3b Displacement 223</a></li>
-	  <li><a href="#ch8-3c">8.3c Creating a Cosmic Bubble 224</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch8-4">8.4 Lighting and Texture</a>
-	    <ol>
-	  <li><a href="#ch8-4a">8.4a Diffuse and Specular Lighting 230</a></li>
-	  <li><a href="#ch8-4b">8.4b Light Sources 231</a></li>
-	  <li><a href="#ch8-4c">8.4c Simulating Textures 232</a></li>
-	  <li><a href="#ch8-4d">8.4d Generative Textures 235</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch8-5">8.5 Summary 240</a></li>
+      <li><a href="#ch8-1">8.1 Filter Fundamentals</a>
+        <ol>
+      <li><a href="#ch8-1a">8.1a The Ins and Outs 207</a></li>
+      <li><a href="#ch8-1b">8.1b The SvJs createFilter( ) Method 209</a></li>
+      <li><a href="#ch8-1c">8.1c The Filter Region 210</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch8-2">8.2 Filter Effects 101</a>
+        <ol>
+      <li><a href="#ch8-2a">8.2a Shadows 212</a></li>
+      <li><a href="#ch8-2b">8.2b Coloring 213</a></li>
+      <li><a href="#ch8-2c">8.2c Blending 216</a></li>
+      <li><a href="#ch8-2d">8.2d Compositing 217</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch8-3">8.3 Noise and Distortion</a>
+        <ol>
+      <li><a href="#ch8-3a">8.3a Turbulence 221</a></li>
+      <li><a href="#ch8-3b">8.3b Displacement 223</a></li>
+      <li><a href="#ch8-3c">8.3c Creating a Cosmic Bubble 224</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch8-4">8.4 Lighting and Texture</a>
+        <ol>
+      <li><a href="#ch8-4a">8.4a Diffuse and Specular Lighting 230</a></li>
+      <li><a href="#ch8-4b">8.4b Light Sources 231</a></li>
+      <li><a href="#ch8-4c">8.4c Simulating Textures 232</a></li>
+      <li><a href="#ch8-4d">8.4d Generative Textures 235</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch8-5">8.5 Summary 240</a></li>
     </ol>
   </li>
   <li><a href="#ch9">Chapter 9: The Generative Way</a>
     <ol type="1">
-	  <li><a href="#ch9-1">9.1 The Journey So Far 243</a></li>
-	  <li><a href="#ch9-2">9.2 The Voyage Forward</a>
-	    <ol>
-	  <li><a href="#ch9-2a">9.2a Trigonometry 244</a></li>
-	  <li><a href="#ch9-2b">9.2b Fractals 246</a></li>
-	  <li><a href="#ch9-2c">9.2c Systems Simulations 249</a></li>
-	    </ol>
-		</li>
-	  <li><a href="#ch9-3">Closing Comments 251</a></li>
+      <li><a href="#ch9-1">9.1 The Journey So Far 243</a></li>
+      <li><a href="#ch9-2">9.2 The Voyage Forward</a>
+        <ol>
+      <li><a href="#ch9-2a">9.2a Trigonometry 244</a></li>
+      <li><a href="#ch9-2b">9.2b Fractals 246</a></li>
+      <li><a href="#ch9-2c">9.2c Systems Simulations 249</a></li>
+        </ol>
+        </li>
+      <li><a href="#ch9-3">Closing Comments 251</a></li>
     </ol>
   </li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="0-intro">Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A caveat before we begin: generative art, and creative coding more
+<p>A caveat before we begin: generative art, and creative coding more
 generally, can become an all-consuming addiction. "Just one more
 iteration" is a refrain you might hear from those unfortunate artists
 caught in its thrall. Creatives craving that next generative hit mixed
-with just the right amount of randomness.
+with just the right amount of randomness.</p>
 
-The purpose of this website is to deal out this computational devilry in
+<p>The purpose of this website is to deal out this computational devilry in
 small doses, in a clear, logical fashion, so you can approach this topic
 safely and with your sanity intact. We will encounter organic forms
 borne of mechanical precision, unpredictable swathes of color cover our
 screens, lines and shapes flocking together in impossible harmony, and
 see complex structures emerge from simple rules. This is the essence of
-generative art, where not all is in your control.
+generative art, where not all is in your control.</p>
 
-That said, it's a medium that requires time, patience, and skill on the
+<p>That said, it's a medium that requires time, patience, and skill on the
 part of the artist -- no less so than with other artistic mediums. And
 although I might be exaggerating the power it has over its
 practitioners, the point I really want to make is that coding has this
@@ -364,68 +364,70 @@ sure -- but it can also fascinate and inspire. If I can equip you with
 some new generative tools and techniques, and in the process excite you
 just a little about their creative possibilities -- possibilities that
 extend beyond the field of art into those of design and web development
--- this book will have more than done its job.
+-- this book will have more than done its job.</p>
 
 <h2>Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch0-know">What You Should Know</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As a reader, what should you know before tackling this book? It will no doubt be easier 
+<p>As a reader, what should you know before tackling this book? It will no doubt be easier 
 if you are comfortable with the core concepts of programming, like variables, functions, 
 loops, and conditionals. These kinds of concepts carry over from language to language, 
 differing mainly with respect to syntax, so if you come from a language other than
-JavaScript, then that's completely fine.
+JavaScript, then that's completely fine.</p>
 
-If you have no prior programming experience, we will be covering the concepts required in 
+<p>If you have no prior programming experience, we will be covering the concepts required in 
 Chapter 2, but I should emphasize that this book is not intended to be an introduction to 
 programming. The second chapter is best thought of as a primer, a jumping-off point for a 
 deeper dive elsewhere. A short introductory course would really benefit you here. Personally 
 I'd recommend the wonderful <a href="https://freeCodeCamp.com/" target="_blank" 
 rel="noreferrer noopener">freeCodeCamp.com</a>, a site I've spent many hours using myself. It 
-offers free interactive tutorials on the basics of HTML, CSS, and JavaScript, and much more besides.
+offers free interactive tutorials on the basics of HTML, CSS, and JavaScript, and much more 
+besides.</p>
 
-For those coming from another language, like Python, PHP, or C#, the second chapter may 
+<p>For those coming from another language, like Python, PHP, or C#, the second chapter may 
 still be valuable, to be sure you're acquainted with the syntax and some of the 
-idiosyncrasies of JavaScript.
+idiosyncrasies of JavaScript.</p>
 
-If you're already a practicing web developer, you could skip (or quickly skim) Chapter 2, 
+<p>If you're already a practicing web developer, you could skip (or quickly skim) Chapter 2, 
 depending on your level of experience. If you're unfamiliar with any of the techniques or 
 syntax used in our opening example (which we'll end Chapter 1 with), I'd encourage you to 
 give the second chapter a read, where they'll be fully explained. The field of web 
 development is vast enough that what is bread and butter to one developer might be bleeding 
-edge to another.
+edge to another.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch0-learn">What You Will Learn</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I mentioned previously that I'll be equipping you with some new tools and techniques. 
-Let's flesh these out.
+Let's flesh these out.</p>
 
-Introduction **Tools**
+<p>Introduction <b>Tools</b></p>
 
-On the tool end of things, we'll be using the following:
+<p>On the tool end of things, we'll be using the following:</p>
 
 <ol start="1">
   <li>JavaScript and the SvJs library. I'll elaborate on this further later.</li>
   <li>A code editor. Here I'll be giving you a choice between
     <ol>
-	  <li>Visual Studio Code (an excellent open source code editor)</li>
-	  <li>CodePen (a popular online code editor)</li>
-	</ol>
+      <li>Visual Studio Code (an excellent open source code editor)</li>
+      <li>CodePen (a popular online code editor)</li>
+    </ol>
   <li>If you opt to use Visual Studio Code (which I recommend), we'll also
     be using Node.js and NPM to manage dependencies (a good habit to get
-	into as a developer).</li>
+    into as a developer).</li>
 </ol>
 
-All code examples are available on both GitHub and CodePen, so feel free to follow along 
+<p>All code examples are available on both GitHub and CodePen, so feel free to follow along 
 whichever way you prefer. You can of course do both, work locally with a code editor but 
 check out CodePen examples online for quick inspiration. For convenience, I'll organize 
 and embed all CodePen examples at <a href="https://davidmatthew.ie/generative-art-javascript-svg" 
-target="_blank" rel="noreferrer noopener">davidmatthew.ie/generative-art-javascript-svg</a>.
+target="_blank" rel="noreferrer noopener">davidmatthew.ie/generative-art-javascript-svg</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Techniques</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In terms of the techniques we'll tackle, by the end of this book, you should have a good 
-overview of the following:
+<p>In terms of the techniques we'll tackle, by the end of this book, you should have a good 
+overview of the following:</p>
+
 <ul>
   <li>The main functionality of the SvJs library and how it relates to the SVG spec,</li>
   <li>Creating generative art sketches with JavaScript using ES6+ syntax,</li>
@@ -438,65 +440,65 @@ overview of the following:
   <li>Using SVG filters generatively.</li>
 </ul>
 
-We'll be covering a lot of ground, so don't put yourself under pressure to understand 
+<p>We'll be covering a lot of ground, so don't put yourself under pressure to understand 
 everything. I must have encountered certain programming concepts umpteen times before 
 the proverbial penny finally dropped (JavaScript promises anyone?), and whenever 
 understanding did finally dawn, it would usually be because I was experimenting with 
 something I *wanted* to build, rather than repeating tutorial steps by rote. Tutorials 
 and instructional books certainly have their place (I wouldn't be writing this book 
 otherwise), but it's important that you take what *you* want from them, rather than 
-seeing them as syllabi to be strictly followed.
+seeing them as syllabi to be strictly followed.</p>
 
-A sense of play is important, particularly when it comes to art. And although I 
+<p>A sense of play is important, particularly when it comes to art. And although I 
 mentioned tools previously, I would prefer if you viewed this book as more of a toybox 
 than a toolbox. When I think of tools, I think of problems that need fixing, like the 
 loose hinges on that crooked cabinet you're going to tighten any day now. Tools tend to 
-be more functional than fun, and I'd like you to have some fun with this book.
+be more functional than fun, and I'd like you to have some fun with this book.</p>
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch1">CHAPTER 1: The Beginner's Path</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Before journeying along any path, the groundwork needs to be in place. In this opening 
+<p>Before journeying along any path, the groundwork needs to be in place. In this opening 
 chapter, that's what we'll do, lay the groundwork. We'll introduce SVG, explain what 
 makes it a uniquely powerful image format, and show how it can be used with JavaScript 
 to create generative art. In the process, we'll set up our tools and a template we can 
-use for subsequent sketches.
+use for subsequent sketches.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1">1.1 Why JavaScript and SvJs?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Most books about generative art use a Java-based language called Processing, or its 
+<p>Most books about generative art use a Java-based language called Processing, or its 
 JavaScript port p5.js. Processing was created specifically for artists and designers new 
-to coding and has a large and active community. So why doesn't this book use it?
+to coding and has a large and active community. So why doesn't this book use it?</p>
 
-My first forays into generative art were with Processing, so I certainly acknowledge its 
+<p>My first forays into generative art were with Processing, so I certainly acknowledge its 
 value. I quickly moved to p5.js when the library was first released in 2013, which 
 allowed generative sketches to be written directly in JavaScript, the language of the 
 Web. But when I wanted to integrate some of my own sketches into real-world web 
 development projects, its limitations quickly showed. It's a *large* library, clocking in 
 at close to a megabyte at last check, and while that may not sound like much, it's a lot 
-by web development standards.
+by web development standards.</p>
 
 <!-- © David Matthew 2024 1
 D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_1> -->
 <!-- page 2 -->
 
-The p5.js library is built on top of the HTML Canvas API, which I soon discovered is 
+<p>The p5.js library is built on top of the HTML Canvas API, which I soon discovered is 
 actually quite straightforward to use. Using this API directly, I was able to achieve 
 much the same results as with p5.js, so that became my go-to. However, the output of all 
 my sketches -- p5.js or Canvas -- was still resolution-dependent bitmap graphics, devoid 
 of any semantic content. What does that mean, and why does it matter (to me at least)? 
-Let me explain.
+Let me explain.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1a">1.1a Introducing Scalable Vector Graphics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Back in the early days of the Web, when dial-up modems were dominant and
+<p>Back in the early days of the Web, when dial-up modems were dominant and
 connecting to the Internet was anything but instant, bandwidth came at a
 premium. File sizes had to be super small if you wanted a page to load
 in your lifetime, and bitmap images, such as JPGs and PNGs, were the
-main bandwidth bottleneck.
+main bandwidth bottleneck.</p>
 
-Bitmap images -- also known as raster images -- are comprised of large
+<p>Bitmap images -- also known as raster images -- are comprised of large
 chunks of data (or bits), and generally speaking, if you want a larger
 image, you need more bits, which means a bigger file size. SVG, on the
 other hand, is a vector format, which is fundamentally different. SVG
@@ -506,14 +508,14 @@ because it doesn't bother itself with the bits (i.e., pixels) needed to
 paint the image to the screen, but rather describes the image to be
 rendered at a more abstract, semantic level. And it does this in much
 the same way that HTML describes the structure and content of a web page. 
-As the Mozilla Developer Network puts it
+As the Mozilla Developer Network puts it.</p>
 
 <blockquote>
 SVG is, essentially, to graphics what HTML is to text.
 </blockquote>
 <!-- page 3 -->
 
-The SVG format was not only a powerful solution to a practical bandwidth
+<p>The SVG format was not only a powerful solution to a practical bandwidth
 problem; it was a nonproprietary format officially standardized by the
 World Wide Web Consortium (which is as good as future-proofing gets in
 the world of web technology). The stage was set for its adoption as far
@@ -524,35 +526,35 @@ got the support it deserved with the decline of Flash (Adobe's
 proprietary format that required a plug-in to run and was often riddled
 with security vulnerabilities) and the rise of responsive design and
 retina (or high PPI) screens, where its scalability and sharpness really
-shine.
+shine.</p>
 
-These days we can use the format freely without worry, but to use it for
+<p>These days we can use the format freely without worry, but to use it for
 the odd icon and logo is one thing; to tap its full potential is
-another.
+another.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1b">1.1b Native SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As SVG is a declarative language like HTML, it's very human-readable and
+<p>As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
 written using opening and closing angle brackets and contain attributes
-with values. Here, for example, is how you'd create a circle:
+with values. Here, for example, is how you'd create a circle:</p>
 
 ```
 <circle r="125" cy="250" cx="250" fill="cyan"/>
 ```
 
-The attributes r, cx, cy, and fill in the preceding example refer to the
+<p>The attributes r, cx, cy, and fill in the preceding example refer to the
 circle's radius, the x and y coordinates of its center, and the color to
-fill it with. All are sensibly named and simple to follow.
+fill it with. All are sensibly named and simple to follow.</p>
 
-Some SVG elements will contain other elements nested within them,
+<p>Some SVG elements will contain other elements nested within them,
 referred to as their child nodes or children, and will therefore need
 opening and closing tags. One prominent example is the parent \<svg\>
-element itself, which contains all other SVG elements.
+element itself, which contains all other SVG elements.</p>
 
-As an example of how you might handwrite an SVG, here is the markup
+<p>As an example of how you might handwrite an SVG, here is the markup
 underlying a very simple composition in the style of Hilma af Klint,
-arguably the first abstract artist in Western art history.
+arguably the first abstract artist in Western art history.</p>
 
 ```
 <svg width="500" height="500" style="background-color: #ad3622">
@@ -564,12 +566,12 @@ arguably the first abstract artist in Western art history.
 </svg>
 ```
 
-As you can see, SVG is written in such a way as to preserve the
+<p>As you can see, SVG is written in such a way as to preserve the
 semantics of the code. Search engines love this; no longer are they
 looking at an impenetrable wall of pixels; they can clearly see the
 *intent* within the markup. In this case, four circles displayed in the
 order they're written, with a title for extra accessibility. Figure 1-1
-shows how this markup appears when rendered.
+shows how this markup appears when rendered.</p>
 
 ![](./images/image007.jpg){width="3.15in" height="3.15in"}
 
@@ -577,7 +579,7 @@ shows how this markup appears when rendered.
 
 <!-- page 5 -->
 
-Declarative formats are straightforward to read, but their weakness is
+<p>Declarative formats are straightforward to read, but their weakness is
 that they can become tedious to write. What if we wanted 100 circles
 instead of four? With native SVG, we'd have to handwrite all of them,
 one after the other. And if we wanted to display our circles at random
@@ -586,9 +588,9 @@ possible at all. Variables, loops, functions, and all the fun stuff of
 imperative programming aren't available to us. Declarative formats are
 concerned more with the *what* of a program rather than the *how*. The
 how, however, will very much matter to us. Without the how, we wouldn't
-have algorithms, and algorithms are essential to generative art.
+have algorithms, and algorithms are essential to generative art.</p>
 
-Algorithms are like recipes; they contain the steps you need to follow
+<p>Algorithms are like recipes; they contain the steps you need to follow
 to achieve a certain result. If you're baking a cake, you don't just
 shout "Cake!" and expect one to materialize, no matter how specific you
 get with your declaration ("with strawberry icing and a caramel
@@ -597,19 +599,19 @@ sounds more than a little eccentric. To bake a cake, you follow a series
 of well-defined steps or instructions and have your ingredients and your
 oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
-ultimately it gives you more creative control.
+ultimately it gives you more creative control.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-1c">1.1c Generating SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So if native SVG doesn't allow for the use of algorithms, how do we
+<p>So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
-SVG, and this is where JavaScript and SvJs come into play.
+SVG, and this is where JavaScript and SvJs come into play.</p>
 
-We could script SVG directly in JavaScript without a library, but that
+<p>We could script SVG directly in JavaScript without a library, but that
 too has its challenges, the main one being the verbose boilerplate code
 we'd have to write. The SvJs library saves us that trouble, making SVG
 more intuitive and fun to write. Here's an example of a simple SVG
-(Figure 1-2) written using vanilla JavaScript:
+(Figure 1-2) written using vanilla JavaScript:</p>
 <!-- page 6 -->
 
 ```
@@ -627,10 +629,10 @@ rect.setAttribute('fill', 'cornflowerblue');
 svg.appendChild(rect);
 ```
 
-And the following snippet is the equivalent SVG written using SvJs
+<p>And the following snippet is the equivalent SVG written using SvJs
 (don't worry about the details just yet; all you need to note is how
 concise it is vs. vanilla JavaScript). The output of this code you can
-see in Figure 1-2.
+see in Figure 1-2.</p>
 
 ```
 const div = document.getElementById('stage'); 
@@ -645,131 +647,132 @@ svg.create('rect').set({
 
 ***Figure 1-2.** A cornflower blue-colored rectangle, in all its glory*
 
-Now you *could* write some functions to make writing vanilla JavaScript
+<p>Now you *could* write some functions to make writing vanilla JavaScript
 less painful, but that leads you down the road of writing a whole host
 of other utility functions to make the basics less burdensome. With
 SvJs, I've done my best to save you this trouble. It's essentially a
 very thin wrapper over the real SVG spec with some helpful generative
 functions thrown in. This keeps its footprint extremely light while
-maintaining fidelity to the SVG spec.
+maintaining fidelity to the SVG spec.</p>
 
-SvJs was inspired by the gySVG library, a similarly light but more
+<p>SvJs was inspired by the gySVG library, a similarly light but more
 general-purpose JavaScript library that comes complete with a plug-in
 API and modern framework support. I was initially going to use gySVG and
 extend its functionality with a plug-in, but this plug-in soon grew to
 the point where it made more sense to write my own library with a
-specific focus on generative art. This was how SvJs came to be.
+specific focus on generative art. This was how SvJs came to be.</p>
 <!-- page 8 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2">1.2 Getting Set Up</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Enough with the preamble. Let's get ourselves set up to write some code.
+<p>Enough with the preamble. Let's get ourselves set up to write some code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2a">1.2a The Code Editor</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If you don't have VS Code already running on your machine, head on over
-to [code.visualstudio.com]{.underline} and download and install the
-appropriate version for your operating system.
+<p>If you don't have VS Code already running on your machine, head on over
+to [code.visualstudio.com] and download and install the
+appropriate version for your operating system.</p>
 
-If you can't install a code editor on your machine or would just prefer
+<p>If you can't install a code editor on your machine or would just prefer
 to follow along online, you can use CodePen instead. Go to
 [codepen.io]{.underline} and sign up an account if you're not already
-registered.
+registered.</p>
 
-I will be writing the examples throughout this book with the VS Code
+<p>I will be writing the examples throughout this book with the VS Code
 editor and local files in mind; the same code can be found online via
 the CodePen versions with some minimal differences (such as how we
 import the SvJs library and the lack of HTML boilerplate which CodePen
-automatically provides).
+automatically provides).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2b">1.2b Node.js and NPM</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You can skip this part if you intend to use CodePen only, but I would
+<p>You can skip this part if you intend to use CodePen only, but I would
 still recommend getting familiar with Node.js if you have any plans on
-getting into the field of web development.
+getting into the field of web development.</p>
 
-Node.js is an open source JavaScript runtime environment that allows you
+<p>Node.js is an open source JavaScript runtime environment that allows you
 to set up your own JavaScript-powered server. It also allows you to
-manage dependencies via the included package manager NPM.
+manage dependencies via the included package manager NPM.</p>
 
-Go to nodejs.org and download and install the latest LTS (long-term
-support) version.
+<p>Go to nodejs.org and download and install the latest LTS (long-term
+support) version.</p>
 
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2c">1.2c Initializing and Installing SvJs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Create a base folder where you'll save all the work related to this
-book, and name it something like generative-svg.
+<p>Create a base folder where you'll save all the work related to this
+book, and name it something like generative-svg.</p>
 
-Open up VS Code, select File **➤** Open File, and navigate to this
+<p>Open up VS Code, select File **➤** Open File, and navigate to this
 folder. Next, select the Terminal **➤** New Terminal command, and you
 should see a new window appear at the bottom of the screen referencing
-the current folder location. It should look something like this:
+the current folder location. It should look something like this:</p>
 
 ```
 your-name@computer-name ~/Documents/generative-svg
 ```
 
-The important thing is that the path references the folder you created
+<p>The important thing is that the path references the folder you created
 in the last step (i.e., generative-svg). Once you've verified that,
 you're ready to initialize the project. To do this, type the following
-into the terminal: npm init -y
-
-What this does is run Node's package manager NPM, and the init command
+into the terminal:</p>
+```
+npm init -y
+```
+<p>What this does is run Node's package manager NPM, and the init command
 initializes the project, or "package." The -y flag just tells npm that
 we want to accept all default setup options. You should notice a new
 file has been created, called package.json. This is a file you'll see a
 lot of in web development, but you don't need to worry about its
 contents right now. Just know that its purpose is to manage our
-dependencies, the main one being the SvJs library.
+dependencies, the main one being the SvJs library.</p>
 
-To install SvJs, run the following command:
+<p>To install SvJs, run the following command:</p>
 
 ```
 npm install svjs
 ```
 
-This will add a new line in the package.json file, referencing the
+<p>This will add a new line in the package.json file, referencing the
 version of SvJs you've just installed. A package-lock.json file will
 also be created (a file you'll never need to look at) and a node_modules
 folder, where SvJs and any of its dependencies are stored (it doesn't
-have any so you won't see additional folders here).
-
+have any so you won't see additional folders here).</p>
 <!-- page 10 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2d">1.2d Scaffolding Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Our first sketch will require a little HTML and CSS before we tackle the
+<p>Our first sketch will require a little HTML and CSS before we tackle the
 JavaScript. We'll keep this markup and styling minimal and more or less
 identical throughout the book, as our real focus will be on the
-JavaScript.
+JavaScript.</p>
 
-Let's create a new folder called sketches inside the base folder, and
+<p>Let's create a new folder called sketches inside the base folder, and
 inside sketches create a new folder called 00-template. We'll number our
 folders so that they sort nicely. The 00-template folder will contain
 the very basics we'll copy from one sketch to another. Inside 00-
 template create a file called index.html and another called sketch.js.
-Once you've done that, you should have a folder structure like this:
+Once you've done that, you should have a folder structure like this:</p>
 
 <blockquote>
 generative-svg
-\|\-- node_modules
-\|\-- sketches
-  \|\-- 00-template
-    \|\-- index.html
-    \|\-- sketch.js
-\|\-- package-lock.json
-\|\-- package.json
+|-- node_modules
+|-- sketches
+  |-- 00-template
+    |-- index.html
+    |-- sketch.js
+|-- package-lock.json
+|-- package.json
 </blockquote>
 
-Open the index.html file. It's worth noting that VS Code can generate
+<p>Open the index.html file. It's worth noting that VS Code can generate
 some boilerplate markup for you if you type ! and press the tab key, but
 I'll include our boilerplate in full here so you can copy and paste it.
 Generally, I recommend you write out the example code yourself and limit
 the "control-c-control-v" activity where possible, as you're less likely
 to learn this way. Here, however, it's fine, as HTML and CSS aren't our
-focus.
+focus.</p>
 <!-- page 11 -->
 
 ```
@@ -800,78 +803,78 @@ focus.
 </html>
 ```
 
-There's just a couple of things worth pointing out about the preceding
+<p>There's just a couple of things worth pointing out about the preceding
 code: our \<div id=\"container\"\> will be where the generative art
 actually happens. It will be our canvas, so to speak. I have placed it
 within the center of the screen, removed any default margins, and given
-the template an overall "dark-mode" feel (my own personal preference).
+the template an overall "dark-mode" feel (my own personal preference).</p>
 
-Below the \<div\> you'll see a \<script\> tag. This is where we'll pull
+<p>Below the \<div\> you'll see a \<script\> tag. This is where we'll pull
 in all our code, so any further modifications to the HTML will be
 unnecessary going forward (other than maybe updating the \<title\> tag
 for each sketch, but I'll leave that up to you). The script is set to
 type=\"module\". What this does is allow us to handle the import of
 other files and libraries that are packaged (or exported) as modules.
 This is a good practice to get into, and it's also how we're going to
-import the SvJs library.
+import the SvJs library.</p>
 <!-- page 12 -->
-Open up the sketch.js file and include this as your first two lines:
+<p>Open up the sketch.js file and include this as your first two lines:</p>
 
 ```
 // Import the SvJs library. 
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 ```
 
-Our template is now complete, ready to be copied for subsequent sketches. Well done!
+<p>Our template is now complete, ready to be copied for subsequent sketches. Well done!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-2e">1.2e Serving Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If you navigate to the 00-template folder at this point and double-click
+<p>If you navigate to the 00-template folder at this point and double-click
 on index.html to open it in a web browser, you'll see some errors in the
 developer console (accessible by pressing F12 on most browsers). This is
 because we need to serve our HTML files using the http:// protocol
 rather than the file:// protocol (you'll see the protocol prefix if you
-check the full URL in the address bar).
+check the full URL in the address bar).</p>
 
-To rectify this, we need to install an http server. And ideally one that
+<p>To rectify this, we need to install an http server. And ideally one that
 detects file changes and instantly reloads our page, saving us from
 having to manually refresh our browser each time (which becomes a pain
 after a while). There's a neat little package called live-server that
 takes care of this for us. To install it, run the following in the
-terminal:
+terminal:</p>
 
 ```
 npm install live-server -g
 ```
 
-The -g flag tells npm to install this package globally on our machine,
+<p>The -g flag tells npm to install this package globally on our machine,
 rather than locally to the project in question. As it's more a general-
 purpose utility than a project-specific dependency, this is what we
-want.
+want.</p>
 
-To get live-server to run, all you need to do is type live-server into
+<p>To get live-server to run, all you need to do is type live-server into
 the terminal. It will then automatically open a new browser window where
 you'll see your project files (assuming you're still in the project's
 base folder in VS Code). Navigate to sketches **➤** 00-template and you
 should see your page load free of any console errors. It's also free of
-any content though, so let's write some code to address this.
+any content though, so let's write some code to address this.</p>
 <!-- page 13 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-3">1.3 Our First Generative Sketch</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As I mentioned previously, our first sketch will serve as a basis for
+<p>As I mentioned previously, our first sketch will serve as a basis for
 explaining the fundamental programming concepts we'll be covering in
 Chapter 2, so what follows is, for this reason, rather light on
-explanations (other than some comments in the code itself).
+explanations (other than some comments in the code itself).</p>
 
-Make a copy of the 00-template folder and call it 01-our-first-
+<p>Make a copy of the 00-template folder and call it 01-our-first-
 generative-sketch, ensuring to copy it to the same location (i.e., so
-that the parent folder is sketches).
+that the parent folder is sketches).</p>
 
-Then, either write out the following code (recommended) or copy it into
+<p>Then, either write out the following code (recommended) or copy it into
 your sketch.js file, below the import statement. Read the comments as
 you go (the lines starting with //), which I've purposely kept quite
-verbose so you can get a better handle on what's happening.
+verbose so you can get a better handle on what's happening.</p>
 
 ```
 // Import the SvJs library. 
@@ -918,12 +921,12 @@ for (let i = 0; i < randomised.iterations; i += 1) {
   let ellipse = svg.create('ellipse');
   ellipse.set({
     cx: center, 
-	cy: center, 
-	rx: radiusX, 
-	ry: radiusY, 
-	fill: 'none', 
-	stroke: `hsl(${hue} 80% 80% / 0.6)`, 
-	transform: `rotate(${rotation} ${center} ${center})`
+    cy: center, 
+    rx: radiusX, 
+    ry: radiusY, 
+    fill: 'none', 
+    stroke: `hsl(${hue} 80% 80% / 0.6)`, 
+    transform: `rotate(${rotation} ${center} ${center})`
   });
 }
 /** 
@@ -936,16 +939,16 @@ function random(min, max, integer = true) {
 }
 ```
 
-Ok, so quite the code dump! It will no doubt overwhelm anyone new to
+<p>Ok, so quite the code dump! It will no doubt overwhelm anyone new to
 coding, so if you fall into this category and find yourself balking at
 the aforementioned, please bear with me; all will be explained in the
 forthcoming chapters. The purpose of this first generative sketch is to
-just jump in and show you some quick results.
+just jump in and show you some quick results.</p>
 
-When you save the aforementioned, you should see something like Figure
+<p>When you save the aforementioned, you should see something like Figure
 1-3. Each refresh of the browser will render a unique version, so what
 you see will no doubt differ in some respects. But that, dear reader, is
-part of the joy of generative art.
+part of the joy of generative art.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 09. first generative sketch (1 variation of many) (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -959,7 +962,7 @@ part of the joy of generative art.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-4">1.4 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-To recap, we've covered the following in this first chapter:
+<p>To recap, we've covered the following in this first chapter:</p>
 
 <ul>
   <li>Why we're using JavaScript and SvJs rather than Processing or p5.js</li>
@@ -970,62 +973,61 @@ To recap, we've covered the following in this first chapter:
   <li>How to serve our sketches from a local development server</li>
 </ul>
 
-Coming up next: a programming primer.
+<p>Coming up next: a programming primer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch2">CHAPTER 2: A Programming Primer</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Although programming can be used to create art, it can also be an art in
+<p>Although programming can be used to create art, it can also be an art in
 itself. It is part art and part science. When beginning programming, you
 need to familiarize yourself more with the scientific side of it, the
 fundamental concepts and rules that comprise programming as a
-discipline. The art can come later.
+discipline. The art can come later.</p>
 
-Learning the basics in programming means getting to grips with concepts
+<p>Learning the basics in programming means getting to grips with concepts
 like values, variables, operators, expressions, conditionals, loops,
 functions, and more. If you have no idea what any of these are, don't
-worry. That's what this chapter is for.
+worry. That's what this chapter is for.</p>
 
-We'll also cover the characteristics (including some of the
+<p>We'll also cover the characteristics (including some of the
 peculiarities) of JavaScript, our language of choice. JavaScript is a
 powerful and enormously popular language; it is the only programming
 language web browsers natively understand, so naturally enough, it is
 *everywhere*. Learning JavaScript is therefore a very practical choice
-and will serve you well in a lot of other areas besides generative art.
+and will serve you well in a lot of other areas besides generative art.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch2-1">Syntax</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We'll begin with some points on syntax.</p>
 
-**Syntax**
+<p>© David Matthew 2024 19</p>
 
-We'll begin with some points on syntax.
-
-© David Matthew 2024 19
-
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_2>
+<p>D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
+<https://doi.org/10.1007/979-8-8688-0086-3_2></p>
 
 <h2>Case Sensitivity</h2>
 
-JavaScript is a case-sensitive language, so the words JavaScript and
+<p>JavaScript is a case-sensitive language, so the words JavaScript and
 javascript would be considered distinct from one another. A
 capitalization convention that many coders adhere to when naming
 functions or variables is something called camel case, where terms are
 joined together in a manner resembling the humps of a camel. For
-example:
+example:</p>
 
 ```
 thisIsCamelCase soIsThis
 ```
 
-As you can see, the first part of the term is entirely lowercase, and
+<p>As you can see, the first part of the term is entirely lowercase, and
 all subsequent terms use what we'd call title case, where the first
-character of the word is capitalized.
+character of the word is capitalized.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Spacing</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Unlike some languages that enforce strict indentation, whitespace in
+<p>Unlike some languages that enforce strict indentation, whitespace in
 JavaScript doesn't carry any intrinsic meaning. Spacing is mostly a
 matter of style. The most prevalent stylistic convention you'll come
 across within the JavaScript community is the use of two spaces to
-indent code, as follows:
+indent code, as follows:</p>
 
 ```
 someCode() { some indented code }
@@ -1034,29 +1036,29 @@ someCode() { some indented code }
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Semicolons</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Each statement in JavaScript should end with a semicolon ( ; ), which is
+<p>Each statement in JavaScript should end with a semicolon ( ; ), which is
 the equivalent of a full stop in natural language. You can choose to
 leave them out altogether, due to a JavaScript feature called Automatic
 Semicolon Insertion (ASI), but because this isn't always safe to do (and
 because I also work with other languages where semicolons are
-mandatory), I opt to leave them in.
+mandatory), I opt to leave them in.</p>
 
-The code throughout this book will therefore use semicolons.
+<p>The code throughout this book will therefore use semicolons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Comments</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A very important habit to cultivate is the liberal use of comments in
+<p>A very important habit to cultivate is the liberal use of comments in
 any code you write. Not only so that others can more easily read and
 understand your code, but so that *you* can do so too. You'd be amazed
 at how quickly your own code can become conundrum-like without comments
-to guide the way.
+to guide the way.</p>
 
-There are two types of comments in JavaScript: single-line comments and
+<p>There are two types of comments in JavaScript: single-line comments and
 multi-line comments. Single-line comments begin with two forward-
 slashes //, and multi-line comments begin with a forward slash and
-asterisk /\* and terminate with an asterisk and forward slash \*/.
+asterisk /\* and terminate with an asterisk and forward slash \*/.</p>
 
-// A single-line comment. Useful for quick explanations.
+<p>// A single-line comment. Useful for quick explanations.</p>
 
 ```
 /* * A multi-line comment.
@@ -1064,33 +1066,32 @@ asterisk /\* and terminate with an asterisk and forward slash \*/.
 */
 ```
 
-Single-line comments can also be placed after code on the same line.
+<p>Single-line comments can also be placed after code on the same line.</p>
 
 ```
 someCode(); // We can safely write a comment here.
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**
+<h2 id="ch2-2">2.2 Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As a programmer, you've got to be well versed in values and their
+<p>As a programmer, you've got to be well versed in values and their
 various types. We're not talking moral values here or a programming code
 of ethics; by values, we mean "chunks" of information that are
 eventually boiled down to the bytes and bits that the computer
-processes.
+processes.</p>
 
-Values can be anything from numbers to strings of text (like "I love
-breakfast cereals"). Let's start with numbers.
-
+<p>Values can be anything from numbers to strings of text (like "I love
+breakfast cereals"). Let's start with numbers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Numbers</h2>
+<h2 id="ch2-2a">Numbers</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If computers love anything at all, it's numbers. They can crunch them
+<p>If computers love anything at all, it's numbers. They can crunch them
 far faster than I can crunch through my favorite breakfast cereal. In
 some programming languages, there are different types of numbers (e.g.,
 int representing integers or whole numbers and float representing
 decimal or floating-point numbers), but in JavaScript, all numeric
-values are of the single type Number.
+values are of the single type Number.</p>
 
 ```
 17 // A whole number.
@@ -1099,34 +1100,34 @@ values are of the single type Number.
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Strings</h2>
+<h3 id="ch2-2b">2.2b Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Strings represent textual information, like words and sentences. Strings
-need to be surrounded by quote marks, of the single or double variety.
+<p>Strings represent textual information, like words and sentences. Strings
+need to be surrounded by quote marks, of the single or double variety.</p>
 
 ```
 'There are 10 kinds of people in this world.' // Single quotes
 "Those who understand binary and those who don't." //
 ```
 
-Double quotes
+<p>Double quotes</p>
 
-Whether you choose to use single or double quotes, it's important to be
-consistent with your choice. Try not to mix them haphazardly.
+<p>Whether you choose to use single or double quotes, it's important to be
+consistent with your choice. Try not to mix them haphazardly.</p>
 
-Another type of string exists called the template literal, which allows
+<p>Another type of string exists called the template literal, which allows
 you to insert variables and expressions into a string. This isn't
 possible with standard single or double quotes. Template literals are
 surrounded by backticks, and code can be inserted between curly braces
-prepended by a dollar sign, like so:
+prepended by a dollar sign, like so:</p>
 
 ```
 `Some text here ${someCodeHere}, and more text here. Pretty cool huh?`
 ```
 
-This is a more recent feature of JavaScript and is extremely useful for
+<p>This is a more recent feature of JavaScript and is extremely useful for
 handling concatenated (i.e., pieced together) and multi-line strings.
-Let's illustrate this with an example.
+Let's illustrate this with an example.</p>
 
 ```
 // Here's how developers used to have to store multi-line HTML string data.
@@ -1141,55 +1142,57 @@ class="intro"> <p>My name is ${name} and I am ${age} years of age.</p>
 </div>`;
 ```
 
-As you can see, it is much more readable and concise. As a rule,
+<p>As you can see, it is much more readable and concise. As a rule,
 whenever you want to mix string values with anything else, backticks are
-the best choice.
+the best choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Booleans</h2>
+<h3 id="ch2-2c">2.2c Booleans</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Boolean values are binary; they can be either true or false. They are
-named after George Boole, inventor of Boolean algebra.
+<p>Boolean values are binary; they can be either true or false. They are
+named after George Boole, inventor of Boolean algebra.</p>
 
-They can be useful for representing any binary state: yes or no, on or
-off, alive or dead, etc. They are written as simply true or false.
+<p>They can be useful for representing any binary state: yes or no, on or
+off, alive or dead, etc. They are written as simply true or false.</p>
+
 ```
 let alive = true; // phew 
 let kicking = false; // just sitting
 ```
-Booleans make conditional statements and comparisons possible, which
-we'll get to a little later.
+
+<p>Booleans make conditional statements and comparisons possible, which
+we'll get to a little later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Empty Values</h2>
+<h3 id="ch2-2d">2.2d Empty Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Empty values are the final values we'll consider. There are two: null
+<p>Empty values are the final values we'll consider. There are two: null
 and undefined. You can think of them as values that carry no
 information. You'll see a lot of them (particularly undefined) when
 debugging your code, so as you can imagine, they are not always the most
-welcome of visitors.
+welcome of visitors.</p>
 
-What is the difference between null and undefined? A simplified way to
+<p>What is the difference between null and undefined? A simplified way to
 think of it is this: when JavaScript tells you a variable called x is
 null, it's saying "yeah I know about x, but x doesn't have any value so
 far as I can see." If, on the other hand, it tells you that x is
-undefined, it is essentially saying "What the \*\*\*\* is x? Ain't no x around here."
+undefined, it is essentially saying "What the \*\*\*\* is x? Ain't no x around here."</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Variables**
+<h2 id="ch2-3">2.3 Variables</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We've name-dropped variables a couple of times already, so what exactly
+<p>We've name-dropped variables a couple of times already, so what exactly
 are they? You can think of variables like containers for values that can
-be referenced later.
+be referenced later.</p>
 
-A variable needs to be declared before it can be used. There are three
-ways to do this: using const, let, or var.
+<p>A variable needs to be declared before it can be used. There are three
+ways to do this: using const, let, or var.</p>
 
-The latter, var, is no longer recommended; I mention it mainly for
+<p>The latter, var, is no longer recommended; I mention it mainly for
 historical reasons and because it is something you'll likely encounter
 in the wild. Many, many JavaScript code bases out there still use var,
 simply because prior to the great JavaScript update of 2015 (called
-ECMAScript 6, or ES6 for short), there was no other options available.
+ECMAScript 6, or ES6 for short), there was no other options available.</p>
 
-Declaring a variable involves using the keyword, creating a name/
-identifier, and then assigning it a value using the equals operator.
+<p>Declaring a variable involves using the keyword, creating a name/
+identifier, and then assigning it a value using the equals operator.</p>
 
 ```
 const name = 'David Matthew'; 
@@ -1225,14 +1228,14 @@ use let when you think the variable may be assigned a new value later.
 The reasoning is that this can reduce any unintended value
 re-assignments, ruling out a potential source of bugs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Operators**
+<h2 id="ch2-4">2.4 Operators</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An operator is a symbol that performs operations on values. We've
 actually come across one already: the assignment operator ( = ), which
 assigns a value to a variable. Let's see what other kinds of operators
 are available to us.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Arithmetic Operators</h2>
+<h3 id="ch2-4a">2.4a Arithmetic Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As you might have guessed, arithmetic operators allow us to perform
 mathematical operations. The addition operator ( + ) allows us to add
@@ -1330,7 +1333,7 @@ BEMDAS can help us out here.
 When in doubt, use parentheses to group operations. This can also
 improve readability.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Comparison Operators</h2>
+<h3 id="ch2-4b">2.4b Comparison Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As the name suggests, comparison operators compare values. They always
 return a boolean, that is, a true or false value.
@@ -1366,7 +1369,7 @@ This can reduce unexpected surprises (i.e., bugs).
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Logical Operators</h2>
+<h3 id="ch2-4c">2.4c Logical Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Lastly, there are the logical operators *and* ( && ), *or* ( \|\| ), and
 *not* ( ! ). These emulate the conjunction, disjunction, and negation of
@@ -1421,7 +1424,7 @@ themselves, these characters perform bitwise operations (i.e., they
 manipulate binary values) and are for advanced programming only.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Conditional Statements**
+<h2 id="ch2-5">2.5 Conditional Statements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Now that we have comparative and logical operators under our belt, we
@@ -1501,9 +1504,9 @@ window.innerHeight : window.innerWidth;
 Here, we're saying "If the window's innerWidth is greater than its
 innerHeight, assign the innerHeight to svgSize. Otherwise, assign to it
 the innerWidth."
-
-**Loops**
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch2-6">2.6 Loops</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Loops are one of a programmer's superpowers. We're talking sea-parting,
 earth-splitting powers. Or, at the very least, the ability to send your
 programs spiralling toward infinity, potentially freezing any open
@@ -1519,7 +1522,7 @@ stop.
 We'll cover two main kinds of loops here: the while loop and the for
 loop.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>The While Loop</h2>
+<h3 id="ch2-6a">2.6a The While Loop</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The while loop is the simpler of the two. It's basic structure is as
 follows:
@@ -1569,7 +1572,7 @@ i++ i--
 The shorthand notation is what you'll likely encounter in practice, so
 we'll continue to use it here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>The For Loop</h2>
+<h3 id="ch2-6b">2.6b The For Loop</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The for loop uses the same logic as our example while loop but bakes the
 iterator and incrementation into a single line. Its typical structure is
@@ -1624,7 +1627,7 @@ There's lots more to love about loops, and other variations also exist
 later), but for the purposes of generative art, we'll be mainly
 utilizing the standard for loop.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Functions**
+<h2 id="ch2-7">2.7 Functions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Functions are fundamental to JavaScript as a language and are perhaps
 the single most important concept we'll cover in this chapter. Functions
@@ -1644,7 +1647,7 @@ function peformSomeTask() {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Function Parameters</h3>
+<h3 id="ch2-7a">Function Parameters</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Although functions are used in a wide variety of ways, their primary
 purpose is to make code reusable. One way to do this is to add
@@ -1676,7 +1679,7 @@ The preceding function, when called, will return the result we're
 looking for, that is, the square of the number we supply it. But how do
 we actually do this in practice?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Invoking Functions</h2>
+<h3 id="ch2-7b">2.7b Invoking Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To use a function we've defined, we need to invoke it. This is
 synonymous with calling or executing the function. It can be done like
@@ -1758,7 +1761,7 @@ function random(min, max, integer = true) {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#  Scope
+<h3 id="ch2-7c">2.7c Scope</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The scope of a variable refers to its visibility, or where in a program
 the variable can be accessed. It's particularly important to be aware of
@@ -1810,7 +1813,7 @@ certain settings globally available throughout our sketches without
 relying on global variables.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Anonymous Functions</h2>
+<h3 id="ch2-7d">2.7d Anonymous Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Functions don't always have to have a name. Particularly when working
 with events and callbacks (which we'll cover in a later chapter),
@@ -1841,7 +1844,7 @@ function(a, b) { return a + b;
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Arrow Functions</h2>
+<h3 id="ch2-7e">2.7e Arrow Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So far we've covered functions declared with the function keyword, but
 there is another, more modern way of writing functions. These functions
@@ -1891,7 +1894,7 @@ serve us well in generative art and in JavaScript more generally. This
 is the subject of our next section.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Objects and Arrays**
+<h2 id="ch2-8">2.8 Objects and Arrays</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Variables are great when you need to define values like numbers,
 strings, and booleans, but what if you need a more sophisticated way to
@@ -1906,7 +1909,7 @@ then known -- had a much more restricted color palette).
 When you have lists of anything, arrays are your friend.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Arrays</h2>
+<h3 id="ch2-8a">2.8a Arrays</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 An array is essentially a variable that can contain multiple values. And
@@ -2012,9 +2015,9 @@ someNumbers.forEach((item) => {
 The forEach() loop can be a nice succinct way of iterating over an array
 if the main purpose of the loop is to perform some action specifically
 for each array item.
-
-<h2>Objects</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-8b">2.8b Objects</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Objects are another data structure JavaScript offers, and like
 functions, they are a foundational feature of the language. Take a peek
 under the hood and you'll find objects everywhere. Functions are, in
@@ -2043,10 +2046,10 @@ const myLaptop = {
   inSleepMode: false, 
   powerUp: function() { 
     if (inSleepMode) { 
-	  wakeUp();
+      wakeUp();
     } 
-	else { 
-	  runBIOS();
+    else { 
+      runBIOS();
     }
   }
   // etc
@@ -2095,7 +2098,7 @@ mentioned earlier. Using an object, we can make our settings globally
 available without relying on global variables. This can keep our code
 tidier and less likely to cause conflicts.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Classes**
+<h2 id="ch2-9">2.9 Classes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A class is like a blueprint, or template, for creating objects. The
 objects that are created are then said to be *instances* of that class.
@@ -2137,7 +2140,7 @@ svg.addTo(document.getElementById('container'));
 This is the extent to which we will be working with classes; writing
 them won't be part of this book.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Idiosyncrasies and Other Features**
+<h2 id="ch2-10">2.10 Idiosyncrasies and Other Features</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JavaScript offers plenty of other features, including closures, error
 catching, proxies, promises, and more, but I can't cover them all here.
@@ -2145,7 +2148,7 @@ What I will point out here are some of the oddities -- or quirks if
 we're being kinder -- associated with JavaScript that may confound
 coders coming from another language.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Null and NaN Weirdness</h2>
+<h3 id="ch2-10a">2.10a Null and NaN Weirdness</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We learned previously that null is essentially the absence of
 information. Isn't it strange then that null is also considered an
@@ -2174,8 +2177,9 @@ NaN === Number;
 NaN === NaN
 -> false
 </pre>
-
-<h2>Secret Casting</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-10b">2.10b Secret Casting</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 JavaScript does some things behind the scenes that programmers from
 stricter languages may not always appreciate. It is, for example,
@@ -2217,9 +2221,9 @@ converted to strings.
 To avoid the pitfalls of this kind of implicit type coercion, functions
 like parseInt(), parseFloat(), and toString() can be used to re-cast or
 explicitly convert variables to the data type you want to work with.
-
-<h2>Semicolon Uncertainty</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-10c">2.10c Semicolon Uncertainty</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I mentioned at the start of the chapter that you can write JavaScript
 without semicolons if you wish, but that in some edge cases, it can
 result in unexpected behavior. Here's one such edge case.
@@ -2242,7 +2246,7 @@ To avoid this, either familiarize yourself with such edge cases or just
 use semicolons.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Summary**
+<h2 id="ch2-11">2.11 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 We've covered a lot in this chapter:
@@ -2287,7 +2291,7 @@ in the process, we'll learn the core functions of the SvJs library and
 how it relates to the SVG spec.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**The Parent SVG Element**
+<h2 id="ch3-1">3.1 The Parent SVG Element</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Before we can create anything visually, we need to load our library and
@@ -2362,7 +2366,7 @@ Concision doesn't always beat clarity however, so if this one-liner is a
 little too compressed for your liking, keep your template code as is, no
 need to replace it with the aforementioned.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**The Viewport and ViewBox**
+<h2 id="ch3-2">3.2 The Viewport and ViewBox</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The viewport refers to the visible portion of our SVG element. It is
 defined implicitly, via the use of width and height attributes.
@@ -2432,7 +2436,7 @@ crop the content visible within the SVG viewport. You can find the pen at
 At this point, we have the values we need for our viewBox and viewport,
 but we haven't yet learned how to put them to use.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Setting and Getting Values**
+<h2 id="ch3-3">3.3 Setting and Getting Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Every SvJs instance, whether it's the parent SVG or one of its child
 elements, has a set() method. This method allows us to set the values of
@@ -2497,7 +2501,7 @@ Fetching attribute values via the get() method can be useful when
 working with event listeners, or in other cases where the values are
 being updated dynamically.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Quicker Element Creation**
+<h2 id="ch3-4">3.4 Quicker Element Creation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If we had to call the new SvJs constructor and the addTo method each
 time we created a new SVG element, it might get a little tiresome after
@@ -2521,7 +2525,7 @@ The create() method is chainable and can be called by child elements
 too.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Lines and Shapes**
+<h2 id="ch3-5">3.5 Lines and Shapes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The SVG spec defines six primitive shape types:
@@ -2540,7 +2544,7 @@ The SVG spec defines six primitive shape types:
 
 As we need to set up a background, let's start with the rectangle.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Rectangles and Squares</h2>
+<h3 id="ch3-5a">3.5a Rectangles and Squares</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A rectangle is a rect in the SVG spec, so to create one, we'd write
 
@@ -2608,7 +2612,7 @@ Any further code we write will be specific to the sketch we're working
 on. Make sure you've saved your changes before copying the 00-template
 folder and its contents, renaming it to 02-basic-shapes.
 
-<h2>First Strokes</h2>
+<h3 id="ch3-5b">3.5b First Strokes</h3>
 
 There are two important attributes that can be used on practically every
 graphical SVG element (i.e., elements that are intended to appear on
@@ -2733,7 +2737,7 @@ useful to have stroke come first, as only then will we see the full fill
 dimensions painted (remove paint_order: \'stroke\' from the code and
 you'll see what I mean).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Circles and Ellipses</h2>
+<h3 id="ch3-5c">3.5c Circles and Ellipses</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The circle is the simplest (and arguably the most perfect) of all
 shapes. We define the position of its center via cx and cy attributes
@@ -2770,19 +2774,19 @@ i <= 6; i += 1) {
   // Create the blueish circle set.
   svg.create('circle').set({ 
     cx: cx, 
-	cy: cy1, 
-	r: r, 
-	fill: '#99eeff',
+    cy: cy1, 
+    r: r, 
+    fill: '#99eeff',
     fill_opacity: 0.1 
   });
 
   // Create the greenish circle set.
   svg.create('circle').set({ 
     cx: cx, 
-	cy: cy2, 
-	r: r, 
-	fill: '#aaffee', 
-	fill_opacity: 0.1
+    cy: cy2, 
+    r: r, 
+    fill: '#aaffee', 
+    fill_opacity: 0.1
   });
 }
 
@@ -2825,7 +2829,7 @@ ellipse.set({
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Lines, Polylines, and Polygons</h2>
+<h3 id="ch3-5d">3.5d Lines, Polylines, and Polygons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 If you need to draw a simple straight line from one point to another,
@@ -2942,7 +2946,7 @@ There are better ways to generate shapes that we'll cover in a later
 chapter.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Text and Titles**
+<h2 id="ch3-6">3.6 Text and Titles</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 As SVG is a plain text format, it's no surprise that it supports textual
@@ -3015,12 +3019,12 @@ let line = '"Bart Bucks" are not legal tender.';
   for (let i = 0; i < 960; i += 80) { 
     let text = svg.create('text');
     text.content(line); 
-	text.set({ 
-	  x: 20, 
-	  y: 80 + i, 
-	  fill: '#fff',
+    text.set({ 
+      x: 20, 
+      y: 80 + i, 
+      fill: '#fff',
       font_size: 52, 
-	  font_family: 'Mynerve'
+      font_family: 'Mynerve'
     });
   }
 ```
@@ -3055,7 +3059,7 @@ You'll often see software like Inkscape or Illustrator embed their own
 metadata in this manner.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Definitions**
+<h2 id="ch3-7">3.7 Definitions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 If we want to define a graphical or other container element for use in
@@ -3074,7 +3078,7 @@ let defs = svg.create('defs');
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Gradients**
+<h2 id="ch3-8">3.8 Gradients</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A gradient is a gradual transition from one color state to another. In
@@ -3165,7 +3169,7 @@ but if you're interested, check out the MDN documentation for more on
 the gradient spreadMethod and varying the focal points of radial
 gradients.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Patterns**
+<h2 id="ch3-9">3.9 Patterns</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Like gradients, patterns reside in the defs element to be referenced
 later rather than rendered directly. They have their own viewport (i.e.,
@@ -3306,7 +3310,7 @@ give you some sense of the power of patterns! We've touched on the main
 points, but they can be customized extensively with further parameters
 if needed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Grouping and Reusing Elements**
+<h2 id="ch3-10">3.10 Grouping and Reusing Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Grouping elements together can be done with the g element. There are a
 number of use cases for this. One, which applications like Inkscape have
@@ -3348,7 +3352,7 @@ context, so going forward we won't be relying on them for our
 imperative- based creations. But there's plenty more to unpack if you
 want to explore further on MDN.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Summary**
+<h2 id="ch3-11">3.11 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 To recap, we've covered the following in this chapter:
@@ -3708,13 +3712,13 @@ iteration.
 for (let y = 0; y < 700; 
   y += 50) { 
     for (let x = 0; x < 700; x += 50) { 
-	  grid.create('rect').set({
+      grid.create('rect').set({
         x: x, 
-		y: y, 
-		width: 40, 
-		height: 40, 
-		fill: 'none', 
-		stroke: '#eee'
+        y: y, 
+        width: 40, 
+        height: 40, 
+        fill: 'none', 
+        stroke: '#eee'
       });
     }
   }
@@ -4371,11 +4375,11 @@ for (let i = 0; i < 60; i += 1) {
   // Create our buildings.
   portoPareto.create('line').set({ 
     x1: 150 + (i * 12), 
-	y1: 550, 
-	x2: 150 + (i * 12), 
-	y2: 550 - height, 
-	stroke: '#181818', 
-	stroke_width: 8
+    y1: 550, 
+    x2: 150 + (i * 12), 
+    y2: 550 - height, 
+    stroke: '#181818', 
+    stroke_width: 8
   });
 }
 ```
@@ -6680,12 +6684,12 @@ for (let i = 0;
 
     // Apply the above variables and randomise the hue.
     let circle = svg.create('circle').set({ 
-	  cx: 500, 
-	  cy: 500, 
-	  r: radius,
+      cx: 500, 
+      cy: 500, 
+      r: radius,
       fill: `hsl(${Gen.random(0, 360)} 80% 80% / 0.5)` 
-	});
-	
+    });
+    
     // Store the circle in the array.
     circles.push(circle); 
   }
@@ -6780,20 +6784,20 @@ function animate() {
 
     // Retrieve the position and velocity.
     let cx = Number(circle.get('cx')); 
-	let cy = Number(circle.get('cy')); 
-	let vx = Number(circle.get('vx')); 
-	let vy = Number(circle.get('vy'));
+    let cy = Number(circle.get('cy')); 
+    let vx = Number(circle.get('vx')); 
+    let vy = Number(circle.get('vy'));
 
     // Check for collisions, and if found reverse the polarity.
     if (cx <= lowerBound || cx >= upperBound) vx = -vx; 
-	if (cy <= lowerBound || cy >= upperBound) vy = -vy;
+    if (cy <= lowerBound || cy >= upperBound) vy = -vy;
 
     // Update the position.
     cx += vx; 
-	cy += vy;
+    cy += vy;
 
     // Set the new values. 
-	circle.set({ cx: cx, cy: cy, vx: vx, vy: vy });
+    circle.set({ cx: cx, cy: cy, vx: vx, vy: vy });
   });
 
   // The recursive bit.
@@ -6835,11 +6839,11 @@ function animate() {
   circles.forEach((circle) => {
 
     // Calculate the lower and upper bounds for each circle. 
-	let radius = Number(circle.get('r')); 
-	let lowerBound = frameEdge + radius + frameInset; 
-	let upperBound = frameEdge + frameSize - radius -
+    let radius = Number(circle.get('r')); 
+    let lowerBound = frameEdge + radius + frameInset; 
+    let upperBound = frameEdge + frameSize - radius -
     frameInset;
-	
+    
     // ... remainder of code is unchanged.
 }
 ```
@@ -6891,9 +6895,9 @@ for (let i = 0; i < numCircles; i += 1) {
   // Create the circle, but don't set the position or radius yet. 
   let circle = svg.create('circle').set({ 
     r: baseRadius, 
-	fill: 'none',
+    fill: 'none',
     stroke: `hsl(${hue} 80% 80% / 0.75)`, 
-	transform_origin: '500 500'
+    transform_origin: '500 500'
   });
 }
 ```
@@ -7299,8 +7303,8 @@ following:
 if (Gen.chance(55)) { 
   grid.create('rect').set({ 
     x: x, 
-	y: y, 
-	width: cellSize, 
+    y: y, 
+    width: cellSize, 
     height: cellSize, 
     fill: `rgb(
       ${[Gen.random(0, 255), Gen.random(0, 255), Gen.random(0, 255)]}
@@ -8474,14 +8478,14 @@ feTurbulence primitive, 241
     effects 101
       blending, 216, 217
       coloring, 213--216 
-	  compositing, 218--220 
-	  shadows, 212
+      compositing, 218--220 
+      shadows, 212
     element, 206 
     generative textures, 235--240
     ins/outs, 207--209
     lighting sources, 231 
     lighting/texturing 
-	  bump map, 228
+      bump map, 228
     noise/distortion
       cosmic bubble, 224, 226--228 
       displacement, 223, 224 
