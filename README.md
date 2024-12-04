@@ -37,7 +37,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
 <ol type="1" start="01">
-  <li><a id="ch1">Chapter 1: The Beginner's Path</a>
+  <li><a href="#ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
 	  <li><a id="ch1-1">1.1 Why JavaScript and SvJs?</a>
 	    <ol type="a">
@@ -59,7 +59,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch1-4">1.4 Summary</a></li>
     </ol>
   </li>
-  <li><a id="ch2"><a href="#ch2">Chapter 2: A Programming Primer</a>
+  <li><a href="#ch2">Chapter 2: A Programming Primer</a>
     <ol type="1">
 	  <li><a id="ch2-1">2.1 Syntax</a>
 	    <ol>
@@ -118,7 +118,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch2-11">2.11 Summary 53</a></li>
     </ol>
   </li>
-  <li><a id="ch3"><a href="#ch3">Chapter 3: All About SVG</a>
+  <li><a href="#ch3">Chapter 3: All About SVG</a>
     <ol type="1">
 	  <li><a id="ch3-1">3.1 The Parent SVG Element 55</a></li>
 	  <li><a id="ch3-2">3.2 The Viewport and ViewBox 57</a></li>
@@ -140,7 +140,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch3-11">3.11 Summary 84</a></li>
 	  </ol>
     </li>
-    <li><a id="ch4"><a href="#ch4">Chapter 4: Randomness and Regularity</a>
+    <li><a href="#ch4">Chapter 4: Randomness and Regularity</a>
     <ol type="1">
 	  <li><a id="ch4-1">4.1 Analogue and Digital Randomness</a>
 	    <ol>
@@ -182,7 +182,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch4-7">4.7 Summary 118</a></li>
     </ol>
   </li>
-  <li><a id="ch5"><a href="#ch5">Chapter 5: The Need for Noise</a>
+  <li><a href="#ch5">Chapter 5: The Need for Noise</a>
     <ol type="1">
 	  <li><a id="ch5-1">5.1 Random Limits 119</a></li>
 	  <li><a id="ch5-2">5.2 Making Noise
@@ -207,7 +207,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch5-5">5.5 Summary 134</a></li>
     </ol>
   </li>
-  <li><a id="ch6"><a href="#ch6">Chapter 6: The All-Powerful Path</a></a>
+  <li><a href="#ch6">Chapter 6: The All-Powerful Path</a>
     <ol type="1">
 	  <li><a id="ch6-1">6.1 The Path Element</a>
 	    <ol>
@@ -248,7 +248,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch6-7">6.7 Summary 165</a></li>
     </ol>
   </li>
-  <li><a id="ch7">Chapter 7: Motion and Interactivity</a>
+  <li><a href="#ch7">Chapter 7: Motion and Interactivity</a>
     <ol><a type="1">
 	  <li><a id="ch7-1">7.1 Event Listeners</a>
 	    <ol>
@@ -289,7 +289,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch7-6">7.6 Summary 202</a></li>
     </ol>
   </li>
-  <li><a id="ch8">Chapter 8: Filter Effects</a>
+  <li><a href="#ch8">Chapter 8: Filter Effects</a>
     <ol type="1">
 	  <li><a id="ch8-1">8.1 Filter Fundamentals</a>
 	    <ol>
@@ -324,7 +324,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 	  <li><a id="ch8-5">8.5 Summary 240</a></li>
     </ol>
   </li>
-  <li><a id="ch9">Chapter 9: The Generative Way</a>
+  <li><a href="#ch9">Chapter 9: The Generative Way</a>
     <ol type="1">
 	  <li><a id="ch9-1">9.1 The Journey So Far 243</a></li>
 	  <li><a id="ch9-2">9.2 The Voyage Forward</a>
@@ -495,7 +495,6 @@ connecting to the Internet was anything but instant, bandwidth came at a
 premium. File sizes had to be super small if you wanted a page to load
 in your lifetime, and bitmap images, such as JPGs and PNGs, were the
 main bandwidth bottleneck.
-
 
 Bitmap images -- also known as raster images -- are comprised of large
 chunks of data (or bits), and generally speaking, if you want a larger
@@ -739,7 +738,7 @@ have any so you won't see additional folders here).
 
 <!-- page 10 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2d">1.2d Scaffolding Our Sketches</h2>
+<h2 href="#ch1-2d">1.2d Scaffolding Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Our first sketch will require a little HTML and CSS before we tackle the
 JavaScript. We'll keep this markup and styling minimal and more or less
@@ -825,7 +824,7 @@ import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 Our template is now complete, ready to be copied for subsequent sketches. Well done!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2e">1.2e Serving Our Sketches</h2>
+<h2 href="#ch1-2e">1.2e Serving Our Sketches</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you navigate to the 00-template folder at this point and double-click
 on index.html to open it in a web browser, you'll see some errors in the
@@ -858,7 +857,7 @@ should see your page load free of any console errors. It's also free of
 any content though, so let's write some code to address this.
 <!-- page 13 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-3">1.3 Our First Generative Sketch</h2>
+<h2 href="#ch1-3">1.3 Our First Generative Sketch</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As I mentioned previously, our first sketch will serve as a basis for
 explaining the fundamental programming concepts we'll be covering in
@@ -958,7 +957,7 @@ part of the joy of generative art.
 
 ***Figure 1-3.** Our first generative sketch (one variation of many)*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-4">1.4 Summary</h2>
+<h2 href="#ch1-4">1.4 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To recap, we've covered the following in this first chapter:
 
@@ -973,7 +972,7 @@ To recap, we've covered the following in this first chapter:
 
 Coming up next: a programming primer.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="ch2">CHAPTER 2: A Programming Primer</h1>
+<h1 href="#ch2">CHAPTER 2: A Programming Primer</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Although programming can be used to create art, it can also be an art in
 itself. It is part art and part science. When beginning programming, you
