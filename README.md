@@ -34,312 +34,312 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="#toc">Table of Contents</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</h2> -->
+<!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
 <ol type="1" start="01">
-  <li id="#ch1"><a href="#ch1">Chapter 1: The Beginner's Path</a>
+  <li><a id="ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
-	  <li id="#ch1-1">Why JavaScript and SvJs?
+	  <li><a id="ch1-1">1.1 Why JavaScript and SvJs?</a>
 	    <ol type="a">
-	  <li id="#ch1-1-a">Introducing Scalable Vector Graphics</li>
-	  <li id="#ch1-1-b">Native SVG</li>
-	  <li id="#ch1-1-c">Generating SVG</li>
+	  <li><a id="ch1-1a">1.1a Introducing Scalable Vector Graphics</a></li>
+	  <li><a id="ch1-1b">1.1b Native SVG</li>
+	  <li><a id="ch1-1c">1.1c Generating SVG</a></li>
 	    </ol>
 	  </li>
-	  <li id="#ch1-2">Getting Set Up
+	  <li><a id="ch1-2">1.2 Getting Set Up</a>
 	    <ol>
-		<li id="#ch1-2-a">The Code Editor</li>
-	  <li id="#ch1-2-b">Nodejs and NPM</li>
-	  <li id="#ch1-2-c">Initializing and Installing SvJs</li>
-	  <li id="#ch1-2-d">Scaffolding Our Sketches</li>
-	  <li id="#ch1-2-e">Serving Our Sketches</li>
+		<li><a id="ch1-2a">1.2a The Code Editor</a></li>
+	  <li><a id="ch1-2b">1.2b Nodejs and NPM</a></li>
+	  <li><a id="ch1-2c">1.2c Initializing and Installing SvJs</a></li>
+	  <li><a id="ch1-2d">1.2d Scaffolding Our Sketches</a></li>
+	  <li><a id="ch1-2e">1.2e Serving Our Sketches</a></li>
 	    </ol>
 	  </li>
-	  <li id="#ch1-3">Our First Generative Sketch</li>
-	  <li id="#ch1-4">Summary</li>
+	  <li><a id="ch1-3">1.3 Our First Generative Sketch</a></li>
+	  <li><a id="ch1-4">1.4 Summary</a></li>
     </ol>
   </li>
-  <li id="#ch2"><a href="#ch2">Chapter 2: A Programming Primer</a>
+  <li><a id="ch2"><a href="#ch2">Chapter 2: A Programming Primer</a>
     <ol type="1">
-	  <li id="ch2-1">Syntax
+	  <li><a id="ch2-1">2.1 Syntax</a>
 	    <ol>
-		  <li id="ch2-1-a">Case Sensitivity 20</li>
-		  <li id="ch2-1-b">Spacing 20</li>
-		  <li id="ch2-1-c">Semicolons 20</li>
-		  <li id="ch2-1-d">Comments 21</li>
+		  <li><a id="ch2-1a">2.1a Case Sensitivity 20</a></li>
+		  <li><a id="ch2-1b">2.1b Spacing 20</a></li>
+		  <li><a id="ch2-1c">2.1c Semicolons 20</a></li>
+		  <li><a id="ch2-1d">2.1d Comments 21</a></li>
 		</ol>
 	  </li>
-	  <li id="ch2-2">Values
+	  <li><a id="ch2-2">2.2 Values</a>
 		<ol>
-		  <li id="ch2-2-a">Numbers 22</li>
-		  <li id="ch2-2-b">Strings 22</li>
-		  <li id="ch2-2-c">Booleans 24</li>
-		  <li id="ch2-2-d">Empty Values 24</li>
+		  <li><a id="ch2-2a">2.2a Numbers 22</a></li>
+		  <li><a id="ch2-2b">2.2b Strings 22</a></li>
+		  <li><a id="ch2-2c">2.2c Booleans 24</a></li>
+		  <li><a id="ch2-2d">2.2d Empty Values 24</a></li>
 		</ol>
 	  </li>
-	  <li id="ch2-3">Variables 25</li>
-	  <li id="ch2-4">Operators
+	  <li><a id="ch2-3">2.3 Variables 25</a></li>
+	  <li><a id="ch2-4">2.4 Operators</a>
 	    <ol>
-		  <li id="ch2-4-a">Arithmetic Operators 26</li>
-		  <li id="ch2-4-b">Comparison Operators 29</li>
-		  <li id="ch2-4-c">Logical Operators 30</li>
+		  <li><a id="ch2-4a">2.4a Arithmetic Operators 26</a></li>
+		  <li><a id="ch2-4b">2.4b Comparison Operators 29</a></li>
+		  <li><a id="ch2-4c">2.4c Logical Operators 30</a></li>
         </ol>
 	  </li>
-	  <li id="ch2-5">Conditional Statements 31</li>
-	  <li id="ch2-6">Loops
+	  <li><a id="ch2-5">2.5 Conditional Statements 31</a></li>
+	  <li><a id="ch2-6">2.6 Loops
 	    <ol>
-		  <li id="ch2-6-a">The While Loop 34</li>
-		  <li id="ch2-6-b">The For Loop 35</li>
+		  <li><a id="ch2-6a">2.6a The While Loop 34</a></li>
+		  <li><a id="ch2-6b">2.6b The For Loop 35</a></li>
 	    </ol>
 	  </li>
-	  <li id="ch2-7">Functions
+	  <li><a id="ch2-7">2.7 Functions</a>
 	    <ol>
-		  <li id="ch2-7-a">Function Parameters 37</li>
-          <li id="ch2-7-b">Invoking Functions 38</li>
-	      <li id="ch2-7-c">Scope 40</li>
-	      <li id="ch2-7-d">Anonymous Functions 42</li>
-	      <li id="ch2-7-e">Arrow Functions 42</li>
+		  <li><a id="ch2-7a">2.7a Function Parameters 37</a></li>
+          <li><a id="ch2-7b">2.7b Invoking Functions 38</a></li>
+	      <li><a id="ch2-7c">2.7c Scope 40</a></li>
+	      <li><a id="ch2-7d">2.7d Anonymous Functions 42</a></li>
+	      <li><a id="ch2-7e">2.7e Arrow Functions 42</a></li>
 		</ol>
 	  </li>
-	  <li id="ch2-8">Objects and Arrays
+	  <li><a id="ch2-8">2.8 Objects and Arrays</a>
 	    <ol>
-		  <li id="ch2-8-a">Arrays 44</li>
-          <li id="ch2-8-b">Objects 47</li>
+		  <li><a id="ch2-8a">2.8a Arrays 44</a></li>
+          <li><a id="ch2-8b">2.8b Objects 47</a></li>
 		</ol>
 	  </li>
-      <li id="ch2-9">Classes 49</li>
-	  <li id="ch2-10">Idiosyncrasies and Other Features 50
+      <li><a id="ch2-9">2.9 Classes 49</a></li>
+	  <li><a id="ch2-10">2.10 Idiosyncrasies and Other Features 50</a>
 	    <ol>
-		  <li id="ch2-10a">Null and NaN Weirdness 51</li>
-		  <li id="ch2-10-b">Secret Casting 51</li>
-		  <li id="ch2-10-c">Semicolon Uncertainty 52</li>
+		  <li><a id="ch2-10a">2.10a Null and NaN Weirdness 51</a></li>
+		  <li><a id="ch2-10b">2.10b Secret Casting 51</a></li>
+		  <li><a id="ch2-10c">2.10c Semicolon Uncertainty 52</a></li>
 		</ol>
 	  </li>
-	  <li id="ch2-11">Summary 53</li>
+	  <li><a id="ch2-11">2.11 Summary 53</a></li>
     </ol>
   </li>
-  <li id="ch3"><a href="#ch3">Chapter 3: All About SVG</a>
+  <li><a id="ch3"><a href="#ch3">Chapter 3: All About SVG</a>
     <ol type="1">
-	  <li id="ch3-1">The Parent SVG Element 55</li>
-	  <li id="ch3-2">The Viewport and ViewBox 57</li>
-	  <li id="ch3-3">Setting and Getting Values 59</li>
-	  <li id="ch3-4">Quicker Element Creation 60</li>
-	  <li id="ch3-5">Lines and Shapes
+	  <li><a id="ch3-1">3.1 The Parent SVG Element 55</a></li>
+	  <li><a id="ch3-2">3.2 The Viewport and ViewBox 57</a></li>
+	  <li><a id="ch3-3">3.3 Setting and Getting Values 59</a></li>
+	  <li><a id="ch3-4">3.4 Quicker Element Creation 60</a></li>
+	  <li><a id="ch3-5">3.5 Lines and Shapes</a>
 	    <ol>
-	      <li id="ch3-5-a">Rectangles and Squares 61</li>
-          <li id="ch3-5-b">First Strokes 63</li>
-          <li id="ch3-5-c">Circles and Ellipses 66</li>
-          <li id="ch3-5-d">Lines, Polylines, and Polygons 68</li>
+	      <li><a id="ch3-5a">3.5a Rectangles and Squares 61</a></li>
+          <li><a id="ch3-5b">3.5b First Strokes 63</a></li>
+          <li><a id="ch3-5c">3.5c Circles and Ellipses 66</a></li>
+          <li><a id="ch3-5d">3.5d Lines, Polylines, and Polygons 68</a></li>
 		</ol>
 	  </li>
-	  <li id="ch3-6">Text and Titles 72</li>
-	  <li id="ch3-7">Definitions 75</li>
-	  <li id="ch3-8">Gradients 76</li>
-	  <li id="ch3-9">Patterns 78</li>
-	  <li id="ch3-10">Grouping and Reusing Elements 83</li>
-	  <li id="ch3-11">Summary 84</li>
+	  <li><a id="ch3-6">3.6 Text and Titles 72</a></li>
+	  <li><a id="ch3-7">3.7 Definitions 75</a></li>
+	  <li><a id="ch3-8">3.8 Gradients 76</a></li>
+	  <li><a id="ch3-9">3.9 Patterns 78</a></li>
+	  <li><a id="ch3-10">3.10 Grouping and Reusing Elements 83</a></li>
+	  <li><a id="ch3-11">3.11 Summary 84</a></li>
 	  </ol>
     </li>
-    <li id="ch4"><a href="#ch4">Chapter 4: Randomness and Regularity</a>
+    <li><a id="ch4"><a href="#ch4">Chapter 4: Randomness and Regularity</a>
     <ol type="1">
-	  <li id="ch4-1">Analogue and Digital Randomness
+	  <li><a id="ch4-1">4.1 Analogue and Digital Randomness</a>
 	    <ol>
-	      <li id="ch4-1-a">4.1a The SvJs Genrandom( ) Function 87</li>
+	      <li><a id="ch4-1a">4.1a The SvJs Genrandom( ) Function 87</a></li>
 		</ol>
 	  </li>
-	  <li id="ch4-2">4.2 Elements Everywhere All at Once
+	  <li><a id="ch4-2">4.2 Elements Everywhere All at Once</a>
 	    <ol>
-	  <li id="ch4-2-a">4.2a Varying Color and Opacity 89</li>
-	  <li id="ch4-2-b">4.2b Varying Element Selection 91</li>
+	  <li><a id="ch4-2a">4.2a Varying Color and Opacity 89</a></li>
+	  <li><a id="ch4-2b">4.2b Varying Element Selection 91</a></li>
 	    </ol>
 		</li>
-	  <li id="ch4-3">4.3 Regular Grids 94
+	  <li><a id="ch4-3">4.3 Regular Grids 94</a>
 	    <ol>
-	  <li id="ch4-3-a">4.3a The Nested For Loop 94</li>
-	  <li id="ch4-3-b">4.3b A More Flexible Grid 96</li>
+	  <li><a id="ch4-3a">4.3a The Nested For Loop 94</a></li>
+	  <li><a id="ch4-3b">4.3b A More Flexible Grid 96</a></li>
 	    </ol>
 		</li>
-	  <li id="ch4-4">4.4 Clip Paths and Color Palettes
+	  <li><a id="ch4-4">4.4 Clip Paths and Color Palettes</a>
 	    <ol>
-	  <li id="ch4-4-a">4.4a Arrays of Colors 98</li>
-	  <li id="ch4-4-b">4.4b Clipping Our Content 100</li>
+	  <li><a id="ch4-4a">4.4a Arrays of Colors 98</a></li>
+	  <li><a id="ch4-4b">4.4b Clipping Our Content 100</a></li>
 	    </ol>
 		</li>
-	  <li id="ch4-5">4.5 Choice and Chance 105</li>
+	  <li><a id="ch4-5">4.5 Choice and Chance 105</a></li>
 	    <ol>
-	  <li id="ch4-5-a">4.5a The SvJs Genchance( ) Function 105</li>
-	  <li id="ch4-5-b">4.5b Chance in Action 106</li>
+	  <li><a id="ch4-5a">4.5a The SvJs Genchance( ) Function 105</a></li>
+	  <li><a id="ch4-5b">4.5b Chance in Action 106</a></li>
 	    </ol>
 		</li>
-	  <li id="ch4-6">4.6 Probability Distributions
+	  <li><a id="ch4-6">4.6 Probability Distributions</a>
 	    <ol>
-	  <li id="ch4-6-a">4.6a Uniform Distribution 108</li>
-	  <li id="ch4-6-b">4.6b Gaussian Distribution 109</li>
-	  <li id="ch4-6-c">4.6c Pareto Distribution 113</li>
-	  <li id="ch4-6-d">4.6d Masking Our Content 115</li>
+	  <li><a id="ch4-6a">4.6a Uniform Distribution 108</a></li>
+	  <li><a id="ch4-6b">4.6b Gaussian Distribution 109</a></li>
+	  <li><a id="ch4-6c">4.6c Pareto Distribution 113</a></li>
+	  <li><a id="ch4-6d">4.6d Masking Our Content 115</a></li>
 	    </ol>
 		</li>
-	  <li id="ch4-7">Summary 118</li>
+	  <li><a id="ch4-7">4.7 Summary 118</a></li>
     </ol>
   </li>
-  <li id="ch5"><a href="#ch5">Chapter 5: The Need for Noise</a>
+  <li><a id="ch5"><a href="#ch5">Chapter 5: The Need for Noise</a>
     <ol type="1">
-	  <li id="ch5-1">5.1 Random Limits 119</li>
-	  <li id="ch5-2">5.2 Making Noise
+	  <li><a id="ch5-1">5.1 Random Limits 119</a></li>
+	  <li><a id="ch5-2">5.2 Making Noise
 	    <ol>
-	  <li id="ch5-2-a">5.2a Noise Explained 120</li>
-	  <li id="ch5-2-b">5.2b The SvJs Noise Module 122</li>
+	  <li><a id="ch5-2a">5.2a Noise Explained 120</a></li>
+	  <li><a id="ch5-2b">5.2b The SvJs Noise Module 122</a></li>
 	    </ol>
 		</li>
-	  <li id="ch5-3">5.3 Into the Noise Matrix
+	  <li><a id="ch5-3">5.3 Into the Noise Matrix</a>
 	    <ol>
-	  <li id="ch5-3-a">5.3a A Noisy Grid 124</li>
-	  <li id="ch5-3-b">5.3b Mapping the Noise Values 128</li>
-	  <li id="ch5-3-c">5.3c Optimize with Style 129</li>
+	  <li><a id="ch5-3a">5.3a A Noisy Grid 124</a></li>
+	  <li><a id="ch5-3b">5.3b Mapping the Noise Values 128</a></li>
+	  <li><a id="ch5-3c">5.3c Optimize with Style 129</a></li>
 	    </ol>
 		</li>
-	  <li id="ch5-4">5.4 Spinning Noise
+	  <li><a id="ch5-4">5.4 Spinning Noise</a>
 	    <ol>
-	  <li id="ch5-4-a">5.4a Mapping and Constraining 132</li>
-	  <li id="ch5-4-b">5.4b Rotating and Translating 133</li>
+	  <li><a id="ch5-4a">5.4a Mapping and Constraining 132</a></li>
+	  <li><a id="ch5-4b">5.4b Rotating and Translating 133</a></li>
 	    </ol>
 		</li>
-	  <li id="ch5-5">5.5 Summary 134</li>
+	  <li><a id="ch5-5">5.5 Summary 134</a></li>
     </ol>
   </li>
-  <li id="ch6"><a href="#ch6">Chapter 6: The All-Powerful Path</a>
+  <li><a id="ch6"><a href="#ch6">Chapter 6: The All-Powerful Path</a></a>
     <ol type="1">
-	  <li id="ch6-1">6.1 The Path Element
+	  <li><a id="ch6-1">6.1 The Path Element</a>
 	    <ol>
-	  <li id="ch6-1-a">6.1a D for Data 138</li>
-	  <li id="ch6-1-b">6.1b Path Commands 138</li>
+	  <li><a id="ch6-1a">6.1a D for Data 138</a></li>
+	  <li><a id="ch6-1b">6.1b Path Commands 138</a></li>
 	    </ol>
 		</li>
-	  <li id="ch6-2">6.2 Starting and Ending a Path 139</li>
-	  <li id="ch6-3">6.3 Straight Lines
+	  <li><a id="ch6-2">6.2 Starting and Ending a Path 139</a></li>
+	  <li><a id="ch6-3">6.3 Straight Lines</a>
 	    <ol>
-	  <li id="ch6-3-a">6.3a The Simple L 140</li>
-	  <li id="ch6-3-b">6.3b Horizontal and Vertical Varieties 142</li>
-	  <li id="ch6-3-c">6.3c Further Economies 143</li>
+	  <li><a id="ch6-3a">6.3a The Simple L 140</a></li>
+	  <li><a id="ch6-3b">6.3b Horizontal and Vertical Varieties 142</a></li>
+	  <li><a id="ch6-3c">6.3c Further Economies 143</a></li>
 	    </ol>
 		</li>
-	  <li id="ch6-4">6.4 Quadratic Bezier Curves
+	  <li><a id="ch6-4">6.4 Quadratic Bezier Curves</a>
 	    <ol>
-	  <li id="ch6-4-a">6.4a Control Points 144</li>
-	  <li id="ch6-4-b">6.4b A Smooth Shortcut 145</li>
-	  <li id="ch6-4-c">6.4c A Quadratic Slinky 147</li>
+	  <li><a id="ch6-4a">6.4a Control Points 144</a></li>
+	  <li><a id="ch6-4b">6.4b A Smooth Shortcut 145</a></li>
+	  <li><a id="ch6-4c">6.4c A Quadratic Slinky 147</a></li>
 	    </ol>
 		</li>
-	  <li id="ch6-5">6.5 Elliptical Arcs
+	  <li><a id="ch6-5">6.5 Elliptical Arcs</a>
 	    <ol>
-	  <li id="ch6-5-a">6.5a Setting the Flags 151</li>
-	  <li id="ch6-5-b">6.5b Irregular Radii 152</li>
-	  <li id="ch6-5-c">6.5c Generative Arcs 153</li>
+	  <li><a id="ch6-5a">6.5a Setting the Flags 151</a></li>
+	  <li><a id="ch6-5b">6.5b Irregular Radii 152</a></li>
+	  <li><a id="ch6-5c">6.5c Generative Arcs 153</a></li>
 	    </ol>
 		</li>
-	  <li id="ch6-6">6.6 Cubic Bezier Curves
+	  <li><a id="ch6-6">6.6 Cubic Bezier Curves</a>
 	    <ol>
-	  <li id="ch6-6-a">6.6a Cubic Control Points 156</li>
-	  <li id="ch6-6-b">6.6b S for Symmetry158</li>
-	  <li id="ch6-6-c">6.6c Organic Curves 159</li>
-	  <li id="ch6-6-d">6.6d An Easier Option 163</li>
+	  <li><a id="ch6-6a">6.6a Cubic Control Points 156</a></li>
+	  <li><a id="ch6-6b">6.6b S for Symmetry 158</a></li>
+	  <li><a id="ch6-6c">6.6c Organic Curves 159</a></li>
+	  <li><a id="ch6-6d">6.6d An Easier Option 163</a></li>
 	    </ol>
 		</li>
-	  <li id="ch6-7">6.7 Summary 165</li>
+	  <li><a id="ch6-7">6.7 Summary 165</a></li>
     </ol>
   </li>
-  <li id="ch7"><a href="#ch7">Chapter 7: Motion and Interactivity</a>
-    <ol type="1">
-	  <li id="ch7-1">7.1 Event Listeners
+  <li><a id="ch7">Chapter 7: Motion and Interactivity</a>
+    <ol><a type="1">
+	  <li><a id="ch7-1">7.1 Event Listeners</a>
 	    <ol>
-	  <li id="ch7-1-a">7.1a Event Types 168</li>
-	  <li id="ch7-1-b">7.1b Event Parameters 169</li>
-	  <li id="ch7-1-c">7.1c Triggering the SvJs Save Method 170</li>
+	  <li><a id="ch7-1a">7.1a Event Types 168</a></li>
+	  <li><a id="ch7-1b">7.1b Event Parameters 169</a></li>
+	  <li><a id="ch7-1c">7.1c Triggering the SvJs Save Method 170</a></li>
 	    </ol>
 		</li>
-	  <li id="ch7-2">7.2 Creative Cursor Tracking
+	  <li><a id="ch7-2">7.2 Creative Cursor Tracking</a>
 	    <ol>
-	  <li id="ch7-2-a">7.2a The SvJs trackCursor( ) Method 171</li>
-	  <li id="ch7-2-b">7.2b Interactive Ellipses 172</li>
+	  <li><a id="ch7-2a">7.2a The SvJs trackCursor( ) Method 171</a></li>
+	  <li><a id="ch7-2b">7.2b Interactive Ellipses 172</a></li>
 	    </ol>
 		</li>
-	  <li id="ch7-3">7.3 Programming Motion
+	  <li><a id="ch7-3">7.3 Programming Motion</a>
 	    <ol>
-	  <li id="ch7-3-a">7.3a CSS Keyframes 177</li>
-	  <li id="ch7-3-b">7.3b The SMIL Way 179</li>
-	  <li id="ch7-3-c">7.3c The Web Animations API 181</li>
-	  <li id="ch7-3-d">7.3d The requestAnimationFrame( ) Method 184</li>
-	  <li id="ch7-3-e">7.3e Methods Summarized 188</li>
+	  <li><a id="ch7-3a">7.3a CSS Keyframes 177</a></li>
+	  <li><a id="ch7-3b">7.3b The SMIL Way 179</a></li>
+	  <li><a id="ch7-3c">7.3c The Web Animations API 181</a></li>
+	  <li><a id="ch7-3d">7.3d The requestAnimationFrame( ) Method 184</a></li>
+	  <li><a id="ch7-3e">7.3e Methods Summarized 188</a></li>
 	    </ol>
 		</li>
-	  <li id="ch7-4">7.4 Collision Detection
+	  <li><a id="ch7-4">7.4 Collision Detection</a>
 	    <ol>
-	  <li id="ch7-4-a">7.4a Setting Boundaries 190</li>
-	  <li id="ch7-4-b">7.4b Initializing and Extending Our Shapes 191</li>
-	  <li id="ch7-4-c">7.4c Frame-by-Frame Calculations 193</li>
+	  <li><a id="ch7-4a">7.4a Setting Boundaries 190</a></li>
+	  <li><a id="ch7-4b">7.4b Initializing and Extending Our Shapes 191</a></li>
+	  <li><a id="ch7-4c">7.4c Frame-by-Frame Calculations 193</a></li>
 	    </ol>
 		</li>
-	  <li id="ch7-5">7.5 Circularity
+	  <li><a id="ch7-5">7.5 Circularity</a>
 	    <ol>
-	  <li id="ch7-5-a">7.5a Slices of PI 198</li>
-	  <li id="ch7-5-b">7.5b Sine and Cosine 200</li>
-	  <li id="ch7-5-c">7.5c Animating Our Circles 200</li>
+	  <li><a id="ch7-5a">7.5a Slices of PI 198</a></li>
+	  <li><a id="ch7-5b">7.5b Sine and Cosine 200</a></li>
+	  <li><a id="ch7-5c">7.5c Animating Our Circles 200</a></li>
 	    </ol>
 		</li>
-	  <li id="ch7-6">7.6 Summary 202</li>
+	  <li><a id="ch7-6">7.6 Summary 202</a></li>
     </ol>
   </li>
-  <li id="ch8"><a href="#ch8">Chapter 8: Filter Effects</a>
+  <li><a id="ch8">Chapter 8: Filter Effects</a>
     <ol type="1">
-	  <li id="ch8-1">8.1 Filter Fundamentals
+	  <li><a id="ch8-1">8.1 Filter Fundamentals</a>
 	    <ol>
-	  <li id="ch8-1-a">8.1a The Ins and Outs 207</li>
-	  <li id="ch8-1-b">8.1b The SvJs createFilter( ) Method 209</li>
-	  <li id="ch8-1-c">8.1c The Filter Region 210</li>
+	  <li><a id="ch8-1a">8.1a The Ins and Outs 207</a></li>
+	  <li><a id="ch8-1b">8.1b The SvJs createFilter( ) Method 209</a></li>
+	  <li><a id="ch8-1c">8.1c The Filter Region 210</a></li>
 	    </ol>
 		</li>
-	  <li id="ch8-2">8.2 Filter Effects 101
+	  <li><a id="ch8-2">8.2 Filter Effects 101</a>
 	    <ol>
-	  <li id="ch8-2-a">8.2a Shadows 212</li>
-	  <li id="ch8-2-b">8.2b Coloring 213</li>
-	  <li id="ch8-2-c">8.2c Blending 216</li>
-	  <li id="ch8-2-d">8.2d Compositing 217</li>
+	  <li><a id="ch8-2a">8.2a Shadows 212</a></li>
+	  <li><a id="ch8-2b">8.2b Coloring 213</a></li>
+	  <li><a id="ch8-2c">8.2c Blending 216</a></li>
+	  <li><a id="ch8-2d">8.2d Compositing 217</a></li>
 	    </ol>
 		</li>
-	  <li id="ch8-3">8.3 Noise and Distortion
+	  <li><a id="ch8-3">8.3 Noise and Distortion</a>
 	    <ol>
-	  <li id="ch8-3-a">8.3a Turbulence 221</li>
-	  <li id="ch8-3-b">8.3b Displacement 223</li>
-	  <li id="ch8-3-c">8.3c Creating a Cosmic Bubble 224</li>
+	  <li><a id="ch8-3a">8.3a Turbulence 221</a></li>
+	  <li><a id="ch8-3b">8.3b Displacement 223</a></li>
+	  <li><a id="ch8-3c">8.3c Creating a Cosmic Bubble 224</a></li>
 	    </ol>
 		</li>
-	  <li id="ch8-4">8.4 Lighting and Texture
+	  <li><a id="ch8-4">8.4 Lighting and Texture</a>
 	    <ol>
-	  <li id="ch8-4-a">8.4a Diffuse and Specular Lighting 230</li>
-	  <li id="ch8-4-b">8.4b Light Sources 231</li>
-	  <li id="ch8-4-c">8.4c Simulating Textures 232</li>
-	  <li id="ch8-4-d">8.4d Generative Textures 235</li>
+	  <li><a id="ch8-4a">8.4a Diffuse and Specular Lighting 230</a></li>
+	  <li><a id="ch8-4b">8.4b Light Sources 231</a></li>
+	  <li><a id="ch8-4c">8.4c Simulating Textures 232</a></li>
+	  <li><a id="ch8-4d">8.4d Generative Textures 235</a></li>
 	    </ol>
 		</li>
-	  <li id="ch8-5">8.19 Summary 240</li>
+	  <li><a id="ch8-5">8.5 Summary 240</a></li>
     </ol>
   </li>
-  <li id="#ch9"><a href="#ch9">Chapter 9: The Generative Way</a>
+  <li><a id="ch9">Chapter 9: The Generative Way</a>
     <ol type="1">
-	  <li id="ch9-1">The Journey So Far 243</li>
-	  <li id="ch9-2">The Voyage Forward
+	  <li><a id="ch9-1">9.1 The Journey So Far 243</a></li>
+	  <li><a id="ch9-2">9.2 The Voyage Forward</a>
 	    <ol>
-	  <li id="ch9-2-a">Trigonometry 244</li>
-	  <li id="ch9-2-b">Fractals 246</li>
-	  <li id="ch9-2-c">Systems Simulations 249</li>
+	  <li><a id="ch9-2a">9.2a Trigonometry 244</a></li>
+	  <li><a id="ch9-2b">9.2b Fractals 246</a></li>
+	  <li><a id="ch9-2c">9.2c Systems Simulations 249</a></li>
 	    </ol>
 		</li>
-	  <li id="ch9-3">Closing Comments 251</li>
+	  <li><a id="ch9-3">Closing Comments 251</a></li>
     </ol>
   </li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="0-intro">Introduction</h2>
+<h2 id="#0-intro">Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A caveat before we begin: generative art, and creative coding more
 generally, can become an all-consuming addiction. "Just one more
@@ -368,7 +368,7 @@ extend beyond the field of art into those of design and web development
 
 <h2>Introduction</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch0-know">What You Should Know</h2>
+<h2 id="#ch0-know">What You Should Know</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As a reader, what should you know before tackling this book? It will no doubt be easier 
 if you are comfortable with the core concepts of programming, like variables, functions, 
@@ -395,7 +395,7 @@ give the second chapter a read, where they'll be fully explained. The field of w
 development is vast enough that what is bread and butter to one developer might be bleeding 
 edge to another.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch0-learn">What You Will Learn</h2>
+<h2 id="#ch0-learn">What You Will Learn</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I mentioned previously that I'll be equipping you with some new tools and techniques. 
 Let's flesh these out.
@@ -454,7 +454,7 @@ loose hinges on that crooked cabinet you're going to tighten any day now. Tools 
 be more functional than fun, and I'd like you to have some fun with this book.
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="ch1">CHAPTER 1: The Beginner's Path</h1>
+<h1 href="#ch1">CHAPTER 1: The Beginner's Path</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before journeying along any path, the groundwork needs to be in place. In this opening 
 chapter, that's what we'll do, lay the groundwork. We'll introduce SVG, explain what 
@@ -462,7 +462,7 @@ makes it a uniquely powerful image format, and show how it can be used with Java
 to create generative art. In the process, we'll set up our tools and a template we can 
 use for subsequent sketches.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1">1.1 Why JavaScript and SvJs?</h2>
+<h2 hre="#ch1-1">1.1 Why JavaScript and SvJs?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most books about generative art use a Java-based language called Processing, or its 
 JavaScript port p5.js. Processing was created specifically for artists and designers new 
@@ -488,7 +488,7 @@ my sketches -- p5.js or Canvas -- was still resolution-dependent bitmap graphics
 of any semantic content. What does that mean, and why does it matter (to me at least)? 
 Let me explain.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1-a">1.1a Introducing Scalable Vector Graphics</h2>
+<h2 href="#ch1-1a">1.1a Introducing Scalable Vector Graphics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Back in the early days of the Web, when dial-up modems were dominant and
 connecting to the Internet was anything but instant, bandwidth came at a
@@ -531,7 +531,7 @@ These days we can use the format freely without worry, but to use it for
 the odd icon and logo is one thing; to tap its full potential is
 another.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1-b">1.1b Native SVG</h2>
+<h2 href="#ch1-1b">1.1b Native SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As SVG is a declarative language like HTML, it's very human-readable and
 easy to get started with. Just like HTML elements, SVG elements are
@@ -600,7 +600,7 @@ oven at the ready. This is akin to the imperative approach in
 programming; it's more hands-on, and sometimes things get messy. But
 ultimately it gives you more creative control.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-1-c">1.1c Generating SVG</h2>
+<h2 href="#ch1-1c">1.1c Generating SVG</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So if native SVG doesn't allow for the use of algorithms, how do we
 write SVG using an imperative approach? The answer is we *script* our
@@ -662,7 +662,7 @@ the point where it made more sense to write my own library with a
 specific focus on generative art. This was how SvJs came to be.
 <!-- page 8 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2">1.2 Getting Set Up</h2>
+<h2 href="#ch1-2">1.2 Getting Set Up</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Enough with the preamble. Let's get ourselves set up to write some code.
 
@@ -683,7 +683,7 @@ the CodePen versions with some minimal differences (such as how we
 import the SvJs library and the lack of HTML boilerplate which CodePen
 automatically provides).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2b">1.2b Node.js and NPM</h2>
+<h2 href="#ch1-2b">1.2b Node.js and NPM</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can skip this part if you intend to use CodePen only, but I would
 still recommend getting familiar with Node.js if you have any plans on
@@ -698,7 +698,7 @@ support) version.
 
 <!-- page 9 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-2c">1.2c Initializing and Installing SvJs</h2>
+<h2 href="#ch1-2c">1.2c Initializing and Installing SvJs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Create a base folder where you'll save all the work related to this
 book, and name it something like generative-svg.
