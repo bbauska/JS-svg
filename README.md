@@ -6417,9 +6417,9 @@ The following is how this could be achieved using both syntax formats:
 ```
 // Format one for keyframes.
 let keyframes = [
-{ r: 25 },
-{ r: 40 },
-{ r: 25 }
+  { r: 25 },
+  { r: 40 },
+  { r: 25 }
 ];
 
 // Format two for keyframes.
@@ -6457,11 +6457,12 @@ of our third shape using the WAAPI method. Below our SMIL
 implementation, set up the animation as follows.
 
 ```
-let keyframes = { transform: [
-'rotate(0deg) scale(1, 1)',
-'rotate(180deg) scale(0.5, 1.5)',
-'rotate(360deg) scale(1, 1)'
-]
+let keyframes = {
+  transform: [
+    'rotate(0deg) scale(1, 1)',
+    'rotate(180deg) scale(0.5, 1.5)',
+    'rotate(360deg) scale(1, 1)'
+  ]
 };
 let options = { duration: 5000, iterations: Infinity };
 shapes[2].animate(keyframes, options);
@@ -7661,8 +7662,7 @@ two instances of fractalNoise on the right. The values vary only
 slightly between instances, which should give you a sense of the
 potential variation offered by this filter primitive.
 
-![](./images/image065.jpg){width="4.725in"
-height="1.6533333333333333in"}
+![](./images/image065.jpg){width="4.725in" height="1.6533333333333333in"}
 
 ***Figure 8-7.** Varying the base frequency and octaves for the two
 noise types*
@@ -7707,8 +7707,7 @@ In Figure 8-8, the output of an feTurbulence primitive (center) is used
 as the map to displace the source graphic (left), resulting in some soft
 wave-like distortion (right).
 
-![](./images/image066.jpg){width="4.725in"
-height="1.3083333333333333in"}
+![](./images/image066.jpg){width="4.725in" height="1.3083333333333333in"}
 
 ***Figure 8-8.** Using turbulence as a displacement map source*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7839,8 +7838,7 @@ see the rather stark difference between a distant light source shining
 on a circle with a radial gradient (left) vs. a circle of the same size
 with a uniform fill (right).
 
-![](./images/image069.jpg){width="3.74in"
-height="1.9866666666666666in"}
+![](./images/image069.jpg){width="3.74in" height="1.9866666666666666in"}
 
 ***Figure 8-11.** Lighting cast on a radial gradient vs. a flat fill*
 
@@ -7869,8 +7867,7 @@ strikes the surface bounces at a definite angle. Figure 8-12 shows the
 difference between a point light emitted by feDiffuseLighting (left) vs.
 the same light emitted by feSpecularLighting (right).
 
-![](./images/image070.jpg){width="3.5433333333333334in"
-height="1.8816666666666666in"}
+![](./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"}
 
 ***Figure 8-12.** Diffuse vs. specular lighting*
 
