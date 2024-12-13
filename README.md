@@ -557,7 +557,7 @@ fill it with. All are sensibly named and simple to follow.</p>
 
 <p>Some SVG elements will contain other elements nested within them,
 referred to as their child nodes or children, and will therefore need
-opening and closing tags. One prominent example is the parent \<svg\>
+opening and closing tags. One prominent example is the parent &lt;svg&gt;
 element itself, which contains all other SVG elements.</p>
 
 <p>As an example of how you might handwrite an SVG, here is the markup
@@ -1074,7 +1074,7 @@ to guide the way.</p>
 <p>There are two types of comments in JavaScript: single-line comments and
 multi-line comments. Single-line comments begin with two forward-
 slashes //, and multi-line comments begin with a forward slash and
-asterisk /\* and terminate with an asterisk and forward slash \*/.</p>
+asterisk /&ast; and terminate with an asterisk and forward slash &ast;/.</p>
 
 <p>// A single-line comment. Useful for quick explanations.</p>
 
@@ -1192,7 +1192,7 @@ welcome of visitors.</p>
 think of it is this: when JavaScript tells you a variable called x is
 null, it's saying "yeah I know about x, but x doesn't have any value so
 far as I can see." If, on the other hand, it tells you that x is
-undefined, it is essentially saying "What the \*\*\*\* is x? Ain't no x around here."</p>
+undefined, it is essentially saying "What the &ast;&ast;&ast;&ast; is x? Ain't no x around here."</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-3">2.3 Variables</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1269,7 +1269,7 @@ numbers, but it also allows us to concatenate strings.
 -&gt; 'I am so smrt'
 </pre>
 
-There are also operators for subtraction ( - ), multiplication ( \* ),
+There are also operators for subtraction ( - ), multiplication ( &ast; ),
 and division ( / ).
 
 <pre>
@@ -1383,7 +1383,7 @@ This can reduce unexpected surprises (i.e., bugs).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4c">2.4c Logical Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Lastly, there are the logical operators *and* ( && ), *or* ( \|\| ), and
+Lastly, there are the logical operators *and* ( && ), *or* ( &verbar;&verbar; ), and
 *not* ( ! ). These emulate the conjunction, disjunction, and negation of
 classical logic.
 
@@ -1397,7 +1397,7 @@ true && true -&gt; true
 </pre>
 
 When using the disjunction (fancy word for *or*), first make sure you
-use the right characters on your keyboard. The \| character is not a
+use the right characters on your keyboard. The &verbar; character is not a
 capital *i* or lowercase *L*; it's what's known as the pipe character.
 Depending on your regional keyboard layout, it might be located near
 either your Enter key or your Shift key.
@@ -1714,7 +1714,7 @@ console.log(squareNumber(4));
 -&gt; 16
 </pre>
 
-Here, we've provided the argument \'Dave\' for the first function and 4
+Here, we've provided the argument &apos;Dave&apos; for the first function and 4
 for the second, and we've received the expected output. But what if we
 called the function and forgot the arguments? Let's try it out.
 
@@ -2351,7 +2351,7 @@ const circle = new SvJs('circle');
 </pre>
 
 To add our parent SVG element to our web page, we use the SvJs addTo()
-method. In this case, we'll pass in the \<div\> with the id of container
+method. In this case, we'll pass in the &lt;div&gt; with the id of container
 that we set up earlier in our HTML (see Chapter 1). Add the following to
 the template sketch:
 
@@ -2645,7 +2645,7 @@ hyphenated attribute. We can't use hyphens when setting attributes in
 JavaScript, as they will be interpreted as subtraction operators.
 
 We have two options to deal with this: we can turn them into strings,
-that is, write \'stroke-width\' instead of stroke-width, or we can
+that is, write &apos;stroke-width&apos; instead of stroke-width, or we can
 replace hyphens with underscores, that is, stroke-width becomes
 stroke_width. The latter option is facilitated by SvJs, and it's the
 solution I prefer; it's faster and looks less out of place than having
@@ -2727,7 +2727,7 @@ svg.create('rect').set({
   x: 500, 
   y: 200, 
   width: 175, height: 600,
-  fill: '#49283c\' });
+  fill: '#49283c&apos; });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~-->
@@ -2757,7 +2757,7 @@ fill and stroke are rendered for a given element.
 The default order has fill come first (i.e., the fill is beneath so it
 will get partly painted over by the stroke), but sometimes it can be
 useful to have stroke come first, as only then will we see the full fill
-dimensions painted (remove paint_order: \'stroke\' from the code and
+dimensions painted (remove paint_order: &apos;stroke&apos; from the code and
 you'll see what I mean).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5c">3.5c Circles and Ellipses</h3>
@@ -3037,9 +3037,9 @@ most episodes features a chalkboard gag, where Bart is shown scrawling
 lines on a chalkboard as punishment for his errant behavior. One of my
 favorites is featured in the following sketch.
 
-What we need to do first is include the following \<link\> in our HTML,
+What we need to do first is include the following &lt;link&gt; in our HTML,
 so switch over to the index.html file and add the following line to the
-\<head\> section. This calls in a Google font called Mynerve, which has
+&lt;head&gt; section. This calls in a Google font called Mynerve, which has
 the handwritten look we're going for.
 
 <pre>
@@ -3937,8 +3937,11 @@ Now we can freely adjust our grid variables, and the loop will respond
 accordingly. We could even randomize them and get a different grid on
 each refresh (as per Figure 4-5).
 
-let gridSize = Gen.random(400, 800); let rows = Gen.random(2, 20); let
-spacing = Gen.random(5, 10);
+<pre>
+let gridSize = Gen.random(400, 800); 
+let rows = Gen.random(2, 20); 
+let spacing = Gen.random(5, 10);
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 25.  (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -3993,10 +3996,11 @@ group, include the following code (substituting in your own color
 palettes if you prefer):
 
 <pre>
-// Create our colour palettes. let palettes = [
-['#5465FF', '#788BFF', '#9BB1FF', '#BFD7FF', '#E2FDFF'],
-['#22577A', '#38A3A5', '#57CC99', '#80ED99', '#C7f9CC'],
-['#4C5760', '#93A8AC', '#D7CEB2', '#A59E8C', '#66635B']
+// <i>Create our colour palettes.</i>
+let palettes = [
+  ['#5465FF', '#788BFF', '#9BB1FF', '#BFD7FF', '#E2FDFF'],
+  ['#22577A', '#38A3A5', '#57CC99', '#80ED99', '#C7f9CC'],
+  ['#4C5760', '#93A8AC', '#D7CEB2', '#A59E8C', '#66635B']
 ];
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4014,7 +4018,7 @@ Next, we're going to randomly select one of these palettes and store it
 in a variable that we can call on later.
 
 <pre>
-// Pick a random palette. 
+// <i>Pick a random palette.</i>
 let pickedPalette = Gen.random(palettes);
 </pre>
 
@@ -4023,10 +4027,13 @@ last sketch, but I'm not going to randomize the gridSize or spacing this
 time, as I want to place the emphasis on other randomized elements of
 the sketch.
 
-let gridSize = 600; let rows = Gen.random(3, 10); let spacing = 10; let
-increment = gridSize / rows; let cellSize = Math.abs(increment -
-spacing);
-
+<pre>
+let gridSize = 600;
+let rows = Gen.random(3, 10);
+let spacing = 10;
+let increment = gridSize / rows;
+let cellSize = Math.abs(increment - spacing);
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4b">4.4b Clipping Our Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4086,7 +4093,7 @@ to our sketch now and apply this same logic within our loop. First,
 create the nested loop as we did before:
 
 <pre>
-for (let y = 0; y \< gridSize; y += increment) { for (let x = 0; x \<
+for (let y = 0; y &lt; gridSize; y += increment) { for (let x = 0; x &lt; 
 gridSize; x += increment) {
 }
 }
@@ -4100,7 +4107,7 @@ dynamic string, using template literal syntax like so:
 
 <pre>
 // Create our clip path with a unique id. let clip =
-svg.create(\'clipPath\').set({ id: \`\${x}\${y}\` });
+svg.create(&apos;clipPath&apos;).set({ id: &grave;&dollar;{x}&dollar;{y}&grave; });
 </pre>
 
 Now we can create the actual shape of the clipPath. We'll keep it
@@ -4109,7 +4116,7 @@ height equal to our cellSize.
 
 <pre>
 // Create the clip path shape.
-clip.create(\'rect\').set({ x: x, y: y, width: cellSize, height:
+clip.create(&apos;rect&apos;).set({ x: x, y: y, width: cellSize, height:
 cellSize });
 </pre>
 
@@ -4841,8 +4848,8 @@ matrix, to show how noise can be used to alter color values within a
 grid. At the top of our sketch.js file, add in the Noise module to our
 import statement like so:
 
-import { SvJs, Gen, Noise } from \'../../node_modules/svjs/src/
-index.js\';
+import { SvJs, Gen, Noise } from &apos;../../node_modules/svjs/src/
+index.js&apos;;
 
 Next, we're going to shorten the expression that calculates the svgSize
 (and thus the dimensions of our viewport). Instead of the ternary
@@ -5114,7 +5121,7 @@ randomized values that will determine our initial hue and the amount of
 times our loop will run.
 
 // Noise-related and randomised variables. let noise = new Noise(); let
-nX = 0; let noiseSpeed = 0.025; let lines = svg.create(\'g\'); let hue =
+nX = 0; let noiseSpeed = 0.025; let lines = svg.create(&apos;g&apos;); let hue =
 Gen.random(0, 360); let iterations = Gen.random(60, 100);
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5261,7 +5268,7 @@ make our lives easier.
 <h2 id="ch6-1">6.1 The Path Element</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's simple to set up a path; we just call the SvJs create() method as
-we would with most other elements: let path = svg.create(\'path\');
+we would with most other elements: let path = svg.create(&apos;path&apos;);
 
 Paths accept the usual fill and stroke attributes that other graphical
 elements do, but unlike other graphical elements (like rect and circle),
@@ -5416,7 +5423,7 @@ have to change the initial M point.
   alt="." />
 <!-- (./images/media/image40.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 6-1.** Two L\'s drawn by two L commands*
+***Figure 6-1.** Two L&apos;s drawn by two L commands*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3b">6.3b Horizontal and Vertical Varieties</h3>
@@ -5502,8 +5509,8 @@ which a curve bends, you'll have the right idea. Control points aren't
 themselves rendered, but if you look at the dot and dashed line in
 Figure 6-3, you can see a visualization of the force a control point
 exerts over its curve (in this case, a quadratic Bezier curve). In this
-example, the dot represents the control point coordinates of \[150,
-350\], given the following path:
+example, the dot represents the control point coordinates of &lbrack;150,
+350&rbrack;, given the following path:
 
 <pre>
 'M 50 150 Q 150 350 250 150'
@@ -6023,7 +6030,7 @@ In the case of our curves, this will help us mimic a more organic
 movement, as the values won't always be uniformly offset from the
 original starting point, but wrap around them more naturally. Outside
 the loop, include the moveTo() method to center-align our curve group.
-for (let i = 0; i \< numCurves; i += 1) {
+for (let i = 0; i &lt; numCurves; i += 1) {
 
 <pre>
 // <i>Retrieve and map our noise value.</i>
@@ -6074,7 +6081,7 @@ feel free to experiment here.
 With our variables in place, it's time to create the curve itself. I'll
 introduce a new technique here with regard to the use of template
 literal syntax. In previous sketches, we've been opening and closing our
-braces \${} for each variable. When these variables follow one after the
+braces &dollar;{} for each variable. When these variables follow one after the
 other however, we can actually embed them all at once as an array.
 
 <pre>
@@ -6082,7 +6089,7 @@ other however, we can actually embed them all at once as an array.
 curves.create('path').set({ 
   fill: 'none', 
   stroke: `hsl(${hue} 80% 80% / 0.8)`, 
-  d: `M \${[mx, my]} 
+  d: `M &dollar;{[mx, my]} 
   c ${[cpx1, cpy1, 
   cpx2, cpy2, x2, y2]} 
   s ${[spx, spy, x3, y3]}`
@@ -6149,7 +6156,7 @@ createCurve(pointsArray, [curveFactor]);
 In crude terms, we can think of this as a join-the-dots method, the main
 difference being that we need to supply the dots rather than do the
 joining. The first argument, pointsArray, is, as the name suggests, an
-array of \[x, y\] coordinate pairs. It can be supplied as either a
+array of &lbrack;x, y&rbrack; coordinate pairs. It can be supplied as either a
 standard one- dimensional array or as a two-dimensional array (i.e., an
 array of arrays).
 
@@ -6574,27 +6581,27 @@ shapes.push(shape);
   alt="." />
 <!-- (./images/media/image54.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-2.** The four shapes we\'ll make move*
+***Figure 7-2.** The four shapes we&apos;ll make move*
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-3a">7.3a CSS Keyframes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Animated sequences can be created with CSS using a \@keyframes rule.
+Animated sequences can be created with CSS using a &commat;keyframes rule.
 Much like traditional keyframes used in animation, motion graphics, and
-video editing software, CSS \@keyframes define the state of certain
+video editing software, CSS &commat;keyframes define the state of certain
 properties at a particular point in time (or step in a sequence). For
-example, at time t, our subject might be at position \[x1, y1\], and at
-time t + 5, the subject might have moved to \[x2, y2\]. Keyframes define
+example, at time t, our subject might be at position &lbrack;x1, y1&rbrack;, and at
+time t + 5, the subject might have moved to &lbrack;x2, y2&rbrack;. Keyframes define
 these points in time, and the transition between one state and another
 is what constitutes the animation. We call this process "tweening"
 (meaning "inbetweening"), as the animation occurs in these inbetween
 states.
 
-The syntax for CSS \@keyframes is quite self-explanatory. You can set
+The syntax for CSS &commat;keyframes is quite self-explanatory. You can set
 the start and end keyframes of a simple animation with from and to
 directives, or if you have something a little more complex in mind, you
 can use percentages to specify the point at which certain transitions
-should trigger. Once the \@keyframes rule is defined, it then needs to
+should trigger. Once the &commat;keyframes rule is defined, it then needs to
 be called by an element using the animation-name property, and we also
 need to specify how long the animation should take (the
 animation-duration). There are other optional properties that we can
@@ -6605,7 +6612,7 @@ animation should play.
 
 In the following code, we're calling the first shape of our array and
 assigning it an id of cssShape. This will enable us to easily target the
-element later. We then set up a \@keyframes rule called scaleRotate that
+element later. We then set up a &commat;keyframes rule called scaleRotate that
 rotates its target a full 360 degrees, while simultaneously scaling it
 down along its x axis and up along its y axis (creating a stretching
 effect) before returning it to its original dimensions. And finally we
@@ -7325,11 +7332,11 @@ And half of 6.28 is 𝝅, or 3.14.
 
 ***Figure 7-5.** How radians relate to* 𝝅 *and the circumference*
 
-The takeaway? Math.PI radians is equivalent to 180°, meaning Math.PI \*
+The takeaway? Math.PI radians is equivalent to 180°, meaning Math.PI &ast;
 2 gives us a full circle (360°). So within the context of our loop,
 we're going to increment the angle at which our circles are placed
-relative to Math.PI \* 2. And to ensure an equal distribution of our
-circles along the circumference, we'll divide Math.PI \* 2 by
+relative to Math.PI &ast; 2. And to ensure an equal distribution of our
+circles along the circumference, we'll divide Math.PI &ast; 2 by
 numCircles, and each time the loop runs, we'll multiply it by our
 iterator to move on to the next "slice," so to speak.
 
@@ -7455,7 +7462,7 @@ In the next and final full chapter, we'll focus on SVG filters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In addition to all the vector functionality offered by SVG (as you'd
 expect from a format called Scalable Vector Graphics), SVG also provides
-some very powerful pixel-based effects in the form of the \<filter\>
+some very powerful pixel-based effects in the form of the &lt;filter&gt;
 element. Many of the kinds of image-manipulation operations routinely
 found in editors like GIMP or Photoshop, such as blurs, drop shadows,
 and distortions, can actually be carried out in SVG too. In this
@@ -7473,7 +7480,7 @@ image editor.
 <h2 id="ch8-1">8.1 Filter Fundamentals</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Before we explore specific filter effects in any depth, we need to know
-how they're structured. A filter consists of a single \<filter\> element
+how they're structured. A filter consists of a single &lt;filter&gt; element
 and one or more filter primitives. These primitives, which are also
 elements, are nested within the main filter element, and they all begin
 with the letters fe (for filter effect) followed by a descriptive name.
@@ -7500,7 +7507,7 @@ primitive.
 &lt;/svg&gt;
 </pre>
 
-As you can see, the \<filter\> element must be nested inside a \<defs\>
+As you can see, the &lt;filter&gt; element must be nested inside a &lt;defs&gt;
 element; in common with gradients and patterns, it only gets rendered
 when referenced via a url link to its id. In the preceding case, a
 yellow circle calls the filter via its own filter attribute, and the
@@ -7930,10 +7937,10 @@ foreground and in2 as our green-screen background.
 
 -   arithmetic: If this operator is chosen, four additional attributes
     must be defined, all numeric: k1, k2, k3, and k4. The output is then
-    defined via the following formula: (k1 \* i1 \* i2) + (k2 \* i1) +
-    (k3 \* i2)
+    defined via the following formula: (k1 &ast; i1 &ast; i2) + (k2 &ast; i1) +
+    (k3 &ast; i2)
 
-\+ k4, where i1 and i2 represent in and in2, respectively. Yep, told
+&plus; k4, where i1 and i2 represent in and in2, respectively. Yep, told
 you it was complex! But the most subtle and customizable results can
 be achieved using this operator, so it is well worth independent
 exploration.
@@ -7949,7 +7956,7 @@ Let's set this up now. Include the following code after the feBlend
 primitive, before the filter is applied to the grid.
 
 <pre>
-// Composite the blend 'atop' the original.
+// <i>Composite the blend 'atop' the original.</i>
 filter.create('feComposite').set({ 
   in: 'blend', 
   in2: 'SourceGraphic', 
@@ -8111,9 +8118,13 @@ below the background, let's set up our source graphic in the center of
 the viewBox, randomizing its radius a little.
 
 <pre>
-// Create the source graphic. 
-svg.create('circle').set({ cx: 500, cy:
-500, r: Gen.random(250, 350), fill: '#000', filter: 'url(#cosmic)'
+// <i>Create the source graphic.</i>
+svg.create('circle').set({ 
+  cx: 500, 
+  cy: 500, 
+  r: Gen.random(250, 350), 
+  fill: '#000', 
+  filter: 'url(#cosmic)'
 });
 </pre>
 
@@ -8132,13 +8143,17 @@ baseFrequency, and crank up the numOctaves to 4, to bring out some of
 the texture details.
 
 <pre>
-// Initialise the filter. 
+// <i>Initialise the filter.</i>
 let filter = svg.createFilter('cosmic');
 
-// Create a random amount of turbulence.
-filter.create('feTurbulence').set({ type: 'fractalNoise',
-baseFrequency: Gen.random(0.002, 0.006, true), seed: Gen.random(0,
-10000), numOctaves: 4, stitchTiles: 'stitch', result: 'turbulence'
+// <i>Create a random amount of turbulence.</i>
+filter.create('feTurbulence').set({ 
+  type: 'fractalNoise',
+  baseFrequency: Gen.random(0.002, 0.006, true), 
+  seed: Gen.random(0, 10000), 
+  numOctaves: 4, 
+  stitchTiles: 'stitch', 
+  result: 'turbulence'
 });
 </pre>
 
@@ -8162,13 +8177,19 @@ instead be our displacement map source. Here's how to set up this up
 (with some randomness mixed in).
 
 <pre>
-// Blur the edges of the source graphic.
-filter.create('feGaussianBlur').set({ stdDeviation: Gen.random(10,
-25), in: 'SourceGraphic', result: 'blurred' });
+// <i>Blur the edges of the source graphic.</i>
+filter.create('feGaussianBlur').set({ 
+  stdDeviation: Gen.random(10, 25), 
+  in: 'SourceGraphic', 
+  result: 'blurred' 
+});
 
-// Displace the turbulence with the blurred edge of the circle.
-filter.create('feDisplacementMap').set({ in: 'turbulence', in2:
-'blurred', scale: Gen.random(250, 500), result: 'distortion'
+// <i>Displace the turbulence with the blurred edge of the circle.</i>
+filter.create('feDisplacementMap').set({ 
+  in: 'turbulence', 
+  in2: 'blurred', 
+  scale: Gen.random(250, 500), 
+  result: 'distortion'
 });
 </pre>
 
@@ -8194,9 +8215,11 @@ using the atop operator. We should then have something that resembles
 Figure 8-10, our Hubble Bubble.
 
 <pre>
-// Remove everything beyond the blurred perimeter.
-filter.create('feComposite').set({ in: 'distortion', in2:
-'blurred', operator: 'atop'
+// <i>Remove everything beyond the blurred perimeter.</i>
+filter.create('feComposite').set({ 
+  in: 'distortion', 
+  in2: 'blurred', 
+  operator: 'atop'
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8307,9 +8330,9 @@ specular; and two, the inner node, which defines the type of light
 source to be used. Here's how an example might look in raw SVG:
 
 <pre>
-<feDiffuseLighting in="SourceGraphic" surfaceScale="1.5">
-  <feDistantLight azimuth="330" elevation="45" />
-  </feDiffuseLighting>
+&lt;feDiffuseLighting in="SourceGraphic" surfaceScale="1.5"&gt;
+  &lt;feDistantLight azimuth="330" elevation="45" /&gt;
+  &lt;/feDiffuseLighting&gt;
 </pre>
 
 There are three light source nodes: feDistantLight, an ambient light
@@ -8346,11 +8369,11 @@ your pen to start a new line elsewhere). Once we have the ripped paper
 set up, we center it.
 
 <pre>
-// Create a parchment-coloured gradient.
+// <i>Create a parchment-coloured gradient.</i>
 svg.createGradient('parchment', 
 'linear', ['#fffbeb', '#fde68a'], 90);
 
-// Create the path for the ripped paper.
+// <i>Create the path for the ripped paper.</i>
 let paper = svg.create('path').set({ 
   fill: 'url(#parchment)',
   stroke: '#4444',
@@ -8358,7 +8381,7 @@ let paper = svg.create('path').set({
   filter: 'url(#rough-paper)' 
 });
 
-// Centre it.
+// <i>Center it.</i>
 paper.moveTo(500, 500);
 </pre>
 
@@ -8368,10 +8391,10 @@ first primitive to the chain: feTurbulence. This will form the basis of
 the paper grain texture.
 
 <pre>
-// Initialise the filter. 
-  let filter = svg.createFilter('rough-paper');
+// <i>Initialize the filter.</i>
+let filter = svg.createFilter('rough-paper');
 
-// Add turbulence to simulate paper grain.
+// <i>Add turbulence to simulate paper grain.</i>
 filter.create('feTurbulence').set({ 
   type: 'fractalNoise',
   numOctaves: 5, 
@@ -8388,7 +8411,7 @@ can create directly after the diffuse lighting primitive, using SvJs
 method chaining.
 
 <pre>
-// Shine diffuse lighting on the turbulence.
+// <i>Shine diffuse lighting on the turbulence.</i>
 filter.create('feDiffuseLighting').set({ 
   surfaceScale: 1,
   diffuseConstant: 1.3, 
@@ -8405,7 +8428,7 @@ rough up the edges of our source graphic by plugging some turbulence
 into an feDisplacementMap primitive.
 
 <pre>
-// Distort the paper source graphic with turbulence.
+// <i>Distort the paper source graphic with turbulence.</i>
 filter.create('feDisplacementMap').set({ 
   in: 'SourceGraphic', 
   in2: 'turbulence', 
@@ -8421,7 +8444,7 @@ rough-edged paper as the background, the in operator will achieve the
 effect we're looking for.
 
 <pre>
-// Merge the lighting with the rough-edged paper.
+// <i>Merge the lighting with the rough-edged paper.</i>
 filter.create('feComposite').set({ 
   in: 'lighting', 
   in2: 'distortion', 
@@ -8437,7 +8460,7 @@ feComposite with the output of feDisplacementMap and use a mode of
 multiply. This should salvage our original parchment gradient.
 
 <pre>
-// Re-introduce the parchment gradient.
+// <i>Re-introduce the parchment gradient.</i>
 filter.create('feBlend').set({
   in: 'composite', 
   in2: 'distortion', 
@@ -8475,7 +8498,7 @@ background, we'll set up our source graphic, which will be a simple
 circle. To this circle, we'll apply both a gradient and a filter.
 
 <pre>
-// Create our source graphic. 
+// <i>Create our source graphic.</i>
 svg.create('circle').set({ 
   r: 300, 
   cx: 500, 
@@ -8490,13 +8513,14 @@ array of three random colors, and we'll also randomize the gradient's
 rotation.
 
 <pre>
-// A random colour array.
+// <i>A random color array.</i>
 let colours = [
   `hsl(${Gen.random(0, 360)} 80% 80% / 0.75)`,
   `hsl(${Gen.random(0, 360)} 80% 80% / 0.75)`,
   `hsl(${Gen.random(0, 360)} 80% 80% / 0.75)`
 ];
-// A gradient with a randomised rotation and array of colours.
+
+// <i>A gradient with a randomised rotation and array of colours.</i>
 svg.createGradient('random-gradient', 'linear', colours, Gen.random(0, 360));
 </pre>
 
@@ -8507,10 +8531,10 @@ degree of variation in the level of detail. The baseFrequency and seed
 we'll also randomize.
 
 <pre>
-// Initalise the filter. let filter =
-svg.createFilter('rocky-randomness');
+// <i>Initalize the filter.</i>
+let filter = svg.createFilter('rocky-randomness');
 
-// Create the primary turbulence. 
+// <i>Create the primary turbulence.</i>
 filter.create('feTurbulence').set({
   type: 'turbulence', 
   numOctaves: Gen.random(2, 7), baseFrequency:
@@ -8532,7 +8556,7 @@ selectors (purely because I didn't really like the default output of
 alpha on this occasion).
 
 <pre>
-// Set up another instance of turbulence.
+// <i>Set up another instance of turbulence.</i>
 filter.create('feTurbulence').set({ 
   type: 'fractalNoise',
   numOctaves: Gen.random(3, 7), 
@@ -8540,7 +8564,8 @@ filter.create('feTurbulence').set({
   seed: Gen.random(0, 1000), 
   result: 'noise'
 });
-// Distort the first instance of turbulence with the second.
+
+// <i>Distort the first instance of turbulence with the second.</i>
 filter.create('feDisplacementMap').set({ 
   in: 'turbulence', 
   in2: 'noise', 
@@ -8557,7 +8582,7 @@ Gen. random() on most of the attributes, including the point light
 coordinates.
 
 <pre>
-// Shine a specular point light on the distorted output.
+// <i>Shine a specular point light on the distorted output.</i>
 filter.create('feSpecularLighting').set({ 
   in: 'distortion',
   surfaceScale: Gen.random(5, 30), 
@@ -8586,7 +8611,7 @@ previous sketches, before recovering the original gradient using another
 feComposite primitive, this time with the atop operator.
 
 <pre>
-// Blur the source graphic.
+// <i>Blur the source graphic.</i>
 filter.create('feGaussianBlur').set({ 
   in: 'SourceGraphic',
   stdDeviation: Gen.random(25, 
@@ -8594,7 +8619,7 @@ filter.create('feGaussianBlur').set({
   result: 'blur' 
 });
 
-// Bring the lit texture in via the blurred source graphic.
+// <i>Bring the lit texture in via the blurred source graphic.</i>
 filter.create('feComposite').set({ 
   in: 'lighting', 
   in2: 'blur',
@@ -8602,7 +8627,7 @@ filter.create('feComposite').set({
   result: 'comp1' 
 });
 
-// Recover the original gradient. 
+// <i>Recover the original gradient.</i>
 filter.create('feComposite').set({
   in: 'blur', 
   in2: 'comp1', 
@@ -8633,8 +8658,7 @@ definitely warrants (and rewards) further independent exploration.
 <h2 id="ch8-xx">8.xx Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Let's do a quick recap of what was covered in this our penultimate
-chapter:
+Let's do a quick recap of what was covered in this our penultimate chapter:
 
 -   How filters are constructed
 
