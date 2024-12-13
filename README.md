@@ -724,8 +724,8 @@ support) version.</p>
 <p>Create a base folder where you'll save all the work related to this
 book, and name it something like generative-svg.</p>
 
-<p>Open up VS Code, select File **➤** Open File, and navigate to this
-folder. Next, select the Terminal **➤** New Terminal command, and you
+<p>Open up VS Code, select File <b>➤</b> Open File, and navigate to this
+folder. Next, select the Terminal <b>➤</b> New Terminal command, and you
 should see a new window appear at the bottom of the screen referencing
 the current folder location. It should look something like this:</p>
 
@@ -1322,16 +1322,16 @@ At this point, it's worth mentioning rules of precedence, which
 determine the order in which operations are carried out. The mnemonic
 BEMDAS can help us out here.
 
--   **B**rackets: Whatever is in brackets or parentheses is evaluated
+-   <b>B</b>rackets: Whatever is in brackets or parentheses is evaluated
     first.
 
--   **E**xponents: Evaluate any exponents next.
+-   <b>E</b>xponents: Evaluate any exponents next.
 
--   **M**ultiplication and **D**ivision: Next, multipliers and divisors.
+-   <b>M</b>ultiplication and <b>D</b>ivision: Next, multipliers and divisors.
     These two have equal precedence, so they are evaluated in the order
     they are written, i.e., left to right.
 
--   **A**ddition and **S**ubtraction: Add and subtract any remaining
+-   <b>A</b>ddition and <b>S</b>ubtraction: Add and subtract any remaining
     numbers. As with multiplication and division, these have equal
     precedence and are evaluated left to right.
 
@@ -2052,7 +2052,7 @@ const objectName = {
 };
 </pre>
 
-These name-value pairs are the object's **properties**. The values can
+These name-value pairs are the object's <b>properties</b>. The values can
 be anything you want: strings, booleans, functions, arrays, or even
 other objects. Almost anything you can think of can be represented as an
 object. Let's take my laptop as an example.
@@ -3472,7 +3472,7 @@ regular grids and randomizing their contents. We'll then learn how to
 apply randomness to the construction of the grids themselves so that the
 underlying structure of our compositions can be varied.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Analogue and Digital Randomness**
+<b>Analogue and Digital Randomness</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Techniques to incorporate randomness into art began long before the
 digital age. As far back as the fifteenth century, Leonardo da Vinci
@@ -4302,12 +4302,12 @@ Gen.random(y, y + cellSize), stroke: `hsl(${hue} 80% 80% / 0.33)`
 This should result in gradiented tetris-like arrangements, similar to
 Figure 4-9.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 29.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 29. Gen.chance() in action (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image029.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Gen.chance() in action"
+  alt="Gen.chance() in action." />
 <!-- (./images/image029.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 4-9.</b> Gen.chance() in action</i></small></small></p>
@@ -4359,12 +4359,12 @@ this. It is also known as normal distribution, and when graphed, it
 forms a bell-shaped curve. Visualized as a series of vertical lines, it
 looks like Figure 4-11.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 31.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 31. Gaussian distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image031.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Gaussian distribution of vertical lines"
+  alt="Gaussian distribution of vertical lines." />
 <!-- (./images/image031.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
 <p><small><small><i><b>Figure 4-11.</b> Gaussian distribution of vertical lines</i></small></small></p>
@@ -4452,12 +4452,12 @@ i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
 
 After this, you should end up with something similar to Figure 4-12.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 32.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 32. Using Gen.gaussian to position 10,000 lines (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image032.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Using Gen.gaussian to position 10,000 lines"
+  alt="Using Gen.gaussian to position 10,000 lines." />
 <!-- (./images/media/image32.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 4-12.</b> Using Gen.gaussian to position 10,000 lines</i></small></small></p>
@@ -4487,12 +4487,12 @@ was the 1890's mind, so had Pareto made the same observations today, we
 might be discussing the 99-1 rule! Be that as it may, the basic idea
 remains the same: there is a lot with a little and a little with a lot.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 33.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 33. pareto distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image033.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Pareto distribution of vertical lines"
+  alt="Pareto distribution of vertical lines." />
 <!-- (./images/media/image33.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
 <p><small><small><i><b>Figure 4-13.</b> Pareto distribution of vertical lines</i></small></small></p>
@@ -4596,12 +4596,12 @@ region.
 In Figure 4-14, the triangle is the mask shape, and the result of
 applying it to the rect is shown on the right.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 34.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 34. How masks work (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image034.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="How masks work"
+  alt="How masks work." />
 <!-- (./images/media/image34.jpg){width="4.725in" height="1.7666666666666666in"} -->
 
 <p><small><small><i><b>Figure 4-14.</b> How masks work</i></small></small></p>
@@ -4647,17 +4647,19 @@ svg.create('circle').set({
 
 A variation of the result is shown in Figure 4-15.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 35.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 35. our porto pareto cityscape (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image035.jpg"
   style="width:3.346in"
-  title=""
-  alt="." />
+  title="Our Porto Pareto cityscape"
+  alt="Our Porto Pareto cityscape." />
 <!-- (./images/media/image35.jpg){width="3.3467in" height="3.3467in"} -->
 
 <p><small><small><i><b>Figure 4-15.</b> Our Porto Pareto cityscape</i></small></small></p>
 
-**Summary**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch4-7">4.7 Summary</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In this chapter, we've covered the following:
 
@@ -5226,7 +5228,7 @@ some deep-sea creatures.
 <p><small><small><i><b>Figure 5-4.</b> Spinning lines or deep-sea creatures?</i></small></small></p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Summary**
+<h2 id="ch5-5">5.5 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 While there's certainly more to explore where noise is concerned, we've
 covered the basics here, and we will be utilizing noise again in the
@@ -8649,7 +8651,7 @@ are quite a few primitives I didn't have the space to touch on. It
 definitely warrants (and rewards) further independent exploration.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch8-xx">8.xx Summary</h2>
+<h2 id="ch8-5">8.5 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's do a quick recap of what was covered in this our penultimate chapter:
