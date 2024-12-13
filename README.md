@@ -1,3 +1,11 @@
+---
+title: "JS-SVG-JavaScript"
+author: "Brian Bauska (bbauska)"
+date created: "12/12/2024 5+pm"
+date last editted: "12/12/2024 5+pm"
+output:
+  markdown:
+---
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md for JS-SVG.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -557,13 +565,13 @@ underlying a very simple composition in the style of Hilma af Klint,
 arguably the first abstract artist in Western art history.</p>
 
 ```
-<svg width="500" height="500" style="background-color: #ad3622">
-<title>A simple Hilma af Klint-inspired knock-off</title>
-<circle r="125" cy="250" cx="250" fill="#d0d1c9"/>
-<circle r="100" cy="250" cx="250" fill="#1c1c1c"/>
-<circle r="75" cy="250" cx="250" fill="#5085b4"/>
-<circle r="50" cy="250" cx="250" fill="#d6a946"/>
-</svg>
+&lt;svg width="500" height="500" style="background-color: #ad3622"&gt;
+&lt;title&gt;A simple Hilma af Klint-inspired knock-off&lt;/title&gt;
+&lt;circle r="125" cy="250" cx="250" fill="#d0d1c9"/&gt;
+&lt;circle r="100" cy="250" cx="250" fill="#1c1c1c"/&gt;
+&lt;circle r="75" cy="250" cx="250" fill="#5085b4"/&gt;
+&lt;circle r="50" cy="250" cx="250" fill="#d6a946"/&gt;
+&lt;/svg&gt;
 ```
 
 <p>As you can see, SVG is written in such a way as to preserve the
@@ -615,12 +623,12 @@ more intuitive and fun to write. Here's an example of a simple SVG
 <!-- page 6 -->
 
 ```
-const svg = document.createElementNS('<http://www.w3.org/2000/svg>', 'svg'); 
+const svg = document.createElementNS('&lt;http://www.w3.org/2000/svg&gt;', 'svg'); 
 svg.setAttribute('width', '150px');
 svg.setAttribute('height', '150px'); 
 const div = document.getElementById('container'); 
 div.appendChild(svg); 
-const rect = document.createElementNS('<http://www.w3.org/2000/ svg>', 'rect');
+const rect = document.createElementNS('&lt;http://www.w3.org/2000/ svg&gt;', 'rect');
 rect.setAttribute('x', '0'); 
 rect.setAttribute('y', '0');
 rect.setAttribute('width', '150'); 
@@ -776,13 +784,13 @@ focus.</p>
 <!-- page 11 -->
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;style&gt;
     body { 
       margin: 0; 
       background-color: #202020;
@@ -793,14 +801,14 @@ focus.</p>
       align-items: center; 
       height: 100vh;
     }
-  </style>
-  <title>SvJs Template</title>
-</head>
-<body>
-  <div id="container"></div>
-  <script src="./sketch.js" type="module"></script>
-</body>
-</html>
+  &lt;/style&gt;
+  &lt;title&gt;SvJs Template&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="container"&gt;&lt;/div&gt;
+  &lt;script src="./sketch.js" type="module"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 ```
 
 <p>There's just a couple of things worth pointing out about the preceding
@@ -1094,9 +1102,9 @@ decimal or floating-point numbers), but in JavaScript, all numeric
 values are of the single type Number.</p>
 
 ```
-17 // A whole number.
-23.085 // A decimal number. 
-4e2 // A number with an exponent (four to the power of two in this case).
+17 // <i>A whole number.</i>
+23.085 // <i>A decimal number.</i>
+4e2 // <i>A number with an exponent (four to the power of two in this case).</i>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1130,16 +1138,16 @@ handling concatenated (i.e., pieced together) and multi-line strings.
 Let's illustrate this with an example.</p>
 
 ```
-// Here's how developers used to have to store multi-line HTML string data.
+// <i>Here's how developers used to have to store multi-line HTML string data.</i>
 let oldWay = '' +
-' <div class="intro">\n' + 'n' +
-' <p>My name is ' + name + ' and I am ' + age + ' years of age.
-</p>\n'
-'n' + ' </div>\n';
-// And here's how the same thing can be done now. 
-let newWay = ` <div
-class="intro"> <p>My name is ${name} and I am ${age} years of age.</p>
-</div>`;
+' &lt;div class="intro"&gt;n' + 'n' +
+' &lt;p&gt;My name is ' + name + ' and I am ' + age + ' years of age.
+&lt;/p&gt;n'
+'n' + ' &lt;/div&gt;n';
+// <i>And here's how the same thing can be done now.</i>
+let newWay = ` &lt;div
+class="intro"&gt; &lt;p&gt;My name is ${name} and I am ${age} years of age.&lt;/p&gt;
+&lt;/div&gt;`;
 ```
 
 <p>As you can see, it is much more readable and concise. As a rule,
@@ -1155,8 +1163,8 @@ named after George Boole, inventor of Boolean algebra.</p>
 off, alive or dead, etc. They are written as simply true or false.</p>
 
 ```
-let alive = true; // phew 
-let kicking = false; // just sitting
+let alive = true; // <i>phew</i>
+let kicking = false; // <i>just sitting</i>
 ```
 
 <p>Booleans make conditional statements and comparisons possible, which
@@ -1197,7 +1205,7 @@ identifier, and then assigning it a value using the equals operator.</p>
 ```
 const name = 'David Matthew'; 
 const countryOfBirth = 'Ireland'; 
-let age = 21; // I wish!
+let age = 21; // <i>I wish!</i>
 ```
 
 What's the difference between const and let? When using const, you're
@@ -1207,8 +1215,8 @@ tried to reassign a new value to countryOfBirth, this would result in an
 error:
 
 ```
-countryOfBirth = 'Brazil'; // uh oh...
--> TypeError: Assignment to constant variable
+countryOfBirth = 'Brazil'; // <i>uh oh...</i>
+-&gt; TypeError: Assignment to constant variable
 ```
 
 My age, however, is (alas) subject to change, so it can be updated
@@ -1217,9 +1225,9 @@ latter can be declared without a value, whereas with const, a value must
 be assigned to it when it is first created.
 
 ```
-let a; // A-ok. 
-const b; // asking for trouble.
--> Uncaught SyntaxError: Missing initializer in const declaration
+let a; // <i>A-ok.</i>
+const b; // <i>asking for trouble.</i>
+-&gt; Uncaught SyntaxError: Missing initializer in const declaration
 ```
 
 When unsure, should you use const or let? The general consensus in the
@@ -1242,13 +1250,13 @@ mathematical operations. The addition operator ( + ) allows us to add
 numbers, but it also allows us to concatenate strings.
 
 ```
-// Adding numbers.
+// <i>Adding numbers.</i>
 2 + 2
--> 4
+-&gt; 4
 
-// Concatenating strings.
+// <i>Concatenating strings.</i>
 'I am' + ' so smrt'
--> 'I am so smrt'
+-&gt; 'I am so smrt'
 ```
 
 There are also operators for subtraction ( - ), multiplication ( \* ),
@@ -1257,15 +1265,15 @@ and division ( / ).
 ```
 // Subtracting numbers.
 9 - 4
--> 5
+-&gt; 5
 
 // Dividing numbers.
 9 / 4
--> 2.25
+-&gt; 2.25
 
 // Multiplying numbers.
 9 * 4
--> 36
+-&gt; 36
 ```
 
 ES6 introduced an exponentiation operator ( \*\* ), which allows you to
@@ -1275,13 +1283,13 @@ power of another).
 ```
 // The exponentiation operator.
 2 ** 2
--> 4
+-&gt; 4
 
 2 ** 6
--> 64
+-&gt; 64
 
-2.  ** 10
--> 1024
+2 ** 10
+-&gt; 1024
 ```
 
 And finally, there is the modulo operator ( % ). This divides one number
@@ -1290,15 +1298,15 @@ when cycling through arrays (which we'll get to later), or quickly
 finding out if an unknown quantity is even or odd.
 
 ```
-// The modulo operator in action.
+// <i>The modulo operator in action.</i>
 3.  % 3
--> 0
+-&gt; 0
 
 3 % 2
--> 1
+-&gt; 1
 
 12 % 5
--> 2
+-&gt; 2
 ```
 
 At this point, it's worth mentioning rules of precedence, which
@@ -1319,15 +1327,15 @@ BEMDAS can help us out here.
     precedence and are evaluated left to right.
 
 ```
-// These sums look similar but result in different answers.
+// <i>These sums look similar but result in different answers.</i>
 4 / 2 * 2 + 4
--> 8
+-&gt; 8
 
 4 / 2 * (2 + 4)
--> 12
+-&gt; 12
 
 4 / 2 ** 2 + 4
--> 5
+-&gt; 5
 ```
 
 When in doubt, use parentheses to group operations. This can also
@@ -1356,16 +1364,16 @@ This can reduce unexpected surprises (i.e., bugs).
 
 ```
 // Some examples of comparison operators in action.
-1.  > 2
--> false
+1.  &gt; 2
+-&gt; false
 
-2.  < 3
--> true
+2.  &lt; 3
+-&gt; true
 
-3.  <= 4
--> true
-5 == "5" -> true // but not really.
-5 === "5" -> false // that's more like it.
+3.  &lt;= 4
+-&gt; true
+5 == "5" -&gt; true // <i>but not really.</i>
+5 === "5" -&gt; false // <i>that's more like it.</i>
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1379,9 +1387,9 @@ When conjoining two conditions with &&, the result is true if and only
 if both conditions are true.
 
 ```
-true && false -> false
-false && true -> false
-true && true -> true
+true && false -&gt; false
+false && true -&gt; false
+true && true -&gt; true
 ```
 
 When using the disjunction (fancy word for *or*), first make sure you
@@ -1395,9 +1403,9 @@ This makes intuitive sense if we remember that we are essentially asking
 the computer "is at least one of these conditions true?"
 
 ```
-true || false -> true
-false || true -> true
-false || false -> false
+true || <i>false -&gt; true</i>
+false || <i>true -&gt; true</i>
+false || <i>false -&gt; false</i>
 ```
 
 Finally, we have the negation operator !. This "flips" the condition
@@ -1406,16 +1414,16 @@ equality operator to mean not equal to ( !== ).
 
 ```
 !true
--> false
+-&gt; false
 
 !false
--> true
+-&gt; true
 
 1 !== 2
--> true
+-&gt; true
 
-!(2 > 1)
--> false
+!(2 &gt; 1)
+-&gt; false
 ```
 
 A common source of error for new programmers is using a single pipe
@@ -1438,11 +1446,11 @@ Here is where conditionals are needed, such as the various rules that
 might underpin a traffic light system.
 
 ```
-// The basic syntax. 
+// <i>The basic syntax.</i>
 if (conditionIsTrue) { 
-  // ... run some code
+  // <i>... run some code</i>
 }
-// A simplistic pedestrian crossing conditional. 
+// <i>A simplistic pedestrian crossing conditional.</i>
 if (pedestrianBtnIsPressed) { 
   wait(30s); activateRedLights(); wait(3s);
   activateGreenManSignal(); 
@@ -1452,7 +1460,7 @@ if (pedestrianBtnIsPressed) {
 To the basic if statement, we can append else and else if conditions too.
 
 ```
-if (a > b) { 
+if (a &gt; b) { 
   doThis();
 } else if (a === b) { 
   doThat();
@@ -1468,13 +1476,13 @@ values filled in for a and b.
 ```
 let a = 3; 
 let b = 4;
-if (a > b) { 
-  doThis(); // condition wasn't true, so this code doesn't run. 
+if (a &gt; b) { 
+  doThis(); // <i>condition wasn't true, so this code doesn't run.</i>
 } else 
 if (a === b) { 
-  doThat(); // this code also doesn't run.
+  doThat(); // <i>this code also doesn't run.</i>
 } else {
-doOtherThing(); // both the above are false, so this code runs.
+doOtherThing(); // <i>both the above are false, so this code runs.</i>
 }
 ```
 
@@ -1484,7 +1492,7 @@ the role of a conditional check, I felt it was more appropriate to
 include it here.
 
 ```
-// The basic structure of the ternary operator. 
+// <i>The basic structure of the ternary operator.</i>
 conditionA ? expressionIfTrue : expressionIfFalse;
 ```
 
@@ -1497,7 +1505,7 @@ condition doesn't hold true, we then assign it a different value. This
 is exactly what I used it for in our first generative sketch:
 
 ```
-const svgSize = window.innerWidth > window.innerHeight ?
+const svgSize = window.innerWidth &gt; window.innerHeight ?
 window.innerHeight : window.innerWidth;
 ```
 
@@ -1529,7 +1537,7 @@ follows:
 
 ```
 while (condition === true) {
-  // run code here while condition is true.
+  // <i>run code here while condition is true.</i>
 }
 ```
 
@@ -1541,12 +1549,12 @@ known as an iterator. By convention, i tends to be used as the variable
 name.
 
 ```
-// Set up the iterator. 
+// <i>Set up the iterator.</i>
 let i = 0;
-while (i <= 99) {
-  // Write the value of i to the browser console.
+while (i &lt;= 99) {
+  // <i>Write the value of i to the browser console.</i>
   console.log(i);
-  // Increment i by 1 each time the loop runs. 
+  // <i>Increment i by 1 each time the loop runs.</i>
   i = i + 1; 
 }
 ```
@@ -1561,11 +1569,11 @@ incrementing and decrementing -- or indeed multiplying and dividing --
 variable values:
 
 ```
-// Long way. 
+// <i>Long way.</i>
 i = i + 1 i = i * 2 i = i -- 1 i = i / 2
-// Shorter way.
+// <i>Shorter way.</i>
 i += 1 i *= 2 i -= 1 i /= 2
-// Even shorter way (only valid for adding or subtracting by 1).
+// <i>Even shorter way (only valid for adding or subtracting by 1).</i>
 i++ i--
 ```
 
@@ -1580,9 +1588,9 @@ as follows:
 
 ```
 for (let i = startingNumber; 
-  i < upperLimit; 
+  i &lt; upperLimit; 
     i += increment) {
-    // run some code while i is less than the upperLimit.
+    // <i>run some code while i is less than the upperLimit.</i>
   }
 ```
 
@@ -1593,7 +1601,7 @@ version of our previous example, where we logged the value of i to the
 browser console on each iteration.
 
 ```
-for (let i = 0; i <= 99; 
+for (let i = 0; i &lt;= 99; 
   i++) { console.log(i); }
 ```
 
@@ -1602,7 +1610,7 @@ reverse the loop and have it count down from 99 to 0 by making a few
 tweaks.
 
 ```
-for (let i = 99; i >= 0; 
+for (let i = 99; i &gt;= 0; 
   i--) { console.log(i); }
 ```
 
@@ -1612,13 +1620,13 @@ In our opening generative sketch for example, I used i to progressively
 increase the radiusX and radiusY of each ellipse.
 
 ```
-// Run a loop (a randomised number of times) to create our ellipses.
+// <i>Run a loop (a randomised number of times) to create our ellipses.</i>
 for (let i = 0; 
-  i < randomised.iterations; i += 1) {
-  // ... code.
+  i &lt; randomised.iterations; i += 1) {
+  // <i>... code.</i>
   let radiusX = 100 + (i * 3); 
   let radiusY = 300 + (i * 2);
-  // ... more code.
+  // <i>... more code.</i>
 }
 ```
 
@@ -1640,9 +1648,9 @@ the name you give it, which is then appended with parentheses and
 opening and closing curly braces where the task is defined.
 
 ```
-// Basic syntax of a standard function.
+// <i>Basic syntax of a standard function.</i>
 function peformSomeTask() {
-// ... code defining the task.
+// <i>... code defining the task.</i>
 }
 ```
 
@@ -1655,9 +1663,9 @@ parameters to the function, which are defined within the parentheses of
 the function name.
 
 ```
-// A function with parameters.
+// <i>A function with parameters.</i>
 function sayHello(name) {
-  // Greet the user the Irish way. 
+  // <i>Greet the user the Irish way.</i>
   console.log(`Howaya ${name}, what's the craic?`); 
 }
 ```
@@ -1671,7 +1679,7 @@ to get a value returned from the function, and this is where we use the
 return keyword.
 
 ```
-// Another function with parameters, this time returning a value.
+// <i>Another function with parameters, this time returning a value.</i>
 function squareNumber(number) { return number * number; }
 ```
 
@@ -1686,7 +1694,7 @@ synonymous with calling or executing the function. It can be done like
 so:
 
 ```
-// Invoking a function. 
+// <i>Invoking a function.</i>
 performSomeTask();
 ```
 
@@ -1697,9 +1705,9 @@ we define these values. Let's see how we might invoke a function with arguments.
 
 ```
 sayHello('Dave'); 
--> "Howaya Dave, what's the craic?"
+-&gt; "Howaya Dave, what's the craic?"
 console.log(squareNumber(4));
--> 16
+-&gt; 16
 ```
 
 Here, we've provided the argument \'Dave\' for the first function and 4
@@ -1708,9 +1716,9 @@ called the function and forgot the arguments? Let's try it out.
 
 ```
 sayHello(); 
--> "Howaya undefined, what's the craic?"
+-&gt; "Howaya undefined, what's the craic?"
 squareNumber(); 
--> NaN
+-&gt; NaN
 ```
 
 We've encountered undefined before, but not NaN. This just means "not a
@@ -1723,11 +1731,11 @@ example.
 
 ```
 function sayHello(name = ", ah it's yourself") {
-  // Greet the user the Irish way. 
-  console.log(`Howaya \${name}, what's the craic?`); 
+  // <i>Greet the user the Irish way.</i>
+  console.log(`Howaya &dollar;{name}, what's the craic?`);
 }
 sayHello(); 
--> "Howaya, ah it's yourself, what's the craic?"
+-&gt; "Howaya, ah it's yourself, what's the craic?"
 ```
 
 As you can see, creating a default value is as simple as assigning a
@@ -1774,7 +1782,7 @@ be visible within that function.
 function scopeTest() { 
   const a = 1; }
     console.log(a);
-    -> Uncaught ReferenceError: a is not defined
+    -&gt; Uncaught ReferenceError: a is not defined
 ```
 
 However, if we defined the same variable outside that function, it would
@@ -1783,7 +1791,7 @@ be visible from *within* the function.
 ```
 const a = 1;
 function scopeTest() { console.log(a); }
-scopeTest(); -> 1
+scopeTest(); -&gt; 1
 ```
 
 In the first case, the variable is block-scoped, that is, confined to
@@ -1800,7 +1808,7 @@ const can be.
 
 ```
 function scopeTest() { var a = 1; }
-console.log(a); -> 1
+console.log(a); -&gt; 1
 ```
 
 As you can see earlier, when using var, the variable can break out of
@@ -1822,7 +1830,7 @@ in order to return a value. Anonymous functions can also be assigned to
 variables that then store the returned value.
 
 ```
-// An anonymous function expression assigned to a variable. 
+// <i>An anonymous function expression assigned to a variable.</i>
 const sum = function(a, b) { return a + b; }
 ```
 
@@ -1830,17 +1838,17 @@ In the preceding example, the variable can be used to execute the
 function.
 
 ```
-sum(5, 4); -> 9
+sum(5, 4); -&gt; 9
 ```
 
 One thing we cannot do with anonymous functions is use them at the start
 of a statement.
 
 ```
-// The below is a no-no.
+// <i>The below is a no-no.</i>
 function(a, b) { return a + b;
 }
--> Uncaught SyntaxError: Function statements require a function name
+-&gt; Uncaught SyntaxError: Function statements require a function name
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1851,8 +1859,8 @@ there is another, more modern way of writing functions. These functions
 are called arrow functions due to the arrow syntax they employ.
 
 ```
-// Basic syntax of an arrow function.
-const peformSomeTask = () => { // ... code defining the task.
+// <i>Basic syntax of an arrow function.</i>
+const peformSomeTask = () =&gt; { // <i>... code defining the task.</i>
 }
 ```
 
@@ -1860,7 +1868,7 @@ They are concise alternatives to the traditional function expressions
 we've just covered. Let's rewrite the sum() function as an example.
 
 ```
-const sum = (a, b) => { return a + b; }
+const sum = (a, b) =&gt; { return a + b; }
 ```
 
 A little shorter, as you can see. But it can get even more concise than
@@ -1869,7 +1877,7 @@ value (which exactly describes our sum() function). In such a case, we
 don't need the curly braces or even the return statement itself.
 
 ```
-const sum = (a, b) => a + b;
+const sum = (a, b) =&gt; a + b;
 ```
 
 Because the arrow function body consists of just a single statement (
@@ -1919,7 +1927,7 @@ can mix numbers, strings, and booleans into a single array if required
 following format:
 
 ```
-// The syntax of a standard array. 
+// <i>The syntax of a standard array.</i>
 let arrayName = [item1, item2, item3, ... itemN];
 ```
 
@@ -1930,13 +1938,13 @@ index of 1, the third of 2, etc. To directly access an item in array by
 its index, you use square bracket notation like so:
 
 ```
-// Access the first item.
+// <i>Access the first item.</i>
 let firstItem = arrayName[0];
 
-// Access the second item.
+// <i>Access the second item.</i>
 let secondItem = arrayName[1];
 
-// Access the nth item.
+// <i>Access the nth item.</i>
 let nthItem = arrayName[n + 1];
 ```
 
@@ -1956,10 +1964,10 @@ array to control how many times we run our loop.
 
 ```
 for (let i = 0; 
-i < webSafeColours.length; i += 1) {
-  // ... some code.
+i &lt; webSafeColours.length; i += 1) {
+  // <i>... some code.</i>
   circle.fill(webSafeColours[i]);
-  // ... more code.
+  // <i>... more code.</i>
 }
 ```
 
@@ -2002,14 +2010,14 @@ argument. As an aside, functions that are passed as arguments in this
 manner are known as callback functions.
 
 ```
-// Set up an sample array. 
+// <i>Set up an sample array.</i>
 const someNumbers = [2, 4, 6, 8, 10];
 
-// Call the forEach method on each array item.
+// <i>Call the forEach method on each array item.</i>
 someNumbers.forEach((item) => { 
   console.log(item * 2); 
 });
--> 4 8 12 16 20
+-&gt; 4 8 12 16 20
 ```
 
 The forEach() loop can be a nice succinct way of iterating over an array
@@ -2052,7 +2060,7 @@ const myLaptop = {
       runBIOS();
     }
   }
-  // etc
+  // <i>etc</i>
 }
 ```
 
@@ -2062,19 +2070,19 @@ notation, or -- more commonly -- dot notation.
 ```
 // Accessing an object property with dot notation.
 myComputer.screenSize;
--> "14 inches"
+-&gt; "14 inches"
 
 // Accessing via bracket notation.
 myComputer[processor];
--> "Core i5"
+-&gt; "Core i5"
 ```
 
 We can also update and create new object properties via the same syntax.
 
 ```
-// Updating an object's property. 
+// <i>Updating an object's property.</i>
 myComputer.inSleepMode = true;
-// Creating a new object property. 
+// <i>Creating a new object property.</i>
 myComputer.storage = "512 GB SSD";
 ```
 
@@ -2113,11 +2121,11 @@ To create an instance of a class, we use the new keyword, followed by
 the class name with brackets. This calls the class constructor.
 
 ```
-// Defining a class.
+// <i>Defining a class.</i>
 class StarShip {
   ...
 }
-// Instantiating (or constructing) a class. 
+// <i>Instantiating (or constructing) a class.</i>
 const prometheus = new StarShip();
 ```
 
@@ -2155,14 +2163,14 @@ information. Isn't it strange then that null is also considered an
 object? We can confirm this by using the typeof check.
 
 ```
-typeof null; -> object
+typeof null; -&gt; object
 ```
 
 Despite this, null is not considered an instance *of* an object. We can
 confirm this by using the instanceof check.
 
 ```
-null instanceof Object; -> false
+null instanceof Object; -&gt; false
 ```
 
 NaN (not a number) also presents us with some quantum-level weirdness
@@ -2171,11 +2179,11 @@ a number but equal to a number at the same time. And, bizarrely, not
 even equal to itself.
 
 <pre>
-typeof NaN; -> Number
+typeof NaN; -&gt;l Number
 NaN === Number;
--> false
+-&gt; false
 NaN === NaN
--> false
+-&gt; false
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10b">2.10b Secret Casting</h3>
