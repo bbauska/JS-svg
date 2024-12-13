@@ -776,14 +776,14 @@ template create a file called index.html and another called sketch.js.
 Once you've done that, you should have a folder structure like this:</p>
 
 <blockquote>
-generative-svg
-&vert;-- node_modules
-&vert;-- sketches
-  &vert;-- 00-template
-    &vert;-- index.html
-    &vert;-- sketch.js
-|-- package-lock.json
-|-- package.json
+generative-svg<br>
+&nbsp;&nbsp;&vert;-- node_modules<br>
+&nbsp;&nbsp;&vert;-- sketches<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&vert;-- 00-template<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&vert;-- index.html<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&vert;-- sketch.js<br>
+&nbsp;&nbsp;|-- package-lock.json<br>
+&nbsp;&nbsp;|-- package.json
 </blockquote>
 
 <p>Open the index.html file. It's worth noting that VS Code can generate
