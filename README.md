@@ -589,7 +589,7 @@ shows how this markup appears when rendered.</p>
   alt="." />
 <!-- ![](./images/image007.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 1-1.** A simple composition in the style of Hilma af Klint's Svanen (The Swan)*
+<p><small><small><i><b>Figure 1-1.</b> A simple composition in the style of Hilma af Klint's Svanen (The Swan)</i></small></small></p>
 
 <!-- page 5 -->
 
@@ -665,7 +665,7 @@ svg.create('rect').set({
   alt="." />
 <!-- (./images/image008.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 1-2.** A cornflower blue-colored rectangle, in all its glory*
+<p><small><small><i><b>Figure 1-2.</b> A cornflower blue-colored rectangle, in all its glory</i></small></small></p>
 
 <p>Now you *could* write some functions to make writing vanilla JavaScript
 less painful, but that leads you down the road of writing a whole host
@@ -1989,7 +1989,7 @@ webSafeColours&lbrack;i&rbrack;.
   alt="Our first generative sketch (one variation of many)." />
 <!-- (./images/image010.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 2-1.** A web-safe color spiral*
+<p><small><small><i><b>Figure 2-1.</b> A web-safe color spiral</i></small></small></p>
 
 If you're brave enough to inspect the code behind the example, you'll
 notice that to add each color to the array initially, I used an array
@@ -2738,7 +2738,7 @@ svg.create('rect').set({
   alt="." />
 <!-- (./images/image011.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 3-1.** A Josef Albers--inspired color illusion*
+<p><small><small><i><b>Figure 3-1.</b> A Josef Albers--inspired color illusion</i></small></small></p>
 
 Do the smaller rectangles on the right and left look like the same shade
 of orange? Assuming this illusion was successful, you might have some
@@ -2833,7 +2833,7 @@ svg.create('circle').set({
   alt="." />
 <!-- (./images/image012.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 3-2.** The result of our circle overlay loop*
+<p><small><small><i><b>Figure 3-2.</b> The result of our circle overlay loop</i></small></small></p>
 
 What we've done here is vary the vertical position of the cy attribute
 and increase the radius r for two sets of circles each time the loop
@@ -2937,7 +2937,7 @@ dasharray values (all relative to a viewBox width of 1000):
   alt="." />
 <!-- (./images/image014.jpg){width="3.15in" height="1.575in"} -->
 
-***Figure 3-4.** Various stroke-dasharray values*
+<p><small><small><i><b>Figure 3-4.</b> Various stroke-dasharray values</i></small></small></p>
 
 If you want to connect one straight line to another, you'd use a
 polyline element. This takes a points array of space-separated (or
@@ -3089,7 +3089,7 @@ let line = '"Bart Bucks" are not legal tender.';
   alt="." />
 <!-- (./images/image017.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 3-7.** The "Bart Bucks" chalkboard gag*
+<p><small><small><i><b>Figure 3-7.</b> The "Bart Bucks" chalkboard gag</i></small></small></p>
 
 Titles are another type of text we can use. Unlike a text element, a
 title element doesn't need to be positioned; it is intended to be nested
@@ -3226,7 +3226,7 @@ compared to their linear counterparts.
   alt="." />
 <!-- (./images/image018.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 3-8.** Linear gradients and their radial equivalents*
+<p><small><small><i><b>Figure 3-8.</b> Linear gradients and their radial equivalents</i></small></small></p>
 
 There are more ways to customize gradients that we won't get into here,
 but if you're interested, check out the MDN documentation for more on
@@ -3309,7 +3309,7 @@ interesting, but sufficient to showcase the basics.
   alt="." />
 <!-- ./images/image019.jpg){width="3.17in" height="3.17in"} -->
 
-***Figure 3-9.** A basic pattern*
+<p><small><small><i><b>Figure 3-9.</b> A basic pattern</i></small></small></p>
 
 In the next few steps, we'll create our optical illusion. First, comment
 out the code that created the white rectangle pattern (but keep the
@@ -3378,7 +3378,7 @@ Now when you hit save, you should see something like Figure 3-10.
   alt="." />
 <!-- (./images/image020.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 3-10.** A repeating pattern creating an optical illusion*
+<p><small><small><i><b>Figure 3-10.</b> A repeating pattern creating an optical illusion</i></small></small></p>
 
 If the illusion worked, the gray lines should appear slightly slanted,
 particularly those you're not directly focusing on. Hopefully this will
@@ -3621,8 +3621,7 @@ for (let i = 0;
   alt="." />
 <!-- (./images/image021.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-1.** A random spattering of circles*
-
+<p><small><small><i><b>Figure 4-1.</b> A random spattering of circles</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2a">4.2a Varying Color and Opacity</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3662,8 +3661,7 @@ considerably, so we'll step through it slowly.
   alt="." />
 <!-- (./images/image022.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-2.** A more colorful spatter*
-
+<p><small><small><i><b>Figure 4-2.</b> A more colorful spatter</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2b">4.2b Varying Element Selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3773,8 +3771,7 @@ more in the way of variety and visual interest.
   alt="." />
 <!-- (./images/image023.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-3.** A confetti-like scattering of random elements*
-
+<p><small><small><i><b>Figure 4-3.</b> A confetti-like scattering of random elements</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-3">4.3 Regular Grids</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3878,8 +3875,7 @@ shown in Figure 4-4.
   alt="." />
 <!-- (./images/image024.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-4.** A regular, centered grid*
-
+<p><small><small><i><b>Figure 4-4.</b> A regular, centered grid</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3b">4.3b A More Flexible Grid</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3951,8 +3947,7 @@ let spacing = Gen.random(5, 10);
   alt="." />
 <!-- (./images/image025.jpg){width="4.725in" height="1.5316666666666667in"} -->
 
-***Figure 4-5.** Variations of our regular grid*
-
+<p><small><small><i><b>Figure 4-5.</b> Variations of our regular grid</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-4">4.4 Clip Paths and Color Palettes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4012,7 +4007,7 @@ let palettes = [
   alt="." />
 <!-- (./images/image026.jpg){width="3.9366666666666665in" height="2.0616666666666665in"} -->
 
-***Figure 4-6.** Our three colour palettes*
+<p><small><small><i><b>Figure 4-6.</b> Our three colour palettes</i></small></small></p>
 
 Next, we're going to randomly select one of these palettes and store it
 in a variable that we can call on later.
@@ -4058,7 +4053,7 @@ circle.
   alt="." />
 <!-- (./images/image027.jpg){width="3.936665in" height="1.96833in"} -->
 
-***Figure 4-7.** How a clipPath works*
+<p><small><small><i><b>Figure 4-7.</b> How a clipPath works</i></small></small></p>
 
 A clipPath requires an id so that it can be referenced later. Nested
 within the clipPath element is the actual shape or path that will do the
@@ -4066,18 +4061,21 @@ within the clipPath element is the actual shape or path that will do the
 example from Figure 4-7.
 
 <pre>
-// Initialise the clipPath with an id.
-let clip = svg.create('clipPath').set({ id: 'clip1' });
+// <i>Initialise the clipPath with an id.</i>
+let clip = svg.create('clipPath').set({ 
+  id: 'clip1' 
+});
 
-// Create the shape of the clipPath.
-clip.create('rect').set({ x: 0, 
+// <i>Create the shape of the clipPath.</i>
+clip.create('rect').set({ 
+  x: 0, 
   y: 0, 
   width: 100, 
   height: 100, 
   stroke: '#fff' 
 });
 
-// Apply it to a circle via a call to its id.
+// <i>Apply it to a circle via a call to its id.</i>
 svg.create('circle').set({ 
   cx: 100, 
   cy: 50, 
@@ -4093,9 +4091,12 @@ to our sketch now and apply this same logic within our loop. First,
 create the nested loop as we did before:
 
 <pre>
-for (let y = 0; y &lt; gridSize; y += increment) { for (let x = 0; x &lt; 
-gridSize; x += increment) {
-}
+for (let y = 0; y &lt; gridSize; y += increment) { 
+  for (let x = 0; 
+  x &lt; 
+  gridSize; 
+  x += increment) {
+  }
 }
 </pre>
 
@@ -4201,7 +4202,7 @@ the grid.)
   alt="." />
 <!-- (./images/image028.jpg){width="4.725in" height="1.6483333333333334in"} -->
 
-***Figure 4-8.** Colorful clip path grid patterns*
+<p><small><small><i><b>Figure 4-8.</b> Colorful clip path grid patterns</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-5">4.5 Choice and Chance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4309,8 +4310,7 @@ Figure 4-9.
   alt="." />
 <!-- (./images/image029.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-9.** Gen.chance() in action*
-
+<p><small><small><i><b>Figure 4-9.</b> Gen.chance() in action</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-6">4.6 Probability Distributions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4338,16 +4338,15 @@ variation of the x coordinate in the placement of 1000 vertical lines.
 The lines are all scattered with equal chance of appearing anywhere
 along the x axis.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 30.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 30. Uniform distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image030.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Uniform distribution of vertical lines"
+  alt="Uniform distribution of vertical lines." />
 <!-- (./images/media/image30.jpg){width="4.725in" height="0.55in"} -->
 
-***Figure 4-10.** Uniform distribution of vertical lines*
-
+<p><small><small><i><b>Figure 4-10.</b> Uniform distribution of vertical lines</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6b">4.6b Gaussian Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4368,7 +4367,7 @@ looks like Figure 4-11.
   alt="." />
 <!-- (./images/image031.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
-***Figure 4-11.** Gaussian distribution of vertical lines*
+<p><small><small><i><b>Figure 4-11.</b> Gaussian distribution of vertical lines</i></small></small></p>
 
 The midpoint around which most values accumulate is known as the mean,
 and the degree to which they drop off, or deviate, from this mean is
@@ -4461,7 +4460,7 @@ After this, you should end up with something similar to Figure 4-12.
   alt="." />
 <!-- (./images/media/image32.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 4-12.** Using Gen.gaussian to position 10,000 lines*
+<p><small><small><i><b>Figure 4-12.</b> Using Gen.gaussian to position 10,000 lines</i></small></small></p>
 
 In terms of the generated markup, it's quite a heavy piece compared to
 anything we've done previously (10,000 elements will do that). This can
@@ -4496,7 +4495,7 @@ remains the same: there is a lot with a little and a little with a lot.
   alt="." />
 <!-- (./images/media/image33.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
-***Figure 4-13.** Pareto distribution of vertical lines*
+<p><small><small><i><b>Figure 4-13.</b> Pareto distribution of vertical lines</i></small></small></p>
 
 This can be useful in generative art to achieve a balance of differently
 sized elements. We'll use this in our next sketch to create a pseudo-
@@ -4605,7 +4604,7 @@ applying it to the rect is shown on the right.
   alt="." />
 <!-- (./images/media/image34.jpg){width="4.725in" height="1.7666666666666666in"} -->
 
-***Figure 4-14.** How masks work*
+<p><small><small><i><b>Figure 4-14.</b> How masks work</i></small></small></p>
 
 As with a clipPath, the mask element requires an id and is applied to
 another element via a url reference to this id. What we're going to do
@@ -4656,7 +4655,7 @@ A variation of the result is shown in Figure 4-15.
   alt="." />
 <!-- (./images/media/image35.jpg){width="3.3467in" height="3.3467in"} -->
 
-***Figure 4-15.** Our Porto Pareto cityscape*
+<p><small><small><i><b>Figure 4-15.</b> Our Porto Pareto cityscape</i></small></small></p>
 
 **Summary**
 
@@ -4741,16 +4740,15 @@ Figure 5-1, the height of the white lines is randomized using a Perlin
 noise variable. This is an example of one-dimensional noise, that is,
 noise values that operate along a single axis.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 36.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 36. A one-dimensional representation of Perlin noise values (xx) ~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image036.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="A one-dimensional representation of Perlin noise values"
+  alt="A one-dimensional representation of Perlin noise values." />
 <!-- (./images/media/image36.jpg){width="4.725in" height="1.04in"} -->
 
-***Figure 5-1.** A one-dimensional representation of Perlin noise
-values*
+<p><small><small><i><b>Figure 5-1.</b> A one-dimensional representation of Perlin noise values</i></small></small></p>
 
 Noise is by nature multidimensional; Perlin originally designed it for
 3D spaces, and there are four-dimensional implementations out there too,
@@ -4784,8 +4782,7 @@ textures.
   alt="." />
 <!-- (./images/media/image37.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 5-2.** A two-dimensional representation of Perlin noise
-values*
+<p><small><small><i><b>Figure 5-2.</b> A two-dimensional representation of Perlin noise values</i></small></small></p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2b">5.2b The SvJs Noise Module</h3>
@@ -4820,13 +4817,13 @@ by incrementing the noiseX and/or noiseY coordinates. Here's how this
 might look within a loop:
 
 <pre>
-// Initialise our noise instance and noise co-ordinates first. 
+// <i>Initialise our noise instance and noise co-ordinates first.</i>
 let noise = new Noise(); 
 let noiseX = 15, noiseY = 20;
 
-// Run the loop, slowly incrementing the co-ordinates to modify the value.
+// <i>Run the loop, slowly incrementing the co-ordinates to modify the value.</i>
 for (let i = 0; i < 1000; i += 1) {
-  let noiseValue = noise.get(noiseX, noiseY); ... // Do something with noiseValue
+  let noiseValue = noise.get(noiseX, noiseY); ... // <i>Do something with noiseValue</i>
   noiseX += 0.003; noiseY += 0.003; 
 }
 </pre>
@@ -4883,7 +4880,7 @@ the third, we'll store the noise speed that will determine the rate at
 which we'll increment the noise coordinates.
 
 <pre>
-// Create our noise, the noise x and y co-ordinates, and noise speed.
+// <i>Create our noise, the noise x and y co-ordinates, and noise speed.</i>
 let noise = new Noise(); 
 let nX = 0, nY = 0; 
 let noiseSpeed = 0.5;
@@ -4895,7 +4892,7 @@ cellSize variables we used in previous sketches and set the gridSize to
 cover the entire viewBox.
 
 <pre>
-// Set some grid-related variables. 
+// <i>Set some grid-related variables.</i>
 let noiseGrid = svg.create('g');
 let gridSize = 1000; let rows = 80;
 let increment = gridSize / rows;
@@ -4911,12 +4908,15 @@ Within the loop, we'll fetch our noise value using the noise.get()
 method, passing in the nX and nY values we initialized earlier.
 
 <pre>
-// Create the noise matrix.
-for (let x = 0; x < gridSize; x += increment) { for (let y = 0; y <
-gridSize; y += increment) { // Fetch the noise value. 
-let noiseValue =
-noise.get(nX, nY);
-}
+// <i>Create the noise matrix.</i>
+for (let x = 0; 
+  x &lt; gridSize; 
+  x += increment) { 
+  for (let y = 0; y &lt; gridSize; 
+  y += increment) { 
+    // <i>Fetch the noise value.</i>
+    let noiseValue = noise.get(nX, nY);
+  }
 }
 </pre>
 
@@ -4926,9 +4926,9 @@ As we learned in the last chapter, the Gen.chance() function is the
 simplest way to do this, combined with a ternary operator.
 
 <pre>
-// Create text displaying either 0 or 1 (50% chance).
-let text = noiseGrid.create('text'); text.content(Gen.chance() ? '1'
-: '0');
+// <i>Create text displaying either 0 or 1 (50% chance).</i>
+let text = noiseGrid.create('text'); 
+text.content(Gen.chance() ? '1' : '0');
 </pre>
 
 Now we need to set the position of the digit with respect to the x and y
@@ -4937,22 +4937,28 @@ lightness component of the hsl() function) with the noiseValue variable.
 We should also set a font size and font family while we're at it.
 
 <pre>
-text.set({ x: x, y: y, font_size: 16, font_family: 'serif', fill:
-`hsl(120 20% ${noiseValue}%)` });
+text.set({ 
+  x: x, y: y, 
+  font_size: 16, 
+  font_family: 'serif', 
+  fill: `hsl(120 20% ${noiseValue}%)` 
+});
 </pre>
 
 And before we close out our loop, we'll want to increment our nX and nY
 values with the noiseSpeed variable.
-<pre>
-nX += noiseSpeed; nY += noiseSpeed; 
-</pre>
+
+<pre>nX += noiseSpeed; nY += noiseSpeed;</pre>
+
 To finish off the sketch, outside
 the loop, call the moveTo() function to shift the grid to the center of
 the canvas.
+
 <pre>
-// Centre the grid within the viewBox. 
+// <i>Centre the grid within the viewBox.</i>
 noiseGrid.moveTo(500, 500);
 </pre>
+
 You should now see a grid of zeros and ones when you run your sketch.
 But ... they're all black. The color lightness isn't visibly changing,
 even though we're using our noiseValue to modify it. What's going on
@@ -4962,22 +4968,22 @@ If you inspect some of the text elements in the browser console, you'll
 see something like the following:
 
 <pre>
-<text x="860" y="960" font-size="16" font-family='serif'
+&lt;text x="860" y="960" font-size="16" font-family='serif'
 fill="hsl(120 20%
 
--0.11888951723051341%)">0</text>
+-0.11888951723051341%)"&gt;0&lt;/text&gt;
 
-<text x="860" y="980" font-size="16" font-family='serif'
+&lt;text x="860" y="980" font-size="16" font-family='serif'
 fill="hsl(120 20%
 
--0.06168012594419729%)">1</text>
+-0.06168012594419729%)"&gt;1&lt;/text&gt;
 
-<text x="880" y="0" font-size="16" font-family='serif'
+&lt;text x="880" y="0" font-size="16" font-family='serif'
 fill="hsl(120 20%
 
-0.061791625695004807%)">0</text> <text x="880" y="20"
+0.061791625695004807%)"&gt;0&lt;/text&gt; &lt;ltext x="880" y="20"
 font-size="16" font-family='serif' fill="hsl(120 20%
-0.1202821001266494%)">1</text>
+0.1202821001266494%)"&gt;1&lt;/text&gt;
 </pre>
 
 The point to note here is that when we call the noise.get() method, the
@@ -5010,9 +5016,11 @@ setting it to false rounds the result to the nearest integer. The
 following is an example:
 
 <pre>
-// Map a number (5) from one range (0, 10) to another (0, 100). 
-let num = 5; num = Gen.map(num, 0, 10, 0, 100); 
-console.log(num); -&gt; 50
+// <i>Map a number (5) from one range (0, 10) to another (0, 100).</i>
+let num = 5; 
+num = Gen.map(num, 0, 10, 0, 100); 
+console.log(num); 
+-&gt; 50
 </pre>
 
 If we apply the Gen.map() function to our noiseValue variable, we can
@@ -5021,9 +5029,10 @@ new variable, or as the preceding example shows us, we can simply
 reassign the original variable.
 
 <pre>
-// Fetch the noise value. 
+// <i>Fetch the noise value.</i>
 let noiseValue = noise.get(nX, nY);
-// Map the noise value to a useful range. 
+
+// <i>Map the noise value to a useful range.</i>
 noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
 </pre>
 
@@ -5039,7 +5048,7 @@ from Neo.
   alt="." />
 <!-- (./images/media/image38.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 5-3.** That chunk of the matrix that tastes like chicken*
+<p><small><small><i><b>Figure 5-3.</b> That chunk of the matrix that tastes like chicken</i></small></small></p>
 
 It's worth noting that when using a generic font-family like serif, you
 essentially let the operating system decide which default font to
@@ -5056,9 +5065,9 @@ font-size and font-family attributes remain static throughout. This
 seems quite wasteful.
 
 <pre>
-<text x="740" y="200" font-size="16" font-family="serif"
+&lt;text x="740" y="200" font-size="16" font-family="serif"
 fill="hsl(120 20%
-50%)">1</text>
+50%)"&gt;1&lt;/text&gt;
 </pre>
 
 What we can do is first remove the font attributes set within the loop
@@ -5073,10 +5082,10 @@ elements at once. Near the top of our sketch, after the parent SVG
 declaration, include the following code:
 
 <pre>
-// Set some text styling.
-svg.create('style').content(` text { font-size: 16px; font-family:
-serif;
-}
+// <i>Set some text styling.</i>
+  svg.create('style').content(` text { font-size: 16px; 
+  font-family: serif;
+  }
 `);
 </pre>
 
@@ -5105,13 +5114,15 @@ background so that we're left with the following boilerplate code:
 import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
 index.js';
 
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.getElementById('container'));
-// Viewport and viewBox (1:1 aspect ratio).
+
+// <i>Viewport and viewBox (1:1 aspect ratio).</i>
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
 });
-// Background.
+
+// <i>Background.</i>
 svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
 '#181818' });
 </pre>
@@ -5135,8 +5146,8 @@ the value to different ranges. One will control how much we shift the
 hue, and the other will control the length of each line.
 
 <pre>
-// Start the dance. 
-for (let i = 10; i < iterations; i += 1) { let
+// <i>Start the dance.</i>
+for (let i = 10; i &lt; iterations; i += 1) { let
 noiseValue = noise.get(nX); let hueShift = Gen.map(noiseValue, -1, 1,
 -180, 180, false); let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000,
 false); }
@@ -5212,7 +5223,7 @@ some deep-sea creatures.
   alt="." />
 <!-- ./images/media/image39.jpg){width="4.725in" height="1.893in"} -->
 
-***Figure 5-4.** Spinning lines or deep-sea creatures?*
+<p><small><small><i><b>Figure 5-4.</b> Spinning lines or deep-sea creatures?</i></small></small></p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Summary**
@@ -5423,8 +5434,7 @@ have to change the initial M point.
   alt="." />
 <!-- (./images/media/image40.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 6-1.** Two L&apos;s drawn by two L commands*
-
+<p><small><small><i><b>Figure 6-1.</b> Two L&apos;s drawn by two L commands</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3b">6.3b Horizontal and Vertical Varieties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5434,11 +5444,11 @@ parameter; in the case of H or h, the x coordinate, and in the case of V
 or v, the y coordinate.
 
 <pre>
-// Syntax for the H/h command.
+// <i>Syntax for the H/h command.</i>
 'H [x] ...'
 'h [dx] ...'
 
-// Syntax for the V/v command.
+// <i>Syntax for the V/v command.</i>
 'V [y] ...'
 'v [dy] ...'
 </pre>
@@ -5449,10 +5459,10 @@ create the same L shapes from Figure 6-1, but with H and V this time,
 including their lowercase versions.
 
 <pre>
-// The first L.
+// <i>The first L.</i>
 svg.create('path').set({ d: 'M 300 200 V 800 H 600' });
 
-// The second L.
+// <i>The second L.</i>
 svg.create('path').set({ d: 'M 675 825 v -600 h -300' });
 </pre>
 
@@ -5484,8 +5494,7 @@ svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
   alt="." />
 <!-- (./images/media/image41.jpg){width="3.5434in" height="0.96167in"} -->
 
-***Figure 6-2.** Omitting repetitive commands*
-
+<p><small><small><i><b>Figure 6-2.</b> Omitting repetitive commands</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-4">6.4 Quadratic Bezier Curves</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5524,7 +5533,7 @@ example, the dot represents the control point coordinates of &lbrack;150,
   alt="." />
 <!-- (./images/media/image42.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 6-3.** The control point of a quadratic Bezier curve*
+<p><small><small><i><b>Figure 6-3.</b> The control point of a quadratic Bezier curve</i></small></small></p>
 
 A quadratic Bezier curve has just the one control point, whereas the
 cubic Bezier curve (explored in a later section), has two.
@@ -5545,11 +5554,11 @@ in more complex cases, this can become a challenge.
 <img class="displayed"
   src="./images/image043.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A kink in the curve"
+  alt="A kink in the curve." />
 <!-- (./images/media/image43.jpg){width="3.15in" height="1.89in"} -->
 
-***Figure 6-4.** A kink in the curve*
+<p><small><small><i><b>Figure 6-4.</b> A kink in the curve</i></small></small></p>
 
 This is where the T command can help us. It extends a quadratic Bezier
 curve based on the previous curve's control point, essentially
@@ -5590,8 +5599,7 @@ purple second point) from the four additional T points (in red).
   alt="." />
 <!-- (./images/media/image44.jpg){width="4.725in" height="1.2883in"} -->
 
-***Figure 6-5.** A smooth quadratic curve*
-
+<p><small><small><i><b>Figure 6-5.</b> A smooth quadratic curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4c">6.4c A Quadratic Slinky</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5692,12 +5700,11 @@ slinky.moveTo(500, 500);
 <img class="displayed"
   src="./images/image045.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Quadratic curves in a slinky formation"
+  alt="Quadractic curves in a slinky formation." />
 <!-- (./images/media/image45.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 6-6.** Quadratic curves in a slinky formation*
-
+<p><small><small><i><b>Figure 6-6.</b> Quadratic curves in a slinky formation</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-5">6.5 Elliptical Arcs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5730,8 +5737,7 @@ explaining.
   alt="." />
 ![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
 
-***Figure 6-7.** An elliptical arc curve*
-
+<p><small><small><i><b>Figure 6-7.</b> An elliptical arc curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-5a">6.5a Setting the Flags</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5764,7 +5770,7 @@ are shown.
   alt="." />
 ![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
 
-***Figure 6-8.** Four possible arcs*
+<p><small><small><i><b>Figure 6-8.</b> Four possible arcs</i></small></small></p>
 
 In practice, you'll only ever see one of these arcs rendered on screen.
 However, it helps us understand the underlying structure of the
@@ -5889,8 +5895,7 @@ arcs.rotate(Gen.random(0, 360));
   alt="." />
 <!-- (./images/media/image48.jpg){width="3.9365in" height="2.315in"} -->
 
-***Figure 6-9.** Two renders of our generative arcs*
-
+<p><small><small><i><b>Figure 6-9.</b> Two renders of our generative arcs</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-6">6.6 Cubic Bezier Curves</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5939,8 +5944,7 @@ SVG.
   alt="." />
 <!-- (./images/media/image49.jpg){width="3.15in" height="2.52in"} -->
 
-***Figure 6-10.** A cubic Bezier curve with the control points
-visualized*
+<p><small><small><i><b>Figure 6-10.</b> A cubic Bezier curve with the control points visualized</i></small></small></p>
 
 When linked together, consecutive cubic Bezier curves can combine to
 create any 2D shape imaginable. They are such a staple of vector drawing
@@ -5977,8 +5981,7 @@ command has automatically generated a symmetrical control point.
   alt="." />
 <!-- ![](./images/media/image50.jpg){width="3.5434in" height="2.1265in"} -->
 
-***Figure 6-11.** A smoothly extended cubic Bezier curve*
-
+<p><small><small><i><b>Figure 6-11.</b> A smoothly extended cubic Bezier curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-6c">6.6c Organic Curves</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6130,8 +6133,7 @@ if (Gen.chance(10)) {
   alt="." />
 <!-- (./images/media/image51.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 6-12.** Noise-modulated organic curves*
-
+<p><small><small><i><b>Figure 6-12.</b> Noise-modulated organic curves</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-6d">6.6d An Easier Option</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6192,8 +6194,7 @@ you wouldn't see these rendered normally.
   alt="." />
 <!-- (./images/media/image52.jpg){width="3.5434in" height="2.53167in"} -->
 
-***Figure 6-13.** Varying the curve factor using values of 0, 1, and 5*
-
+<p><small><small><i><b>Figure 6-13.</b> Varying the curve factor using values of 0, 1, and 5</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-7">6.7 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6509,7 +6510,7 @@ happen if we had to click a button).
   alt="." />
 <!-- (./images/media/image53.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-1.** A cursor-transformed array of ellipses*
+<p><small><small><i><b>Figure 7-1.</b> A cursor-transformed array of ellipses</i></small></small></p>
 
 Now that we know how to achieve movement via interactivity, it's time to
 learn how to make things move independently of our input.
@@ -6581,8 +6582,7 @@ shapes.push(shape);
   alt="." />
 <!-- (./images/media/image54.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-2.** The four shapes we&apos;ll make move*
-
+<p><small><small><i><b>Figure 7-2.</b> The four shapes we&apos;ll make move</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-3a">7.3a CSS Keyframes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7247,8 +7247,7 @@ explore it independently).
   alt="." />
 <!-- (./images/media/image55.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-3.** Colorful collision detection*
-
+<p><small><small><i><b>Figure 7-3.</b> Colorful collision detection</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch7-5">7.5 Circularity</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7311,7 +7310,7 @@ values.
   alt="." />
 <!-- (./images/media/image56.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-4.** The circumference, diameter, and radius of a circle*
+<p><small><small><i><b>Figure 7-4.</b> The circumference, diameter, and radius of a circle</i></small></small></p>
 
 You may be accustomed to angles being expressed in terms of degrees, but
 in JavaScript, angles are measured in radians by default. One radian is
@@ -7330,7 +7329,7 @@ And half of 6.28 is 𝝅, or 3.14.
   alt="." />
 <!-- (./images/media/image57.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-5.** How radians relate to* 𝝅 *and the circumference*
+<p><small><small><i><b>Figure 7-5.</b> How radians relate to<i> 𝝅 </i>and the circumference</i></small></small></p>
 
 The takeaway? Math.PI radians is equivalent to 180°, meaning Math.PI &ast;
 2 gives us a full circle (360°). So within the context of our loop,
@@ -7428,8 +7427,7 @@ Figure 7-6 for a snapshot of this animation at about 15% progression.
   alt="." />
 <!-- (./images/media/image58.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 7-6.** A circular loop with the Web Animations API*
-
+<p><small><small><i><b>Figure 7-6.</b> A circular loop with the Web Animations API</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch7-6">7.6 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7521,8 +7519,7 @@ result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feG
   alt="." />
 <!-- (./images/media/image59.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-1.** A blurred circle*
-
+<p><small><small><i><b>Figure 8-1.</b> A blurred circle</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-1a">8.1a The Ins and Outs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7552,7 +7549,7 @@ drop shadow applied to a circle's stroke, as shown in Figure 8-2.
   alt="." />
 <!-- (./images/image060.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-2.** A drop-shadow filter effect*
+<p><small><small><i><b>Figure 8-2.</b> A drop-shadow filter effect</i></small></small></p>
 
 As with the previous example, we're starting off with an feGaussianBlur
 primitive, but you'll notice there's a couple of more attributes added:
@@ -7636,7 +7633,7 @@ clipping occurs (see Figure 8-3).
   alt="." />
 <!-- (./images/image061.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-3.** A clipped filter region*
+<p><small><small><i><b>Figure 8-3.</b> A clipped filter region</i></small></small></p>
 
 In generative art, we'll sometimes stray outside the range of values a
 filter effect parameter might anticipate, so it's important to know
@@ -7760,7 +7757,7 @@ use some filters to rein in the colors but retain the dynamic range.
   alt="." />
 <!-- (./images/image062.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-4.** Full-spectrum RGB tiles*
+<p><small><small><i><b>Figure 8-4.</b> Full-spectrum RGB tiles</i></small></small></p>
 
 The first step is to desaturate the colors. For this, we can use the
 feColorMatrix primitive, which takes two arguments: type and values. The
@@ -7909,7 +7906,7 @@ is a little too complex to properly cover in this chapter.
   alt="." />
 <!-- (./images/image063.jpg){width="3.5428565179352582in" height="2.6657141294838147in"} -->
 
-***Figure 8-5.** Six of the seven SVG compositing operations*
+<p><small><small><i><b>Figure 8-5.</b> Six of the seven SVG compositing operations</i></small></small></p>
 
 Because the feComposite primitive is so useful and something you'll
 likely lean on if you further explore SVG filters, it's worth describing
@@ -7980,7 +7977,7 @@ achieve without filters.
   alt="." />
 <!-- (./images/image064.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-6.** The result of the composite operation*
+<p><small><small><i><b>Figure 8-6.</b> The result of the composite operation</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-3">8.3 Noise and Distortion</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8052,8 +8049,7 @@ potential variation offered by this filter primitive.
   alt="." />
 <!-- ./images/image065.jpg){width="4.725in" height="1.6533333333333333in"} -->
 
-***Figure 8-7.** Varying the base frequency and octaves for the two
-noise types*
+<p><small><small><i><b>Figure 8-7.</b> Varying the base frequency and octaves for the two noise types</i></small></small></p>
 
 The best way to get a feel for how feTurbulence works is to tweak an
 interactive example, so I've created a pen for you here for this
@@ -8103,7 +8099,7 @@ wave-like distortion (right).
   alt="." />
 <!-- (./images/image066.jpg){width="4.725in" height="1.3083333333333333in"} -->
 
-***Figure 8-8.** Using turbulence as a displacement map source*
+<p><small><small><i><b>Figure 8-8.</b> Using turbulence as a displacement map source</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-3c">8.3c Creating a Cosmic Bubble</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8206,7 +8202,7 @@ fine in our case.
   alt="." />
 <!-- (./images/image067.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-9.** Displacement using the blurred edge of a circle*
+<p><small><small><i><b>Figure 8-9.</b> Displacement using the blurred edge of a circle</i></small></small></p>
 
 We're not fully done yet; as a final step, I want to cut away everything
 beyond the perimeter of the blurred region. The solution to this is to
@@ -8231,8 +8227,7 @@ filter.create('feComposite').set({
   alt="." />
 <!-- (./images/image068.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-10.** One possible iteration of the Hubble Bubble sketch*
-
+<p><small><small><i><b>Figure 8-10.</b> One possible iteration of the Hubble Bubble sketch</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-4">8.4 Lighting and Texture</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8268,7 +8263,7 @@ with a uniform fill (right).
   alt="." />
 <!-- (./images/image069.jpg){width="3.74in" height="1.9866666666666666in"} -->
 
-***Figure 8-11.** Lighting cast on a radial gradient vs. a flat fill*
+<p><small><small><i><b>Figure 8-11.</b> Lighting cast on a radial gradient vs. a flat fill</i></small></small></p>
 
 Lighting is one of those things in SVG that's very easy to get wrong.
 When it does go awry, the results often look cheap, choppy, and jagged
@@ -8303,7 +8298,7 @@ the same light emitted by feSpecularLighting (right).
   alt="." />
 <!-- (./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"} -->
 
-***Figure 8-12.** Diffuse vs. specular lighting*
+<p><small><small><i><b>Figure 8-12.</b> Diffuse vs. specular lighting</i></small></small></p>
 
 Both lighting primitives take a single input in as their bump map source
 and a surfaceScale attribute, which defines the relative height of the
@@ -8481,8 +8476,7 @@ other generative compositions.
   alt="." />
 <!-- (./images/image071.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-13.** Our rough and ready paper texture*
-
+<p><small><small><i><b>Figure 8-13.</b> Our rough and ready paper texture</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4d">8.4d Generative Textures</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8647,7 +8641,7 @@ it's best to play around until you land on something you like.
   alt="." />
 <!-- (./images/image072.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 8-14.** Specular random rockiness*
+<p><small><small><i><b>Figure 8-14.</b> Specular random rockiness</i></small></small></p>
 
 And that concludes our foray into filters. As I mentioned before,
 there's so much more to explore where filters are concerned, and there
@@ -8777,7 +8771,7 @@ Figure 9-1.
   alt="." />
 <!-- (./images/image073.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 9-1.** An interactive trigonometry visualization*
+<p><small><small><i><b>Figure 9-1.</b> An interactive trigonometry visualization</i></small></small></p>
 
 As with the rest of the examples in this chapter, it's intended to
 illustrate rather than instruct, so the code isn't included here. You
@@ -8819,7 +8813,7 @@ reflection of the structure taken in its entirety.
   alt="." />
 <!-- (./images/image074.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 9-2.** Self-similarity in the Sierpinski triangle*
+<p><small><small><i><b>Figure 9-2.</b> Self-similarity in the Sierpinski triangle</i></small></small></p>
 
 Where does recursion come in? Well, it can be found in every fractal,
 including the Sierpinski triangle, but to really illustrate the idea,
@@ -8854,7 +8848,7 @@ they can no longer handle.
   alt="." />
 <!-- (./images/image075.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 9-3.** Recursively constructing the Von Koch snowflake*
+<p><small><small><i><b>Figure 9-3.</b> Recursively constructing the Von Koch snowflake</i></small></small></p>
 
 Fractals open up an entire universe of exploration and inspiration for
 the generative artist, far beyond what I've been able to hint at here.
@@ -8915,7 +8909,7 @@ fun to watch!
   alt="." />
 <!-- (./images/image076.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 9-4.** A snapshot of a Game of Life in action*
+<p><small><small><i><b>Figure 9-4.</b> A snapshot of a Game of Life in action</i></small></small></p>
 
 I'll link to more examples for you to play with at 
 <a href="http://davidmatthew.ie/generative-art-javascript-svg/#systems-simulations﻿">
