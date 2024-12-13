@@ -580,8 +580,14 @@ looking at an impenetrable wall of pixels; they can clearly see the
 *intent* within the markup. In this case, four circles displayed in the
 order they're written, with a title for extra accessibility. Figure 1-1
 shows how this markup appears when rendered.</p>
-
-![](./images/image007.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 7.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image007.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- ![](./images/image007.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 1-1.** A simple composition in the style of Hilma af Klint's Svanen (The Swan)*
 
@@ -650,8 +656,14 @@ svg.create('rect').set({
 });
 </pre>
 <!-- page 7 -->
-
-![](./images/image008.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 8.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image008.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image008.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 1-2.** A cornflower blue-colored rectangle, in all its glory*
 
@@ -5702,7 +5714,13 @@ The rotation defines the angle of rotation along the x axis, and the
 largearc-flag and sweep-flag are both booleans in numeric form, 0
 meaning false and 1 meaning true. What they do though takes a little
 explaining.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 46.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image046.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
 ![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
 
 ***Figure 6-7.** An elliptical arc curve*
@@ -5730,7 +5748,13 @@ are shown.
 
 -   In the lowermost path, the large-arc-flag is set to 1 and the
     sweep-flag is set to 0.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 47.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image047.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
 ![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
 
 ***Figure 6-8.** Four possible arcs*
@@ -5788,9 +5812,9 @@ our arc curves. After that, we'll set up some randomized variables we'll
 utilize in the loop that follows.
 
 <pre>
-// Set up a container group for our arc curves.
+// <i>Set up a container group for our arc curves.</i>
 let arcs = svg.create('g');
-// Randomise some variables. 
+// <i>Randomise some variables.</i>
 let rx = Gen.random(5, 350); 
 let ry = Gen.random(5, 350); 
 let hue = Gen.random(0, 360);
@@ -5805,7 +5829,7 @@ large-arc- flag, which, thanks to our Gen.chance() function, will have a
 <pre>
 for (let i = 0; 
 i < 360; i += 1) {
-  // Randomise the rotation and large arc flag.
+  // <i>Randomise the rotation and large arc flag.</i>
   let rotation = Gen.random(0, 180); 
   let largeArc = Gen.chance() ? 1 : 0;
 }
@@ -5818,7 +5842,7 @@ after our largeArc variable, we're setting the sweep-flag to 1, meaning
 clockwise.
 
 <pre>
-// Create a first set of clockwise arc curves (sweep = 1).
+// <i>Create a first set of clockwise arc curves (sweep = 1).</i>
 arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue} 75% 75% / 0.05)`,
 d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 1 725 500`
 });
@@ -5831,12 +5855,12 @@ before we close out the loop, we'll increment the hue using the
 aforementioned modulo operator.
 
 <pre>
-// Create a second set of counter-clockwise arc curves (sweep = 0).
+// <i>Create a second set of counter-clockwise arc curves (sweep = 0).</i>
 arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue + 60}
 75% 75% / 0.05)`,
 d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
 });
-// Increment the hue. 
+// <i>Increment the hue.</i>
 hue = (hue % 360) + 0.5;
 </pre>
 
@@ -5846,11 +5870,17 @@ little more dynamism though, you could add the following line after the
 loop:
 
 <pre>
-// Apply a random rotation.
+// <i>Apply a random rotation.</i>
 arcs.rotate(Gen.random(0, 360));
 </pre>
-
-![](./images/media/image48.jpg){width="3.9366666666666665in" height="2.315in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 48.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image048.jpg"
+  style="width:3.936in"
+  title=""
+  alt="." />
+<!-- (./images/media/image48.jpg){width="3.9365in" height="2.315in"} -->
 
 ***Figure 6-9.** Two renders of our generative arcs*
 
@@ -5884,7 +5914,7 @@ destination point, and this point is defined by the final two
 coordinates: x and y. Here's an example:
 
 <pre>
-// Creating a single cubic bezier curve. 
+// <i>Creating a single cubic bezier curve.</i>
 svg.create('path').set({ d: 'M 75,75 C 140,330 360,330 425,75' });
 </pre>
 
@@ -5893,8 +5923,14 @@ initial M point in yellow, and in red, the three points that comprise
 the cubic Bezier curve itself. The colored dots and dashed lines are
 just for illustrative purposes; these wouldn't be rendered in the final
 SVG.
-
-![](./images/media/image49.jpg){width="3.15in" height="2.52in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 49.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image049.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image49.jpg){width="3.15in" height="2.52in"} -->
 
 ***Figure 6-10.** A cubic Bezier curve with the control points
 visualized*
@@ -5918,16 +5954,21 @@ as a result allows us to omit the first set of control point
 coordinates.
 
 <pre>
-// Extending a cubic bezier curve with the S command.
+// <i>Extending a cubic bezier curve with the S command.</i>
 svg.create('path').set({ d: 'M 50,150 C 100,250 200,50 250,150 S
 400,50 450,150' });
 </pre>
 
 In Figure 6-11, the faintest of the dashed lines indicates where the S
 command has automatically generated a symmetrical control point.
-
-![](./images/media/image50.jpg){width="3.5433333333333334in"
-height="2.1266666666666665in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 50.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image050.jpg"
+  style="width:3.543in"
+  title=""
+  alt="." />
+<!-- ![](./images/media/image50.jpg){width="3.5434in" height="2.1265in"} -->
 
 ***Figure 6-11.** A smoothly extended cubic Bezier curve*
 
@@ -5985,7 +6026,7 @@ the loop, include the moveTo() method to center-align our curve group.
 for (let i = 0; i \< numCurves; i += 1) {
 
 <pre>
-// Retrieve and map our noise value.
+// <i>Retrieve and map our noise value.</i>
 let noiseValue = noise.get(n);
 noiseValue = Gen.map(noiseValue, -1, 1, -amplifier,
 amplifier, false);
@@ -6001,11 +6042,11 @@ dissimilar to the one shown in Figure 6-10. Other than that, the values
 provided are fairly arbitrary, so feel free to tweak them.
 
 <pre>
-// M command co-ordinates. 
+// <i>M command co-ordinates.</i>
 let mx = 0; 
 let my = 0 + (i * 5);
 
-// C command co-ordinates. 
+// <i>C command co-ordinates.</i>
 let cpx1 = 0 + noiseValue; 
 let cpy1 = -100;
 let cpx2 = 250 + noiseValue; 
@@ -6013,7 +6054,7 @@ let cpy2 = -100;
 let x2 = 300; 
 let y2 = 0;
 
-// S command co-ordinates. 
+// <i>S command co-ordinates.</i>
 let spx = 350 + noiseValue; 
 let spy = 100;
 let x3 = 300; 
@@ -6037,10 +6078,14 @@ braces \${} for each variable. When these variables follow one after the
 other however, we can actually embed them all at once as an array.
 
 <pre>
-// Create the organic curve. 
-curves.create('path').set({ fill:
-'none', stroke: `hsl(${hue} 80% 80% / 0.8)`, d: `M \${[mx, my]}
-c ${[cpx1, cpy1, cpx2, cpy2, x2, y2]} s ${[spx, spy, x3, y3]}`
+// <i>Create the organic curve.</i>
+curves.create('path').set({ 
+  fill: 'none', 
+  stroke: `hsl(${hue} 80% 80% / 0.8)`, 
+  d: `M \${[mx, my]} 
+  c ${[cpx1, cpy1, 
+  cpx2, cpy2, x2, y2]} 
+  s ${[spx, spy, x3, y3]}`
 });
 </pre>
 
@@ -6054,20 +6099,29 @@ it slightly via the noiseValue variable. As a final flourish, we'll
 throw in some randomized "bubbles" (see Figure 6-12). Don't ask me why.
 
 <pre>
-// Increment the noise and hue. 
+// <i>Increment the noise and hue.</i>
 n += speed; 
 hue = (hue % 360) + (noiseValue / 25);
 
-// 10% chance of spawning a 'bubble'. 
+// <i>10% chance of spawning a 'bubble'.</i>
 if (Gen.chance(10)) {
-svg.create('circle').set({ r: Gen.random(5, 50), cx: Gen.random(150,
-850), cy: Gen.random(150, 850), fill: `hsl(0 0% 100% / 0.1)`, stroke:
-'#888'
-});
+  svg.create('circle').set({ 
+    r: Gen.random(5, 50), 
+	cx: Gen.random(150, 850), 
+	cy: Gen.random(150, 850), 
+	fill: `hsl(0 0% 100% / 0.1)`, 
+	stroke: '#888'
+  });
 }
 </pre>
-
-![](./images/media/image51.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 51.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image051.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image51.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 6-12.** Noise-modulated organic curves*
 
@@ -6088,7 +6142,7 @@ of fine-tuning that the manual curve commands offer. With the
 createCurve() method, all we need to worry about are the points.
 
 <pre>
-// The syntax of the createCurve() method. 
+// <i>The syntax of the createCurve() method.</i>
 createCurve(pointsArray, [curveFactor]);
 </pre>
 
@@ -6100,12 +6154,13 @@ standard one- dimensional array or as a two-dimensional array (i.e., an
 array of arrays).
 
 <pre>
-// A one-dimensional array of points. 
+// <i>A one-dimensional array of points.</i>
 let points1D = [25, 30, 45, 20, 80, 10, 90, 40];
 
-// A two-dimensional array of the same points. 
-let points2D = [[25, 30], [45, 20], [80, 10], [90, 40]
-];
+// <i>A two-dimensional array of the same points.</i>
+  let points2D = [
+    [25, 30], [45, 20], [80, 10], [90, 40] 
+  ];
 </pre>
 
 The curveFactor argument allows us to modify the tension between the
@@ -6121,9 +6176,14 @@ action. The uppermost curve is set to 0, the middle curve to 1, and the
 bottom curve to 5. The faint dots indicate where our pointsArray
 coordinates are positioned and are shown for illustrative purposes only;
 you wouldn't see these rendered normally.
-
-![](./images/media/image52.jpg){width="3.5433333333333334in"
-height="2.5316666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 52.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image052.jpg"
+  style="width:3.543in"
+  title=""
+  alt="." />
+<!-- (./images/media/image52.jpg){width="3.5434in" height="2.53167in"} -->
 
 ***Figure 6-13.** Varying the curve factor using values of 0, 1, and 5*
 
@@ -6201,7 +6261,7 @@ and three, what to do when it hears it (i.e., the action performed by
 the callback function). It takes the following form:
 
 <pre>
-// Adding an event listener to a HTML or SVG element.
+// <i>Adding an event listener to a HTML or SVG element.</i>
 element.addEventListener('eventType', doSomething);
 </pre>
 
@@ -6213,13 +6273,12 @@ arrow -- functions, which can be defined there and then without the
 danger of being immediately invoked.
 
 <pre>
-// Using arrow syntax to define the callback function.
+// <i>Using arrow syntax to define the callback function.</i>
 element.addEventListener('eventType', () => {
 
-// do something here...
+// <i>do something here...</i>
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-1a">7.1a Event Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6240,13 +6299,12 @@ falling under this umbrella, as it can also capture simple touch events
 like a finger tap.
 
 <pre>
-// Capturing the movement of a mouse, stylus or finger over an element.
+// <i>Capturing the movement of a mouse, stylus or finger over an element.</i>
 element.addEventListener('pointermove', () => {
 
-// do something here...
+  // <i>do something here...</i>
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-1b">7.1b Event Parameters</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6261,10 +6319,11 @@ position of the mouse or pointer device is logged to the console each
 time you click anywhere within the body of the HTML page.
 
 <pre>
-// Log the user's pointer co-ordinates on click.
-document.body.addEventListener('click', (event) => { let x =
-event.clientX; let y = event.clientY;
-console.log(`x: ${x}, y: ${y}`);
+// <i>Log the user's pointer co-ordinates on click.</i>
+document.body.addEventListener('click', (event) => { 
+  let x = event.clientX; 
+  let y = event.clientY;
+  console.log(`x: ${x}, y: ${y}`);
 });
 </pre>
 
@@ -6304,9 +6363,11 @@ method only when that key is equal to "s", irrespective of case
 (allowing us to capture the capital "S" too).
 
 <pre>
-// Save the root svg as a downloadable file.
-document.addEventListener('keydown', (event) => { let key =
-event.key.toLowerCase(); if (key === 's') svg.save();
+// <i>Save the root svg as a downloadable file.</i>
+document.addEventListener('keydown', (event) => { 
+  let key = event.key.toLowerCase(); 
+  if (key === 's') 
+    svg.save();
 });
 </pre>
 
@@ -6347,13 +6408,12 @@ our own custom callback function, to be triggered each time the cursor
 position is updated.
 
 <pre>
-// Passing in a custom callback.
+// <i>Passing in a custom callback.</i>
 svg.trackCursor(() => {
 
-// ... do stuff
+  // <i>... do stuff</i>
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-2b">7.2b Interactive Ellipses</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6367,12 +6427,12 @@ array is a new addition; we'll use this to store the created ellipses so
 we can iterate through them afterward.
 
 <pre>
-// Randomise some variables. 
+// <i>Randomise some variables.</i>
 let hue = Gen.random(0, 360);
 let rotation = Gen.random(0, 360); 
 let iterations = Gen.random(50, 100);
 
-// This array will allow us to iterate through our ellipses later. 
+// <i>This array will allow us to iterate through our ellipses later.</i>
 let ellipses = [];
 </pre>
 
@@ -6383,22 +6443,28 @@ Another difference of note is the addition of the ellipses.push()
 method; this is where we add each ellipse to the aforementioned array.
 
 <pre>
-// Run a loop a random number of times to create the ellipses. 
-for (let i = 0; i < iterations; i += 1) {
+// <i>Run a loop a random number of times to create the ellipses.</i>
+  for (let i = 0; 
+    i &lt; iterations; 
+	i += 1) {
 
-// Create our ellipse.
-let ellipse = svg.create('ellipse'); 
-ellipse.set({ cx: 500, cy: 500,
-rx: 100 + (i * 3),
-ry: 300 + (i * 2), 
-fill: 'none', stroke: `hsl(${hue} 80% 80% /
-0.6)`, transform: `rotate(\${rotation + (i * 2)} 500 500)` });
+      // Create our ellipse.
+      let ellipse = svg.create('ellipse'); 
+      ellipse.set({ 
+        cx: 500, cy: 500,
+        rx: 100 + (i * 3),
+        ry: 300 + (i * 2), 
+        fill: 'none', 
+        stroke: `hsl(${hue} 80% 80% / 0.6)`, 
+        transform: `rotate(&dollar;{rotation + (i * 2)} 500 500)` 
+	  });
 
-// Add the ellipse to the array. 
-ellipses.push(ellipse);
+      // Add the ellipse to the array. 
+      ellipses.push(ellipse);
 
-// Increment the hue. 
-hue = (hue % 360) + 2; }
+      // Increment the hue. 
+      hue = (hue % 360) + 2; 
+	}
 </pre>
 
 You should now see a static arrangement of ellipses. Our next step is
@@ -6409,11 +6475,14 @@ using a forEach() loop and adjust the cx and cy coordinates of each
 ellipse relative to our cursor position.
 
 <pre>
-// Adjust the centre point of each ellipse relative to our cursor.
-svg.trackCursor(() => { ellipses.forEach((ellipse) => { ellipse.set({
-cx: svg.cursorX, cy: svg.cursorY
-});
-});
+// <i>Adjust the centre point of each ellipse relative to our cursor.</i>
+svg.trackCursor(() => { 
+  ellipses.forEach((ellipse) => { 
+    ellipse.set({
+      cx: svg.cursorX, 
+	  cy: svg.cursorY
+    });
+  });
 });
 </pre>
 
@@ -6424,8 +6493,14 @@ A keymapped save function is particularly useful here (I used it myself
 to save down Figure 7-1), as it allows us to capture our SVG without
 disturbing the composition with inadvertent cursor movement (as might
 happen if we had to click a button).
-
-![](./images/media/image53.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 53.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image053.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image53.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-1.** A cursor-transformed array of ellipses*
 
@@ -6462,24 +6537,24 @@ so feel free to simply copy and paste:
 <pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.getElementById('container'));
 
-// Viewport and viewBox (1:1 aspect ratio). 
+// <i>Viewport and viewBox (1:1 aspect ratio).</i>
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
 
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
-// Background.
+// <i>Background.</i>
 svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
 '#181818'
 });
 
-// Arrays to contain our shapes and their colours.
+// <i>Arrays to contain our shapes and their colours.</i>
 let palette = ['#34d399','#6ee7b7','#a7f3d0', '#d1fae5']; 
 let shapes = [];
 
-// Initialise our four shapes. 
+// <i>Initialize our four shapes.</i>
 for (let i = 0; i < 4; i += 1) { let
 size = 500 - (i * 125); 
 let position = 250 + (i * 62.5); 
@@ -6490,8 +6565,14 @@ transform: 'rotate(45)'
 shapes.push(shape);
 }
 </pre>
-
-![](./images/media/image54.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 54.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image054.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image54.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-2.** The four shapes we\'ll make move*
 
@@ -6532,10 +6613,10 @@ assign the animation to the cssShape element, specifying the duration,
 iteration count, and timing function.
 
 <pre>
-// Set an id for our first shape. 
+// <i>Set an id for our first shape.</i>
 shapes[0].set({ id: 'cssShape' });
 
-// Animate this shape with CSS. 
+// <i>Animate this shape with CSS.</i>
 svg.create('style').content(`
 @keyframes scaleRotate {
 0% { transform: rotate(0) scale(1, 1) }
@@ -6576,20 +6657,20 @@ Before we do so however, here's a quick peek at how it looks in its
 original form.
 
 <pre>
-<circle cx="50" cy="50" r="25" fill="red">
-  <animate attributeName="r" from="25" to="40" dur="2s"
-    repeatCount="indefinite" />
-</circle>
+&lt;circle cx="50" cy="50" r="25" fill="red"&gt;
+  &lt;animate attributeName="r" from="25" to="40" dur="2s"
+    repeatCount="indefinite" /&gt;
+&lt;/circle&gt;
 </pre>
 
 As you can see, the animation is an actual SVG element, nested inside
-the element it animates (a \<circle\> in this case). The \<animate\>
+the element it animates (a &lt;circle&gt; in this case). The &lt;animate&gt;
 element takes care of the animation of most SVG attributes, but in the
 case of element transforms (i.e., translating, rotating, scaling, or
-skewing), an \<animateTransform\> element must be used instead. There is
-one other animation element called \<animateMotion\>, reserved for
+skewing), an &lt;animateTransform&gt; element must be used instead. There is
+one other animation element called &lt;animateMotion&gt;, reserved for
 animating an element along a path. As we will be rotating and scaling
-our shape, the \<animateTransform\> element is the one we'll be using.
+our shape, the &lt;animateTransform&gt; element is the one we'll be using.
 
 Each transform requires its own element, making the syntax a little
 verbose. With the first transform, namely, the rotation, we specify the
@@ -6600,7 +6681,7 @@ iteration count (repeatCount), and that's the first transform taken care
 of.
 
 <pre>
-// Rotate the second shape using SMIL.
+// <i>Rotate the second shape using SMIL.</i>
 shapes[1].create('animateTransform').set({ attributeName:
 'transform', type: 'rotate', from: '0', to: '360', dur: '5s',
 repeatCount: 'indefinite' });
@@ -6646,23 +6727,23 @@ properties. Say we wanted to animate the value of a circle's radius r.
 The following is how this could be achieved using both syntax formats:
 
 <pre>
-// Format one for keyframes.
+// <i>Format one for keyframes.</i>
 let keyframes = [
   { r: 25 },
   { r: 40 },
   { r: 25 }
 ];
 
-// Format two for keyframes.
+// <i>Format two for keyframes.</i>
 let keyframes = { r: [25, 40, 25] };
 
-// Format one for timing options. 
+// <i>Format one for timing options.</i>
 let options = 2000; // 2 seconds.
 
-// Format two for timing options.
+// <i>Format two for timing options.</i>
 let options = { duration: 2000, iterations: Infinity,
 
-// ... etc
+// <i>... etc</i>
 };
 </pre>
 
@@ -6679,7 +6760,7 @@ offsets if needs be. In the following example, the second keyframe will
 trigger at 0.75 instead of the default 0.5.
 
 <pre>
-// Explicitly defining offsets.
+// <i>Explicitly defining offsets.</i>
 let keyframes = { r: [25, 40, 25], offset: [0, 0.75, 1] };
 </pre>
 
@@ -6728,12 +6809,15 @@ per-frame basis. We then pass this custom function as an argument to
 requestAnimationFrame, so it is called recursively on each screen
 repaint. Here's a basic example of how this works.
 
-</pre>
-// Define the function.
-function customFunction() { // do stuff here...
-// Make the recursive call to requestAnimationFrame()).
-requestAnimationFrame(customFunction); }
-// Call the function.
+<pre>
+// <i>Define the function.</i>
+function customFunction() { // <i>do stuff here...</i>
+
+  // <i>Make the recursive call to requestAnimationFrame()).</i>
+  requestAnimationFrame(customFunction); 
+}
+
+// <i>Call the function.</i>
 customFunction();
 </pre>
 
@@ -6748,13 +6832,16 @@ rotation values can increment indefinitely beyond 360° and still remain
 valid.
 
 <pre>
-// Animate the last shape using requestAnimationFrame. 
+// <i>Animate the last shape using requestAnimationFrame.</i>
 function animate(time) {
-// Rotate the angle. 
+
+// <i>Rotate the angle.</i>
 let angle = time;
-// Apply the rotation.
+
+// <i>Apply the rotation.</i>
 shapes[3].set({ transform: `rotate(${angle})` });
-// The recursive bit.
+
+// <i>The recursive bit.</i>
 requestAnimationFrame(animate); } animate();
 </pre>
 
@@ -6770,7 +6857,7 @@ undefined. Include the following code before the angle is declared, and
 that should soothe our console's concerns:
 
 <pre>
-// Prevent errors when the time is undefined on first frame.
+// <i>Prevent errors when the time is undefined on first frame.</i>
 if (time === undefined) time = 0;
 </pre>
 
@@ -6792,7 +6879,7 @@ the exact speed by which to rotate our shape: 0.072° per millisecond
 where angle simply equals time with the following:
 
 <pre>
-// Rotate 360° in 5000ms: 360/5000 = 0.072. 
+// <i>Rotate 360° in 5000ms: 360/5000 = 0.072.</i>
 let angle = time * 0.072;
 </pre>
 
@@ -6826,33 +6913,33 @@ work we need to do with requestAnimationFrame() compared to the other
 methods.
 
 <pre>
-// Animate the final shape using requestAnimationFrame. 
+// <i>Animate the final shape using requestAnimationFrame. </i>
 function animate(time) {
 
-// Prevent errors when the time is undefined on first frame. 
+// <i>Prevent errors when the time is undefined on first frame.</i>
 if (time === undefined) time = 0;
 
-// Rotate 360° in 5000ms: 360/5000 = 0.072. 
+// <i>Rotate 360° in 5000ms: 360/5000 = 0.072.</i>
 let angle = time * 0.072;
 
-// We need a constant tick value that doesn't increment indefinitely.
+// <i>We need a constant tick value that doesn't increment indefinitely.</i>
 tick = time - prevTime;
 
-// Scale by 0.5 in 2500ms: 0.5/2500 = 0.0002.
+// <i>Scale by 0.5 in 2500ms: 0.5/2500 = 0.0002.</i>
 scale = isPositive ? scale + (tick * 0.0002) : scale - (tick * 0.0002);
 
-// Apply the rotation and scale values. 
+// <i>Apply the rotation and scale values.</i>
 shapes[3].set({
   transform: `rotate(${angle}) scale(${1 - scale}, ${1 + scale})`
 });
 
-// Flip the polarity if the scale value falls outside these bounds.
+// <i>Flip the polarity if the scale value falls outside these bounds.</i>
 if (scale < 0 || scale > 0.5) isPositive = !isPositive;
 
-// Capture the time before it increments. 
+// <i>Capture the time before it increments.</i>
 prevTime = time;
 
-// The recursive bit.
+// <i>The recursive bit.</i>
 requestAnimationFrame(animate); }
 animate();
 </pre>
@@ -6939,7 +7026,7 @@ variable to capture this and also use it to keep other element (like the
 stroke-width) in proportion.
 
 <pre>
-// Create a frame to act as the boundary.
+// <i>Create a frame to act as the boundary.</i>
 let frameSize = Gen.random(350, 700); let frame =
 svg.create('rect').set({ x: (1000 - frameSize) / 2, y: (1000 -
 frameSize) / 2, width: frameSize, height: frameSize, fill: '#252525',
@@ -6959,13 +7046,13 @@ the following, we'll start by initializing the circles and filling up an
 array as we've done in our previous examples.
 
 <pre>
-// Randomise the number of circles and set up an empty array. 
+// <i>Randomize the number of circles and set up an empty array.</i>
 let numCircles = Math.floor(frameSize / 20); 
 let circles = [];
 
 // Populate this array. 
 for (let i = 0; 
-  i < numCircles; i += 1) {
+  i &lt; numCircles; i += 1) {
 
     // Randomise the radius relative to the frame size.
     let radius = Gen.random(frameSize / 100, frameSize / 25);
@@ -7010,11 +7097,11 @@ their polarity using Gen.chance() (so they'll have a 50/50 chance of
 being either positive or negative). Update the relevant code as follows:
 
 <pre>
-// Create variables to control the speed on the x and y axes.
+// <i>Create variables to control the speed on the x and y axes.</i>
 let velocityX = Gen.random(0.1, 5, true); 
 let velocityY = Gen.random(0.1, 5, true);
 
-// Apply the above variables and randomise the hue.
+// <i>Apply the above variables and randomise the hue.</i>
 let circle = svg.create('circle').set({ 
   cx: 500, 
   cy: 500, 
@@ -7061,39 +7148,39 @@ circle:
 <h4> Here's the concrete coded version:</h4>
 
 <pre>
-// Get the lower and upper bounds (the frame edges) for use in the loop.
+// <i>Get the lower and upper bounds (the frame edges) for use in the loop.</i>
 let lowerBound = Number(frame.get('x'));
 let upperBound = lowerBound + frameSize;
 
-// The animation loop. 
+// <i>The animation loop.</i>
 function animate() {
 
-  // Check collisions for each circle. 
+  // <i>Check collisions for each circle.</i>
   circles.forEach((circle) => {
 
-    // Retrieve the position and velocity.
+    // <i>Retrieve the position and velocity.</i>
     let cx = Number(circle.get('cx')); 
     let cy = Number(circle.get('cy')); 
     let vx = Number(circle.get('vx')); 
     let vy = Number(circle.get('vy'));
 
-    // Check for collisions, and if found reverse the polarity.
+    // <i>Check for collisions, and if found reverse the polarity.</i>
     if (cx <= lowerBound || cx >= upperBound) vx = -vx; 
     if (cy <= lowerBound || cy >= upperBound) vy = -vy;
 
-    // Update the position.
+    // <i>Update the position.</i>
     cx += vx; 
     cy += vy;
 
-    // Set the new values. 
+    // <i>Set the new values.</i>
     circle.set({ cx: cx, cy: cy, vx: vx, vy: vy });
   });
 
-  // The recursive bit.
+  // <i>The recursive bit.</i>
   requestAnimationFrame(animate); 
 }
 
-// Call the animation.
+// <i>Call the animation.</i>
 animate();
 </pre>
 
@@ -7112,7 +7199,7 @@ edge and frame inset. Delete the lower bound and upper bound variables
 and replace them with the following:
 
 <pre>
-// Get the frame edge point (x or y) and the inset.
+// <i>Get the frame edge point (x or y) and the inset.</i>
 let frameEdge = Number(frame.get('x'));
 let frameInset = Number(frame.get('stroke-width')) / 2;
 </pre>
@@ -7121,19 +7208,19 @@ Now, inside the loop, we can work out the proper lower bound and upper
 bound values.
 
 <pre>
-// The animation loop. 
+// <i>The animation loop.</i>
 function animate() {
 
-  // Check collisions for each circle. 
+  // <i>Check collisions for each circle.</i>
   circles.forEach((circle) => {
 
-    // Calculate the lower and upper bounds for each circle. 
+    // <i>Calculate the lower and upper bounds for each circle.</i>
     let radius = Number(circle.get('r')); 
     let lowerBound = frameEdge + radius + frameInset; 
     let upperBound = frameEdge + frameSize - radius -
     frameInset;
     
-    // ... remainder of code is unchanged.
+    // <i>... remainder of code is unchanged.</i>
 }
 </pre>
 
@@ -7144,8 +7231,14 @@ cursor tracking, or change the colors over time. As it is however, we've
 taken the first steps on the road to full-on physics simulations (a
 topic way beyond the scope of this book, but I'd encourage you to
 explore it independently).
-
-![](./images/media/image55.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 55.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image055.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image55.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-3.** Colorful collision detection*
 
@@ -7166,7 +7259,7 @@ usual place below our background, initializing some randomized
 variables.
 
 <pre>
-// Randomise some variables.
+// <i>Randomise some variables.</i>
 let numCircles = Gen.random(20, 35); 
 let baseRadius = Gen.random(5, 25, true); 
 let hue = Gen.random(0, 360);
@@ -7180,9 +7273,9 @@ out in the next section).
 
 <pre>
 // Set up the loop. 
-for (let i = 0; i < numCircles; i += 1) {
+for (let i = 0; i &lt; numCircles; i += 1) {
 
-  // Create the circle, but don't set the position or radius yet. 
+  // <i>Create the circle, but don't set the position or radius yet.</i>
   let circle = svg.create('circle').set({ 
     r: baseRadius, 
     fill: 'none',
@@ -7191,7 +7284,6 @@ for (let i = 0; i < numCircles; i += 1) {
   });
 }
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-5a">7.5a Slices of PI</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7203,8 +7295,14 @@ approximated value of 𝝅 (3.14), a mathematical constant that represents
 the ratio of a circle's circumference (the length along its perimeter)
 to its diameter (double the radius). Figure 7-4 illustrates these
 values.
-
-![](./images/media/image56.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 56.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image056.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image56.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-4.** The circumference, diameter, and radius of a circle*
 
@@ -7216,8 +7314,14 @@ these radians (or approximately 6.28) to wrap around the full
 circumference.
 
 And half of 6.28 is 𝝅, or 3.14.
-
-![](./images/media/image57.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 57.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image057.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image57.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-5.** How radians relate to* 𝝅 *and the circumference*
 
@@ -7233,7 +7337,7 @@ Within the loop, after we define our circle element, include the
 following line:
 
 <pre>
-// Calculate the current angle.
+// <i>Calculate the current angle.</i>
 let angle = Math.PI * 2 / numCircles * i;
 </pre>
 
@@ -7246,8 +7350,9 @@ into too much detail here; suffice to say, the methods Math.sin() and
 Math.cos() work together perfectly to create circular motion.
 
 <pre>
-// Get the sine and cosine of the angle.
-let sin = Math.sin(angle); let cos = Math.cos(angle);
+// <i>Get the sine and cosine of the angle.</i>
+let sin = Math.sin(angle); 
+let cos = Math.cos(angle);
 </pre>
 
 It's also worth noting that these are extremely useful methods in their
@@ -7264,7 +7369,7 @@ on both the x and y axes) and re-map them so that they span a range of
 the center.
 
 <pre>
-// Map the sine and cosine to the desired range. 
+// <i>Map the sine and cosine to the desired range.</i>
 let cx = Gen.map(sin, -1, 1, 200, 800, false); 
 let cy = Gen.map(cos, -1, 1, 200, 800, false);
 </pre>
@@ -7277,7 +7382,7 @@ move our circles outward from the center toward the cx and cy
 coordinates we defined earlier.
 
 <pre>
-// Move from (500, 500) to (cx, cy).
+// <i>Move from (500, 500) to (cx, cy).</i>
 circle.animate({
 cx: [500, cx, 500], cy: [500, cy, 500],
 }, {
@@ -7292,23 +7397,29 @@ loop, let's increment the hue relative to the number of circles to get a
 nice color distribution.
 
 <pre>
-// Set the initial and target radii. 
+// <i>Set the initial and target radii.</i>
 let r1 = baseRadius * 2 + (i * 10); 
 let r2 = baseRadius / (i + 10);
 
-// Move from (500, 500) to (cx, cy), reduce the radius, rotate.
+// <i>Move from (500, 500) to (cx, cy), reduce the radius, rotate.</i>
 circle.animate({ cx: [500, cx, 500], cy: [500, cy, 500], 
 r: [r1, r2, r1], transform: ['rotate(0deg)', 'rotate(360deg)']
 }, {
 duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
-// Increment the hue.
+// <i>Increment the hue.</i>
 hue = (hue % 360) + (180 / numCircles);
 </pre>
 
 There... That gets us much closer to achieving that hypnotic pull. See
 Figure 7-6 for a snapshot of this animation at about 15% progression.
-
-![](./images/media/image58.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 58.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image058.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image58.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 7-6.** A circular loop with the Web Animations API*
 
@@ -7378,15 +7489,15 @@ Let's look at a basic example in raw markup form, using just a single
 primitive.
 
 <pre>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <defs>
-    <filter id="blur">
-    <feGaussianBlur stdDeviation="10" />
-    </filter>
-  </defs>
-  <circle r="350" cx="500" cy="500" fill="yellow"
-  filter="url(#blur)" /> 
-</svg>
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"&gt;
+  &lt;defs&gt;
+    &lt;filter id="blur"&gt;
+    &lt;feGaussianBlur stdDeviation="10" /&gt;
+    &lt;/filter&gt;
+  &lt;/defs&gt;
+  &lt;circle r="350" cx="500" cy="500" fill="yellow"
+  filter="url(#blur)" /&gt; 
+&lt;/svg&gt;
 </pre>
 
 As you can see, the \<filter\> element must be nested inside a \<defs\>
@@ -7394,8 +7505,14 @@ element; in common with gradients and patterns, it only gets rendered
 when referenced via a url link to its id. In the preceding case, a
 yellow circle calls the filter via its own filter attribute, and the
 result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feGaussianBlur.
-
-![](./images/media/image59.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 59.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image059.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image59.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-1.** A blurred circle*
 
@@ -7407,20 +7524,26 @@ how filter primitives can be connected together. The result will be a
 drop shadow applied to a circle's stroke, as shown in Figure 8-2.
 
 <pre>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-  <defs>
-    <filter id="shadow">
-      <feGaussianBlur stdDeviation="25" in="SourceAlpha" result="blur" />
-      <feOffset dx="0" dy="50" in="blur" result="offset" />
-      <feComposite in="SourceGraphic" in2="offset" />
-    </filter>
-  </defs>
-  <circle r="300" cx="500" cy="500" fill="none"
-  stroke="#475569" stroke-width="50" filter="url(#shadow)" />
-</svg>
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"&gt;
+  &lt;defs&gt;
+    &lt;filter id="shadow"&gt;
+      &lt;feGaussianBlur stdDeviation="25" in="SourceAlpha" result="blur" /&gt;
+      &lt;feOffset dx="0" dy="50" in="blur" result="offset" /&gt;
+      &lt;feComposite in="SourceGraphic" in2="offset" /&gt;
+    &lt;/filter&gt;
+  &lt;/defs&gt;
+  &lt;circle r="300" cx="500" cy="500" fill="none"
+  stroke="#475569" stroke-width="50" filter="url(#shadow)" /&gt;
+&lt;/svg&gt;
 </pre>
-
-![](./images/image060.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 60.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image060.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image060.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-2.** A drop-shadow filter effect*
 
@@ -7475,14 +7598,14 @@ The following is the SvJs equivalent of our first example shown
 previously, applying a soft blur to a yellow circle (Figure 8-1).
 
 <pre>
-// Initialise the filter.
+// <i>Initialise the filter.</i>
 let filter = svg.createFilter('blur');
 
-// Create the blur effect. 
+// <i>Create the blur effect.</i>
 filter.create('feGaussianBlur').set({
 stdDeviation: 10 });
 
-// Apply the filter.
+// <i>Apply the filter.</i>
 svg.create('circle').set({ r: 350, cx: 500, cy: 500, fill: 'yellow',
 filter:
 'url(#blur)'
@@ -7497,8 +7620,14 @@ that element. This allows a certain amount of space into which the
 effect can "bleed," to use a print analogy. This space is known as the
 filter region, and once a filter's effect extends beyond this region,
 clipping occurs (see Figure 8-3).
-
-![](./images/image061.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 61.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image061.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image061.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-3.** A clipped filter region*
 
@@ -7509,7 +7638,7 @@ filter region is defined just as a rect element is: by x, y, width, and
 height attributes. By default, these values are as follows:
 
 <pre>
-<filter x="-10%" y="-10%" width="120%" height="120%">
+&lt;filter x="-10%" y="-10%" width="120%" height="120%"&gt;
 </pre>
 
 The percentage values are relative to the shape to which the filter is
@@ -7526,7 +7655,6 @@ filter.set({
   height: '130%' 
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-2">8.2 Filter Effects 101</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7558,20 +7686,19 @@ Here's how we could rewrite the code for Figure 8-2 using SvJs and the
 feDropShadow primitive.
 
 <pre>
-// Initialise the filter.
+// <i>Initialise the filter.</i>
 let filter = svg.createFilter('shadow');
 
-// Create the drop shadow.
+// <i>Create the drop shadow.</i>
 filter.create('feDropShadow').set({ dx: 0, dy: 50, stdDeviation: 25
 });
 
-// Apply the filter.
+// <i>Apply the filter.</i>
 svg.create('circle').set({
 
-// ... other attributes. 
+// <i>... other attributes.</i>
 filter: 'url(#shadow)' });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2b">8.2b Coloring</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7617,8 +7744,14 @@ from dramatic and dynamic to garish and grating (see Figure 8-4 for some
 sample output). There is something I like about these results; the
 coloring, however, can get a little too incongruous at times. So let's
 use some filters to rein in the colors but retain the dynamic range.
-
-![](./images/image062.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 62.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image062.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image062.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-4.** Full-spectrum RGB tiles*
 
@@ -7707,7 +7840,7 @@ so what I'm going to do is store these in an array so we can select from
 them later. Include the following code before our filter is initialized:
 
 <pre>
-// Set up a blend modes array. 
+// <i>Set up a blend modes array.</i>
 let blendModes = ['screen',
   'overlay', 
   'lighten', 
@@ -7760,9 +7893,14 @@ values its operator attribute accepts: over, in, atop, xor, out,
 lighter, and arithmetic. In Figure 8-5, I've illustrated six of these;
 the arithmetic operator has no set output (it's fully customizable) and
 is a little too complex to properly cover in this chapter.
-
-![](./images/image063.jpg){width="3.5428565179352582in"
-height="2.6657141294838147in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 63.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image063.jpg"
+  style="width:3.542in"
+  title=""
+  alt="." />
+<!-- (./images/image063.jpg){width="3.5428565179352582in" height="2.6657141294838147in"} -->
 
 ***Figure 8-5.** Six of the seven SVG compositing operations*
 
@@ -7826,8 +7964,14 @@ refresh, you'll see something quite different, and while the color tones
 vary, a common palette can be discerned due to the single feFlood color
 we're drawing upon. This kind of effect would be quite difficult to
 achieve without filters.
-
-![](./images/image064.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 64.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image064.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image064.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-6.** The result of the composite operation*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7892,8 +8036,14 @@ In Figure 8-7, we can see two instances of turbulence on the left and
 two instances of fractalNoise on the right. The values vary only
 slightly between instances, which should give you a sense of the
 potential variation offered by this filter primitive.
-
-![](./images/image065.jpg){width="4.725in" height="1.6533333333333333in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 65.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image065.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- ./images/image065.jpg){width="4.725in" height="1.6533333333333333in"} -->
 
 ***Figure 8-7.** Varying the base frequency and octaves for the two
 noise types*
@@ -7937,8 +8087,14 @@ the x axis, or down along the y axis).
 In Figure 8-8, the output of an feTurbulence primitive (center) is used
 as the map to displace the source graphic (left), resulting in some soft
 wave-like distortion (right).
-
-![](./images/image066.jpg){width="4.725in" height="1.3083333333333333in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 66.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image066.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/image066.jpg){width="4.725in" height="1.3083333333333333in"} -->
 
 ***Figure 8-8.** Using turbulence as a displacement map source*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8020,8 +8176,14 @@ This results in a rim of displaced noise, as shown in Figure 8-9. Note
 that we've omitted the xChannelSelector and yChannelSelector attributes
 of feDisplacementMap; these both default to the alpha channel, which is
 fine in our case.
-
-![](./images/image067.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 67.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image067.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image067.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-9.** Displacement using the blurred edge of a circle*
 
@@ -8037,8 +8199,14 @@ filter.create('feComposite').set({ in: 'distortion', in2:
 'blurred', operator: 'atop'
 });
 </pre>
-
-![](./images/image068.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 68.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image068.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image068.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-10.** One possible iteration of the Hubble Bubble sketch*
 
@@ -8068,8 +8236,14 @@ unpleasantly pixelated, or entirely unaffected. In Figure 8-11, we can
 see the rather stark difference between a distant light source shining
 on a circle with a radial gradient (left) vs. a circle of the same size
 with a uniform fill (right).
-
-![](./images/image069.jpg){width="3.74in" height="1.9866666666666666in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 69.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image069.jpg"
+  style="width:3.74in"
+  title=""
+  alt="." />
+<!-- (./images/image069.jpg){width="3.74in" height="1.9866666666666666in"} -->
 
 ***Figure 8-11.** Lighting cast on a radial gradient vs. a flat fill*
 
@@ -8097,8 +8271,14 @@ surfaces (like a bowling ball). With specular reflection, the light that
 strikes the surface bounces at a definite angle. Figure 8-12 shows the
 difference between a point light emitted by feDiffuseLighting (left) vs.
 the same light emitted by feSpecularLighting (right).
-
-![](./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 70.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image070.jpg"
+  style="width:3.54in"
+  title=""
+  alt="." />
+<!-- (./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"} -->
 
 ***Figure 8-12.** Diffuse vs. specular lighting*
 
@@ -8269,8 +8449,14 @@ Figure 8-13 shows the result. Not bad! While not quite impressive enough
 to stand on its own (in my opinion at least), with variations of this
 effect, you have a means of injecting additional visual interest into
 other generative compositions.
-
-![](./images/image071.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 71.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image071.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image071.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-13.** Our rough and ready paper texture*
 
@@ -8427,8 +8613,14 @@ filter.create('feComposite').set({
 And now we're ready to see some results! Figure 8-14 shows a render I
 particularly liked, but the variation in this sketch is quite large so
 it's best to play around until you land on something you like.
-
-![](./images/image072.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 72.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image072.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image072.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 8-14.** Specular random rockiness*
 
@@ -8552,8 +8744,14 @@ kickstart comprehension, so to that end, I've set up a sketch showing
 the relationship between circular motion and right-angled triangles (the
 very foundation of trigonometry), a freezeframe of which you can see in
 Figure 9-1.
-
-![](./images/image073.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 73.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image073.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image073.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 9-1.** An interactive trigonometry visualization*
 
@@ -8588,8 +8786,14 @@ fractals, means that one part will resemble the whole, and vice versa.
 This is illustrated in Figure 9-2, which shows a famous fractal known as
 the Sierpinski triangle. As you can see, each building block is a
 reflection of the structure taken in its entirety.
-
-![](./images/image074.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 74.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image074.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image074.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 9-2.** Self-similarity in the Sierpinski triangle*
 
@@ -8617,8 +8821,14 @@ are sometimes seen as "windows into infinity." In practice, iterations
 are usually limited in line with screen resolution or otherwise capped
 to prevent our browsers crashing and our processors crunching numbers
 they can no longer handle.
-
-![](./images/image075.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 75.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image075.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image075.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 9-3.** Recursively constructing the Von Koch snowflake*
 
@@ -8672,8 +8882,14 @@ square of cells in the top left and bottom right corners) are in stasis,
 meaning they survive but don't spread and thrive. Other cells are
 actively sprawling, exploring, disappearing, and re-spawning. It can be
 fun to watch!
-
-![](./images/image076.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 76.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image076.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image076.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 9-4.** A snapshot of a Game of Life in action*
 
