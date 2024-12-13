@@ -765,11 +765,11 @@ Once you've done that, you should have a folder structure like this:</p>
 
 <blockquote>
 generative-svg
-|-- node_modules
-|-- sketches
-  |-- 00-template
-    |-- index.html
-    |-- sketch.js
+&vert;-- node_modules
+&vert;-- sketches
+  &vert;-- 00-template
+    &vert;-- index.html
+    &vert;-- sketch.js
 |-- package-lock.json
 |-- package.json
 </blockquote>
@@ -812,16 +812,16 @@ focus.</p>
 </pre>
 
 <p>There's just a couple of things worth pointing out about the preceding
-code: our \<div id=\"container\"\> will be where the generative art
+code: our &lt;div id=&quot;container&quot;&gt; will be where the generative art
 actually happens. It will be our canvas, so to speak. I have placed it
 within the center of the screen, removed any default margins, and given
 the template an overall "dark-mode" feel (my own personal preference).</p>
 
-<p>Below the \<div\> you'll see a \<script\> tag. This is where we'll pull
+<p>Below the &lt;div&gt; you'll see a &lt;script&gt; tag. This is where we'll pull
 in all our code, so any further modifications to the HTML will be
-unnecessary going forward (other than maybe updating the \<title\> tag
+unnecessary going forward (other than maybe updating the &lt;title&gt; tag
 for each sketch, but I'll leave that up to you). The script is set to
-type=\"module\". What this does is allow us to handle the import of
+type=&quot;module&quot;. What this does is allow us to handle the import of
 other files and libraries that are packaged (or exported) as modules.
 This is a good practice to get into, and it's also how we're going to
 import the SvJs library.</p>
@@ -829,7 +829,7 @@ import the SvJs library.</p>
 <p>Open up the sketch.js file and include this as your first two lines:</p>
 
 <pre>
-// Import the SvJs library. 
+// <i>Import the SvJs library.</i>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 </pre>
 
@@ -851,9 +851,7 @@ after a while). There's a neat little package called live-server that
 takes care of this for us. To install it, run the following in the
 terminal:</p>
 
-<pre>
-npm install live-server -g
-</pre>
+<pre>npm install live-server -g</pre>
 
 <p>The -g flag tells npm to install this package globally on our machine,
 rather than locally to the project in question. As it's more a general-
@@ -863,7 +861,7 @@ want.</p>
 <p>To get live-server to run, all you need to do is type live-server into
 the terminal. It will then automatically open a new browser window where
 you'll see your project files (assuming you're still in the project's
-base folder in VS Code). Navigate to sketches **➤** 00-template and you
+base folder in VS Code). Navigate to sketches <b>➤</b> 00-template and you
 should see your page load free of any console errors. It's also free of
 any content though, so let's write some code to address this.</p>
 <!-- page 13 -->
@@ -964,9 +962,9 @@ part of the joy of generative art.</p>
   style="width:3.15in"
   title="Our first generative sketch (one variation of many)"
   alt="Our first generative sketch (one variation of many)." />
-<!-- ![](./images/media/image9.jpg){width="3.15in" height="3.15in"} -->
+<!-- ./images/media/image9.jpg){width="3.15in" height="3.15in"} -->
 
-***Figure 1-3.** Our first generative sketch (one variation of many)*
+<p><small><small><i><b>Figure 1-3.</b> Our first generative sketch (one variation of many)</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1-4">1.4 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1969,9 +1967,15 @@ In Figure 2-1, you'll see the output of this code snippet. Obviously
 there's more involved in achieving this spiral arrangement (something
 we'll cover in a later chapter); the main point is how we use the
 iterator variable i to cycle through each color value, that is,
-webSafeColours\[i\].
-
-![](./images/image010.jpg){width="3.15in" height="3.15in"}
+webSafeColours&lbrack;i&rbrack;.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 10.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image010.jpg"
+  style="width:3.15in"
+  title="Our first generative sketch (one variation of many)"
+  alt="Our first generative sketch (one variation of many)." />
+<!-- (./images/image010.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 2-1.** A web-safe color spiral*
 
@@ -2041,7 +2045,7 @@ be anything you want: strings, booleans, functions, arrays, or even
 other objects. Almost anything you can think of can be represented as an
 object. Let's take my laptop as an example.
 
-</pre>
+<pre>
 const myLaptop = { 
   processor: "Core i5", 
   screenSize: "14 inches",
@@ -2062,11 +2066,11 @@ With these properties in place, we can call them with either bracket
 notation, or -- more commonly -- dot notation.
 
 <pre>
-// Accessing an object property with dot notation.
+// <i>Accessing an object property with dot notation.</i>
 myComputer.screenSize;
 -&gt; "14 inches"
 
-// Accessing via bracket notation.
+// <i>Accessing via bracket notation.</i>
 myComputer[processor];
 -&gt; "Core i5"
 </pre>
@@ -2114,7 +2118,7 @@ class based.
 To create an instance of a class, we use the new keyword, followed by
 the class name with brackets. This calls the class constructor.
 
-</pre>
+<pre>
 // <i>Defining a class.</i>
 class StarShip {
   ...
@@ -2134,7 +2138,7 @@ prometheus.takeOff();
 When we created our first generative SVG in Chapter 1, we began by
 creating an SvJs class instance and calling some of its methods.
 
-</pre>
+<pre>
 const svg = new SvJs();
 svg.addTo(document.getElementById('container'));
 </pre>
@@ -2191,9 +2195,9 @@ some numbers as an example.
 
 <pre>
 1 == 1;
--> true
+-&gt; true
 1 == "1";
--> true
+-&gt; true
 </pre>
 
 How can a number equal a string? Well, it can't. JavaScript is casting
@@ -2205,7 +2209,7 @@ other languages.
 
 <pre>
 1 === "1";
--> false
+-&gt; false
 </pre>
 
 This kind of casting also occurs when we try to add numbers to strings,
@@ -2214,9 +2218,9 @@ converted to strings.
 
 <pre>
 1 + "2";
--> "12"
+-&gt; "12"
 "2" + 3;
--> "23"
+-&gt; "23"
 </pre>
 
 To avoid the pitfalls of this kind of implicit type coercion, functions
@@ -2231,7 +2235,7 @@ result in unexpected behavior. Here's one such edge case.
 
 <pre>
 return 1 + 2
--> undefined
+-&gt; undefined
 </pre>
 
 Spacing doesn't matter in JavaScript, so what is going on here? Why
@@ -2713,8 +2717,14 @@ svg.create('rect').set({
   width: 175, height: 600,
   fill: '#49283c\' });
 </pre>
-
-![](./images/image011.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image011.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image011.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 3-1.** A Josef Albers--inspired color illusion*
 
@@ -2802,8 +2812,14 @@ svg.create('circle').set({
   stroke_opacity: 0.1 
 });
 </pre>
-
-![](./images/image012.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 12.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image012.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image012.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 3-2.** The result of our circle overlay loop*
 
@@ -2857,10 +2873,16 @@ will close off the line with a semi-circle at each end, whereas a value
 of square will close it off with -- you guessed it -- a square. Figure
 3-3 shows the different values, with vertical lines on either side to
 delineate where the values come into effect.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 13.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image013.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image013.jpg){width="3.15in" height="1.575in"} -->
 
-![](./images/image013.jpg){width="3.15in" height="1.575in"}
-
-***Figure 3-3.** Values of butt, round, and square (top to bottom)*
+<p><small><small><i><b>Figure 3-3.</b> Values of butt, round, and square (top to bottom)</i></small></small></p>
 
 The other attribute I want to highlight is stroke-dasharray. If, rather
 than a solid line, you would prefer a stroke consisting of dashes, this
@@ -2894,8 +2916,14 @@ dasharray values (all relative to a viewBox width of 1000):
 -   10 30 60
 
 -   50 100 200 100
-
-![](./images/image014.jpg){width="3.15in" height="1.575in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 14.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image014.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image014.jpg){width="3.15in" height="1.575in"} -->
 
 ***Figure 3-4.** Various stroke-dasharray values*
 
@@ -2922,10 +2950,15 @@ svg.create('polyline').set({
   stroke_linejoin: 'round'
 });
 </pre>
-
-![](./images/image015.jpg){width="3.15in" height="1.575in"}
-
-***Figure 3-5.** A polyline element in action*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 15.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image015.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image015.jpg){width="3.15in" height="1.575in"} -->
+<p><small><small><i><b>Figure 3-5.</b> A polyline element in action</i></small></small></p>
 
 I've also used the stroke-linejoin attribute in the preceding example;
 this defines the shape to use at point where each line meets the next.
@@ -2934,10 +2967,16 @@ A polygon element is similar to a polyline element but is used for
 closed shapes, that is, where the start and end points connect. In
 Figure 3-6, we see an arrangement of polygons that might be familiar to
 gamers of a particular platform.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 16.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image016.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image016.jpg){width="3.15in" height="1.575in"} -->
 
-![](./images/image016.jpg){width="3.15in" height="1.575in"}
-
-***Figure 3-6.** Polygons for the players*
+<p><small><small><i><b>Figure 3-6.</b> Polygons for the players</i></small></small></p>
 
 Manually creating shapes with either the polygon or polyline elements
 isn't something we'll focus further on for now, as it can be quite
@@ -3029,8 +3068,14 @@ let line = '"Bart Bucks" are not legal tender.';
     });
   }
 </pre>
-
-![](./images/image017.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 17.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image017.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image017.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 3-7.** The "Bart Bucks" chalkboard gag*
 
@@ -3160,8 +3205,14 @@ has three, and the third has four. As you can see, it's easier to make
 linear gradients look smoother; with radial gradients, subtlety is
 always better, as transitions can seem relatively abrupt (or banded)
 compared to their linear counterparts.
-
-![](./images/image018.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 18.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image018.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image018.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 3-8.** Linear gradients and their radial equivalents*
 
@@ -3237,8 +3288,14 @@ svg.create('rect').set({
 
 You should now see something similar to Figure 3-9. Not especially
 interesting, but sufficient to showcase the basics.
-
-![](./images/image019.jpg){width="3.17in" height="3.17in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 19.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image019.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- ./images/image019.jpg){width="3.17in" height="3.17in"} -->
 
 ***Figure 3-9.** A basic pattern*
 
@@ -3300,8 +3357,14 @@ y: 45 + (i * 50), width: 100, height: 5, fill: '#666'
 </pre>
 
 Now when you hit save, you should see something like Figure 3-10.
-
-![](./images/image020.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 20.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image020.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image020.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 3-10.** A repeating pattern creating an optical illusion*
 
@@ -3436,7 +3499,7 @@ repeat itself anytime soon. Random enough, right?
 
 <pre>
 Math.random();
--> 0.32846662956382255
+-&gt; 0.32846662956382255
 </pre>
 
 The limitation of this function is that it only returns a number between
@@ -3467,7 +3530,7 @@ floating-point number between 0 and 1.
 
 <pre>
 Gen.random();
--> 0.5682831319665758
+-&gt; 0.5682831319665758
 </pre>
 
 If, however, we supply some arguments, it suddenly becomes a lot more
@@ -3476,17 +3539,17 @@ useful. Here are some examples:
 <pre>
 // Return an integer between 50 and 100.
 Gen.random(50, 100);
--> 87
+-&gt; 87
 
 // Return a floating point number between 10 and 20.
 Gen.random(10, 20, true);
--> 17.98188644344106
+-&gt; 17.98188644344106
 
 // Return a random item from an array. 
 let rainbow = ['red', 'yellow', 'pink', 
   'green', 'purple', 'orange', 'blue'];
   Gen.random(rainbow);
--> 'purple'
+-&gt; 'purple'
 </pre>
 
 As you can see, if we provide two numbers, the Gen.random() function
@@ -3537,8 +3600,14 @@ for (let i = 0;
     });
   }
 </pre>
-
-![](./images/image021.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 21.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image021.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image021.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-1.** A random spattering of circles*
 
@@ -3572,7 +3641,14 @@ make it look a little less like a cosmic ball pit? In the next version
 of the sketch, we'll do precisely that. The complexity will ramp up
 considerably, so we'll step through it slowly.
 
-![](./images/image022.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 22.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image022.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image022.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-2.** A more colorful spatter*
 
@@ -3581,14 +3657,15 @@ considerably, so we'll step through it slowly.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below our iterations variable, create an array called elements and
 populate it with a circle, a line, and a rect: let elements =
-\[\'circle\', \'line\', \'rect\'\];
+&lbrack;&apos;circle&apos;, &apos;line&apos;, &apos;rect&apos;&rbrack;;
 
 Next, delete all the existing code in our for loop, and replace it with
 the following line that will pick a random element from the elements
 array defined previously.
 
 <pre>
-// Pick a random element. let element = Gen.random(elements);
+// <i>Pick a random element.</i>
+let element = Gen.random(elements);
 </pre>
 
 In the next step, we'll initialize some variables with random values
@@ -3596,7 +3673,7 @@ that we can later apply to our randomly selected element. In addition to
 our x, y, and fill, we'll also vary our stroke and stroke-width.
 
 <pre>
-// Set up variables that we can use on any element.
+// <i>Set up variables that we can use on any element.</i>
 let x = Gen.random(200, 800); 
 let y = Gen.random(200, 800); 
 let fill = `hsl(${Gen.random(120, 240)} 80% 80% / ${Gen.random(5, 40)}%)`; 
@@ -3623,15 +3700,31 @@ literally, as you'll see).
 // Initialise the properties variable. 
 let props;
 // Populate the properties depending on the element chosen.
-switch(element) { case 'circle': props = { cx: x, cy: y, r:
-Gen.random(1, 10), fill: fill, stroke: stroke, stroke_width: strokeWidth
-}; break; case 'line': props = { x1: x, y1: y, x2: x +
-(Gen.random(-20, 20)), y2: y + (Gen.random(-20, 20)), stroke: stroke
-}; break; case 'rect': props = { x: x, y: y, width: Gen.random(5, 25),
-height:
-Gen.random(5, 25), fill: fill, stroke: stroke, stroke_width:
-strokeWidth, transform: `rotate(${Gen.random(0, 360)} 500 500)`
-};
+switch(element) { 
+  case 'circle': props = { 
+    cx: x, cy: y, r:
+      Gen.random(1, 10), 
+	  fill: fill, 
+	  stroke: stroke, 
+	  stroke_width: strokeWidth
+  }; 
+  break; case 'line': props = { 
+    x1: x, 
+	y1: y, 
+	x2: x + (Gen.random(-20, 20)), 
+	y2: y + (Gen.random(-20, 20)), 
+	stroke: stroke
+  }; 
+  break; case 'rect': props = { 
+    x: x, 
+	y: y, 
+	width: Gen.random(5, 25),
+    height: Gen.random(5, 25), 
+	fill: fill, 
+	stroke: stroke, 
+	stroke_width: strokeWidth, 
+	transform: `rotate(${Gen.random(0, 360)} 500 500)`
+  };
 }
 </pre>
 
@@ -3659,8 +3752,14 @@ the lines of Figure 4-3. Perhaps we weren't so successful in making it
 look less explosive (it looks like an eruption of confetti to me), but
 the different shapes and the addition of stroke values definitely add
 more in the way of variety and visual interest.
-
-![](./images/image023.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 23.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image023.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image023.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-3.** A confetti-like scattering of random elements*
 
@@ -3758,8 +3857,14 @@ grid.moveTo(500, 500);
 
 The grid should now line up nicely in the center of our viewBox, as
 shown in Figure 4-4.
-
-![](./images/image024.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 24.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image024.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image024.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-4.** A regular, centered grid*
 
@@ -3776,7 +3881,7 @@ values we'll use will reflect the grid we've already created; we'll
 alter these afterward.
 
 <pre>
-// Set some grid-related variables. 
+// <i>Set some grid-related variables.</i>
 let gridSize = 700; 
 let rows = 15; 
 let spacing = 5;
@@ -3799,12 +3904,21 @@ values. Next, we need to incorporate these values into our loop. Adjust
 it as follows:
 
 <pre>
-for (let y = 0; y < gridSize; y += increment) { for (let x = 0; x <
-gridSize; x += increment) { grid.create('rect').set({ x: x, y: y,
-width: cellSize, height: cellSize, fill: 'none', stroke: '#eee',
-});
-}
-}
+for (let y = 0; 
+  y &lt; gridSize; 
+  y += increment) { 
+    for (let x = 0; 
+    x &lt; gridSize; 
+	x += increment) { 
+      grid.create('rect').set({ 
+  	    x: x, y: y, 
+	    width: cellSize, 
+	    height: cellSize, 
+	    fill: 'none', 
+	    stroke: '#eee',
+      });
+    }
+  }
 </pre>
 
 Now we can freely adjust our grid variables, and the loop will respond
@@ -3813,9 +3927,14 @@ each refresh (as per Figure 4-5).
 
 let gridSize = Gen.random(400, 800); let rows = Gen.random(2, 20); let
 spacing = Gen.random(5, 10);
-
-![](./images/image025.jpg){width="4.725in"
-height="1.5316666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 25.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image025.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/image025.jpg){width="4.725in" height="1.5316666666666667in"} -->
 
 ***Figure 4-5.** Variations of our regular grid*
 
@@ -3868,9 +3987,14 @@ palettes if you prefer):
 ['#4C5760', '#93A8AC', '#D7CEB2', '#A59E8C', '#66635B']
 ];
 </pre>
-
-![](./images/image026.jpg){width="3.9366666666666665in"
-height="2.0616666666666665in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 26.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image026.jpg"
+  style="width:3.936in"
+  title=""
+  alt="." />
+<!-- (./images/image026.jpg){width="3.9366666666666665in" height="2.0616666666666665in"} -->
 
 ***Figure 4-6.** Our three colour palettes*
 
@@ -3906,9 +4030,14 @@ for a moment to illustrate this. In Figure 4-7, we have a square-shaped
 rect that defines the clipPath, while the circle is the clipped element.
 On the right, you can see the effect of applying the clipPath to the
 circle.
-
-![](./images/image027.jpg){width="3.9366666666666665in"
-height="1.9683333333333333in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 27.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image027.jpg"
+  style="width:3.936in"
+  title=""
+  alt="." />
+<!-- (./images/image027.jpg){width="3.936665in" height="1.96833in"} -->
 
 ***Figure 4-7.** How a clipPath works*
 
@@ -4044,9 +4173,14 @@ And voila! You should now see some variations similar to those of Figure
 properly, that's because the grid's bounding box includes the invisible
 clipped content, which won't always arrange itself symmetrically around
 the grid.)
-
-![](./images/image028.jpg){width="4.725in"
-height="1.6483333333333334in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 28.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image028.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/image028.jpg){width="4.725in" height="1.6483333333333334in"} -->
 
 ***Figure 4-8.** Colorful clip path grid patterns*
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4147,8 +4281,14 @@ Gen.random(y, y + cellSize), stroke: `hsl(${hue} 80% 80% / 0.33)`
 
 This should result in gradiented tetris-like arrangements, similar to
 Figure 4-9.
-
-![](./images/image029.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 29.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image029.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/image029.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-9.** Gen.chance() in action*
 
@@ -4178,8 +4318,14 @@ In Figure 4-10, we can see uniform distribution visualized as the
 variation of the x coordinate in the placement of 1000 vertical lines.
 The lines are all scattered with equal chance of appearing anywhere
 along the x axis.
-
-![](./images/media/image30.jpg){width="4.725in" height="0.55in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 30.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image030.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/media/image30.jpg){width="4.725in" height="0.55in"} -->
 
 ***Figure 4-10.** Uniform distribution of vertical lines*
 
@@ -4194,9 +4340,14 @@ majority of values cluster toward a midpoint and drop off either side of
 this. It is also known as normal distribution, and when graphed, it
 forms a bell-shaped curve. Visualized as a series of vertical lines, it
 looks like Figure 4-11.
-
-![](./images/image031.jpg){width="4.725in"
-height="0.5066666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 31.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image031.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/image031.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
 ***Figure 4-11.** Gaussian distribution of vertical lines*
 
@@ -4282,8 +4433,14 @@ i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
 </pre>
 
 After this, you should end up with something similar to Figure 4-12.
-
-![](./images/media/image32.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 32.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image032.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image32.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 4-12.** Using Gen.gaussian to position 10,000 lines*
 
@@ -4311,9 +4468,14 @@ just 20% of a society's population controlled 80% of its wealth. This
 was the 1890's mind, so had Pareto made the same observations today, we
 might be discussing the 99-1 rule! Be that as it may, the basic idea
 remains the same: there is a lot with a little and a little with a lot.
-
-![](./images/media/image33.jpg){width="4.725in"
-height="0.5066666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 33.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image033.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/media/image33.jpg){width="4.725in" height="0.5066666666666667in"} -->
 
 ***Figure 4-13.** Pareto distribution of vertical lines*
 
@@ -4328,7 +4490,7 @@ integer.
 <pre>
 // Return a pareto-distributed integer, not less than 20.
 Gen.pareto(20, false);
--> 32
+-&gt; 32
 </pre>
 
 Copy the template folder and name it 11-porto-pareto, and below the
@@ -4415,9 +4577,14 @@ region.
 
 In Figure 4-14, the triangle is the mask shape, and the result of
 applying it to the rect is shown on the right.
-
-![](./images/media/image34.jpg){width="4.725in"
-height="1.7666666666666666in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 34.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image034.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/media/image34.jpg){width="4.725in" height="1.7666666666666666in"} -->
 
 ***Figure 4-14.** How masks work*
 
@@ -4461,9 +4628,14 @@ svg.create('circle').set({
 </pre>
 
 A variation of the result is shown in Figure 4-15.
-
-![](./images/media/image35.jpg){width="3.3466666666666667in"
-height="3.3466666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 35.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image035.jpg"
+  style="width:3.346in"
+  title=""
+  alt="." />
+<!-- (./images/media/image35.jpg){width="3.3467in" height="3.3467in"} -->
 
 ***Figure 4-15.** Our Porto Pareto cityscape*
 
@@ -4549,8 +4721,14 @@ in a smoothly ordered fashion, and this is what makes the difference. In
 Figure 5-1, the height of the white lines is randomized using a Perlin
 noise variable. This is an example of one-dimensional noise, that is,
 noise values that operate along a single axis.
-
-![](./images/media/image36.jpg){width="4.725in" height="1.04in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 36.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image036.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/media/image36.jpg){width="4.725in" height="1.04in"} -->
 
 ***Figure 5-1.** A one-dimensional representation of Perlin noise
 values*
@@ -4578,8 +4756,14 @@ the notion of a noise space. Here, the alpha component of each pixel is
 varied according to the corresponding noise value, creating a cloud-like
 formation. You can immediately see why it would be useful for creating
 textures.
-
-![](./images/media/image37.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 37.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image037.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image37.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 5-2.** A two-dimensional representation of Perlin noise
 values*
@@ -4809,7 +4993,7 @@ following is an example:
 <pre>
 // Map a number (5) from one range (0, 10) to another (0, 100). 
 let num = 5; num = Gen.map(num, 0, 10, 0, 100); 
-console.log(num); -> 50
+console.log(num); -&gt; 50
 </pre>
 
 If we apply the Gen.map() function to our noiseValue variable, we can
@@ -4827,8 +5011,14 @@ noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
 Once you've done this, you should see some color injected into our
 matrix (as per Figure 5-3). Enough we hope to get an appreciative nod
 from Neo.
-
-![](./images/media/image38.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 38.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image038.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image38.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 5-3.** That chunk of the matrix that tastes like chicken*
 
@@ -4994,9 +5184,14 @@ lines.moveTo(500, 500); lines.rotate(Gen.random(0, 360));
 As you can see in Figure 5-4, what we end up are a series of slightly
 asymmetric lines that somewhat resemble, to me at least, the dance of
 some deep-sea creatures.
-
-![](./images/media/image39.jpg){width="4.725in"
-height="1.8933333333333333in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 39.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image039.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- ./images/media/image39.jpg){width="4.725in" height="1.893in"} -->
 
 ***Figure 5-4.** Spinning lines or deep-sea creatures?*
 
@@ -5200,8 +5395,14 @@ especially useful if, say, you wanted to move a path's location without
 disturbing its shape; with absolute coordinates, we'd have to change all
 the subsequent numbers, whereas with relative coordinates, we'd only
 have to change the initial M point.
-
-![](./images/media/image40.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 40.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image040.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image40.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 6-1.** Two L\'s drawn by two L commands*
 
@@ -5255,9 +5456,14 @@ svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
 70 10'
 });
 </pre>
-
-![](./images/media/image41.jpg){width="3.5433333333333334in"
-height="0.9616666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 41.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image041.jpg"
+  style="width:3.543in"
+  title=""
+  alt="." />
+<!-- (./images/media/image41.jpg){width="3.5434in" height="0.96167in"} -->
 
 ***Figure 6-2.** Omitting repetitive commands*
 
@@ -5290,8 +5496,14 @@ example, the dot represents the control point coordinates of \[150,
 <pre>
 'M 50 150 Q 150 350 250 150'
 </pre>
-
-![](./images/media/image42.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 42.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image042.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image42.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 6-3.** The control point of a quadratic Bezier curve*
 
@@ -5309,8 +5521,14 @@ perfectly symmetric with the previous one, a "kink" will appear in our
 curve (see Figure 6-4). Now, in this particular case, it's not that
 arduous a job to calculate a control point that would correct this, but
 in more complex cases, this can become a challenge.
-
-![](./images/media/image43.jpg){width="3.15in" height="1.89in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 43.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image043.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image43.jpg){width="3.15in" height="1.89in"} -->
 
 ***Figure 6-4.** A kink in the curve*
 
@@ -5344,9 +5562,14 @@ d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
 Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
 purple second point) from the four additional T points (in red).
-
-![](./images/media/image44.jpg){width="4.725in"
-height="1.2883333333333333in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 44.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image044.jpg"
+  style="width:4.725in"
+  title=""
+  alt="." />
+<!-- (./images/media/image44.jpg){width="4.725in" height="1.2883in"} -->
 
 ***Figure 6-5.** A smooth quadratic curve*
 
@@ -5445,8 +5668,14 @@ the content is centered. The result should resemble Figure 6-6.
 <pre>
 slinky.moveTo(500, 500);
 </pre>
-
-![](./images/media/image45.jpg){width="3.15in" height="3.15in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 45.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image045.jpg"
+  style="width:3.15in"
+  title=""
+  alt="." />
+<!-- (./images/media/image45.jpg){width="3.15in" height="3.15in"} -->
 
 ***Figure 6-6.** Quadratic curves in a slinky formation*
 
@@ -7309,7 +7538,7 @@ you supply two, the first number will control the blur along the x axis
 and the second the blur along the y axis.
 
 <pre>
-// Create a 'motion' blur effect.
+// <i>Create a 'motion' blur effect.</i>
 filter.create('feGaussianBlur').set({ stdDeviation: '20 0' });
 </pre>
 
@@ -8809,7 +9038,7 @@ element.
                 <path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
                     fill="transparent" stroke="black" />
 
-                <!-- The Points -->
+                <!-- The Points --&gt;
                 <circle cx="12" cy="12" r="10" fill="red" />
                 <circle cx="92" cy="94" r="10" fill="red" />
                 <circle cx="90" cy="14" r="10" fill="red" />
@@ -8891,18 +9120,18 @@ is completed.
              
             <g stroke="#FFFFFF" stroke-width="3" fill="none">
                 <!--The shape of path element is defined
-                    by "d" parameter -->
+                    by "d" parameter --&gt;
                 <path d="M157.068 33H165c4.77 0 9 4.464 9
                          9.706v202.758c0 5.243-4.288 
                          9.536-9.524 9.536H10.524C5.288
                          255 1 250.707 1 245.464V42.707C1
                          37.464 5.06 33 10.017 33h9.203" />
               
-                <!--The "Move to" command is called with M  -->
+                <!--The "Move to" command is called with M  --&gt;
                 <path d="M103.302 33H157v45H19V33h52.72" />
               
                 <!--Co-ordinates by "d" are unitless in
-                    the user coordinate system-->
+                    the user coordinate system--&gt;
                 <path d="M18.696 103h137.896v.17" />
                 <path d="M18.738 155h137.854v.068" />
                 <path d="M18.738 178h137.854v-.006" />
@@ -8994,7 +9223,7 @@ Example 3:
              
             <g stroke="#FFFFFF" stroke-width="2" fill="none">
             
-                <!--The path element is the general shape used in SVG -->
+                <!--The path element is the general shape used in SVG --&gt;
                 <path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
                          67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
                          31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
@@ -9096,11 +9325,11 @@ Ex 1:
             
             <g stroke="#FFFFFF" stroke-width="3">
             
-                <!-- Z is for Close Path -->
+                <!-- Z is for Close Path --&gt;
                 <path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
                     fill="transparent" stroke="black" />
 
-                <!-- The Points -->
+                <!-- The Points --&gt;
                 <circle cx="12" cy="12" r="10" fill="red" />
                 <circle cx="92" cy="94" r="10" fill="red" />
                 <circle cx="90" cy="14" r="10" fill="red" />
@@ -9122,30 +9351,30 @@ Ex 1:
 Ex 2:
 
 <pre>
-<!DOCTYPE html>
-<html lang="en">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <title>jQuery DrawSVG Plugin</title>
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-    <link rel="stylesheet" href="style.css">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-"//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+"//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9164,57 +9393,57 @@ Ex 2:
             bottom: 0;
             margin: auto;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks </h1>
-    <b>DrawSVG plugin with callback method</b>
-    <div class="wrapper">
-        <svg viewBox="0 0 200 260" 
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks &lt;/h1&gt;
+    &lt;b&gt;DrawSVG plugin with callback method&lt;/b&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;svg viewBox="0 0 200 260" 
              style="background-color:#ffffff00"
              xmlns="http://www.w3.org/2000/svg" 
-             width="200" height="250">
+             width="200" height="250"&gt;
              
-            <g stroke="#FFFFFF" stroke-width="3" fill="none">
-                <!--The shape of path element is defined
-                    by "d" parameter -->
-                <path d="M157.068 33H165c4.77 0 9 4.464 9
+            &lt;g stroke="#FFFFFF" stroke-width="3" fill="none"&gt;
+                &lt;!--The shape of path element is defined
+                    by "d" parameter --&gt;
+                &lt;path d="M157.068 33H165c4.77 0 9 4.464 9
                          9.706v202.758c0 5.243-4.288 
                          9.536-9.524 9.536H10.524C5.288
                          255 1 250.707 1 245.464V42.707C1
-                         37.464 5.06 33 10.017 33h9.203" />
+                         37.464 5.06 33 10.017 33h9.203" /&gt;
               
-                <!--The "Move to" command is called with M  -->
-                <path d="M103.302 33H157v45H19V33h52.72" />
+                &lt;!--The "Move to" command is called with M  --&gt;
+                &lt;path d="M103.302 33H157v45H19V33h52.72" /&gt;
               
-                <!--Co-ordinates by "d" are unitless in
-                    the user coordinate system-->
-                <path d="M18.696 103h137.896v.17" />
-                <path d="M18.738 155h137.854v.068" />
-                <path d="M18.738 178h137.854v-.006" />
-                <path d="M18.696 227h137.868v-.21" />
-            </g>
-        </svg>
-    </div>
-    <div id="callbackDiv"></div>
+                &lt;!--Co-ordinates by "d" are unitless in
+                    the user coordinate system--&gt;
+                &lt;path d="M18.696 103h137.896v.17" /&gt;
+                &lt;path d="M18.738 155h137.854v.068" /&gt;
+                &lt;path d="M18.738 178h137.854v-.006" /&gt;
+                &lt;path d="M18.696 227h137.868v-.21" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div id="callbackDiv"&gt;&lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         var $svg = $("svg").drawsvg({
             stagger: 2000, // Break is set to 2 seconds
             duration: 5000,
             callback: function() {
                 $('#callbackDiv').html('
-                    <p>
-                           <strong>Animation completed !</strong>
-                       </p>
+                    &lt;p&gt;
+                           &lt;strong&gt;Animation completed !&lt;/strong&gt;
+                       &lt;/p&gt;
             ');
             }
         }).drawsvg("animate");
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 </pre>
 
 
