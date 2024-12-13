@@ -547,9 +547,9 @@ easy to get started with. Just like HTML elements, SVG elements are
 written using opening and closing angle brackets and contain attributes
 with values. Here, for example, is how you'd create a circle:</p>
 
-```
-<circle r="125" cy="250" cx="250" fill="cyan"/>
-```
+<pre>
+&lt;circle r="125" cy="250" cx="250" fill="cyan"/&gt;
+</pre>
 
 <p>The attributes r, cx, cy, and fill in the preceding example refer to the
 circle's radius, the x and y coordinates of its center, and the color to
@@ -564,7 +564,7 @@ element itself, which contains all other SVG elements.</p>
 underlying a very simple composition in the style of Hilma af Klint,
 arguably the first abstract artist in Western art history.</p>
 
-```
+<pre>
 &lt;svg width="500" height="500" style="background-color: #ad3622"&gt;
 &lt;title&gt;A simple Hilma af Klint-inspired knock-off&lt;/title&gt;
 &lt;circle r="125" cy="250" cx="250" fill="#d0d1c9"/&gt;
@@ -572,7 +572,7 @@ arguably the first abstract artist in Western art history.</p>
 &lt;circle r="75" cy="250" cx="250" fill="#5085b4"/&gt;
 &lt;circle r="50" cy="250" cx="250" fill="#d6a946"/&gt;
 &lt;/svg&gt;
-```
+</pre>
 
 <p>As you can see, SVG is written in such a way as to preserve the
 semantics of the code. Search engines love this; no longer are they
@@ -622,7 +622,7 @@ more intuitive and fun to write. Here's an example of a simple SVG
 (Figure 1-2) written using vanilla JavaScript:</p>
 <!-- page 6 -->
 
-```
+<pre>
 const svg = document.createElementNS('&lt;http://www.w3.org/2000/svg&gt;', 'svg'); 
 svg.setAttribute('width', '150px');
 svg.setAttribute('height', '150px'); 
@@ -635,20 +635,20 @@ rect.setAttribute('width', '150');
 rect.setAttribute('height', '150'); 
 rect.setAttribute('fill', 'cornflowerblue');
 svg.appendChild(rect);
-```
+</pre>
 
 <p>And the following snippet is the equivalent SVG written using SvJs
 (don't worry about the details just yet; all you need to note is how
 concise it is vs. vanilla JavaScript). The output of this code you can
 see in Figure 1-2.</p>
 
-```
+<pre>
 const div = document.getElementById('stage'); 
 const svg = new SvJs().set({ width: '150px', height: '150px' }).addTo(div); 
 svg.create('rect').set({ 
   x: 0, y: 0, width: 150, height: 150, fill: 'cornflowerblue'
 });
-```
+</pre>
 <!-- page 7 -->
 
 ![](./images/image008.jpg){width="3.15in" height="3.15in"}
@@ -717,17 +717,17 @@ folder. Next, select the Terminal **➤** New Terminal command, and you
 should see a new window appear at the bottom of the screen referencing
 the current folder location. It should look something like this:</p>
 
-```
+<pre>
 your-name@computer-name ~/Documents/generative-svg
-```
+</pre>
 
 <p>The important thing is that the path references the folder you created
 in the last step (i.e., generative-svg). Once you've verified that,
 you're ready to initialize the project. To do this, type the following
 into the terminal:</p>
-```
+<pre>
 npm init -y
-```
+</pre>
 <p>What this does is run Node's package manager NPM, and the init command
 initializes the project, or "package." The -y flag just tells npm that
 we want to accept all default setup options. You should notice a new
@@ -738,9 +738,9 @@ dependencies, the main one being the SvJs library.</p>
 
 <p>To install SvJs, run the following command:</p>
 
-```
+<pre>
 npm install svjs
-```
+</pre>
 
 <p>This will add a new line in the package.json file, referencing the
 version of SvJs you've just installed. A package-lock.json file will
@@ -783,7 +783,7 @@ to learn this way. Here, however, it's fine, as HTML and CSS aren't our
 focus.</p>
 <!-- page 11 -->
 
-```
+<pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -809,7 +809,7 @@ focus.</p>
   &lt;script src="./sketch.js" type="module"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-```
+</pre>
 
 <p>There's just a couple of things worth pointing out about the preceding
 code: our \<div id=\"container\"\> will be where the generative art
@@ -828,10 +828,10 @@ import the SvJs library.</p>
 <!-- page 12 -->
 <p>Open up the sketch.js file and include this as your first two lines:</p>
 
-```
+<pre>
 // Import the SvJs library. 
 import { SvJs } from '../../node_modules/svjs/src/index.js';
-```
+</pre>
 
 <p>Our template is now complete, ready to be copied for subsequent sketches. Well done!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -851,9 +851,9 @@ after a while). There's a neat little package called live-server that
 takes care of this for us. To install it, run the following in the
 terminal:</p>
 
-```
+<pre>
 npm install live-server -g
-```
+</pre>
 
 <p>The -g flag tells npm to install this package globally on our machine,
 rather than locally to the project in question. As it's more a general-
@@ -884,48 +884,48 @@ your sketch.js file, below the import statement. Read the comments as
 you go (the lines starting with //), which I've purposely kept quite
 verbose so you can get a better handle on what's happening.</p>
 
-```
-// Import the SvJs library. 
+<pre>
+// <i>Import the SvJs library.</i>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Create some global variables. 
+// <i>Create some global variables.</i>
 const svgSize = window.innerWidth > window.innerHeight ?
 window.innerHeight : window.innerWidth; 
 const bgColor = '#181818';
 
-// Create an object to store some of our randomised parameters.
+// <i>Create an object to store some of our randomised parameters.</i>
 const randomised = { 
   hue: random(0, 360), 
   rotation: random(-180, 180),
   iterations: random(10, 100)
 }
 
-// Create our parent SVG and attach it to the element with id 'container'. 
+// <i>Create our parent SVG and attach it to the element with id 'container'.</i>
 const svg = new SvJs(); 
 svg.addTo(document.getElementById('container'));
 
-// Set the width and height of the viewBox and the displayed size of the SVG.
+// <i>Set the width and height of the viewBox and the displayed size of the SVG.</i>
 svg.set({ viewBox: '0 0 1000 1000', width: svgSize, height: svgSize });
 
-// Create a background layer - a rectangle the full size of our viewBox.
+// <i>Create a background layer - a rectangle the full size of our viewBox.</i>
 const rect = svg.create('rect'); rect.set({ x: 0, y: 0, width: 1000, height: 1000, fill: bgColor });
 
-// Run a loop a random number of times to create our ellipses. 
-for (let i = 0; i < randomised.iterations; i += 1) {
+// <i>Run a loop a random number of times to create our ellipses.</i>
+for (let i = 0; i &lt; randomised.iterations; i += 1) {
 
-  // Set the centre point, the x and y radii of our ellipse and its rotation.
+  // <i>Set the centre point, the x and y radii of our ellipse and its rotation.</i>
   let center = 500; 
   let radiusX = 100 + (i * 3);
   let radiusY = 300 + (i * 2);
   let rotation = randomised.rotation + (i * 2);
-  // If our random hue is less than 180, increment it. Otherwise decrement it. 
+  // <i>If our random hue is less than 180, increment it. Otherwise decrement it.</i>
   let hue; 
-  if (randomised.hue < 180) { 
+  if (randomised.hue &lt; 180) { 
     hue = randomised.hue + (i * 3);
   } else {
     hue = randomised.hue - (i * 3);
   }
-  // Create our ellipse. 
+  // <i>Create our ellipse.</i>
   let ellipse = svg.create('ellipse');
   ellipse.set({
     cx: center, 
@@ -938,14 +938,14 @@ for (let i = 0; i < randomised.iterations; i += 1) {
   });
 }
 /** 
- * Gets a random number between a minimum and maximum value.
+ * <i>Gets a random number between a minimum and maximum value.</i>
  */
 function random(min, max, integer = true) {
   let random = Math.random() * (max - min) + min; 
   let number = integer ? Math.floor(random) : random; 
   return number; 
 }
-```
+</pre>
 
 <p>Ok, so quite the code dump! It will no doubt overwhelm anyone new to
 coding, so if you fall into this category and find yourself balking at
@@ -1021,9 +1021,9 @@ functions or variables is something called camel case, where terms are
 joined together in a manner resembling the humps of a camel. For
 example:</p>
 
-```
+<pre>
 thisIsCamelCase soIsThis
-```
+</pre>
 
 <p>As you can see, the first part of the term is entirely lowercase, and
 all subsequent terms use what we'd call title case, where the first
@@ -1037,9 +1037,9 @@ matter of style. The most prevalent stylistic convention you'll come
 across within the JavaScript community is the use of two spaces to
 indent code, as follows:</p>
 
-```
+<pre>
 someCode() { some indented code }
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Semicolons</h2>
@@ -1068,17 +1068,17 @@ asterisk /\* and terminate with an asterisk and forward slash \*/.</p>
 
 <p>// A single-line comment. Useful for quick explanations.</p>
 
-```
-/* * A multi-line comment.
-* Useful for properly documenting code.
+<pre>
+/* * <i>A multi-line comment.</i>
+* <i>Useful for properly documenting code.</i>
 */
-```
+</pre>
 
 <p>Single-line comments can also be placed after code on the same line.</p>
 
-```
-someCode(); // We can safely write a comment here.
-```
+<pre>
+someCode(); // <i>We can safely write a comment here.</i>
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-2">2.2 Values</h2>
@@ -1101,11 +1101,11 @@ int representing integers or whole numbers and float representing
 decimal or floating-point numbers), but in JavaScript, all numeric
 values are of the single type Number.</p>
 
-```
+<pre>
 17 // <i>A whole number.</i>
 23.085 // <i>A decimal number.</i>
 4e2 // <i>A number with an exponent (four to the power of two in this case).</i>
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2b">2.2b Strings</h3>
@@ -1113,10 +1113,10 @@ values are of the single type Number.</p>
 <p>Strings represent textual information, like words and sentences. Strings
 need to be surrounded by quote marks, of the single or double variety.</p>
 
-```
-'There are 10 kinds of people in this world.' // Single quotes
+<pre>
+'There are 10 kinds of people in this world.' // <i>Single quotes</i>
 "Those who understand binary and those who don't." //
-```
+</pre>
 
 <p>Double quotes</p>
 
@@ -1129,15 +1129,15 @@ possible with standard single or double quotes. Template literals are
 surrounded by backticks, and code can be inserted between curly braces
 prepended by a dollar sign, like so:</p>
 
-```
+<pre>
 `Some text here ${someCodeHere}, and more text here. Pretty cool huh?`
-```
+</pre>
 
 <p>This is a more recent feature of JavaScript and is extremely useful for
 handling concatenated (i.e., pieced together) and multi-line strings.
 Let's illustrate this with an example.</p>
 
-```
+<pre>
 // <i>Here's how developers used to have to store multi-line HTML string data.</i>
 let oldWay = '' +
 ' &lt;div class="intro"&gt;n' + 'n' +
@@ -1148,7 +1148,7 @@ let oldWay = '' +
 let newWay = ` &lt;div
 class="intro"&gt; &lt;p&gt;My name is ${name} and I am ${age} years of age.&lt;/p&gt;
 &lt;/div&gt;`;
-```
+</pre>
 
 <p>As you can see, it is much more readable and concise. As a rule,
 whenever you want to mix string values with anything else, backticks are
@@ -1162,10 +1162,10 @@ named after George Boole, inventor of Boolean algebra.</p>
 <p>They can be useful for representing any binary state: yes or no, on or
 off, alive or dead, etc. They are written as simply true or false.</p>
 
-```
+<pre>
 let alive = true; // <i>phew</i>
 let kicking = false; // <i>just sitting</i>
-```
+</pre>
 
 <p>Booleans make conditional statements and comparisons possible, which
 we'll get to a little later.</p>
@@ -1202,11 +1202,11 @@ ECMAScript 6, or ES6 for short), there was no other options available.</p>
 <p>Declaring a variable involves using the keyword, creating a name/
 identifier, and then assigning it a value using the equals operator.</p>
 
-```
+<pre>
 const name = 'David Matthew'; 
 const countryOfBirth = 'Ireland'; 
 let age = 21; // <i>I wish!</i>
-```
+</pre>
 
 What's the difference between const and let? When using const, you're
 declaring a value that shouldn't change. My countryOfBirth is an
@@ -1214,21 +1214,21 @@ example: this is a historical fact that remains constant. If I later
 tried to reassign a new value to countryOfBirth, this would result in an
 error:
 
-```
+<pre>
 countryOfBirth = 'Brazil'; // <i>uh oh...</i>
 -&gt; TypeError: Assignment to constant variable
-```
+</pre>
 
 My age, however, is (alas) subject to change, so it can be updated
 without any issues. Another difference between const and let is that the
 latter can be declared without a value, whereas with const, a value must
 be assigned to it when it is first created.
 
-```
+<pre>
 let a; // <i>A-ok.</i>
 const b; // <i>asking for trouble.</i>
 -&gt; Uncaught SyntaxError: Missing initializer in const declaration
-```
+</pre>
 
 When unsure, should you use const or let? The general consensus in the
 JavaScript community is that you should use const by default and only
@@ -1249,7 +1249,7 @@ As you might have guessed, arithmetic operators allow us to perform
 mathematical operations. The addition operator ( + ) allows us to add
 numbers, but it also allows us to concatenate strings.
 
-```
+<pre>
 // <i>Adding numbers.</i>
 2 + 2
 -&gt; 4
@@ -1257,49 +1257,48 @@ numbers, but it also allows us to concatenate strings.
 // <i>Concatenating strings.</i>
 'I am' + ' so smrt'
 -&gt; 'I am so smrt'
-```
+</pre>
 
 There are also operators for subtraction ( - ), multiplication ( \* ),
 and division ( / ).
 
-```
-// Subtracting numbers.
+<pre>
+// <i>Subtracting numbers.</i>
 9 - 4
 -&gt; 5
 
-// Dividing numbers.
+// <i>Dividing numbers.</i>
 9 / 4
 -&gt; 2.25
 
-// Multiplying numbers.
+// <i>Multiplying numbers.</i>
 9 * 4
 -&gt; 36
-```
+</pre>
 
-ES6 introduced an exponentiation operator ( \*\* ), which allows you to
-multiply one number by a factor of another (i.e., one number to the
-power of another).
+<p>ES6 introduced an exponentiation operator ( &ast;&ast; ), which allows you to
+multiply one number by a factor of another (i.e., one number to the power of another).</p>
 
-```
-// The exponentiation operator.
-2 ** 2
+<pre>
+// <i>The exponentiation operator.</i>
+2 &ast;&ast; 2
 -&gt; 4
 
-2 ** 6
+2 &ast;&ast; 6
 -&gt; 64
 
-2 ** 10
+2 &ast;&ast; 10
 -&gt; 1024
-```
+</pre>
 
 And finally, there is the modulo operator ( % ). This divides one number
 by another and gives you the remainder. This can be especially useful
 when cycling through arrays (which we'll get to later), or quickly
 finding out if an unknown quantity is even or odd.
 
-```
+<pre>
 // <i>The modulo operator in action.</i>
-3.  % 3
+3 % 3
 -&gt; 0
 
 3 % 2
@@ -1307,7 +1306,7 @@ finding out if an unknown quantity is even or odd.
 
 12 % 5
 -&gt; 2
-```
+</pre>
 
 At this point, it's worth mentioning rules of precedence, which
 determine the order in which operations are carried out. The mnemonic
@@ -1326,7 +1325,7 @@ BEMDAS can help us out here.
     numbers. As with multiplication and division, these have equal
     precedence and are evaluated left to right.
 
-```
+<pre>
 // <i>These sums look similar but result in different answers.</i>
 4 / 2 * 2 + 4
 -&gt; 8
@@ -1336,34 +1335,30 @@ BEMDAS can help us out here.
 
 4 / 2 ** 2 + 4
 -&gt; 5
-```
+</pre>
 
-When in doubt, use parentheses to group operations. This can also
-improve readability.
+<p>When in doubt, use parentheses to group operations. This can also improve readability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4b">2.4b Comparison Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As the name suggests, comparison operators compare values. They always
-return a boolean, that is, a true or false value.
+<p>As the name suggests, comparison operators compare values. They always return a boolean, 
+that is, a true or false value.</p>
 
--   \< is the "less than" operator.
+<ul>
+  <li>&lt; is the "less than" operator.</li>
+  <li>&lt;= is the "less than or equal to" operator.</li>
+  <li>&gt; is the "more than" operator.</li>
+  <li>&gt;= is the "more than or equal to" operator.</li>
+  <li>== is the "equal to" operator.</li>
+  <li>=== is the "strictly equal to" operator.</li>
+</ul>
 
--   \<= is the "less than or equal to" operator.
-
--   \> is the "more than" operator.
-
--   \>= is the "more than or equal to" operator.
-
--   == is the "equal to" operator.
-
--   === is the "strictly equal to" operator.
-
-Because of some subtle quirks with how JavaScript works, I would
+<p>Because of some subtle quirks with how JavaScript works, I would
 recommend sticking with the strict versions of the equality operators.
-This can reduce unexpected surprises (i.e., bugs).
+This can reduce unexpected surprises (i.e., bugs).</p>
 
-```
-// Some examples of comparison operators in action.
+<pre>
+// <i>Some examples of comparison operators in action.</i>
 1.  &gt; 2
 -&gt; false
 
@@ -1374,8 +1369,7 @@ This can reduce unexpected surprises (i.e., bugs).
 -&gt; true
 5 == "5" -&gt; true // <i>but not really.</i>
 5 === "5" -&gt; false // <i>that's more like it.</i>
-```
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4c">2.4c Logical Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1386,11 +1380,11 @@ classical logic.
 When conjoining two conditions with &&, the result is true if and only
 if both conditions are true.
 
-```
+<pre>
 true && false -&gt; false
 false && true -&gt; false
 true && true -&gt; true
-```
+</pre>
 
 When using the disjunction (fancy word for *or*), first make sure you
 use the right characters on your keyboard. The \| character is not a
@@ -1398,21 +1392,21 @@ capital *i* or lowercase *L*; it's what's known as the pipe character.
 Depending on your regional keyboard layout, it might be located near
 either your Enter key or your Shift key.
 
-When using \|\|, the result is true if one or both conditions are true.
+When using &vert;&vert;, the result is true if one or both conditions are true.
 This makes intuitive sense if we remember that we are essentially asking
 the computer "is at least one of these conditions true?"
 
-```
-true || <i>false -&gt; true</i>
-false || <i>true -&gt; true</i>
-false || <i>false -&gt; false</i>
-```
+<pre>
+true &vert;&vert; <i>false -&gt; true</i>
+false &vert;&vert; <i>true -&gt; true</i>
+false &vert;&vert; <i>false -&gt; false</i>
+</pre>
 
 Finally, we have the negation operator !. This "flips" the condition
 immediately following it. It can also be uniquely coupled with the
 equality operator to mean not equal to ( !== ).
 
-```
+<pre>
 !true
 -&gt; false
 
@@ -1424,10 +1418,10 @@ equality operator to mean not equal to ( !== ).
 
 !(2 &gt; 1)
 -&gt; false
-```
+</pre>
 
 A common source of error for new programmers is using a single pipe
-character \| or a single ampersand & instead of the two together. By
+character &vert; or a single ampersand & instead of the two together. By
 themselves, these characters perform bitwise operations (i.e., they
 manipulate binary values) and are for advanced programming only.
 
@@ -1445,7 +1439,7 @@ Without some way to control the flow of traffic, mayhem would ensue.
 Here is where conditionals are needed, such as the various rules that
 might underpin a traffic light system.
 
-```
+<pre>
 // <i>The basic syntax.</i>
 if (conditionIsTrue) { 
   // <i>... run some code</i>
@@ -1455,11 +1449,11 @@ if (pedestrianBtnIsPressed) {
   wait(30s); activateRedLights(); wait(3s);
   activateGreenManSignal(); 
 }
-```
+</pre>
 
 To the basic if statement, we can append else and else if conditions too.
 
-```
+<pre>
 if (a &gt; b) { 
   doThis();
 } else if (a === b) { 
@@ -1467,13 +1461,13 @@ if (a &gt; b) {
 } else { 
   doOtherThing(); 
 }
-```
+</pre>
 
 If a given condition isn't true, the code inside its curly braces
 doesn't get executed. Let's take the preceding example again, with the
 values filled in for a and b.
 
-```
+<pre>
 let a = 3; 
 let b = 4;
 if (a &gt; b) { 
@@ -1484,17 +1478,17 @@ if (a === b) {
 } else {
 doOtherThing(); // <i>both the above are false, so this code runs.</i>
 }
-```
+</pre>
 
 The last conditional form I want to cover is the ternary operator. As
 its name suggests, it is technically an operator, but because it plays
 the role of a conditional check, I felt it was more appropriate to
 include it here.
 
-```
+<pre>
 // <i>The basic structure of the ternary operator.</i>
 conditionA ? expressionIfTrue : expressionIfFalse;
-```
+</pre>
 
 In the aforementioned, we're asking "Is conditionA true? If so, run
 expressionIfTrue. Otherwise, run expressionIfFalse."
@@ -1504,10 +1498,10 @@ variable based on whether a certain condition holds true. If that
 condition doesn't hold true, we then assign it a different value. This
 is exactly what I used it for in our first generative sketch:
 
-```
+<pre>
 const svgSize = window.innerWidth &gt; window.innerHeight ?
 window.innerHeight : window.innerWidth;
-```
+</pre>
 
 Here, we're saying "If the window's innerWidth is greater than its
 innerHeight, assign the innerHeight to svgSize. Otherwise, assign to it
@@ -1535,11 +1529,11 @@ loop.
 The while loop is the simpler of the two. It's basic structure is as
 follows:
 
-```
+<pre>
 while (condition === true) {
   // <i>run code here while condition is true.</i>
 }
-```
+</pre>
 
 Now, if the condition in question *always* evaluates to true, that would
 lead to an infinite loop. An important ingredient therefore in any
@@ -1548,7 +1542,7 @@ This is normally a number that either increments or decrements and is
 known as an iterator. By convention, i tends to be used as the variable
 name.
 
-```
+<pre>
 // <i>Set up the iterator.</i>
 let i = 0;
 while (i &lt;= 99) {
@@ -1557,7 +1551,7 @@ while (i &lt;= 99) {
   // <i>Increment i by 1 each time the loop runs.</i>
   i = i + 1; 
 }
-```
+</pre>
 
 The preceding loop will run 100 times, starting at 0 and continuing
 until it is less than or equal to 99, and on each iteration, it will log
@@ -1568,14 +1562,14 @@ It's worth noting at this point that there are shorthand ways of
 incrementing and decrementing -- or indeed multiplying and dividing --
 variable values:
 
-```
+<pre>
 // <i>Long way.</i>
 i = i + 1 i = i * 2 i = i -- 1 i = i / 2
 // <i>Shorter way.</i>
 i += 1 i *= 2 i -= 1 i /= 2
 // <i>Even shorter way (only valid for adding or subtracting by 1).</i>
 i++ i--
-```
+</pre>
 
 The shorthand notation is what you'll likely encounter in practice, so
 we'll continue to use it here.
@@ -1586,13 +1580,13 @@ The for loop uses the same logic as our example while loop but bakes the
 iterator and incrementation into a single line. Its typical structure is
 as follows:
 
-```
+<pre>
 for (let i = startingNumber; 
   i &lt; upperLimit; 
     i += increment) {
     // <i>run some code while i is less than the upperLimit.</i>
   }
-```
+</pre>
 
 The for loop structure is succinctly divided into three sections. We
 first initialize the iterator, then set the terminating condition, and
@@ -1600,26 +1594,26 @@ then decide how we're going to vary the iterator. Here's the for loop
 version of our previous example, where we logged the value of i to the
 browser console on each iteration.
 
-```
+<pre>
 for (let i = 0; i &lt;= 99; 
   i++) { console.log(i); }
-```
+</pre>
 
 You don't always have to increment the iterator. You can just as easily
 reverse the loop and have it count down from 99 to 0 by making a few
 tweaks.
 
-```
+<pre>
 for (let i = 99; i &gt;= 0; 
   i--) { console.log(i); }
-```
+</pre>
 
 It is common to use the value of the iterator in the body of the for
 loop in combination with other variables to achieve some dynamic result.
 In our opening generative sketch for example, I used i to progressively
 increase the radiusX and radiusY of each ellipse.
 
-```
+<pre>
 // <i>Run a loop (a randomised number of times) to create our ellipses.</i>
 for (let i = 0; 
   i &lt; randomised.iterations; i += 1) {
@@ -1628,7 +1622,7 @@ for (let i = 0;
   let radiusY = 300 + (i * 2);
   // <i>... more code.</i>
 }
-```
+</pre>
 
 There's lots more to love about loops, and other variations also exist
 (such as the for in, the for of, and the forEach which we'll cover
@@ -1647,12 +1641,12 @@ Standard functions are defined using the function keyword followed by
 the name you give it, which is then appended with parentheses and
 opening and closing curly braces where the task is defined.
 
-```
+<pre>
 // <i>Basic syntax of a standard function.</i>
 function peformSomeTask() {
 // <i>... code defining the task.</i>
 }
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7a">Function Parameters</h3>
@@ -1662,13 +1656,13 @@ purpose is to make code reusable. One way to do this is to add
 parameters to the function, which are defined within the parentheses of
 the function name.
 
-```
+<pre>
 // <i>A function with parameters.</i>
 function sayHello(name) {
   // <i>Greet the user the Irish way.</i>
   console.log(`Howaya ${name}, what's the craic?`); 
 }
-```
+</pre>
 
 Functions may or may not explicitly return a value, and if they do, only
 one return value is allowed. In the preceding example, a value isn't
@@ -1678,10 +1672,10 @@ queried). In the following example, however, we are specifically looking
 to get a value returned from the function, and this is where we use the
 return keyword.
 
-```
+<pre>
 // <i>Another function with parameters, this time returning a value.</i>
 function squareNumber(number) { return number * number; }
-```
+</pre>
 
 The preceding function, when called, will return the result we're
 looking for, that is, the square of the number we supply it. But how do
@@ -1693,33 +1687,33 @@ To use a function we've defined, we need to invoke it. This is
 synonymous with calling or executing the function. It can be done like
 so:
 
-```
+<pre>
 // <i>Invoking a function.</i>
 performSomeTask();
-```
+</pre>
 
 To invoke a function that has parameters as part of its definition, we
 supply it with arguments. Arguments are the actual values we give the
 function when we invoke it. The parameters, on the other hand, are how
 we define these values. Let's see how we might invoke a function with arguments.
 
-```
+<pre>
 sayHello('Dave'); 
 -&gt; "Howaya Dave, what's the craic?"
 console.log(squareNumber(4));
 -&gt; 16
-```
+</pre>
 
 Here, we've provided the argument \'Dave\' for the first function and 4
 for the second, and we've received the expected output. But what if we
 called the function and forgot the arguments? Let's try it out.
 
-```
+<pre>
 sayHello(); 
 -&gt; "Howaya undefined, what's the craic?"
 squareNumber(); 
 -&gt; NaN
-```
+</pre>
 
 We've encountered undefined before, but not NaN. This just means "not a
 number." In both cases, our functions don't work so well without
@@ -1729,14 +1723,14 @@ One straightforward way is to assign default values when defining a
 function's parameters. Let's rewrite our sayHello() function as an
 example.
 
-```
+<pre>
 function sayHello(name = ", ah it's yourself") {
   // <i>Greet the user the Irish way.</i>
   console.log(`Howaya &dollar;{name}, what's the craic?`);
 }
 sayHello(); 
 -&gt; "Howaya, ah it's yourself, what's the craic?"
-```
+</pre>
 
 As you can see, creating a default value is as simple as assigning a
 value to the parameter when you define it. Now we've created a more
@@ -1747,11 +1741,11 @@ as much sense. Instead, we could use the ternary technique covered
 earlier to provide some actionable feedback if the function is called
 without an argument.
 
-```
+<pre>
 function squareNumber(number) {
   return number ? number * number : 'Please include the number you want to square';
 }
-```
+</pre>
 
 In the squareNumber() function body, our ternary operator is essentially
 asking "Is number defined? If so, return the result of multiplying it by
@@ -1761,12 +1755,12 @@ At this point, you should be in a better position to fully understand
 the function defined in our first generative sketch. Have another look
 and see if it makes more sense now.
 
-```
+<pre>
 function random(min, max, integer = true) { 
   let random = Math.random() * (max - min) + min;
   let number = integer ? Math.floor(random) : random; return number; 
 }
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7c">2.7c Scope</h3>
@@ -1778,21 +1772,21 @@ when working with functions.
 If, for example, we defined a variable within a function, it would only
 be visible within that function.
 
-```
+<pre>
 function scopeTest() { 
   const a = 1; }
     console.log(a);
     -&gt; Uncaught ReferenceError: a is not defined
-```
+</pre>
 
 However, if we defined the same variable outside that function, it would
 be visible from *within* the function.
 
-```
+<pre>
 const a = 1;
 function scopeTest() { console.log(a); }
 scopeTest(); -&gt; 1
-```
+</pre>
 
 In the first case, the variable is block-scoped, that is, confined to
 the block of the function. In the latter case, the variable is defined
@@ -1806,10 +1800,10 @@ the scope of our variables. This is one of the main reasons why var has
 been deprecated, as it can't be "contained" in the same way that let and
 const can be.
 
-```
+<pre>
 function scopeTest() { var a = 1; }
 console.log(a); -&gt; 1
-```
+</pre>
 
 As you can see earlier, when using var, the variable can break out of
 the surrounding block, and this can be problematic in larger programs.
@@ -1829,27 +1823,27 @@ functions are often called anonymously as function expressions, executed
 in order to return a value. Anonymous functions can also be assigned to
 variables that then store the returned value.
 
-```
+<pre>
 // <i>An anonymous function expression assigned to a variable.</i>
 const sum = function(a, b) { return a + b; }
-```
+</pre>
 
 In the preceding example, the variable can be used to execute the
 function.
 
-```
+<pre>
 sum(5, 4); -&gt; 9
-```
+</pre>
 
 One thing we cannot do with anonymous functions is use them at the start
 of a statement.
 
-```
+<pre>
 // <i>The below is a no-no.</i>
 function(a, b) { return a + b;
 }
 -&gt; Uncaught SyntaxError: Function statements require a function name
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7e">2.7e Arrow Functions</h3>
@@ -1858,27 +1852,27 @@ So far we've covered functions declared with the function keyword, but
 there is another, more modern way of writing functions. These functions
 are called arrow functions due to the arrow syntax they employ.
 
-```
+<pre>
 // <i>Basic syntax of an arrow function.</i>
 const peformSomeTask = () =&gt; { // <i>... code defining the task.</i>
 }
-```
+</pre>
 
 They are concise alternatives to the traditional function expressions
 we've just covered. Let's rewrite the sum() function as an example.
 
-```
+<pre>
 const sum = (a, b) =&gt; { return a + b; }
-```
+</pre>
 
 A little shorter, as you can see. But it can get even more concise than
 this if our function only consists of a single statement that returns a
 value (which exactly describes our sum() function). In such a case, we
 don't need the curly braces or even the return statement itself.
 
-```
+<pre>
 const sum = (a, b) =&gt; a + b;
-```
+</pre>
 
 Because the arrow function body consists of just a single statement (
 a + b ), it is assumed we want the value of this statement returned.
@@ -1926,10 +1920,10 @@ can mix numbers, strings, and booleans into a single array if required
 (though it's not necessarily recommended you do this). Arrays take the
 following format:
 
-```
+<pre>
 // <i>The syntax of a standard array.</i>
 let arrayName = [item1, item2, item3, ... itemN];
-```
+</pre>
 
 Each array item has a corresponding index, or number, that represents
 its position in the array. The first item in an array has an index of 0
@@ -1937,7 +1931,7 @@ its position in the array. The first item in an array has an index of 0
 index of 1, the third of 2, etc. To directly access an item in array by
 its index, you use square bracket notation like so:
 
-```
+<pre>
 // <i>Access the first item.</i>
 let firstItem = arrayName[0];
 
@@ -1946,7 +1940,7 @@ let secondItem = arrayName[1];
 
 // <i>Access the nth item.</i>
 let nthItem = arrayName[n + 1];
-```
+</pre>
 
 This lends itself particularly well to loops. Iterating over items in an
 array with a for loop is a very common practice, and it's something
@@ -1962,14 +1956,14 @@ set the color (i.e., fill ) of a newly created circle on each iteration.
 And to make sure we do this 216 times, we use the length property of the
 array to control how many times we run our loop.
 
-```
+<pre>
 for (let i = 0; 
 i &lt; webSafeColours.length; i += 1) {
   // <i>... some code.</i>
   circle.fill(webSafeColours[i]);
   // <i>... more code.</i>
 }
-```
+</pre>
 
 In Figure 2-1, you'll see the output of this code snippet. Obviously
 there's more involved in achieving this spiral arrangement (something
@@ -1985,17 +1979,17 @@ If you're brave enough to inspect the code behind the example, you'll
 notice that to add each color to the array initially, I used an array
 method called push(). The relevant line is
 
-```
+<pre>
 colours.push(colour);
-```
+</pre>
 
 The push() method is how we add an item to the end of an array (think of
 loading a truck from the back). If instead we wanted to add the item to
 the beginning of the array, we'd use a method called unshift().
 
-```
+<pre>
 colours.unshift(colour);
-```
+</pre>
 
 If we wanted to remove an item from the end of the array, we'd use the
 pop() method (think popcorn popping out of a pot). Conversely, if we
@@ -2009,7 +2003,7 @@ acts on each item of the array in turn, using a function as its
 argument. As an aside, functions that are passed as arguments in this
 manner are known as callback functions.
 
-```
+</pre>
 // <i>Set up an sample array.</i>
 const someNumbers = [2, 4, 6, 8, 10];
 
@@ -2018,7 +2012,7 @@ someNumbers.forEach((item) => {
   console.log(item * 2); 
 });
 -&gt; 4 8 12 16 20
-```
+</pre>
 
 The forEach() loop can be a nice succinct way of iterating over an array
 if the main purpose of the loop is to perform some action specifically
@@ -2036,18 +2030,18 @@ is that objects label their values with names, whereas arrays label
 their values with numbers (i.e., the index of each item). An object
 takes the following format:
 
-```
+<pre>
 const objectName = { 
   name1: value1, name2: value2, name3: value3
 };
-```
+</pre>
 
 These name-value pairs are the object's **properties**. The values can
 be anything you want: strings, booleans, functions, arrays, or even
 other objects. Almost anything you can think of can be represented as an
 object. Let's take my laptop as an example.
 
-```
+</pre>
 const myLaptop = { 
   processor: "Core i5", 
   screenSize: "14 inches",
@@ -2062,12 +2056,12 @@ const myLaptop = {
   }
   // <i>etc</i>
 }
-```
+</pre>
 
 With these properties in place, we can call them with either bracket
 notation, or -- more commonly -- dot notation.
 
-```
+<pre>
 // Accessing an object property with dot notation.
 myComputer.screenSize;
 -&gt; "14 inches"
@@ -2075,22 +2069,22 @@ myComputer.screenSize;
 // Accessing via bracket notation.
 myComputer[processor];
 -&gt; "Core i5"
-```
+</pre>
 
 We can also update and create new object properties via the same syntax.
 
-```
+</pre>
 // <i>Updating an object's property.</i>
 myComputer.inSleepMode = true;
 // <i>Creating a new object property.</i>
 myComputer.storage = "512 GB SSD";
-```
+</pre>
 
 If you take a look back at our first sketch again, you'll notice that I
 used an object to store some randomized settings that are later called
 in the sketch:
 
-```
+<pre>
 ...
 
 const randomised = { 
@@ -2099,7 +2093,7 @@ const randomised = {
   iterations: random(10, 100) 
 }
 ... let rotation = randomised.rotation + (i * 2);
-```
+</pre>
 
 This is a good way of getting around the issue of global variables I
 mentioned earlier. Using an object, we can make our settings globally
@@ -2120,30 +2114,30 @@ class based.
 To create an instance of a class, we use the new keyword, followed by
 the class name with brackets. This calls the class constructor.
 
-```
+</pre>
 // <i>Defining a class.</i>
 class StarShip {
   ...
 }
 // <i>Instantiating (or constructing) a class.</i>
 const prometheus = new StarShip();
-```
+</pre>
 
 Functions that are part of a class are known as methods. A class will
 usually have, at the very least, methods to get and set its properties.
 
-```
+<pre>
 prometheus.setDestination = 'Moon LV-223, Zeta 2 Reticuli';
 prometheus.takeOff();
-```
+</pre>
 
 When we created our first generative SVG in Chapter 1, we began by
 creating an SvJs class instance and calling some of its methods.
 
-```
+</pre>
 const svg = new SvJs();
 svg.addTo(document.getElementById('container'));
-```
+</pre>
 
 This is the extent to which we will be working with classes; writing
 them won't be part of this book.
@@ -2162,16 +2156,16 @@ We learned previously that null is essentially the absence of
 information. Isn't it strange then that null is also considered an
 object? We can confirm this by using the typeof check.
 
-```
+<pre>
 typeof null; -&gt; object
-```
+</pre>
 
 Despite this, null is not considered an instance *of* an object. We can
 confirm this by using the instanceof check.
 
-```
+<pre>
 null instanceof Object; -&gt; false
-```
+</pre>
 
 NaN (not a number) also presents us with some quantum-level weirdness
 that would have Schrodinger's cat perk up its ears. It is apparently not
@@ -2195,12 +2189,12 @@ different types into matching types to suit the situation (the process
 of converting a data type is also known as casting it). Let's play with
 some numbers as an example.
 
-```
+<pre>
 1 == 1;
 -> true
 1 == "1";
 -> true
-```
+</pre>
 
 How can a number equal a string? Well, it can't. JavaScript is casting
 the string as a number to make sense of the expression. It is
@@ -2209,21 +2203,21 @@ type coercion). That's why we're always better off using the strict
 equality operator in JavaScript, something that doesn't exist in many
 other languages.
 
-```
+<pre>
 1 === "1";
 -> false
-```
+</pre>
 
 This kind of casting also occurs when we try to add numbers to strings,
 but it works in the opposite direction; the numbers in this case are
 converted to strings.
 
-```
+<pre>
 1 + "2";
 -> "12"
 "2" + 3;
 -> "23"
-```
+</pre>
 
 To avoid the pitfalls of this kind of implicit type coercion, functions
 like parseInt(), parseFloat(), and toString() can be used to re-cast or
@@ -2235,19 +2229,19 @@ I mentioned at the start of the chapter that you can write JavaScript
 without semicolons if you wish, but that in some edge cases, it can
 result in unexpected behavior. Here's one such edge case.
 
-```
+<pre>
 return 1 + 2
 -> undefined
-```
+</pre>
 
 Spacing doesn't matter in JavaScript, so what is going on here? Why
 isn't the expression returning 3? Well, here the Automatic Semicolon
 Insertion feature is being invoked under the hood. The actual code being
 evaluated is this:
 
-```
+<pre>
 return; 1 + 2;
-```
+</pre>
 
 To avoid this, either familiarize yourself with such edge cases or just
 use semicolons.
@@ -2307,11 +2301,11 @@ fragment as it's also known, is that SVG element whose parent element
 (if it has one) is not in the SVG namespace. An example would be an SVG
 attached to an HTML DOM node.
 
-```
+<pre>
 <div id="container">
   <svg></svg>
 </div>
-```
+</pre>
 
 This is worth mentioning only because SVGs can contain other SVGs; in
 these cases, only one of those can be considered the parent SVG element.
@@ -2326,36 +2320,36 @@ Let's reopen the JavaScript template file we set up in Chapter 1 (it
 should be located in sketches/00-template/sketch.js) and add the
 following line to it:
 
-```
+<pre>
 // Parent SVG. 
 const svg = new SvJs();
-```
+</pre>
 
 The new SvJs() constructor, if called without any arguments, creates an
 SVG element. It can also be used to create any other SVG element by
 passing in the name of that element as a string.
 
-```
+<pre>
 // Using the SvJs constructor to create a circle element. 
 const circle = new SvJs('circle');
-```
+</pre>
 
 To add our parent SVG element to our web page, we use the SvJs addTo()
 method. In this case, we'll pass in the \<div\> with the id of container
 that we set up earlier in our HTML (see Chapter 1). Add the following to
 the template sketch:
 
-```
+<pre>
 const container = document.getElementById('container'); 
 svg.addTo(container);
-```
+</pre>
 
 Most functions in SvJs are chainable, meaning you can chain them
 together using dot notation, like so:
 
-```
+<pre>
 methodOne().methodTwo();
-```
+</pre>
 
 The new SvJs() constructor method is no exception, so our new parent SVG
 element can actually be immediately attached to a DOM element once
@@ -2364,10 +2358,10 @@ method chain (think of the dot as the link). And if we pass the
 getElementById() DOM method as an argument instead of assigning it to a
 variable, we can condense our code down to a single line:
 
-```
+<pre>
 // Parent SVG. 
 const svg = new SvJs().addTo(document.getElementById('container'));
-```
+</pre>
 
 Concision doesn't always beat clarity however, so if this one-liner is a
 little too compressed for your liking, keep your template code as is, no
@@ -2395,10 +2389,10 @@ ternary operator that we covered in the previous chapter is particularly
 useful for these kinds of checks. Include it as follows in the template
 to initialize the svgSize variable:
 
-```
+<pre>
 // Viewport size (1:1 aspect ratio). 
 const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
-```
+</pre>
 
 The viewBox is another important top-level SVG attribute. It is related
 to the viewport but has more powerful (and more complex) capabilities.
@@ -2463,20 +2457,20 @@ more structured definition of each method.
 Getting back to setting values, the set() method accepts an object as
 its argument and takes the following format:
 
-```
+<pre>
 svg.set({ attribute1: value1, attribute2: value2, attributeN: valueN )};
-```
+</pre>
 
 If you're setting a large number of properties at once, you might
 consider adjusting the formatting for the sake of readability.
 
-```
+<pre>
 svg.set({ 
   attribute1: value1, attribute2: value2,
   ... 
   attributeN: valueN 
 )};
-```
+</pre>
 
 It's up to you however; either way works.
 
@@ -2484,10 +2478,10 @@ The attributes of note for our parent SVG are the width and height
 (which constitute the viewport) and the viewBox. We can now add the
 following code to our template to set these attributes:
 
-```
+<pre>
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
 });
-```
+</pre>
 
 If you run the live-server command and navigate to our template folder,
 you'll just see a blank page at this point. This is because our SVG
@@ -2500,9 +2494,9 @@ you'll find yourself doing this too often, but it's good to be aware the
 functionality exists. The following code, for example, outputs our
 viewBox value to the console:
 
-```
+<pre>
 console.log(svg.get('viewBox'));
-```
+</pre>
 
 Fetching attribute values via the get() method can be useful when
 working with event listeners, or in other cases where the values are
@@ -2516,17 +2510,17 @@ a while. This is where the SvJs create() method comes in, as it combines
 these two steps into one. To create an element and automatically append
 it to our parent SVG, we'd simply write
 
-```
+<pre>
 svg.create('elementName');
-```
+</pre>
 
 When creating an element, it's usually best to assign it to a variable
 in the process, unless you're sure you won't need a reference to it
 again later. You might therefore write the aforementioned as
 
-```
+<pre>
 const variableName = svg.create('elementName');
-```
+</pre>
 
 The create() method is chainable and can be called by child elements
 too.
@@ -2555,9 +2549,9 @@ As we need to set up a background, let's start with the rectangle.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A rectangle is a rect in the SVG spec, so to create one, we'd write
 
-```
+<pre>
 svg.create('rect');
-```
+</pre>
 
 Next, we'll chain the set() method, focusing on the following five
 attributes of the rect element: x and y to set the position of its top
@@ -2568,7 +2562,7 @@ As we want a square rectangle (as a square is technically just a special
 kind of rectangle), we just need to set our width and height to the same
 value. Add the following code to our template:
 
-```
+<pre>
 // Background.
 svg.create('rect').set({ 
   x: 0, 
@@ -2576,7 +2570,7 @@ svg.create('rect').set({
   width: 1000, 
   height: 1000, 
   fill: '#181818' });
-```
+</pre>
 
 Note that we're defining our background's position and dimensions
 relative to the viewBox, not the viewport. This keeps our values
@@ -2588,7 +2582,7 @@ This will suffice for our template. In case you've missed anything
 earlier or just want to ensure your code is in order, here's the
 template sketch.js file in full:
 
-```
+<pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 // Parent SVG. 
@@ -2613,7 +2607,7 @@ svg.create('rect').set({
   height: 1000, 
   fill: '#181818'
 });
-```
+</pre>
 
 Any further code we write will be specific to the sketch we're working
 on. Make sure you've saved your changes before copying the 00-template
@@ -2646,7 +2640,7 @@ sketch is a Josef Albers--inspired color illusion and shows that with
 just plain rectangles, it's possible to create a somewhat interesting
 composition (illustrated in Figure 3-1).
 
-```
+<pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 // Viewport size (1:1 aspect ratio). 
@@ -2718,7 +2712,7 @@ svg.create('rect').set({
   y: 200, 
   width: 175, height: 600,
   fill: '#49283c\' });
-```
+</pre>
 
 ![](./images/image011.jpg){width="3.15in" height="3.15in"}
 
@@ -2750,13 +2744,13 @@ The circle is the simplest (and arguably the most perfect) of all
 shapes. We define the position of its center via cx and cy attributes
 and its radius via the r attribute.
 
-```
+<pre>
 // A simple circle example. 
 svg.create('circle').set({ 
   cx: 50, 
   cy: 50,
   r: 25 });
-```
+</pre>
 
 In the next sketch, let's shift things up a gear with a for loop. We're
 going to play with the effect of layering semitransparent circles of
@@ -2767,7 +2761,7 @@ maintain a modicum of organization).
 
 Beneath where we defined our background, include the following code:
 
-```
+<pre>
 // Circle overlay loop. 
 for (let i = 1; 
 i <= 6; i += 1) {
@@ -2807,7 +2801,7 @@ svg.create('circle').set({
   stroke_width: 2,
   stroke_opacity: 0.1 
 });
-```
+</pre>
 
 ![](./images/image012.jpg){width="3.15in" height="3.15in"}
 
@@ -2823,7 +2817,7 @@ Ellipses are similar to circles but offer two radii attributes -- rx and
 ry -- instead of the single r. In the first generative sketch from
 Chapter 1, we saw the ellipse in action. Here's the relevant snippet:
 
-```
+<pre>
 // Create our ellipse. 
 let ellipse = svg.create('ellipse');
 ellipse.set({ 
@@ -2833,7 +2827,7 @@ ellipse.set({
   ry: radiusY,
   ...
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5d">3.5d Lines, Polylines, and Polygons</h3>
@@ -2844,7 +2838,7 @@ you'd use the line element. It requires two sets of coordinates: x1 and
 y1 to define the initial position and x2 and y2 to define the endpoint.
 It also requires the stroke to be defined (as it is a line after all).
 
-```
+<pre>
 // The humble line.
 svg.create('line').set({ 
   x1: 10, 
@@ -2853,7 +2847,7 @@ svg.create('line').set({
   y2: 90, 
   stroke: '#333'
 });
-```
+</pre>
 
 This is a good opportunity to showcase some other stroke-related
 attributes that can alter the appearance of a line. The first is stroke-
@@ -2884,11 +2878,11 @@ creating a repeating pattern.
 There isn't a strict upper limit on the amount of values you provide, so
 there is scope to get quite creative here.
 
-```
+<pre>
 // Setting an irregular stroke-dasharray.
 svg.create('line').set({
   ... stroke_dasharray: 10 30 60 });
-```
+</pre>
 
 In Figure 3-4, from top to bottom, we see the following stroke-
 dasharray values (all relative to a viewBox width of 1000):
@@ -2912,7 +2906,7 @@ points needs to be converted to a string before being set as the
 attribute value. I show how to do this in the following example using
 the join() array method. The result is shown in Figure 3-5.
 
-```
+<pre>
 // An array of points. let pointsArray = [
   100, 250, 250, 250, 285, 175, 325, 325, 390, 50, 450, 400, 500, 200,
   515, 250, 900, 250
@@ -2927,7 +2921,7 @@ svg.create('polyline').set({
   stroke_linecap: 'round', 
   stroke_linejoin: 'round'
 });
-```
+</pre>
 
 ![](./images/image015.jpg){width="3.15in" height="1.575in"}
 
@@ -2962,24 +2956,24 @@ a minimum, we need to define the x and y coordinates of where we want it
 to appear (relative to the bottom left corner of the text's bounding
 box), its color, and its content.
 
-```
+<pre>
 // Creating text. 
 let text = svg.create('text').set({ 
   x: 20, 
   y: 30,
   fill: 'white' 
 });
-```
+</pre>
 
 So how do we define the textual content if the content isn't itself an
 attribute? It's not a child node either, so creating a string and
 appending it wouldn't work. Instead, what we need to do is use the SvJs
 content() method.
 
-```
+<pre>
 // Using the content() method to insert text.
 text.content('I have an unhealthy obsession with SVG.');
-```
+</pre>
 
 What if we wanted to get a bit more elaborate with our text and style
 them with some web fonts? There are a few ways we could do this, but
@@ -2997,10 +2991,10 @@ so switch over to the index.html file and add the following line to the
 \<head\> section. This calls in a Google font called Mynerve, which has
 the handwritten look we're going for.
 
-```
+<pre>
 <link href="https://fonts.googleapis.com/css2?family=Mynerve
 &display=swap" rel="stylesheet">
-```
+</pre>
 
 If Bart had the option of running a for loop to minimize the repetitive
 nature of his punishment, I'm sure he would have taken it. Let's do this
@@ -3018,7 +3012,7 @@ viewport.
 
 The output is shown in Figure 3-7.
 
-```
+<pre>
 // The line to use for the gag. 
 let line = '"Bart Bucks" are not legal tender.'; 
   line = line.toUpperCase();
@@ -3034,7 +3028,7 @@ let line = '"Bart Bucks" are not legal tender.';
       font_family: 'Mynerve'
     });
   }
-```
+</pre>
 
 ![](./images/image017.jpg){width="3.15in" height="3.15in"}
 
@@ -3047,12 +3041,12 @@ title attribute works; it helps with accessibility and appears as a
 tooltip on hover. It can be used to title the parent SVG element, or any
 of its child elements.
 
-```
+<pre>
 // Create a title for a circle element.
 let circle = svg.create('circle'); let circleTitle =
 circle.create('title'); circleTitle. content('I get around-round, I
 get around.');
-```
+</pre>
 
 A title element is suitable for shorter descriptions; for more extended
 descriptions, the desc element is recommended. This doesn't render and
@@ -3079,10 +3073,10 @@ content.
 We'll rely on the functionality provided by the defs element in the
 upcoming sections on gradients, patterns, and other reusable elements.
 
-```
+<pre>
 // Defining a defs element. 
 let defs = svg.create('defs');
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-8">3.8 Gradients</h2>
@@ -3121,9 +3115,9 @@ To remedy the aforementioned, SvJs offers a dedicated createGradient()
 method that significantly speeds up the process of constructing a
 gradient. Its syntax is as follows:
 
-```
+<pre>
 createGradient(id, type, colours, rotation)
-```
+</pre>
 
 With the first argument, we assign an id to the gradient so that it can
 be referenced or called upon later by an element. With the second
@@ -3142,7 +3136,7 @@ it.
 Here's how we might create a simple three-stop linear gradient and apply
 it to a rect element.
 
-```
+<pre>
 // Create the gradient with an id of 'grad'.
 svg.createGradient('grad', 'linear', ['red', 'orange', 'yellow'], 90);
 
@@ -3153,7 +3147,7 @@ svg.create('rect').set({
   width: 400, 
   height: 400, 
   fill: 'url(#grad)' });
-```
+</pre>
 
 As you can see, the shape we want the gradient applied to references the
 gradient id as an internal url. In the preceding example, we've applied
@@ -3201,10 +3195,10 @@ In our sketch.js file below the code for the background, create a
 pattern with an id of 'illusion' and with a width of 100 and a height of
 200.
 
-```
+<pre>
 // Create our pattern. 
 const pattern = svg.createPattern('illusion', 100, 200);
-```
+</pre>
 
 This simply initializes our pattern; we haven't placed anything within
 it yet, nor have we set up a shape to apply it to. We just have a
@@ -3214,7 +3208,7 @@ In our first iteration of this sketch, I'll show you how a simple
 pattern gets applied to a shape. We'll get more elaborate with the
 pattern content afterward. Add the following code to our sketch:
 
-```
+<pre>
 // Create a white rectangle within the pattern.
 pattern.create('rect').set({ 
   x: 10, 
@@ -3223,14 +3217,14 @@ pattern.create('rect').set({
   height: 180, 
   fill: '#eee' 
 });
-```
+</pre>
 
 Now that we have our simple pattern in place (consisting of a single
 white rectangle), it's time to apply it to a shape. For simplicity,
 let's apply it to another rect the full size of the SVG viewBox, like
 so:
 
-```
+<pre>
 // Apply our pattern to a rect the size of the viewBox.
 svg.create('rect').set({ 
   x: 0, 
@@ -3239,7 +3233,7 @@ svg.create('rect').set({
   height: 1000, 
   fill: 'url(#illusion)'
 });
-```
+</pre>
 
 You should now see something similar to Figure 3-9. Not especially
 interesting, but sufficient to showcase the basics.
@@ -3252,7 +3246,7 @@ In the next few steps, we'll create our optical illusion. First, comment
 out the code that created the white rectangle pattern (but keep the
 shape it's applied to).
 
-```
+<pre>
 // Create our pattern. 
 const pattern = svg.createPattern('illusion', 100, 200);
 
@@ -3268,14 +3262,14 @@ svg.create('rect').set({
   height: 1000, 
   fill: 'url(#illusion)' 
 });
-```
+</pre>
 
 To create the base of our optical illusion, we need a total of eight
 rectangles. Four of them will be white squares arranged in a particular
 order, and four will be thin gray rectangles used as separators. We'll
 use a couple of for loops to create these. First, the white squares:
 
-```
+<pre>
 // Create 4 x white squares within the pattern.
 for (let i = 0; 
   i < 4; i += 1) { 
@@ -3283,7 +3277,7 @@ for (let i = 0;
       x: (i === 3) ? 20: i * 20, y: i * 50, width: 50, height: 50, fill: '#eee'
     });
   }
-```
+</pre>
 
 The width, height, and fill merely repeat themselves on each iteration;
 the only attributes we're varying are the x and y coordinates. To do
@@ -3297,13 +3291,13 @@ If you view the pattern at this point, you should see an undulating
 array of squares. It's not an optical illusion yet; it looks more like
 rudimentary pixel art. To complete the illusion, we need our separators.
 
-```
+<pre>
 // Create 4 x thin grey rectangles to separate the squares.
 for (let i = 0; i < 4; i += 1) { pattern.create('rect').set({ x: 0,
 y: 45 + (i * 50), width: 100, height: 5, fill: '#666'
 });
 }
-```
+</pre>
 
 Now when you hit save, you should see something like Figure 3-10.
 
@@ -3326,19 +3320,19 @@ is to group elements together for the purposes of transformation (i.e.,
 moving, rotating, or skewing multiple elements at once). And another is
 to simply group items together to better organize your SVG.
 
-```
+<pre>
 // Create a circle and add it to a group.
 const circle = svg.create('circle'); 
 const group = svg.create('g');
 circle.addTo(group);
-```
+</pre>
 
 If you want to group elements together for later reuse (so that they are
 only displayed when referenced), you'd use the symbol element. Symbols,
 like patterns, can have their own viewport and viewBox. But they are
 called via the use element rather than applied to a fill or stroke.
 
-```
+<pre>
 // Create a symbol consisting of a circle and square. 
 const symbol = svg.create('symbol'); 
 symbol.set({ 
@@ -3352,7 +3346,7 @@ symbol.set({
 svg.create('use').set({ href: '#mySymbol', x: 0, y: 0 });
 svg.create('use').set({ href: '#mySymbol', x: 200, y: 200 });
 svg.create('use').set({ href: '#mySymbol', x: 400, y: 400 });
-```
+</pre>
 
 Symbols don't have quite the same appeal outside of a declarative
 context, so going forward we won't be relying on them for our
@@ -3440,10 +3434,10 @@ and hitting return should provide sufficient assurance that the
 17-decimal floating-point number it throws back at you is unlikely to
 repeat itself anytime soon. Random enough, right?
 
-```
+<pre>
 Math.random();
 -> 0.32846662956382255
-```
+</pre>
 
 The limitation of this function is that it only returns a number between
 0 and 1. Granted, we can easily multiply the output by whatever factor
@@ -3461,9 +3455,9 @@ To load the Gen module, we need to add it to our import statement at the
 top of our sketches. Modify the template sketch to include this as the
 first line (replacing the previous import statement):
 
-```
+<pre>
 import { SvJs, Gen } from '../../node_modules/svjs/src/ index.js';
-```
+</pre>
 
 Now we can call Gen.random() and any of the other Gen methods
 
@@ -3471,15 +3465,15 @@ Now we can call Gen.random() and any of the other Gen methods
 Gen.random() behaves just like Math.random(); it returns a
 floating-point number between 0 and 1.
 
-```
+<pre>
 Gen.random();
 -> 0.5682831319665758
-```
+</pre>
 
 If, however, we supply some arguments, it suddenly becomes a lot more
 useful. Here are some examples:
 
-```
+<pre>
 // Return an integer between 50 and 100.
 Gen.random(50, 100);
 -> 87
@@ -3493,7 +3487,7 @@ let rainbow = ['red', 'yellow', 'pink',
   'green', 'purple', 'orange', 'blue'];
   Gen.random(rainbow);
 -> 'purple'
-```
+</pre>
 
 As you can see, if we provide two numbers, the Gen.random() function
 will treat them as the lower and upper thresholds of a range and return
@@ -3521,9 +3515,9 @@ Below our background code, initialize a variable to store a random
 iteration count, which will determine how many times our for loop (which
 we'll set up after) will run.
 
-```
+<pre>
 let iterations = Gen.random(500, 1000);
-```
+</pre>
 
 Our iterations will be an integer anywhere between 500 and 1000. With
 that in place, let's write the loop. We'll keep it simple initially and
@@ -3532,7 +3526,7 @@ position within the dimensions of the viewBox (0 to 1000), and its
 radius will be between 1 and 10. This should create an effect not too
 dissimilar to the spattering of paint (illustrated in Figure 4-1).
 
-```
+<pre>
 for (let i = 0; 
   i < iterations; 
   i += 1) { 
@@ -3542,7 +3536,7 @@ for (let i = 0;
       r: Gen.random(1, 10)
     });
   }
-```
+</pre>
 
 ![](./images/image021.jpg){width="3.15in" height="3.15in"}
 
@@ -3556,9 +3550,9 @@ Let's change this up by varying the hue and opacity of the fill. We'll
 do this with the hsl() function, which is something we'll be drawing
 upon quite a lot. Its syntax is as follows:
 
-```
+<pre>
 hsl(hue saturation lightness / alpha)
-```
+</pre>
 
 The hue can be any number between 0 and 360. The saturation and
 lightness are percentage values, and the alpha component (which
@@ -3568,9 +3562,9 @@ and 1.
 In our loop, add the following line below the radius (making sure to
 separate the lines with a comma):
 
-```
+<pre>
 fill: `hsl(${Gen.random(0, 360)} 80% 80% / ${Gen. random(5, 40)}%)`
-```
+</pre>
 
 Now our speckles have come a little more to life (see Figure 4-2). But
 why stick to circles? Why not throw some other elements into the mix and
@@ -3593,22 +3587,22 @@ Next, delete all the existing code in our for loop, and replace it with
 the following line that will pick a random element from the elements
 array defined previously.
 
-```
+<pre>
 // Pick a random element. let element = Gen.random(elements);
-```
+</pre>
 
 In the next step, we'll initialize some variables with random values
 that we can later apply to our randomly selected element. In addition to
 our x, y, and fill, we'll also vary our stroke and stroke-width.
 
-```
+<pre>
 // Set up variables that we can use on any element.
 let x = Gen.random(200, 800); 
 let y = Gen.random(200, 800); 
 let fill = `hsl(${Gen.random(120, 240)} 80% 80% / ${Gen.random(5, 40)}%)`; 
 let stroke = `hsl(${Gen.random(0, 120)} 80% 80% / ${Gen.random(5, 40)}%)`;
 let strokeWidth = `${Gen.random(1, 3)}`;
-```
+</pre>
 
 You'll notice here that I've constrained the x and y variables to a
 range of 200 to 800, which ensures our shapes remain within that region
@@ -3625,7 +3619,7 @@ switch statement lends itself particularly well to this situation. It
 allows us to populate the props variable on a case-by-case basis (quite
 literally, as you'll see).
 
-```
+<pre>
 // Initialise the properties variable. 
 let props;
 // Populate the properties depending on the element chosen.
@@ -3639,7 +3633,7 @@ Gen.random(5, 25), fill: fill, stroke: stroke, stroke_width:
 strokeWidth, transform: `rotate(${Gen.random(0, 360)} 500 500)`
 };
 }
-```
+</pre>
 
 The one line here that perhaps calls for a little further explanation is
 the transform attribute included in the rect properties. This attribute
@@ -3655,10 +3649,10 @@ We have one line left to include in the loop, right after our switch
 statement. This is the line that actually creates the element and
 applies the props to it.
 
-```
+<pre>
 // Create the element and set its properties.
 svg.create(element).set(props);
-```
+</pre>
 
 When you run the sketch now, you should (hopefully) see something along
 the lines of Figure 4-3. Perhaps we weren't so successful in making it
@@ -3695,7 +3689,7 @@ The outer loop will therefore be our y axis, moving down. For each
 iteration of the y axis, the inner (nested) loop will move across,
 populating the x axis.
 
-```
+<pre>
 // Example nested loop structure.
 for (let y = 0; y < height; y += 1) { for (let x = 0; x < width; x
 += 1) {
@@ -3703,21 +3697,21 @@ for (let y = 0; y < height; y += 1) { for (let x = 0; x < width; x
 // Code goes here.
 }
 }
-```
+</pre>
 
 Let's create a sketch to better illustrate this. Copy and rename the
 template folder, renaming it to 07-regular-grids. Below the background,
 we'll set up a group element to act as our grid container.
 
-```
+<pre>
 // Create our grid container group.
 let grid = svg.create('g');
-```
+</pre>
 
 Now we'll run our for loop, appending a rect element to the grid on each
 iteration.
 
-```
+<pre>
 // A nested loop to visualise the grid. 
 for (let y = 0; y < 700; 
   y += 50) { 
@@ -3732,7 +3726,7 @@ for (let y = 0; y < 700;
       });
     }
   }
-```
+</pre>
 
 The values we've used here aren't especially meaningful; we could have
 chosen a different increment value, iteration count, width and height
@@ -3757,10 +3751,10 @@ want to position one element inside another.
 
 After the loop, call the moveTo() method as follows:
 
-```
+<pre>
 // Centre the grid within the viewBox. 
 grid.moveTo(500, 500);
-```
+</pre>
 
 The grid should now line up nicely in the center of our viewBox, as
 shown in Figure 4-4.
@@ -3781,12 +3775,12 @@ Before our for loop, set and initialize the following variables. The
 values we'll use will reflect the grid we've already created; we'll
 alter these afterward.
 
-```
+<pre>
 // Set some grid-related variables. 
 let gridSize = 700; 
 let rows = 15; 
 let spacing = 5;
-```
+</pre>
 
 What we need next are variables that control the loop increment value
 and the size of each cell. These values, however, should be *derived*
@@ -3794,24 +3788,24 @@ from those we've set previously, rather than worked out afresh each time
 we want to change the grid. With a little bit of basic math, here's how
 we'd do this:
 
-```
+<pre>
 let increment = gridSize / rows; 
 let cellSize = Math.abs(increment - spacing);
-```
+</pre>
 
 The Math.abs() function just ensures our cellSize is always a positive
 value, which can prevent errors if we go crazy with our rows and spacing
 values. Next, we need to incorporate these values into our loop. Adjust
 it as follows:
 
-```
+<pre>
 for (let y = 0; y < gridSize; y += increment) { for (let x = 0; x <
 gridSize; x += increment) { grid.create('rect').set({ x: x, y: y,
 width: cellSize, height: cellSize, fill: 'none', stroke: '#eee',
 });
 }
 }
-```
+</pre>
 
 Now we can freely adjust our grid variables, and the loop will respond
 accordingly. We could even randomize them and get a different grid on
@@ -3847,12 +3841,12 @@ choose between them?
 One popular approach is to store a pre-chosen palette as an array of
 color values, like so:
 
-```
+<pre>
 // Create a colour palette. 
 let palette = ['#5465FF', '#788BFF',
 '#9BB1FF', '#BFD7FF',
 '#E2FDFF'];
-```
+</pre>
 
 There are many sites out there, too numerous to name, where you might
 stumble upon color palette inspiration. In fact, you might find it
@@ -3867,13 +3861,13 @@ Let's create a two-dimensional array containing three color palettes
 group, include the following code (substituting in your own color
 palettes if you prefer):
 
-```
+<pre>
 // Create our colour palettes. let palettes = [
 ['#5465FF', '#788BFF', '#9BB1FF', '#BFD7FF', '#E2FDFF'],
 ['#22577A', '#38A3A5', '#57CC99', '#80ED99', '#C7f9CC'],
 ['#4C5760', '#93A8AC', '#D7CEB2', '#A59E8C', '#66635B']
 ];
-```
+</pre>
 
 ![](./images/image026.jpg){width="3.9366666666666665in"
 height="2.0616666666666665in"}
@@ -3883,10 +3877,10 @@ height="2.0616666666666665in"}
 Next, we're going to randomly select one of these palettes and store it
 in a variable that we can call on later.
 
-```
+<pre>
 // Pick a random palette. 
 let pickedPalette = Gen.random(palettes);
-```
+</pre>
 
 Now on to our grid variables. You can leave this as they were from the
 last sketch, but I'm not going to randomize the gridSize or spacing this
@@ -3923,7 +3917,7 @@ within the clipPath element is the actual shape or path that will do the
 "clipping." Here's how we'd create something like the semi-circle
 example from Figure 4-7.
 
-```
+<pre>
 // Initialise the clipPath with an id.
 let clip = svg.create('clipPath').set({ id: 'clip1' });
 
@@ -3943,19 +3937,19 @@ svg.create('circle').set({
   fill: '#80ffe6',
   clip_path: 'url(#clip1)'
 });
-```
+</pre>
 
 As you can see, the clipPath is called via its id, treated as an
 internal url reference, much like gradients and patterns. Let's get back
 to our sketch now and apply this same logic within our loop. First,
 create the nested loop as we did before:
 
-```
+<pre>
 for (let y = 0; y \< gridSize; y += increment) { for (let x = 0; x \<
 gridSize; x += increment) {
 }
 }
-```
+</pre>
 
 Next, create the clipPath. We need to create a unique id for each
 instance, so we can't pass in a static string as we did previously --
@@ -3963,20 +3957,20 @@ otherwise, the id would be duplicated on each loop iteration. Instead
 what we can do is use the x and y iterator variables to generate a
 dynamic string, using template literal syntax like so:
 
-```
+<pre>
 // Create our clip path with a unique id. let clip =
 svg.create(\'clipPath\').set({ id: \`\${x}\${y}\` });
-```
+</pre>
 
 Now we can create the actual shape of the clipPath. We'll keep it
 straightforward and make it square, that is, a rect with a width and
 height equal to our cellSize.
 
-```
+<pre>
 // Create the clip path shape.
 clip.create(\'rect\').set({ x: x, y: y, width: cellSize, height:
 cellSize });
-```
+</pre>
 
 With the clipPath in place, we need to decide what to put into it.
 Here's where we can get creative! There are four corners of each cell,
@@ -3985,7 +3979,7 @@ these four positions. The coordinates of these positions are determined
 by the current x and y values, along with the cellSize. Here's how we'd
 calculate these positions and choose one of them at random:
 
-```
+<pre>
 // Define our possible positions. 
 let positions = [
 [x, y], // top left
@@ -3995,7 +3989,7 @@ let positions = [
 ];
 // Pick a random position. 
 let pickedPosition = Gen.random(positions);
-```
+</pre>
 
 Now, to create the circle group. This will involve a third loop (so a
 loop within a loop within a loop -- loopception if you will), where we
@@ -4003,7 +3997,7 @@ will create five circles radiating out from a randomly chosen center
 point. And let's not forget about our palette picked out earlier; the
 fill of each circle will be colored accordingly.
 
-```
+<pre>
 // Create a group for our circles. 
 let circles = grid.create('g');
 
@@ -4014,7 +4008,7 @@ r: cellSize - (i * (cellSize / 5)), // this took a bit of tweaking
 fill: pickedPalette[i]
 });
 }
-```
+</pre>
 
 We have a couple more steps to go. We haven't actually *applied* the
 clipPath to anything yet, so if we were to run our sketch at this point,
@@ -4023,7 +4017,7 @@ applying the clipPath to the circle group rather than the circles
 themselves. And as the last step within the loop, we'll create a square
 border to frame each cell, just to give things a little more definition.
 
-```
+<pre>
 // Apply the clip path to the circle group. 
 circles.set({ clip_path: `url(#${clip.get('id')})` });
 
@@ -4036,14 +4030,14 @@ grid.create('rect').set({
   fill: 'none', 
   stroke: '#eee', 
 });
-```
+</pre>
 
 Now, outside the loop, center our grid as we've done before.
 
-```
+<pre>
 // Centre the grid within the viewBox. 
 grid.moveTo(500, 500);
-```
+</pre>
 
 And voila! You should now see some variations similar to those of Figure
 4-8. (As an aside, if you find that the grid isn't always centering
@@ -4082,20 +4076,20 @@ By default (i.e., without any arguments), Gen.chance() returns either
 true or false based on odds of 50/50, or 50%. If we supply a single
 argument, it's interpreted as a percentage.
 
-```
+<pre>
 // The below returns true 60% of the time.
 Gen.chance(60);
-```
+</pre>
 
 If two numbers are supplied, the arguments are interpreted as odds. This
 can be useful if you prefer thinking of probabilities more in terms of
 placing a bet at a bookie than calculating a precise percentage value
 (which is actually done for you under the hood).
 
-```
+<pre>
 // There is a 7 to 2 chance of this returning true.
 Gen.chance(7, 2);
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-5b">4.5b Chance in Action</h3>
@@ -4107,16 +4101,16 @@ all content from the inner loop (leaving you with an empty nested for
 loop). Next, replace the palettes array and pickedPalette variable with
 a randomly generated hue.
 
-```
+<pre>
 // Pick a random hue. 
 let hue = Gen.random(0, 360);
-```
+</pre>
 
 You can leave the grid-related variables as they are, or tweak them if
 you prefer. Next, *between* the x and y loops (so within the first loop
 but before the second), increment the hue like so:
 
-```
+<pre>
 // A nested loop to create the grid. 
 for (let y = 0; y < gridSize; y +=
 increment) {
@@ -4124,7 +4118,7 @@ increment) {
 // Increment the hue relative to the rows, keeping it within 0 and 360.
 hue = (hue >= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
 for (let x = 0; x < gridSize; x += increment) { ...
-```
+</pre>
 
 This might seem like an overly complex way of increasing the hue value,
 but really it's just doing two things: first, it's ensuring the hue
@@ -4140,7 +4134,7 @@ based on the result it returns. This loop will create random line
 elements inside each cell, but only if the cell is activated by the
 Gen.chance() function. We'll set the actual probability to 60%.
 
-```
+<pre>
 // Run the loop based on chance.
 if (Gen.chance(60)) { for (let i = 0; i < cellSize; i += 1) {
 grid.create('line').set({ x1: Gen.random(x, x + cellSize), y1:
@@ -4149,7 +4143,7 @@ Gen.random(y, y + cellSize), stroke: `hsl(${hue} 80% 80% / 0.33)`
 });
 }
 }
-```
+</pre>
 
 This should result in gradiented tetris-like arrangements, similar to
 Figure 4-9.
@@ -4224,10 +4218,10 @@ a standard deviation of 1. What this means in practice is that
 By supplying arguments to Gen.gaussian(), we can modify the mean and
 standard deviation.
 
-```
+<pre>
 // Adjusting the mean and standard deviation to 10 and 2 respectively.
 Gen.gaussian(10, 2);
-```
+</pre>
 
 In the preceding example, adjusting the mean to 10 and standard
 deviation to 2 would translate to 68% of values falling within -2 and +2
@@ -4238,11 +4232,11 @@ extreme outliers. If, for example, you wanted to make sure you kept the
 results to within a factor of 3 either side of the standard deviation,
 you could use the Gen.constrain() function to bound the results like so:
 
-```
+<pre>
 // Bounding the results of Gen.gaussian() to within -3 and +3. 
 let gaussian = Gen.gaussian(0, 1);
 let constrainedGaussian = Gen.constrain(gaussian, -3, 3);
-```
+</pre>
 
 Let's move on and create a quick sketch to illustrate how we could use
 the results returned from Gen.gaussian() to map x and y coordinates
@@ -4251,33 +4245,33 @@ across our viewBox. Copy our template and call it something like
 loop that will run 10,000 times (yep, that's a lot!), and inside it,
 generate a couple of Gaussian coordinates.
 
-```
+<pre>
 // Run a loop 10,000 times. 
 for (let i = 0; i < 10000; i += 1) {
   // Generate x and y co-ordinates with a gaussian distribution.
   let gaussianX = Gen.gaussian(500, 150); 
   let gaussianY = Gen.gaussian(500, 150); 
 }
-```
+</pre>
 
 The coordinates are based around the center of the viewBox (i.e., 500),
 with a standard deviation of 150. Next, and still within the loop,
 create our lines, basing them on our Gaussian coordinates and adding a
 bit of randomization to their endpoints.
 
-```
+<pre>
 // Create the lines based on the gaussian co-ordinates.
 svg.create('line').set({ x1: gaussianX, y1: gaussianY, x2: gaussianX +
 Gen.random(-10, 10), y2: gaussianY + Gen.random(-10, 10), stroke:
 `hsl(${Gen.random(150, 270)} 80% 80% / 0.8)` });
-```
+</pre>
 
 You could stop here and see the circular pattern that emerges, but I
 added another little loop (after the first one, not within it) to subtly
 emphasize the shape of the distribution with a series of fading circular
 strokes.
 
-```
+<pre>
 // Create a series of circles to frame the distribution. 
 for (let i = 0;
 i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
@@ -4285,7 +4279,7 @@ i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
 50)})`, stroke_ width: 15
 });
 }
-```
+</pre>
 
 After this, you should end up with something similar to Figure 4-12.
 
@@ -4331,25 +4325,25 @@ two arguments; the first defines the minimum number in the range to be
 returned, and the second defines whether this number will be a float or
 integer.
 
-```
+<pre>
 // Return a pareto-distributed integer, not less than 20.
 Gen.pareto(20, false);
 -> 32
-```
+</pre>
 
 Copy the template folder and name it 11-porto-pareto, and below the
 background, create a group that will contain our cityscape.
 
-```
+<pre>
 // Create a group for our generative city.
 let portoPareto = svg.create('g');
-```
+</pre>
 
 The cityscape will have three main elements: the sky, the river (or
 port), and the buildings. The sky and river will both be simple rect
 elements with gradients; we'll create these first.
 
-```
+<pre>
 // Create the sky gradient. 
 svg.createGradient('sky', 'linear',
 ['#f58b10', '#d21263',
@@ -4367,7 +4361,7 @@ svg.createGradient('river', 'linear',
 // Create the river and apply the gradient.
 portoPareto.create('rect').set({ x: 150, y: 555, width: 700, height:
 295, fill: 'url(#river)' });
-```
+</pre>
 
 Hopefully there won't have been any surprises in the aforementioned.
 
@@ -4380,7 +4374,7 @@ limits. However, using Gen.constrain() alone with a set upper limit
 leads to a clipped effect on the highest buildings, so to even this out,
 I've added in a Gen.random() function to vary the upper limit.
 
-```
+<pre>
 // A loop for our generative cityscape.
 for (let i = 0; i < 60; i += 1) {
   // Get a pareto distribution with a min height of 20. 
@@ -4399,7 +4393,7 @@ for (let i = 0; i < 60; i += 1) {
     stroke_width: 8
   });
 }
-```
+</pre>
 
 We now have our cityscape in place, but we're not done yet. It's quite
 flat-looking, and I'd like it to be framed within a circle and for the
@@ -4433,7 +4427,7 @@ is create a mask with a circle shape, and the fill of this circle will
 contain a radial gradient. We'll then apply it to the portoPareto group
 we created earlier.
 
-```
+<pre>
 // Create a radial gradient. 
 svg.createGradient('radialGrad', 'radial', ['#ffffff', '#ffffff60']);
 
@@ -4445,13 +4439,13 @@ mask.create('circle').set({ cx: 500, cy: 500, r: 325, fill: 'url(#radialGrad)', 
 portoPareto.set({ 
   mask: 'url(#mask)'
 });
-```
+</pre>
 
 You should now see the cityscape cut out in the shape of this circle,
 with the edges slightly fading out. As a final step, I've added in a
 gradiented circular stroke to frame the content a little more clearly.
 
-```
+<pre>
 // Create a linear gradient for our circular frame.
 svg.createGradient('strokeGrad', 'linear', ['#eeeeee', '#eeeeee15']);
 
@@ -4464,7 +4458,7 @@ svg.create('circle').set({
   stroke: 'url(#strokeGrad)',
   stroke_width: 2.5 
 });
-```
+</pre>
 
 A variation of the result is shown in Figure 4-15.
 
@@ -4599,17 +4593,17 @@ be simple to use and to have as light a footprint as possible. It
 resides in its own module, so like the Gen module, we have to import it
 before we can use it.
 
-```
+<pre>
 import { Noise } from '../../node_modules/svjs/src/index.js';
-```
+</pre>
 
 Unlike Gen, which is a collection of functions, the Noise module is
 class based, so we first need to instantiate it.
 
-```
+<pre>
 // Create an instance of the Noise class.
 let noise = new Noise();
-```
+</pre>
 
 The class has a single method called get() that accepts an x coordinate
 and optional y coordinate as arguments and returns the value at that
@@ -4622,7 +4616,7 @@ to do is gradually modify it by traversing the noise space. We do this
 by incrementing the noiseX and/or noiseY coordinates. Here's how this
 might look within a loop:
 
-```
+<pre>
 // Initialise our noise instance and noise co-ordinates first. 
 let noise = new Noise(); 
 let noiseX = 15, noiseY = 20;
@@ -4632,7 +4626,7 @@ for (let i = 0; i < 1000; i += 1) {
   let noiseValue = noise.get(noiseX, noiseY); ... // Do something with noiseValue
   noiseX += 0.003; noiseY += 0.003; 
 }
-```
+</pre>
 
 As you can see, we define the initial noiseX and noiseY coordinates
 outside the loop, use them to fetch a noiseValue within it, and then
@@ -4663,10 +4657,10 @@ is smallest, and Math.min() does this in the most succinct manner. A
 small tweak to be sure, but one that hints at the many uses of
 JavaScript's built-in Math module.
 
-```
+<pre>
 const svgSize = Math.min(window.innerWidth, window.
 innerHeight);
-```
+</pre>
 
 I'd recommend applying this tweak to our base template too.
 
@@ -4685,24 +4679,24 @@ variables. Two will take care of our noise x and y coordinates, and in
 the third, we'll store the noise speed that will determine the rate at
 which we'll increment the noise coordinates.
 
-```
+<pre>
 // Create our noise, the noise x and y co-ordinates, and noise speed.
 let noise = new Noise(); 
 let nX = 0, nY = 0; 
 let noiseSpeed = 0.5;
-```
+</pre>
 
 The next block of code should hopefully look familiar. We're setting
 some grid-related variables, and this time we'll omit the spacing and
 cellSize variables we used in previous sketches and set the gridSize to
 cover the entire viewBox.
 
-```
+<pre>
 // Set some grid-related variables. 
 let noiseGrid = svg.create('g');
 let gridSize = 1000; let rows = 80;
 let increment = gridSize / rows;
-```
+</pre>
 
 Next comes our loop. Instead of starting with the y coordinate in the
 outer loop, we're going to start with the x coordinate. What this will
@@ -4713,7 +4707,7 @@ which will allow our noise values to flow in a downward motion.
 Within the loop, we'll fetch our noise value using the noise.get()
 method, passing in the nX and nY values we initialized earlier.
 
-```
+<pre>
 // Create the noise matrix.
 for (let x = 0; x < gridSize; x += increment) { for (let y = 0; y <
 gridSize; y += increment) { // Fetch the noise value. 
@@ -4721,41 +4715,41 @@ let noiseValue =
 noise.get(nX, nY);
 }
 }
-```
+</pre>
 
 Next, let's create the actual text content. We want a series of ones and
 zeros to fill the grid, with a 50% chance of either digit being chosen.
 As we learned in the last chapter, the Gen.chance() function is the
 simplest way to do this, combined with a ternary operator.
 
-```
+<pre>
 // Create text displaying either 0 or 1 (50% chance).
 let text = noiseGrid.create('text'); text.content(Gen.chance() ? '1'
 : '0');
-```
+</pre>
 
 Now we need to set the position of the digit with respect to the x and y
 loop iterator values and set the intensity of the fill color (i.e., the
 lightness component of the hsl() function) with the noiseValue variable.
 We should also set a font size and font family while we're at it.
 
-```
+<pre>
 text.set({ x: x, y: y, font_size: 16, font_family: 'serif', fill:
 `hsl(120 20% ${noiseValue}%)` });
-```
+</pre>
 
 And before we close out our loop, we'll want to increment our nX and nY
 values with the noiseSpeed variable.
-```
+<pre>
 nX += noiseSpeed; nY += noiseSpeed; 
-```
+</pre>
 To finish off the sketch, outside
 the loop, call the moveTo() function to shift the grid to the center of
 the canvas.
-```
+<pre>
 // Centre the grid within the viewBox. 
 noiseGrid.moveTo(500, 500);
-```
+</pre>
 You should now see a grid of zeros and ones when you run your sketch.
 But ... they're all black. The color lightness isn't visibly changing,
 even though we're using our noiseValue to modify it. What's going on
@@ -4764,7 +4758,7 @@ here?
 If you inspect some of the text elements in the browser console, you'll
 see something like the following:
 
-```
+<pre>
 <text x="860" y="960" font-size="16" font-family='serif'
 fill="hsl(120 20%
 
@@ -4781,7 +4775,7 @@ fill="hsl(120 20%
 0.061791625695004807%)">0</text> <text x="880" y="20"
 font-size="16" font-family='serif' fill="hsl(120 20%
 0.1202821001266494%)">1</text>
-```
+</pre>
 
 The point to note here is that when we call the noise.get() method, the
 value returned is a float between -1 and 1 (with some occasional
@@ -4812,23 +4806,23 @@ functions like gaussian and pareto, this is set to true by default, and
 setting it to false rounds the result to the nearest integer. The
 following is an example:
 
-```
+<pre>
 // Map a number (5) from one range (0, 10) to another (0, 100). 
 let num = 5; num = Gen.map(num, 0, 10, 0, 100); 
 console.log(num); -> 50
-```
+</pre>
 
 If we apply the Gen.map() function to our noiseValue variable, we can
 retrieve a more usable value. We could assign this new mapped value to a
 new variable, or as the preceding example shows us, we can simply
 reassign the original variable.
 
-```
+<pre>
 // Fetch the noise value. 
 let noiseValue = noise.get(nX, nY);
 // Map the noise value to a useful range. 
 noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
-```
+</pre>
 
 Once you've done this, you should see some color injected into our
 matrix (as per Figure 5-3). Enough we hope to get an appreciative nod
@@ -4852,30 +4846,30 @@ text elements in this sketch, and for each of these elements, the
 font-size and font-family attributes remain static throughout. This
 seems quite wasteful.
 
-```
+<pre>
 <text x="740" y="200" font-size="16" font-family="serif"
 fill="hsl(120 20%
 50%)">1</text>
-```
+</pre>
 
 What we can do is first remove the font attributes set within the loop
 so that the text.set() method looks like the following:
 
-```
+<pre>
 text.set({ x: x, y: y, fill: `hsl(120 20% ${noiseValue}%)` });
-```
+</pre>
 
 Then we can create a style element and within it, target all our text
 elements at once. Near the top of our sketch, after the parent SVG
 declaration, include the following code:
 
-```
+<pre>
 // Set some text styling.
 svg.create('style').content(` text { font-size: 16px; font-family:
 serif;
 }
 `);
-```
+</pre>
 
 Note the use of backticks here; this allows us to indent our code just
 as we would with normal CSS. What this CSS does is apply the font-size
@@ -4898,7 +4892,7 @@ Copy the previous sketch folder and name it something like
 13-spinning-noise. Remove the style element and everything after the
 background so that we're left with the following boilerplate code:
 
-```
+<pre>
 import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
 index.js';
 
@@ -4911,7 +4905,7 @@ svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
 // Background.
 svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
 '#181818' });
-```
+</pre>
 
 We'll then set up our noise-related variables, along with a couple of
 randomized values that will determine our initial hue and the amount of
@@ -4931,13 +4925,13 @@ we'll extract two further variables from this by individually mapping
 the value to different ranges. One will control how much we shift the
 hue, and the other will control the length of each line.
 
-```
+<pre>
 // Start the dance. 
 for (let i = 10; i < iterations; i += 1) { let
 noiseValue = noise.get(nX); let hueShift = Gen.map(noiseValue, -1, 1,
 -180, 180, false); let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000,
 false); }
-```
+</pre>
 
 After the lineLength variable (and still within the loop), set up the
 first of our lines. We will start off with a straight vertical line at
@@ -4951,24 +4945,24 @@ will increment by the hueShift. We'll then set both the opacity (within
 the hsl() function) and the stroke-width to 0.5, which will keep the
 line nice and delicate.
 
-```
+<pre>
 let l1 = lines.create('line').set({ x1: 0, y1: 0, x2: 0, y2:
 lineLength,
 stroke: `hsl(${Gen.constrain(hue + hueShift, 0, 360)} 80% 80%
 / 0.5)`, stroke_width: 0.5
 });
-```
+</pre>
 
 For the second line, we'll do much the same, except this time we'll
 stretch the lineLength a little, shift the hue in the opposite
 direction, and also reduce its opacity.
 
-```
+<pre>
 let l2 = lines.create('line').set({ x1: 0, y1: 0, x2: 0, y2:
 lineLength * 1.1,
 stroke: `hsl(${Gen.constrain(hue - hueShift, 0, 360)} 80% 80%
 / 0.25)`, stroke_width: 0.5 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-4b">5.4b Rotating and Translating</h2>
@@ -4993,9 +4987,9 @@ l1.rotate(i); l2.rotate(-i); nX += noiseSpeed; And finally, outside the
 loop, move the lines to the center of the canvas and rotate them by a
 random amount between 0 and 360.
 
-```
+<pre>
 lines.moveTo(500, 500); lines.rotate(Gen.random(0, 360));
-```
+</pre>
 
 As you can see in Figure 5-4, what we end up are a series of slightly
 asymmetric lines that somewhat resemble, to me at least, the dance of
@@ -5087,7 +5081,7 @@ character length, like the d attribute to which they are passed, and the
 values that accompany the commands can also be flexibly formatted to
 conserve space.
 
-```
+<pre>
 // An example of a string of path data. 
 path.set({ d: 'M 20,20 L 30,20
 L 30,30 L 20,30 Z' });
@@ -5095,7 +5089,7 @@ L 30,30 L 20,30 Z' });
 // An identical path using a more concise string. 
 path.set({ d: 'M20
 20L30 20L30 30L20 30Z' });
-```
+</pre>
 
 We'll go into more detail in later sections as to how examples like the
 aforementioned work; for now, just note that the very same path data can
@@ -5133,7 +5127,7 @@ itself doesn't draw anything -- it merely moves us to the point at which
 we want to begin. Our pen has yet to push down on the paper, so to
 speak.
 
-```
+<pre>
 // Syntax for the M/m command.
 'M [x, y] ...'
 'm [dx, dy] ...'
@@ -5141,7 +5135,7 @@ speak.
 // Examples of the M/m command.
 'M 50 100 ...'
 'm 50 100 ...'
-```
+</pre>
 
 We can provide an optional Z command at the very end of a path to close
 it. Paths without a closing Z command remain open (i.e., the starting
@@ -5150,10 +5144,10 @@ connect these two points unless the end point is a curve, in which case
 it will follow the curvature of the last control point (this will make
 more sense later on).
 
-```
+<pre>
 // Closing a path.
 'M 50 100 ... 50 150 Z'
-```
+</pre>
 
 Unlike other path commands, the lowercase z and uppercase Z perform
 identical operations, as no values follow them. This means you can use
@@ -5174,17 +5168,17 @@ The L command allows us to draw straight lines defined by an x and y
 coordinate pair. The lowercase l does the same but uses coordinates
 relative to the path's last entered point.
 
-```
+<pre>
 // Syntax for the L/l command.
 'L [x, y] ...'
 'l [dx, dy] ...'
-```
+</pre>
 
 Let's see what this looks like in practice. In the following example,
 two lines are used to create two instances of the letter L. The first
 uses absolute coordinates; the second uses relative coordinates.
 
-```
+<pre>
 // The first L.
 svg.create('path').set({
 d: 'M 300 200 L 300 800 L 600 800' });
@@ -5192,7 +5186,7 @@ d: 'M 300 200 L 300 800 L 600 800' });
 // The second L.
 svg.create('path').set({
 d: 'M 675 825 l 0 -600 l -300 0' });
-```
+</pre>
 
 We can see a rendering of the preceding code in Figure 6-1. I've left
 out any elements and attributes extraneous to the example and focused on
@@ -5219,7 +5213,7 @@ can use the H or V commands as a shortcut, as they only need the one
 parameter; in the case of H or h, the x coordinate, and in the case of V
 or v, the y coordinate.
 
-```
+<pre>
 // Syntax for the H/h command.
 'H [x] ...'
 'h [dx] ...'
@@ -5227,20 +5221,20 @@ or v, the y coordinate.
 // Syntax for the V/v command.
 'V [y] ...'
 'v [dy] ...'
-```
+</pre>
 
 These commands I don't find particularly useful for generative art, but
 it's worth knowing they're there should you want to use them. Let's
 create the same L shapes from Figure 6-1, but with H and V this time,
 including their lowercase versions.
 
-```
+<pre>
 // The first L.
 svg.create('path').set({ d: 'M 300 200 V 800 H 600' });
 
 // The second L.
 svg.create('path').set({ d: 'M 675 825 v -600 h -300' });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3c">6.3c Further Economies</h3>
@@ -5252,7 +5246,7 @@ know that if a path command is omitted, the last-known command should be
 used. Let's show a quick example (the output of which is shown in Figure
 6-2).
 
-```
+<pre>
 // The first path, with repeating L commands. svg.create('path').set({
 d: 'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10' });
 
@@ -5260,7 +5254,7 @@ d: 'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10' });
 svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
 70 10'
 });
-```
+</pre>
 
 ![](./images/media/image41.jpg){width="3.5433333333333334in"
 height="0.9616666666666667in"}
@@ -5276,11 +5270,11 @@ curves go, it's relatively simple. Two sets of coordinates are required:
 the first set defines the control point (which we'll explain in a
 moment), and the second the destination point.
 
-```
+<pre>
 // Syntax for the Q/q command.
 'Q [cpx cpy x y] ...'
 'q [dcpx dcpy dx dy] ...'
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4a">6.4a Control Points</h3>
@@ -5293,9 +5287,9 @@ exerts over its curve (in this case, a quadratic Bezier curve). In this
 example, the dot represents the control point coordinates of \[150,
 350\], given the following path:
 
-```
+<pre>
 'M 50 150 Q 150 350 250 150'
-```
+</pre>
 
 ![](./images/media/image42.jpg){width="3.15in" height="3.15in"}
 
@@ -5326,11 +5320,11 @@ curve based on the previous curve's control point, essentially
 symmetric control point, and it requires just a single set of
 coordinates.
 
-```
+<pre>
 // Syntax for the T/t command.
 'T [x y]'
 't [dx dy]'
-```
+</pre>
 
 Let's extend the curve from Figure 6-4, adding a few extra undulations
 to it. In the following example code, I'm adding some commas to the
@@ -5340,12 +5334,12 @@ need to repeat the T command when using it several times consecutively.
 This is why you'll only see it used once for the four coordinates that
 follow.
 
-```
+<pre>
 // Extending a quadratic curve with the smooth T command.
 svg.create('path').set({
 d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
 });
-```
+</pre>
 
 Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
@@ -5370,18 +5364,18 @@ Copy the template folder and rename it to 14-quadratic-slinky. Below the
 parent SVG, set some styles to target the path elements that we'll later
 set up as children of a group to which we'll give an id of slinky.
 
-```
+<pre>
 // Style the slinky.
 svg.create('style').content(`
 #slinky path { fill: none; stroke-width: 0.75; stroke-linecap: round;
 }`
 );
-```
+</pre>
 
 Next set up the usual background, initialize a random hue, and create
 the aforementioned slinky group.
 
-```
+<pre>
 // Background.
 svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
 '#181818' });
@@ -5392,19 +5386,19 @@ let hue = Gen.random(0, 360);
 // Set up the slinky path group. 
 let slinky = svg.create('g').set({
 id: 'slinky' });
-```
+</pre>
 
 In the next step, we'll fire up the loop and create a couple of control
 points we'll use to shape our quadratic curve.
 
-```
+<pre>
 // Start the loop. 
 for (let i = 0; 
 i < 500; i += 5) {
 // Create the control points. 
 let cpx = Gen.random(200, 400); 
 let cpy = i - 400; }
-```
+</pre>
 
 The width of our curve will be 600 units (relative to the viewBox), so
 our halfway point will be 300. On the x axis, the cpx variable is
@@ -5415,12 +5409,12 @@ offset of 400 units that will "pull" the curve upward.
 
 Next, let's create the actual curve (keeping within the loop).
 
-```
+<pre>
 // Create the quadratic curve. 
 slinky.create('path').set({ stroke:
 `hsl(${hue} 90% 80% / 0.85)`, d: `M 0 ${i} q ${cpx} ${cpy} 600
 0` });
-```
+</pre>
 
 Here, we're setting the hue as we've done many times before, and for the
 path, we're drawing one simple curve starting with the M command. For
@@ -5435,9 +5429,9 @@ remainder after division. This can be useful to cycle within predefined
 ranges, such as the 0 to 360 constraints of a color's hue. Add the
 following as the final line before the end of the loop:
 
-```
+<pre>
 // Increment the hue. hue = (hue % 360) + 1.5;
-```
+</pre>
 
 A quick explanation of how this works: say our random hue is initialized
 to 350. The expression hue % 360 will return 350, because 350 / 360 is
@@ -5448,9 +5442,9 @@ remainder of 0. This is how it cycles back to the start of the range.
 Now that our loop is done, we can add one more line outside it to ensure
 the content is centered. The result should resemble Figure 6-6.
 
-```
+<pre>
 slinky.moveTo(500, 500);
-```
+</pre>
 
 ![](./images/media/image45.jpg){width="3.15in" height="3.15in"}
 
@@ -5464,11 +5458,11 @@ complicated beast, and the syntax is quite difficult to comprehend
 without some visual examples. The A (or a) command is used to initialize
 it, and it is followed by no less than seven arguments.
 
-```
+<pre>
 // Syntax for the A/a command.
 'A [rx ry rotation large-arc-flag sweep-flag x y] ...'
 'a [rx ry rotation large-arc-flag sweep-flag dx dy] ...'
-```
+</pre>
 
 The first two arguments and the last two arguments aren't anything we
 haven't encountered before: rx and ry refer to the radii of the x and y
@@ -5564,14 +5558,14 @@ When you're ready, set up a group below the background that will contain
 our arc curves. After that, we'll set up some randomized variables we'll
 utilize in the loop that follows.
 
-```
+<pre>
 // Set up a container group for our arc curves.
 let arcs = svg.create('g');
 // Randomise some variables. 
 let rx = Gen.random(5, 350); 
 let ry = Gen.random(5, 350); 
 let hue = Gen.random(0, 360);
-```
+</pre>
 
 Next we'll start our loop, which will run 360 times. Inside it, we'll
 randomize some further variables: the arc's rotation, which will have
@@ -5579,14 +5573,14 @@ the effect of distending the curve in a particular direction, and the
 large-arc- flag, which, thanks to our Gen.chance() function, will have a
 50% chance of being either 0 or 1.
 
-```
+<pre>
 for (let i = 0; 
 i < 360; i += 1) {
   // Randomise the rotation and large arc flag.
   let rotation = Gen.random(0, 180); 
   let largeArc = Gen.chance() ? 1 : 0;
 }
-```
+</pre>
 
 Next (and still within our loop) create the first set of clockwise arc
 curves. Remember, what makes them run either clockwise or anticlockwise
@@ -5594,12 +5588,12 @@ is the sweep-flag, which is the fifth argument of the A command. Here,
 after our largeArc variable, we're setting the sweep-flag to 1, meaning
 clockwise.
 
-```
+<pre>
 // Create a first set of clockwise arc curves (sweep = 1).
 arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue} 75% 75% / 0.05)`,
 d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 1 725 500`
 });
-```
+</pre>
 
 The second set of arc curves will be identical, bar two small changes.
 The sweep-flag we'll set to 0, making this set anticlockwise, and the
@@ -5607,7 +5601,7 @@ hue we'll offset by 60, just to add a bit of contrast to the colors. And
 before we close out the loop, we'll increment the hue using the
 aforementioned modulo operator.
 
-```
+<pre>
 // Create a second set of counter-clockwise arc curves (sweep = 0).
 arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue + 60}
 75% 75% / 0.05)`,
@@ -5615,17 +5609,17 @@ d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
 });
 // Increment the hue. 
 hue = (hue % 360) + 0.5;
-```
+</pre>
 
 If you run the sketch at this point, you'll see some nicely varied
 generative arcs (example output in Figure 6-9). If you want to inject a
 little more dynamism though, you could add the following line after the
 loop:
 
-```
+<pre>
 // Apply a random rotation.
 arcs.rotate(Gen.random(0, 360));
-```
+</pre>
 
 ![](./images/media/image48.jpg){width="3.9366666666666665in" height="2.315in"}
 
@@ -5643,11 +5637,11 @@ two sets of control points, so the syntax is a little more complex than
 its quadratic counterpart, but it's easier to grapple with than the
 elliptical arc curve.
 
-```
+<pre>
 // Syntax of the C/c command.
 'C [cpx1 cpy1 cpx2 cpy2 x y] ...'
 'c [dcpx1 dcpy1 dcpx2 dcpy2 dx dy] ...'
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-6a">6.6a Cubic Control Points</h3>
@@ -5660,10 +5654,10 @@ control point coordinates cpx2 and cpy2 shapes the curve of the
 destination point, and this point is defined by the final two
 coordinates: x and y. Here's an example:
 
-```
+<pre>
 // Creating a single cubic bezier curve. 
 svg.create('path').set({ d: 'M 75,75 C 140,330 360,330 425,75' });
-```
+</pre>
 
 The preceding path is illustrated in Figure 6-10, where you can see the
 initial M point in yellow, and in red, the three points that comprise
@@ -5694,11 +5688,11 @@ control point that mirrors the control point of the preceding curve and
 as a result allows us to omit the first set of control point
 coordinates.
 
-```
+<pre>
 // Extending a cubic bezier curve with the S command.
 svg.create('path').set({ d: 'M 50,150 C 100,250 200,50 250,150 S
 400,50 450,150' });
-```
+</pre>
 
 In Figure 6-11, the faintest of the dashed lines indicates where the S
 command has automatically generated a symmetrical control point.
@@ -5718,10 +5712,10 @@ this end, our friend Noise will nudge us in the right direction. First,
 do the usual and copy the template folder, calling it something like
 16-organic-curves. Ensure you have the following imports at the top:
 
-```
+<pre>
 import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
 index.js';
-```
+</pre>
 
 The parent SVG and background will then follow, at which point we'll
 create some noise-related variables. I'm including a new one here called
@@ -5730,20 +5724,20 @@ amplifier; this will be used when we map the noise value to a new range
 
 // Noise-related.
 
-```
+<pre>
 let noise = new Noise(); let n = Gen.random(0, 1000); let speed = 0.05;
 let amplifier = Gen.random(200, 500);
-```
+</pre>
 
 Next we'll set up variables relating to colors and the curves
 themselves, which we'll contain within a group.
 
-```
+<pre>
 // Curve and colour-related. 
 let curves = svg.create('g'); 
 let numCurves = Gen.random(75, 125); 
 let hue = Gen.random(0, 360);
-```
+</pre>
 
 It's generally good practice to group your variables meaningfully in
 this manner, with some comments to add clarity. Otherwise when you later
@@ -5761,14 +5755,14 @@ original starting point, but wrap around them more naturally. Outside
 the loop, include the moveTo() method to center-align our curve group.
 for (let i = 0; i \< numCurves; i += 1) {
 
-```
+<pre>
 // Retrieve and map our noise value.
 let noiseValue = noise.get(n);
 noiseValue = Gen.map(noiseValue, -1, 1, -amplifier,
 amplifier, false);
 }
 curves.moveTo(500, 500);
-```
+</pre>
 
 Next come the curve coordinates. For clarity, we'll set variables for
 each command we call, to make the construction of the path data (or d
@@ -5777,7 +5771,7 @@ within the loop. The shape of the curve we're aiming for isn't too
 dissimilar to the one shown in Figure 6-10. Other than that, the values
 provided are fairly arbitrary, so feel free to tweak them.
 
-```
+<pre>
 // M command co-ordinates. 
 let mx = 0; 
 let my = 0 + (i * 5);
@@ -5795,7 +5789,7 @@ let spx = 350 + noiseValue;
 let spy = 100;
 let x3 = 300; 
 let y3 = -50;
-```
+</pre>
 
 With the exception of the initial M command coordinates, we're going to
 build out our curves using relative coordinates (i.e., we'll feed the
@@ -5813,13 +5807,13 @@ literal syntax. In previous sketches, we've been opening and closing our
 braces \${} for each variable. When these variables follow one after the
 other however, we can actually embed them all at once as an array.
 
-```
+<pre>
 // Create the organic curve. 
 curves.create('path').set({ fill:
 'none', stroke: `hsl(${hue} 80% 80% / 0.8)`, d: `M \${[mx, my]}
 c ${[cpx1, cpy1, cpx2, cpy2, x2, y2]} s ${[spx, spy, x3, y3]}`
 });
-```
+</pre>
 
 If you run the sketch at this point, you'll see a series of curves
 alright, but their shape and color will remain uniform throughout. We
@@ -5830,7 +5824,7 @@ this step next and also increase the hue while we're at it, modulating
 it slightly via the noiseValue variable. As a final flourish, we'll
 throw in some randomized "bubbles" (see Figure 6-12). Don't ask me why.
 
-```
+<pre>
 // Increment the noise and hue. 
 n += speed; 
 hue = (hue % 360) + (noiseValue / 25);
@@ -5842,7 +5836,7 @@ svg.create('circle').set({ r: Gen.random(5, 50), cx: Gen.random(150,
 '#888'
 });
 }
-```
+</pre>
 
 ![](./images/media/image51.jpg){width="3.15in" height="3.15in"}
 
@@ -5864,10 +5858,10 @@ a large degree of control, but in some cases, we may not need the level
 of fine-tuning that the manual curve commands offer. With the
 createCurve() method, all we need to worry about are the points.
 
-```
+<pre>
 // The syntax of the createCurve() method. 
 createCurve(pointsArray, [curveFactor]);
-```
+</pre>
 
 In crude terms, we can think of this as a join-the-dots method, the main
 difference being that we need to supply the dots rather than do the
@@ -5876,14 +5870,14 @@ array of \[x, y\] coordinate pairs. It can be supplied as either a
 standard one- dimensional array or as a two-dimensional array (i.e., an
 array of arrays).
 
-```
+<pre>
 // A one-dimensional array of points. 
 let points1D = [25, 30, 45, 20, 80, 10, 90, 40];
 
 // A two-dimensional array of the same points. 
 let points2D = [[25, 30], [45, 20], [80, 10], [90, 40]
 ];
-```
+</pre>
 
 The curveFactor argument allows us to modify the tension between the
 points. At a value of 0, the points are connected by a straight line. At
@@ -5977,10 +5971,10 @@ listening); two, the event type to listen out for (e.g., a mouse click);
 and three, what to do when it hears it (i.e., the action performed by
 the callback function). It takes the following form:
 
-```
+<pre>
 // Adding an event listener to a HTML or SVG element.
 element.addEventListener('eventType', doSomething);
-```
+</pre>
 
 We are assuming here that the callback function doSomething() is defined
 elsewhere in the code. Note that in this case it is supplied by name
@@ -5989,13 +5983,13 @@ trigger prematurely. The situation is different with anonymous -- or
 arrow -- functions, which can be defined there and then without the
 danger of being immediately invoked.
 
-```
+<pre>
 // Using arrow syntax to define the callback function.
 element.addEventListener('eventType', () => {
 
 // do something here...
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-1a">7.1a Event Types</h3>
@@ -6016,13 +6010,13 @@ also consider the click event type -- technically a mouse event -- as
 falling under this umbrella, as it can also capture simple touch events
 like a finger tap.
 
-```
+<pre>
 // Capturing the movement of a mouse, stylus or finger over an element.
 element.addEventListener('pointermove', () => {
 
 // do something here...
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-1b">7.1b Event Parameters</h3>
@@ -6037,13 +6031,13 @@ Here's how this could work in practice. In the following code, the
 position of the mouse or pointer device is logged to the console each
 time you click anywhere within the body of the HTML page.
 
-```
+<pre>
 // Log the user's pointer co-ordinates on click.
 document.body.addEventListener('click', (event) => { let x =
 event.clientX; let y = event.clientY;
 console.log(`x: ${x}, y: ${y}`);
 });
-```
+</pre>
 
 The clientX and clientY properties are just a couple of the many
 properties built into a click event. The full list can be found over at
@@ -6080,12 +6074,12 @@ what tells us the actual key that was pressed. We'll trigger the save()
 method only when that key is equal to "s", irrespective of case
 (allowing us to capture the capital "S" too).
 
-```
+<pre>
 // Save the root svg as a downloadable file.
 document.addEventListener('keydown', (event) => { let key =
 event.key.toLowerCase(); if (key === 's') svg.save();
 });
-```
+</pre>
 
 Feel free to use the aforementioned for any sketch going forward. And
 incidentally, the save() method can be called on any SVG element,
@@ -6113,9 +6107,9 @@ ensuring the expected behavior also occurs with touchscreen devices. To
 activate it, it just needs to be called on the main SVG element as
 follows:
 
-```
+<pre>
 svg.trackCursor();
-```
+</pre>
 
 Once activated, it updates two properties of the parent SVG: cursorX and
 cursorY, which tell us where in the viewBox (rather than the web browser
@@ -6123,13 +6117,13 @@ window) our cursor is currently located. It also allows us to pass in
 our own custom callback function, to be triggered each time the cursor
 position is updated.
 
-```
+<pre>
 // Passing in a custom callback.
 svg.trackCursor(() => {
 
 // ... do stuff
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-2b">7.2b Interactive Ellipses</h3>
@@ -6143,7 +6137,7 @@ Below the background, initialize the following variables. The ellipses
 array is a new addition; we'll use this to store the created ellipses so
 we can iterate through them afterward.
 
-```
+<pre>
 // Randomise some variables. 
 let hue = Gen.random(0, 360);
 let rotation = Gen.random(0, 360); 
@@ -6151,7 +6145,7 @@ let iterations = Gen.random(50, 100);
 
 // This array will allow us to iterate through our ellipses later. 
 let ellipses = [];
-```
+</pre>
 
 Now for the loop to create the ellipses. The code here is more compact
 than that presented in the first chapter, as we've since covered more
@@ -6159,7 +6153,7 @@ concise ways of achieving certain results (like incrementing our hue).
 Another difference of note is the addition of the ellipses.push()
 method; this is where we add each ellipse to the aforementioned array.
 
-```
+<pre>
 // Run a loop a random number of times to create the ellipses. 
 for (let i = 0; i < iterations; i += 1) {
 
@@ -6176,7 +6170,7 @@ ellipses.push(ellipse);
 
 // Increment the hue. 
 hue = (hue % 360) + 2; }
-```
+</pre>
 
 You should now see a static arrangement of ellipses. Our next step is
 make them dynamic. What we'll do is activate the trackCursor() method on
@@ -6185,14 +6179,14 @@ arrow function, we'll iterate through each item in the ellipses array
 using a forEach() loop and adjust the cx and cy coordinates of each
 ellipse relative to our cursor position.
 
-```
+<pre>
 // Adjust the centre point of each ellipse relative to our cursor.
 svg.trackCursor(() => { ellipses.forEach((ellipse) => { ellipse.set({
 cx: svg.cursorX, cy: svg.cursorY
 });
 });
 });
-```
+</pre>
 
 And with this, we have movement -- our ellipses glide gracefully into
 life as we create a truly dynamic cursor-guided composition! Figure 7-1
@@ -6236,7 +6230,7 @@ ensure more consistent animation behavior across the various methods by
 setting a default point of rotation), there's nothing really new here,
 so feel free to simply copy and paste:
 
-```
+<pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
 // Parent SVG. 
@@ -6266,7 +6260,7 @@ transform: 'rotate(45)'
 });
 shapes.push(shape);
 }
-```
+</pre>
 
 ![](./images/media/image54.jpg){width="3.15in" height="3.15in"}
 
@@ -6308,7 +6302,7 @@ effect) before returning it to its original dimensions. And finally we
 assign the animation to the cssShape element, specifying the duration,
 iteration count, and timing function.
 
-```
+<pre>
 // Set an id for our first shape. 
 shapes[0].set({ id: 'cssShape' });
 
@@ -6324,7 +6318,7 @@ animation-name: scaleRotate; animation-duration: 5s;
 animation-iteration-count: infinite; animation-timing-function: linear;
 }
 `);
-```
+</pre>
 
 You should now see our outer square slowly rotate and stretch, while the
 others remain static. It's also possible to use the shorthand animation
@@ -6334,13 +6328,13 @@ version though, as the order of values -- while not especially strict --
 can lead to unanticipated behavior if you're not familiar with all the
 possible values that can be accepted.
 
-```
+<pre>
 svg.create('style').content(` ...
   #cssShape {
     animation: scaleRotate 5s infinite linear;
   }
 `);
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-3b">7.3b The SMIL Way</he>
@@ -6352,12 +6346,12 @@ we're using SvJs, we will be interfacing with SMIL via JavaScript.
 Before we do so however, here's a quick peek at how it looks in its
 original form.
 
-```
+<pre>
 <circle cx="50" cy="50" r="25" fill="red">
   <animate attributeName="r" from="25" to="40" dur="2s"
     repeatCount="indefinite" />
 </circle>
-```
+</pre>
 
 As you can see, the animation is an actual SVG element, nested inside
 the element it animates (a \<circle\> in this case). The \<animate\>
@@ -6376,12 +6370,12 @@ and to directives to cover these. We then set the duration (dur) and
 iteration count (repeatCount), and that's the first transform taken care
 of.
 
-```
+<pre>
 // Rotate the second shape using SMIL.
 shapes[1].create('animateTransform').set({ attributeName:
 'transform', type: 'rotate', from: '0', to: '360', dur: '5s',
 repeatCount: 'indefinite' });
-```
+</pre>
 
 The second transform is a little more complicated. It has more than two
 states, so instead of the from and to attributes, we have a values
@@ -6391,11 +6385,11 @@ include an additional additive attribute with a value of sum so that the
 scale transform adds to (and doesn't overwrite) the previous rotate
 transform. // Scale the second shape using SMIL.
 
-```
+<pre>
 shapes[1].create('animateTransform').set({ attributeName:
 'transform', type: 'scale', values: '1 1; 0.5 1.5; 1 1', dur:
 '5s', additive: 'sum', repeatCount: 'indefinite' });
-```
+</pre>
 
 The second shape should now be slowly rotating and stretching, and the
 motion should be perfectly synchronized with our CSS keyframes example.
@@ -6422,7 +6416,7 @@ in milliseconds -- or as an object containing one or more time-related
 properties. Say we wanted to animate the value of a circle's radius r.
 The following is how this could be achieved using both syntax formats:
 
-```
+<pre>
 // Format one for keyframes.
 let keyframes = [
   { r: 25 },
@@ -6441,7 +6435,7 @@ let options = { duration: 2000, iterations: Infinity,
 
 // ... etc
 };
-```
+</pre>
 
 I prefer the second keyframe format as it is more concise in most cases.
 Before we implement the rotation and scaling example, there's one more
@@ -6455,16 +6449,16 @@ equivalent of 0%, 50%, and 100% in CSS). But we can define custom
 offsets if needs be. In the following example, the second keyframe will
 trigger at 0.75 instead of the default 0.5.
 
-```
+<pre>
 // Explicitly defining offsets.
 let keyframes = { r: [25, 40, 25], offset: [0, 0.75, 1] };
-```
+</pre>
 
 Let's get back to our sketch now and implement the rotation and scaling
 of our third shape using the WAAPI method. Below our SMIL
 implementation, set up the animation as follows.
 
-```
+<pre>
 let keyframes = {
   transform: [
     'rotate(0deg) scale(1, 1)',
@@ -6474,7 +6468,7 @@ let keyframes = {
 };
 let options = { duration: 5000, iterations: Infinity };
 shapes[2].animate(keyframes, options);
-```
+</pre>
 
 Now all but one of our shapes should be on the move. Note how similar
 the WAAPI keyframes syntax is to our CSS keyframes example; this isn't
@@ -6505,14 +6499,14 @@ per-frame basis. We then pass this custom function as an argument to
 requestAnimationFrame, so it is called recursively on each screen
 repaint. Here's a basic example of how this works.
 
-```
+</pre>
 // Define the function.
 function customFunction() { // do stuff here...
 // Make the recursive call to requestAnimationFrame()).
 requestAnimationFrame(customFunction); }
 // Call the function.
 customFunction();
-```
+</pre>
 
 Additionally, requestAnimationFrame() can pass a timestamp to our custom
 function so that we can sync our animation with real-time values rather
@@ -6524,7 +6518,7 @@ can use it to increment the angle of rotation. This works because
 rotation values can increment indefinitely beyond 360° and still remain
 valid.
 
-```
+<pre>
 // Animate the last shape using requestAnimationFrame. 
 function animate(time) {
 // Rotate the angle. 
@@ -6533,7 +6527,7 @@ let angle = time;
 shapes[3].set({ transform: `rotate(${angle})` });
 // The recursive bit.
 requestAnimationFrame(animate); } animate();
-```
+</pre>
 
 Ok, so this code gets our final shape moving, but we've got a couple of
 problems. One, our shape is rotating at a breakneck speed, wildly out of
@@ -6546,10 +6540,10 @@ just need to reassign the time variable to a value of 0 if it is
 undefined. Include the following code before the angle is declared, and
 that should soothe our console's concerns:
 
-```
+<pre>
 // Prevent errors when the time is undefined on first frame.
 if (time === undefined) time = 0;
-```
+</pre>
 
 Now let's address the speed of rotation. We could try dividing the time
 by arbitrary amounts until it slows down to the point of synchronization
@@ -6568,10 +6562,10 @@ the exact speed by which to rotate our shape: 0.072° per millisecond
 (360° divided by 5,000 milliseconds). Update the previous statement
 where angle simply equals time with the following:
 
-```
+<pre>
 // Rotate 360° in 5000ms: 360/5000 = 0.072. 
 let angle = time * 0.072;
-```
+</pre>
 
 This should rotate our shape in sync with the others. Getting it to
 scale in sync, however, is more of a challenge. For that, we first need
@@ -6591,10 +6585,10 @@ indefinitely.
 With the aforementioned in mind, let's initialize the following
 variables before the animate() function:
 
-```
+<pre>
 let isPositive = true;
 let scale = 0, tick = 0, prevTime = 0;
-```
+</pre>
 
 Update the animation loop as follows. The comments do the explanatory
 heavy-lifting here, so to better understand each step, be sure to read
@@ -6602,7 +6596,7 @@ the comments carefully. The main takeaway here is just how much more
 work we need to do with requestAnimationFrame() compared to the other
 methods.
 
-```
+<pre>
 // Animate the final shape using requestAnimationFrame. 
 function animate(time) {
 
@@ -6632,7 +6626,7 @@ prevTime = time;
 // The recursive bit.
 requestAnimationFrame(animate); }
 animate();
-```
+</pre>
 
 We should now have the final shape rotating and scaling in sync (give or
 take) with the other shapes. In some cases, you might see some slight
@@ -6715,7 +6709,7 @@ The size of this frame will be randomized, so we'll set up a frameSize
 variable to capture this and also use it to keep other element (like the
 stroke-width) in proportion.
 
-```
+<pre>
 // Create a frame to act as the boundary.
 let frameSize = Gen.random(350, 700); let frame =
 svg.create('rect').set({ x: (1000 - frameSize) / 2, y: (1000 -
@@ -6723,7 +6717,7 @@ frameSize) / 2, width: frameSize, height: frameSize, fill: '#252525',
 stroke: `hsl(${Gen.random(0, 360)} 80% 80% / 0.25)`, stroke_width:
 frameSize / 10,
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-4b">7.4b Initializing and Extending Our Shapes</h3>
@@ -6735,7 +6729,7 @@ all of them bouncing off the frame borders as they encounter them. In
 the following, we'll start by initializing the circles and filling up an
 array as we've done in our previous examples.
 
-```
+<pre>
 // Randomise the number of circles and set up an empty array. 
 let numCircles = Math.floor(frameSize / 20); 
 let circles = [];
@@ -6758,7 +6752,7 @@ for (let i = 0;
     // Store the circle in the array.
     circles.push(circle); 
   }
-```
+</pre>
 
 We have our circles all clustered in the center now, but they're not yet
 primed for movement. We have a way to track their position (via the cx
@@ -6786,7 +6780,7 @@ the attributes we'll set will be simply vx and vy, and we'll randomize
 their polarity using Gen.chance() (so they'll have a 50/50 chance of
 being either positive or negative). Update the relevant code as follows:
 
-```
+<pre>
 // Create variables to control the speed on the x and y axes.
 let velocityX = Gen.random(0.1, 5, true); 
 let velocityY = Gen.random(0.1, 5, true);
@@ -6800,7 +6794,7 @@ let circle = svg.create('circle').set({
   vy: Gen.chance() ? velocityY : -velocityY, 
   fill: `hsl(${Gen.random(0, 360)} 80% 80% / 0.5)`
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-4c">7.4c Frame-by-Frame Calculations</h3>
@@ -6837,7 +6831,7 @@ circle:
 
 <h4> Here's the concrete coded version:</h4>
 
-```
+<pre>
 // Get the lower and upper bounds (the frame edges) for use in the loop.
 let lowerBound = Number(frame.get('x'));
 let upperBound = lowerBound + frameSize;
@@ -6872,7 +6866,7 @@ function animate() {
 
 // Call the animation.
 animate();
-```
+</pre>
 
 If you watch the animation at this point, you'll notice that the circles
 do indeed rebound within the vicinity of the frame edge, but it's far
@@ -6888,16 +6882,16 @@ can be captured outside the loop and used later inside it: the frame
 edge and frame inset. Delete the lower bound and upper bound variables
 and replace them with the following:
 
-```
+<pre>
 // Get the frame edge point (x or y) and the inset.
 let frameEdge = Number(frame.get('x'));
 let frameInset = Number(frame.get('stroke-width')) / 2;
-```
+</pre>
 
 Now, inside the loop, we can work out the proper lower bound and upper
 bound values.
 
-```
+<pre>
 // The animation loop. 
 function animate() {
 
@@ -6912,7 +6906,7 @@ function animate() {
     
     // ... remainder of code is unchanged.
 }
-```
+</pre>
 
 This should result in accurate collision detection; Figure 7-3 shows a
 freezeframe of this in action. There are a lot of ways you could take
@@ -6942,12 +6936,12 @@ kinds of animations hold high hypnotic potential. We'll start in the
 usual place below our background, initializing some randomized
 variables.
 
-```
+<pre>
 // Randomise some variables.
 let numCircles = Gen.random(20, 35); 
 let baseRadius = Gen.random(5, 25, true); 
 let hue = Gen.random(0, 360);
-```
+</pre>
 
 We'll use numCircles to control how many times our loop runs and also in
 the calculations needed to distribute these circles. The baseRadius and
@@ -6955,7 +6949,7 @@ hue we'll use as starter values. For now, create the loop and the
 circles as follows, omitting the cx and cy attributes (which we'll work
 out in the next section).
 
-```
+<pre>
 // Set up the loop. 
 for (let i = 0; i < numCircles; i += 1) {
 
@@ -6967,7 +6961,7 @@ for (let i = 0; i < numCircles; i += 1) {
     transform_origin: '500 500'
   });
 }
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-5a">7.5a Slices of PI</h3>
@@ -7009,10 +7003,10 @@ iterator to move on to the next "slice," so to speak.
 Within the loop, after we define our circle element, include the
 following line:
 
-```
+<pre>
 // Calculate the current angle.
 let angle = Math.PI * 2 / numCircles * i;
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-5b">7.5b Sine and Cosine</h3>
@@ -7022,10 +7016,10 @@ values, which you can think of as the x and y coordinates. We won't go
 into too much detail here; suffice to say, the methods Math.sin() and
 Math.cos() work together perfectly to create circular motion.
 
-```
+<pre>
 // Get the sine and cosine of the angle.
 let sin = Math.sin(angle); let cos = Math.cos(angle);
-```
+</pre>
 
 It's also worth noting that these are extremely useful methods in their
 own right, particularly for motion, due to the smooth, oscillating
@@ -7040,11 +7034,11 @@ on both the x and y axes) and re-map them so that they span a range of
 700. This gives us 150 and 850, that is, -350 and +350 either side of
 the center.
 
-```
+<pre>
 // Map the sine and cosine to the desired range. 
 let cx = Gen.map(sin, -1, 1, 200, 800, false); 
 let cy = Gen.map(cos, -1, 1, 200, 800, false);
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-5c">7.5c Animating Our Circles</h3>
@@ -7053,13 +7047,13 @@ We can now try our hand at a basic animation. We'll start simple and
 move our circles outward from the center toward the cx and cy
 coordinates we defined earlier.
 
-```
+<pre>
 // Move from (500, 500) to (cx, cy).
 circle.animate({
 cx: [500, cx, 500], cy: [500, cy, 500],
 }, {
 duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
-```
+</pre>
 
 This gets things moving, but it's not an especially interesting
 sequence. Let's add more variety to it by setting an initial and target
@@ -7068,7 +7062,7 @@ the entire animation while we're at it. And just before we close out the
 loop, let's increment the hue relative to the number of circles to get a
 nice color distribution.
 
-```
+<pre>
 // Set the initial and target radii. 
 let r1 = baseRadius * 2 + (i * 10); 
 let r2 = baseRadius / (i + 10);
@@ -7080,7 +7074,7 @@ r: [r1, r2, r1], transform: ['rotate(0deg)', 'rotate(360deg)']
 duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
 // Increment the hue.
 hue = (hue % 360) + (180 / numCircles);
-```
+</pre>
 
 There... That gets us much closer to achieving that hypnotic pull. See
 Figure 7-6 for a snapshot of this animation at about 15% progression.
@@ -7154,7 +7148,7 @@ D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
 Let's look at a basic example in raw markup form, using just a single
 primitive.
 
-```
+<pre>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <defs>
     <filter id="blur">
@@ -7164,7 +7158,7 @@ primitive.
   <circle r="350" cx="500" cy="500" fill="yellow"
   filter="url(#blur)" /> 
 </svg>
-```
+</pre>
 
 As you can see, the \<filter\> element must be nested inside a \<defs\>
 element; in common with gradients and patterns, it only gets rendered
@@ -7183,7 +7177,7 @@ Let's inspect a slightly more involved example, this time illustrating
 how filter primitives can be connected together. The result will be a
 drop shadow applied to a circle's stroke, as shown in Figure 8-2.
 
-```
+<pre>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
   <defs>
     <filter id="shadow">
@@ -7195,7 +7189,7 @@ drop shadow applied to a circle's stroke, as shown in Figure 8-2.
   <circle r="300" cx="500" cy="500" fill="none"
   stroke="#475569" stroke-width="50" filter="url(#shadow)" />
 </svg>
-```
+</pre>
 
 ![](./images/image060.jpg){width="3.15in" height="3.15in"}
 
@@ -7251,7 +7245,7 @@ exists is taken care of under the hood.
 The following is the SvJs equivalent of our first example shown
 previously, applying a soft blur to a yellow circle (Figure 8-1).
 
-```
+<pre>
 // Initialise the filter.
 let filter = svg.createFilter('blur');
 
@@ -7264,7 +7258,7 @@ svg.create('circle').set({ r: 350, cx: 500, cy: 500, fill: 'yellow',
 filter:
 'url(#blur)'
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-1c">8.1c The Filter Region</h3>
@@ -7285,9 +7279,9 @@ about this region if your filter effects are unexpectedly clipped. A
 filter region is defined just as a rect element is: by x, y, width, and
 height attributes. By default, these values are as follows:
 
-```
+<pre>
 <filter x="-10%" y="-10%" width="120%" height="120%">
-```
+</pre>
 
 The percentage values are relative to the shape to which the filter is
 applied, so in the aforementioned, this translates to a 10% padding
@@ -7295,14 +7289,14 @@ surrounding the filtered element. SvJs enlarges this filter region to
 25%, allowing some more room to experiment. If you need to adjust it
 further, you can easily do so with the set() method:
 
-```
+<pre>
 filter.set({ 
   x: '-15%', 
   y: '-15%', 
   width: '130%', 
   height: '130%' 
 });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-2">8.2 Filter Effects 101</h2>
@@ -7314,10 +7308,10 @@ attribute stdDeviation can actually accept two values as well as one. If
 you supply two, the first number will control the blur along the x axis
 and the second the blur along the y axis.
 
-```
+<pre>
 // Create a 'motion' blur effect.
 filter.create('feGaussianBlur').set({ stdDeviation: '20 0' });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2a">8.2a Shadows</h3>
@@ -7334,7 +7328,7 @@ modify the shadow's color and transparency.
 Here's how we could rewrite the code for Figure 8-2 using SvJs and the
 feDropShadow primitive.
 
-```
+<pre>
 // Initialise the filter.
 let filter = svg.createFilter('shadow');
 
@@ -7347,7 +7341,7 @@ svg.create('circle').set({
 
 // ... other attributes. 
 filter: 'url(#shadow)' });
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2b">8.2b Coloring</h3>
@@ -7372,7 +7366,7 @@ rename this folder to something like 21-colour-filter. Leaving the rest
 of the code as is, replace the body of the nested for loop with the
 following:
 
-```
+<pre>
 if (Gen.chance(55)) { 
   grid.create('rect').set({ 
     x: x, 
@@ -7384,7 +7378,7 @@ if (Gen.chance(55)) {
     )`
   });
 }
-```
+</pre>
 
 This should give us a chance arrangement of colorful tiles on each
 refresh. So far we've been quite restrained in our use of color,
@@ -7426,7 +7420,7 @@ colors from our input, we need to set the values to 0. Let's set up a
 filter now to do this. At the bottom of the sketch, initialize a new
 filter as follows:
 
-```
+<pre>
 // Initialise the filter.
 let filter = svg.createFilter('colourise');
 
@@ -7439,20 +7433,20 @@ filter.create('feColorMatrix').set({
 
 // Apply the filter.
 grid.set({ filter: 'url(#colourise)' });
-```
+</pre>
 
 This should result in a grayscale grid. Next, we want to choose a color
 to mix into it, and for this, we'll use the feFlood primitive. Between
 the feColorMatrix primitive and the last line where we apply the filter,
 add the following code:
 
-```
+<pre>
 // Set a flood colour. 
 filter.create('feFlood').set({ 
   flood_color: '#7F462C', 
   result: 'flood' 
 });
-```
+</pre>
 
 This should add a sepia-brown color to the composition. The problem? It
 simply floods the canvas, covering everything else. We need a way to
@@ -7483,7 +7477,7 @@ There are actually several blend modes that will work well in our case,
 so what I'm going to do is store these in an array so we can select from
 them later. Include the following code before our filter is initialized:
 
-```
+<pre>
 // Set up a blend modes array. 
 let blendModes = ['screen',
   'overlay', 
@@ -7492,13 +7486,13 @@ let blendModes = ['screen',
   'soft-light', 
   'color'
 ];
-```
+</pre>
 
 Next, after where we defined the feFlood primitive, set up the feBlend
 primitive. We'll randomize its mode attribute and set the first input to
 the flood color and the second input to the desaturated grid.
 
-```
+<pre>
 // Randomise the blend mode. 
 filter.create('feBlend').set({ 
   mode: Gen.random(blendModes), 
@@ -7506,7 +7500,7 @@ filter.create('feBlend').set({
   in2: 'desaturate', 
   result: 'blend' 
 });
-```
+</pre>
 
 The first input, in, acts as our top color, and the second input, in2,
 acts as our background color. Our grid should have re-appeared at this
@@ -7587,14 +7581,14 @@ be clipped.
 Let's set this up now. Include the following code after the feBlend
 primitive, before the filter is applied to the grid.
 
-```
+<pre>
 // Composite the blend 'atop' the original.
 filter.create('feComposite').set({ 
   in: 'blend', 
   in2: 'SourceGraphic', 
   operator: 'atop' 
 });
-```
+</pre>
 
 For me, this resulted in the output you see in Figure 8-6. I don't know
 about you, but I see a pugnacious pup putting up his dukes, à la
@@ -7731,12 +7725,12 @@ First things first, make a copy of our template folder and rename it to
 below the background, let's set up our source graphic in the center of
 the viewBox, randomizing its radius a little.
 
-```
+<pre>
 // Create the source graphic. 
 svg.create('circle').set({ cx: 500, cy:
 500, r: Gen.random(250, 350), fill: '#000', filter: 'url(#cosmic)'
 });
-```
+</pre>
 
 You'll notice we've referenced our filter already but haven't yet
 created it. Normally the order of our created elements matters; if we
@@ -7752,7 +7746,7 @@ feTurbulence. We'll randomize the seed, keep the dial low on the
 baseFrequency, and crank up the numOctaves to 4, to bring out some of
 the texture details.
 
-```
+<pre>
 // Initialise the filter. 
 let filter = svg.createFilter('cosmic');
 
@@ -7761,7 +7755,7 @@ filter.create('feTurbulence').set({ type: 'fractalNoise',
 baseFrequency: Gen.random(0.002, 0.006, true), seed: Gen.random(0,
 10000), numOctaves: 4, stitchTiles: 'stitch', result: 'turbulence'
 });
-```
+</pre>
 
 Like feFlood, feTurbulence is a generator primitive that doesn't require
 any input; it generates its own output directly. The result of this is
@@ -7782,7 +7776,7 @@ as the displacement map destination. The blurred area of our circle will
 instead be our displacement map source. Here's how to set up this up
 (with some randomness mixed in).
 
-```
+<pre>
 // Blur the edges of the source graphic.
 filter.create('feGaussianBlur').set({ stdDeviation: Gen.random(10,
 25), in: 'SourceGraphic', result: 'blurred' });
@@ -7791,7 +7785,7 @@ filter.create('feGaussianBlur').set({ stdDeviation: Gen.random(10,
 filter.create('feDisplacementMap').set({ in: 'turbulence', in2:
 'blurred', scale: Gen.random(250, 500), result: 'distortion'
 });
-```
+</pre>
 
 This results in a rim of displaced noise, as shown in Figure 8-9. Note
 that we've omitted the xChannelSelector and yChannelSelector attributes
@@ -7808,12 +7802,12 @@ composite together the outputs of feDisplacementMap and feGaussianBlur
 using the atop operator. We should then have something that resembles
 Figure 8-10, our Hubble Bubble.
 
-```
+<pre>
 // Remove everything beyond the blurred perimeter.
 filter.create('feComposite').set({ in: 'distortion', in2:
 'blurred', operator: 'atop'
 });
-```
+</pre>
 
 ![](./images/image068.jpg){width="3.15in" height="3.15in"}
 
@@ -7903,11 +7897,11 @@ defines whether the target surface of the lighting is diffuse or
 specular; and two, the inner node, which defines the type of light
 source to be used. Here's how an example might look in raw SVG:
 
-```
+<pre>
 <feDiffuseLighting in="SourceGraphic" surfaceScale="1.5">
   <feDistantLight azimuth="330" elevation="45" />
   </feDiffuseLighting>
-```
+</pre>
 
 There are three light source nodes: feDistantLight, an ambient light
 that emits rays uniformly in all directions (such as the sun);
@@ -7942,7 +7936,7 @@ Z command by simply adding a new M command (the equivalent of lifting
 your pen to start a new line elsewhere). Once we have the ripped paper
 set up, we center it.
 
-```
+<pre>
 // Create a parchment-coloured gradient.
 svg.createGradient('parchment', 
 'linear', ['#fffbeb', '#fde68a'], 90);
@@ -7957,14 +7951,14 @@ let paper = svg.create('path').set({
 
 // Centre it.
 paper.moveTo(500, 500);
-```
+</pre>
 
 The composition we're keeping deliberately simple so that we can give
 more focus to the filter effect. We'll initialize this next and add the
 first primitive to the chain: feTurbulence. This will form the basis of
 the paper grain texture.
 
-```
+<pre>
 // Initialise the filter. 
   let filter = svg.createFilter('rough-paper');
 
@@ -7976,7 +7970,7 @@ filter.create('feTurbulence').set({
   seed: Gen.random(0, 100), 
   result: 'turbulence' 
 });
-```
+</pre>
 
 The canvas should now be flooded with feTurbulence. What we'll do next
 is shine a light on it, specifically an feDiffuseLighting primitive with
@@ -7984,7 +7978,7 @@ a nested feDistantLight node as the lighting type. This second node we
 can create directly after the diffuse lighting primitive, using SvJs
 method chaining.
 
-```
+<pre>
 // Shine diffuse lighting on the turbulence.
 filter.create('feDiffuseLighting').set({ 
   surfaceScale: 1,
@@ -7995,13 +7989,13 @@ filter.create('feDiffuseLighting').set({
   azimuth: 180, 
   elevation: 45,
 });
-```
+</pre>
 
 We should now have a paper-like texture covering the canvas. Next, we'll
 rough up the edges of our source graphic by plugging some turbulence
 into an feDisplacementMap primitive.
 
-```
+<pre>
 // Distort the paper source graphic with turbulence.
 filter.create('feDisplacementMap').set({ 
   in: 'SourceGraphic', 
@@ -8009,7 +8003,7 @@ filter.create('feDisplacementMap').set({
   scale: 25, 
   result: 'distortion' 
 });
-```
+</pre>
 
 This gives us an outline of aging paper with worn edges, but with no
 texture. To re-introduce the result of the lighting effect, we need to
@@ -8017,7 +8011,7 @@ do some compositing. With the lighting output as the foreground and
 rough-edged paper as the background, the in operator will achieve the
 effect we're looking for.
 
-```
+<pre>
 // Merge the lighting with the rough-edged paper.
 filter.create('feComposite').set({ 
   in: 'lighting', 
@@ -8025,7 +8019,7 @@ filter.create('feComposite').set({
   operator: 'in', 
   result: 'composite' 
 });
-```
+</pre>
 
 With the shape now in place and the texture showing through, we have a
 believable rough and ripped paper texture. However, we're missing one
@@ -8033,14 +8027,14 @@ final ingredient: the color. To remedy this, we'll blend the output of
 feComposite with the output of feDisplacementMap and use a mode of
 multiply. This should salvage our original parchment gradient.
 
-```
+<pre>
 // Re-introduce the parchment gradient.
 filter.create('feBlend').set({
   in: 'composite', 
   in2: 'distortion', 
   mode: 'multiply' 
 });
-```
+</pre>
 
 Figure 8-13 shows the result. Not bad! While not quite impressive enough
 to stand on its own (in my opinion at least), with variations of this
@@ -8065,7 +8059,7 @@ Copy the template folder and call it 24-rocky-randomness. Below the
 background, we'll set up our source graphic, which will be a simple
 circle. To this circle, we'll apply both a gradient and a filter.
 
-```
+<pre>
 // Create our source graphic. 
 svg.create('circle').set({ 
   r: 300, 
@@ -8074,13 +8068,13 @@ svg.create('circle').set({
   fill: 'url(#random-gradient)', 
   filter: 'url(#rocky-randomness)' 
 });
-```
+</pre>
 
 The next step is to set up a linear gradient. For this, we'll use an
 array of three random colors, and we'll also randomize the gradient's
 rotation.
 
-```
+<pre>
 // A random colour array.
 let colours = [
   `hsl(${Gen.random(0, 360)} 80% 80% / 0.75)`,
@@ -8089,7 +8083,7 @@ let colours = [
 ];
 // A gradient with a randomised rotation and array of colours.
 svg.createGradient('random-gradient', 'linear', colours, Gen.random(0, 360));
-```
+</pre>
 
 Now to the filter. As with our other examples, our first node will be an
 feTurbulence primitive, which will act as our primary textural source.
@@ -8097,7 +8091,7 @@ The numOctaves will vary between 2 and 7, which will allow for quite a
 degree of variation in the level of detail. The baseFrequency and seed
 we'll also randomize.
 
-```
+<pre>
 // Initalise the filter. let filter =
 svg.createFilter('rocky-randomness');
 
@@ -8107,7 +8101,7 @@ filter.create('feTurbulence').set({
   numOctaves: Gen.random(2, 7), baseFrequency:
   Gen.random(0.003, 0.01, true), seed: Gen.random(0, 1000), 
   result: 'turbulence' });
-```
+</pre>
 
 Now we have raw turbulence covering the canvas, and while it does vary
 on each refresh, it still feels a little too uniform. How can we create
@@ -8122,7 +8116,7 @@ strength of the distortion), and set R and G as the x and y channel
 selectors (purely because I didn't really like the default output of
 alpha on this occasion).
 
-```
+<pre>
 // Set up another instance of turbulence.
 filter.create('feTurbulence').set({ 
   type: 'fractalNoise',
@@ -8140,14 +8134,14 @@ filter.create('feDisplacementMap').set({
   yChannelSelector: 'G', 
   result: 'distortion' 
 });
-```
+</pre>
 
 We have some more natural-looking noise now, so let's spin up some
 specular lighting and see how the noise looks when lit up. We'll utilize
 Gen. random() on most of the attributes, including the point light
 coordinates.
 
-```
+<pre>
 // Shine a specular point light on the distorted output.
 filter.create('feSpecularLighting').set({ 
   in: 'distortion',
@@ -8160,7 +8154,7 @@ filter.create('feSpecularLighting').set({
   y: Gen.random([-50, 1050]), 
   z: Gen.random(50, 250) 
 });
-```
+</pre>
 
 For the x and y coordinates, you'll notice we're using Gen.random() to
 pick from an array of values rather than a range; if you inspect these
@@ -8176,7 +8170,7 @@ then use feComposite along with the in operator as we've done in
 previous sketches, before recovering the original gradient using another
 feComposite primitive, this time with the atop operator.
 
-```
+<pre>
 // Blur the source graphic.
 filter.create('feGaussianBlur').set({ 
   in: 'SourceGraphic',
@@ -8199,7 +8193,7 @@ filter.create('feComposite').set({
   in2: 'comp1', 
   operator: 'atop' 
 });
-```
+</pre>
 
 And now we're ready to see some results! Figure 8-14 shows a render I
 particularly liked, but the variation in this sketch is quite large so
@@ -8751,7 +8745,7 @@ element for creating basic shapes like lines and arcs in SVG library. It can als
 complex shapes combining many basic ones. “d” is the parameter for defining shape of 
 element.
 
-```
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8832,7 +8826,7 @@ element.
 </body>
 
 </html>
-```
+</pre>
 
 Output: 
 
@@ -8840,7 +8834,7 @@ Example 2: The following example demonstrates the drawsvg() method along with op
 setting and using callback method. The callback function is executed, once the animation 
 is completed. 
 
-```
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8934,7 +8928,7 @@ is completed.
 </body>
 
 </html>
-```
+</pre>
 Output:
 
 Video Player
@@ -8943,7 +8937,7 @@ Video Player
 
 Example 3:
 
-```
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9030,7 +9024,7 @@ Example 3:
     </script>
 </body>
 </html>
-```
+</pre>
 
 Output: The animation always depends on the speed of scrolling. 
 
@@ -9042,7 +9036,7 @@ Video Player
 
 Ex 1:
 
-```
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9123,11 +9117,11 @@ Ex 1:
 </body>
 
 </html>
-```
+</pre>
 
 Ex 2:
 
-```
+<pre>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9221,34 +9215,34 @@ Ex 2:
 </body>
 
 </html>
-```
+</pre>
 
 
-```
-<!DOCTYPE html>
-<html lang="en">
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <title>jQuery DrawSVG Plugin</title>
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-    <link rel="stylesheet" href="style.css">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-"//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+"//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9267,38 +9261,38 @@ Ex 2:
             left: 0;
             right: 0;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks</h1>
-    <b>Draw On Scroll, Please scroll down and up</b>
-    <div class="wrapper">
-        <svg style="background-color:#ffffff00" 
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+    &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;svg style="background-color:#ffffff00" 
              xmlns="http://www.w3.org/2000/svg" 
              width="200" height="150" 
-             viewBox="0 0 200 150">
+             viewBox="0 0 200 150"&gt;
              
-            <g stroke="#FFFFFF" stroke-width="2" fill="none">
+            &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
             
-                <!--The path element is the general shape used in SVG -->
-                <path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
+                &lt;!--The path element is the general shape used in SVG --&gt;
+                &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
                          67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
                          31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
-                         30.425 67.97 67.958z" />
-                <path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
+                         30.425 67.97 67.958z" /&gt;
+                &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
                          48.488-26.772 0-48.48-21.71-48.48-48.488 0-26.776
                          21.708-48.48 48.48-48.48 26.794 0 48.496 21.704 
-                         48.496 48.48z" />
-                <path d="M37 68.998C37 50.773 51.55 36 69.495 36" />
-                <path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
+                         48.496 48.48z" /&gt;
+                &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
+                &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
                          15.208.007 20.98l-2.886 2.894c-5.752 5.772-15.174 
-                         5.783-20.94.024l-55.128-55.078" />
-            </g>
-        </svg>
-    </div>
+                         5.783-20.94.024l-55.128-55.078" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         var $docVar = $(document),
             $winVar = $(window),
             $svgVar = $('svg').drawsvg(),
@@ -9308,8 +9302,8 @@ Ex 2:
             var p = $winVar.scrollTop() / max;
             $svgVar.drawsvg('progress', p);
         });
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
-```
+&lt;/html&gt;
+</pre>
