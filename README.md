@@ -5209,8 +5209,7 @@ libraries like the popular SimplexJS, which goes beyond two dimensions
 and allows for greater freedom of configuration (at a cost of size,
 however).
 
-Before we move on, let's quickly recap what we've covered in this
-chapter:
+Before we move on, let's quickly recap what we've covered in this chapter:
 
 -   The limits of randomness when creating more organic forms and how
     noise addresses this limitation
@@ -5233,7 +5232,7 @@ In the next chapter, we're going to cover a fundamental part of the SVG
 spec: the very powerful path element.
 <!-- page 137 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 href="#ch6">CHAPTER 6: The All-Powerful Path</h2>
+<h2 href="#ch6">CHAPTER 6: The All-Powerful Path (137)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Paths are perhaps the most important and most powerful part of the SVG
 spec. Most SVG files, be they simple icons or complex artworks, consist
@@ -5249,7 +5248,7 @@ get complicated quickly, so we'll also be covering some SvJs methods to
 make our lives easier.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch6-1">6.1 The Path Element</h2>
+<h2 id="ch6-1">6.1 The Path Element (137)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's simple to set up a path; we just call the SvJs create() method as
 we would with most other elements: let path = svg.create(&apos;path&apos;);
@@ -5259,13 +5258,8 @@ elements do, but unlike other graphical elements (like rect and circle),
 they come with no intrinsic form or shape. This is entirely up to us to
 define, and we do so via the d attribute.
 
-© David Matthew 2024 137
-
-D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-&lt;https://doi.org/10.1007/979-8-8688-0086-3_6&gt;
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-1a">6.1a D for Data</h3>
+<h3 id="ch6-1a">6.1a D for Data (138)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The d attribute allows us to populate a path with data. This data
 consists of a series of path commands and accompanying numeric values
@@ -5281,41 +5275,40 @@ conserve space.
 
 <pre>
 // <i>An example of a string of path data.</i>
-path.set({ d: 'M 20,20 L 30,20
-L 30,30 L 20,30 Z' });
+path.set({ 
+  d: 'M 20,20 L 30,20 L 30,30 L 20,30 Z' 
+});
 
 // <i>An identical path using a more concise string.</i>
-path.set({ d: 'M20
-20L30 20L30 30L20 30Z' });
+path.set({ 
+  d: 'M20 20L30 20L30 30L20 30Z' 
+});
 </pre>
 
-We'll go into more detail in later sections as to how examples like the
+<p>We'll go into more detail in later sections as to how examples like the
 aforementioned work; for now, just note that the very same path data can
 be written with or without commas to separate values and with or without
-spaces to separate commands.
-
+spaces to separate commands.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-1b">6.1b Path Commands</h3>
+<h3 id="ch6-1b">6.1b Path Commands 138</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-You can think of path commands as drawing instructions. Each command is
+<p>You can think of path commands as drawing instructions. Each command is
 represented by a letter, and this letter can be either uppercase or
 lowercase. The uppercase version indicates that the values which follow
 will use absolute coordinates (so the command M 50,50 would mean moving
 to the exact position of 50,50 in the viewBox), whereas the lowercase
 version means that relative coordinates will be used (so the command m
 50,50 would mean moving by +50 on both the x and y axes relative to the
-last known position).
+last known position).</p>
 
-There are a total of ten commands; twenty if you count the two versions.
+<p>There are a total of ten commands; twenty if you count the two versions.
 And if you think that sounds like a lot, you'd be right! It is a lot.
 But there's an amazing economy to these commands when you consider that
 they can be combined to create any possible two-dimensional shape. Some
 commands are more common than others, some more complex, and some we'll
-demonstrate the once and won't use again.
-
+demonstrate the once and won't use again.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch6-2">6.2 Starting and Ending a Path</h2>
+<h2 id="ch6-2">6.2 Starting and Ending a Path 139</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 All paths start somewhere. And where SVG is concerned, all paths start
 at the point to which we move our virtual pen. We use the M (or m)
@@ -5354,17 +5347,15 @@ them interchangeably.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-3">6.3 Straight Lines</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-To ease us into path creation, we'll start with the straight line. There
+<p>To ease us into path creation, we'll start with the straight line. There
 are actually a few different commands that can draw a straight line, but
-we'll start with the most obvious.
-
+we'll start with the most obvious.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3a">6.3a The Simple L</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The L command allows us to draw straight lines defined by an x and y
+<p>The L command allows us to draw straight lines defined by an x and y
 coordinate pair. The lowercase l does the same but uses coordinates
-relative to the path's last entered point.
+relative to the path's last entered point.</p>
 
 <pre>
 // <i>Syntax for the L/l command.</i>
@@ -5372,9 +5363,9 @@ relative to the path's last entered point.
 'l [dx, dy] ...'
 </pre>
 
-Let's see what this looks like in practice. In the following example,
+<p>Let's see what this looks like in practice. In the following example,
 two lines are used to create two instances of the letter L. The first
-uses absolute coordinates; the second uses relative coordinates.
+uses absolute coordinates; the second uses relative coordinates.</p>
 
 <pre>
 // <i>The first L.</i>
@@ -5386,20 +5377,20 @@ svg.create('path').set({
   d: 'M 675 825 l 0 -600 l -300 0' });
 </pre>
 
-We can see a rendering of the preceding code in Figure 6-1. I've left
+<p>We can see a rendering of the preceding code in Figure 6-1. I've left
 out any elements and attributes extraneous to the example and focused on
 just the path data. As you can see, you can use either of the L commands
-to achieve similar results.
+to achieve similar results.</p>
 
-When creating paths manually in this manner, some readers may find
+<p>When creating paths manually in this manner, some readers may find
 absolute coordinates more intuitive to work with, while others may find
 relative coordinates easier to use. Relative coordinates can be
 especially useful if, say, you wanted to move a path's location without
 disturbing its shape; with absolute coordinates, we'd have to change all
 the subsequent numbers, whereas with relative coordinates, we'd only
-have to change the initial M point.
+have to change the initial M point.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 40. Two L's drawn by two L commands (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 40. Two L's drawn by two L commands (142) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image040.jpg"
   style="width:3.15in"
@@ -5426,28 +5417,27 @@ or v, the y coordinate.
 'v [dy] ...'
 </pre>
 
-These commands I don't find particularly useful for generative art, but
+<p>These commands I don't find particularly useful for generative art, but
 it's worth knowing they're there should you want to use them. Let's
 create the same L shapes from Figure 6-1, but with H and V this time,
-including their lowercase versions.
+including their lowercase versions.</p>
 
 <pre>
 // <i>The first L.</i>
-svg.create('path').set({ d: 'M 300 200 V 800 H 600' });
+svg.create('path').set({ 
+  d: 'M 300 200 V 800 H 600' });
 
 // <i>The second L.</i>
 svg.create('path').set({ d: 'M 675 825 v -600 h -300' });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3c">6.3c Further Economies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Before we move on to curves, it's worth pointing out if we are using
-successive path commands of the same type, the command itself can be
-removed rather than repeated. SVG renderers are intelligent enough to
-know that if a path command is omitted, the last-known command should be
-used. Let's show a quick example (the output of which is shown in Figure
-6-2).
+<p>Before we move on to curves, it's worth pointing out if we are using successive path 
+commands of the same type, the command itself can be removed rather than repeated. SVG 
+renderers are intelligent enough to know that if a path command is omitted, the last-
+known command should be used. Let's show a quick example (the output of which is shown 
+in Figure 6-2 below).</p>
 
 <pre>
 // <i>The first path, with repeating L commands.</i>
@@ -5461,7 +5451,7 @@ svg.create('path').set({
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. Omitting repetitive commands (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. Omitting repetitive commands (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image041.jpg"
   style="width:3.543in"
@@ -5473,11 +5463,11 @@ svg.create('path').set({
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-4">6.4 Quadratic Bezier Curves</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The first curve we'll cover is the quadratic Bezier curve. Don't worry
+<p>The first curve we'll cover is the quadratic Bezier curve. Don't worry
 -- the rather daunting name doesn't reflect its complexity. As far as
 curves go, it's relatively simple. Two sets of coordinates are required:
 the first set defines the control point (which we'll explain in a
-moment), and the second the destination point.
+moment), and the second the destination point.</p>
 
 <pre>
 // Syntax for the Q/q command.
@@ -5488,19 +5478,19 @@ moment), and the second the destination point.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4a">6.4a Control Points</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If you imagine a control point as a force of attraction, or pull, toward
+<p>If you imagine a control point as a force of attraction, or pull, toward
 which a curve bends, you'll have the right idea. Control points aren't
 themselves rendered, but if you look at the dot and dashed line in
 Figure 6-3, you can see a visualization of the force a control point
 exerts over its curve (in this case, a quadratic Bezier curve). In this
 example, the dot represents the control point coordinates of &lbrack;150,
-350&rbrack;, given the following path:
+350&rbrack;, given the following path:</p>
 
 <pre>
 'M 50 150 Q 150 350 250 150'
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 42. The control point of a quadratic Bezier curve (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 42. The control point of a quadratic Bezier curve (145) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image042.jpg"
   style="width:3.15in"
@@ -5510,22 +5500,20 @@ example, the dot represents the control point coordinates of &lbrack;150,
 
 <p><small><small><i><b>Figure 6-3.</b> The control point of a quadratic Bezier curve</i></small></small></p>
 
-A quadratic Bezier curve has just the one control point, whereas the
-cubic Bezier curve (explored in a later section), has two.
-
+<p>A quadratic Bezier curve has just the one control point, whereas the
+cubic Bezier curve (explored in a later section), has two.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4b">6.4b A Smooth Shortcut</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Say we wanted to extend the path from Figure 6-3 and draw a smooth set
+<p>Say we wanted to extend the path from Figure 6-3 and draw a smooth set
 of waves repeating at regular intervals. The difficulty in doing this
 manually is with the calculation of the control point; if it's not
 perfectly symmetric with the previous one, a "kink" will appear in our
 curve (see Figure 6-4). Now, in this particular case, it's not that
 arduous a job to calculate a control point that would correct this, but
-in more complex cases, this can become a challenge.
+in more complex cases, this can become a challenge.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. A kink in the curve (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. A kink in the curve (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image043.jpg"
   style="width:3.15in"
@@ -5558,7 +5546,7 @@ follow.
 <pre>
 // Extending a quadratic curve with the smooth T command.
 svg.create('path').set({
-d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
+  d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
 });
 </pre>
 
@@ -5566,7 +5554,7 @@ Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
 purple second point) from the four additional T points (in red).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. A smooth quadratic curve (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. A smooth quadratic curve (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image044.jpg"
   style="width:4.725in"
@@ -5578,54 +5566,49 @@ purple second point) from the four additional T points (in red).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4c">6.4c A Quadratic Slinky</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Let's use the quadratic Bezier curve in a simple sketch to create a
+<p>Let's use the quadratic Bezier curve in a simple sketch to create a
 Slinky- esque array of paths. If you don't know what a Slinky is, it's a
 popular spring-based toy that can "walk" itself down a set of steps if
 given a nudge from the top (I'm sure it can perform many other
-miraculous feats, but this is the one for which it's most widely known).
+miraculous feats, but this is the one for which it's most widely known).</p>
 
-Copy the template folder and rename it to 14-quadratic-slinky. Below the
+<p>Copy the template folder and rename it to 14-quadratic-slinky. Below the
 parent SVG, set some styles to target the path elements that we'll later
-set up as children of a group to which we'll give an id of slinky.
+set up as children of a group to which we'll give an id of slinky.</p>
 
 <pre>
 // <i>Style the slinky.</i>
 svg.create('style').content(`
   #slinky path { 
-    fill: none; stroke-width: 0.75; 
+    fill: none; 
+	stroke-width: 0.75; 
 	stroke-linecap: round;
   }`
 );
 </pre>
 
-Next set up the usual background, initialize a random hue, and create
-the aforementioned slinky group.
+<p>Next set up the usual background, initialize a random hue, and create the aforementioned 
+slinky group.</p>
 
 <pre>
 // <i>Background.</i>
 svg.create('rect').set({ 
-  x: 0, y: 0, width: 1000, 
-    height: 1000, 
-	fill: '#181818' 
+  x: 0, y: 0, width: 1000, height: 1000, fill: '#181818' 
 });
 
 // <i>Choose a random starting hue.</i>
 let hue = Gen.random(0, 360);
 
 // <i>Set up the slinky path group.</i>
-let slinky = svg.create('g').set({
-  id: 'slinky' 
-});
+let slinky = svg.create('g').set({ id: 'slinky' });
 </pre>
 
-In the next step, we'll fire up the loop and create a couple of control
-points we'll use to shape our quadratic curve.
+<p>In the next step, we'll fire up the loop and create a couple of control
+points we'll use to shape our quadratic curve.</p>
 
 <pre>
 // <i>Start the loop.</i>
-for (let i = 0; 
-i < 500; i += 5) {
+for (let i = 0; i < 500; i += 5) {
 
   // <i>Create the control points.</i>
   let cpx = Gen.random(200, 400); 
@@ -5633,14 +5616,13 @@ i < 500; i += 5) {
 }
 </pre>
 
-The width of our curve will be 600 units (relative to the viewBox), so
-our halfway point will be 300. On the x axis, the cpx variable is
-picking a random integer value 100 units either side of the halfway
-point, to give our slinky some "wobble." The cpy variable is more
-straightforward; it moves down the screen on each iteration, with an
-offset of 400 units that will "pull" the curve upward.
+<p>The width of our curve will be 600 units (relative to the viewBox), so our halfway 
+point will be 300. On the x axis, the cpx variable is picking a random integer value 100 
+units either side of the halfway point, to give our slinky some "wobble." The cpy 
+variable is more straightforward; it moves down the screen on each iteration, with an
+offset of 400 units that will "pull" the curve upward.</p>
 
-Next, let's create the actual curve (keeping within the loop).
+<p>Next, let's create the actual curve (keeping within the loop).</p>
 
 <pre>
 // <i>Create the quadratic curve.</i>
@@ -5650,37 +5632,38 @@ slinky.create('path').set({
 });
 </pre>
 
-Here, we're setting the hue as we've done many times before, and for the
+<p>Here, we're setting the hue as we've done many times before, and for the
 path, we're drawing one simple curve starting with the M command. For
 the curve coordinates, we're taking advantage of the relative
 coordinates calculated by the lowercase q command, which allows us to
-keep the values in step with curve's starting point.
+keep the values in step with curve's starting point.</p>
 
-Before closing out the loop, we'll increment the hue, but we'll use a
+<p>Before closing out the loop, we'll increment the hue, but we'll use a
 new technique to do so. I mentioned the modulo operator (%) in Chapter 2
 (in the section covering operators), which calculates a number's
 remainder after division. This can be useful to cycle within predefined
 ranges, such as the 0 to 360 constraints of a color's hue. Add the
-following as the final line before the end of the loop:
+following as the final line before the end of the loop:</p>
 
 <pre>
-// Increment the hue. hue = (hue % 360) + 1.5;
+// Increment the hue.
+hue = (hue % 360) + 1.5;
 </pre>
 
-A quick explanation of how this works: say our random hue is initialized
+<p>A quick explanation of how this works: say our random hue is initialized
 to 350. The expression hue % 360 will return 350, because 350 / 360 is
 0, with a remainder of 350. This works similarly for every number in our
 range <i>except</i> 360, which returns 1 when divided by itself and returns a
-remainder of 0. This is how it cycles back to the start of the range.
+remainder of 0. This is how it cycles back to the start of the range.</p>
 
-Now that our loop is done, we can add one more line outside it to ensure
-the content is centered. The result should resemble Figure 6-6.
+<p>Now that our loop is done, we can add one more line outside it to ensure
+the content is centered. The result should resemble Figure 6-6.</p>
 
 <pre>
 slinky.moveTo(500, 500);
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 45. Quadratic curves in a slinky formation (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 45. Quadratic curves in a slinky formation (150) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image045.jpg"
   style="width:3.15in"
@@ -5692,10 +5675,10 @@ slinky.moveTo(500, 500);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-5">6.5 Elliptical Arcs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Time to embark on the arc! The elliptical arc curve (Figure 6-7) is a
+<p>Time to embark on the arc! The elliptical arc curve (Figure 6-7) is a
 complicated beast, and the syntax is quite difficult to comprehend
 without some visual examples. The A (or a) command is used to initialize
-it, and it is followed by no less than seven arguments.
+it, and it is followed by no less than seven arguments.</p>
 
 <pre>
 // Syntax for the A/a command.
