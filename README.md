@@ -47,31 +47,31 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
 <ol type="1" start="1">
-  <li><a href="#ch1">Chapter 1: The Beginner's Path</a>
+  <li><a href="#ch1">Chapter 1: The Beginner's Path 1</a>
     <ol type="1">
-      <li><a href="#ch1-1">1.1 Why JavaScript and SvJs?</a>
+      <li><a href="#ch1-1">1.1 Why JavaScript and SvJs? 1</a>
         <ol type="a">
-          <li><a href="#ch1-1a">1.1a Introducing Scalable Vector Graphics</a></li>
-          <li><a href="#ch1-1b">1.1b Native SVG</li>
-          <li><a href="#ch1-1c">1.1c Generating SVG</a></li>
+          <li><a href="#ch1-1a">1.1a Introducing Scalable Vector Graphics 2</a></li>
+          <li><a href="#ch1-1b">1.1b Native SVG 3</li>
+          <li><a href="#ch1-1c">1.1c Generating SVG 5</a></li>
         </ol>
       </li>
-      <li><a href="#ch1-2">1.2 Getting Set Up</a>
+      <li><a href="#ch1-2">1.2 Getting Set Up 8</a>
         <ol>
-          <li><a href="#ch1-2a">1.2a The Code Editor</a></li>
-          <li><a href="#ch1-2b">1.2b Nodejs and NPM</a></li>
-          <li><a href="#ch1-2c">1.2c Initializing and Installing SvJs</a></li>
-          <li><a href="#ch1-2d">1.2d Scaffolding Our Sketches</a></li>
-          <li><a href="#ch1-2e">1.2e Serving Our Sketches</a></li>
+          <li><a href="#ch1-2a">1.2a The Code Editor 8</a></li>
+          <li><a href="#ch1-2b">1.2b Nodejs and NPM 8</a></li>
+          <li><a href="#ch1-2c">1.2c Initializing and Installing SvJs 9</a></li>
+          <li><a href="#ch1-2d">1.2d Scaffolding Our Sketches 10</a></li>
+          <li><a href="#ch1-2e">1.2e Serving Our Sketches 12</a></li>
         </ol>
       </li>
-      <li><a href="#ch1-3">1.3 Our First Generative Sketch</a></li>
-      <li><a href="#ch1-4">1.4 Summary</a></li>
+      <li><a href="#ch1-3">1.3 Our First Generative Sketch 13</a></li>
+      <li><a href="#ch1-4">1.4 Summary 16</a></li>
     </ol>  <!-- chapter 1 -->
   </li>
-  <li><a href="#ch2">Chapter 2: A Programming Primer</a>
+  <li><a href="#ch2">Chapter 2: A Programming Primer 19</a>
     <ol type="1">
-      <li><a href="#ch2-1">2.1 Syntax</a>
+      <li><a href="#ch2-1">2.1 Syntax 19</a>
         <ol>
           <li><a href="#ch2-1a">2.1a Case Sensitivity 20</a></li>
           <li><a href="#ch2-1b">2.1b Spacing 20</a></li>
@@ -79,7 +79,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
           <li><a href="#ch2-1d">2.1d Comments 21</a></li>
         </ol>
       </li>
-      <li><a href="#ch2-2">2.2 Values</a>
+      <li><a href="#ch2-2">2.2 Values 22</a>
         <ol>
           <li><a href="#ch2-2a">2.2a Numbers 22</a></li>
           <li><a href="#ch2-2b">2.2b Strings 22</a></li>
@@ -88,7 +88,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
         </ol>
       </li>
       <li><a href="#ch2-3">2.3 Variables 25</a></li>
-      <li><a href="#ch2-4">2.4 Operators</a>
+      <li><a href="#ch2-4">2.4 Operators 26</a>
         <ol>
           <li><a href="#ch2-4a">2.4a Arithmetic Operators 26</a></li>
           <li><a href="#ch2-4b">2.4b Comparison Operators 29</a></li>
@@ -96,13 +96,13 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
         </ol>
       </li>
       <li><a href="#ch2-5">2.5 Conditional Statements 31</a></li>
-      <li><a href="#ch2-6">2.6 Loops
+      <li><a href="#ch2-6">2.6 Loops 33
         <ol>
           <li><a href="#ch2-6a">2.6a The While Loop 34</a></li>
           <li><a href="#ch2-6b">2.6b The For Loop 35</a></li>
         </ol>
       </li>
-      <li><a href="#ch2-7">2.7 Functions</a>
+      <li><a href="#ch2-7">2.7 Functions 37</a>
         <ol>
           <li><a href="#ch2-7a">2.7a Function Parameters 37</a></li>
           <li><a href="#ch2-7b">2.7b Invoking Functions 38</a></li>
@@ -111,7 +111,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
           <li><a href="#ch2-7e">2.7e Arrow Functions 42</a></li>
         </ol>
       </li>
-      <li><a href="#ch2-8">2.8 Objects and Arrays</a>
+      <li><a href="#ch2-8">2.8 Objects and Arrays 44</a>
         <ol>
           <li><a href="#ch2-8a">2.8a Arrays 44</a></li>
           <li><a href="#ch2-8b">2.8b Objects 47</a></li>
@@ -128,13 +128,13 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch2-11">2.11 Summary 53</a></li>
     </ol>
   </li>
-  <li><a href="#ch3">Chapter 3: All About SVG</a>
+  <li><a href="#ch3">Chapter 3: All About SVG 55</a>
     <ol type="1">
       <li><a href="#ch3-1">3.1 The Parent SVG Element 55</a></li>
       <li><a href="#ch3-2">3.2 The Viewport and ViewBox 57</a></li>
       <li><a href="#ch3-3">3.3 Setting and Getting Values 59</a></li>
       <li><a href="#ch3-4">3.4 Quicker Element Creation 60</a></li>
-      <li><a href="#ch3-5">3.5 Lines and Shapes</a>
+      <li><a href="#ch3-5">3.5 Lines and Shapes 61</a>
         <ol>
           <li><a href="#ch3-5a">3.5a Rectangles and Squares 61</a></li>
           <li><a href="#ch3-5b">3.5b First Strokes 63</a></li>
@@ -150,14 +150,14 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch3-11">3.11 Summary 84</a></li>
       </ol>
     </li>
-    <li><a href="#ch4">Chapter 4: Randomness and Regularity</a>
+    <li><a href="#ch4">Chapter 4: Randomness and Regularity 85</a>
     <ol type="1">
-      <li><a href="#ch4-1">4.1 Analogue and Digital Randomness</a>
+      <li><a href="#ch4-1">4.1 Analogue and Digital Randomness 85</a>
         <ol>
           <li><a href="#ch4-1a">4.1a The SvJs Genrandom( ) Function 87</a></li>
         </ol>
       </li>
-      <li><a href="#ch4-2">4.2 Elements Everywhere All at Once</a>
+      <li><a href="#ch4-2">4.2 Elements Everywhere All at Once 88</a>
         <ol>
       <li><a href="#ch4-2a">4.2a Varying Color and Opacity 89</a></li>
       <li><a href="#ch4-2b">4.2b Varying Element Selection 91</a></li>
@@ -169,7 +169,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch4-3b">4.3b A More Flexible Grid 96</a></li>
         </ol>
         </li>
-      <li><a href="#ch4-4">4.4 Clip Paths and Color Palettes</a>
+      <li><a href="#ch4-4">4.4 Clip Paths and Color Palettes 98</a>
         <ol>
       <li><a href="#ch4-4a">4.4a Arrays of Colors 98</a></li>
       <li><a href="#ch4-4b">4.4b Clipping Our Content 100</a></li>
@@ -177,11 +177,11 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
         </li>
       <li><a href="#ch4-5">4.5 Choice and Chance 105</a></li>
         <ol>
-      <li><a href="#ch4-5a">4.5a The SvJs Genchance( ) Function 105</a></li>
+      <li><a href="#ch4-5a">4.5a The SvJs Gen.chance( ) Function 105</a></li>
       <li><a href="#ch4-5b">4.5b Chance in Action 106</a></li>
         </ol>
         </li>
-      <li><a href="#ch4-6">4.6 Probability Distributions</a>
+      <li><a href="#ch4-6">4.6 Probability Distributions 108</a>
         <ol>
       <li><a href="#ch4-6a">4.6a Uniform Distribution 108</a></li>
       <li><a href="#ch4-6b">4.6b Gaussian Distribution 109</a></li>
@@ -192,23 +192,23 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch4-7">4.7 Summary 118</a></li>
     </ol>
   </li>
-  <li><a href="#ch5">Chapter 5: The Need for Noise</a>
+  <li><a href="#ch5">Chapter 5: The Need for Noise 119</a>
     <ol type="1">
       <li><a href="#ch5-1">5.1 Random Limits 119</a></li>
-      <li><a href="#ch5-2">5.2 Making Noise
+      <li><a href="#ch5-2">5.2 Making Noise 119
         <ol>
       <li><a href="#ch5-2a">5.2a Noise Explained 120</a></li>
       <li><a href="#ch5-2b">5.2b The SvJs Noise Module 122</a></li>
         </ol>
         </li>
-      <li><a href="#ch5-3">5.3 Into the Noise Matrix</a>
+      <li><a href="#ch5-3">5.3 Into the Noise Matrix 124</a>
         <ol>
       <li><a href="#ch5-3a">5.3a A Noisy Grid 124</a></li>
       <li><a href="#ch5-3b">5.3b Mapping the Noise Values 128</a></li>
       <li><a href="#ch5-3c">5.3c Optimize with Style 129</a></li>
         </ol>
         </li>
-      <li><a href="#ch5-4">5.4 Spinning Noise</a>
+      <li><a href="#ch5-4">5.4 Spinning Noise 130</a>
         <ol>
       <li><a href="#ch5-4a">5.4a Mapping and Constraining 132</a></li>
       <li><a href="#ch5-4b">5.4b Rotating and Translating 133</a></li>
@@ -217,37 +217,37 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch5-5">5.5 Summary 134</a></li>
     </ol>
   </li>
-  <li><a href="#ch6">Chapter 6: The All-Powerful Path</a>
+  <li><a href="#ch6">Chapter 6: The All-Powerful Path 137</a>
     <ol type="1">
-      <li><a href="#ch6-1">6.1 The Path Element</a>
+      <li><a href="#ch6-1">6.1 The Path Element 137</a>
         <ol>
       <li><a href="#ch6-1a">6.1a D for Data 138</a></li>
       <li><a href="#ch6-1b">6.1b Path Commands 138</a></li>
         </ol>
         </li>
       <li><a href="#ch6-2">6.2 Starting and Ending a Path 139</a></li>
-      <li><a href="#ch6-3">6.3 Straight Lines</a>
+      <li><a href="#ch6-3">6.3 Straight Lines 140</a>
         <ol>
       <li><a href="#ch6-3a">6.3a The Simple L 140</a></li>
       <li><a href="#ch6-3b">6.3b Horizontal and Vertical Varieties 142</a></li>
       <li><a href="#ch6-3c">6.3c Further Economies 143</a></li>
         </ol>
         </li>
-      <li><a href="#ch6-4">6.4 Quadratic Bezier Curves</a>
+      <li><a href="#ch6-4">6.4 Quadratic Bezier Curves 144</a>
         <ol>
       <li><a href="#ch6-4a">6.4a Control Points 144</a></li>
       <li><a href="#ch6-4b">6.4b A Smooth Shortcut 145</a></li>
       <li><a href="#ch6-4c">6.4c A Quadratic Slinky 147</a></li>
         </ol>
         </li>
-      <li><a href="#ch6-5">6.5 Elliptical Arcs</a>
+      <li><a href="#ch6-5">6.5 Elliptical Arcs 150</a>
         <ol>
       <li><a href="#ch6-5a">6.5a Setting the Flags 151</a></li>
       <li><a href="#ch6-5b">6.5b Irregular Radii 152</a></li>
       <li><a href="#ch6-5c">6.5c Generative Arcs 153</a></li>
         </ol>
         </li>
-      <li><a href="#ch6-6">6.6 Cubic Bezier Curves</a>
+      <li><a href="#ch6-6">6.6 Cubic Bezier Curves 156</a>
         <ol>
       <li><a href="#ch6-6a">6.6a Cubic Control Points 156</a></li>
       <li><a href="#ch6-6b">6.6b S for Symmetry 158</a></li>
@@ -258,22 +258,22 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch6-7">6.7 Summary 165</a></li>
     </ol>
   </li>
-  <li><a href="#ch7">Chapter 7: Motion and Interactivity</a>
+  <li><a href="#ch7">Chapter 7: Motion and Interactivity 167</a>
     <ol><a type="1">
-      <li><a href="#ch7-1">7.1 Event Listeners</a>
+      <li><a href="#ch7-1">7.1 Event Listeners 167</a>
         <ol>
       <li><a href="#ch7-1a">7.1a Event Types 168</a></li>
       <li><a href="#ch7-1b">7.1b Event Parameters 169</a></li>
       <li><a href="#ch7-1c">7.1c Triggering the SvJs Save Method 170</a></li>
         </ol>
         </li>
-      <li><a href="#ch7-2">7.2 Creative Cursor Tracking</a>
+      <li><a href="#ch7-2">7.2 Creative Cursor Tracking 171</a>
         <ol>
       <li><a href="#ch7-2a">7.2a The SvJs trackCursor( ) Method 171</a></li>
       <li><a href="#ch7-2b">7.2b Interactive Ellipses 172</a></li>
         </ol>
         </li>
-      <li><a href="#ch7-3">7.3 Programming Motion</a>
+      <li><a href="#ch7-3">7.3 Programming Motion 174</a>
         <ol>
       <li><a href="#ch7-3a">7.3a CSS Keyframes 177</a></li>
       <li><a href="#ch7-3b">7.3b The SMIL Way 179</a></li>
@@ -282,14 +282,14 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch7-3e">7.3e Methods Summarized 188</a></li>
         </ol>
         </li>
-      <li><a href="#ch7-4">7.4 Collision Detection</a>
+      <li><a href="#ch7-4">7.4 Collision Detection 190</a>
         <ol>
       <li><a href="#ch7-4a">7.4a Setting Boundaries 190</a></li>
       <li><a href="#ch7-4b">7.4b Initializing and Extending Our Shapes 191</a></li>
       <li><a href="#ch7-4c">7.4c Frame-by-Frame Calculations 193</a></li>
         </ol>
         </li>
-      <li><a href="#ch7-5">7.5 Circularity</a>
+      <li><a href="#ch7-5">7.5 Circularity 196</a>
         <ol>
       <li><a href="#ch7-5a">7.5a Slices of PI 198</a></li>
       <li><a href="#ch7-5b">7.5b Sine and Cosine 200</a></li>
@@ -299,16 +299,16 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch7-6">7.6 Summary 202</a></li>
     </ol>
   </li>
-  <li><a href="#ch8">Chapter 8: Filter Effects</a>
+  <li><a href="#ch8">Chapter 8: Filter Effects 205</a>
     <ol type="1">
-      <li><a href="#ch8-1">8.1 Filter Fundamentals</a>
+      <li><a href="#ch8-1">8.1 Filter Fundamentals 205</a>
         <ol>
       <li><a href="#ch8-1a">8.1a The Ins and Outs 207</a></li>
       <li><a href="#ch8-1b">8.1b The SvJs createFilter( ) Method 209</a></li>
       <li><a href="#ch8-1c">8.1c The Filter Region 210</a></li>
         </ol>
         </li>
-      <li><a href="#ch8-2">8.2 Filter Effects 101</a>
+      <li><a href="#ch8-2">8.2 Filter Effects 101 212</a>
         <ol>
       <li><a href="#ch8-2a">8.2a Shadows 212</a></li>
       <li><a href="#ch8-2b">8.2b Coloring 213</a></li>
@@ -316,14 +316,14 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch8-2d">8.2d Compositing 217</a></li>
         </ol>
         </li>
-      <li><a href="#ch8-3">8.3 Noise and Distortion</a>
+      <li><a href="#ch8-3">8.3 Noise and Distortion 221</a>
         <ol>
       <li><a href="#ch8-3a">8.3a Turbulence 221</a></li>
       <li><a href="#ch8-3b">8.3b Displacement 223</a></li>
       <li><a href="#ch8-3c">8.3c Creating a Cosmic Bubble 224</a></li>
         </ol>
         </li>
-      <li><a href="#ch8-4">8.4 Lighting and Texture</a>
+      <li><a href="#ch8-4">8.4 Lighting and Texture 228</a>
         <ol>
       <li><a href="#ch8-4a">8.4a Diffuse and Specular Lighting 230</a></li>
       <li><a href="#ch8-4b">8.4b Light Sources 231</a></li>
@@ -334,10 +334,10 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch8-5">8.5 Summary 240</a></li>
     </ol>
   </li>
-  <li><a href="#ch9">Chapter 9: The Generative Way</a>
+  <li><a href="#ch9">Chapter 9: The Generative Way 243</a>
     <ol type="1">
       <li><a href="#ch9-1">9.1 The Journey So Far 243</a></li>
-      <li><a href="#ch9-2">9.2 The Voyage Forward</a>
+      <li><a href="#ch9-2">9.2 The Voyage Forward 244</a>
         <ol>
       <li><a href="#ch9-2a">9.2a Trigonometry 244</a></li>
       <li><a href="#ch9-2b">9.2b Fractals 246</a></li>
