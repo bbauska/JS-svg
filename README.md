@@ -46,7 +46,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
 
-<ol type="1" start="01">
+<ol type="1" start="1">
   <li><a href="#ch1">Chapter 1: The Beginner's Path</a>
     <ol type="1">
       <li><a href="#ch1-1">1.1 Why JavaScript and SvJs?</a>
@@ -1920,28 +1920,26 @@ web-safe colors you'd like to sample for your next retro-inspired
 masterpiece (in the 1990s, web developers -- or web masters as they were
 then known -- had a much more restricted color palette).
 
-When you have lists of anything, arrays are your friend.
-
+<p>When you have lists of anything, arrays are your friend.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-8a">2.8a Arrays</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-An array is essentially a variable that can contain multiple values. And
+<p>An array is essentially a variable that can contain multiple values. And
 in JavaScript, these values needn't be of a uniform type. This means we
 can mix numbers, strings, and booleans into a single array if required
 (though it's not necessarily recommended you do this). Arrays take the
-following format:
+following format:</p>
 
 <pre>
 // <i>The syntax of a standard array.</i>
 let arrayName = [item1, item2, item3, ... itemN];
 </pre>
 
-Each array item has a corresponding index, or number, that represents
+<p>Each array item has a corresponding index, or number, that represents
 its position in the array. The first item in an array has an index of 0
 (counting from zero in computing is the norm), the second item has an
 index of 1, the third of 2, etc. To directly access an item in array by
-its index, you use square bracket notation like so:
+its index, you use square bracket notation like so:</p>
 
 <pre>
 // <i>Access the first item.</i>
@@ -1954,19 +1952,19 @@ let secondItem = arrayName[1];
 let nthItem = arrayName[n + 1];
 </pre>
 
-This lends itself particularly well to loops. Iterating over items in an
+<p>This lends itself particularly well to loops. Iterating over items in an
 array with a for loop is a very common practice, and it's something
-we'll lean on heavily throughout our generative art journey.
+we'll lean on heavily throughout our generative art journey.</p>
 
-Let's continue with our web-safe colors example and iterate over an
-array containing these 216 hexadecimal values.
+<p>Let's continue with our web-safe colors example and iterate over an
+array containing these 216 hexadecimal values.</p>
 
-You don't need to worry about how we get these items into the array for
+<p>You don't need to worry about how we get these items into the array for
 now; all we're interested in is how we'd loop through them and take some
 action for each item in the array. The action in this case will be to
 set the color (i.e., fill ) of a newly created circle on each iteration.
 And to make sure we do this 216 times, we use the length property of the
-array to control how many times we run our loop.
+array to control how many times we run our loop.</p>
 
 <pre>
 for (let i = 0; 
@@ -1977,11 +1975,10 @@ i &lt; webSafeColours.length; i += 1) {
 }
 </pre>
 
-In Figure 2-1, you'll see the output of this code snippet. Obviously
-there's more involved in achieving this spiral arrangement (something
-we'll cover in a later chapter); the main point is how we use the
-iterator variable i to cycle through each color value, that is,
-webSafeColours&lbrack;i&rbrack;.
+<p>In Figure 2-1, you'll see the output of this code snippet. Obviously there's more 
+involved in achieving this spiral arrangement (something we'll cover in a later chapter); 
+the main point is how we use the iterator variable i to cycle through each color value, 
+that is, webSafeColours&lbrack;i&rbrack;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 10.  (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -1993,33 +1990,31 @@ webSafeColours&lbrack;i&rbrack;.
 
 <p><small><small><i><b>Figure 2-1.</b> A web-safe color spiral</i></small></small></p>
 
-If you're brave enough to inspect the code behind the example, you'll
+<p>If you're brave enough to inspect the code behind the example, you'll
 notice that to add each color to the array initially, I used an array
-method called push(). The relevant line is
+method called push(). The relevant line is;</p>
 
 <pre>
 colours.push(colour);
 </pre>
 
-The push() method is how we add an item to the end of an array (think of
+<p>The push() method is how we add an item to the end of an array (think of
 loading a truck from the back). If instead we wanted to add the item to
-the beginning of the array, we'd use a method called unshift().
+the beginning of the array, we'd use a method called unshift().</p>
 
 <pre>
 colours.unshift(colour);
 </pre>
 
-If we wanted to remove an item from the end of the array, we'd use the
-pop() method (think popcorn popping out of a pot). Conversely, if we
-wanted to remove an item from the beginning of the array, we'd use the
-shift() method (so-called because we're shifting all remaining items to
-a lower index).
+<p>If we wanted to remove an item from the end of the array, we'd use the pop() method 
+(think popcorn popping out of a pot). Conversely, if we wanted to remove an item from the 
+beginning of the array, we'd use the shift() method (so-called because we're shifting all 
+remaining items to a lower index).</p>
 
-There's one other method I want to cover before moving on, namely, the
-forEach() loop I mentioned earlier. This method is unique to arrays and
-acts on each item of the array in turn, using a function as its
-argument. As an aside, functions that are passed as arguments in this
-manner are known as callback functions.
+<p>There's one other method I want to cover before moving on, namely, the forEach() loop 
+I mentioned earlier. This method is unique to arrays and acts on each item of the array 
+in turn, using a function as its argument. As an aside, functions that are passed as 
+arguments in this manner are known as callback functions.</p>
 
 </pre>
 // <i>Set up an sample array.</i>
@@ -2032,21 +2027,18 @@ someNumbers.forEach((item) => {
 -&gt; 4 8 12 16 20
 </pre>
 
-The forEach() loop can be a nice succinct way of iterating over an array
-if the main purpose of the loop is to perform some action specifically
-for each array item.
+<p>The forEach() loop can be a nice succinct way of iterating over an array if the main 
+purpose of the loop is to perform some action specifically for each array item.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-8b">2.8b Objects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Objects are another data structure JavaScript offers, and like
-functions, they are a foundational feature of the language. Take a peek
-under the hood and you'll find objects everywhere. Functions are, in
-fact, special kinds of objects.
+<p>Objects are another data structure JavaScript offers, and like functions, they are a 
+foundational feature of the language. Take a peek under the hood and you'll find objects 
+everywhere. Functions are, in fact, special kinds of objects.</p>
 
-Like arrays, objects can contain multiple values. The primary difference
-is that objects label their values with names, whereas arrays label
-their values with numbers (i.e., the index of each item). An object
-takes the following format:
+<p>Like arrays, objects can contain multiple values. The primary difference is that 
+objects label their values with names, whereas arrays label their values with numbers 
+(i.e., the index of each item). An object takes the following format:</p>
 
 <pre>
 const objectName = { 
@@ -2054,10 +2046,9 @@ const objectName = {
 };
 </pre>
 
-These name-value pairs are the object's <b>properties</b>. The values can
-be anything you want: strings, booleans, functions, arrays, or even
-other objects. Almost anything you can think of can be represented as an
-object. Let's take my laptop as an example.
+<p>These name-value pairs are the object's <b>properties</b>. The values can be anything 
+you want: strings, booleans, functions, arrays, or even other objects. Almost anything 
+you can think of can be represented as an object. Let's take my laptop as an example.</p>
 
 <pre>
 const myLaptop = { 
@@ -2076,8 +2067,8 @@ const myLaptop = {
 }
 </pre>
 
-With these properties in place, we can call them with either bracket
-notation, or -- more commonly -- dot notation.
+<p>With these properties in place, we can call them with either bracket notation, or -- 
+more commonly -- dot notation.</p>
 
 <pre>
 // <i>Accessing an object property with dot notation.</i>
@@ -2089,7 +2080,7 @@ myComputer[processor];
 -&gt; "Core i5"
 </pre>
 
-We can also update and create new object properties via the same syntax.
+<p>We can also update and create new object properties via the same syntax.</p>
 
 </pre>
 // <i>Updating an object's property.</i>
@@ -2098,9 +2089,8 @@ myComputer.inSleepMode = true;
 myComputer.storage = "512 GB SSD";
 </pre>
 
-If you take a look back at our first sketch again, you'll notice that I
-used an object to store some randomized settings that are later called
-in the sketch:
+<p>If you take a look back at our first sketch again, you'll notice that I used an object 
+to store some randomized settings that are later called in the sketch:</p>
 
 <pre>
 ...
@@ -2113,24 +2103,22 @@ const randomised = {
 ... let rotation = randomised.rotation + (i * 2);
 </pre>
 
-This is a good way of getting around the issue of global variables I
-mentioned earlier. Using an object, we can make our settings globally
-available without relying on global variables. This can keep our code
-tidier and less likely to cause conflicts.
+<p>This is a good way of getting around the issue of global variables I mentioned 
+earlier. Using an object, we can make our settings globally available without relying on 
+global variables. This can keep our code tidier and less likely to cause conflicts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-9">2.9 Classes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A class is like a blueprint, or template, for creating objects. The
-objects that are created are then said to be <i>instances</i> of that class.
-A class can include both data and functions to work on that data. This
-coupling of data and code is referred to as encapsulation.
+<p>A class is like a blueprint, or template, for creating objects. The objects that are 
+created are then said to be <i>instances</i> of that class. A class can include both data 
+and functions to work on that data. This coupling of data and code is referred to as 
+encapsulation.</p>
 
-We won't be going into much detail with classes, but it will be useful
-to know some basic terminology, as the SvJs library we'll be using is
-class based.
+<p>We won't be going into much detail with classes, but it will be useful to know some 
+basic terminology, as the SvJs library we'll be using is class based.</p>
 
-To create an instance of a class, we use the new keyword, followed by
-the class name with brackets. This calls the class constructor.
+<p>To create an instance of a class, we use the new keyword, followed by the class name 
+with brackets. This calls the class constructor.</p>
 
 <pre>
 // <i>Defining a class.</i>
@@ -2141,54 +2129,52 @@ class StarShip {
 const prometheus = new StarShip();
 </pre>
 
-Functions that are part of a class are known as methods. A class will
-usually have, at the very least, methods to get and set its properties.
+<p>Functions that are part of a class are known as methods. A class will usually have, 
+at the very least, methods to get and set its properties.</p>
 
 <pre>
 prometheus.setDestination = 'Moon LV-223, Zeta 2 Reticuli';
 prometheus.takeOff();
 </pre>
 
-When we created our first generative SVG in Chapter 1, we began by
-creating an SvJs class instance and calling some of its methods.
+<p>When we created our first generative SVG in Chapter 1, we began by creating an SvJs 
+class instance and calling some of its methods.</p>
 
 <pre>
 const svg = new SvJs();
 svg.addTo(document.getElementById('container'));
 </pre>
 
-This is the extent to which we will be working with classes; writing
-them won't be part of this book.
+<p>This is the extent to which we will be working with classes; writing them won't be 
+part of this book.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-10">2.10 Idiosyncrasies and Other Features</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JavaScript offers plenty of other features, including closures, error
-catching, proxies, promises, and more, but I can't cover them all here.
-What I will point out here are some of the oddities -- or quirks if
-we're being kinder -- associated with JavaScript that may confound
-coders coming from another language.
+<p>JavaScript offers plenty of other features, including closures, error catching, 
+proxies, promises, and more, but I can't cover them all here. What I will point out here 
+are some of the oddities -- or quirks if we're being kinder -- associated with JavaScript 
+that may confound coders coming from another language.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10a">2.10a Null and NaN Weirdness</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We learned previously that null is essentially the absence of
-information. Isn't it strange then that null is also considered an
-object? We can confirm this by using the typeof check.
+<p>We learned previously that null is essentially the absence of information. Isn't it 
+strange then that null is also considered an object? We can confirm this by using the 
+typeof check.</p>
 
 <pre>
 typeof null; -&gt; object
 </pre>
 
-Despite this, null is not considered an instance <i>of</i> an object. We can
-confirm this by using the instanceof check.
+<p>Despite this, null is not considered an instance <i>of</i> an object. We can confirm 
+this by using the instanceof check.</p>
 
 <pre>
 null instanceof Object; -&gt; false
 </pre>
 
-NaN (not a number) also presents us with some quantum-level weirdness
-that would have Schrodinger's cat perk up its ears. It is apparently not
-a number but equal to a number at the same time. And, bizarrely, not
-even equal to itself.
+<p>NaN (not a number) also presents us with some quantum-level weirdness that would have 
+Schrodinger's cat perk up its ears. It is apparently not a number but equal to a number 
+at the same time. And, bizarrely, not even equal to itself.</p>
 
 <pre>
 typeof NaN; -&gt;l Number
@@ -2200,12 +2186,11 @@ NaN === NaN
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10b">2.10b Secret Casting</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JavaScript does some things behind the scenes that programmers from
-stricter languages may not always appreciate. It is, for example,
-notoriously loose with data types and will convert variables of
-different types into matching types to suit the situation (the process
-of converting a data type is also known as casting it). Let's play with
-some numbers as an example.
+<p>JavaScript does some things behind the scenes that programmers from stricter languages 
+may not always appreciate. It is, for example, notoriously loose with data types and will 
+convert variables of different types into matching types to suit the situation (the 
+process of converting a data type is also known as casting it). Let's play with some 
+numbers as an example.</p>
 
 <pre>
 1 == 1;
@@ -2214,21 +2199,19 @@ some numbers as an example.
 -&gt; true
 </pre>
 
-How can a number equal a string? Well, it can't. JavaScript is casting
-the string as a number to make sense of the expression. It is
-essentially coercing the string data into number data (also known as
-type coercion). That's why we're always better off using the strict
-equality operator in JavaScript, something that doesn't exist in many
-other languages.
+<p>How can a number equal a string? Well, it can't. JavaScript is casting the string as a 
+number to make sense of the expression. It is essentially coercing the string data into 
+number data (also known as type coercion). That's why we're always better off using the 
+strict equality operator in JavaScript, something that doesn't exist in many other 
+languages.</p>
 
 <pre>
 1 === "1";
 -&gt; false
 </pre>
 
-This kind of casting also occurs when we try to add numbers to strings,
-but it works in the opposite direction; the numbers in this case are
-converted to strings.
+<p>This kind of casting also occurs when we try to add numbers to strings, but it works 
+in the opposite direction; the numbers in this case are converted to strings.</p>
 
 <pre>
 1 + "2";
@@ -2237,87 +2220,73 @@ converted to strings.
 -&gt; "23"
 </pre>
 
-To avoid the pitfalls of this kind of implicit type coercion, functions
-like parseInt(), parseFloat(), and toString() can be used to re-cast or
-explicitly convert variables to the data type you want to work with.
+<p>To avoid the pitfalls of this kind of implicit type coercion, functions like 
+parseInt(), parseFloat(), and toString() can be used to re-cast or explicitly convert 
+variables to the data type you want to work with.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10c">2.10c Semicolon Uncertainty</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I mentioned at the start of the chapter that you can write JavaScript
-without semicolons if you wish, but that in some edge cases, it can
-result in unexpected behavior. Here's one such edge case.
+<p>I mentioned at the start of the chapter that you can write JavaScript without 
+semicolons if you wish, but that in some edge cases, it can result in unexpected 
+behavior. Here's one such edge case.</p>
 
 <pre>
 return 1 + 2
 -&gt; undefined
 </pre>
 
-Spacing doesn't matter in JavaScript, so what is going on here? Why
-isn't the expression returning 3? Well, here the Automatic Semicolon
-Insertion feature is being invoked under the hood. The actual code being
-evaluated is this:
+<p>Spacing doesn't matter in JavaScript, so what is going on here? Why isn't the 
+expression returning 3? Well, here the Automatic Semicolon Insertion feature is being 
+invoked under the hood. The actual code being evaluated is this:</p>
 
 <pre>
 return; 1 + 2;
 </pre>
 
-To avoid this, either familiarize yourself with such edge cases or just
-use semicolons.
-
+<p>To avoid this, either familiarize yourself with such edge cases or just use semicolons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-11">2.11 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We've covered a lot in this chapter:</p>
 
-We've covered a lot in this chapter:
+<ul>
+  <li>Basic rules of JavaScript syntax</li>
+  <li>Values, such as strings, numbers, and booleans</li>
+  <li>Variables and the different ways to declare them</li>
+  <li>Arithmetic, comparison, and logical operators</li>
+  <li>Conditional statements and control flow</li>
+  <li>While loops, for loops, and forEach loops</li>
+  <li>Functions and scope</li>
+  <li>Arrays and array methods</li>
+  <li>Objects and object properties, and alternatives to global variables</li>
+  <li>Some of JavaScript's quirkier features</li>
+</ul>
 
--   Basic rules of JavaScript syntax
+<p>I've assumed next to no coding knowledge, so if that describes your starting point and 
+you've still kept up, well done!</p>
 
--   Values, such as strings, numbers, and booleans
-
--   Variables and the different ways to declare them
-
--   Arithmetic, comparison, and logical operators
-
--   Conditional statements and control flow
-
--   While loops, for loops, and forEach loops
-
--   Functions and scope
-
--   Arrays and array methods
-
--   Objects and object properties, and alternatives to global variables
-
--   Some of JavaScript's quirkier features
-
-I've assumed next to no coding knowledge, so if that describes your
-starting point and you've still kept up, well done!
-
-In the next chapter, we'll explore the main functionality of the SvJs
-library and get comfortable creating basic shapes, lines, and colors.
-
+<p>In the next chapter, we'll explore the main functionality of the SvJs library and get 
+comfortable creating basic shapes, lines, and colors.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch3">CHAPTER 3: All About SVG</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-With the basics of JavaScript under your belt, you're now ready for
-SvJs, which you can think of as your generative brush and palette.
+<p>With the basics of JavaScript under your belt, you're now ready for
+SvJs, which you can think of as your generative brush and palette.</p>
 
-In this chapter, we'll cover setting up our SVG canvas; how to work with
+<p>In this chapter, we'll cover setting up our SVG canvas; how to work with
 line and color; how to create a range of simple shapes; how to add text
 and titles; how to define and reuse elements; how to use groups,
 gradients, and patterns; and how the SVG viewBox and viewport work; and
 in the process, we'll learn the core functions of the SvJs library and
-how it relates to the SVG spec.
-
+how it relates to the SVG spec.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-1">3.1 The Parent SVG Element</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Before we can create anything visually, we need to load our library and
+<p>Before we can create anything visually, we need to load our library and
 set up the parent SVG element. The parent SVG, or the SVG document
 fragment as it's also known, is that SVG element whose parent element
 (if it has one) is not in the SVG namespace. An example would be an SVG
-attached to an HTML DOM node.
+attached to an HTML DOM node.</p>
 
 <pre>
 &lt;div id="container"&gt;
@@ -2325,37 +2294,36 @@ attached to an HTML DOM node.
 &lt;/div&gt;
 </pre>
 
-This is worth mentioning only because SVGs can contain other SVGs; in
+<p>This is worth mentioning only because SVGs can contain other SVGs; in
 these cases, only one of those can be considered the parent SVG element.
-You might also see this referred to as the root element.
+You might also see this referred to as the root element.</p>
 
-© David Matthew 2024 55
+<p>© David Matthew 2024 55</p>
 
-D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-&lt;https://doi.org/10.1007/979-8-8688-0086-3_3&gt;
+<p>D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_3&gt;</p>
 
-Let's reopen the JavaScript template file we set up in Chapter 1 (it
+<p>Let's reopen the JavaScript template file we set up in Chapter 1 (it
 should be located in sketches/00-template/sketch.js) and add the
-following line to it:
+following line to it:</p>
 
 <pre>
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs();
 </pre>
 
-The new SvJs() constructor, if called without any arguments, creates an
-SVG element. It can also be used to create any other SVG element by
-passing in the name of that element as a string.
+<p>The new SvJs() constructor, if called without any arguments, creates an SVG element. 
+It can also be used to create any other SVG element by passing in the name of that 
+element as a string.</p>
 
 <pre>
-// Using the SvJs constructor to create a circle element. 
+// <i>Using the SvJs constructor to create a circle element.</i>
 const circle = new SvJs('circle');
 </pre>
 
-To add our parent SVG element to our web page, we use the SvJs addTo()
-method. In this case, we'll pass in the &lt;div&gt; with the id of container
-that we set up earlier in our HTML (see Chapter 1). Add the following to
-the template sketch:
+<p>To add our parent SVG element to our web page, we use the SvJs addTo() method. In this 
+case, we'll pass in the &lt;div&gt; with the id of container that we set up earlier in 
+our HTML (see Chapter 1). Add the following to the template sketch:</p>
 
 <pre>
 const container = document.getElementById('container'); 
