@@ -14,6 +14,8 @@ output:
 <h2>Generative Art with JavaScript and SVG</h2>
 <h3>Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design</h3>
 
+<h2>Nine (9) chapter book on Scalable Vector Graphics (SVG)</h2>
+
 <p>With design and innovation being two key driving principles, this website 
 focuses on, but is not limited to, the following areas and topics:</p>
 
@@ -4712,12 +4714,12 @@ need noise.
 
 In 1997, Ken Perlin won an Oscar. What made this award unprecedented was
 that Perlin wasn't an actor, director, or soundtrack composer, but a
-programmer. For the movie *TRON*, released in 1982, Perlin had been
+programmer. For the movie <i>TRON</i>, released in 1982, Perlin had been
 
 © David Matthew 2024 119
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_5>
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_5&gt;
 
 tasked with the development of procedural textures that would make 3D
 objects look more natural (i.e., organic), and the algorithm he devised,
@@ -4776,12 +4778,12 @@ varied according to the corresponding noise value, creating a cloud-like
 formation. You can immediately see why it would be useful for creating
 textures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 37.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 37. A two-dimensional representation of Perlin noise values (xx) ~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image037.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A two-dimensional representation of Perlin noise values"
+  alt="A two-dimensional representation of Perlin noise values." />
 <!-- (./images/media/image37.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 5-2.</b> A two-dimensional representation of Perlin noise values</i></small></small></p>
@@ -4824,7 +4826,7 @@ let noise = new Noise();
 let noiseX = 15, noiseY = 20;
 
 // <i>Run the loop, slowly incrementing the co-ordinates to modify the value.</i>
-for (let i = 0; i < 1000; i += 1) {
+for (let i = 0; i &lt; 1000; i += 1) {
   let noiseValue = noise.get(noiseX, noiseY); ... // <i>Do something with noiseValue</i>
   noiseX += 0.003; noiseY += 0.003; 
 }
@@ -5042,12 +5044,12 @@ Once you've done this, you should see some color injected into our
 matrix (as per Figure 5-3). Enough we hope to get an appreciative nod
 from Neo.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 38.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 38. That chunk of the matrix that tastes like chicken (xx) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image038.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="That chunk of the matrix that tastes like chicken"
+  alt="That chunk of the matrix that tastes like chicken." />
 <!-- (./images/media/image38.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 5-3.</b> That chunk of the matrix that tastes like chicken</i></small></small></p>
@@ -5085,9 +5087,10 @@ declaration, include the following code:
 
 <pre>
 // <i>Set some text styling.</i>
-  svg.create('style').content(` text { font-size: 16px; 
+svg.create('style').content(` text { 
+  font-size: 16px; 
   font-family: serif;
-  }
+}
 `);
 </pre>
 
@@ -5217,12 +5220,12 @@ As you can see in Figure 5-4, what we end up are a series of slightly
 asymmetric lines that somewhat resemble, to me at least, the dance of
 some deep-sea creatures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 39.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 39. Spinning lines or deep-sea creatures? (xx) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image039.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Spinning lines or deep-sea creatures?"
+  alt="Spinning lines or deep-sea creatures?" />
 <!-- ./images/media/image39.jpg){width="4.725in" height="1.893in"} -->
 
 <p><small><small><i><b>Figure 5-4.</b> Spinning lines or deep-sea creatures?</i></small></small></p>
@@ -5290,8 +5293,8 @@ define, and we do so via the d attribute.
 
 © David Matthew 2024 137
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_6>
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_6&gt;
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-1a">6.1a D for Data</h3>
@@ -5309,11 +5312,11 @@ values that accompany the commands can also be flexibly formatted to
 conserve space.
 
 <pre>
-// An example of a string of path data. 
+// <i>An example of a string of path data.</i>
 path.set({ d: 'M 20,20 L 30,20
 L 30,30 L 20,30 Z' });
 
-// An identical path using a more concise string. 
+// <i>An identical path using a more concise string.</i>
 path.set({ d: 'M20
 20L30 20L30 30L20 30Z' });
 </pre>
@@ -5355,11 +5358,11 @@ we want to begin. Our pen has yet to push down on the paper, so to
 speak.
 
 <pre>
-// Syntax for the M/m command.
+// <i>Syntax for the M/m command.</i>
 'M [x, y] ...'
 'm [dx, dy] ...'
 
-// Examples of the M/m command.
+// <i>Examples of the M/m command.</i>
 'M 50 100 ...'
 'm 50 100 ...'
 </pre>
@@ -5372,7 +5375,7 @@ it will follow the curvature of the last control point (this will make
 more sense later on).
 
 <pre>
-// Closing a path.
+// <i>Closing a path.</i>
 'M 50 100 ... 50 150 Z'
 </pre>
 
@@ -5396,7 +5399,7 @@ coordinate pair. The lowercase l does the same but uses coordinates
 relative to the path's last entered point.
 
 <pre>
-// Syntax for the L/l command.
+// <i>Syntax for the L/l command.</i>
 'L [x, y] ...'
 'l [dx, dy] ...'
 </pre>
@@ -5406,13 +5409,13 @@ two lines are used to create two instances of the letter L. The first
 uses absolute coordinates; the second uses relative coordinates.
 
 <pre>
-// The first L.
+// <i>The first L.</i>
 svg.create('path').set({
-d: 'M 300 200 L 300 800 L 600 800' });
+  d: 'M 300 200 L 300 800 L 600 800' });
 
-// The second L.
+// <i>The second L.</i>
 svg.create('path').set({
-d: 'M 675 825 l 0 -600 l -300 0' });
+  d: 'M 675 825 l 0 -600 l -300 0' });
 </pre>
 
 We can see a rendering of the preceding code in Figure 6-1. I've left
@@ -5428,12 +5431,12 @@ disturbing its shape; with absolute coordinates, we'd have to change all
 the subsequent numbers, whereas with relative coordinates, we'd only
 have to change the initial M point.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 40.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 40. Two L's drawn by two L commands (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image040.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Two L's drawn by two L commands"
+  alt="Two L's drawn by two L commands." />
 <!-- (./images/media/image40.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-1.</b> Two L&apos;s drawn by two L commands</i></small></small></p>
@@ -5479,21 +5482,23 @@ used. Let's show a quick example (the output of which is shown in Figure
 6-2).
 
 <pre>
-// The first path, with repeating L commands. svg.create('path').set({
-d: 'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10' });
+// <i>The first path, with repeating L commands.</i>
+svg.create('path').set({
+  d: 'M 10 10 L 20 20 L 30 10 L 40 20 L 50 10 L 60 20 L 70 10' 
+});
 
-// The second (identical) path, with the repeating L commands omitted.
-svg.create('path').set({ d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20
-70 10'
+// <i>The second (identical) path, with the repeating L commands omitted.</i>
+svg.create('path').set({ 
+  d: 'M 10 10 L 20 20 30 10 40 20 50 10 60 20 70 10'
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 41.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. Omitting repetitive commands (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image041.jpg"
   style="width:3.543in"
-  title=""
-  alt="." />
+  title="Omitting repetitive commands"
+  alt="Omitting repetitive commands." />
 <!-- (./images/media/image41.jpg){width="3.5434in" height="0.96167in"} -->
 
 <p><small><small><i><b>Figure 6-2.</b> Omitting repetitive commands</i></small></small></p>
@@ -5527,12 +5532,12 @@ example, the dot represents the control point coordinates of &lbrack;150,
 'M 50 150 Q 150 350 250 150'
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 42.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 42. The control point of a quadratic Bezier curve (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image042.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="The control point of a quadratic Bezier curve"
+  alt="The control point of a quadratic Bezier curve." />
 <!-- (./images/media/image42.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-3.</b> The control point of a quadratic Bezier curve</i></small></small></p>
@@ -5552,7 +5557,7 @@ curve (see Figure 6-4). Now, in this particular case, it's not that
 arduous a job to calculate a control point that would correct this, but
 in more complex cases, this can become a challenge.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 43.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. A kink in the curve (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image043.jpg"
   style="width:3.15in"
@@ -5593,12 +5598,12 @@ Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
 purple second point) from the four additional T points (in red).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 44.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. A smooth quadratic curve (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image044.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="A smooth quadratic curve"
+  alt="A smooth quadratic curve." />
 <!-- (./images/media/image44.jpg){width="4.725in" height="1.2883in"} -->
 
 <p><small><small><i><b>Figure 6-5.</b> A smooth quadratic curve</i></small></small></p>
@@ -5617,10 +5622,12 @@ parent SVG, set some styles to target the path elements that we'll later
 set up as children of a group to which we'll give an id of slinky.
 
 <pre>
-// Style the slinky.
+// <i>Style the slinky.</i>
 svg.create('style').content(`
-#slinky path { fill: none; stroke-width: 0.75; stroke-linecap: round;
-}`
+  #slinky path { 
+    fill: none; stroke-width: 0.75; 
+	stroke-linecap: round;
+  }`
 );
 </pre>
 
@@ -5628,28 +5635,34 @@ Next set up the usual background, initialize a random hue, and create
 the aforementioned slinky group.
 
 <pre>
-// Background.
-svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-'#181818' });
+// <i>Background.</i>
+svg.create('rect').set({ 
+  x: 0, y: 0, width: 1000, 
+    height: 1000, 
+	fill: '#181818' 
+});
 
-// Choose a random starting hue. 
+// <i>Choose a random starting hue.</i>
 let hue = Gen.random(0, 360);
 
-// Set up the slinky path group. 
+// <i>Set up the slinky path group.</i>
 let slinky = svg.create('g').set({
-id: 'slinky' });
+  id: 'slinky' 
+});
 </pre>
 
 In the next step, we'll fire up the loop and create a couple of control
 points we'll use to shape our quadratic curve.
 
 <pre>
-// Start the loop. 
+// <i>Start the loop.</i>
 for (let i = 0; 
 i < 500; i += 5) {
-// Create the control points. 
-let cpx = Gen.random(200, 400); 
-let cpy = i - 400; }
+
+  // <i>Create the control points.</i>
+  let cpx = Gen.random(200, 400); 
+  let cpy = i - 400; 
+}
 </pre>
 
 The width of our curve will be 600 units (relative to the viewBox), so
@@ -5662,10 +5675,11 @@ offset of 400 units that will "pull" the curve upward.
 Next, let's create the actual curve (keeping within the loop).
 
 <pre>
-// Create the quadratic curve. 
-slinky.create('path').set({ stroke:
-`hsl(${hue} 90% 80% / 0.85)`, d: `M 0 ${i} q ${cpx} ${cpy} 600
-0` });
+// <i>Create the quadratic curve.</i>
+slinky.create('path').set({ 
+  stroke: `hsl(${hue} 90% 80% / 0.85)`, 
+  d: `M 0 ${i} q ${cpx} ${cpy} 600 0` 
+});
 </pre>
 
 Here, we're setting the hue as we've done many times before, and for the
@@ -5698,7 +5712,7 @@ the content is centered. The result should resemble Figure 6-6.
 slinky.moveTo(500, 500);
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 45.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 45. Quadratic curves in a slinky formation (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image045.jpg"
   style="width:3.15in"
@@ -5731,12 +5745,12 @@ largearc-flag and sweep-flag are both booleans in numeric form, 0
 meaning false and 1 meaning true. What they do though takes a little
 explaining.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 46.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 46. An elliptical arc curve (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image046.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="An elliptical arc curve"
+  alt="An elliptical arc curve." />
 ![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
 
 <p><small><small><i><b>Figure 6-7.</b> An elliptical arc curve</i></small></small></p>
@@ -5764,12 +5778,12 @@ are shown.
 -   In the lowermost path, the large-arc-flag is set to 1 and the
     sweep-flag is set to 0.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 47.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 47. Four possible arcs (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image047.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Four possible arcs"
+  alt="Four possible arcs." />
 ![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
 
 <p><small><small><i><b>Figure 6-8.</b> Four possible arcs</i></small></small></p>
@@ -5798,37 +5812,34 @@ result. This can happen when the two radius values and the distance
 between the curve start and end points are in a certain proportion to
 each other.
 
-It might therefore be easier to think of the rx and ry values as ratios
-that influence the shape of the arc than as values that directly
-determine the arc's magnitude (this is especially true when using
-smaller radii values). Don't worry if this doesn't make much sense --
-it's quite counterintuitive at first and only becomes clearer with
-experimentation. And to aid in this experimentation and hopefully make
-the elliptical arc curve a little more accessible, I've created an
-interactive pen that shows the effect of altering both the radii and the
-flag values. You can find the pen at
-[davidmatthew.ie/generative-art-javascript-svg#arc-curve](https://davidmatthew.ie/generative-art-javascript-svg#arc-curve).
+It might therefore be easier to think of the rx and ry values as ratios that influence 
+the shape of the arc than as values that directly determine the arc's magnitude (this is 
+especially true when using smaller radii values). Don't worry if this doesn't make much 
+sense -- it's quite counterintuitive at first and only becomes clearer with experimentation. 
+And to aid in this experimentation and hopefully make the elliptical arc curve a little 
+more accessible, I've created an interactive pen that shows the effect of altering both 
+the radii and the flag values. You can find the pen at 
+<a href="https://davidmatthew.ie/generative-art-javascript-svg#arc-curve">
+davidmatthew.ie/generative-art-javascript-svg#arc-curve</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-5c">6.5c Generative Arcs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Let's take a break from further wrestling with the theoretical
-intricacies of elliptical arc curves and put them to some practical,
-creative use instead. Using our usual copy method, create a new sketch
-folder and name it something like 15-generative-arcs. The aim of this
-sketch will be to create two sets of arc curves: one set running
-clockwise and the other set mirroring it, running anticlockwise. We'll
-randomize a number of key variables to keep the output unique and
-difficult to predict.
+Let's take a break from further wrestling with the theoretical intricacies of elliptical 
+arc curves and put them to some practical, creative use instead. Using our usual copy 
+method, create a new sketch folder and name it something like 15-generative-arcs. The 
+aim of this sketch will be to create two sets of arc curves: one set running clockwise 
+and the other set mirroring it, running anticlockwise. We'll randomize a number of key 
+variables to keep the output unique and difficult to predict.
 
-When you're ready, set up a group below the background that will contain
-our arc curves. After that, we'll set up some randomized variables we'll
-utilize in the loop that follows.
+When you're ready, set up a group below the background that will contain our arc curves. 
+After that, we'll set up some randomized variables we'll utilize in the loop that follows.
 
 <pre>
 // <i>Set up a container group for our arc curves.</i>
 let arcs = svg.create('g');
+
 // <i>Randomise some variables.</i>
 let rx = Gen.random(5, 350); 
 let ry = Gen.random(5, 350); 
@@ -5844,6 +5855,7 @@ large-arc- flag, which, thanks to our Gen.chance() function, will have a
 <pre>
 for (let i = 0; 
 i < 360; i += 1) {
+
   // <i>Randomise the rotation and large arc flag.</i>
   let rotation = Gen.random(0, 180); 
   let largeArc = Gen.chance() ? 1 : 0;
@@ -5858,8 +5870,9 @@ clockwise.
 
 <pre>
 // <i>Create a first set of clockwise arc curves (sweep = 1).</i>
-arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue} 75% 75% / 0.05)`,
-d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 1 725 500`
+arcs.create('path').set({ 
+  fill: 'none', stroke: `hsl(${hue} 75% 75% / 0.05)`,
+  d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 1 725 500`
 });
 </pre>
 
@@ -5871,9 +5884,9 @@ aforementioned modulo operator.
 
 <pre>
 // <i>Create a second set of counter-clockwise arc curves (sweep = 0).</i>
-arcs.create('path').set({ fill: 'none', stroke: `hsl(${hue + 60}
-75% 75% / 0.05)`,
-d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
+arcs.create('path').set({ 
+  fill: 'none', stroke: `hsl(${hue + 60} 75% 75% / 0.05)`,
+  d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
 });
 // <i>Increment the hue.</i>
 hue = (hue % 360) + 0.5;
@@ -5889,12 +5902,12 @@ loop:
 arcs.rotate(Gen.random(0, 360));
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 48.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 48. Two renders of our generative arcs (xx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image048.jpg"
   style="width:3.936in"
-  title=""
-  alt="." />
+  title="Two renders of our generative arcs"
+  alt="Two renders of our generative arcs." />
 <!-- (./images/media/image48.jpg){width="3.9365in" height="2.315in"} -->
 
 <p><small><small><i><b>Figure 6-9.</b> Two renders of our generative arcs</i></small></small></p>
@@ -5929,7 +5942,9 @@ coordinates: x and y. Here's an example:
 
 <pre>
 // <i>Creating a single cubic bezier curve.</i>
-svg.create('path').set({ d: 'M 75,75 C 140,330 360,330 425,75' });
+svg.create('path').set({ 
+  d: 'M 75,75 C 140,330 360,330 425,75' 
+});
 </pre>
 
 The preceding path is illustrated in Figure 6-10, where you can see the
@@ -5938,12 +5953,12 @@ the cubic Bezier curve itself. The colored dots and dashed lines are
 just for illustrative purposes; these wouldn't be rendered in the final
 SVG.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 49.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 49. A cubic Bezier curve with the control points visualized (xx) ~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image049.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A cubic Bezier curve with the control points visualized"
+  alt="A cubic Bezier curve with the control points visualized." />
 <!-- (./images/media/image49.jpg){width="3.15in" height="2.52in"} -->
 
 <p><small><small><i><b>Figure 6-10.</b> A cubic Bezier curve with the control points visualized</i></small></small></p>
@@ -5968,19 +5983,20 @@ coordinates.
 
 <pre>
 // <i>Extending a cubic bezier curve with the S command.</i>
-svg.create('path').set({ d: 'M 50,150 C 100,250 200,50 250,150 S
-400,50 450,150' });
+svg.create('path').set({ 
+  d: 'M 50,150 C 100,250 200,50 250,150 S 400,50 450,150' 
+});
 </pre>
 
 In Figure 6-11, the faintest of the dashed lines indicates where the S
 command has automatically generated a symmetrical control point.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 50.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 50. A smoothly extended cubic Bezier curve (xx) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image050.jpg"
   style="width:3.543in"
-  title=""
-  alt="." />
+  title="A smoothly extended cubic Bezier curve"
+  alt="A smoothly extended cubic Bezier curve." />
 <!-- ![](./images/media/image50.jpg){width="3.5434in" height="2.1265in"} -->
 
 <p><small><small><i><b>Figure 6-11.</b> A smoothly extended cubic Bezier curve</i></small></small></p>
@@ -6004,7 +6020,7 @@ create some noise-related variables. I'm including a new one here called
 amplifier; this will be used when we map the noise value to a new range
 (increasing its volume so to speak).
 
-// Noise-related.
+// <i>Noise-related.</i>
 
 <pre>
 let noise = new Noise(); let n = Gen.random(0, 1000); let speed = 0.05;
@@ -6015,7 +6031,7 @@ Next we'll set up variables relating to colors and the curves
 themselves, which we'll contain within a group.
 
 <pre>
-// Curve and colour-related. 
+// <i>Curve and colour-related.</i>
 let curves = svg.create('g'); 
 let numCurves = Gen.random(75, 125); 
 let hue = Gen.random(0, 360);
@@ -6127,12 +6143,12 @@ if (Gen.chance(10)) {
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 51.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. Noise-modulated organic curves (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image051.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Noise-modulated organic curves"
+  alt="Noise-modulated organic curves." />
 <!-- (./images/media/image51.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-12.</b> Noise-modulated organic curves</i></small></small></p>
@@ -6188,12 +6204,12 @@ bottom curve to 5. The faint dots indicate where our pointsArray
 coordinates are positioned and are shown for illustrative purposes only;
 you wouldn't see these rendered normally.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 52.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 52. Varying the curve factor using values of 0, 1, and 5 (xx) ~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image052.jpg"
   style="width:3.543in"
-  title=""
-  alt="." />
+  title="Varying the curve factor using values of 0, 1, and 5"
+  alt="Varying the curve factor using values of 0, 1, and 5." />
 <!-- (./images/media/image52.jpg){width="3.5434in" height="2.53167in"} -->
 
 <p><small><small><i><b>Figure 6-13.</b> Varying the curve factor using values of 0, 1, and 5</i></small></small></p>
@@ -6284,9 +6300,9 @@ danger of being immediately invoked.
 
 <pre>
 // <i>Using arrow syntax to define the callback function.</i>
-element.addEventListener('eventType', () => {
+element.addEventListener('eventType', () =&gt; {
 
-// <i>do something here...</i>
+  // <i>do something here...</i>
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6310,7 +6326,7 @@ like a finger tap.
 
 <pre>
 // <i>Capturing the movement of a mouse, stylus or finger over an element.</i>
-element.addEventListener('pointermove', () => {
+element.addEventListener('pointermove', () =&gt; {
 
   // <i>do something here...</i>
 });
@@ -6330,7 +6346,7 @@ time you click anywhere within the body of the HTML page.
 
 <pre>
 // <i>Log the user's pointer co-ordinates on click.</i>
-document.body.addEventListener('click', (event) => { 
+document.body.addEventListener('click', (event) =&gt; { 
   let x = event.clientX; 
   let y = event.clientY;
   console.log(`x: ${x}, y: ${y}`);
@@ -6374,7 +6390,7 @@ method only when that key is equal to "s", irrespective of case
 
 <pre>
 // <i>Save the root svg as a downloadable file.</i>
-document.addEventListener('keydown', (event) => { 
+document.addEventListener('keydown', (event) =&gt; { 
   let key = event.key.toLowerCase(); 
   if (key === 's') 
     svg.save();
@@ -6419,7 +6435,7 @@ position is updated.
 
 <pre>
 // <i>Passing in a custom callback.</i>
-svg.trackCursor(() => {
+svg.trackCursor(() =&gt; {
 
   // <i>... do stuff</i>
 });
@@ -6458,7 +6474,7 @@ method; this is where we add each ellipse to the aforementioned array.
     i &lt; iterations; 
 	i += 1) {
 
-      // Create our ellipse.
+      // <i>Create our ellipse.</i>
       let ellipse = svg.create('ellipse'); 
       ellipse.set({ 
         cx: 500, cy: 500,
@@ -6469,10 +6485,10 @@ method; this is where we add each ellipse to the aforementioned array.
         transform: `rotate(&dollar;{rotation + (i * 2)} 500 500)` 
 	  });
 
-      // Add the ellipse to the array. 
+      // <i>Add the ellipse to the array.</i>
       ellipses.push(ellipse);
 
-      // Increment the hue. 
+      // <i>Increment the hue.</i>
       hue = (hue % 360) + 2; 
 	}
 </pre>
@@ -6487,7 +6503,7 @@ ellipse relative to our cursor position.
 <pre>
 // <i>Adjust the centre point of each ellipse relative to our cursor.</i>
 svg.trackCursor(() => { 
-  ellipses.forEach((ellipse) => { 
+  ellipses.forEach((ellipse) =&gt; { 
     ellipse.set({
       cx: svg.cursorX, 
 	  cy: svg.cursorY
@@ -6504,12 +6520,12 @@ to save down Figure 7-1), as it allows us to capture our SVG without
 disturbing the composition with inadvertent cursor movement (as might
 happen if we had to click a button).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 53.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 53. A cursor-transformed array of ellipses (xx) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image053.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A cursor-transformed array of ellipses"
+  alt="A cursor-transformed array of ellipses." />
 <!-- (./images/media/image53.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-1.</b> A cursor-transformed array of ellipses</i></small></small></p>
@@ -6556,8 +6572,8 @@ const svgSize = Math.min(window.innerWidth, window.innerHeight);
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000' });
 
 // <i>Background.</i>
-svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-'#181818'
+svg.create('rect').set({ 
+  x: 0, y: 0, width: 1000, height: 1000, fill: '#181818'
 });
 
 // <i>Arrays to contain our shapes and their colours.</i>
@@ -6565,23 +6581,26 @@ let palette = ['#34d399','#6ee7b7','#a7f3d0', '#d1fae5'];
 let shapes = [];
 
 // <i>Initialize our four shapes.</i>
-for (let i = 0; i < 4; i += 1) { let
-size = 500 - (i * 125); 
-let position = 250 + (i * 62.5); 
-let shape = svg.create('rect').set({ x: position, y: position, width: size,
-height: size, fill: palette[i], transform_origin: '50% 50%',
-transform: 'rotate(45)'
-});
-shapes.push(shape);
-}
+for (let i = 0; 
+  i < 4; 
+  i += 1) { 
+    let size = 500 - (i * 125); 
+    let position = 250 + (i * 62.5); 
+    let shape = svg.create('rect').set({ 
+	  x: position, y: position, width: size,
+      height: size, fill: palette[i], transform_origin: '50% 50%',
+      transform: 'rotate(45)'
+    });
+    shapes.push(shape);
+  }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 54.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 54. The four shapes we'll make move (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image054.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="The four shapes we'll make move"
+  alt="The four shapes we'll make move." />
 <!-- (./images/media/image54.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-2.</b> The four shapes we&apos;ll make move</i></small></small></p>
@@ -6844,14 +6863,16 @@ valid.
 // <i>Animate the last shape using requestAnimationFrame.</i>
 function animate(time) {
 
-// <i>Rotate the angle.</i>
-let angle = time;
+  // <i>Rotate the angle.</i>
+  let angle = time;
 
-// <i>Apply the rotation.</i>
-shapes[3].set({ transform: `rotate(${angle})` });
+  // <i>Apply the rotation.</i>
+  shapes[3].set({ transform: `rotate(${angle})` });
 
-// <i>The recursive bit.</i>
-requestAnimationFrame(animate); } animate();
+  // <i>The recursive bit.</i>
+  requestAnimationFrame(animate); 
+}
+animate();
 </pre>
 
 Ok, so this code gets our final shape moving, but we've got a couple of
@@ -7036,14 +7057,16 @@ stroke-width) in proportion.
 
 <pre>
 // <i>Create a frame to act as the boundary.</i>
-let frameSize = Gen.random(350, 700); let frame =
-svg.create('rect').set({ x: (1000 - frameSize) / 2, y: (1000 -
-frameSize) / 2, width: frameSize, height: frameSize, fill: '#252525',
-stroke: `hsl(${Gen.random(0, 360)} 80% 80% / 0.25)`, stroke_width:
-frameSize / 10,
+let frameSize = Gen.random(350, 700); 
+let frame = svg.create('rect').set({ 
+  x: (1000 - frameSize) / 2, 
+  y: (1000 - frameSize) / 2, 
+  width: frameSize, height: frameSize, 
+  fill: '#252525', 
+  stroke: `hsl(${Gen.random(0, 360)} 80% 80% / 0.25)`, 
+  stroke_width: frameSize / 10,
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-4b">7.4b Initializing and Extending Our Shapes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7059,14 +7082,14 @@ array as we've done in our previous examples.
 let numCircles = Math.floor(frameSize / 20); 
 let circles = [];
 
-// Populate this array. 
+// <i>Populate this array.</i>
 for (let i = 0; 
   i &lt; numCircles; i += 1) {
 
     // Randomise the radius relative to the frame size.
     let radius = Gen.random(frameSize / 100, frameSize / 25);
 
-    // Apply the above variables and randomise the hue.
+    // <i>Apply the above variables and randomise the hue.</i>
     let circle = svg.create('circle').set({ 
       cx: 500, 
       cy: 500, 
@@ -7074,7 +7097,7 @@ for (let i = 0;
       fill: `hsl(${Gen.random(0, 360)} 80% 80% / 0.5)` 
     });
     
-    // Store the circle in the array.
+    // <i>Store the circle in the array.</i>
     circles.push(circle); 
   }
 </pre>
@@ -7241,12 +7264,12 @@ taken the first steps on the road to full-on physics simulations (a
 topic way beyond the scope of this book, but I'd encourage you to
 explore it independently).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 55.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55. Colorful collision detection (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image055.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Colorful collision detection"
+  alt="Colorful collision detection." />
 <!-- (./images/media/image55.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-3.</b> Colorful collision detection</i></small></small></p>
@@ -7280,7 +7303,7 @@ circles as follows, omitting the cx and cy attributes (which we'll work
 out in the next section).
 
 <pre>
-// Set up the loop. 
+// <i>Set up the loop.</i>
 for (let i = 0; i &lt; numCircles; i += 1) {
 
   // <i>Create the circle, but don't set the position or radius yet.</i>
@@ -7304,31 +7327,31 @@ the ratio of a circle's circumference (the length along its perimeter)
 to its diameter (double the radius). Figure 7-4 illustrates these
 values.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 56.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 56. The circumference, diameter, and radius of a circle (xx) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image056.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="The circumference, diameter, and radius of a circle"
+  alt="The circumference, diameter, and radius of a circle." />
 <!-- (./images/media/image56.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-4.</b> The circumference, diameter, and radius of a circle</i></small></small></p>
 
-You may be accustomed to angles being expressed in terms of degrees, but
+<p>You may be accustomed to angles being expressed in terms of degrees, but
 in JavaScript, angles are measured in radians by default. One radian is
 equivalent to the length of a circle's radius wrapped around the
 circumference (visualized in Figure 7-5). It takes just over six of
 these radians (or approximately 6.28) to wrap around the full
-circumference.
+circumference.</p>
 
-And half of 6.28 is 𝝅, or 3.14.
+<p>And half of 6.28 is 𝝅, or 3.14.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 57.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 57. How radians relate to 𝝅 and the circumference (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image057.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="How radians relate to 𝝅 and the circumference"
+  alt="How radians relate to 𝝅 and the circumference." />
 <!-- (./images/media/image57.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-5.</b> How radians relate to<i> 𝝅 </i>and the circumference</i></small></small></p>
@@ -7421,12 +7444,12 @@ hue = (hue % 360) + (180 / numCircles);
 There... That gets us much closer to achieving that hypnotic pull. See
 Figure 7-6 for a snapshot of this animation at about 15% progression.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 58.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 58. A circular loop with the Web Animations API (xx) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image058.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A circular loop with the Web Animations API"
+  alt="A circular loop with the Web Animations API." />
 <!-- (./images/media/image58.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-6.</b> A circular loop with the Web Animations API</i></small></small></p>
@@ -7513,12 +7536,12 @@ when referenced via a url link to its id. In the preceding case, a
 yellow circle calls the filter via its own filter attribute, and the
 result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feGaussianBlur.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 59.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. A blurred circle (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image059.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A blurred circle"
+  alt="A blurred circle." />
 <!-- (./images/media/image59.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-1.</b> A blurred circle</i></small></small></p>
@@ -7543,12 +7566,12 @@ drop shadow applied to a circle's stroke, as shown in Figure 8-2.
 &lt;/svg&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 60.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 60. A drop-shadow filter effect (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image060.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A drop-shadow filter effect"
+  alt="A drop-shadow filter effect." />
 <!-- (./images/image060.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-2.</b> A drop-shadow filter effect</i></small></small></p>
@@ -7593,15 +7616,14 @@ we'll look at how to move from markup to scripting filters with SvJs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-1b">8.1b The SvJs createFilter( ) Method</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Perhaps unsurprisingly, SvJs has its own createFilter() method to speed
-up the filter creation process. It requires just one argument: an id,
-and this id is used when applying the filter to the target element. As
-with the createGradient() and createPattern() methods, sensible defaults
-are initialized, and the checking of whether a defs element already
-exists is taken care of under the hood.
+Perhaps unsurprisingly, SvJs has its own createFilter() method to speed up the filter 
+creation process. It requires just one argument: an id, and this id is used when applying 
+the filter to the target element. As with the createGradient() and createPattern() 
+methods, sensible defaults are initialized, and the checking of whether a defs element 
+already exists is taken care of under the hood.
 
-The following is the SvJs equivalent of our first example shown
-previously, applying a soft blur to a yellow circle (Figure 8-1).
+The following is the SvJs equivalent of our first example shown previously, applying a 
+soft blur to a yellow circle (Figure 8-1).
 
 <pre>
 // <i>Initialise the filter.</i>
@@ -7609,12 +7631,13 @@ let filter = svg.createFilter('blur');
 
 // <i>Create the blur effect.</i>
 filter.create('feGaussianBlur').set({
-stdDeviation: 10 });
+  stdDeviation: 10 });
 
 // <i>Apply the filter.</i>
-svg.create('circle').set({ r: 350, cx: 500, cy: 500, fill: 'yellow',
-filter:
-'url(#blur)'
+svg.create('circle').set({ 
+  r: 350, cx: 500, 
+  cy: 500, fill: 'yellow',
+  filter: 'url(#blur)'
 });
 </pre>
 
@@ -7627,12 +7650,12 @@ effect can "bleed," to use a print analogy. This space is known as the
 filter region, and once a filter's effect extends beyond this region,
 clipping occurs (see Figure 8-3).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 61.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. A clipped filter region (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image061.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A clipped filter region"
+  alt="A clipped filter region." />
 <!-- (./images/image061.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-3.</b> A clipped filter region</i></small></small></p>
@@ -7675,7 +7698,6 @@ and the second the blur along the y axis.
 // <i>Create a 'motion' blur effect.</i>
 filter.create('feGaussianBlur').set({ stdDeviation: '20 0' });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2a">8.2a Shadows</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7751,12 +7773,12 @@ sample output). There is something I like about these results; the
 coloring, however, can get a little too incongruous at times. So let's
 use some filters to rein in the colors but retain the dynamic range.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 62.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. Full-spectrum RGB tiles (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image062.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Full-spectrum RGB tiles"
+  alt="Full-spectrum RGB tiles." />
 <!-- (./images/image062.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-4.</b> Full-spectrum RGB tiles</i></small></small></p>
@@ -7789,17 +7811,17 @@ filter now to do this. At the bottom of the sketch, initialize a new
 filter as follows:
 
 <pre>
-// Initialise the filter.
+// <i>Initialise the filter.</i>
 let filter = svg.createFilter('colourise');
 
-// De-saturate the input.
+// <i>De-saturate the input.</i>
 filter.create('feColorMatrix').set({ 
   type: 'saturate', 
   values: 0,
   result: 'desaturate' 
 });
 
-// Apply the filter.
+// <i>Apply the filter.</i>
 grid.set({ filter: 'url(#colourise)' });
 </pre>
 
@@ -7809,7 +7831,7 @@ the feColorMatrix primitive and the last line where we apply the filter,
 add the following code:
 
 <pre>
-// Set a flood colour. 
+// <i>Set a flood colour.</i>
 filter.create('feFlood').set({ 
   flood_color: '#7F462C', 
   result: 'flood' 
@@ -7861,7 +7883,7 @@ primitive. We'll randomize its mode attribute and set the first input to
 the flood color and the second input to the desaturated grid.
 
 <pre>
-// Randomise the blend mode. 
+// <i>Randomize the blend mode.</i>
 filter.create('feBlend').set({ 
   mode: Gen.random(blendModes), 
   in: 'flood', 
@@ -7900,12 +7922,12 @@ lighter, and arithmetic. In Figure 8-5, I've illustrated six of these;
 the arithmetic operator has no set output (it's fully customizable) and
 is a little too complex to properly cover in this chapter.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 63.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 63. Six of the seven SVG compositing operations (xx) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image063.jpg"
   style="width:3.542in"
-  title=""
-  alt="." />
+  title="Six of the seven SVG compositing operations"
+  alt="Six of the seven SVG compositing operations." />
 <!-- (./images/image063.jpg){width="3.5428565179352582in" height="2.6657141294838147in"} -->
 
 <p><small><small><i><b>Figure 8-5.</b> Six of the seven SVG compositing operations</i></small></small></p>
@@ -7971,12 +7993,12 @@ vary, a common palette can be discerned due to the single feFlood color
 we're drawing upon. This kind of effect would be quite difficult to
 achieve without filters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 64.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 64. The result of the composite operation (xx) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image064.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="The result of the composite operation"
+  alt="The result of the composite operation." />
 <!-- (./images/image064.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-6.</b> The result of the composite operation</i></small></small></p>
@@ -8043,12 +8065,12 @@ two instances of fractalNoise on the right. The values vary only
 slightly between instances, which should give you a sense of the
 potential variation offered by this filter primitive.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 65.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 65. Varying the base frequency and octaves for the two noise types (xx) ~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image065.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Varying the base frequency and octaves for the two noise types"
+  alt="Varying the base frequency and octaves for the two noise types." />
 <!-- ./images/image065.jpg){width="4.725in" height="1.6533333333333333in"} -->
 
 <p><small><small><i><b>Figure 8-7.</b> Varying the base frequency and octaves for the two noise types</i></small></small></p>
@@ -8093,12 +8115,12 @@ In Figure 8-8, the output of an feTurbulence primitive (center) is used
 as the map to displace the source graphic (left), resulting in some soft
 wave-like distortion (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 66.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 66. Using turbulence as a displacement map source (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image066.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
+  title="Using turbulence as a displacement map source"
+  alt="Using turbulence as a displacement map source." />
 <!-- (./images/image066.jpg){width="4.725in" height="1.3083333333333333in"} -->
 
 <p><small><small><i><b>Figure 8-8.</b> Using turbulence as a displacement map source</i></small></small></p>
@@ -8196,12 +8218,12 @@ that we've omitted the xChannelSelector and yChannelSelector attributes
 of feDisplacementMap; these both default to the alpha channel, which is
 fine in our case.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 67.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 67. Displacement using the blurred edge of a circle (xx) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image067.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Displacement using the blurred edge of a circle"
+  alt="Displacement using the blurred edge of a circle." />
 <!-- (./images/image067.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-9.</b> Displacement using the blurred edge of a circle</i></small></small></p>
@@ -8221,12 +8243,12 @@ filter.create('feComposite').set({
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 68.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 68. One possible iteration of the Hubble Bubble sketch (xx) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image068.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="One possible iteration of the Hubble Bubble sketch"
+  alt="One possible iteration of the Hubble Bubble sketch." />
 <!-- (./images/image068.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-10.</b> One possible iteration of the Hubble Bubble sketch</i></small></small></p>
@@ -8257,12 +8279,12 @@ see the rather stark difference between a distant light source shining
 on a circle with a radial gradient (left) vs. a circle of the same size
 with a uniform fill (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 69.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 69. Lighting cast on a radial gradient vs. a flat fill (xx) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image069.jpg"
   style="width:3.74in"
-  title=""
-  alt="." />
+  title="Lighting cast on a radial gradient vs. a flat fill"
+  alt="Lighting cast on a radial gradient vs. a flat fill." />
 <!-- (./images/image069.jpg){width="3.74in" height="1.9866666666666666in"} -->
 
 <p><small><small><i><b>Figure 8-11.</b> Lighting cast on a radial gradient vs. a flat fill</i></small></small></p>
@@ -8292,12 +8314,12 @@ strikes the surface bounces at a definite angle. Figure 8-12 shows the
 difference between a point light emitted by feDiffuseLighting (left) vs.
 the same light emitted by feSpecularLighting (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 70.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 70. Diffuse vs. specular lighting (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image070.jpg"
   style="width:3.54in"
-  title=""
-  alt="." />
+  title="Diffuse vs. specular lighting"
+  alt="Diffuse vs. specular lighting." />
 <!-- (./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"} -->
 
 <p><small><small><i><b>Figure 8-12.</b> Diffuse vs. specular lighting</i></small></small></p>
@@ -8470,12 +8492,12 @@ to stand on its own (in my opinion at least), with variations of this
 effect, you have a means of injecting additional visual interest into
 other generative compositions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 71.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 71. Our rough and ready paper texture (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image071.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Our rough and ready paper texture"
+  alt="Our rough and ready paper texture." />
 <!-- (./images/image071.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-13.</b> Our rough and ready paper texture</i></small></small></p>
@@ -8635,12 +8657,12 @@ And now we're ready to see some results! Figure 8-14 shows a render I
 particularly liked, but the variation in this sketch is quite large so
 it's best to play around until you land on something you like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 72.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 72. Specular random rockiness (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image072.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Specular random rockiness"
+  alt="Specular random rockiness." />
 <!-- (./images/image072.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-14.</b> Specular random rockiness</i></small></small></p>
@@ -8712,8 +8734,8 @@ select items from an array, and construct regular grids using that
 
 © David Matthew 2024 243
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_9>
+D. Matthew, <i>Generative Art with JavaScript and SVG<i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_9&gt;
 
 staple of generative art, the nested for loop. We extended our knowledge
 of SVG with masks and clip paths and played with Gaussian and Pareto
@@ -8765,12 +8787,12 @@ the relationship between circular motion and right-angled triangles (the
 very foundation of trigonometry), a freezeframe of which you can see in
 Figure 9-1.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 73.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 73. An interactive trigonometry visualization (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image073.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="An interactive trigonometry visualization"
+  alt="An interactive trigonometry visualization." />
 <!-- (./images/image073.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-1.</b> An interactive trigonometry visualization</i></small></small></p>
@@ -8781,8 +8803,8 @@ can, however, play with this particular example on the book's dedicated
 web page and inspect the code there if so inclined. I've also included
 further reading and resources that should help you delve into the topic,
 including those I've relied upon myself over the years. These can be
-found at
-[davidmatthew.ie/generative-art-javascript-svg/#trigonometry](http://﻿davidmatthew.ie/generative-art-javascript-svg/#trigonometry﻿).
+found at <a href="http://﻿davidmatthew.ie/generative-art-javascript-svg/#trigonometry﻿">
+davidmatthew.ie/generative-art-javascript-svg/#trigonometry</a>.
 
 If you don't consider yourself to be of a particularly mathematical
 mindset, please don't be dissuaded from exploring this fascinating
@@ -8793,7 +8815,6 @@ involve complicated equations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch9-2b">9.2b Fractals</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Another subject that doesn't necessitate complicated equations or mind-
 bending mathematical prowess is fractals. Yes, a fractal is a
 mathematical object, and some are enormously complex, but fractals in
@@ -8807,12 +8828,12 @@ This is illustrated in Figure 9-2, which shows a famous fractal known as
 the Sierpinski triangle. As you can see, each building block is a
 reflection of the structure taken in its entirety.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 74.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 74. Self-similarity in the Sierpinski triangle (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image074.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Self-similarity in the Sierpinski triangle"
+  alt="Self-similarity in the Sierpinski triangle." />
 <!-- (./images/image074.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-2.</b> Self-similarity in the Sierpinski triangle</i></small></small></p>
@@ -8842,12 +8863,12 @@ are usually limited in line with screen resolution or otherwise capped
 to prevent our browsers crashing and our processors crunching numbers
 they can no longer handle.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 75.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 75. Recursively constructing the Von Koch snowflake (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image075.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="Recursively constructing the Von Koch snowflake"
+  alt="Recursively constructing the Von Koch snowflake." />
 <!-- (./images/image075.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-3.</b> Recursively constructing the Von Koch snowflake</i></small></small></p>
@@ -8903,12 +8924,12 @@ meaning they survive but don't spread and thrive. Other cells are
 actively sprawling, exploring, disappearing, and re-spawning. It can be
 fun to watch!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 76.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 76. a snapshot of a game of life in action (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image076.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A snapshot of a Game of Life in action"
+  alt="A snapshot of a Game of Life in action." />
 <!-- (./images/image076.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-4.</b> A snapshot of a Game of Life in action</i></small></small></p>
@@ -9211,33 +9232,33 @@ complex shapes combining many basic ones. “d” is the parameter for defining 
 element.
 
 <pre>
-<!DOCTYPE html>
-<html lang="en">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content=
+        "width=device-width, initial-scale=1"&gt;
 
-    <title>jQuery DrawSVG Plugin</title>
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
 
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
 
-    <link rel="stylesheet" href="style.css">
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-        "//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+        "//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9256,41 +9277,41 @@ element.
             left: 0;
             right: 0;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks</h1>
-    <b>jQuery DrawSVG plugin</b>
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+    &lt;b&gt;jQuery DrawSVG plugin&lt;/b&gt;
 
-    <div class="wrapper">
-        <svg width="200" height="200" 
+    &lt;div class="wrapper"&gt;
+        &lt;svg width="200" height="200" 
             xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 145 260">
+            viewBox="0 0 145 260"&gt;
             
-            <g stroke="#FFFFFF" stroke-width="3">
+            &lt;g stroke="#FFFFFF" stroke-width="3"&gt;
             
-                <!-- Z is for Close Path -->
-                <path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
-                    fill="transparent" stroke="black" />
+                &lt;!-- Z is for Close Path --&gt;
+                &lt;path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
+                    fill="transparent" stroke="black" /&gt;
 
-                <!-- The Points --&gt;
-                <circle cx="12" cy="12" r="10" fill="red" />
-                <circle cx="92" cy="94" r="10" fill="red" />
-                <circle cx="90" cy="14" r="10" fill="red" />
-                <circle cx="10" cy="92" r="10" fill="red" />
-            </g>
-        </svg>
-    </div>
+                &lt;!-- The Points --&gt;
+                &lt;circle cx="12" cy="12" r="10" fill="red" /&gt;
+                &lt;circle cx="92" cy="94" r="10" fill="red" /&gt;
+                &lt;circle cx="90" cy="14" r="10" fill="red" /&gt;
+                &lt;circle cx="10" cy="92" r="10" fill="red" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         // Initialization 
         var $svgVar = $('svg').drawsvg();
         $svgVar.drawsvg('animate');
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 </pre>
 
 Output: 
@@ -9300,30 +9321,30 @@ setting and using callback method. The callback function is executed, once the a
 is completed. 
 
 <pre>
-<!DOCTYPE html>
-<html lang="en">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <title>jQuery DrawSVG Plugin</title>
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-    <link rel="stylesheet" href="style.css">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-"//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+"//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9342,57 +9363,57 @@ is completed.
             bottom: 0;
             margin: auto;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks </h1>
-    <b>DrawSVG plugin with callback method</b>
-    <div class="wrapper">
-        <svg viewBox="0 0 200 260" 
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks &lt;/h1&gt;
+    &lt;b&gt;DrawSVG plugin with callback method&lt;/b&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;svg viewBox="0 0 200 260" 
              style="background-color:#ffffff00"
              xmlns="http://www.w3.org/2000/svg" 
-             width="200" height="250">
+             width="200" height="250"&gt;
              
-            <g stroke="#FFFFFF" stroke-width="3" fill="none">
-                <!--The shape of path element is defined
+            &lt;g stroke="#FFFFFF" stroke-width="3" fill="none"&gt;
+                &lt;!--The shape of path element is defined
                     by "d" parameter --&gt;
-                <path d="M157.068 33H165c4.77 0 9 4.464 9
+                &lt;path d="M157.068 33H165c4.77 0 9 4.464 9
                          9.706v202.758c0 5.243-4.288 
                          9.536-9.524 9.536H10.524C5.288
                          255 1 250.707 1 245.464V42.707C1
-                         37.464 5.06 33 10.017 33h9.203" />
+                         37.464 5.06 33 10.017 33h9.203" /&gt;
               
-                <!--The "Move to" command is called with M  --&gt;
-                <path d="M103.302 33H157v45H19V33h52.72" />
+                &lt;!--The "Move to" command is called with M  --&gt;
+                &lt;path d="M103.302 33H157v45H19V33h52.72" /&gt;
               
-                <!--Co-ordinates by "d" are unitless in
+                &lt;!--Co-ordinates by "d" are unitless in
                     the user coordinate system--&gt;
-                <path d="M18.696 103h137.896v.17" />
-                <path d="M18.738 155h137.854v.068" />
-                <path d="M18.738 178h137.854v-.006" />
-                <path d="M18.696 227h137.868v-.21" />
-            </g>
-        </svg>
-    </div>
-    <div id="callbackDiv"></div>
+                &lt;path d="M18.696 103h137.896v.17" /&gt;
+                &lt;path d="M18.738 155h137.854v.068" /&gt;
+                &lt;path d="M18.738 178h137.854v-.006" /&gt;
+                &lt;path d="M18.696 227h137.868v-.21" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div id="callbackDiv"&gt;&lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         var $svg = $("svg").drawsvg({
             stagger: 2000, // Break is set to 2 seconds
             duration: 5000,
             callback: function() {
                 $('#callbackDiv').html('
-                    <p>
-                           <strong>Animation completed !</strong>
-                       </p>
+                    &lt;p&gt;
+                           &lt;strong&gt;Animation completed !&lt;/strong&gt;
+                       &lt;/p&gt;
             ');
             }
         }).drawsvg("animate");
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 </pre>
 Output:
 
@@ -9403,30 +9424,30 @@ Video Player
 Example 3:
 
 <pre>
-<!DOCTYPE html>
-<html lang="en">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1">
-    <title>jQuery DrawSVG Plugin</title>
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-    <link rel="stylesheet" href="style.css">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-"//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+"//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9445,38 +9466,38 @@ Example 3:
             left: 0;
             right: 0;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks</h1>
-    <b>Draw On Scroll, Please scroll down and up</b>
-    <div class="wrapper">
-        <svg style="background-color:#ffffff00" 
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+    &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;svg style="background-color:#ffffff00" 
              xmlns="http://www.w3.org/2000/svg" 
              width="200" height="150" 
-             viewBox="0 0 200 150">
+             viewBox="0 0 200 150"&gt;
              
-            <g stroke="#FFFFFF" stroke-width="2" fill="none">
+            &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
             
-                <!--The path element is the general shape used in SVG --&gt;
-                <path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
+                &lt;!--The path element is the general shape used in SVG --&gt;
+                &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
                          67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
                          31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
-                         30.425 67.97 67.958z" />
-                <path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
+                         30.425 67.97 67.958z" /&gt;
+                &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
                          48.488-26.772 0-48.48-21.71-48.48-48.488 0-26.776
                          21.708-48.48 48.48-48.48 26.794 0 48.496 21.704 
-                         48.496 48.48z" />
-                <path d="M37 68.998C37 50.773 51.55 36 69.495 36" />
-                <path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
+                         48.496 48.48z" /&gt;
+                &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
+                &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
                          15.208.007 20.98l-2.886 2.894c-5.752 5.772-15.174 
-                         5.783-20.94.024l-55.128-55.078" />
-            </g>
-        </svg>
-    </div>
+                         5.783-20.94.024l-55.128-55.078" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         var $docVar = $(document),
             $winVar = $(window),
             $svgVar = $('svg').drawsvg(),
@@ -9486,9 +9507,9 @@ Example 3:
             var p = $winVar.scrollTop() / max;
             $svgVar.drawsvg('progress', p);
         });
-    </script>
-</body>
-</html>
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 
 Output: The animation always depends on the speed of scrolling. 
@@ -9502,33 +9523,33 @@ Video Player
 Ex 1:
 
 <pre>
-<!DOCTYPE html>
-<html lang="en">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1">
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content=
+        "width=device-width, initial-scale=1"&gt;
 
-    <title>jQuery DrawSVG Plugin</title>
+    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
 
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
 
-    <link rel="stylesheet" href="style.css">
+    &lt;link rel="stylesheet" href="style.css"&gt;
 
-    <script async src=
-        "//assets.codepen.io/assets/embed/ei.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js">
-    </script>
-    <script src="jquery.drawsvg.min.js"></script>
+    &lt;script async src=
+        "//assets.codepen.io/assets/embed/ei.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src=
+"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+    &lt;/script&gt;
+    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
-    <style>
+    &lt;style&gt;
         body {
             background: green;
             text-align: center;
@@ -9547,41 +9568,41 @@ Ex 1:
             left: 0;
             right: 0;
         }
-    </style>
-</head>
+    &lt;/style&gt;
+&lt;/head&gt;
 
-<body>
-    <h1 style="color:white">GeeksforGeeks</h1>
-    <b>jQuery DrawSVG plugin</b>
+&lt;body&gt;
+    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+    &lt;b&gt;jQuery DrawSVG plugin&lt;/b&gt;
 
-    <div class="wrapper">
-        <svg width="200" height="200" 
+    &lt;div class="wrapper"&gt;
+        &lt;svg width="200" height="200" 
             xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 145 260">
+            viewBox="0 0 145 260"&gt;
             
-            <g stroke="#FFFFFF" stroke-width="3">
+            &lt;g stroke="#FFFFFF" stroke-width="3"&gt;
             
-                <!-- Z is for Close Path --&gt;
-                <path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
-                    fill="transparent" stroke="black" />
+                &lt;!-- Z is for Close Path --&gt;
+                &lt;path d="M 10 10 H 90 V 90 H 10 L 10 10 Z" 
+                    fill="transparent" stroke="black" /&gt;
 
-                <!-- The Points --&gt;
-                <circle cx="12" cy="12" r="10" fill="red" />
-                <circle cx="92" cy="94" r="10" fill="red" />
-                <circle cx="90" cy="14" r="10" fill="red" />
-                <circle cx="10" cy="92" r="10" fill="red" />
-            </g>
-        </svg>
-    </div>
+                &lt;!-- The Points --&gt;
+                &lt;circle cx="12" cy="12" r="10" fill="red" /&gt;
+                &lt;circle cx="92" cy="94" r="10" fill="red" /&gt;
+                &lt;circle cx="90" cy="14" r="10" fill="red" /&gt;
+                &lt;circle cx="10" cy="92" r="10" fill="red" /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
 
-    <script>
+    &lt;script&gt;
         // Initialization 
         var $svgVar = $('svg').drawsvg();
         $svgVar.drawsvg('animate');
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 </pre>
 
 Ex 2:
