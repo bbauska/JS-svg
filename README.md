@@ -454,9 +454,9 @@ overview of the following:</p>
 everything. I must have encountered certain programming concepts umpteen times before 
 the proverbial penny finally dropped (JavaScript promises anyone?), and whenever 
 understanding did finally dawn, it would usually be because I was experimenting with 
-something I *wanted* to build, rather than repeating tutorial steps by rote. Tutorials 
+something I <i>wanted</i> to build, rather than repeating tutorial steps by rote. Tutorials 
 and instructional books certainly have their place (I wouldn't be writing this book 
-otherwise), but it's important that you take what *you* want from them, rather than 
+otherwise), but it's important that you take what <i>you</i> want from them, rather than 
 seeing them as syllabi to be strictly followed.</p>
 
 <p>A sense of play is important, particularly when it comes to art. And although I 
@@ -484,12 +484,12 @@ to coding and has a large and active community. So why doesn't this book use it?
 value. I quickly moved to p5.js when the library was first released in 2013, which 
 allowed generative sketches to be written directly in JavaScript, the language of the 
 Web. But when I wanted to integrate some of my own sketches into real-world web 
-development projects, its limitations quickly showed. It's a *large* library, clocking in 
+development projects, its limitations quickly showed. It's a <i>large</i> library, clocking in 
 at close to a megabyte at last check, and while that may not sound like much, it's a lot 
 by web development standards.</p>
 
 <!-- © David Matthew 2024 1
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_1> -->
 <!-- page 2 -->
 
@@ -579,7 +579,7 @@ arguably the first abstract artist in Western art history.</p>
 <p>As you can see, SVG is written in such a way as to preserve the
 semantics of the code. Search engines love this; no longer are they
 looking at an impenetrable wall of pixels; they can clearly see the
-*intent* within the markup. In this case, four circles displayed in the
+<i>intent</i> within the markup. In this case, four circles displayed in the
 order they're written, with a title for extra accessibility. Figure 1-1
 shows how this markup appears when rendered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -602,7 +602,7 @@ one after the other. And if we wanted to display our circles at random
 cx and cy positions, each with a randomly selected fill, this isn't
 possible at all. Variables, loops, functions, and all the fun stuff of
 imperative programming aren't available to us. Declarative formats are
-concerned more with the *what* of a program rather than the *how*. The
+concerned more with the <i>what</i> of a program rather than the <i>how</i>. The
 how, however, will very much matter to us. Without the how, we wouldn't
 have algorithms, and algorithms are essential to generative art.</p>
 
@@ -620,7 +620,7 @@ ultimately it gives you more creative control.</p>
 <h3 id="ch1-1c">1.1c Generating SVG</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>So if native SVG doesn't allow for the use of algorithms, how do we
-write SVG using an imperative approach? The answer is we *script* our
+write SVG using an imperative approach? The answer is we <i>script</i> our
 SVG, and this is where JavaScript and SvJs come into play.</p>
 
 <p>We could script SVG directly in JavaScript without a library, but that
@@ -669,7 +669,7 @@ svg.create('rect').set({
 
 <p><small><small><i><b>Figure 1-2.</b> A cornflower blue-colored rectangle, in all its glory</i></small></small></p>
 
-<p>Now you *could* write some functions to make writing vanilla JavaScript
+<p>Now you <i>could</i> write some functions to make writing vanilla JavaScript
 less painful, but that leads you down the road of writing a whole host
 of other utility functions to make the basics less burdensome. With
 SvJs, I've done my best to save you this trouble. It's essentially a
@@ -1012,7 +1012,7 @@ worry. That's what this chapter is for.</p>
 peculiarities) of JavaScript, our language of choice. JavaScript is a
 powerful and enormously popular language; it is the only programming
 language web browsers natively understand, so naturally enough, it is
-*everywhere*. Learning JavaScript is therefore a very practical choice
+<i>everywhere</i>. Learning JavaScript is therefore a very practical choice
 and will serve you well in a lot of other areas besides generative art.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-1">Syntax</h2>
@@ -1021,7 +1021,7 @@ and will serve you well in a lot of other areas besides generative art.</p>
 
 <p>© David Matthew 2024 19</p>
 
-<p>D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
+<p>D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_2></p>
 
 <h2>Case Sensitivity</h2>
@@ -1069,7 +1069,7 @@ mandatory), I opt to leave them in.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A very important habit to cultivate is the liberal use of comments in
 any code you write. Not only so that others can more easily read and
-understand your code, but so that *you* can do so too. You'd be amazed
+understand your code, but so that <i>you</i> can do so too. You'd be amazed
 at how quickly your own code can become conundrum-like without comments
 to guide the way.</p>
 
@@ -1385,8 +1385,8 @@ This can reduce unexpected surprises (i.e., bugs).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4c">2.4c Logical Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Lastly, there are the logical operators *and* ( && ), *or* ( &verbar;&verbar; ), and
-*not* ( ! ). These emulate the conjunction, disjunction, and negation of
+Lastly, there are the logical operators <i>and</i> ( && ), <i>or</i> ( &verbar;&verbar; ), and
+<i>not</i> ( ! ). These emulate the conjunction, disjunction, and negation of
 classical logic.
 
 When conjoining two conditions with &&, the result is true if and only
@@ -1398,9 +1398,9 @@ false && true -&gt; false
 true && true -&gt; true
 </pre>
 
-When using the disjunction (fancy word for *or*), first make sure you
+When using the disjunction (fancy word for <i>or</i>), first make sure you
 use the right characters on your keyboard. The &verbar; character is not a
-capital *i* or lowercase *L*; it's what's known as the pipe character.
+capital <i>i</i> or lowercase <i>L</i>; it's what's known as the pipe character.
 Depending on your regional keyboard layout, it might be located near
 either your Enter key or your Shift key.
 
@@ -1547,7 +1547,7 @@ while (condition === true) {
 }
 </pre>
 
-Now, if the condition in question *always* evaluates to true, that would
+Now, if the condition in question <i>always</i> evaluates to true, that would
 lead to an infinite loop. An important ingredient therefore in any
 looping structure is a value that changes while the loop is running.
 This is normally a number that either increments or decrements and is
@@ -1791,8 +1791,8 @@ function scopeTest() {
     -&gt; Uncaught ReferenceError: a is not defined
 </pre>
 
-However, if we defined the same variable outside that function, it would
-be visible from *within* the function.
+However, if we defined the same variable outside that function, it would be visible from 
+<i>within</i> the function.
 
 <pre>
 const a = 1;
@@ -2121,7 +2121,7 @@ tidier and less likely to cause conflicts.
 <h2 id="ch2-9">2.9 Classes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A class is like a blueprint, or template, for creating objects. The
-objects that are created are then said to be *instances* of that class.
+objects that are created are then said to be <i>instances</i> of that class.
 A class can include both data and functions to work on that data. This
 coupling of data and code is referred to as encapsulation.
 
@@ -2178,7 +2178,7 @@ object? We can confirm this by using the typeof check.
 typeof null; -&gt; object
 </pre>
 
-Despite this, null is not considered an instance *of* an object. We can
+Despite this, null is not considered an instance <i>of</i> an object. We can
 confirm this by using the instanceof check.
 
 <pre>
@@ -2320,9 +2320,9 @@ fragment as it's also known, is that SVG element whose parent element
 attached to an HTML DOM node.
 
 <pre>
-<div id="container">
-  <svg></svg>
-</div>
+&lt;div id="container"&gt;
+  &lt;svg&gt;&lt;/svg&gt;
+&lt;/div&gt;
 </pre>
 
 This is worth mentioning only because SVGs can contain other SVGs; in
@@ -2331,8 +2331,8 @@ You might also see this referred to as the root element.
 
 © David Matthew 2024 55
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_3>
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_3&gt;
 
 Let's reopen the JavaScript template file we set up in Chapter 1 (it
 should be located in sketches/00-template/sketch.js) and add the
@@ -3034,7 +3034,7 @@ I'll stick with the simplest and pull in some Google fonts via our HTML.
 Let's use this as the basis of a quick sketch; copy our 00-template
 folder and call it 04-chalkboard-gag.
 
-If you've ever watched *The Simpsons*, you'll know that the beginning of
+If you've ever watched <i>The Simpsons</i>, you'll know that the beginning of
 most episodes features a chalkboard gag, where Bart is shown scrawling
 lines on a chalkboard as punishment for his errant behavior. One of my
 favorites is featured in the following sketch.
@@ -3355,7 +3355,7 @@ the only attributes we're varying are the x and y coordinates. To do
 this, we're using the changing value of the i iterator. The y coordinate
 increases by 50 on each run, which is simple enough. The expression
 defining the x position is a little more complicated. What we're saying
-here is that we want x to increase by 20 on each iteration, *except* for
+here is that we want x to increase by 20 on each iteration, <i>except</i> for
 the final one (where i === 3). For this, we want to set it to 20.
 
 If you view the pattern at this point, you should see an undulating
@@ -3464,7 +3464,7 @@ generative art:
 
 namely, randomness. When we surrender full control over the result of
 our sketches and leave certain elements to chance, it allows for
-variation, for exploration, and for *discovery*.
+variation, for exploration, and for <i>discovery</i>.
 
 In this chapter, we'll learn how to randomize parameters like colors,
 sizes, and coordinates; how to randomly pick from predefined ranges and
@@ -3484,8 +3484,8 @@ stained stones and dirty walls. Artists like Max Ernst took such prompts
 
 © David Matthew 2024 85
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_4>
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_4&gt;
 
 quite literally; his frottage technique was borne of dropping paper at
 random on floorboards full of scrapes and scratches and making charcoal
@@ -3898,7 +3898,7 @@ let spacing = 5;
 </pre>
 
 What we need next are variables that control the loop increment value
-and the size of each cell. These values, however, should be *derived*
+and the size of each cell. These values, however, should be <i>derived</i> 
 from those we've set previously, rather than worked out afresh each time
 we want to change the grid. With a little bit of basic math, here's how
 we'd do this:
@@ -3982,7 +3982,7 @@ let palette = ['#5465FF', '#788BFF',
 There are many sites out there, too numerous to name, where you might
 stumble upon color palette inspiration. In fact, you might find it
 difficult to settle on a single palette, in which case it would make
-sense to save a selection of them and store them as arrays *within*
+sense to save a selection of them and store them as arrays <i>within</i>
 another array. They would then become nested arrays, which are just
 arrays contained within other arrays. You might also see them referred
 to as 2D or multidimensional arrays.
@@ -4161,7 +4161,7 @@ fill: pickedPalette[i]
 }
 </pre>
 
-We have a couple more steps to go. We haven't actually *applied* the
+We have a couple more steps to go. We haven't actually <i>applied</i> the
 clipPath to anything yet, so if we were to run our sketch at this point,
 we'd just see a fairly cluttered overlap of circles. We'll fix this by
 applying the clipPath to the circle group rather than the circles
@@ -4263,7 +4263,7 @@ let hue = Gen.random(0, 360);
 </pre>
 
 You can leave the grid-related variables as they are, or tweak them if
-you prefer. Next, *between* the x and y loops (so within the first loop
+you prefer. Next, <i>between</i> the x and y loops (so within the first loop
 but before the second), increment the hue like so:
 
 <pre>
@@ -4328,7 +4328,7 @@ already but just haven't attached the name to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6a">4.6a Uniform Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The Gen.random() function is an example of *uniform* distribution, where
+The Gen.random() function is an example of <i>uniform</i> distribution, where
 every number within the range has an equal chance of being chosen. In
 other words, there are no biases or tendencies hiding with the
 Gen.random() function (or indeed, the Math.random() on which it is
@@ -4355,7 +4355,7 @@ along the x axis.
 
 In real-life measurements (i.e., those outside the binary world of ones
 and zeros), uniform distribution isn't actually that common. Far more
-prevalent is something called *Gaussian* distribution, where the
+prevalent is something called <i>Gaussian</i> distribution, where the
 majority of values cluster toward a midpoint and drop off either side of
 this. It is also known as normal distribution, and when graphed, it
 forms a bell-shaped curve. Visualized as a series of vertical lines, it
@@ -5702,7 +5702,7 @@ following as the final line before the end of the loop:
 A quick explanation of how this works: say our random hue is initialized
 to 350. The expression hue % 360 will return 350, because 350 / 360 is
 0, with a remainder of 350. This works similarly for every number in our
-range *except* 360, which returns 1 when divided by itself and returns a
+range <i>except</i> 360, which returns 1 when divided by itself and returns a
 remainder of 0. This is how it cycles back to the start of the range.
 
 Now that our loop is done, we can add one more line outside it to ensure
@@ -6250,7 +6250,7 @@ art forms is its ability to incorporate interactivity, and, as a result,
 active audience participation. This audience -- whether it be a single
 user on a laptop or a small crowd at an art installation -- can then
 influence, or even determine, the end result. In essence, such art is
-*dynamic*; it moves; it responds; it flows. It isn't fixed and final.
+<i>dynamic</i>; it moves; it responds; it flows. It isn't fixed and final.
 
 In this chapter, we'll explore some of the underlying techniques of
 interactive art, including event listeners, callback functions, cursor
@@ -6272,8 +6272,8 @@ up to us.
 
 © David Matthew 2024 167
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_7>
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
+&lt;https://doi.org/10.1007/979-8-8688-0086-3_7&gt;
 
 We could use it to trigger any number of things -- a custom message, a
 color change, a simple animation, a complex transformation; the
@@ -6371,7 +6371,7 @@ select the Elements tab, and inspect the DOM tree until we locate the
 root SVG element. Then we can right-click it, select "Copy", and choose
 the nested "Copy outerHTML" option. This gives us the SVG file data that
 we want, but not the file itself, so as a final step, we need to open up
-a text or code editor, paste our clipboard contents into it, and *then*
+a text or code editor, paste our clipboard contents into it, and <i>then</i>
 save it as an SVG file. Not exactly convenient.
 
 It would be far easier to just hit a key on our keyboard and have the
@@ -6627,7 +6627,7 @@ be called by an element using the animation-name property, and we also
 need to specify how long the animation should take (the
 animation-duration). There are other optional properties that we can
 define, such as the animation-timingfunction (also known as easing),
-which describes *how* we transition from one property value to another,
+which describes <i>how</i> we transition from one property value to another,
 and the animation-iteration- count, which specifies how many times our
 animation should play.
 
@@ -6781,7 +6781,7 @@ thing to point out: how the keyframes are spaced out (or offset) from
 one another. With CSS keyframes, we need to explicitly state when a
 keyframe should trigger by using percentage values or the from and to
 directives. With the Web Animations API, the offset of animations is
-*inferred* if not explicitly stated. If we have three keyframes, they
+<i>inferred</i> if not explicitly stated. If we have three keyframes, they
 will be automatically spaced out at 0, 0.5, and 1, respectively (the
 equivalent of 0%, 50%, and 100% in CSS). But we can define custom
 offsets if needs be. In the following example, the second keyframe will
@@ -7037,7 +7037,7 @@ subscribers only. Anime.js is a nice open source alternative.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's one thing to interact ourselves with a generative piece to
 influence the output, but it's another thing entirely when it begins to
-interact with *itself*. This is in essence what collision detection
+interact with <i>itself</i>. This is in essence what collision detection
 entails. We'll explore an example using the bounds of a rectangle as a
 basic collision barrier, and we'll utilize the requestAnimationFrame()
 method while it's still relatively fresh in our minds.
@@ -7224,7 +7224,7 @@ Looks like we've left something out of our calculations.
 To fix this, we need to account for the fact that the frame border is
 inset; that is, the stroke is halfway inside the frame, and the radius
 of each circle is different. This means that the lower bound and upper
-bound variables must be calculated *inside* the animation loop, as they
+bound variables must be calculated <i>inside</i> the animation loop, as they
 will vary per circle. There are, however, a couple of static values that
 can be captured outside the loop and used later inside it: the frame
 edge and frame inset. Delete the lower bound and upper bound variables
@@ -7512,7 +7512,7 @@ primitives in a node-like manner using a series of inputs and outputs.
 
 © David Matthew 2024 205
 
-D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
+D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
 <https://doi.org/10.1007/979-8-8688-0086-3_8>
 
 Let's look at a basic example in raw markup form, using just a single
@@ -8017,10 +8017,10 @@ In Chapter 5, we introduced the SvJs Noise module, which allowed us to
 use Perlin noise in our sketches. SVG also implements Perlin noise
 inside its feTurbulence filter primitive, so what's the difference?
 
-Well, with the Noise module, we can extract and play with noise *data*,
+Well, with the Noise module, we can extract and play with noise <i>data</i>,
 using its values to shape our vectors. With feTurbulence on the other
 hand, we have a filter primitive that renders noise data directly, in
-*pixel* form. This doesn't give us access to the underlying noise data,
+<i>pixel</i> form. This doesn't give us access to the underlying noise data,
 but what we can do is easily alter the visual output by tweaking its
 attributes and then feed it into other filter primitives. The
 feTurbulence attributes are as follows:
@@ -9010,7 +9010,7 @@ event types, 168, 169
 JavaScript programmers, 167 parameters, 169 
 SvJs save method, 170, 171
 
-  D. Matthew, *Generative Art with JavaScript and SVG*, Design Thinking,
+  D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
   <https://doi.org/10.1007/979-8-8688-0086-3>253
 
 <h3>F</h3>
@@ -9123,7 +9123,7 @@ Programming
 
 Programming motion CSS keyframes, 177, 179 
   methods, 188, 189 255
-Programming motion (*cont*.) requestAnimationFrame() method, 184, 185, 187, 188
+Programming motion (<i>cont</i>.) requestAnimationFrame() method, 184, 185, 187, 188
 
 shapes, 177
 SMIL, 179--181
@@ -9270,7 +9270,7 @@ element.
 
         svg {
             width: 550px;
-            position: fixed; /* for visibility*/
+            position: fixed; /* <i>for visibility</i> */
             margin: auto;
             top: 0;
             bottom: 0;
@@ -9354,7 +9354,7 @@ is completed.
             height: 10px;
         }
          
-        /* SVG element is fixed for visibility */
+        /* <i>SVG element is fixed for visibility</i> */
         svg {
             position: fixed; 
             top: 0;
@@ -9457,7 +9457,7 @@ Example 3:
             height: 1800px;
         }
          
-        /* For visibility */
+        /* <i>For visibility</i> */
         svg {
             position: fixed; 
             margin: auto;
@@ -9561,7 +9561,7 @@ Ex 1:
 
         svg {
             width: 550px;
-            position: fixed; /* for visibility*/
+            position: fixed; /* <i>for visibility</i> */
             margin: auto;
             top: 0;
             bottom: 0;
@@ -9641,7 +9641,7 @@ Ex 2:
             height: 10px;
         }
          
-        /* SVG element is fixed for visibility */
+        /* <i>SVG element is fixed for visibility</i> */
         svg {
             position: fixed; 
             top: 0;
@@ -9738,7 +9738,7 @@ Ex 2:
             height: 1800px;
         }
          
-        /* For visibility */
+        /* <i>For visibility</i> */
         svg {
             position: fixed; 
             margin: auto;
