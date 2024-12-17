@@ -8665,78 +8665,66 @@ paths you might pursue next in your generative journey.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch9-1">9.1 The Journey So Far</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We began with an introduction to SVG and what sets it apart from raster
+<p>We began with an introduction to SVG and what sets it apart from raster
 formats like PNG and JPG. We then moved on to the SvJs library and
 learned how to set up a local front-end development environment. The
 first chapter closed with a bit of a code dump to serve up some visual
 inspiration, but it was a little light on explanation, so the following
-two chapters picked up the slack.
+two chapters picked up the slack.</p>
 
-For those new to JavaScript and/or programming in general, Chapter 2
+<p>For those new to JavaScript and/or programming in general, Chapter 2
 offered a primer, while Chapter 3 delved into the core functionality of
 the SvJs library. We explored how to create basic shapes and how to work
 with text, groups, gradients, and patterns, and we created some colorful
-compositions and optical illusions along the way.
+compositions and optical illusions along the way.</p>
 
-With the introduction of randomness in Chapter 4, we were finally able
-to go full generative and create sketches with results not rigidly set
-in advance. We learned how to randomize numbers within a range, randomly
-select items from an array, and construct regular grids using that
+<p>With the introduction of randomness in Chapter 4, we were finally able to go full 
+generative and create sketches with results not rigidly set in advance. We learned how 
+to randomize numbers within a range, randomly select items from an array, and construct 
+regular grids using that staple of generative art, the nested for loop. We extended our 
+knowledge of SVG with masks and clip paths and played with Gaussian and Pareto 
+probability distributions.</p>
 
-© David Matthew 2024 243
-
-D. Matthew, <i>Generative Art with JavaScript and SVG<i>, Design Thinking,
-&lt;https://doi.org/10.1007/979-8-8688-0086-3_9&gt;
-
-staple of generative art, the nested for loop. We extended our knowledge
-of SVG with masks and clip paths and played with Gaussian and Pareto
-probability distributions.
-
-Noise was introduced in Chapter 5 as a way of injecting a more organic
+<p>Noise was introduced in Chapter 5 as a way of injecting a more organic
 kind of variation into our sketches, and other useful generative
 functions were covered to help us constrain and map these noise values
 to more useful ranges. In Chapter 6, we tapped into the power of the
 path element and its arsenal of commands, and we learned how to create
 lines and curves of the quadratic, cubic Bezier, and elliptical arc
-variety.
+variety.</p>
 
-Chapter 7 was all about making things move. We explored event listeners
+<p>Chapter 7 was all about making things move. We explored event listeners
 and user interaction and reviewed no less than four different ways of
 animating SVG. We covered basic collision detection and circular motion,
 before continuing on to filters in Chapter 8. There we focused on a
 subset of filter primitives of most immediate use to the generative
 artist, and we learned how to connect these primitives together to
-achieve a variety of different effects.
-
+achieve a variety of different effects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch9-2">9.2 The Voyage Forward</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So where do you go from here? Have we fully explored the field of
-generative art, mapped all the territory? Not in the slightest! We've
-only really circled the tip of the proverbial iceberg, hinting at the
-hulking structure beneath. So if you do want to dive a little deeper
-yourself, I'll tentatively suggest some further topics (with the caveat
-that the material we've covered so far could be expanded upon ad
-infinitum).
-
+<p>So where do you go from here? Have we fully explored the field of generative art, mapped 
+all the territory? Not in the slightest! We've only really circled the tip of the 
+proverbial iceberg, hinting at the hulking structure beneath. So if you do want to dive a 
+little deeper yourself, I'll tentatively suggest some further topics (with the caveat
+that the material we've covered so far could be expanded upon ad infinitum).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch9-2a">9.2a Trigonometry</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I was only able to offer a very cursory treatment of trigonometry in
-Chapter 7, so if this was your first time encountering the likes of
-Math.
+<p>I was only able to offer a very cursory treatment of trigonometry in Chapter 7, so if 
+this was your first time encountering the likes of Math.</p>
 
-PI and Math.sin(), don't expect these concepts to take root (squared or
+<p>PI and Math.sin(), don't expect these concepts to take root (squared or
 otherwise ... apologies, poor pun). Trigonometry is a topic that
 deserves a deep dive of its own, and like much of the material in this
 book, the more exposure and practice you get -- or better yet, the more
-you play -- the more comfortable you'll be.
+you play -- the more comfortable you'll be.</p>
 
-That said, I do find that interactive visualizations are a great way to
+<p>That said, I do find that interactive visualizations are a great way to
 kickstart comprehension, so to that end, I've set up a sketch showing
 the relationship between circular motion and right-angled triangles (the
 very foundation of trigonometry), a freezeframe of which you can see in
-Figure 9-1.
+Figure 9-1.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 73. An interactive trigonometry visualization (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8748,36 +8736,35 @@ Figure 9-1.
 
 <p><small><small><i><b>Figure 9-1.</b> An interactive trigonometry visualization</i></small></small></p>
 
-As with the rest of the examples in this chapter, it's intended to
+<p>As with the rest of the examples in this chapter, it's intended to
 illustrate rather than instruct, so the code isn't included here. You
 can, however, play with this particular example on the book's dedicated
 web page and inspect the code there if so inclined. I've also included
 further reading and resources that should help you delve into the topic,
 including those I've relied upon myself over the years. These can be
 found at <a href="http://﻿davidmatthew.ie/generative-art-javascript-svg/#trigonometry﻿">
-davidmatthew.ie/generative-art-javascript-svg/#trigonometry</a>.
+davidmatthew.ie/generative-art-javascript-svg/#trigonometry</a>.</p>
 
-If you don't consider yourself to be of a particularly mathematical
+<p>If you don't consider yourself to be of a particularly mathematical
 mindset, please don't be dissuaded from exploring this fascinating
 subject. You only need to be acquainted with a relatively small subset
 of it to tap into its creative possibilities, and this doesn't have to
-involve complicated equations.
-
+involve complicated equations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch9-2b">9.2b Fractals</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Another subject that doesn't necessitate complicated equations or mind-
-bending mathematical prowess is fractals. Yes, a fractal is a
-mathematical object, and some are enormously complex, but fractals in
-general are based on simple principles of recursion and self-similarity.
+<p>Another subject that doesn't necessitate complicated equations or mind-bending 
+mathematical prowess is fractals. Yes, a fractal is a mathematical object, and some are 
+enormously complex, but fractals in general are based on simple principles of recursion 
+and self-similarity.</p>
 
-Recursion essentially means self-reference. A recursive function is one
+<p>Recursion essentially means self-reference. A recursive function is one
 that continuously calls itself, an example of which we encountered in
 Chapter 7 with requestAnimationFrame(). Self-similarity, in relation to
 fractals, means that one part will resemble the whole, and vice versa.
 This is illustrated in Figure 9-2, which shows a famous fractal known as
 the Sierpinski triangle. As you can see, each building block is a
-reflection of the structure taken in its entirety.
+reflection of the structure taken in its entirety.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 74. Self-similarity in the Sierpinski triangle (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8789,11 +8776,10 @@ reflection of the structure taken in its entirety.
 
 <p><small><small><i><b>Figure 9-2.</b> Self-similarity in the Sierpinski triangle</i></small></small></p>
 
-Where does recursion come in? Well, it can be found in every fractal,
-including the Sierpinski triangle, but to really illustrate the idea,
-let's take another well-known specimen, the Von Koch snowflake. The
-algorithm used to construct this fractal could be distilled down to the
-following (albeit simplified) steps:
+<p>Where does recursion come in? Well, it can be found in every fractal, including the 
+Sierpinski triangle, but to really illustrate the idea, let's take another well-known 
+specimen, the Von Koch snowflake. The algorithm used to construct this fractal could be 
+distilled down to the following (albeit simplified) steps:</p>
 
 1.  Construct an equilateral triangle.
 
@@ -8803,16 +8789,13 @@ following (albeit simplified) steps:
 
 4.  Repeat step 1.
 
-The fourth step is what makes this algorithm recursive. Figure 9-3 shows
-what this process would look like after just three further iterations.
-In theory, these steps could continue on indefinitely, producing an
-ever- more intricate, endlessly magnifiable perimeter, which is why
-fractals
-
-are sometimes seen as "windows into infinity." In practice, iterations
-are usually limited in line with screen resolution or otherwise capped
-to prevent our browsers crashing and our processors crunching numbers
-they can no longer handle.
+<p>The fourth step is what makes this algorithm recursive. Figure 9-3 shows what this 
+process would look like after just three further iterations. In theory, these steps could 
+continue on indefinitely, producing an ever- more intricate, endlessly magnifiable 
+perimeter, which is why fractals are sometimes seen as "windows into infinity." In 
+practice, iterations are usually limited in line with screen resolution or otherwise 
+capped to prevent our browsers crashing and our processors crunching numbers they can no 
+longer handle.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 75. Recursively constructing the Von Koch snowflake (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8824,40 +8807,40 @@ they can no longer handle.
 
 <p><small><small><i><b>Figure 9-3.</b> Recursively constructing the Von Koch snowflake</i></small></small></p>
 
-Fractals open up an entire universe of exploration and inspiration for
+<p>Fractals open up an entire universe of exploration and inspiration for
 the generative artist, far beyond what I've been able to hint at here.
 If your interest is piqued at this point, I've pooled together further
 resources at <a href="https://davidmatthew.ie/generative-art-javascript-svg/#fractals﻿">
-davidmatthew.ie/generative-art-javascript-svg/#fractals</a> that I'd encourage you to explore.
+davidmatthew.ie/generative-art-javascript-svg/#fractals</a> that I'd encourage you to explore.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch9-2c">9.2c Systems Simulations</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-From simple rules, unexpected complexity often emerges; this is not only
+<p>From simple rules, unexpected complexity often emerges; this is not only
 true for fractals, but for a number of natural systems. Simulating such
 systems is usually the business of serious science, but in the more
 advanced areas of generative art, you'll see simulations of basic
 physics (think gravity, mass, density, etc.), particle systems (like
 fog, fire, and smoke), and organic behavior (from single cell
-interactions to the flocking patterns of birds).
+interactions to the flocking patterns of birds).</p>
 
-Now, SVG isn't always the medium of choice for systems simulations --
+<p>Now, SVG isn't always the medium of choice for systems simulations --
 particle systems, for example, will perform better in pixel-based
 environments like the HTML canvas -- but performance concerns aside, if
 you're looking to add an extra layer to your compositions, sprinkling a
 bit of science on top of the art, simulating natural systems can
 certainly be worth the work involved. A single sketch could become the
 basis of an endless stream of creative output, as much application as
-artwork.
+artwork.</p>
 
-John Conway's Game of Life is a good example of an organic simulation;
+<p>John Conway's Game of Life is a good example of an organic simulation;
 it's a grid-based, zero-player game that simulates patterns of growth,
 decline, and evolution. Each cell in the grid can be in one of two
 states: "alive" or "dead." Living cells contain a fill color; dead cells
 do not. The rules that underpin the game are surprisingly simple, yet
 complexity can nonetheless emerge in the form of unexpected patterns and
 clusters of cells battling it out for survival. These rules are as
-follows:
+follows:</p>
 
 1.  Any living cell with either one or zero neighbors dies.
 
@@ -8869,11 +8852,11 @@ follows:
 4.  Any empty (i.e., dead) cell with exactly three neighbors spawns to
     life.
 
-Figure 9-4 shows a game a few generations in. Some clusters (like the
+<p>Figure 9-4 shows a game a few generations in. Some clusters (like the
 square of cells in the top left and bottom right corners) are in stasis,
 meaning they survive but don't spread and thrive. Other cells are
 actively sprawling, exploring, disappearing, and re-spawning. It can be
-fun to watch!
+fun to watch!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 76. a snapshot of a game of life in action (xx) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8885,16 +8868,16 @@ fun to watch!
 
 <p><small><small><i><b>Figure 9-4.</b> A snapshot of a Game of Life in action</i></small></small></p>
 
-I'll link to more examples for you to play with at 
+<p>I'll link to more examples for you to play with at 
 <a href="http://davidmatthew.ie/generative-art-javascript-svg/#systems-simulations﻿">
 davidmatthew.ie/generative-art-javascript-svg/#systems-simulations</a>,
-including other kinds of simulations.
+including other kinds of simulations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch9-3">9.3 Closing Comments</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-At this stage, I've done enough summarizing, so I'd like to leave you
+<p>At this stage, I've done enough summarizing, so I'd like to leave you
 with some (rather opinionated) parting tips to support you in your
-generative endeavors:
+generative endeavors:</p>
 
 <ul>
   <li>Be comfortable never knowing enough. With any kind of coding,
@@ -8919,77 +8902,79 @@ generative endeavors:
 <h2 id="index">Index</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>A</h3>
-A (or a) command, 150
-addEventListener(), 168
-animate() function, 185, 187
-Automatism, 86
+A (or a) command, 150<br>
+addEventListener(), 168<br>
+animate() function, 185, 187<br>
+Automatism, 86<br>
 
 <h3>B</h3>
-Bitmap images, 2
+Bitmap images, 2<br>
 
 <h3>C</h3>
-callback functions, 47, 168--171
-C command, 156
-Circularity animating circles, 200--202 
-PI slices, 198, 199
-randomized variables, 197 
-sine/cosine, 200
-Collision detection frame-by-frame calculations, 193--196
-initializing/extending shapes, 191, 192
-setting boundaries, 190
-Comparison operators, 29
-Conditional statements, 31--33, 53
-© David Matthew 2024
-createCurve() method, 163
-createGradient() method, 76, 77
-createPattern() method, 209
-Cubic Bezier curve control point coordinates, 156, 157
-organic curves, 159, 160, 162, 163
-symmetry, 158 
-varying curve factor, 165
+callback functions, 47, 168-171<br>
+C command, 156<br>
+Circularity<br>
+  animating circles, 200-202<br>
+  PI slices, 198, 199<br>
+  randomized variables, 197<br>
+  sine/cosine, 200<br>
+Collision detection<br>
+  frame-by-frame calculations, 193-196<br>
+  initializing/extending shapes, 191, 192<br>
+  setting boundaries, 190<br>
+Comparison operators, 29<br>
+Conditional statements, 31-33, 53<br>
+createCurve() method, 163<br>
+createGradient() method, 76, 77<br>
+createPattern() method, 209<br>
+Cubic Bezier curve<br>
+  control point coordinates, 156, 157<br>
+  organic curves, 159, 160, 162, 163<br>
+  symmetry, 158<br>
+  varying curve factor, 165<br>
 
 <h3>D</h3>
-defs element, 75, 77--79, 209, 225
+defs element, 75, 77-79, 209, 225<br>
 
 <h3>E</h3>
-Elliptical arcs arguments, 150 
-generative arcs, 153, 155, 156
-irregular radii, 152
-setting flags, 151, 152
-Event listeners cursor tracking, creating, 171--173
-event types, 168, 169 
-JavaScript programmers, 167 parameters, 169 
-SvJs save method, 170, 171
-
-  D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-  <https://doi.org/10.1007/979-8-8688-0086-3>253
+Elliptical arcs<br>
+  arguments, 150<br>
+  generative arcs, 153, 155, 156<br>
+  irregular radii, 152<br>
+  setting flags, 151, 152<br>
+Event listeners<br>
+  cursor tracking, creating, 171-173<br>
+  event types, 168, 169<br>
+  JavaScript programmers, 167<br>
+  parameters, 169<br>
+SvJs save method, 170, 171<br>
 
 <h3>F</h3>
-feBlend primitive, 216, 217, 220 
-feComposite primitive, 208, 209, 218, 239 
-feDiffuseLighting primitive, 228--231, 233 
-feSpecularLighting primitive, 228, 230, 231 
-feTurbulence primitive, 241 
-  Filters 
-    createFilter() method, 209, 210
-    diffuse/specular lighting, 230 
-    effects 101
-      blending, 216, 217
-      coloring, 213--216 
-      compositing, 218--220 
-      shadows, 212
-    element, 206 
-    generative textures, 235--240
-    ins/outs, 207--209
-    lighting sources, 231 
-    lighting/texturing 
-      bump map, 228
-    noise/distortion
-      cosmic bubble, 224, 226--228 
-      displacement, 223, 224 
-      turbulence, 221--223
-    primitives, 205 
-    region, 210, 211
+feBlend primitive, 216, 217, 220<br>
+feComposite primitive, 208, 209, 218, 239<br>
+feDiffuseLighting primitive, 228-231, 233<br>
+feSpecularLighting primitive, 228, 230, 231<br>
+feTurbulence primitive, 241<br>
+Filters<br>
+    createFilter() method, 209, 210<br>
+    diffuse/specular lighting, 230<br>
+    effects 101<br>
+      blending, 216, 217<br>
+      coloring, 213-216<br>
+      compositing, 218-220<br>
+      shadows, 212<br>
+    element, 206<br>
+    generative textures, 235-240<br>
+    ins/outs, 207-209<br>
+    lighting sources, 231<br> 
+    lighting/texturing<br>
+      bump map, 228<br>
+    noise/distortion<br>
+      cosmic bubble, 224, 226-228<br>
+      displacement, 223, 224<br>
+      turbulence, 221-223<br>
+    primitives, 205<br>
+    region, 210, 211<br>
   simulating textures, 232, 234, 235 
   for loop, 35--36, 66, 73, 88, 91 
   Fractals, 246--248 254
@@ -9653,7 +9638,6 @@ Ex 2:
 
 &lt;/html&gt;
 </pre>
-
 
 <pre>
 &lt;!DOCTYPE html&gt;
