@@ -1148,6 +1148,7 @@ let oldWay = '' +
 ' &lt;p&gt;My name is ' + name + ' and I am ' + age + ' years of age.
 &lt;/p&gt;n'
 'n' + ' &lt;/div&gt;n';
+
 // <i>And here's how the same thing can be done now.</i>
 let newWay = ` &lt;div
 class="intro"&gt; &lt;p&gt;My name is ${name} and I am ${age} years of age.&lt;/p&gt;
@@ -1550,8 +1551,10 @@ name.
 // <i>Set up the iterator.</i>
 let i = 0;
 while (i &lt;= 99) {
+
   // <i>Write the value of i to the browser console.</i>
   console.log(i);
+  
   // <i>Increment i by 1 each time the loop runs.</i>
   i = i + 1; 
 }
@@ -1569,8 +1572,10 @@ variable values:
 <pre>
 // <i>Long way.</i>
 i = i + 1 i = i * 2 i = i -- 1 i = i / 2
+
 // <i>Shorter way.</i>
 i += 1 i *= 2 i -= 1 i /= 2
+
 // <i>Even shorter way (only valid for adding or subtracting by 1).</i>
 i++ i--
 </pre>
@@ -1844,7 +1849,8 @@ of a statement.
 
 <pre>
 // <i>The below is a no-no.</i>
-function(a, b) { return a + b;
+function(a, b) { 
+  return a + b;
 }
 -&gt; Uncaught SyntaxError: Function statements require a function name
 </pre>
@@ -1962,6 +1968,7 @@ array to control how many times we run our loop.</p>
 for (let i = 0; 
 i &lt; webSafeColours.length; i += 1) {
   // <i>... some code.</i>
+
   circle.fill(webSafeColours[i]);
   // <i>... more code.</i>
 }
@@ -2076,6 +2083,7 @@ myComputer[processor];
 </pre>
 // <i>Updating an object's property.</i>
 myComputer.inSleepMode = true;
+
 // <i>Creating a new object property.</i>
 myComputer.storage = "512 GB SSD";
 </pre>
@@ -2336,7 +2344,7 @@ getElementById() DOM method as an argument instead of assigning it to a
 variable, we can condense our code down to a single line:
 
 <pre>
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.getElementById('container'));
 </pre>
 
@@ -2367,7 +2375,7 @@ useful for these kinds of checks. Include it as follows in the template
 to initialize the svgSize variable:
 
 <pre>
-// Viewport size (1:1 aspect ratio). 
+// <i>Viewport size (1:1 aspect ratio).</i>
 const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
 </pre>
 
@@ -2406,9 +2414,7 @@ Sometimes to best understand how something works, you need to visually
 interact with it. With that in mind, I built a little CodePen sketch (or
 "pen" as they're called) demonstrating the effect of adjusting the main
 viewBox values, so you can see how they can be used together to scale
-and
-
-crop the content visible within the SVG viewport. You can find the pen at
+and crop the content visible within the SVG viewport. You can find the pen at
 [davidmatthew.ie/generative-art-javascript-svg#viewBox](https://davidmatthew.ie/generative-art-javascript-svg#viewBox)
 
 At this point, we have the values we need for our viewBox and viewport,
@@ -2540,7 +2546,7 @@ kind of rectangle), we just need to set our width and height to the same
 value. Add the following code to our template:
 
 <pre>
-// Background.
+// <i>Background.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -2562,11 +2568,11 @@ template sketch.js file in full:
 <pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.
 getElementById('container'));
 
-// Viewport and viewBox (1:1 aspect ratio). 
+// <i>Viewport and viewBox (1:1 aspect ratio).</i>
   const svgSize =
   window.innerWidth > window.innerHeight ?
   window.innerHeight : window.innerWidth; 
@@ -2576,7 +2582,7 @@ svg.set({
   viewBox: '0 0 1000 1000' 
 });
 
-// Background.
+// <i>Background.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -2620,11 +2626,11 @@ composition (illustrated in Figure 3-1).
 <pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
 
-// Viewport size (1:1 aspect ratio). 
+// <i>Viewport size (1:1 aspect ratio).</i>
 const svgSize = window.innerWidth > window.innerHeight 
   ? window.innerHeight : window.innerWidth;
 
-// Parent SVG. 
+// <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.getElementById('container')); 
 svg.set({ 
   width: svgSize, 
@@ -2632,7 +2638,7 @@ svg.set({
   viewBox: '0 0 1000 1000' 
 });
 
-// Background.
+// <i>Background.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -2641,7 +2647,7 @@ svg.create('rect').set({
   fill: '#181818' 
 });
 
-// Main orange square. 
+// <i>Main orange square.</i>
 svg.create('rect').set({ 
   x: 150, 
   y: 200, 
@@ -2654,7 +2660,7 @@ svg.create('rect').set({
   paint_order: 'stroke'
 });
 
-// Blue rectangle.
+// <i>Blue rectangle.</i>
 svg.create('rect').set({ 
   x: 650, 
   y: 200, 
@@ -2664,7 +2670,7 @@ svg.create('rect').set({
   fill: '#69969f'
 });
 
-// Smaller orange rectangle. 
+// <i>Smaller orange rectangle.</i>
 svg.create('rect').set({ 
   x: 200, 
   y: 425,
@@ -2674,7 +2680,7 @@ svg.create('rect').set({
   fill: '#b84b08'
 });
 
-// Yellow rectangle. 
+// <i>Yellow rectangle.</i>
 svg.create('rect').set({ 
   x: 325, 
   y: 200, 
@@ -2683,7 +2689,7 @@ svg.create('rect').set({
   fill: '#fed322'
 });
 
-// Purple rectangle.
+// <i>Purple rectangle.</i>
 svg.create('rect').set({ 
   x: 500, 
   y: 200, 
@@ -2727,7 +2733,7 @@ shapes. We define the position of its center via cx and cy attributes
 and its radius via the r attribute.
 
 <pre>
-// A simple circle example. 
+// <i>A simple circle example.</i>
 svg.create('circle').set({ 
   cx: 50, 
   cy: 50,
@@ -2744,17 +2750,17 @@ maintain a modicum of organization).
 Beneath where we defined our background, include the following code:
 
 <pre>
-// Circle overlay loop. 
+// <i>Circle overlay loop.</i>
 for (let i = 1; 
 i <= 6; i += 1) {
 
-  // Vary the radius, and the two vertical centre points.
+  // <i>Vary the radius, and the two vertical centre points.</i>
   let r = 50 * i; 
   let cx = 500; 
   let cy1 = 800 - r; 
   let cy2 = 200 + r; 
   
-  // Create the blueish circle set.
+  // <i>Create the blueish circle set.</i>
   svg.create('circle').set({ 
     cx: cx, 
     cy: cy1, 
@@ -2763,7 +2769,7 @@ i <= 6; i += 1) {
     fill_opacity: 0.1 
   });
 
-  // Create the greenish circle set.
+  // <i>Create the greenish circle set.</i>
   svg.create('circle').set({ 
     cx: cx, 
     cy: cy2, 
@@ -2773,7 +2779,7 @@ i <= 6; i += 1) {
   });
 }
 
-// Create a subtle outline. 
+// <i>Create a subtle outline.</i>
 svg.create('circle').set({ 
   cx: 500, 
   cy: 500, 
@@ -2805,7 +2811,7 @@ ry -- instead of the single r. In the first generative sketch from
 Chapter 1, we saw the ellipse in action. Here's the relevant snippet:
 
 <pre>
-// Create our ellipse. 
+// <i>Create our ellipse.</i>
 let ellipse = svg.create('ellipse');
 ellipse.set({ 
   cx: center, 
@@ -2826,7 +2832,7 @@ y1 to define the initial position and x2 and y2 to define the endpoint.
 It also requires the stroke to be defined (as it is a line after all).
 
 <pre>
-// The humble line.
+// <i>The humble line.</i>
 svg.create('line').set({ 
   x1: 10, 
   y1: 10, 
@@ -2872,7 +2878,7 @@ There isn't a strict upper limit on the amount of values you provide, so
 there is scope to get quite creative here.
 
 <pre>
-// Setting an irregular stroke-dasharray.
+// <i>Setting an irregular stroke-dasharray.</i>
 svg.create('line').set({
   ... stroke_dasharray: 10 30 60 });
 </pre>
@@ -2906,12 +2912,13 @@ attribute value. I show how to do this in the following example using
 the join() array method. The result is shown in Figure 3-5.
 
 <pre>
-// An array of points. let pointsArray = [
+// <i>An array of points.</i>
+let pointsArray = [
   100, 250, 250, 250, 285, 175, 325, 325, 390, 50, 450, 400, 500, 200,
   515, 250, 900, 250
 ];
 
-// A polyline element, mimicking a heartbeat.
+// <i>A polyline element, mimicking a heartbeat.</i>
 svg.create('polyline').set({ 
   points: pointsArray.join(' '), 
   stroke: '#6df876', 
@@ -2967,7 +2974,7 @@ to appear (relative to the bottom left corner of the text's bounding
 box), its color, and its content.</p>
 
 <pre>
-// Creating text. 
+// <i>Creating text.</i>
 let text = svg.create('text').set({ 
   x: 20, 
   y: 30,
@@ -2981,7 +2988,7 @@ appending it wouldn't work. Instead, what we need to do is use the SvJs
 content() method.
 
 <pre>
-// Using the content() method to insert text.
+// <i>Using the content() method to insert text.</i>
 text.content('I have an unhealthy obsession with SVG.');
 </pre>
 
@@ -3002,8 +3009,8 @@ so switch over to the index.html file and add the following line to the
 the handwritten look we're going for.
 
 <pre>
-<link href="https://fonts.googleapis.com/css2?family=Mynerve
-&display=swap" rel="stylesheet">
+&lt;link href="https://fonts.googleapis.com/css2?family=Mynerve
+&display=swap" rel="stylesheet"&gt;
 </pre>
 
 If Bart had the option of running a for loop to minimize the repetitive
@@ -3023,10 +3030,11 @@ viewport.
 The output is shown in Figure 3-7.
 
 <pre>
-// The line to use for the gag. 
+// <i>The line to use for the gag.</i>
 let line = '"Bart Bucks" are not legal tender.'; 
-  line = line.toUpperCase();
-  // Run a loop, creating 12 (960 / 80) lines of text.
+line = line.toUpperCase();
+  
+  // <i>Run a loop, creating 12 (960 / 80) lines of text.</i>
   for (let i = 0; i < 960; i += 80) { 
     let text = svg.create('text');
     text.content(line); 
@@ -3088,7 +3096,7 @@ content.</p>
 upcoming sections on gradients, patterns, and other reusable elements.</p>
 
 <pre>
-// Defining a defs element. 
+// <i>Defining a defs element.</i>
 let defs = svg.create('defs');
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3150,10 +3158,10 @@ it.</p>
 it to a rect element.</p>
 
 <pre>
-// Create the gradient with an id of 'grad'.
+// <i>Create the gradient with an id of 'grad'.</i>
 svg.createGradient('grad', 'linear', ['red', 'orange', 'yellow'], 90);
 
-// Apply the gradient to the fill of the rect via a url reference.
+// <i>Apply the gradient to the fill of the rect via a url reference.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -3270,14 +3278,14 @@ out the code that created the white rectangle pattern (but keep the
 shape it's applied to).
 
 <pre>
-// Create our pattern. 
+// <i>Create our pattern.</i>
 const pattern = svg.createPattern('illusion', 100, 200);
 
-// Create a white rectangle within the pattern.
+// <i>Create a white rectangle within the pattern.</i>
 // pattern.create('rect').set({
 // x: 5, y: 5, width: 90, height: 190, fill: '#eee'
 // }); // We'll place our new code here. 
-// Apply our pattern to a rect the size of the viewBox. 
+// <i>Apply our pattern to a rect the size of the viewBox.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -3293,7 +3301,7 @@ order, and four will be thin gray rectangles used as separators. We'll
 use a couple of for loops to create these. First, the white squares:
 
 <pre>
-// Create 4 x white squares within the pattern.
+// <i>Create 4 x white squares within the pattern.</i>
 for (let i = 0; 
   i < 4; i += 1) { 
     pattern.create('rect').set({ 
@@ -3315,10 +3323,14 @@ array of squares. It's not an optical illusion yet; it looks more like
 rudimentary pixel art. To complete the illusion, we need our separators.
 
 <pre>
-// Create 4 x thin grey rectangles to separate the squares.
-for (let i = 0; i < 4; i += 1) { pattern.create('rect').set({ x: 0,
-y: 45 + (i * 50), width: 100, height: 5, fill: '#666'
-});
+// <i>Create 4 x thin grey rectangles to separate the squares.</i>
+for (let i = 0; i < 4; i += 1) { 
+  pattern.create('rect').set({ 
+    x: 0, 
+	y: 45 + (i * 50), 
+	width: 100, 
+	height: 5, fill: '#666'
+  });
 }
 </pre>
 
@@ -3349,7 +3361,7 @@ moving, rotating, or skewing multiple elements at once). And another is
 to simply group items together to better organize your SVG.
 
 <pre>
-// Create a circle and add it to a group.
+// <i>Create a circle and add it to a group.</i>
 const circle = svg.create('circle'); 
 const group = svg.create('g');
 circle.addTo(group);
@@ -3361,7 +3373,7 @@ like patterns, can have their own viewport and viewBox. But they are
 called via the use element rather than applied to a fill or stroke.
 
 <pre>
-// Create a symbol consisting of a circle and square. 
+// <i>Create a symbol consisting of a circle and square.</i>
 const symbol = svg.create('symbol'); 
 symbol.set({ 
   id: 'mySymbol', 
@@ -3370,7 +3382,7 @@ symbol.set({
   symbol.create('circle').set({ ... });
   symbol.create('rect').set({ ... });
 
-// Using the symbol three times but varying its co-ordinates.
+// <i>Using the symbol three times but varying its co-ordinates.</i>
 svg.create('use').set({ href: '#mySymbol', x: 0, y: 0 });
 svg.create('use').set({ href: '#mySymbol', x: 200, y: 200 });
 svg.create('use').set({ href: '#mySymbol', x: 400, y: 400 });
@@ -3492,15 +3504,15 @@ If, however, we supply some arguments, it suddenly becomes a lot more
 useful. Here are some examples:
 
 <pre>
-// Return an integer between 50 and 100.
+// <i>Return an integer between 50 and 100.</i>
 Gen.random(50, 100);
 -&gt; 87
 
-// Return a floating point number between 10 and 20.
+// <i>Return a floating point number between 10 and 20.</i>
 Gen.random(10, 20, true);
 -&gt; 17.98188644344106
 
-// Return a random item from an array. 
+// <i>Return a random item from an array.</i>
 let rainbow = ['red', 'yellow', 'pink', 
   'green', 'purple', 'orange', 'blue'];
   Gen.random(rainbow);
@@ -3648,9 +3660,10 @@ allows us to populate the props variable on a case-by-case basis (quite
 literally, as you'll see).
 
 <pre>
-// Initialise the properties variable. 
+// <i>Initialise the properties variable.</i>
 let props;
-// Populate the properties depending on the element chosen.
+
+// <i>Populate the properties depending on the element chosen.</i>
 switch(element) { 
   case 'circle': props = { 
     cx: x, cy: y, r:
@@ -3694,7 +3707,7 @@ statement. This is the line that actually creates the element and
 applies the props to it.
 
 <pre>
-// Create the element and set its properties.
+// <i>Create the element and set its properties.</i>
 svg.create(element).set(props);
 </pre>
 
@@ -3738,12 +3751,12 @@ iteration of the y axis, the inner (nested) loop will move across,
 populating the x axis.
 
 <pre>
-// Example nested loop structure.
-for (let y = 0; y < height; y += 1) { for (let x = 0; x < width; x
-+= 1) {
+// <i>Example nested loop structure.</i>
+for (let y = 0; y < height; y += 1) { 
+  for (let x = 0; x < width; x += 1) {
 
-// Code goes here.
-}
+    // <i>Code goes here.</i>
+  }
 }
 </pre>
 
@@ -3752,7 +3765,7 @@ template folder, renaming it to 07-regular-grids. Below the background,
 we'll set up a group element to act as our grid container.
 
 <pre>
-// Create our grid container group.
+// <i>Create our grid container group.</i>
 let grid = svg.create('g');
 </pre>
 
@@ -3760,7 +3773,7 @@ Now we'll run our for loop, appending a rect element to the grid on each
 iteration.
 
 <pre>
-// A nested loop to visualise the grid. 
+// <i>A nested loop to visualise the grid.</i>
 for (let y = 0; y < 700; 
   y += 50) { 
     for (let x = 0; x < 700; x += 50) { 
@@ -3800,7 +3813,7 @@ want to position one element inside another.
 After the loop, call the moveTo() method as follows:
 
 <pre>
-// Centre the grid within the viewBox. 
+// <i>Centre the grid within the viewBox.</i>
 grid.moveTo(500, 500);
 </pre>
 
@@ -3910,7 +3923,7 @@ One popular approach is to store a pre-chosen palette as an array of
 color values, like so:
 
 <pre>
-// Create a colour palette. 
+// <i>Create a colour palette.</i>
 let palette = ['#5465FF', '#788BFF',
 '#9BB1FF', '#BFD7FF',
 '#E2FDFF'];
@@ -4046,8 +4059,8 @@ what we can do is use the x and y iterator variables to generate a
 dynamic string, using template literal syntax like so:
 
 <pre>
-// Create our clip path with a unique id. let clip =
-svg.create(&apos;clipPath&apos;).set({ id: &grave;&dollar;{x}&dollar;{y}&grave; });
+// <i>Create our clip path with a unique id.</i>
+let clip = svg.create(&apos;clipPath&apos;).set({ id: &grave;&dollar;{x}&dollar;{y}&grave; });
 </pre>
 
 Now we can create the actual shape of the clipPath. We'll keep it
@@ -4055,9 +4068,13 @@ straightforward and make it square, that is, a rect with a width and
 height equal to our cellSize.
 
 <pre>
-// Create the clip path shape.
-clip.create(&apos;rect&apos;).set({ x: x, y: y, width: cellSize, height:
-cellSize });
+// <i>Create the clip path shape.</i>
+clip.create(&apos;rect&apos;).set({ 
+  x: x, 
+  y: y, 
+  width: cellSize, 
+  height: cellSize 
+});
 </pre>
 
 With the clipPath in place, we need to decide what to put into it.
@@ -4068,14 +4085,14 @@ by the current x and y values, along with the cellSize. Here's how we'd
 calculate these positions and choose one of them at random:
 
 <pre>
-// Define our possible positions. 
+// <i>Define our possible positions.</i>
 let positions = [
-[x, y], // top left
-[x + cellSize, y], // top right
-[x + cellSize, y + cellSize], // bottom right
-[x, y + cellSize] // bottom left
+  [x, y], // <i>top left</i>
+  [x + cellSize, y], // <i>top right</i>
+  [x + cellSize, y + cellSize], // <i>bottom right</i>
+  [x, y + cellSize] // <i>bottom left</i>
 ];
-// Pick a random position. 
+// <i>Pick a random position.</i>
 let pickedPosition = Gen.random(positions);
 </pre>
 
@@ -4086,15 +4103,17 @@ point. And let's not forget about our palette picked out earlier; the
 fill of each circle will be colored accordingly.
 
 <pre>
-// Create a group for our circles. 
+// <i>Create a group for our circles.</i>
 let circles = grid.create('g');
 
-// Create the circles, applying the picked position and palette.
-for (let i = 0; i < 5; i += 1) { circles.create('circle').set({ cx:
-pickedPosition[0], cy: pickedPosition[1],
-r: cellSize - (i * (cellSize / 5)), // this took a bit of tweaking
-fill: pickedPalette[i]
-});
+// <i>Create the circles, applying the picked position and palette.</i>
+for (let i = 0; i < 5; i += 1) { 
+  circles.create('circle').set({ 
+    cx: pickedPosition[0], 
+	cy: pickedPosition[1], 
+	r: cellSize - (i * (cellSize / 5)), // <i>this took a bit of tweaking</i>
+    fill: pickedPalette[i]
+  });
 }
 </pre>
 
@@ -4106,10 +4125,10 @@ themselves. And as the last step within the loop, we'll create a square
 border to frame each cell, just to give things a little more definition.
 
 <pre>
-// Apply the clip path to the circle group. 
+// <i>Apply the clip path to the circle group.</i>
 circles.set({ clip_path: `url(#${clip.get('id')})` });
 
-// Create a square to frame the cell.
+// <i>Create a square to frame the cell.</i>
 grid.create('rect').set({ 
   x: x, 
   y: y, 
@@ -4123,7 +4142,7 @@ grid.create('rect').set({
 Now, outside the loop, center our grid as we've done before.
 
 <pre>
-// Centre the grid within the viewBox. 
+// <i>Centre the grid within the viewBox.</i>
 grid.moveTo(500, 500);
 </pre>
 
@@ -4170,7 +4189,7 @@ true or false based on odds of 50/50, or 50%. If we supply a single
 argument, it's interpreted as a percentage.
 
 <pre>
-// The below returns true 60% of the time.
+// <i>The below returns true 60% of the time.</i>
 Gen.chance(60);
 </pre>
 
@@ -4180,7 +4199,7 @@ placing a bet at a bookie than calculating a precise percentage value
 (which is actually done for you under the hood).
 
 <pre>
-// There is a 7 to 2 chance of this returning true.
+// <i>There is a 7 to 2 chance of this returning true.</i>
 Gen.chance(7, 2);
 </pre>
 
@@ -4195,7 +4214,7 @@ loop). Next, replace the palettes array and pickedPalette variable with
 a randomly generated hue.
 
 <pre>
-// Pick a random hue. 
+// <i>Pick a random hue.</i>
 let hue = Gen.random(0, 360);
 </pre>
 
@@ -4204,11 +4223,10 @@ you prefer. Next, <i>between</i> the x and y loops (so within the first loop
 but before the second), increment the hue like so:
 
 <pre>
-// A nested loop to create the grid. 
-for (let y = 0; y < gridSize; y +=
-increment) {
+// <i>A nested loop to create the grid.</i>
+for (let y = 0; y < gridSize; y += increment) {
 
-// Increment the hue relative to the rows, keeping it within 0 and 360.
+// <i>Increment the hue relative to the rows, keeping it within 0 and 360.</i>
 hue = (hue >= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
 for (let x = 0; x < gridSize; x += increment) { ...
 </pre>
@@ -4228,13 +4246,17 @@ elements inside each cell, but only if the cell is activated by the
 Gen.chance() function. We'll set the actual probability to 60%.
 
 <pre>
-// Run the loop based on chance.
-if (Gen.chance(60)) { for (let i = 0; i < cellSize; i += 1) {
-grid.create('line').set({ x1: Gen.random(x, x + cellSize), y1:
-Gen.random(y, y + cellSize), x2: Gen.random(x, x + cellSize), y2:
-Gen.random(y, y + cellSize), stroke: `hsl(${hue} 80% 80% / 0.33)`
-});
-}
+// <i>Run the loop based on chance.</i>
+if (Gen.chance(60)) { 
+  for (let i = 0; i < cellSize; i += 1) {
+    grid.create('line').set({ 
+	  x1: Gen.random(x, x + cellSize), 
+      y1: Gen.random(y, y + cellSize), 
+      x2: Gen.random(x, x + cellSize), 
+      y2: Gen.random(y, y + cellSize), 
+      stroke: `hsl(${hue} 80% 80% / 0.33)`
+    });
+  }
 }
 </pre>
 
@@ -4325,7 +4347,7 @@ By supplying arguments to Gen.gaussian(), we can modify the mean and
 standard deviation.
 
 <pre>
-// Adjusting the mean and standard deviation to 10 and 2 respectively.
+// <i>Adjusting the mean and standard deviation to 10 and 2 respectively.</i>
 Gen.gaussian(10, 2);
 </pre>
 
@@ -4339,7 +4361,7 @@ results to within a factor of 3 either side of the standard deviation,
 you could use the Gen.constrain() function to bound the results like so:
 
 <pre>
-// Bounding the results of Gen.gaussian() to within -3 and +3. 
+// <i>Bounding the results of Gen.gaussian() to within -3 and +3.</i>
 let gaussian = Gen.gaussian(0, 1);
 let constrainedGaussian = Gen.constrain(gaussian, -3, 3);
 </pre>
@@ -4352,9 +4374,10 @@ loop that will run 10,000 times (yep, that's a lot!), and inside it,
 generate a couple of Gaussian coordinates.
 
 <pre>
-// Run a loop 10,000 times. 
+// <i>Run a loop 10,000 times.</i>
 for (let i = 0; i < 10000; i += 1) {
-  // Generate x and y co-ordinates with a gaussian distribution.
+
+  // <i>Generate x and y co-ordinates with a gaussian distribution.</i>
   let gaussianX = Gen.gaussian(500, 150); 
   let gaussianY = Gen.gaussian(500, 150); 
 }
@@ -4366,10 +4389,13 @@ create our lines, basing them on our Gaussian coordinates and adding a
 bit of randomization to their endpoints.
 
 <pre>
-// Create the lines based on the gaussian co-ordinates.
-svg.create('line').set({ x1: gaussianX, y1: gaussianY, x2: gaussianX +
-Gen.random(-10, 10), y2: gaussianY + Gen.random(-10, 10), stroke:
-`hsl(${Gen.random(150, 270)} 80% 80% / 0.8)` });
+// <i>Create the lines based on the gaussian co-ordinates.</i>
+svg.create('line').set({ 
+  x1: gaussianX, y1: gaussianY, 
+  x2: gaussianX + Gen.random(-10, 10), 
+  y2: gaussianY + Gen.random(-10, 10), 
+  stroke: `hsl(${Gen.random(150, 270)} 80% 80% / 0.8)` 
+});
 </pre>
 
 You could stop here and see the circular pattern that emerges, but I
@@ -4378,12 +4404,12 @@ emphasize the shape of the distribution with a series of fading circular
 strokes.
 
 <pre>
-// Create a series of circles to frame the distribution. 
+// <i>Create a series of circles to frame the distribution.</i>
 for (let i = 0;
-i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
-25 + (i * 25), fill: 'none', stroke: `hsl(0 0% 0% / ${0.25 - (i /
-50)})`, stroke_ width: 15
-});
+  i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
+  25 + (i * 25), fill: 'none', stroke: `hsl(0 0% 0% / ${0.25 - (i /
+  50)})`, stroke_ width: 15
+  });
 }
 </pre>
 
@@ -4442,7 +4468,7 @@ returned, and the second defines whether this number will be a float or
 integer.
 
 <pre>
-// Return a pareto-distributed integer, not less than 20.
+// <i>Return a pareto-distributed integer, not less than 20.</i>
 Gen.pareto(20, false);
 -&gt; 32
 </pre>
@@ -4451,7 +4477,7 @@ Copy the template folder and name it 11-porto-pareto, and below the
 background, create a group that will contain our cityscape.
 
 <pre>
-// Create a group for our generative city.
+// <i>Create a group for our generative city.</i>
 let portoPareto = svg.create('g');
 </pre>
 
@@ -4460,23 +4486,32 @@ port), and the buildings. The sky and river will both be simple rect
 elements with gradients; we'll create these first.
 
 <pre>
-// Create the sky gradient. 
+// <i>Create the sky gradient.</i>
 svg.createGradient('sky', 'linear',
 ['#f58b10', '#d21263',
 '#940c5e', '#25226c'],
 90);
 
-// Create the sky and apply the gradient.
-portoPareto.create('rect').set({ x: 150, y: 150, width: 700, height:
-400, fill: 'url(#sky)' });
+// <i>Create the sky and apply the gradient.</i>
+portoPareto.create('rect').set({ 
+  x: 150, 
+  y: 150, 
+  width: 700, 
+  height: 400, 
+  fill: 'url(#sky)' });
 
-// Create the river gradient. 
+// <i>Create the river gradient.</i>
 svg.createGradient('river', 'linear',
 ['#80e5ff10', '#70b566'], 90);
 
-// Create the river and apply the gradient.
-portoPareto.create('rect').set({ x: 150, y: 555, width: 700, height:
-295, fill: 'url(#river)' });
+// <i>Create the river and apply the gradient.</i>
+portoPareto.create('rect').set({ 
+  x: 150, 
+  y: 555, 
+  width: 700, 
+  height: 295, 
+  fill: 'url(#river)' 
+});
 </pre>
 
 Hopefully there won't have been any surprises in the aforementioned.
@@ -4491,15 +4526,16 @@ leads to a clipped effect on the highest buildings, so to even this out,
 I've added in a Gen.random() function to vary the upper limit.
 
 <pre>
-// A loop for our generative cityscape.
+// <i>A loop for our generative cityscape.</i>
 for (let i = 0; i < 60; i += 1) {
-  // Get a pareto distribution with a min height of 20. 
+
+  // <i>Get a pareto distribution with a min height of 20.</i>
   let pareto = Gen.pareto(20);
 
-  // Constrain the height, and slightly randomise the upper limit. 
+  // <i>Constrain the height, and slightly randomise the upper limit.</i>
   let height = Gen.constrain(pareto, 20, Gen.random(150, 200));
 
-  // Create our buildings.
+  // <i>Create our buildings.</i>
   portoPareto.create('line').set({ 
     x1: 150 + (i * 12), 
     y1: 550, 
@@ -4549,14 +4585,14 @@ contain a radial gradient. We'll then apply it to the portoPareto group
 we created earlier.
 
 <pre>
-// Create a radial gradient. 
+// <i>Create a radial gradient.</i>
 svg.createGradient('radialGrad', 'radial', ['#ffffff', '#ffffff60']);
 
-// Create a mask, and inside it create the circle with the radial gradient.
+// <i>Create a mask, and inside it create the circle with the radial gradient.</i>
 let mask = svg.create('mask').set({ id: 'mask' });
 mask.create('circle').set({ cx: 500, cy: 500, r: 325, fill: 'url(#radialGrad)', });
 
-// Apply the mask to the group. 
+// <i>Apply the mask to the group.</i>
 portoPareto.set({ 
   mask: 'url(#mask)'
 });
@@ -4567,10 +4603,10 @@ with the edges slightly fading out. As a final step, I've added in a
 gradiented circular stroke to frame the content a little more clearly.
 
 <pre>
-// Create a linear gradient for our circular frame.
+// <i>Create a linear gradient for our circular frame.</i>
 svg.createGradient('strokeGrad', 'linear', ['#eeeeee', '#eeeeee15']);
 
-// Create the frame and apply the gradient. 
+// <i>Create the frame and apply the gradient.</i>
 svg.create('circle').set({
   cx: 500, 
   cy: 500, 
@@ -4737,7 +4773,7 @@ Unlike Gen, which is a collection of functions, the Noise module is
 class based, so we first need to instantiate it.
 
 <pre>
-// Create an instance of the Noise class.
+// <i>Create an instance of the Noise class.</i>
 let noise = new Noise();
 </pre>
 
@@ -5055,22 +5091,34 @@ const svg = new SvJs().addTo(document.getElementById('container'));
 
 // <i>Viewport and viewBox (1:1 aspect ratio).</i>
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
-svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
+svg.set({ 
+  width: svgSize, 
+  height: svgSize, 
+  viewBox: '0 0 1000 1000'
 });
 
 // <i>Background.</i>
-svg.create('rect').set({ x: 0, y: 0, width: 1000, height: 1000, fill:
-'#181818' });
+svg.create('rect').set({ 
+  x: 0, y: 0, 
+  width: 1000, 
+  height: 1000, 
+  fill: '#181818' 
+});
 </pre>
 
 We'll then set up our noise-related variables, along with a couple of
 randomized values that will determine our initial hue and the amount of
 times our loop will run.
 
-// Noise-related and randomised variables. let noise = new Noise(); let
-nX = 0; let noiseSpeed = 0.025; let lines = svg.create(&apos;g&apos;); let hue =
-Gen.random(0, 360); let iterations = Gen.random(60, 100);
-
+<pre>
+// <i>Noise-related and randomised variables.</i>
+let noise = new Noise(); 
+let nX = 0; 
+let noiseSpeed = 0.025; 
+let lines = svg.create(&apos;g&apos;); 
+let hue = Gen.random(0, 360); 
+let iterations = Gen.random(60, 100);
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-4a">5.4a Mapping and Constraining</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5083,10 +5131,11 @@ hue, and the other will control the length of each line.
 
 <pre>
 // <i>Start the dance.</i>
-for (let i = 10; i &lt; iterations; i += 1) { let
-noiseValue = noise.get(nX); let hueShift = Gen.map(noiseValue, -1, 1,
--180, 180, false); let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000,
-false); }
+for (let i = 10; i &lt; iterations; i += 1) { 
+  let noiseValue = noise.get(nX); 
+  let hueShift = Gen.map(noiseValue, -1, 1, -180, 180, false); 
+  let lineLength = Gen.map(noiseValue, -1, 1, 0, 1000, false); 
+}
 </pre>
 
 After the lineLength variable (and still within the loop), set up the
@@ -5432,7 +5481,7 @@ the first set defines the control point (which we'll explain in a
 moment), and the second the destination point.</p>
 
 <pre>
-// Syntax for the Q/q command.
+// <i>Syntax for the Q/q command.</i>
 'Q [cpx cpy x y] ...'
 'q [dcpx dcpy dx dy] ...'
 </pre>
@@ -5491,7 +5540,7 @@ symmetric control point, and it requires just a single set of
 coordinates.
 
 <pre>
-// Syntax for the T/t command.
+// <i>Syntax for the T/t command.</i>
 'T [x y]'
 't [dx dy]'
 </pre>
@@ -5505,7 +5554,7 @@ This is why you'll only see it used once for the four coordinates that
 follow.
 
 <pre>
-// Extending a quadratic curve with the smooth T command.
+// <i>Extending a quadratic curve with the smooth T command.</i>
 svg.create('path').set({
   d: 'M 50,150 Q 150,350 250,150 T 450,150 650,150 850,150 1050,150'
 });
@@ -5607,7 +5656,7 @@ ranges, such as the 0 to 360 constraints of a color's hue. Add the
 following as the final line before the end of the loop:</p>
 
 <pre>
-// Increment the hue.
+// <i>Increment the hue.</i>
 hue = (hue % 360) + 1.5;
 </pre>
 
@@ -5641,7 +5690,7 @@ without some visual examples. The A (or a) command is used to initialize
 it, and it is followed by no less than seven arguments.</p>
 
 <pre>
-// Syntax for the A/a command.
+// <i>Syntax for the A/a command.</i>
 'A [rx ry rotation large-arc-flag sweep-flag x y] ...'
 'a [rx ry rotation large-arc-flag sweep-flag dx dy] ...'
 </pre>
@@ -5799,6 +5848,7 @@ arcs.create('path').set({
   fill: 'none', stroke: `hsl(${hue + 60} 75% 75% / 0.05)`,
   d: `M 275 500 A ${rx} ${ry} ${rotation} ${largeArc} 0 725 500`
 });
+
 // <i>Increment the hue.</i>
 hue = (hue % 360) + 0.5;
 </pre>
@@ -5931,10 +5981,11 @@ create some noise-related variables. I'm including a new one here called
 amplifier; this will be used when we map the noise value to a new range
 (increasing its volume so to speak).
 
-// <i>Noise-related.</i>
-
 <pre>
-let noise = new Noise(); let n = Gen.random(0, 1000); let speed = 0.05;
+// <i>Noise-related.</i>
+let noise = new Noise(); 
+let n = Gen.random(0, 1000); 
+let speed = 0.05;
 let amplifier = Gen.random(200, 500);
 </pre>
 
@@ -5962,13 +6013,13 @@ In the case of our curves, this will help us mimic a more organic
 movement, as the values won't always be uniformly offset from the
 original starting point, but wrap around them more naturally. Outside
 the loop, include the moveTo() method to center-align our curve group.
-for (let i = 0; i &lt; numCurves; i += 1) {
 
 <pre>
-// <i>Retrieve and map our noise value.</i>
-let noiseValue = noise.get(n);
-noiseValue = Gen.map(noiseValue, -1, 1, -amplifier,
-amplifier, false);
+for (let i = 0; i &lt; numCurves; i += 1) {
+  // <i>Retrieve and map our noise value.</i>
+  let noiseValue = noise.get(n);
+  noiseValue = Gen.map(noiseValue, -1, 1, -amplifier,
+  amplifier, false);
 }
 curves.moveTo(500, 500);
 </pre>
@@ -6180,11 +6231,6 @@ up our virtual ears and listen out for them. And as soon as an event is
 detected, we can capture it. What we do once we've captured an event is
 up to us.
 
-© David Matthew 2024 167
-
-D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-&lt;https://doi.org/10.1007/979-8-8688-0086-3_7&gt;
-
 We could use it to trigger any number of things -- a custom message, a
 color change, a simple animation, a complex transformation; the
 possibilities are endless. But first we need to know how to "listen."
@@ -6263,13 +6309,12 @@ document.body.addEventListener('click', (event) =&gt; {
 });
 </pre>
 
-The clientX and clientY properties are just a couple of the many
+<p>The clientX and clientY properties are just a couple of the many
 properties built into a click event. The full list can be found over at
-MDN
-
-[(developer.mozilla.org/docs/Web/API/Element/click_event](http://developer.mozilla.org/docs/Web/API/Element/click_event)),
+MDN <a href="http://developer.mozilla.org/docs/Web/API/Element/click_event">
+(developer.mozilla.org/docs/Web/API/Element/click_event)</a>,
 including comprehensive documentation covering the full range of DOM
-events.
+events.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7-1c">7.1c Triggering the SvJs Save Method</h3>
@@ -6553,15 +6598,17 @@ shapes[0].set({ id: 'cssShape' });
 
 // <i>Animate this shape with CSS.</i>
 svg.create('style').content(`
-@keyframes scaleRotate {
-0% { transform: rotate(0) scale(1, 1) }
-50% { transform: rotate(180deg) scale(0.5, 1.5) }
-100% { transform: rotate(360deg) scale(1, 1) }
-}
-#cssShape {
-animation-name: scaleRotate; animation-duration: 5s;
-animation-iteration-count: infinite; animation-timing-function: linear;
-}
+  @keyframes scaleRotate {
+    0% { transform: rotate(0) scale(1, 1) }
+    50% { transform: rotate(180deg) scale(0.5, 1.5) }
+    100% { transform: rotate(360deg) scale(1, 1) }
+  }
+  #cssShape {
+    animation-name: scaleRotate; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+  }
 `);
 </pre>
 
@@ -6993,7 +7040,7 @@ let circles = [];
 for (let i = 0; 
   i &lt; numCircles; i += 1) {
 
-    // Randomise the radius relative to the frame size.
+    // <i>Randomise the radius relative to the frame size.</i>
     let radius = Gen.random(frameSize / 100, frameSize / 25);
 
     // <i>Apply the above variables and randomise the hue.</i>
@@ -7319,9 +7366,9 @@ coordinates we defined earlier.
 <pre>
 // <i>Move from (500, 500) to (cx, cy).</i>
 circle.animate({
-cx: [500, cx, 500], cy: [500, cy, 500],
+  cx: [500, cx, 500], cy: [500, cy, 500],
 }, {
-duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
+  duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
 </pre>
 
 This gets things moving, but it's not an especially interesting
@@ -7337,10 +7384,14 @@ let r1 = baseRadius * 2 + (i * 10);
 let r2 = baseRadius / (i + 10);
 
 // <i>Move from (500, 500) to (cx, cy), reduce the radius, rotate.</i>
-circle.animate({ cx: [500, cx, 500], cy: [500, cy, 500], 
-r: [r1, r2, r1], transform: ['rotate(0deg)', 'rotate(360deg)']
+circle.animate({ 
+  cx: [500, cx, 500], cy: [500, cy, 500], 
+  r: [r1, r2, r1], transform: ['rotate(0deg)', 'rotate(360deg)']
 }, {
-duration: 10000, iterations: Infinity, easing: ['ease-in-out'] });
+  duration: 10000, 
+  iterations: Infinity, easing: ['ease-in-out'] 
+});
+
 // <i>Increment the hue.</i>
 hue = (hue % 360) + (180 / numCircles);
 </pre>
@@ -7412,12 +7463,6 @@ elements, are nested within the main filter element, and they all begin
 with the letters fe (for filter effect) followed by a descriptive name.
 Each performs its own operation(s) and can be connected to other
 primitives in a node-like manner using a series of inputs and outputs.
-
-© David Matthew 2024 205
-
-D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_8>
-
 Let's look at a basic example in raw markup form, using just a single
 primitive.
 
@@ -7975,8 +8020,8 @@ potential variation offered by this filter primitive.
 
 The best way to get a feel for how feTurbulence works is to tweak an
 interactive example, so I've created a pen for you here for this
-purpose:
-[davidmatthew.ie/generative-art-javascript-svg#turbulence](https://davidmatthew.ie/generative-art-javascript-svg#turbulence).
+purpose: <a href="https://davidmatthew.ie/generative-art-javascript-svg#turbulence">
+davidmatthew.ie/generative-art-javascript-svg#turbulence</a>.
 I prefer working with baseFrequency values at the very low end of
 spectrum and modifying the seed to select a pattern at random; this can
 produce a huge variety of interesting textures. Very high baseFrequency
@@ -9180,7 +9225,7 @@ element.
     &lt;/div&gt;
 
     &lt;script&gt;
-        // Initialization 
+        // <i>Initialization</i>
         var $svgVar = $('svg').drawsvg();
         $svgVar.drawsvg('animate');
     &lt;/script&gt;
@@ -9275,7 +9320,7 @@ is completed.
 
     &lt;script&gt;
         var $svg = $("svg").drawsvg({
-            stagger: 2000, // Break is set to 2 seconds
+            stagger: 2000, // <i>Break is set to 2 seconds</i>
             duration: 5000,
             callback: function() {
                 $('#callbackDiv').html('
@@ -9471,7 +9516,7 @@ Ex 1:
     &lt;/div&gt;
 
     &lt;script&gt;
-        // Initialization 
+        // <i>Initialization</i>
         var $svgVar = $('svg').drawsvg();
         $svgVar.drawsvg('animate');
     &lt;/script&gt;
@@ -9480,7 +9525,7 @@ Ex 1:
 &lt;/html&gt;
 </pre>
 
-Ex 2:
+<p>Ex 2:</p>
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -9562,7 +9607,7 @@ Ex 2:
 
     &lt;script&gt;
         var $svg = $("svg").drawsvg({
-            stagger: 2000, // Break is set to 2 seconds
+            stagger: 2000, // <i>Break is set to 2 seconds</i>
             duration: 5000,
             callback: function() {
                 $('#callbackDiv').html('
