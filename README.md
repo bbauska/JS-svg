@@ -8871,179 +8871,203 @@ Filters<br>
       turbulence, 221-223<br>
     primitives, 205<br>
     region, 210, 211<br>
-  simulating textures, 232, 234, 235 
-  for loop, 35--36, 66, 73, 88, 91 
-  Fractals, 246--248 254
+  simulating textures, 232, 234, 235<br>
+  for loop, 35--36, 66, 73, 88, 91<br>
+  Fractals, 246--248 254<br>
 
 <h3>G</h3>
-Gen.chance() function, 105--107, 126, 154, 192
-Gen.constrain() function, 110, 114, 132
-Gen.gaussian() function, 110, 112
-Gen.random() function, 87, 88, 98, 108, 109, 112, 114, 238 
-getCentre() method, 95 
-Gradients, 76--78
-GreenSock Animation Platform (GSAP), 189
-gySVG library, 7
+Gen.chance() function, 105--107, 126, 154, 192<br>
+Gen.constrain() function, 110, 114, 132<br>
+Gen.gaussian() function, 110, 112<br>
+Gen.random() function, 87, 88, 98, 108, 109, 112, 114, 238<br>
+getCentre() method, 95<br>
+Gradients, 76-78<br>
+GreenSock Animation<br>
+  Platform (GSAP), 189<br>
+gySVG library, 7<br>
 
 <h3>H, I</h3>
-hsl() function, 89, 126, 127, 214
-H or V commands, 142
+hsl() function, 89, 126, 127, 214<br>
+H or V commands, 142<br>
 
 <h3>J, K</h3>
-JavaScript Web Animations API, 196
+JavaScript Web Animations API, 196<br>
 
 <h3>L</h3>
-L command, 140--142
-Logical operators, 30--31 
-Loops, 33--34, 36, 103
+L command, 140-142<br>
+Logical operators, 30-31<br>
+Loops, 33--34, 36, 103<br>
 
 <h3>M</h3>
-Math.min() function, 124 
-M (or m) command, 139 
-moveTo() method, 95, 96, 127, 160
+Math.min() function, 124<br>
+M (or m) command, 139<br>
+moveTo() method, 95, 96, 127, 160<br>
 
 <h3>N, O</h3>
-Node.js, 8
-Noise matrix import statement, 124 
-mapping noise values, 128, 129
-noisy grid, 125--127 
-optimize style, 129 
-12-noise-matrix, 124
-Noise module computer graphics, 120
-  Perlin noise variable, 120, 121
-  random limits, 119 
-  spinning mapping/constraining, 132, 133, 135 
-  rotating/translating, 133, 134 
-  style element, 131
+Node.js, 8<br>
+Noise matrix import statement, 124<br>
+mapping noise values, 128, 129<br>
+noisy grid, 125-127<br>
+optimize style, 129<br>
+12-noise-matrix, 124<br>
+Noise module<br>
+  computer graphics, 120<br>
+  Perlin noise<br>
+    variable, 120, 121<br>
+  random limits, 119<br>
+  spinning<br>
+    mapping/constraining, 132, 133, 135<br>
+    rotating/translating, 133, 134<br>
+    style element, 131<br>
   SvJs library, 122, 123
 
 <h3>P</h3>
-package.json, 9 
-Pareto distribution, 113--115
-Pareto probability distributions, 244
-Paths element
-  commands, 138, 139 
-  d attribute, 138
-  starting/ending, 139 
-  straight lines economies, 143
-  horizontal/vertical varieties, 142
-  L command, 140--142
-Patterns, 78--83 
-p5.js library, 2 
-Probability distributions Gaussian, 109, 110, 112 
-  masking content, 115--117 
-pareto, 113, 114
-  uniform, 108
+package.json, 9<br>
+Pareto distribution, 113-115<br>
+Pareto probability<br>
+  distributions, 244<br>
+Paths<br>
+  element<br>
+    commands, 138, 139<br>
+    d attribute, 138<br>
+  starting/ending, 139<br>
+  straight lines<br>
+    economies, 143<br>
+    horizontal/vertical<br>
+	  varieties, 142<br>
+    L command, 140-142<br>
+Patterns, 78-83<br>
+p5.js library, 2<br>
+Probability distributions<br>
+  Gaussian, 109, 110, 112<br>
+  masking content, 115-117<br>
+  pareto, 113, 114<br>
+  uniform, 108<br>
+Programming<br>
+  arrays, 44-47<br>
+  classes, 49, 50<br>
+  conditional<br>
+    statements, 31-33<br>
+  functions<br>
+    anonumous, 42<br>
+    arrow, 42, 43<br>
+    invoking, 38-40<br>
+    parameters, 37<br>
+    scope, 40, 41<br>
+    standard, 37
+  idiosyncrasies,<br>
+    features, 51, 52<br>
+  JavaScript characteristics, 19<br>
+  looops, 33-36<br>
+  objects, 47-49<br>
+  operators, 26-31<br>
+  syntax, 19-21<br>
+  values, 22-24<br>
+  variables, 25, 26<br>
 
-Programming
-  arrays, 44--47 classes, 49, 50
-  conditional statements, 31--33
-  functions anonumous, 42 
-  arrow, 42, 43 
-  invoking, 38--40 
-  parameters, 37  
-  "#" function-parameters scope, 40, 41 
-  "#" scope standard, 37
-  idiosyncrasies, features, 51, 52
-  JavaScript characteristics, 19
-  looops, 33--36
-  objects, 47--49
-  operators, 26--31
-  syntax, 19--21
-  values, 22--24
-  variables, 25, 26
-
-Programming motion CSS keyframes, 177, 179 
-  methods, 188, 189 255
-Programming motion (<i>cont</i>.) requestAnimationFrame() method, 184, 185, 187, 188
-
-shapes, 177
-SMIL, 179--181
-technique, 175
-WAAPI, 181--183
+Programming motion<br>
+  CSS keyframes, 177, 179<br>
+  methods, 188, 189 255<br>
+Programming motion (<i>cont</i>.)<br>
+  requestAnimationFrame()<br>
+    method, 184, 185, 187, 188<br>
+shapes, 177<br>
+SMIL, 179-181<br>
+technique, 175<br>
+WAAPI, 181--183<br>
 
 <h3>Q</h3>
-Quadratic Bezier curves control points, 144, 145 
-  coordinates, 144
-  Slinky, 147, 148, 150 
-  smooth shortcut, 145, 147
+Quadratic Bezier curves<br>
+  control points, 144, 145<br>
+  coordinates, 144<br>
+  Slinky, 147, 148, 150<br>
+  smooth shortcut, 145, 147<br>
 
 <h3>R</h3>
-Randomness
-  analog/digital, 85, 86 
-  clip paths/color palettes arrays of color, 98--100 
-  clipping content, 100, 101, 103, 104
-  Gen.chance() function, 105--107
-  Gen.random() function, 87--89 
-  parameters, 85 
-  regular grids flexible grid, 96--98 
-  nested for loop, 94, 96
-  varying color/opacity, 89, 90
-  varying element selection, 91--93
-requestAnimationFrame() method, 175, 184--190, 193 256
+Randomness<br>
+  analog/digital, 85, 86<br>
+  clip paths/color palettes<br>
+    arrays of color, 98-100<br>
+    clipping content, 100, 101, 103, 104<br>
+  Gen.chance() function, 105-107<br>
+  Gen.random() function, 87-89<br>
+  parameters, 85<br>
+  regular grids<br>
+    flexible grid, 96-98<br>
+    nested for loop, 94, 96<br>
+  varying color/opacity, 89, 90<br>
+  varying element<br>
+    selection, 91-93<br>
+  requestAnimationFrame()<br>
+    method, 175, 184--190, 193 256
 
 <h3>S</h3>
-save() method, 170, 171
-Scalable Vector Graphics (SVG) bitmap images, 2
-  element creation, 60
-  file sizes, 2
-  grouping/reusing
-  elements, 83, 84
-  imperative approach, 5 
-  native, 3, 5 
-  parent element, 55, 57
-setting/getting values, 59, 60
-shapes type, 61
-SvJs, 7 
-  texts, 72, 73, 75 
-  tiles, 72, 73, 75 
-  viewBox, 58
-  viewport, 57
-S command, 158, 163
-set() method, 59, 61, 192, 211
-Shapes, SVG circles, 66, 68 
-  ellipses, 68 
-  lines, 68, 69, 71, 72 
-  polygons, 68, 69, 71, 72
-  polylines, 68, 69, 71, 72
-  rectangle, 61, 62
-  squares, 62
-  strokes, 63--65
-  SimplexJS, 134
-  stroke-width attribute, 63
-  svg.create() method, 72
-SvJs setup base template, 17 
-  code editor, 8 
-  generative sketch, 14, 15
-  initializing/installing, 9
-  Node.js, 8
-  NPM, 8
-  generative sketch, 13, 16
-sketches, 10, 11
-serving sketches, 12
-SvJs create() method, 60, 137
-SvJs createCurve() method, 166
-SvJs library, 5, 8, 9, 12, 49, 59, 87, 122, 243
-Systems simulations, 249, 250
+save() method, 170, 171<br>
+Scalable Vector Graphics (SVG)<br>
+  bitmap images, 2<br>
+  element creation, 60<br>
+  file sizes, 2<br>
+  grouping/reusing<br>
+    elements, 83, 84<br>
+  imperative approach, 5<br> 
+  native, 3, 5<br>
+  parent element, 55, 57<br>
+  setting/getting values, 59, 60<br>
+  shapes type, 61<br>
+  SvJs, 7<br>
+  texts, 72, 73, 75<br>
+  tiles, 72, 73, 75<br>
+  viewBox, 58<br>
+  viewport, 57<br>
+S command, 158, 163<br>
+set() method, 59, 61, 192, 211<br>
+Shapes, SVG<br>
+  circles, 66, 68<br>
+  ellipses, 68<br>
+  lines, 68, 69, 71, 72<br>
+  polygons, 68, 69, 71, 72<br>
+  polylines, 68, 69, 71, 72<br>
+  rectangle, 61, 62<br>
+  squares, 62<br>
+  strokes, 63-65<br>
+SimplexJS, 134<br>
+stroke-width attribute, 63<br>
+svg.create()<br>
+  method, 72<br>
+SvJs<br>
+  setup<br>
+    base template, 17<br>
+    code editor, 8<br>
+    generative sketch, 14, 15<br>
+    initializing/installing, 9<br>
+    Node.js, 8<br>
+    NPM, 8<br>
+    generative sketch, 13, 16<br>
+    sketches, 10, 11<br>
+    serving sketches, 12<br>
+SvJs create() method, 60, 137<br>
+SvJs createCurve() method, 166<br>
+SvJs library, 5, 8, 9, 12, 49, 59, 87, 122, 243<br>
+Systems simulations, 249, 250<br>
 
 <h3>T, U</h3>
-text.set() method, 130 
-trackCursor() method, 171--173
-transform_origin attribute, 175 
-Trigonometry, 196, 244--246
+text.set() method, 130<br>
+trackCursor() method, 171-173<br>
+transform_origin attribute, 175<br>
+Trigonometry, 196, 244-246<br>
 
 <h3>V</h3>
-viewBox, 57, 58, 60, 62, 73, 78, 83, 88, 96, 110, 111, 125, 171, 200 
-viewport, 57, 58, 60, 62, 78, 83
+viewBox, 57, 58, 60, 62, 73, 78, 83, 88, 96, 110, 111, 125, 171, 200<br>
+viewport, 57, 58, 60, 62, 78, 83<br>
 
 <h3>W, X, Y</h3>
-Web Animations API (WAAPI), 175, 181--184, 189, 202, 203 
-while loops, 34--35, 53
-World Wide Web
-  Consortium, 3, 181
+Web Animations API (WAAPI), 175, 181--184, 189, 202, 203<br>
+while loops, 34--35, 53<br>
+World Wide Web<br>
+  Consortium, 3, 181<br>
 
 <h3>Z</h3>
-Z command, 139, 232 257
+Z command, 139, 232 257<br>
 
 
 <h2 id="geeks4geeks">Geeks 4 Geeks example SVG</h2>
