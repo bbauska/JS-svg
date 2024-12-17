@@ -583,12 +583,12 @@ looking at an impenetrable wall of pixels; they can clearly see the
 order they're written, with a title for extra accessibility. Figure 1-1
 shows how this markup appears when rendered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 7.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~ 7. A simple composition in the style of Hilma af Klint's Svanen (The Swan) (4) ~~~~~~~-->
 <img class="displayed"
   src="./images/image007.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A simple composition in the style of Hilma af Klint's Svanen (The Swan)"
+  alt="A simple composition in the style of Hilma af Klint's Svanen (The Swan)." />
 <!-- ![](./images/image007.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 1-1.</b> A simple composition in the style of Hilma af Klint's Svanen (The Swan)</i></small></small></p>
@@ -659,12 +659,12 @@ svg.create('rect').set({
 </pre>
 <!-- page 7 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 8.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 8. A cornflower blue-colored rectangle, in all its glory (7) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image008.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
+  title="A cornflower blue-colored rectangle, in all its glory"
+  alt="A cornflower blue-colored rectangle, in all its glory." />
 <!-- (./images/image008.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 1-2.</b> A cornflower blue-colored rectangle, in all its glory</i></small></small></p>
@@ -970,7 +970,7 @@ just jump in and show you some quick results.</p>
 you see will no doubt differ in some respects. But that, dear reader, is
 part of the joy of generative art.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 09. first generative sketch (1 variation of many) (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 09. first generative sketch (1 variation of many) (16) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image009.jpg"
   style="width:3.15in"
@@ -1018,11 +1018,6 @@ and will serve you well in a lot of other areas besides generative art.</p>
 <h2 id="ch2-1">Syntax</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We'll begin with some points on syntax.</p>
-
-<p>© David Matthew 2024 19</p>
-
-<p>D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-<https://doi.org/10.1007/979-8-8688-0086-3_2></p>
 
 <h2>Case Sensitivity</h2>
 
@@ -1980,12 +1975,12 @@ involved in achieving this spiral arrangement (something we'll cover in a later 
 the main point is how we use the iterator variable i to cycle through each color value, 
 that is, webSafeColours&lbrack;i&rbrack;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 10.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. A web-safe color spiral (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image010.jpg"
   style="width:3.15in"
-  title="Our first generative sketch (one variation of many)"
-  alt="Our first generative sketch (one variation of many)." />
+  title="A web-safe color spiral"
+  alt="A web-safe color spiral." />
 <!-- (./images/image010.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 2-1.</b> A web-safe color spiral</i></small></small></p>
@@ -2700,13 +2695,12 @@ svg.create('rect').set({
   fill: '#49283c&apos; });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 11. A Josef Albers--inspired color illusion (65) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image011.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image011.jpg){width="3.15in" height="3.15in"} -->
+  title="A Josef Albers--inspired color illusion"
+  alt="A Josef Albers--inspired color illusion." />
 
 <p><small><small><i><b>Figure 3-1.</b> A Josef Albers--inspired color illusion</i></small></small></p>
 
@@ -2795,13 +2789,12 @@ svg.create('circle').set({
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 12.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 12. The result of our circle overlay loop (67) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image012.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image012.jpg){width="3.15in" height="3.15in"} -->
+  title="The result of our circle overlay loop"
+  alt="The result of our circle overlay loop." />
 
 <p><small><small><i><b>Figure 3-2.</b> The result of our circle overlay loop</i></small></small></p>
 
@@ -2856,13 +2849,13 @@ of square will close it off with -- you guessed it -- a square. Figure
 3-3 shows the different values, with vertical lines on either side to
 delineate where the values come into effect.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 13.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 13. Values of butt, round, and square (top to bottom) (69) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image013.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image013.jpg){width="3.15in" height="1.575in"} -->
+  title="Values of butt, round, and square (top to bottom)"
+  alt="Values of butt, round, and square (top to bottom)." />
+<!-- {width="3.15in" height="1.575in"} -->
 
 <p><small><small><i><b>Figure 3-3.</b> Values of butt, round, and square (top to bottom)</i></small></small></p>
 
@@ -2899,13 +2892,13 @@ dasharray values (all relative to a viewBox width of 1000):
 
 -   50 100 200 100
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 14.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 14. Various stroke-dasharray values (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image014.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image014.jpg){width="3.15in" height="1.575in"} -->
+  title="Various stroke-dasharray values"
+  alt="Various stroke-dasharray values." />
+<!-- {width="3.15in" height="1.575in"} -->
 
 <p><small><small><i><b>Figure 3-4.</b> Various stroke-dasharray values</i></small></small></p>
 
@@ -2933,13 +2926,13 @@ svg.create('polyline').set({
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 15.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. A polyline element in action (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image015.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image015.jpg){width="3.15in" height="1.575in"} -->
+  title="A polyline element in action"
+  alt="A polyline element in action." />
+<!-- {width="3.15in" height="1.575in"} -->
 <p><small><small><i><b>Figure 3-5.</b> A polyline element in action</i></small></small></p>
 
 I've also used the stroke-linejoin attribute in the preceding example;
@@ -2950,13 +2943,13 @@ closed shapes, that is, where the start and end points connect. In
 Figure 3-6, we see an arrangement of polygons that might be familiar to
 gamers of a particular platform.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 16.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16. Polygons for the players (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image016.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image016.jpg){width="3.15in" height="1.575in"} -->
+  title="Polygons for the players"
+  alt="Polygons for the players." />
+<!-- {width="3.15in" height="1.575in"} -->
 
 <p><small><small><i><b>Figure 3-6.</b> Polygons for the players</i></small></small></p>
 
@@ -2970,12 +2963,11 @@ chapter.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-6">3.6 Text and Titles</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-As SVG is a plain text format, it's no surprise that it supports textual
+<p>As SVG is a plain text format, it's no surprise that it supports textual
 elements. To create some text, we use the usual svg.create() method. At
 a minimum, we need to define the x and y coordinates of where we want it
 to appear (relative to the bottom left corner of the text's bounding
-box), its color, and its content.
+box), its color, and its content.</p>
 
 <pre>
 // Creating text. 
@@ -3051,65 +3043,61 @@ let line = '"Bart Bucks" are not legal tender.';
   }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 17.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 17. The "Bart Bucks" chalkboard gag (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image017.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image017.jpg){width="3.15in" height="3.15in"} -->
+  title="The "Bart Bucks" chalkboard gag"
+  alt="The "Bart Bucks" chalkboard gag." />
 
 <p><small><small><i><b>Figure 3-7.</b> The "Bart Bucks" chalkboard gag</i></small></small></p>
 
-Titles are another type of text we can use. Unlike a text element, a
+<p>Titles are another type of text we can use. Unlike a text element, a
 title element doesn't need to be positioned; it is intended to be nested
 within an element as a description. It works in the same way an HTML
 title attribute works; it helps with accessibility and appears as a
 tooltip on hover. It can be used to title the parent SVG element, or any
-of its child elements.
+of its child elements.</p>
 
 <pre>
-// Create a title for a circle element.
-let circle = svg.create('circle'); let circleTitle =
-circle.create('title'); circleTitle. content('I get around-round, I
-get around.');
+// <i>Create a title for a circle element.</i>
+let circle = svg.create('circle'); 
+let circleTitle =
+circle.create('title'); 
+circleTitle. content('I get around-round, I get around.');
 </pre>
 
-A title element is suitable for shorter descriptions; for more extended
+<p>A title element is suitable for shorter descriptions; for more extended
 descriptions, the desc element is recommended. This doesn't render and
 is purely for accessibility purposes, and is created in exactly the same
-way as a title element.
+way as a title element.</p>
 
-If you want to add extra information about the SVG file itself, the
+<p>If you want to add extra information about the SVG file itself, the
 metadata element can be used. An example would be embedding RDF
 (Resource Description Framework) data, or application-specific data.
 You'll often see software like Inkscape or Illustrator embed their own
-metadata in this manner.
-
+metadata in this manner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-7">3.7 Definitions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-If we want to define a graphical or other container element for use in
+<p>If we want to define a graphical or other container element for use in
 our SVG but don't want that element itself to appear (or if we want it
 to appear only when referenced), we would nest in within the defs
 element, which stands for definitions. The defs element can improve the
 overall accessibility of an SVG and also better help organize its
-content.
+content.</p>
 
-We'll rely on the functionality provided by the defs element in the
-upcoming sections on gradients, patterns, and other reusable elements.
+<p>We'll rely on the functionality provided by the defs element in the
+upcoming sections on gradients, patterns, and other reusable elements.</p>
 
 <pre>
 // Defining a defs element. 
 let defs = svg.create('defs');
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-8">3.8 Gradients</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-A gradient is a gradual transition from one color state to another. In
+<p>A gradient is a gradual transition from one color state to another. In
 SVG, gradients can support a multitude of these different color states
 (or "stops" as they're called). Most often, you'll see gradients of the
 two-stop variety, but occasionally you'll come across one boasting a
@@ -3117,51 +3105,52 @@ rainbow-esque array of different colors. And speaking of rainbows, the
 sky itself is a great source of gradient inspiration
 (gradienspiration?). Think of the dim light at dusk where soft yellows
 transition to light blues, or the brilliant blaze of a sunset where
-purples, reds, and oranges collide.
+purples, reds, and oranges collide.</p>
 
-Gradients can be of two varieties: linear (a color transition that
+<p>Gradients can be of two varieties: linear (a color transition that
 proceeds from one area to another in a straight line) and radial (a
 color transition that emanates outward in all directions from a focal
-point).
+point).</p>
 
-How would we create such gradients in SvJs? It turns out it would be a
+<p>How would we create such gradients in SvJs? It turns out it would be a
 very verbose process using just the create() method, and there's a
-couple of reasons for this:
+couple of reasons for this:</p>
 
--   Gradients are defined as stand-alone elements within the defs
+<ul>
+  <li>Gradients are defined as stand-alone elements within the defs
     section rather than treated as purely presentational element
-    attributes. The upside of this is that a single gradient can be
-    shared among multiple elements, but the downside is we've got a
-    couple of extra steps to begin with.
-
--   For each gradient color, a stop element must be defined and nested
+	attributes. The upside of this is that a single gradient can be
+	shared among multiple elements, but the downside is we've got a
+	couple of extra steps to begin with.</li>
+  <li>For each gradient color, a stop element must be defined and nested
     within the gradient element to define the color and its offset (or
-    position). This adds another series of steps.
+	position). This adds another series of steps.</li>
+</ul>
 
-To remedy the aforementioned, SvJs offers a dedicated createGradient()
+<p>To remedy the aforementioned, SvJs offers a dedicated createGradient()
 method that significantly speeds up the process of constructing a
-gradient. Its syntax is as follows:
+gradient. Its syntax is as follows:</p>
 
 <pre>
 createGradient(id, type, colours, rotation)
 </pre>
 
-With the first argument, we assign an id to the gradient so that it can
+<p>With the first argument, we assign an id to the gradient so that it can
 be referenced or called upon later by an element. With the second
 argument, we specify the gradient type, that is, linear or radial. With
 the third argument, we pass in an array of color values. And with the
 final argument, we specify the angle of rotation, which is 45° by
 default (meaning it "shines" from the top left to the bottom right).
 This last argument is optional and is only applicable to gradients of
-the linear variety.
+the linear variety.</p>
 
-The createGradient() method can only be called by the parent SVG, as
+<p>The createGradient() method can only be called by the parent SVG, as
 behind the scenes it checks whether a defs element is already defined
 within the SVG, and if not, it creates it and appends the gradient to
-it.
+it.</p>
 
-Here's how we might create a simple three-stop linear gradient and apply
-it to a rect element.
+<p>Here's how we might create a simple three-stop linear gradient and apply
+it to a rect element.</p>
 
 <pre>
 // Create the gradient with an id of 'grad'.
@@ -3176,73 +3165,72 @@ svg.create('rect').set({
   fill: 'url(#grad)' });
 </pre>
 
-As you can see, the shape we want the gradient applied to references the
+<p>As you can see, the shape we want the gradient applied to references the
 gradient id as an internal url. In the preceding example, we've applied
 it to the fill attribute, but it could also have been applied to the
-stroke.
+stroke.</p>
 
-In Figure 3-8, we see an example of three linear gradients and their
+<p>In Figure 3-8, we see an example of three linear gradients and their
 radial equivalents. The first gradient has two color stops, the second
 has three, and the third has four. As you can see, it's easier to make
 linear gradients look smoother; with radial gradients, subtlety is
 always better, as transitions can seem relatively abrupt (or banded)
-compared to their linear counterparts.
+compared to their linear counterparts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 18.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 18. Linear gradients and their radial equivalents (78) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image018.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image018.jpg){width="3.15in" height="3.15in"} -->
+  title="Linear gradients and their radial equivalents"
+  alt="Linear gradients and their radial equivalents." />
 
 <p><small><small><i><b>Figure 3-8.</b> Linear gradients and their radial equivalents</i></small></small></p>
 
-There are more ways to customize gradients that we won't get into here,
+<p>There are more ways to customize gradients that we won't get into here,
 but if you're interested, check out the MDN documentation for more on
 the gradient spreadMethod and varying the focal points of radial
-gradients.
+gradients.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-9">3.9 Patterns</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Like gradients, patterns reside in the defs element to be referenced
+<p>Like gradients, patterns reside in the defs element to be referenced
 later rather than rendered directly. They have their own viewport (i.e.,
 width and height) and optional viewBox, which can seem a little
 complicated at first, but it does allow for a greater degree of
 flexibility. Think of a pattern element as a miniature canvas to be
 replicated across a larger graphical element and these settings will
-make more sense.
+make more sense.</p>
 
-To create a pattern, we can use the createPattern() shortcut method,
+<p>To create a pattern, we can use the createPattern() shortcut method,
 which, as with the gradient method, automatically appends itself to a
 defs element and creates one if it doesn't exist. It also simplifies
 pattern creation in other ways under the hood that you don't have to
 worry about. It requires three arguments: the pattern id, the width, and
-the height.
+the height.</p>
 
-To show how patterns work, we'll create a quick sketch -- another
+<p>To show how patterns work, we'll create a quick sketch -- another
 optical illusion, but this time the focus won't be on the colors. Copy
-our 00-template folder and rename it to 05-optical-illusion.
+our 00-template folder and rename it to 05-optical-illusion.</p>
 
-In our sketch.js file below the code for the background, create a
+<p>In our sketch.js file below the code for the background, create a
 pattern with an id of 'illusion' and with a width of 100 and a height of
-200.
+200.</p>
 
 <pre>
-// Create our pattern. 
+// <i>Create our pattern.</i>
 const pattern = svg.createPattern('illusion', 100, 200);
 </pre>
 
-This simply initializes our pattern; we haven't placed anything within
+<p>This simply initializes our pattern; we haven't placed anything within
 it yet, nor have we set up a shape to apply it to. We just have a
-pattern in the shape of a vertical rectangle.
+pattern in the shape of a vertical rectangle.</p>
 
-In our first iteration of this sketch, I'll show you how a simple
+<p>In our first iteration of this sketch, I'll show you how a simple
 pattern gets applied to a shape. We'll get more elaborate with the
-pattern content afterward. Add the following code to our sketch:
+pattern content afterward. Add the following code to our sketch:</p>
 
 <pre>
-// Create a white rectangle within the pattern.
+// <i>Create a white rectangle within the pattern.</i>
 pattern.create('rect').set({ 
   x: 10, 
   y: 10, 
@@ -3252,13 +3240,13 @@ pattern.create('rect').set({
 });
 </pre>
 
-Now that we have our simple pattern in place (consisting of a single
+<p>Now that we have our simple pattern in place (consisting of a single
 white rectangle), it's time to apply it to a shape. For simplicity,
 let's apply it to another rect the full size of the SVG viewBox, like
-so:
+so:</p>
 
 <pre>
-// Apply our pattern to a rect the size of the viewBox.
+// <i>Apply our pattern to a rect the size of the viewBox.</i>
 svg.create('rect').set({ 
   x: 0, 
   y: 0, 
@@ -3268,16 +3256,15 @@ svg.create('rect').set({
 });
 </pre>
 
-You should now see something similar to Figure 3-9. Not especially
-interesting, but sufficient to showcase the basics.
+<p>You should now see something similar to Figure 3-9. Not especially
+interesting, but sufficient to showcase the basics.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 19.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19. A basic pattern (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image019.jpg"
-  style="width:3.15in"
-  title=""
-  alt="." />
-<!-- ./images/image019.jpg){width="3.17in" height="3.17in"} -->
+  style="width:3.17in"
+  title="A basic pattern"
+  alt="A basic pattern." />
 
 <p><small><small><i><b>Figure 3-9.</b> A basic pattern</i></small></small></p>
 
@@ -3340,13 +3327,12 @@ y: 45 + (i * 50), width: 100, height: 5, fill: '#666'
 
 Now when you hit save, you should see something like Figure 3-10.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 20.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 20. A repeating pattern creating an optical illusion (82) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image020.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image020.jpg){width="3.15in" height="3.15in"} -->
+  title="A repeating pattern creating an optical illusion"
+  alt="A repeating pattern creating an optical illusion." />
 
 <p><small><small><i><b>Figure 3-10.</b> A repeating pattern creating an optical illusion</i></small></small></p>
 
@@ -3403,21 +3389,17 @@ want to explore further on MDN.
 
 To recap, we've covered the following in this chapter:
 
--   The core functions provided by the SvJs library
-
--   How the SVG viewBox and viewport work
-
--   Creating basic shapes like rectangles, circles, ellipses, polylines,
-    and polygons
-
--   Customizing stroke behavior and appearance
-
--   Working with text and titles
-
--   Creating gradients and patterns
-
--   How definitions, groups, and symbols allow us to reuse elements and
-    better structure our SVG
+<ul>
+  <li>The core functions provided by the SvJs library</li>
+  <li>How the SVG viewBox and viewport work</li>
+  <li>Creating basic shapes like rectangles, circles, ellipses, polylines,
+    and polygons</li>
+  <li>Customizing stroke behavior and appearance</li>
+  <li>Working with text and titles</li>
+  <li>Creating gradients and patterns</li>
+  <li>How definitions, groups, and symbols allow us to reuse elements and
+    better structure our SVG</li>
+</ul>
 
 In the next chapter, we'll explore how we can combine regularity with
 randomness to create truly generative compositions.
@@ -3449,12 +3431,6 @@ digital age. As far back as the fifteenth century, Leonardo da Vinci
 suggested that artists take inspiration from sources rich in random and
 suggestive detail, such as the arbitrary forms found on the surface of
 stained stones and dirty walls. Artists like Max Ernst took such prompts
-
-© David Matthew 2024 85
-
-D. Matthew, <i>Generative Art with JavaScript and SVG</i>, Design Thinking,
-&lt;https://doi.org/10.1007/979-8-8688-0086-3_4&gt;
-
 quite literally; his frottage technique was borne of dropping paper at
 random on floorboards full of scrapes and scratches and making charcoal
 rubbings from the textures.
@@ -3583,13 +3559,12 @@ for (let i = 0;
   }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 21.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 21. A random spattering of circles (89) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image021.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image021.jpg){width="3.15in" height="3.15in"} -->
+  title="A random spattering of circles"
+  alt="A random spattering of circles." />
 
 <p><small><small><i><b>Figure 4-1.</b> A random spattering of circles</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3623,13 +3598,12 @@ of the sketch, we'll do precisely that. The complexity will ramp up
 considerably, so we'll step through it slowly.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 22.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22. A more colorful spatter (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image022.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image022.jpg){width="3.15in" height="3.15in"} -->
+  title="A more colorful spatter"
+  alt="A more colorful spatter." />
 
 <p><small><small><i><b>Figure 4-2.</b> A more colorful spatter</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3733,13 +3707,12 @@ look less explosive (it looks like an eruption of confetti to me), but
 the different shapes and the addition of stroke values definitely add
 more in the way of variety and visual interest.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 23.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 23. A confetti-like scattering of random elements (93) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image023.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image023.jpg){width="3.15in" height="3.15in"} -->
+  title="A confetti-like scattering of random elements"
+  alt="A confetti-like scattering of random elements." />
 
 <p><small><small><i><b>Figure 4-3.</b> A confetti-like scattering of random elements</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3837,13 +3810,12 @@ grid.moveTo(500, 500);
 The grid should now line up nicely in the center of our viewBox, as
 shown in Figure 4-4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 24.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. A regular, centered grid (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image024.jpg"
   style="width:3.15in"
-  title=""
-  alt="." />
-<!-- (./images/image024.jpg){width="3.15in" height="3.15in"} -->
+  title="A regular, centered grid"
+  alt="A regular, centered grid." />
 
 <p><small><small><i><b>Figure 4-4.</b> A regular, centered grid</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3909,13 +3881,13 @@ let rows = Gen.random(2, 20);
 let spacing = Gen.random(5, 10);
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 25.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 25. Variations of our regular grid (98) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image025.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
-<!-- (./images/image025.jpg){width="4.725in" height="1.5316666666666667in"} -->
+  title="Variations of our regular grid"
+  alt="Variations of our regular grid." />
+<!-- {width="4.725in" height="1.5316666666666667in"} -->
 
 <p><small><small><i><b>Figure 4-5.</b> Variations of our regular grid</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3969,13 +3941,13 @@ let palettes = [
 ];
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 26.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. Our three colour palettes (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image026.jpg"
   style="width:3.936in"
-  title=""
-  alt="." />
-<!-- (./images/image026.jpg){width="3.9366666666666665in" height="2.0616666666666665in"} -->
+  title="Our three colour palettes"
+  alt="Our three colour palettes." />
+<!-- {width="3.9366666666666665in" height="2.0616666666666665in"} -->
 
 <p><small><small><i><b>Figure 4-6.</b> Our three colour palettes</i></small></small></p>
 
@@ -4015,13 +3987,13 @@ rect that defines the clipPath, while the circle is the clipped element.
 On the right, you can see the effect of applying the clipPath to the
 circle.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 27.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. How a clipPath works (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image027.jpg"
   style="width:3.936in"
-  title=""
-  alt="." />
-<!-- (./images/image027.jpg){width="3.936665in" height="1.96833in"} -->
+  title="How a clipPath works"
+  alt="How a clipPath works." />
+<!-- {width="3.936665in" height="1.96833in"} -->
 
 <p><small><small><i><b>Figure 4-7.</b> How a clipPath works</i></small></small></p>
 
@@ -4164,13 +4136,13 @@ properly, that's because the grid's bounding box includes the invisible
 clipped content, which won't always arrange itself symmetrically around
 the grid.)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 28.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 28. Colorful clip path grid patterns (104) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image028.jpg"
   style="width:4.725in"
-  title=""
-  alt="." />
-<!-- (./images/image028.jpg){width="4.725in" height="1.6483333333333334in"} -->
+  title="Colorful clip path grid patterns"
+  alt="Colorful clip path grid patterns." />
+<!-- {width="4.725in" height="1.6483333333333334in"} -->
 
 <p><small><small><i><b>Figure 4-8.</b> Colorful clip path grid patterns</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4272,13 +4244,12 @@ Gen.random(y, y + cellSize), stroke: `hsl(${hue} 80% 80% / 0.33)`
 This should result in gradiented tetris-like arrangements, similar to
 Figure 4-9.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 29. Gen.chance() in action (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. Gen.chance() in action (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image029.jpg"
   style="width:3.15in"
   title="Gen.chance() in action"
   alt="Gen.chance() in action." />
-<!-- (./images/image029.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 4-9.</b> Gen.chance() in action</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4308,13 +4279,12 @@ variation of the x coordinate in the placement of 1000 vertical lines.
 The lines are all scattered with equal chance of appearing anywhere
 along the x axis.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 30. Uniform distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 30. Uniform distribution of vertical lines (109) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image030.jpg"
-  style="width:4.725in"
+  style="width:4.725in height:0.55in"
   title="Uniform distribution of vertical lines"
   alt="Uniform distribution of vertical lines." />
-<!-- (./images/media/image30.jpg){width="4.725in" height="0.55in"} -->
 
 <p><small><small><i><b>Figure 4-10.</b> Uniform distribution of vertical lines</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4329,13 +4299,13 @@ this. It is also known as normal distribution, and when graphed, it
 forms a bell-shaped curve. Visualized as a series of vertical lines, it
 looks like Figure 4-11.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 31. Gaussian distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 31. Gaussian distribution of vertical lines (109) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image031.jpg"
-  style="width:4.725in"
+  style="width:4.725in height: 0.50666"
   title="Gaussian distribution of vertical lines"
   alt="Gaussian distribution of vertical lines." />
-<!-- (./images/image031.jpg){width="4.725in" height="0.5066666666666667in"} -->
+<!-- {width="4.725in" height="0.5066666666666667in"} -->
 
 <p><small><small><i><b>Figure 4-11.</b> Gaussian distribution of vertical lines</i></small></small></p>
 
@@ -4422,13 +4392,12 @@ i < 10; i += 1) { svg.create('circle').set({ cx: 500, cy: 500, r:
 
 After this, you should end up with something similar to Figure 4-12.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 32. Using Gen.gaussian to position 10,000 lines (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 32. Using Gen.gaussian to position 10,000 lines (112) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image032.jpg"
   style="width:3.15in"
   title="Using Gen.gaussian to position 10,000 lines"
   alt="Using Gen.gaussian to position 10,000 lines." />
-<!-- (./images/media/image32.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 4-12.</b> Using Gen.gaussian to position 10,000 lines</i></small></small></p>
 
@@ -4457,13 +4426,13 @@ was the 1890's mind, so had Pareto made the same observations today, we
 might be discussing the 99-1 rule! Be that as it may, the basic idea
 remains the same: there is a lot with a little and a little with a lot.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 33. pareto distribution of vertical lines (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 33. pareto distribution of vertical lines (113) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image033.jpg"
   style="width:4.725in"
   title="Pareto distribution of vertical lines"
   alt="Pareto distribution of vertical lines." />
-<!-- (./images/media/image33.jpg){width="4.725in" height="0.5066666666666667in"} -->
+<!-- {width="4.725in" height="0.5066666666666667in"} -->
 
 <p><small><small><i><b>Figure 4-13.</b> Pareto distribution of vertical lines</i></small></small></p>
 
@@ -4566,13 +4535,13 @@ region.
 In Figure 4-14, the triangle is the mask shape, and the result of
 applying it to the rect is shown on the right.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 34. How masks work (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. How masks work (116) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image034.jpg"
   style="width:4.725in"
   title="How masks work"
   alt="How masks work." />
-<!-- (./images/media/image34.jpg){width="4.725in" height="1.7666666666666666in"} -->
+<!-- {width="4.725in" height="1.7666666666666666in"} -->
 
 <p><small><small><i><b>Figure 4-14.</b> How masks work</i></small></small></p>
 
@@ -4617,13 +4586,12 @@ svg.create('circle').set({
 
 A variation of the result is shown in Figure 4-15.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 35. our porto pareto cityscape (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. our porto pareto cityscape (117) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image035.jpg"
-  style="width:3.346in"
+  style="width:3.3467in"
   title="Our Porto Pareto cityscape"
   alt="Our Porto Pareto cityscape." />
-<!-- (./images/media/image35.jpg){width="3.3467in" height="3.3467in"} -->
 
 <p><small><small><i><b>Figure 4-15.</b> Our Porto Pareto cityscape</i></small></small></p>
 
