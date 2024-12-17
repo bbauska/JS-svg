@@ -44,8 +44,6 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="toc">Table of Contents</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h2 id="ch1">Chapter 1: The Beginner's Path 1</a></h2> -->
-
 <ol type="1" start="1">
   <li><a href="#ch1">Chapter 1: The Beginner's Path 1</a>
     <ol type="1">
