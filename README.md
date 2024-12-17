@@ -589,7 +589,6 @@ shows how this markup appears when rendered.</p>
   style="width:3.15in"
   title="A simple composition in the style of Hilma af Klint's Svanen (The Swan)"
   alt="A simple composition in the style of Hilma af Klint's Svanen (The Swan)." />
-<!-- ![](./images/image007.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 1-1.</b> A simple composition in the style of Hilma af Klint's Svanen (The Swan)</i></small></small></p>
 
@@ -665,7 +664,6 @@ svg.create('rect').set({
   style="width:3.15in"
   title="A cornflower blue-colored rectangle, in all its glory"
   alt="A cornflower blue-colored rectangle, in all its glory." />
-<!-- (./images/image008.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 1-2.</b> A cornflower blue-colored rectangle, in all its glory</i></small></small></p>
 
@@ -976,7 +974,6 @@ part of the joy of generative art.</p>
   style="width:3.15in"
   title="Our first generative sketch (one variation of many)"
   alt="Our first generative sketch (one variation of many)." />
-<!-- ./images/media/image9.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 1-3.</b> Our first generative sketch (one variation of many)</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1981,7 +1978,6 @@ that is, webSafeColours&lbrack;i&rbrack;.</p>
   style="width:3.15in"
   title="A web-safe color spiral"
   alt="A web-safe color spiral." />
-<!-- (./images/image010.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 2-1.</b> A web-safe color spiral</i></small></small></p>
 
@@ -2933,6 +2929,7 @@ svg.create('polyline').set({
   title="A polyline element in action"
   alt="A polyline element in action." />
 <!-- {width="3.15in" height="1.575in"} -->
+
 <p><small><small><i><b>Figure 3-5.</b> A polyline element in action</i></small></small></p>
 
 I've also used the stroke-linejoin attribute in the preceding example;
@@ -4680,13 +4677,13 @@ Figure 5-1, the height of the white lines is randomized using a Perlin
 noise variable. This is an example of one-dimensional noise, that is,
 noise values that operate along a single axis.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 36. A one-dimensional representation of Perlin noise values (xx) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 36. A one-dimensional representation of Perlin noise values (120) ~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image036.jpg"
   style="width:4.725in"
   title="A one-dimensional representation of Perlin noise values"
   alt="A one-dimensional representation of Perlin noise values." />
-<!-- (./images/media/image36.jpg){width="4.725in" height="1.04in"} -->
+<!-- {width="4.725in" height="1.04in"} -->
 
 <p><small><small><i><b>Figure 5-1.</b> A one-dimensional representation of Perlin noise values</i></small></small></p>
 
@@ -4714,13 +4711,12 @@ varied according to the corresponding noise value, creating a cloud-like
 formation. You can immediately see why it would be useful for creating
 textures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 37. A two-dimensional representation of Perlin noise values (xx) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 37. A two-dimensional representation of Perlin noise values (122) ~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image037.jpg"
   style="width:3.15in"
   title="A two-dimensional representation of Perlin noise values"
   alt="A two-dimensional representation of Perlin noise values." />
-<!-- (./images/media/image37.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 5-2.</b> A two-dimensional representation of Perlin noise values</i></small></small></p>
 
@@ -4980,13 +4976,12 @@ Once you've done this, you should see some color injected into our
 matrix (as per Figure 5-3). Enough we hope to get an appreciative nod
 from Neo.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 38. That chunk of the matrix that tastes like chicken (xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 38. That chunk of the matrix that tastes like chicken (129) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image038.jpg"
   style="width:3.15in"
   title="That chunk of the matrix that tastes like chicken"
   alt="That chunk of the matrix that tastes like chicken." />
-<!-- (./images/media/image38.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 5-3.</b> That chunk of the matrix that tastes like chicken</i></small></small></p>
 
@@ -5156,13 +5151,13 @@ As you can see in Figure 5-4, what we end up are a series of slightly
 asymmetric lines that somewhat resemble, to me at least, the dance of
 some deep-sea creatures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 39. Spinning lines or deep-sea creatures? (xx) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 39. Spinning lines or deep-sea creatures? (134) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image039.jpg"
   style="width:4.725in"
   title="Spinning lines or deep-sea creatures?"
   alt="Spinning lines or deep-sea creatures?" />
-<!-- ./images/media/image39.jpg){width="4.725in" height="1.893in"} -->
+<!-- {width="4.725in" height="1.893in"} -->
 
 <p><small><small><i><b>Figure 5-4.</b> Spinning lines or deep-sea creatures?</i></small></small></p>
 
@@ -5364,7 +5359,6 @@ have to change the initial M point.</p>
   style="width:3.15in"
   title="Two L's drawn by two L commands"
   alt="Two L's drawn by two L commands." />
-<!-- (./images/media/image40.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-1.</b> Two L&apos;s drawn by two L commands</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5425,7 +5419,7 @@ svg.create('path').set({
   style="width:3.543in"
   title="Omitting repetitive commands"
   alt="Omitting repetitive commands." />
-<!-- (./images/media/image41.jpg){width="3.5434in" height="0.96167in"} -->
+<!-- {width="3.5434in" height="0.96167in"} -->
 
 <p><small><small><i><b>Figure 6-2.</b> Omitting repetitive commands</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5464,7 +5458,6 @@ example, the dot represents the control point coordinates of &lbrack;150,
   style="width:3.15in"
   title="The control point of a quadratic Bezier curve"
   alt="The control point of a quadratic Bezier curve." />
-<!-- (./images/media/image42.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-3.</b> The control point of a quadratic Bezier curve</i></small></small></p>
 
@@ -5487,7 +5480,7 @@ in more complex cases, this can become a challenge.</p>
   style="width:3.15in"
   title="A kink in the curve"
   alt="A kink in the curve." />
-<!-- (./images/media/image43.jpg){width="3.15in" height="1.89in"} -->
+<!-- {width="3.15in" height="1.89in"} -->
 
 <p><small><small><i><b>Figure 6-4.</b> A kink in the curve</i></small></small></p>
 
@@ -5522,13 +5515,13 @@ Figure 6-5 is the result, with some circular highlights added in to
 distinguish the initial M point (yellow) and the full Q curve (the
 purple second point) from the four additional T points (in red).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. A smooth quadratic curve (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. A smooth quadratic curve (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image044.jpg"
   style="width:4.725in"
   title="A smooth quadratic curve"
   alt="A smooth quadratic curve." />
-<!-- (./images/media/image44.jpg){width="4.725in" height="1.2883in"} -->
+<!-- {width="4.725in" height="1.2883in"} -->
 
 <p><small><small><i><b>Figure 6-5.</b> A smooth quadratic curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5637,7 +5630,6 @@ slinky.moveTo(500, 500);
   style="width:3.15in"
   title="Quadratic curves in a slinky formation"
   alt="Quadractic curves in a slinky formation." />
-<!-- (./images/media/image45.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-6.</b> Quadratic curves in a slinky formation</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5664,13 +5656,13 @@ largearc-flag and sweep-flag are both booleans in numeric form, 0
 meaning false and 1 meaning true. What they do though takes a little
 explaining.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 46. An elliptical arc curve (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 46. An elliptical arc curve (151) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image046.jpg"
   style="width:3.15in"
   title="An elliptical arc curve"
   alt="An elliptical arc curve." />
-![](./images/media/image46.jpg){width="3.15in" height="2.635in"}
+<!-- {width="3.15in" height="2.635in"} -->
 
 <p><small><small><i><b>Figure 6-7.</b> An elliptical arc curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5697,13 +5689,13 @@ are shown.
 -   In the lowermost path, the large-arc-flag is set to 1 and the
     sweep-flag is set to 0.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 47. Four possible arcs (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. Four possible arcs (152) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image047.jpg"
   style="width:3.15in"
   title="Four possible arcs"
   alt="Four possible arcs." />
-![](./images/media/image47.jpg){width="3.15in" height="2.52in"}
+<!-- {width="3.15in" height="2.52in"} -->
 
 <p><small><small><i><b>Figure 6-8.</b> Four possible arcs</i></small></small></p>
 
@@ -5821,13 +5813,13 @@ loop:
 arcs.rotate(Gen.random(0, 360));
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 48. Two renders of our generative arcs (xx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 48. Two renders of our generative arcs (156) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image048.jpg"
   style="width:3.936in"
   title="Two renders of our generative arcs"
   alt="Two renders of our generative arcs." />
-<!-- (./images/media/image48.jpg){width="3.9365in" height="2.315in"} -->
+<!-- {width="3.9365in" height="2.315in"} -->
 
 <p><small><small><i><b>Figure 6-9.</b> Two renders of our generative arcs</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5872,13 +5864,13 @@ the cubic Bezier curve itself. The colored dots and dashed lines are
 just for illustrative purposes; these wouldn't be rendered in the final
 SVG.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 49. A cubic Bezier curve with the control points visualized (xx) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 49. A cubic Bezier curve with the control points visualized (157) ~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image049.jpg"
   style="width:3.15in"
   title="A cubic Bezier curve with the control points visualized"
   alt="A cubic Bezier curve with the control points visualized." />
-<!-- (./images/media/image49.jpg){width="3.15in" height="2.52in"} -->
+<!-- {width="3.15in" height="2.52in"} -->
 
 <p><small><small><i><b>Figure 6-10.</b> A cubic Bezier curve with the control points visualized</i></small></small></p>
 
@@ -5910,13 +5902,13 @@ svg.create('path').set({
 In Figure 6-11, the faintest of the dashed lines indicates where the S
 command has automatically generated a symmetrical control point.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 50. A smoothly extended cubic Bezier curve (xx) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 50. A smoothly extended cubic Bezier curve (158) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image050.jpg"
   style="width:3.543in"
   title="A smoothly extended cubic Bezier curve"
   alt="A smoothly extended cubic Bezier curve." />
-<!-- ![](./images/media/image50.jpg){width="3.5434in" height="2.1265in"} -->
+<!-- {width="3.5434in" height="2.1265in"} -->
 
 <p><small><small><i><b>Figure 6-11.</b> A smoothly extended cubic Bezier curve</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6062,13 +6054,12 @@ if (Gen.chance(10)) {
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. Noise-modulated organic curves (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. Noise-modulated organic curves (163) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image051.jpg"
   style="width:3.15in"
   title="Noise-modulated organic curves"
   alt="Noise-modulated organic curves." />
-<!-- (./images/media/image51.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 6-12.</b> Noise-modulated organic curves</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6123,13 +6114,13 @@ bottom curve to 5. The faint dots indicate where our pointsArray
 coordinates are positioned and are shown for illustrative purposes only;
 you wouldn't see these rendered normally.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 52. Varying the curve factor using values of 0, 1, and 5 (xx) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 52. Varying the curve factor using values of 0, 1, and 5 (165) ~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image052.jpg"
   style="width:3.543in"
   title="Varying the curve factor using values of 0, 1, and 5"
   alt="Varying the curve factor using values of 0, 1, and 5." />
-<!-- (./images/media/image52.jpg){width="3.5434in" height="2.53167in"} -->
+<!-- {width="3.5434in" height="2.53167in"} -->
 
 <p><small><small><i><b>Figure 6-13.</b> Varying the curve factor using values of 0, 1, and 5</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6439,19 +6430,17 @@ to save down Figure 7-1), as it allows us to capture our SVG without
 disturbing the composition with inadvertent cursor movement (as might
 happen if we had to click a button).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 53. A cursor-transformed array of ellipses (xx) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 53. A cursor-transformed array of ellipses (174) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image053.jpg"
   style="width:3.15in"
   title="A cursor-transformed array of ellipses"
   alt="A cursor-transformed array of ellipses." />
-<!-- (./images/media/image53.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-1.</b> A cursor-transformed array of ellipses</i></small></small></p>
 
-Now that we know how to achieve movement via interactivity, it's time to
-learn how to make things move independently of our input.
-
+<p>Now that we know how to achieve movement via interactivity, it's time to
+learn how to make things move independently of our input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch7-3">7.3 Programming Motion</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6514,13 +6503,12 @@ for (let i = 0;
   }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 54. The four shapes we'll make move (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 54. The four shapes we'll make move (177) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image054.jpg"
   style="width:3.15in"
   title="The four shapes we'll make move"
   alt="The four shapes we'll make move." />
-<!-- (./images/media/image54.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-2.</b> The four shapes we&apos;ll make move</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7183,13 +7171,12 @@ taken the first steps on the road to full-on physics simulations (a
 topic way beyond the scope of this book, but I'd encourage you to
 explore it independently).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55. Colorful collision detection (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55. Colorful collision detection (196) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image055.jpg"
   style="width:3.15in"
   title="Colorful collision detection"
   alt="Colorful collision detection." />
-<!-- (./images/media/image55.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-3.</b> Colorful collision detection</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7246,13 +7233,12 @@ the ratio of a circle's circumference (the length along its perimeter)
 to its diameter (double the radius). Figure 7-4 illustrates these
 values.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 56. The circumference, diameter, and radius of a circle (xx) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 56. The circumference, diameter, and radius of a circle (198) ~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image056.jpg"
   style="width:3.15in"
   title="The circumference, diameter, and radius of a circle"
   alt="The circumference, diameter, and radius of a circle." />
-<!-- (./images/media/image56.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-4.</b> The circumference, diameter, and radius of a circle</i></small></small></p>
 
@@ -7265,13 +7251,12 @@ circumference.</p>
 
 <p>And half of 6.28 is 𝝅, or 3.14.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 57. How radians relate to 𝝅 and the circumference (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 57. How radians relate to 𝝅 and the circumference (199) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image057.jpg"
   style="width:3.15in"
   title="How radians relate to 𝝅 and the circumference"
   alt="How radians relate to 𝝅 and the circumference." />
-<!-- (./images/media/image57.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-5.</b> How radians relate to<i> 𝝅 </i>and the circumference</i></small></small></p>
 
@@ -7363,13 +7348,12 @@ hue = (hue % 360) + (180 / numCircles);
 There... That gets us much closer to achieving that hypnotic pull. See
 Figure 7-6 for a snapshot of this animation at about 15% progression.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 58. A circular loop with the Web Animations API (xx) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 58. A circular loop with the Web Animations API (202) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image058.jpg"
   style="width:3.15in"
   title="A circular loop with the Web Animations API"
   alt="A circular loop with the Web Animations API." />
-<!-- (./images/media/image58.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 7-6.</b> A circular loop with the Web Animations API</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7455,13 +7439,12 @@ when referenced via a url link to its id. In the preceding case, a
 yellow circle calls the filter via its own filter attribute, and the
 result (shown in Figure 8-1) is a soft blur, controlled by a primitive named feGaussianBlur.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. A blurred circle (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. A blurred circle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image059.jpg"
   style="width:3.15in"
   title="A blurred circle"
   alt="A blurred circle." />
-<!-- (./images/media/image59.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-1.</b> A blurred circle</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7485,13 +7468,12 @@ drop shadow applied to a circle's stroke, as shown in Figure 8-2.
 &lt;/svg&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 60. A drop-shadow filter effect (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 60. A drop-shadow filter effect (208) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image060.jpg"
   style="width:3.15in"
   title="A drop-shadow filter effect"
   alt="A drop-shadow filter effect." />
-<!-- (./images/image060.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-2.</b> A drop-shadow filter effect</i></small></small></p>
 
@@ -7569,13 +7551,12 @@ effect can "bleed," to use a print analogy. This space is known as the
 filter region, and once a filter's effect extends beyond this region,
 clipping occurs (see Figure 8-3).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. A clipped filter region (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. A clipped filter region (211) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image061.jpg"
   style="width:3.15in"
   title="A clipped filter region"
   alt="A clipped filter region." />
-<!-- (./images/image061.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-3.</b> A clipped filter region</i></small></small></p>
 
@@ -7692,13 +7673,12 @@ sample output). There is something I like about these results; the
 coloring, however, can get a little too incongruous at times. So let's
 use some filters to rein in the colors but retain the dynamic range.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. Full-spectrum RGB tiles (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. Full-spectrum RGB tiles (214) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image062.jpg"
   style="width:3.15in"
   title="Full-spectrum RGB tiles"
   alt="Full-spectrum RGB tiles." />
-<!-- (./images/image062.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-4.</b> Full-spectrum RGB tiles</i></small></small></p>
 
@@ -7841,13 +7821,13 @@ lighter, and arithmetic. In Figure 8-5, I've illustrated six of these;
 the arithmetic operator has no set output (it's fully customizable) and
 is a little too complex to properly cover in this chapter.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 63. Six of the seven SVG compositing operations (xx) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 63. Six of the seven SVG compositing operations (218) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image063.jpg"
   style="width:3.542in"
   title="Six of the seven SVG compositing operations"
   alt="Six of the seven SVG compositing operations." />
-<!-- (./images/image063.jpg){width="3.5428565179352582in" height="2.6657141294838147in"} -->
+<!-- {width="3.5428565179352582in" height="2.6657141294838147in"} -->
 
 <p><small><small><i><b>Figure 8-5.</b> Six of the seven SVG compositing operations</i></small></small></p>
 
@@ -7912,13 +7892,12 @@ vary, a common palette can be discerned due to the single feFlood color
 we're drawing upon. This kind of effect would be quite difficult to
 achieve without filters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 64. The result of the composite operation (xx) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 64. The result of the composite operation (220) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image064.jpg"
   style="width:3.15in"
   title="The result of the composite operation"
   alt="The result of the composite operation." />
-<!-- (./images/image064.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-6.</b> The result of the composite operation</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7984,13 +7963,13 @@ two instances of fractalNoise on the right. The values vary only
 slightly between instances, which should give you a sense of the
 potential variation offered by this filter primitive.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 65. Varying the base frequency and octaves for the two noise types (xx) ~~~~~~~~~~-->
+<!--~~~~~~~~ 65. Varying the base frequency and octaves for the two noise types (223) ~~~~~~~~~-->
 <img class="displayed"
   src="./images/image065.jpg"
   style="width:4.725in"
   title="Varying the base frequency and octaves for the two noise types"
   alt="Varying the base frequency and octaves for the two noise types." />
-<!-- ./images/image065.jpg){width="4.725in" height="1.6533333333333333in"} -->
+<!-- {width="4.725in" height="1.6533333333333333in"} -->
 
 <p><small><small><i><b>Figure 8-7.</b> Varying the base frequency and octaves for the two noise types</i></small></small></p>
 
@@ -8034,13 +8013,13 @@ In Figure 8-8, the output of an feTurbulence primitive (center) is used
 as the map to displace the source graphic (left), resulting in some soft
 wave-like distortion (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 66. Using turbulence as a displacement map source (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 66. Using turbulence as a displacement map source (224) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image066.jpg"
   style="width:4.725in"
   title="Using turbulence as a displacement map source"
   alt="Using turbulence as a displacement map source." />
-<!-- (./images/image066.jpg){width="4.725in" height="1.3083333333333333in"} -->
+<!-- {width="4.725in" height="1.3083333333333333in"} -->
 
 <p><small><small><i><b>Figure 8-8.</b> Using turbulence as a displacement map source</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8137,13 +8116,12 @@ that we've omitted the xChannelSelector and yChannelSelector attributes
 of feDisplacementMap; these both default to the alpha channel, which is
 fine in our case.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 67. Displacement using the blurred edge of a circle (xx) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 67. Displacement using the blurred edge of a circle (227) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image067.jpg"
   style="width:3.15in"
   title="Displacement using the blurred edge of a circle"
   alt="Displacement using the blurred edge of a circle." />
-<!-- (./images/image067.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-9.</b> Displacement using the blurred edge of a circle</i></small></small></p>
 
@@ -8162,13 +8140,12 @@ filter.create('feComposite').set({
 });
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 68. One possible iteration of the Hubble Bubble sketch (xx) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 68. One possible iteration of the Hubble Bubble sketch (228) ~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image068.jpg"
   style="width:3.15in"
   title="One possible iteration of the Hubble Bubble sketch"
   alt="One possible iteration of the Hubble Bubble sketch." />
-<!-- (./images/image068.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-10.</b> One possible iteration of the Hubble Bubble sketch</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8198,13 +8175,13 @@ see the rather stark difference between a distant light source shining
 on a circle with a radial gradient (left) vs. a circle of the same size
 with a uniform fill (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 69. Lighting cast on a radial gradient vs. a flat fill (xx) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 69. Lighting cast on a radial gradient vs. a flat fill (229) ~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image069.jpg"
   style="width:3.74in"
   title="Lighting cast on a radial gradient vs. a flat fill"
   alt="Lighting cast on a radial gradient vs. a flat fill." />
-<!-- (./images/image069.jpg){width="3.74in" height="1.9866666666666666in"} -->
+<!-- {width="3.74in" height="1.9866666666666666in"} -->
 
 <p><small><small><i><b>Figure 8-11.</b> Lighting cast on a radial gradient vs. a flat fill</i></small></small></p>
 
@@ -8233,13 +8210,13 @@ strikes the surface bounces at a definite angle. Figure 8-12 shows the
 difference between a point light emitted by feDiffuseLighting (left) vs.
 the same light emitted by feSpecularLighting (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 70. Diffuse vs. specular lighting (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 70. Diffuse vs. specular lighting (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image070.jpg"
   style="width:3.54in"
   title="Diffuse vs. specular lighting"
   alt="Diffuse vs. specular lighting." />
-<!-- (./images/image070.jpg){width="3.5433333333333334in" height="1.8816666666666666in"} -->
+<!-- {width="3.5433333333333334in" height="1.8816666666666666in"} -->
 
 <p><small><small><i><b>Figure 8-12.</b> Diffuse vs. specular lighting</i></small></small></p>
 
@@ -8411,13 +8388,12 @@ to stand on its own (in my opinion at least), with variations of this
 effect, you have a means of injecting additional visual interest into
 other generative compositions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 71. Our rough and ready paper texture (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 71. Our rough and ready paper texture (235) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image071.jpg"
   style="width:3.15in"
   title="Our rough and ready paper texture"
   alt="Our rough and ready paper texture." />
-<!-- (./images/image071.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-13.</b> Our rough and ready paper texture</i></small></small></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8576,13 +8552,12 @@ And now we're ready to see some results! Figure 8-14 shows a render I
 particularly liked, but the variation in this sketch is quite large so
 it's best to play around until you land on something you like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 72. Specular random rockiness (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72. Specular random rockiness (240) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image072.jpg"
   style="width:3.15in"
   title="Specular random rockiness"
   alt="Specular random rockiness." />
-<!-- (./images/image072.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 8-14.</b> Specular random rockiness</i></small></small></p>
 
@@ -8694,13 +8669,12 @@ the relationship between circular motion and right-angled triangles (the
 very foundation of trigonometry), a freezeframe of which you can see in
 Figure 9-1.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 73. An interactive trigonometry visualization (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 73. An interactive trigonometry visualization (245) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image073.jpg"
   style="width:3.15in"
   title="An interactive trigonometry visualization"
   alt="An interactive trigonometry visualization." />
-<!-- (./images/image073.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-1.</b> An interactive trigonometry visualization</i></small></small></p>
 
@@ -8734,13 +8708,12 @@ This is illustrated in Figure 9-2, which shows a famous fractal known as
 the Sierpinski triangle. As you can see, each building block is a
 reflection of the structure taken in its entirety.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 74. Self-similarity in the Sierpinski triangle (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 74. Self-similarity in the Sierpinski triangle (247) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image074.jpg"
   style="width:3.15in"
   title="Self-similarity in the Sierpinski triangle"
   alt="Self-similarity in the Sierpinski triangle." />
-<!-- (./images/image074.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-2.</b> Self-similarity in the Sierpinski triangle</i></small></small></p>
 
@@ -8765,13 +8738,12 @@ practice, iterations are usually limited in line with screen resolution or other
 capped to prevent our browsers crashing and our processors crunching numbers they can no 
 longer handle.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 75. Recursively constructing the Von Koch snowflake (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 75. Recursively constructing the Von Koch snowflake (248) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image075.jpg"
   style="width:3.15in"
   title="Recursively constructing the Von Koch snowflake"
   alt="Recursively constructing the Von Koch snowflake." />
-<!-- (./images/image075.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-3.</b> Recursively constructing the Von Koch snowflake</i></small></small></p>
 
@@ -8826,13 +8798,12 @@ meaning they survive but don't spread and thrive. Other cells are
 actively sprawling, exploring, disappearing, and re-spawning. It can be
 fun to watch!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 76. a snapshot of a game of life in action (xx) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 76. a snapshot of a game of life in action (250) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image076.jpg"
   style="width:3.15in"
   title="A snapshot of a Game of Life in action"
   alt="A snapshot of a Game of Life in action." />
-<!-- (./images/image076.jpg){width="3.15in" height="3.15in"} -->
 
 <p><small><small><i><b>Figure 9-4.</b> A snapshot of a Game of Life in action</i></small></small></p>
 
