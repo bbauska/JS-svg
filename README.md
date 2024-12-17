@@ -1690,19 +1690,19 @@ we actually do this in practice?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7b">2.7b Invoking Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-To use a function we've defined, we need to invoke it. This is
+<p>To use a function we've defined, we need to invoke it. This is
 synonymous with calling or executing the function. It can be done like
-so:
+so:</p>
 
 <pre>
 // <i>Invoking a function.</i>
 performSomeTask();
 </pre>
 
-To invoke a function that has parameters as part of its definition, we
+<p>To invoke a function that has parameters as part of its definition, we
 supply it with arguments. Arguments are the actual values we give the
 function when we invoke it. The parameters, on the other hand, are how
-we define these values. Let's see how we might invoke a function with arguments.
+we define these values. Let's see how we might invoke a function with arguments.</p>
 
 <pre>
 sayHello('Dave'); 
@@ -1711,9 +1711,9 @@ console.log(squareNumber(4));
 -&gt; 16
 </pre>
 
-Here, we've provided the argument &apos;Dave&apos; for the first function and 4
+<p>Here, we've provided the argument &apos;Dave&apos; for the first function and 4
 for the second, and we've received the expected output. But what if we
-called the function and forgot the arguments? Let's try it out.
+called the function and forgot the arguments? Let's try it out.</p>
 
 <pre>
 sayHello(); 
@@ -1722,13 +1722,13 @@ squareNumber();
 -&gt; NaN
 </pre>
 
-We've encountered undefined before, but not NaN. This just means "not a
+<p>We've encountered undefined before, but not NaN. This just means "not a
 number." In both cases, our functions don't work so well without
-arguments. How might we fix this and make them a little more resilient?
+arguments. How might we fix this and make them a little more resilient?</p>
 
-One straightforward way is to assign default values when defining a
+<p>One straightforward way is to assign default values when defining a
 function's parameters. Let's rewrite our sayHello() function as an
-example.
+example.</p>
 
 <pre>
 function sayHello(name = ", ah it's yourself") {
@@ -1739,14 +1739,14 @@ sayHello();
 -&gt; "Howaya, ah it's yourself, what's the craic?"
 </pre>
 
-As you can see, creating a default value is as simple as assigning a
+<p>As you can see, creating a default value is as simple as assigning a
 value to the parameter when you define it. Now we've created a more
-human- sounding fallback than undefined.
+human- sounding fallback than undefined.</p>
 
-In the case of the squareNumber() function, a default value doesn't make
+<p>In the case of the squareNumber() function, a default value doesn't make
 as much sense. Instead, we could use the ternary technique covered
 earlier to provide some actionable feedback if the function is called
-without an argument.
+without an argument.</p>
 
 <pre>
 function squareNumber(number) {
@@ -1754,13 +1754,13 @@ function squareNumber(number) {
 }
 </pre>
 
-In the squareNumber() function body, our ternary operator is essentially
+<p>In the squareNumber() function body, our ternary operator is essentially
 asking "Is number defined? If so, return the result of multiplying it by
-itself; otherwise, return our fallback message."
+itself; otherwise, return our fallback message."</p>
 
-At this point, you should be in a better position to fully understand
+<p>At this point, you should be in a better position to fully understand
 the function defined in our first generative sketch. Have another look
-and see if it makes more sense now.
+and see if it makes more sense now.</p>
 
 <pre>
 function random(min, max, integer = true) { 
@@ -1768,16 +1768,15 @@ function random(min, max, integer = true) {
   let number = integer ? Math.floor(random) : random; return number; 
 }
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7c">2.7c Scope</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The scope of a variable refers to its visibility, or where in a program
+<p>The scope of a variable refers to its visibility, or where in a program
 the variable can be accessed. It's particularly important to be aware of
-when working with functions.
+when working with functions.</p>
 
-If, for example, we defined a variable within a function, it would only
-be visible within that function.
+<p>If, for example, we defined a variable within a function, it would only
+be visible within that function.</p>
 
 <pre>
 function scopeTest() { 
@@ -1786,8 +1785,8 @@ function scopeTest() {
     -&gt; Uncaught ReferenceError: a is not defined
 </pre>
 
-However, if we defined the same variable outside that function, it would be visible from 
-<i>within</i> the function.
+<p>However, if we defined the same variable outside that function, it would be visible from 
+<i>within</i> the function.</p>
 
 <pre>
 const a = 1;
@@ -1795,40 +1794,39 @@ function scopeTest() { console.log(a); }
 scopeTest(); -&gt; 1
 </pre>
 
-In the first case, the variable is block-scoped, that is, confined to
+<p>In the first case, the variable is block-scoped, that is, confined to
 the block of the function. In the latter case, the variable is defined
 globally (outside all functions) and can be accessed anywhere in the
-program.
+program.</p>
 
-Although it may seem more beneficial to be able to access a variable
+<p>Although it may seem more beneficial to be able to access a variable
 from anywhere within a program, we should exercise caution where global
 variables are concerned. In general, it is better to explicitly restrict
 the scope of our variables. This is one of the main reasons why var has
 been deprecated, as it can't be "contained" in the same way that let and
-const can be.
+const can be.</p>
 
 <pre>
 function scopeTest() { var a = 1; }
 console.log(a); -&gt; 1
 </pre>
 
-As you can see earlier, when using var, the variable can break out of
-the surrounding block, and this can be problematic in larger programs.
+<p>As you can see earlier, when using var, the variable can break out of
+the surrounding block, and this can be problematic in larger programs.</p>
 
-When coding generative art, we're usually writing relatively small
+<p>When coding generative art, we're usually writing relatively small
 programs (or "sketches") and global variables aren't as much of an
 issue. However, we'll discuss in the next section how best to make
 certain settings globally available throughout our sketches without
-relying on global variables.
-
+relying on global variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7d">2.7d Anonymous Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Functions don't always have to have a name. Particularly when working
+<p>Functions don't always have to have a name. Particularly when working
 with events and callbacks (which we'll cover in a later chapter),
 functions are often called anonymously as function expressions, executed
 in order to return a value. Anonymous functions can also be assigned to
-variables that then store the returned value.
+variables that then store the returned value.</p>
 
 <pre>
 // <i>An anonymous function expression assigned to a variable.</i>
@@ -1842,8 +1840,8 @@ function.
 sum(5, 4); -&gt; 9
 </pre>
 
-One thing we cannot do with anonymous functions is use them at the start
-of a statement.
+<p>One thing we cannot do with anonymous functions is use them at the start
+of a statement.</p>
 
 <pre>
 // <i>The below is a no-no.</i>
@@ -1852,13 +1850,12 @@ function(a, b) {
 }
 -&gt; Uncaught SyntaxError: Function statements require a function name
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7e">2.7e Arrow Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So far we've covered functions declared with the function keyword, but
+<p>So far we've covered functions declared with the function keyword, but
 there is another, more modern way of writing functions. These functions
-are called arrow functions due to the arrow syntax they employ.
+are called arrow functions due to the arrow syntax they employ.</p>
 
 <pre>
 // <i>Basic syntax of an arrow function.</i>
@@ -1866,47 +1863,46 @@ const peformSomeTask = () =&gt; { // <i>... code defining the task.</i>
 }
 </pre>
 
-They are concise alternatives to the traditional function expressions
-we've just covered. Let's rewrite the sum() function as an example.
+<p>They are concise alternatives to the traditional function expressions
+we've just covered. Let's rewrite the sum() function as an example.</p>
 
 <pre>
 const sum = (a, b) =&gt; { return a + b; }
 </pre>
 
-A little shorter, as you can see. But it can get even more concise than
+<p>A little shorter, as you can see. But it can get even more concise than
 this if our function only consists of a single statement that returns a
 value (which exactly describes our sum() function). In such a case, we
-don't need the curly braces or even the return statement itself.
+don't need the curly braces or even the return statement itself.</p>
 
 <pre>
 const sum = (a, b) =&gt; a + b;
 </pre>
 
-Because the arrow function body consists of just a single statement (
+<p>Because the arrow function body consists of just a single statement (
 a + b ), it is assumed we want the value of this statement returned.
-This is what's called an implicit return.
+This is what's called an implicit return.</p>
 
-Now, not all arrow functions can be so neatly condensed, just those that
+<p>Now, not all arrow functions can be so neatly condensed, just those that
 have a single return statement. But such one-liners are liberally used
 throughout most modern JavaScript code bases, particularly those that
 use declarative front-end frameworks like React, so it's worth
-familiarizing yourself with them.
+familiarizing yourself with them.</p>
 
-There is another reason to use arrow functions that stretches a little
+<p>There is another reason to use arrow functions that stretches a little
 beyond the scope of this chapter, and it's this. What I mean is the this
 keyword, which is a complicated topic in JavaScript (and complicated to
 explain without getting tangled in reflexive language). Suffice to say,
 the value of this is more predictable and less prone to bugs when used
-in arrow functions. But don't worry about this for now.
+in arrow functions. But don't worry about this for now.</p>
 
-Instead, let's concern ourselves with some data structures that will
+<p>Instead, let's concern ourselves with some data structures that will
 serve us well in generative art and in JavaScript more generally. This
-is the subject of our next section.
-
+is the subject of our next section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-8">2.8 Objects and Arrays</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Variables are great when you need to define values like numbers,
+<p>Variables are great when you need to define values like numbers,
 strings, and booleans, but what if you need a more sophisticated way to
 represent and organize your data? Say you have a long list of things --
 be they this week's groceries, the employees in your company, the
@@ -1914,7 +1910,7 @@ locations you want to visit before you kick the proverbial bucket, or,
 to bring it back to generative art, the hexadecimal codes of the 216
 web-safe colors you'd like to sample for your next retro-inspired
 masterpiece (in the 1990s, web developers -- or web masters as they were
-then known -- had a much more restricted color palette).
+then known -- had a much more restricted color palette).</p>
 
 <p>When you have lists of anything, arrays are your friend.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2327,41 +2323,41 @@ const container = document.getElementById('container');
 svg.addTo(container);
 </pre>
 
-Most functions in SvJs are chainable, meaning you can chain them
-together using dot notation, like so:
+<p>Most functions in SvJs are chainable, meaning you can chain them
+together using dot notation, like so:</p>
 
 <pre>
 methodOne().methodTwo();
 </pre>
 
-The new SvJs() constructor method is no exception, so our new parent SVG
+<p>The new SvJs() constructor method is no exception, so our new parent SVG
 element can actually be immediately attached to a DOM element once
 instantiated, by appending the addTo() method to it. This creates a
 method chain (think of the dot as the link). And if we pass the
 getElementById() DOM method as an argument instead of assigning it to a
-variable, we can condense our code down to a single line:
+variable, we can condense our code down to a single line:</p>
 
 <pre>
 // <i>Parent SVG.</i>
 const svg = new SvJs().addTo(document.getElementById('container'));
 </pre>
 
-Concision doesn't always beat clarity however, so if this one-liner is a
+<p>Concision doesn't always beat clarity however, so if this one-liner is a
 little too compressed for your liking, keep your template code as is, no
-need to replace it with the aforementioned.
+need to replace it with the aforementioned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-2">3.2 The Viewport and ViewBox</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The viewport refers to the visible portion of our SVG element. It is
-defined implicitly, via the use of width and height attributes.
+<p>The viewport refers to the visible portion of our SVG element. It is
+defined implicitly, via the use of width and height attributes.</p>
 
-One of the interesting things about the SVG format is its flexibility
+<p>One of the interesting things about the SVG format is its flexibility
 with regard to its workspace, that is, the areas in which it can contain
 content. An SVG may contain much more besides what is visible at any one
 time through the viewport. This opens up the possibility of working with
-sprites, artboards, and other offscreen assets.
+sprites, artboards, and other offscreen assets.</p>
 
-Because we'll be working with a square SVG viewport, our width and
+<p>Because we'll be working with a square SVG viewport, our width and
 height will be the same, so we can use a single variable to store this
 value. We'll call this svgSize. We don't know in advance what the screen
 size or orientation will be, so hard-coding a value wouldn't be wise.
@@ -2370,43 +2366,43 @@ window.innerWidth and window.innerHeight and set svgSize to the smaller
 of the two values. This will ensure a square (or 1:1) aspect ratio. The
 ternary operator that we covered in the previous chapter is particularly
 useful for these kinds of checks. Include it as follows in the template
-to initialize the svgSize variable:
+to initialize the svgSize variable:</p>
 
 <pre>
 // <i>Viewport size (1:1 aspect ratio).</i>
 const svgSize = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
 </pre>
 
-The viewBox is another important top-level SVG attribute. It is related
+<p>The viewBox is another important top-level SVG attribute. It is related
 to the viewport but has more powerful (and more complex) capabilities.
 The viewBox allows us to define the position and dimensions of our
-viewport in user space.
+viewport in user space.</p>
 
-What does this mean exactly? Well, you can think of user space as
+<p>What does this mean exactly? Well, you can think of user space as
 unitless, or unit-independent, space. A value of 100 might refer to
 pixels, millimeters, meters, or any other unit. It will default to
 pixels, but the point of the viewBox is that it can free us from
 thinking in absolute units. We can work with our own internal coordinate
 system without worrying about the actual dimensions of the device used
-to render the SVG.
+to render the SVG.</p>
 
-Personally, I like working with a width and height of 1000, as I find it
+<p>Personally, I like working with a width and height of 1000, as I find it
 intuitive to divide up a canvas that way. Those 1000 units could later
 be squeezed into a square 500px wide, or splashed across a billboard the
-size of a bus.
+size of a bus.</p>
 
-The first two values of the viewBox define its starting coordinates
+<p>The first two values of the viewBox define its starting coordinates
 (known as min-x and min-y), and the second two define the width and
 height. We'll keep things simple by defining the viewBox as 0 0 1000
-1000.
+1000.</p>
 
-If the viewport and viewBox don't share the same aspect (i.e., width to
+<p>If the viewport and viewBox don't share the same aspect (i.e., width to
 height) ratio, the preserveAspectRatio attribute can be used to specify
 how the browser should display the SVG. This can get complex quite
 quickly, which is why I've already ensured our viewport and viewBox will
 share the same 1:1 (i.e., square) aspect ratio. For now, just be aware
 the preserveAspectRatio attribute exists, should you wish to facilitate
-more elaborate setups in future.
+more elaborate setups in future.</p>
 
 Sometimes to best understand how something works, you need to visually
 interact with it. With that in mind, I built a little CodePen sketch (or
@@ -2415,16 +2411,16 @@ viewBox values, so you can see how they can be used together to scale
 and crop the content visible within the SVG viewport. You can find the pen at
 [davidmatthew.ie/generative-art-javascript-svg#viewBox](https://davidmatthew.ie/generative-art-javascript-svg#viewBox)
 
-At this point, we have the values we need for our viewBox and viewport,
-but we haven't yet learned how to put them to use.
+<p>At this point, we have the values we need for our viewBox and viewport,
+but we haven't yet learned how to put them to use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-3">3.3 Setting and Getting Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Every SvJs instance, whether it's the parent SVG or one of its child
+<p>Every SvJs instance, whether it's the parent SVG or one of its child
 elements, has a set() method. This method allows us to set the values of
-an element's attributes.
+an element's attributes.</p>
 
-How do we know what attributes an element has? Well, we'd consult (i.e.,
+<p>How do we know what attributes an element has? Well, we'd consult (i.e.,
 google) some official documentation. The source I'd recommend is the
 Mozilla Developer Network's SVG element reference, available at
 [developer.mozilla.org/en-US/docs/Web/SVG/Element.](https://developer.mozilla.org/en-US/docs/Web/SVG/Element)
@@ -2433,17 +2429,17 @@ explorations. And while we're at it, the full documentation for the SvJs
 library is available at
 [npmjs.com/package/svjs](https://npmjs.com/package/svjs) (or at the
 related GitHub repository); if you'd prefer, have that to hand for a
-more structured definition of each method.
+more structured definition of each method.</p>
 
-Getting back to setting values, the set() method accepts an object as
-its argument and takes the following format:
+<p>Getting back to setting values, the set() method accepts an object as
+its argument and takes the following format:</p>
 
 <pre>
 svg.set({ attribute1: value1, attribute2: value2, attributeN: valueN )};
 </pre>
 
-If you're setting a large number of properties at once, you might
-consider adjusting the formatting for the sake of readability.
+<p>If you're setting a large number of properties at once, you might
+consider adjusting the formatting for the sake of readability.</p>
 
 <pre>
 svg.set({ 
@@ -2453,64 +2449,62 @@ svg.set({
 )};
 </pre>
 
-It's up to you however; either way works.
+<p>It's up to you however; either way works.</p>
 
-The attributes of note for our parent SVG are the width and height
+<p>The attributes of note for our parent SVG are the width and height
 (which constitute the viewport) and the viewBox. We can now add the
-following code to our template to set these attributes:
+following code to our template to set these attributes:</p>
 
 <pre>
 svg.set({ width: svgSize, height: svgSize, viewBox: '0 0 1000 1000'
 });
 </pre>
 
-If you run the live-server command and navigate to our template folder,
+<p>If you run the live-server command and navigate to our template folder,
 you'll just see a blank page at this point. This is because our SVG
 canvas doesn't contain anything to distinguish it from the background.
 We'll address this shortly by creating a rectangle to act as a
-background layer/canvas.
+background layer/canvas.</p>
 
-Just as we can set() values, we can also get() them. It's unlikely
+<p>Just as we can set() values, we can also get() them. It's unlikely
 you'll find yourself doing this too often, but it's good to be aware the
 functionality exists. The following code, for example, outputs our
-viewBox value to the console:
+viewBox value to the console:</p>
 
 <pre>
 console.log(svg.get('viewBox'));
 </pre>
 
-Fetching attribute values via the get() method can be useful when
+<p>Fetching attribute values via the get() method can be useful when
 working with event listeners, or in other cases where the values are
-being updated dynamically.
+being updated dynamically.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-4">3.4 Quicker Element Creation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If we had to call the new SvJs constructor and the addTo method each
+<p>If we had to call the new SvJs constructor and the addTo method each
 time we created a new SVG element, it might get a little tiresome after
 a while. This is where the SvJs create() method comes in, as it combines
 these two steps into one. To create an element and automatically append
-it to our parent SVG, we'd simply write
+it to our parent SVG, we'd simply write;</p>
 
 <pre>
 svg.create('elementName');
 </pre>
 
-When creating an element, it's usually best to assign it to a variable
+<p>When creating an element, it's usually best to assign it to a variable
 in the process, unless you're sure you won't need a reference to it
-again later. You might therefore write the aforementioned as
+again later. You might therefore write the aforementioned as;</p>
 
 <pre>
 const variableName = svg.create('elementName');
 </pre>
 
-The create() method is chainable and can be called by child elements
-too.
-
+<p>The create() method is chainable and can be called by child elements
+too.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-5">3.5 Lines and Shapes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The SVG spec defines six primitive shape types:
+<p>The SVG spec defines six primitive shape types:</p>
 
 -   Circles
 
@@ -2524,7 +2518,7 @@ The SVG spec defines six primitive shape types:
 
 -   Rectangles
 
-As we need to set up a background, let's start with the rectangle.
+<p>As we need to set up a background, let's start with the rectangle.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5a">3.5a Rectangles and Squares</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3122,12 +3116,12 @@ couple of reasons for this:</p>
 <ul>
   <li>Gradients are defined as stand-alone elements within the defs
     section rather than treated as purely presentational element
-	attributes. The upside of this is that a single gradient can be
-	shared among multiple elements, but the downside is we've got a
-	couple of extra steps to begin with.</li>
+    attributes. The upside of this is that a single gradient can be
+    shared among multiple elements, but the downside is we've got a
+    couple of extra steps to begin with.</li>
   <li>For each gradient color, a stop element must be defined and nested
     within the gradient element to define the color and its offset (or
-	position). This adds another series of steps.</li>
+    position). This adds another series of steps.</li>
 </ul>
 
 <p>To remedy the aforementioned, SvJs offers a dedicated createGradient()
@@ -3271,9 +3265,9 @@ interesting, but sufficient to showcase the basics.</p>
 
 <p><small><small><i><b>Figure 3-9.</b> A basic pattern</i></small></small></p>
 
-In the next few steps, we'll create our optical illusion. First, comment
+<p>In the next few steps, we'll create our optical illusion. First, comment
 out the code that created the white rectangle pattern (but keep the
-shape it's applied to).
+shape it's applied to).</p>
 
 <pre>
 // <i>Create our pattern.</i>
@@ -3293,10 +3287,10 @@ svg.create('rect').set({
 });
 </pre>
 
-To create the base of our optical illusion, we need a total of eight
+<p>To create the base of our optical illusion, we need a total of eight
 rectangles. Four of them will be white squares arranged in a particular
 order, and four will be thin gray rectangles used as separators. We'll
-use a couple of for loops to create these. First, the white squares:
+use a couple of for loops to create these. First, the white squares:</p>
 
 <pre>
 // <i>Create 4 x white squares within the pattern.</i>
@@ -3308,31 +3302,31 @@ for (let i = 0;
   }
 </pre>
 
-The width, height, and fill merely repeat themselves on each iteration;
+<p>The width, height, and fill merely repeat themselves on each iteration;
 the only attributes we're varying are the x and y coordinates. To do
 this, we're using the changing value of the i iterator. The y coordinate
 increases by 50 on each run, which is simple enough. The expression
 defining the x position is a little more complicated. What we're saying
 here is that we want x to increase by 20 on each iteration, <i>except</i> for
-the final one (where i === 3). For this, we want to set it to 20.
+the final one (where i === 3). For this, we want to set it to 20.</p>
 
-If you view the pattern at this point, you should see an undulating
+<p>If you view the pattern at this point, you should see an undulating
 array of squares. It's not an optical illusion yet; it looks more like
-rudimentary pixel art. To complete the illusion, we need our separators.
+rudimentary pixel art. To complete the illusion, we need our separators.</p>
 
 <pre>
 // <i>Create 4 x thin grey rectangles to separate the squares.</i>
 for (let i = 0; i < 4; i += 1) { 
   pattern.create('rect').set({ 
     x: 0, 
-	y: 45 + (i * 50), 
-	width: 100, 
-	height: 5, fill: '#666'
+    y: 45 + (i * 50), 
+    width: 100, 
+    height: 5, fill: '#666'
   });
 }
 </pre>
 
-Now when you hit save, you should see something like Figure 3-10.
+<p>Now when you hit save, you should see something like Figure 3-10.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 20. A repeating pattern creating an optical illusion (82) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -3343,20 +3337,20 @@ Now when you hit save, you should see something like Figure 3-10.
 
 <p><small><small><i><b>Figure 3-10.</b> A repeating pattern creating an optical illusion</i></small></small></p>
 
-If the illusion worked, the gray lines should appear slightly slanted,
+<p>If the illusion worked, the gray lines should appear slightly slanted,
 particularly those you're not directly focusing on. Hopefully this will
 give you some sense of the power of patterns! We've touched on the main
 points, but they can be customized extensively with further parameters
-if needed.
+if needed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-10">3.10 Grouping and Reusing Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Grouping elements together can be done with the g element. There are a
+<p>Grouping elements together can be done with the g element. There are a
 number of use cases for this. One, which applications like Inkscape have
 adopted, is to use the g element to support layer functionality. Another
 is to group elements together for the purposes of transformation (i.e.,
 moving, rotating, or skewing multiple elements at once). And another is
-to simply group items together to better organize your SVG.
+to simply group items together to better organize your SVG.</p>
 
 <pre>
 // <i>Create a circle and add it to a group.</i>
@@ -3365,10 +3359,10 @@ const group = svg.create('g');
 circle.addTo(group);
 </pre>
 
-If you want to group elements together for later reuse (so that they are
+<p>If you want to group elements together for later reuse (so that they are
 only displayed when referenced), you'd use the symbol element. Symbols,
 like patterns, can have their own viewport and viewBox. But they are
-called via the use element rather than applied to a fill or stroke.
+called via the use element rather than applied to a fill or stroke.</p>
 
 <pre>
 // <i>Create a symbol consisting of a circle and square.</i>
@@ -3386,15 +3380,14 @@ svg.create('use').set({ href: '#mySymbol', x: 200, y: 200 });
 svg.create('use').set({ href: '#mySymbol', x: 400, y: 400 });
 </pre>
 
-Symbols don't have quite the same appeal outside of a declarative
+<p>Symbols don't have quite the same appeal outside of a declarative
 context, so going forward we won't be relying on them for our
 imperative- based creations. But there's plenty more to unpack if you
-want to explore further on MDN.
+want to explore further on MDN.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-11">3.11 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-To recap, we've covered the following in this chapter:
+<p>To recap, we've covered the following in this chapter:</p>
 
 <ul>
   <li>The core functions provided by the SvJs library</li>
@@ -3408,98 +3401,94 @@ To recap, we've covered the following in this chapter:
     better structure our SVG</li>
 </ul>
 
-In the next chapter, we'll explore how we can combine regularity with
-randomness to create truly generative compositions.
+<p>In the next chapter, we'll explore how we can combine regularity with
+randomness to create truly generative compositions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 href="#ch4">CHAPTER 4</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-1">4.1 Randomness and Regularity</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So far, all of our sketches (bar the first one) have lacked a certain
+<p>So far, all of our sketches (bar the first one) have lacked a certain
 ingredient usually considered foundational to the very genre of
-generative art:
-
-namely, randomness. When we surrender full control over the result of
+generative art: namely, randomness. When we surrender full control over the result of
 our sketches and leave certain elements to chance, it allows for
-variation, for exploration, and for <i>discovery</i>.
+variation, for exploration, and for <i>discovery</i>.</p>
 
-In this chapter, we'll learn how to randomize parameters like colors,
+<p>In this chapter, we'll learn how to randomize parameters like colors,
 sizes, and coordinates; how to randomly pick from predefined ranges and
 arrays; and how to work with different probability distributions. We'll
 also cover a popular generative technique that involves constructing
 regular grids and randomizing their contents. We'll then learn how to
 apply randomness to the construction of the grids themselves so that the
-underlying structure of our compositions can be varied.
+underlying structure of our compositions can be varied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Analogue and Digital Randomness</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Techniques to incorporate randomness into art began long before the
+<p>Techniques to incorporate randomness into art began long before the
 digital age. As far back as the fifteenth century, Leonardo da Vinci
 suggested that artists take inspiration from sources rich in random and
 suggestive detail, such as the arbitrary forms found on the surface of
 stained stones and dirty walls. Artists like Max Ernst took such prompts
 quite literally; his frottage technique was borne of dropping paper at
 random on floorboards full of scrapes and scratches and making charcoal
-rubbings from the textures.
+rubbings from the textures.</p>
 
-Contemporaries of Ernst, the early twentieth-century surrealists, also
+<p>Contemporaries of Ernst, the early twentieth-century surrealists, also
 played with randomness. They developed a technique known as automatism,
 which aimed to eradicate full conscious control over an artwork's
 execution, allowing chance and the unconscious to act as the primary
-driving forces.
+driving forces.</p>
 
-These examples, however, all draw upon the randomness found in the
+<p>These examples, however, all draw upon the randomness found in the
 analogue world. In the more deterministic world of the digital, where
 ones and zeros reign, true randomness is harder to find. It must instead
-be simulated.
+be simulated.</p>
 
-The good news is that this is more of an academic point than a practical
+<p>The good news is that this is more of an academic point than a practical
 obstacle. Simulated randomness (or pseudo-randomness as it's referred to
 in the field of computer science) is more than enough for our needs. And
 it's very easy to demonstrate this too, thanks to JavaScript's built-in
 Math.random() function. Typing the function into your browser console
 and hitting return should provide sufficient assurance that the
 17-decimal floating-point number it throws back at you is unlikely to
-repeat itself anytime soon. Random enough, right?
+repeat itself anytime soon. Random enough, right?</p>
 
 <pre>
 Math.random();
 -&gt; 0.32846662956382255
 </pre>
 
-The limitation of this function is that it only returns a number between
+<p>The limitation of this function is that it only returns a number between
 0 and 1. Granted, we can easily multiply the output by whatever factor
 we want, but what if we needed a number within a specific range? Or
-wanted to choose an item at random from an array?
-
+wanted to choose an item at random from an array?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-1a">4.1a The SvJs Gen.random( ) Function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Thankfully the SvJs library comes armed with some extras: specifically,
+<p>Thankfully the SvJs library comes armed with some extras: specifically,
 an optional module called Gen that contains a number of useful functions
-for generative artists. One of these is the Gen.random() function.
+for generative artists. One of these is the Gen.random() function.</p>
 
-To load the Gen module, we need to add it to our import statement at the
+<p>To load the Gen module, we need to add it to our import statement at the
 top of our sketches. Modify the template sketch to include this as the
-first line (replacing the previous import statement):
+first line (replacing the previous import statement):</p>
 
 <pre>
 import { SvJs, Gen } from '../../node_modules/svjs/src/ index.js';
 </pre>
 
-Now we can call Gen.random() and any of the other Gen methods
-
+<p>Now we can call Gen.random() and any of the other Gen methods
 (more of which we'll cover later). When called without any arguments,
 Gen.random() behaves just like Math.random(); it returns a
-floating-point number between 0 and 1.
+floating-point number between 0 and 1.</p>
 
 <pre>
 Gen.random();
 -&gt; 0.5682831319665758
 </pre>
 
-If, however, we supply some arguments, it suddenly becomes a lot more
-useful. Here are some examples:
+<p>If, however, we supply some arguments, it suddenly becomes a lot more
+useful. Here are some examples:</p>
 
 <pre>
 // <i>Return an integer between 50 and 100.</i>
@@ -3517,42 +3506,40 @@ let rainbow = ['red', 'yellow', 'pink',
 -&gt; 'purple'
 </pre>
 
-As you can see, if we provide two numbers, the Gen.random() function
+<p>As you can see, if we provide two numbers, the Gen.random() function
 will treat them as the lower and upper thresholds of a range and return
 a number within that range. An integer is returned by default, but if we
 set the third argument to true, it will return a floating-point number.
 It will also return a floating-point number if we supply no arguments at
 all (as in our first example), or if the difference between the first
-and second arguments is less than or equal to one.
+and second arguments is less than or equal to one.</p>
 
-If we pass in an array as the sole argument, an item is randomly
+<p>If we pass in an array as the sole argument, an item is randomly
 selected from that array. I purposely used colors in the example
 (apologies if the "Sing a Rainbow" song got stuck in your head), as this
 functionality is particularly useful when selecting colors from a
-predefined palette.
-
+predefined palette.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2">4.2 Elements Everywhere All at Once</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Let's create a sketch and put Gen.random() to work. Copy the 00-template
+<p>Let's create a sketch and put Gen.random() to work. Copy the 00-template
 file as we usually do and rename it to something like 06-elements-
-everywhere.
+everywhere.</p>
 
-Below our background code, initialize a variable to store a random
+<p>Below our background code, initialize a variable to store a random
 iteration count, which will determine how many times our for loop (which
-we'll set up after) will run.
+we'll set up after) will run.</p>
 
 <pre>
 let iterations = Gen.random(500, 1000);
 </pre>
 
-Our iterations will be an integer anywhere between 500 and 1000. With
+<p>Our iterations will be an integer anywhere between 500 and 1000. With
 that in place, let's write the loop. We'll keep it simple initially and
 just use it to create small circles. Each circle will be given a random
 position within the dimensions of the viewBox (0 to 1000), and its
 radius will be between 1 and 10. This should create an effect not too
-dissimilar to the spattering of paint (illustrated in Figure 4-1).
+dissimilar to the spattering of paint (illustrated in Figure 4-1).</p>
 
 <pre>
 for (let i = 0; 
@@ -3577,33 +3564,30 @@ for (let i = 0;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2a">4.2a Varying Color and Opacity</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-At this point, we have colorless spatters randomly speckling the canvas.
+<p>At this point, we have colorless spatters randomly speckling the canvas.
 Let's change this up by varying the hue and opacity of the fill. We'll
 do this with the hsl() function, which is something we'll be drawing
-upon quite a lot. Its syntax is as follows:
+upon quite a lot. Its syntax is as follows:</p>
 
-<pre>
-hsl(hue saturation lightness / alpha)
-</pre>
+<pre>hsl(hue saturation lightness / alpha)</pre>
 
-The hue can be any number between 0 and 360. The saturation and
+<p>The hue can be any number between 0 and 360. The saturation and
 lightness are percentage values, and the alpha component (which
 determines the opacity) can be either a percentage or a number between 0
-and 1.
+and 1.</p>
 
-In our loop, add the following line below the radius (making sure to
-separate the lines with a comma):
+<p>In our loop, add the following line below the radius (making sure to
+separate the lines with a comma):</p>
 
 <pre>
 fill: `hsl(${Gen.random(0, 360)} 80% 80% / ${Gen. random(5, 40)}%)`
 </pre>
 
-Now our speckles have come a little more to life (see Figure 4-2). But
+<p>Now our speckles have come a little more to life (see Figure 4-2). But
 why stick to circles? Why not throw some other elements into the mix and
 make it look a little less like a cosmic ball pit? In the next version
 of the sketch, we'll do precisely that. The complexity will ramp up
-considerably, so we'll step through it slowly.
-
+considerably, so we'll step through it slowly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22. A more colorful spatter (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -3616,22 +3600,25 @@ considerably, so we'll step through it slowly.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2b">4.2b Varying Element Selection</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Below our iterations variable, create an array called elements and
-populate it with a circle, a line, and a rect: let elements =
-&lbrack;&apos;circle&apos;, &apos;line&apos;, &apos;rect&apos;&rbrack;;
+<p>Below our iterations variable, create an array called elements and
+populate it with a circle, a line, and a rect:</p>
 
-Next, delete all the existing code in our for loop, and replace it with
+<pre>
+let elements = &lbrack;&apos;circle&apos;, &apos;line&apos;, &apos;rect&apos;&rbrack;;</p>
+</pre>
+
+<p>Next, delete all the existing code in our for loop, and replace it with
 the following line that will pick a random element from the elements
-array defined previously.
+array defined previously.</p>
 
 <pre>
 // <i>Pick a random element.</i>
 let element = Gen.random(elements);
 </pre>
 
-In the next step, we'll initialize some variables with random values
+<p>In the next step, we'll initialize some variables with random values
 that we can later apply to our randomly selected element. In addition to
-our x, y, and fill, we'll also vary our stroke and stroke-width.
+our x, y, and fill, we'll also vary our stroke and stroke-width.</p>
 
 <pre>
 // <i>Set up variables that we can use on any element.</i>
@@ -3642,12 +3629,12 @@ let stroke = `hsl(${Gen.random(0, 120)} 80% 80% / ${Gen.random(5, 40)}%)`;
 let strokeWidth = `${Gen.random(1, 3)}`;
 </pre>
 
-You'll notice here that I've constrained the x and y variables to a
+<p>You'll notice here that I've constrained the x and y variables to a
 range of 200 to 800, which ensures our shapes remain within that region
 and don't cover the entire canvas. This is so that we end up something
-that more closely resembles a composition than an explosion.
+that more closely resembles a composition than an explosion.</p>
 
-Next we'll set up a props variable (a commonly used shorthand for
+<p>Next we'll set up a props variable (a commonly used shorthand for
 properties). The idea is that we set our element properties in
 accordance with the element chosen. Given that each element has its own
 distinct syntax for certain attributes (e.g., a rect has an x and y, but
@@ -3655,7 +3642,7 @@ a circle has a cx and cy), we need to have a way of conditionally
 populating the props. There are a few ways we could approach this, but a
 switch statement lends itself particularly well to this situation. It
 allows us to populate the props variable on a case-by-case basis (quite
-literally, as you'll see).
+literally, as you'll see).</p>
 
 <pre>
 // <i>Initialise the properties variable.</i>
@@ -3666,31 +3653,31 @@ switch(element) {
   case 'circle': props = { 
     cx: x, cy: y, r:
       Gen.random(1, 10), 
-	  fill: fill, 
-	  stroke: stroke, 
-	  stroke_width: strokeWidth
+      fill: fill, 
+      stroke: stroke, 
+      stroke_width: strokeWidth
   }; 
   break; case 'line': props = { 
     x1: x, 
-	y1: y, 
-	x2: x + (Gen.random(-20, 20)), 
-	y2: y + (Gen.random(-20, 20)), 
-	stroke: stroke
+    y1: y, 
+    x2: x + (Gen.random(-20, 20)), 
+    y2: y + (Gen.random(-20, 20)), 
+    stroke: stroke
   }; 
   break; case 'rect': props = { 
     x: x, 
-	y: y, 
-	width: Gen.random(5, 25),
+    y: y, 
+    width: Gen.random(5, 25),
     height: Gen.random(5, 25), 
-	fill: fill, 
-	stroke: stroke, 
-	stroke_width: strokeWidth, 
-	transform: `rotate(${Gen.random(0, 360)} 500 500)`
+    fill: fill, 
+    stroke: stroke, 
+    stroke_width: strokeWidth, 
+    transform: `rotate(${Gen.random(0, 360)} 500 500)`
   };
 }
 </pre>
 
-The one line here that perhaps calls for a little further explanation is
+<p>The one line here that perhaps calls for a little further explanation is
 the transform attribute included in the rect properties. This attribute
 can take either a translate, rotate, scale, or skew command as its
 argument, along with a transform value and two other values that
@@ -3698,22 +3685,22 @@ represent the transform origin. The origin is a set of x and y
 coordinates that define the point relative to which the transform
 occurs. For example, in the case of the rotate command, we are randomly
 rotating the rect relative to 500 500, that is, the center of the
-viewBox.
+viewBox.</p>
 
-We have one line left to include in the loop, right after our switch
+<p>We have one line left to include in the loop, right after our switch
 statement. This is the line that actually creates the element and
-applies the props to it.
+applies the props to it.</p>
 
 <pre>
 // <i>Create the element and set its properties.</i>
 svg.create(element).set(props);
 </pre>
 
-When you run the sketch now, you should (hopefully) see something along
+<p>When you run the sketch now, you should (hopefully) see something along
 the lines of Figure 4-3. Perhaps we weren't so successful in making it
 look less explosive (it looks like an eruption of confetti to me), but
 the different shapes and the addition of stroke values definitely add
-more in the way of variety and visual interest.
+more in the way of variety and visual interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 23. A confetti-like scattering of random elements (93) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -3726,27 +3713,25 @@ more in the way of variety and visual interest.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-3">4.3 Regular Grids</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Unrestrained randomness will only get us so far; we need techniques to
+<p>Unrestrained randomness will only get us so far; we need techniques to
 tame and constrain it. One particularly prominent technique in the
 generative art world is to work with grids, which allow us to structure
-our randomness.
-
+our randomness.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3a">4.3a The Nested For Loop</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The nested for loop consists of one loop running within another. Because
+<p>The nested for loop consists of one loop running within another. Because
 grids are comprised of columns (along the x axis) and rows (along the y
 axis), the nested for loop comes in very useful in their construction.
 What we'll typically do is start along the y axis and create our rows,
 and for each row, we move from left to right along the x axis, filling
 out each cell within the column. This movement mimics how computers have
 historically drawn pixel data to their displays; start at the top left,
-move across, and work your way down.
+move across, and work your way down.</p>
 
-The outer loop will therefore be our y axis, moving down. For each
+<p>The outer loop will therefore be our y axis, moving down. For each
 iteration of the y axis, the inner (nested) loop will move across,
-populating the x axis.
+populating the x axis.</p>
 
 <pre>
 // <i>Example nested loop structure.</i>
@@ -3758,17 +3743,16 @@ for (let y = 0; y < height; y += 1) {
 }
 </pre>
 
-Let's create a sketch to better illustrate this. Copy and rename the
+<p>Let's create a sketch to better illustrate this. Copy and rename the
 template folder, renaming it to 07-regular-grids. Below the background,
-we'll set up a group element to act as our grid container.
+we'll set up a group element to act as our grid container.</p>
 
 <pre>
 // <i>Create our grid container group.</i>
 let grid = svg.create('g');
 </pre>
 
-Now we'll run our for loop, appending a rect element to the grid on each
-iteration.
+<p>Now we'll run our for loop, appending a rect element to the grid on each iteration.</p>
 
 <pre>
 // <i>A nested loop to visualise the grid.</i>
@@ -3787,7 +3771,7 @@ for (let y = 0; y < 700;
   }
 </pre>
 
-The values we've used here aren't especially meaningful; we could have
+<p>The values we've used here aren't especially meaningful; we could have
 chosen a different increment value, iteration count, width and height
 for the square, etc. We can tidy up these values later. What you will
 notice if you run live-server is that the grid is positioned off-center,
@@ -3795,28 +3779,28 @@ to the top left (as our x and y values initialize at 0). We could adjust
 the x and y values until the grid lines up with the center of the
 viewBox, but that would involve some tedious trial and error and would
 need to be adjusted each time we altered the grid. Instead, let's use
-the built-in SvJs moveTo() method.
+the built-in SvJs moveTo() method.</p>
 
-The moveTo() method moves a given element by its center point to a new
+<p>The moveTo() method moves a given element by its center point to a new
 position. The new position is passed in as an (x, y) coordinate pair.
 This method is especially useful on a group element (where the center
 point isn't straightforward to calculate) but can also be used as a more
-intuitive alternative to the transform: translate(x y) syntax.
+intuitive alternative to the transform: translate(x y) syntax.</p>
 
-SvJs also offers a related getCentre() method (which the moveTo() method
+<p>SvJs also offers a related getCentre() method (which the moveTo() method
 also utilizes internally) to retrieve an element's center coordinates,
 returned as an object with x and y properties. This is useful when you
-want to position one element inside another.
+want to position one element inside another.</p>
 
-After the loop, call the moveTo() method as follows:
+<p>After the loop, call the moveTo() method as follows:</p>
 
 <pre>
 // <i>Centre the grid within the viewBox.</i>
 grid.moveTo(500, 500);
 </pre>
 
-The grid should now line up nicely in the center of our viewBox, as
-shown in Figure 4-4.
+<p>The grid should now line up nicely in the center of our viewBox, as
+shown in Figure 4-4.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. A regular, centered grid (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -3829,14 +3813,14 @@ shown in Figure 4-4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3b">4.3b A More Flexible Grid</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So far we have hard-coded our grid values. By this, I mean we have used
+<p>So far we have hard-coded our grid values. By this, I mean we have used
 values directly to control the grid divisions, cell spacing, size, etc.,
 rather than variables containing values. The latter approach allows for
-more flexibility.
+more flexibility.</p>
 
-Before our for loop, set and initialize the following variables. The
+<p>Before our for loop, set and initialize the following variables. The
 values we'll use will reflect the grid we've already created; we'll
-alter these afterward.
+alter these afterward.</p>
 
 <pre>
 // <i>Set some grid-related variables.</i>
@@ -3845,21 +3829,21 @@ let rows = 15;
 let spacing = 5;
 </pre>
 
-What we need next are variables that control the loop increment value
+<p>What we need next are variables that control the loop increment value
 and the size of each cell. These values, however, should be <i>derived</i> 
 from those we've set previously, rather than worked out afresh each time
 we want to change the grid. With a little bit of basic math, here's how
-we'd do this:
+we'd do this:</p>
 
 <pre>
 let increment = gridSize / rows; 
 let cellSize = Math.abs(increment - spacing);
 </pre>
 
-The Math.abs() function just ensures our cellSize is always a positive
+<p>The Math.abs() function just ensures our cellSize is always a positive
 value, which can prevent errors if we go crazy with our rows and spacing
 values. Next, we need to incorporate these values into our loop. Adjust
-it as follows:
+it as follows:</p>
 
 <pre>
 for (let y = 0; 
@@ -3867,21 +3851,21 @@ for (let y = 0;
   y += increment) { 
     for (let x = 0; 
     x &lt; gridSize; 
-	x += increment) { 
+    x += increment) { 
       grid.create('rect').set({ 
-  	    x: x, y: y, 
-	    width: cellSize, 
-	    height: cellSize, 
-	    fill: 'none', 
-	    stroke: '#eee',
+          x: x, y: y, 
+        width: cellSize, 
+        height: cellSize, 
+        fill: 'none', 
+        stroke: '#eee',
       });
     }
   }
 </pre>
 
-Now we can freely adjust our grid variables, and the loop will respond
+<p>Now we can freely adjust our grid variables, and the loop will respond
 accordingly. We could even randomize them and get a different grid on
-each refresh (as per Figure 4-5).
+each refresh (as per Figure 4-5).</p>
 
 <pre>
 let gridSize = Gen.random(400, 800); 
@@ -3901,24 +3885,22 @@ let spacing = Gen.random(5, 10);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-4">4.4 Clip Paths and Color Palettes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Now that we have our regular grid in place, we need to breathe some life
+<p>Now that we have our regular grid in place, we need to breathe some life
 into it. The changes we're going to make are significant enough to
 warrant a new iteration of our sketch, so if you'd prefer to keep what
 we've done so far as a template, save and copy the existing sketch
 folder and rename it to something like 08-colourful-grids, which will
-give you a clue where we're taking this.
-
+give you a clue where we're taking this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4a">4.4a Arrays of Colors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In our previous "Elements Everywhere" sketch, we used Gen.random() to
+<p>In our previous "Elements Everywhere" sketch, we used Gen.random() to
 generate our colors on the fly. But what if we wanted a particular color
 palette, or a collection of color palettes, so that we could randomly
-choose between them?
+choose between them?</p>
 
-One popular approach is to store a pre-chosen palette as an array of
-color values, like so:
+<p>One popular approach is to store a pre-chosen palette as an array of
+color values, like so:</p>
 
 <pre>
 // <i>Create a colour palette.</i>
@@ -3927,18 +3909,18 @@ let palette = ['#5465FF', '#788BFF',
 '#E2FDFF'];
 </pre>
 
-There are many sites out there, too numerous to name, where you might
+<p>There are many sites out there, too numerous to name, where you might
 stumble upon color palette inspiration. In fact, you might find it
 difficult to settle on a single palette, in which case it would make
 sense to save a selection of them and store them as arrays <i>within</i>
 another array. They would then become nested arrays, which are just
 arrays contained within other arrays. You might also see them referred
-to as 2D or multidimensional arrays.
+to as 2D or multidimensional arrays.</p>
 
-Let's create a two-dimensional array containing three color palettes
+<p>Let's create a two-dimensional array containing three color palettes
 (illustrated in Figure 4-6). Beneath where we defined our initial grid
 group, include the following code (substituting in your own color
-palettes if you prefer):
+palettes if you prefer):</p>
 
 <pre>
 // <i>Create our colour palettes.</i>
@@ -3959,18 +3941,18 @@ let palettes = [
 
 <p><small><small><i><b>Figure 4-6.</b> Our three colour palettes</i></small></small></p>
 
-Next, we're going to randomly select one of these palettes and store it
-in a variable that we can call on later.
+<p>Next, we're going to randomly select one of these palettes and store it
+in a variable that we can call on later.</p>
 
 <pre>
 // <i>Pick a random palette.</i>
 let pickedPalette = Gen.random(palettes);
 </pre>
 
-Now on to our grid variables. You can leave this as they were from the
+<p>Now on to our grid variables. You can leave this as they were from the
 last sketch, but I'm not going to randomize the gridSize or spacing this
 time, as I want to place the emphasis on other randomized elements of
-the sketch.
+the sketch.</p>
 
 <pre>
 let gridSize = 600;
@@ -3982,18 +3964,18 @@ let cellSize = Math.abs(increment - spacing);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4b">4.4b Clipping Our Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The next step in developing our grid-based composition will involve
+<p>The next step in developing our grid-based composition will involve
 something called a clipPath. Essentially what a clipPath does is define
 the visible region of the shape it's applied to, in much the same way a
-scissors might define a cardboard cutout.
+scissors might define a cardboard cutout.</p>
 
-Instead of using a square to define our grid cells, we'll use a square-
+<p>Instead of using a square to define our grid cells, we'll use a square-
 shaped clipPath. This way we can contain the content of our cells
 without them spilling out into adjacent cells. Let's step out our sketch
 for a moment to illustrate this. In Figure 4-7, we have a square-shaped
 rect that defines the clipPath, while the circle is the clipped element.
 On the right, you can see the effect of applying the clipPath to the
-circle.
+circle.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. How a clipPath works (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4005,10 +3987,10 @@ circle.
 
 <p><small><small><i><b>Figure 4-7.</b> How a clipPath works</i></small></small></p>
 
-A clipPath requires an id so that it can be referenced later. Nested
+<p>A clipPath requires an id so that it can be referenced later. Nested
 within the clipPath element is the actual shape or path that will do the
 "clipping." Here's how we'd create something like the semi-circle
-example from Figure 4-7.
+example from Figure 4-7.</p>
 
 <pre>
 // <i>Initialise the clipPath with an id.</i>
@@ -4035,10 +4017,10 @@ svg.create('circle').set({
 });
 </pre>
 
-As you can see, the clipPath is called via its id, treated as an
+<p>As you can see, the clipPath is called via its id, treated as an
 internal url reference, much like gradients and patterns. Let's get back
 to our sketch now and apply this same logic within our loop. First,
-create the nested loop as we did before:
+create the nested loop as we did before:</p>
 
 <pre>
 for (let y = 0; y &lt; gridSize; y += increment) { 
@@ -4050,20 +4032,20 @@ for (let y = 0; y &lt; gridSize; y += increment) {
 }
 </pre>
 
-Next, create the clipPath. We need to create a unique id for each
+<p>Next, create the clipPath. We need to create a unique id for each
 instance, so we can't pass in a static string as we did previously --
 otherwise, the id would be duplicated on each loop iteration. Instead
 what we can do is use the x and y iterator variables to generate a
-dynamic string, using template literal syntax like so:
+dynamic string, using template literal syntax like so:</p>
 
 <pre>
 // <i>Create our clip path with a unique id.</i>
 let clip = svg.create(&apos;clipPath&apos;).set({ id: &grave;&dollar;{x}&dollar;{y}&grave; });
 </pre>
 
-Now we can create the actual shape of the clipPath. We'll keep it
+<p>Now we can create the actual shape of the clipPath. We'll keep it
 straightforward and make it square, that is, a rect with a width and
-height equal to our cellSize.
+height equal to our cellSize.</p>
 
 <pre>
 // <i>Create the clip path shape.</i>
@@ -4075,12 +4057,12 @@ clip.create(&apos;rect&apos;).set({
 });
 </pre>
 
-With the clipPath in place, we need to decide what to put into it.
+<p>With the clipPath in place, we need to decide what to put into it.
 Here's where we can get creative! There are four corners of each cell,
 so what we'll do is randomly center a group of circles at any one of
 these four positions. The coordinates of these positions are determined
 by the current x and y values, along with the cellSize. Here's how we'd
-calculate these positions and choose one of them at random:
+calculate these positions and choose one of them at random:</p>
 
 <pre>
 // <i>Define our possible positions.</i>
@@ -4094,11 +4076,11 @@ let positions = [
 let pickedPosition = Gen.random(positions);
 </pre>
 
-Now, to create the circle group. This will involve a third loop (so a
+<p>Now, to create the circle group. This will involve a third loop (so a
 loop within a loop within a loop -- loopception if you will), where we
 will create five circles radiating out from a randomly chosen center
 point. And let's not forget about our palette picked out earlier; the
-fill of each circle will be colored accordingly.
+fill of each circle will be colored accordingly.</p>
 
 <pre>
 // <i>Create a group for our circles.</i>
@@ -4108,19 +4090,19 @@ let circles = grid.create('g');
 for (let i = 0; i < 5; i += 1) { 
   circles.create('circle').set({ 
     cx: pickedPosition[0], 
-	cy: pickedPosition[1], 
-	r: cellSize - (i * (cellSize / 5)), // <i>this took a bit of tweaking</i>
+    cy: pickedPosition[1], 
+    r: cellSize - (i * (cellSize / 5)), // <i>this took a bit of tweaking</i>
     fill: pickedPalette[i]
   });
 }
 </pre>
 
-We have a couple more steps to go. We haven't actually <i>applied</i> the
+<p>We have a couple more steps to go. We haven't actually <i>applied</i> the
 clipPath to anything yet, so if we were to run our sketch at this point,
 we'd just see a fairly cluttered overlap of circles. We'll fix this by
 applying the clipPath to the circle group rather than the circles
 themselves. And as the last step within the loop, we'll create a square
-border to frame each cell, just to give things a little more definition.
+border to frame each cell, just to give things a little more definition.</p>
 
 <pre>
 // <i>Apply the clip path to the circle group.</i>
@@ -4137,18 +4119,18 @@ grid.create('rect').set({
 });
 </pre>
 
-Now, outside the loop, center our grid as we've done before.
+<p>Now, outside the loop, center our grid as we've done before.</p>
 
 <pre>
 // <i>Centre the grid within the viewBox.</i>
 grid.moveTo(500, 500);
 </pre>
 
-And voila! You should now see some variations similar to those of Figure
+<p>And voila! You should now see some variations similar to those of Figure
 4-8. (As an aside, if you find that the grid isn't always centering
 properly, that's because the grid's bounding box includes the invisible
 clipped content, which won't always arrange itself symmetrically around
-the grid.)
+the grid.)</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 28. Colorful clip path grid patterns (104) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4162,63 +4144,61 @@ the grid.)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-5">4.5 Choice and Chance</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-What if we were to bring an element of chance into choosing whether or
+<p>What if we were to bring an element of chance into choosing whether or
 not to populate a given cell in our grid? This can lead to a less
 rigid-looking composition -- which isn't necessarily better, but it can
-offer more in the way of variety.
-
+offer more in the way of variety.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-5a">4.5a The SvJs Gen.chance( ) Function</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-When we talk about probability, what we're usually trying to establish
+<p>When we talk about probability, what we're usually trying to establish
 are the chances, or the odds, of something occurring. This something
 will either happen or it won't, so what we want is a binary response --
 or boolean -- to tell us yes or no, win or lose. Will your horse Victor
 Vector give you a payout at the races today? Given the odds are 7 to 2,
-there's a 22% chance of some winnings (2 / (7 + 2) x 100 = 22.22).
+there's a 22% chance of some winnings (2 / (7 + 2) x 100 = 22.22).</p>
 
-How could we work this kind of logic into our compositions? It's
+<p>How could we work this kind of logic into our compositions? It's
 actually quite simple to do with plain JavaScript and Math.random(), but
 SvJs offers a more intuitive, less verbose alternative with its 
-Gen.chance() function.
+Gen.chance() function.</p>
 
-By default (i.e., without any arguments), Gen.chance() returns either
+<p>By default (i.e., without any arguments), Gen.chance() returns either
 true or false based on odds of 50/50, or 50%. If we supply a single
-argument, it's interpreted as a percentage.
+argument, it's interpreted as a percentage.</p>
 
 <pre>
 // <i>The below returns true 60% of the time.</i>
 Gen.chance(60);
 </pre>
 
-If two numbers are supplied, the arguments are interpreted as odds. This
+<p>If two numbers are supplied, the arguments are interpreted as odds. This
 can be useful if you prefer thinking of probabilities more in terms of
 placing a bet at a bookie than calculating a precise percentage value
-(which is actually done for you under the hood).
+(which is actually done for you under the hood).</p>
 
 <pre>
 // <i>There is a 7 to 2 chance of this returning true.</i>
 Gen.chance(7, 2);
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-5b">4.5b Chance in Action</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Let's create a new sketch, using Gen.chance() to determine whether or
+<p>Let's create a new sketch, using Gen.chance() to determine whether or
 not the cells within our grid get populated with content. Copy the
 08-colourful-grids folder and rename it to 09-chance, and then remove
 all content from the inner loop (leaving you with an empty nested for
 loop). Next, replace the palettes array and pickedPalette variable with
-a randomly generated hue.
+a randomly generated hue.</p>
 
 <pre>
 // <i>Pick a random hue.</i>
 let hue = Gen.random(0, 360);
 </pre>
 
-You can leave the grid-related variables as they are, or tweak them if
+<p>You can leave the grid-related variables as they are, or tweak them if
 you prefer. Next, <i>between</i> the x and y loops (so within the first loop
-but before the second), increment the hue like so:
+but before the second), increment the hue like so:</p>
 
 <pre>
 // <i>A nested loop to create the grid.</i>
@@ -4229,26 +4209,26 @@ hue = (hue >= 360) ? (hue - 360) + (120 / rows) : hue + (120 / rows);
 for (let x = 0; x < gridSize; x += increment) { ...
 </pre>
 
-This might seem like an overly complex way of increasing the hue value,
+<p>This might seem like an overly complex way of increasing the hue value,
 but really it's just doing two things: first, it's ensuring the hue
 value doesn't stray out of bounds (i.e., beyond 360), and second, it's
 incrementing the hue value relative to the number of rows. This is so
 that sketch variations with a lower row count have a higher increment
 value, and those with a higher row count have a lower increment value,
-resulting in greater color consistency overall.
+resulting in greater color consistency overall.</p>
 
-Inside the x loop is where we'll actually use Gen.chance(). Used as a
+<p>Inside the x loop is where we'll actually use Gen.chance(). Used as a
 condition inside an if statement, we can conditionally fire a third loop
 based on the result it returns. This loop will create random line
 elements inside each cell, but only if the cell is activated by the
-Gen.chance() function. We'll set the actual probability to 60%.
+Gen.chance() function. We'll set the actual probability to 60%.</p>
 
 <pre>
 // <i>Run the loop based on chance.</i>
 if (Gen.chance(60)) { 
   for (let i = 0; i < cellSize; i += 1) {
     grid.create('line').set({ 
-	  x1: Gen.random(x, x + cellSize), 
+      x1: Gen.random(x, x + cellSize), 
       y1: Gen.random(y, y + cellSize), 
       x2: Gen.random(x, x + cellSize), 
       y2: Gen.random(y, y + cellSize), 
@@ -4258,8 +4238,8 @@ if (Gen.chance(60)) {
 }
 </pre>
 
-This should result in gradiented tetris-like arrangements, similar to
-Figure 4-9.
+<p>This should result in gradiented tetris-like arrangements, similar to
+Figure 4-9.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. Gen.chance() in action (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4272,29 +4252,27 @@ Figure 4-9.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-6">4.6 Probability Distributions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Probability distributions describe how numbers are spread out (or
+<p>Probability distributions describe how numbers are spread out (or
 distributed) over a given range. Unless you've studied statistics in one
 form or another, you may not be too familiar with the term. And if the
 mere mention of statistics causes you to break out in a cold sweat,
 don't worry -- we won't be delving into the underlying mathematics.
 We've actually been using a particular kind of probability distribution
-already but just haven't attached the name to it.
-
+already but just haven't attached the name to it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6a">4.6a Uniform Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The Gen.random() function is an example of <i>uniform</i> distribution, where
+<p>The Gen.random() function is an example of <i>uniform</i> distribution, where
 every number within the range has an equal chance of being chosen. In
 other words, there are no biases or tendencies hiding with the
 Gen.random() function (or indeed, the Math.random() on which it is
 based) that make it more likely that a certain subset of numbers within
-the range will be selected.
+the range will be selected.</p>
 
-In Figure 4-10, we can see uniform distribution visualized as the
+<p>In Figure 4-10, we can see uniform distribution visualized as the
 variation of the x coordinate in the placement of 1000 vertical lines.
 The lines are all scattered with equal chance of appearing anywhere
-along the x axis.
+along the x axis.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 30. Uniform distribution of vertical lines (109) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4307,14 +4285,13 @@ along the x axis.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6b">4.6b Gaussian Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In real-life measurements (i.e., those outside the binary world of ones
+<p>In real-life measurements (i.e., those outside the binary world of ones
 and zeros), uniform distribution isn't actually that common. Far more
 prevalent is something called <i>Gaussian</i> distribution, where the
 majority of values cluster toward a midpoint and drop off either side of
 this. It is also known as normal distribution, and when graphed, it
 forms a bell-shaped curve. Visualized as a series of vertical lines, it
-looks like Figure 4-11.
+looks like Figure 4-11.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 31. Gaussian distribution of vertical lines (109) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4326,37 +4303,37 @@ looks like Figure 4-11.
 
 <p><small><small><i><b>Figure 4-11.</b> Gaussian distribution of vertical lines</i></small></small></p>
 
-The midpoint around which most values accumulate is known as the mean,
+<p>The midpoint around which most values accumulate is known as the mean,
 and the degree to which they drop off, or deviate, from this mean is
-known as sigma, or the standard deviation.
+known as sigma, or the standard deviation.</p>
 
-SvJs comes with a function called Gen.gaussian() that returns a random
+<p>SvJs comes with a function called Gen.gaussian() that returns a random
 number that adheres to a Gaussian distribution. With no arguments, it
 will return values between approximately -3 and +3, with a mean of 0 and
-a standard deviation of 1. What this means in practice is that
+a standard deviation of 1. What this means in practice is that;</p>
 
--   68% of values will be within -1 and 1 (the standard deviation)
+<ul>
+  <li>68% of values will be within -1 and 1 (the standard deviation)</li>
+  <li>95% of values will be within -2 and 2</li>
+  <li>99% of values will be within -3 and 3</li>
+</ul>
 
--   95% of values will be within -2 and 2
-
--   99% of values will be within -3 and 3
-
-By supplying arguments to Gen.gaussian(), we can modify the mean and
-standard deviation.
+<p>By supplying arguments to Gen.gaussian(), we can modify the mean and
+standard deviation.</p>
 
 <pre>
 // <i>Adjusting the mean and standard deviation to 10 and 2 respectively.</i>
 Gen.gaussian(10, 2);
 </pre>
 
-In the preceding example, adjusting the mean to 10 and standard
+<p>In the preceding example, adjusting the mean to 10 and standard
 deviation to 2 would translate to 68% of values falling within -2 and +2
 of the mean (so between 8 and 12), 95% falling between 6 and 14, and
 more than 99% falling between 4 and 16. Strictly speaking, the values of
 a Gaussian distribution aren't bounded, so there may be occasional
 extreme outliers. If, for example, you wanted to make sure you kept the
 results to within a factor of 3 either side of the standard deviation,
-you could use the Gen.constrain() function to bound the results like so:
+you could use the Gen.constrain() function to bound the results like so:</p>
 
 <pre>
 // <i>Bounding the results of Gen.gaussian() to within -3 and +3.</i>
@@ -4364,12 +4341,12 @@ let gaussian = Gen.gaussian(0, 1);
 let constrainedGaussian = Gen.constrain(gaussian, -3, 3);
 </pre>
 
-Let's move on and create a quick sketch to illustrate how we could use
+<p>Let's move on and create a quick sketch to illustrate how we could use
 the results returned from Gen.gaussian() to map x and y coordinates
 across our viewBox. Copy our template and call it something like
 10-gaussian-dist. In the usual place below our background, initialize a
 loop that will run 10,000 times (yep, that's a lot!), and inside it,
-generate a couple of Gaussian coordinates.
+generate a couple of Gaussian coordinates.</p>
 
 <pre>
 // <i>Run a loop 10,000 times.</i>
@@ -4381,10 +4358,10 @@ for (let i = 0; i < 10000; i += 1) {
 }
 </pre>
 
-The coordinates are based around the center of the viewBox (i.e., 500),
+<p>The coordinates are based around the center of the viewBox (i.e., 500),
 with a standard deviation of 150. Next, and still within the loop,
 create our lines, basing them on our Gaussian coordinates and adding a
-bit of randomization to their endpoints.
+bit of randomization to their endpoints.</p>
 
 <pre>
 // <i>Create the lines based on the gaussian co-ordinates.</i>
@@ -4396,10 +4373,10 @@ svg.create('line').set({
 });
 </pre>
 
-You could stop here and see the circular pattern that emerges, but I
+<p>You could stop here and see the circular pattern that emerges, but I
 added another little loop (after the first one, not within it) to subtly
 emphasize the shape of the distribution with a series of fading circular
-strokes.
+strokes.</p>
 
 <pre>
 // <i>Create a series of circles to frame the distribution.</i>
@@ -4411,7 +4388,7 @@ for (let i = 0;
 }
 </pre>
 
-After this, you should end up with something similar to Figure 4-12.
+<p>After this, you should end up with something similar to Figure 4-12.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 32. Using Gen.gaussian to position 10,000 lines (112) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4422,7 +4399,7 @@ After this, you should end up with something similar to Figure 4-12.
 
 <p><small><small><i><b>Figure 4-12.</b> Using Gen.gaussian to position 10,000 lines</i></small></small></p>
 
-In terms of the generated markup, it's quite a heavy piece compared to
+<p>In terms of the generated markup, it's quite a heavy piece compared to
 anything we've done previously (10,000 elements will do that). This can
 adversely impact render performance and also means a bigger SVG file if
 you copy it from the HTML. One easy way to get the size down somewhat is
@@ -4431,21 +4408,17 @@ Gen.gaussian() function. Like Gen.random(), Gen.gaussian() accepts a
 third argument that determines whether it returns a float (more accurate
 but with a lot of digits) or an integer (whole number). Dealing in whole
 numbers decreases the generated markup by roughly a factor of two in
-this case.
-
+this case.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6c">4.6c Pareto Distribution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Pareto distribution, also known as the Pareto Principle or the 80-20
-rule
-
-(illustrated in Figure 4-13), is the final probability pattern we'll
+<p>Pareto distribution, also known as the Pareto Principle or the 80-20
+rule (illustrated in Figure 4-13), is the final probability pattern we'll
 cover. It is named after an Italian economist who famously observed that
 just 20% of a society's population controlled 80% of its wealth. This
 was the 1890's mind, so had Pareto made the same observations today, we
 might be discussing the 99-1 rule! Be that as it may, the basic idea
-remains the same: there is a lot with a little and a little with a lot.
+remains the same: there is a lot with a little and a little with a lot.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 33. pareto distribution of vertical lines (113) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4457,13 +4430,13 @@ remains the same: there is a lot with a little and a little with a lot.
 
 <p><small><small><i><b>Figure 4-13.</b> Pareto distribution of vertical lines</i></small></small></p>
 
-This can be useful in generative art to achieve a balance of differently
+<p>This can be useful in generative art to achieve a balance of differently
 sized elements. We'll use this in our next sketch to create a pseudo-
 cityscape called Porto Pareto, where the size of the city's buildings
 will be varied using the SvJs Gen.pareto() function. This function takes
 two arguments; the first defines the minimum number in the range to be
 returned, and the second defines whether this number will be a float or
-integer.
+integer.</p>
 
 <pre>
 // <i>Return a pareto-distributed integer, not less than 20.</i>
@@ -4471,17 +4444,17 @@ Gen.pareto(20, false);
 -&gt; 32
 </pre>
 
-Copy the template folder and name it 11-porto-pareto, and below the
-background, create a group that will contain our cityscape.
+<p>Copy the template folder and name it 11-porto-pareto, and below the
+background, create a group that will contain our cityscape.</p>
 
 <pre>
 // <i>Create a group for our generative city.</i>
 let portoPareto = svg.create('g');
 </pre>
 
-The cityscape will have three main elements: the sky, the river (or
+<p>The cityscape will have three main elements: the sky, the river (or
 port), and the buildings. The sky and river will both be simple rect
-elements with gradients; we'll create these first.
+elements with gradients; we'll create these first.</p>
 
 <pre>
 // <i>Create the sky gradient.</i>
@@ -4512,16 +4485,16 @@ portoPareto.create('rect').set({
 });
 </pre>
 
-Hopefully there won't have been any surprises in the aforementioned.
+<p>Hopefully there won't have been any surprises in the aforementioned.</p>
 
-Next up, we'll deal out some Pareto distribution and create our
+<p>Next up, we'll deal out some Pareto distribution and create our
 buildings. In the following loop, there's one line in particular I want
 to unpack, and this is where we set the height using the Gen.constrain()
 function. Without it, our Pareto distribution would generate some
 dizzyingly high buildings that would extend well beyond the canvas
 limits. However, using Gen.constrain() alone with a set upper limit
 leads to a clipped effect on the highest buildings, so to even this out,
-I've added in a Gen.random() function to vary the upper limit.
+I've added in a Gen.random() function to vary the upper limit.</p>
 
 <pre>
 // <i>A loop for our generative cityscape.</i>
@@ -4545,26 +4518,24 @@ for (let i = 0; i < 60; i += 1) {
 }
 </pre>
 
-We now have our cityscape in place, but we're not done yet. It's quite
+<p>We now have our cityscape in place, but we're not done yet. It's quite
 flat-looking, and I'd like it to be framed within a circle and for the
 colors to look like they're emanating outward. To achieve this, I'm
-going to use something called a mask.
-
+going to use something called a mask.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6d">4.6d Masking Our Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-A mask is very similar to a clipPath, except that it allows for degrees
+<p>A mask is very similar to a clipPath, except that it allows for degrees
 of transparency. A clipPath is an all-or-nothing affair; you're either
 inside or outside the bounds of the shape that defines it. With a mask,
 you can fade content in or out depending on the brightness or luminance
 of the shape. For this reason, it's most straightforward to use black
 and white when creating masks. White (#ffffff) translates to a fully
 transparent region, whereas black (#000000) translates to a fully opaque
-region.
+region.</p>
 
-In Figure 4-14, the triangle is the mask shape, and the result of
-applying it to the rect is shown on the right.
+<p>In Figure 4-14, the triangle is the mask shape, and the result of
+applying it to the rect is shown on the right.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34. How masks work (116) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4576,11 +4547,11 @@ applying it to the rect is shown on the right.
 
 <p><small><small><i><b>Figure 4-14.</b> How masks work</i></small></small></p>
 
-As with a clipPath, the mask element requires an id and is applied to
+<p>As with a clipPath, the mask element requires an id and is applied to
 another element via a url reference to this id. What we're going to do
 is create a mask with a circle shape, and the fill of this circle will
 contain a radial gradient. We'll then apply it to the portoPareto group
-we created earlier.
+we created earlier.</p>
 
 <pre>
 // <i>Create a radial gradient.</i>
@@ -4596,9 +4567,9 @@ portoPareto.set({
 });
 </pre>
 
-You should now see the cityscape cut out in the shape of this circle,
+<p>You should now see the cityscape cut out in the shape of this circle,
 with the edges slightly fading out. As a final step, I've added in a
-gradiented circular stroke to frame the content a little more clearly.
+gradiented circular stroke to frame the content a little more clearly.</p>
 
 <pre>
 // <i>Create a linear gradient for our circular frame.</i>
@@ -4615,7 +4586,7 @@ svg.create('circle').set({
 });
 </pre>
 
-A variation of the result is shown in Figure 4-15.
+<p>A variation of the result is shown in Figure 4-15.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 35. our porto pareto cityscape (117) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4625,61 +4596,50 @@ A variation of the result is shown in Figure 4-15.
   alt="Our Porto Pareto cityscape." />
 
 <p><small><small><i><b>Figure 4-15.</b> Our Porto Pareto cityscape</i></small></small></p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4-7">4.7 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this chapter, we've covered the following:</p>
 
-In this chapter, we've covered the following:
+<ul>
+  <li>Randomizing coordinates, colors, element dimensions, and more</li>
+  <li>How to randomly pick items from single and two- dimensional arrays</li>
+  <li>Regular grid construction with nested for loops</li>
+  <li>How to use clipPaths and masks</li>
+  <li>Using chance as a way to trigger element creation</li>
+  <li>How to work with Gaussian and Pareto probability distributions</li>
+</ul>
 
--   Randomizing coordinates, colors, element dimensions, and more
-
--   How to randomly pick items from single and two- dimensional arrays
-
--   Regular grid construction with nested for loops
-
--   How to use clipPaths and masks
-
--   Using chance as a way to trigger element creation
-
--   How to work with Gaussian and Pareto probability distributions
-
-In the next chapter, we'll learn how to use noise to add a more organic
-kind of randomness to our compositions.
-
+<p>In the next chapter, we'll learn how to use noise to add a more organic
+kind of randomness to our compositions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch5">CHAPTER 5 The Need for Noise</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In this chapter, we'll be covering the limitations of the random
+<p>In this chapter, we'll be covering the limitations of the random
 functions we've utilized thus far and how these limitations can be
 addressed by using the SvJs Noise module. We'll be exploring what noise
 is and the uses to which it can be put, and by the end, we'll have added
-a significant technique to our generative arsenal.
-
+a significant technique to our generative arsenal.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-1">5.1 Random Limits</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Sometimes randomness is just too, well ... random. Even when we shape
+<p>Sometimes randomness is just too, well ... random. Even when we shape
 randomized values with probability distributions and constrain them
 within structured patterns, the variance between consecutive values
 invariably has that characteristic "staccato" feel. In other words, the
 values will always be somewhat jumpy and jittery when looked at side by
-side.
+side.</p>
 
-You won't see a smooth progression from one value to another.
+<p>You won't see a smooth progression from one value to another.</p>
 
-Don't get me wrong -- this is often what we want, and it's what random
+<p>Don't get me wrong -- this is often what we want, and it's what random
 functions are designed to do. But it can be tricky to create anything
 that has an organic quality to it with randomness alone. For this, we
-need noise.
-
+need noise.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-2">5.2 Making Noise</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In 1997, Ken Perlin won an Oscar. What made this award unprecedented was
+<p>In 1997, Ken Perlin won an Oscar. What made this award unprecedented was
 that Perlin wasn't an actor, director, or soundtrack composer, but a
 programmer. For the movie <i>TRON</i>, released in 1982, Perlin had been
 tasked with the development of procedural textures that would make 3D
@@ -4690,20 +4650,18 @@ Photoshop, in vector editors like Inkscape and Illustrator, in 3D
 graphics packages like Blender, and in countless video games down
 through the ages. Minecraft is a great example; those infinite blocky
 terrains where players mine for resources use height maps generated by
-Perlin noise to determine their various peaks and troughs.
+Perlin noise to determine their various peaks and troughs.</p>
 
-So Perlin noise is everywhere in the graphical domain. But what exactly
-is it?
-
+<p>So Perlin noise is everywhere in the graphical domain. But what exactly
+is it?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2a">5.2a Noise Explained</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Technically, noise functions do produce random numbers, but they do so
+<p>Technically, noise functions do produce random numbers, but they do so
 in a smoothly ordered fashion, and this is what makes the difference. In
 Figure 5-1, the height of the white lines is randomized using a Perlin
 noise variable. This is an example of one-dimensional noise, that is,
-noise values that operate along a single axis.
+noise values that operate along a single axis.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ 36. A one-dimensional representation of Perlin noise values (120) ~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4715,29 +4673,29 @@ noise values that operate along a single axis.
 
 <p><small><small><i><b>Figure 5-1.</b> A one-dimensional representation of Perlin noise values</i></small></small></p>
 
-Noise is by nature multidimensional; Perlin originally designed it for
+<p>Noise is by nature multidimensional; Perlin originally designed it for
 3D spaces, and there are four-dimensional implementations out there too,
 but with SVG being a two-dimensional medium, I'll be sticking to the x
 and y axes. The particular algorithm Perlin developed works by blending
 randomized values in a gradiented fashion over a given area. This area,
 or space, is more notional than actual; the noise values don't exist on
 an actual plane or separate canvas, but rather in an abstract (and
-infinite) space that we can retrieve values from.
+infinite) space that we can retrieve values from.</p>
 
-For example, fetching a noise value at the conceptual coordinates of
+<p>For example, fetching a noise value at the conceptual coordinates of
 (15, 20) would give us some value between -1 and 1. And when we slowly
 traverse through this noise space to reach an adjoining coordinate, say
 (16, 21), we get a series of smoothly varied values we can work with.
 And it's what we can do with those values that make noise interesting
-from an aesthetic perspective.
+from an aesthetic perspective.</p>
 
-In Figure 5-2, we can see noise represented in two dimensions using the
+<p>In Figure 5-2, we can see noise represented in two dimensions using the
 full area of a canvas. This example is actually pixel based rather than
 vector based, chosen because it's perhaps the best way to visually grasp
 the notion of a noise space. Here, the alpha component of each pixel is
 varied according to the corresponding noise value, creating a cloud-like
 formation. You can immediately see why it would be useful for creating
-textures.
+textures.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ 37. A two-dimensional representation of Perlin noise values (122) ~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4751,34 +4709,33 @@ textures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2b">5.2b The SvJs Noise Module</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The SvJs library comes with its own implementation of noise, designed to
+<p>The SvJs library comes with its own implementation of noise, designed to
 be simple to use and to have as light a footprint as possible. It
 resides in its own module, so like the Gen module, we have to import it
-before we can use it.
+before we can use it.</p>
 
 <pre>
 import { Noise } from '../../node_modules/svjs/src/index.js';
 </pre>
 
-Unlike Gen, which is a collection of functions, the Noise module is
-class based, so we first need to instantiate it.
+<p>Unlike Gen, which is a collection of functions, the Noise module is
+class based, so we first need to instantiate it.</p>
 
 <pre>
 // <i>Create an instance of the Noise class.</i>
 let noise = new Noise();
 </pre>
 
-The class has a single method called get() that accepts an x coordinate
+<p>The class has a single method called get() that accepts an x coordinate
 and optional y coordinate as arguments and returns the value at that
-point in the noise space.
+point in the noise space.</p>
 
 <pre>let noiseValue = noise.get(noiseX, noiseY);</pre>
 
-That noiseValue won't be much use to us as a static value; what we need
+<p>That noiseValue won't be much use to us as a static value; what we need
 to do is gradually modify it by traversing the noise space. We do this
 by incrementing the noiseX and/or noiseY coordinates. Here's how this
-might look within a loop:
+might look within a loop:</p>
 
 <pre>
 // <i>Initialise our noise instance and noise co-ordinates first.</i>
@@ -4792,56 +4749,54 @@ for (let i = 0; i &lt; 1000; i += 1) {
 }
 </pre>
 
-As you can see, we define the initial noiseX and noiseY coordinates
+<p>As you can see, we define the initial noiseX and noiseY coordinates
 outside the loop, use them to fetch a noiseValue within it, and then
 before the loop runs again, increment the coordinates by a very small
 amount. This amount we might refer to as the noise speed or rate of
 change. It's important when working with noise that this rate of change
 is minimal; comparatively large leaps (e.g., by whole numbers) won't
-yield usable results.
-
+yield usable results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-3">5.3 Into the Noise Matrix</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Let's copy our template and set up a new sketch folder called 12-noise-
+<p>Let's copy our template and set up a new sketch folder called 12-noise-
 matrix, to show how noise can be used to alter color values within a
 grid. At the top of our sketch.js file, add in the Noise module to our
-import statement like so:
+import statement like so:</p>
 
 <pre>
 import { SvJs, Gen, Noise } from &apos;../../node_modules/svjs/src/index.js&apos;;
 </pre>
 
-Next, we're going to shorten the expression that calculates the svgSize
+<p>Next, we're going to shorten the expression that calculates the svgSize
 (and thus the dimensions of our viewport). Instead of the ternary
 operator, we can actually use the Math.min() function, which returns the
 smallest of two or more values. If you remember, all we want to do is
 set the svgSize to whichever of the window's innerWidth or innerHeight
 is smallest, and Math.min() does this in the most succinct manner. A
 small tweak to be sure, but one that hints at the many uses of
-JavaScript's built-in Math module.
+JavaScript's built-in Math module.</p>
 
 <pre>
 const svgSize = Math.min(window.innerWidth, window.innerHeight);
 </pre>
 
-I'd recommend applying this tweak to our base template too.
+<p>I'd recommend applying this tweak to our base template too.</p>
 
 <h2>A Noisy Grid</h2>
 
-For this composition, we'll be using a familiar technique: we'll be
+<p>For this composition, we'll be using a familiar technique: we'll be
 setting up a grid, and this grid will act as our matrix (a matrix is,
 after all, just a grid of values). And the matrix we'll be creating in
 this sketch will mimic the one from the movie of the same name. We'll be
 populating the grid with ones and zeros, and the color of these digits
 will be modulated by noise to achieve that cascading, desaturated
-effect.
+effect.</p>
 
-Create an instance of the noise class, and then initialize three further
+<p>Create an instance of the noise class, and then initialize three further
 variables. Two will take care of our noise x and y coordinates, and in
 the third, we'll store the noise speed that will determine the rate at
-which we'll increment the noise coordinates.
+which we'll increment the noise coordinates.</p>
 
 <pre>
 // <i>Create our noise, the noise x and y co-ordinates, and noise speed.</i>
@@ -4850,10 +4805,10 @@ let nX = 0, nY = 0;
 let noiseSpeed = 0.5;
 </pre>
 
-The next block of code should hopefully look familiar. We're setting
+<p>The next block of code should hopefully look familiar. We're setting
 some grid-related variables, and this time we'll omit the spacing and
 cellSize variables we used in previous sketches and set the gridSize to
-cover the entire viewBox.
+cover the entire viewBox.</p>
 
 <pre>
 // <i>Set some grid-related variables.</i>
@@ -4862,14 +4817,14 @@ let gridSize = 1000; let rows = 80;
 let increment = gridSize / rows;
 </pre>
 
-Next comes our loop. Instead of starting with the y coordinate in the
+<p>Next comes our loop. Instead of starting with the y coordinate in the
 outer loop, we're going to start with the x coordinate. What this will
 do is construct our grid from top to bottom and then left to right. In
 other words, we'll fill out our columns first rather than the rows,
-which will allow our noise values to flow in a downward motion.
+which will allow our noise values to flow in a downward motion.</p>
 
-Within the loop, we'll fetch our noise value using the noise.get()
-method, passing in the nX and nY values we initialized earlier.
+<p>Within the loop, we'll fetch our noise value using the noise.get()
+method, passing in the nX and nY values we initialized earlier.</p>
 
 <pre>
 // <i>Create the noise matrix.</i>
@@ -4884,10 +4839,10 @@ for (let x = 0;
 }
 </pre>
 
-Next, let's create the actual text content. We want a series of ones and
+<p>Next, let's create the actual text content. We want a series of ones and
 zeros to fill the grid, with a 50% chance of either digit being chosen.
 As we learned in the last chapter, the Gen.chance() function is the
-simplest way to do this, combined with a ternary operator.
+simplest way to do this, combined with a ternary operator.</p>
 
 <pre>
 // <i>Create text displaying either 0 or 1 (50% chance).</i>
@@ -4895,10 +4850,10 @@ let text = noiseGrid.create('text');
 text.content(Gen.chance() ? '1' : '0');
 </pre>
 
-Now we need to set the position of the digit with respect to the x and y
+<p>Now we need to set the position of the digit with respect to the x and y
 loop iterator values and set the intensity of the fill color (i.e., the
 lightness component of the hsl() function) with the noiseValue variable.
-We should also set a font size and font family while we're at it.
+We should also set a font size and font family while we're at it.</p>
 
 <pre>
 text.set({ 
@@ -4909,27 +4864,27 @@ text.set({
 });
 </pre>
 
-And before we close out our loop, we'll want to increment our nX and nY
-values with the noiseSpeed variable.
+<p>And before we close out our loop, we'll want to increment our nX and nY
+values with the noiseSpeed variable.</p>
 
 <pre>nX += noiseSpeed; nY += noiseSpeed;</pre>
 
-To finish off the sketch, outside
+<p>To finish off the sketch, outside
 the loop, call the moveTo() function to shift the grid to the center of
-the canvas.
+the canvas.</p>
 
 <pre>
 // <i>Centre the grid within the viewBox.</i>
 noiseGrid.moveTo(500, 500);
 </pre>
 
-You should now see a grid of zeros and ones when you run your sketch.
+<p>You should now see a grid of zeros and ones when you run your sketch.
 But ... they're all black. The color lightness isn't visibly changing,
 even though we're using our noiseValue to modify it. What's going on
-here?
+here?</p>
 
-If you inspect some of the text elements in the browser console, you'll
-see something like the following:
+<p>If you inspect some of the text elements in the browser console, you'll
+see something like the following:</p>
 
 <pre>
 &lt;text x="860" y="960" font-size="16" font-family='serif'
@@ -4950,7 +4905,7 @@ font-size="16" font-family='serif' fill="hsl(120 20%
 0.1202821001266494%)"&gt;1&lt;/text&gt;
 </pre>
 
-The point to note here is that when we call the noise.get() method, the
+<p>The point to note here is that when we call the noise.get() method, the
 value returned is a float between -1 and 1 (with some occasional
 outliers). The lightness component of the hsl() function, however,
 should have values between 0 and 100%, so in its raw state, the noise
@@ -4959,17 +4914,15 @@ multiply it by a factor of 100? We could, but we'd then have an equal
 amount of numbers in the negative range. And if we tried to remedy this
 with Math.abs() to force the negative numbers into a positive range,
 that would destroy the very raison d'être of noise -- its smoothly
-transitioning values. So what's the solution?
-
+transitioning values. So what's the solution?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3a">5.3a Mapping the Noise Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-This is actually a common challenge in generative art -- mapping a
+<p>This is actually a common challenge in generative art -- mapping a
 series of values from one range to another. Thankfully the Gen module
-comes equipped with a function that does just this: Gen.map().
+comes equipped with a function that does just this: Gen.map().</p>
 
-The function requires five arguments, with an optional sixth: the first
+<p>The function requires five arguments, with an optional sixth: the first
 is the value to be mapped to the new range, the second and third
 arguments define the lower and upper bounds of the existing range, and
 the fourth and fifth arguments define the lower and upper bounds of the
@@ -4977,7 +4930,7 @@ range to which we want our value mapped. The final sixth argument
 specifies whether a float should be returned. In common with other Gen
 functions like gaussian and pareto, this is set to true by default, and
 setting it to false rounds the result to the nearest integer. The
-following is an example:
+following is an example:</p>
 
 <pre>
 // <i>Map a number (5) from one range (0, 10) to another (0, 100).</i>
@@ -4987,10 +4940,10 @@ console.log(num);
 -&gt; 50
 </pre>
 
-If we apply the Gen.map() function to our noiseValue variable, we can
+<p>If we apply the Gen.map() function to our noiseValue variable, we can
 retrieve a more usable value. We could assign this new mapped value to a
 new variable, or as the preceding example shows us, we can simply
-reassign the original variable.
+reassign the original variable.</p>
 
 <pre>
 // <i>Fetch the noise value.</i>
@@ -5000,9 +4953,9 @@ let noiseValue = noise.get(nX, nY);
 noiseValue = Gen.map(noiseValue, -1, 1, 0, 100, false);
 </pre>
 
-Once you've done this, you should see some color injected into our
+<p>Once you've done this, you should see some color injected into our
 matrix (as per Figure 5-3). Enough we hope to get an appreciative nod
-from Neo.
+from Neo.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 38. That chunk of the matrix that tastes like chicken (129) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -5013,19 +4966,18 @@ from Neo.
 
 <p><small><small><i><b>Figure 5-3.</b> That chunk of the matrix that tastes like chicken</i></small></small></p>
 
-It's worth noting that when using a generic font-family like serif, you
+<p>It's worth noting that when using a generic font-family like serif, you
 essentially let the operating system decide which default font to
 render. For this reason, what you see may differ slightly from Figure
-5-3.
-
+5-3.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3b">5.3b Optimize with Style</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We could leave it there and make no further changes to the sketch, but
+<p>We could leave it there and make no further changes to the sketch, but
 there's one little niggle I can't leave alone. In total, we have 2,500
 text elements in this sketch, and for each of these elements, the
 font-size and font-family attributes remain static throughout. This
-seems quite wasteful.
+seems quite wasteful.</p>
 
 <pre>
 &lt;text x="740" y="200" font-size="16" font-family="serif"
@@ -5033,16 +4985,16 @@ fill="hsl(120 20%
 50%)"&gt;1&lt;/text&gt;
 </pre>
 
-What we can do is first remove the font attributes set within the loop
-so that the text.set() method looks like the following:
+<p>What we can do is first remove the font attributes set within the loop
+so that the text.set() method looks like the following:</p>
 
 <pre>
 text.set({ x: x, y: y, fill: `hsl(120 20% ${noiseValue}%)` });
 </pre>
 
-Then we can create a style element and within it, target all our text
+<p>Then we can create a style element and within it, target all our text
 elements at once. Near the top of our sketch, after the parent SVG
-declaration, include the following code:
+declaration, include the following code:</p>
 
 <pre>
 // <i>Set some text styling.</i>
@@ -5053,26 +5005,24 @@ svg.create('style').content(` text {
 `);
 </pre>
 
-Note the use of backticks here; this allows us to indent our code just
+<p>Note the use of backticks here; this allows us to indent our code just
 as we would with normal CSS. What this CSS does is apply the font-size
 and font-family to each of our text elements, avoiding the use of
 repetitive inline attributes. This is not only a more elegant way of
 handling static styles, but it can save us quite a few kilobytes along
 the way. In this particular sketch, taking this measure resulted in a
-40% reduction in the rendered markup -- not bad!
-
+40% reduction in the rendered markup -- not bad!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-4">5.4 Spinning Noise</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-In our next sketch, to consolidate some of the concepts covered already,
+<p>In our next sketch, to consolidate some of the concepts covered already,
 we're going to spin some line elements about their center points and
 vary their line lengths and colors with noise. This time we'll use just
-a single loop and noise dimension.
+a single loop and noise dimension.</p>
 
-Copy the previous sketch folder and name it something like
+<p>Copy the previous sketch folder and name it something like
 13-spinning-noise. Remove the style element and everything after the
-background so that we're left with the following boilerplate code:
+background so that we're left with the following boilerplate code:</p>
 
 <pre>
 import { SvJs, Gen, Noise } from '../../node_modules/svjs/src/
@@ -5098,9 +5048,9 @@ svg.create('rect').set({
 });
 </pre>
 
-We'll then set up our noise-related variables, along with a couple of
+<p>We'll then set up our noise-related variables, along with a couple of
 randomized values that will determine our initial hue and the amount of
-times our loop will run.
+times our loop will run.</p>
 
 <pre>
 // <i>Noise-related and randomised variables.</i>
@@ -5114,12 +5064,12 @@ let iterations = Gen.random(60, 100);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-4a">5.4a Mapping and Constraining</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We can now run the loop. We'll offset our iteration start point by 10 ;
+<p>We can now run the loop. We'll offset our iteration start point by 10 ;
 for this particular sketch, this value just worked better than starting
 at the usual 0. Within the loop, we'll fetch the noiseValue, and then
 we'll extract two further variables from this by individually mapping
 the value to different ranges. One will control how much we shift the
-hue, and the other will control the length of each line.
+hue, and the other will control the length of each line.</p>
 
 <pre>
 // <i>Start the dance.</i>
@@ -5130,17 +5080,17 @@ for (let i = 10; i &lt; iterations; i += 1) {
 }
 </pre>
 
-After the lineLength variable (and still within the loop), set up the
+<p>After the lineLength variable (and still within the loop), set up the
 first of our lines. We will start off with a straight vertical line at
 (0, 0) (the top left of our viewBox), and we'll worry about centering
 things later. As it's a vertical line, the second x coordinate won't
-change -- only the second y coordinate will.
+change -- only the second y coordinate will.</p>
 
-Next comes the stroke value. We'll wrap this in the Gen.constrain()
+<p>Next comes the stroke value. We'll wrap this in the Gen.constrain()
 function to keep the values between 0 and 360, and inside this, the hue
 will increment by the hueShift. We'll then set both the opacity (within
 the hsl() function) and the stroke-width to 0.5, which will keep the
-line nice and delicate.
+line nice and delicate.</p>
 
 <pre>
 let l1 = lines.create('line').set({ 
@@ -5153,9 +5103,9 @@ let l1 = lines.create('line').set({
 });
 </pre>
 
-For the second line, we'll do much the same, except this time we'll
+<p>For the second line, we'll do much the same, except this time we'll
 stretch the lineLength a little, shift the hue in the opposite
-direction, and also reduce its opacity.
+direction, and also reduce its opacity.</p>
 
 <pre>
 let l2 = lines.create('line').set({ 
@@ -5167,36 +5117,35 @@ let l2 = lines.create('line').set({
   stroke_width: 0.5 
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-4b">5.4b Rotating and Translating</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The final step will involve some transforms and the usual incrementation
+<p>The final step will involve some transforms and the usual incrementation
 of our noise coordinate. We'll rotate the first line positively in a
 clockwise direction and the second line negatively in an anticlockwise
 direction. For this, we'll use the SvJs rotate() method, which is
 simpler than setting a transform: rotate() attribute as we've done in
-some previous sketches. It also boasts some additional benefits:
+some previous sketches. It also boasts some additional benefits:</p>
 
--   It rotates relative to its own center by default, rather than the
-    top left of the canvas.
+<ul>
+  <li>It rotates relative to its own center by default, rather than the top left of the 
+    canvas.</li>
+  <li>It preserves any existing transforms, rather than overwriting them as the transform 
+    attribute does.</li>
+</ul>
 
--   It preserves any existing transforms, rather than overwriting them
-    as the transform attribute does.
-
-With that in mind, let's continue with the sketch and complete the loop.
+<p>With that in mind, let's continue with the sketch and complete the loop.</p>
 
 <pre>l1.rotate(i); l2.rotate(-i); nX += noiseSpeed;</pre>
 
-And finally, outside the loop, move the lines to the center of the canvas and rotate 
-them by a random amount between 0 and 360.
+<p>And finally, outside the loop, move the lines to the center of the canvas and rotate 
+them by a random amount between 0 and 360.</p>
 
 <pre>lines.moveTo(500, 500); lines.rotate(Gen.random(0, 360));</pre>
 
-As you can see in Figure 5-4, what we end up are a series of slightly
+<p>As you can see in Figure 5-4, what we end up are a series of slightly
 asymmetric lines that somewhat resemble, to me at least, the dance of
-some deep-sea creatures.
+some deep-sea creatures.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 39. Spinning lines or deep-sea creatures? (134) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -5210,77 +5159,72 @@ some deep-sea creatures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch5-5">5.5 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-While there's certainly more to explore where noise is concerned, we've
+<p>While there's certainly more to explore where noise is concerned, we've
 covered the basics here, and we will be utilizing noise again in the
 forthcoming chapters. If you want to be able to tinker more with the
 nuts and bolts of noise, I'd encourage you to check out some third-party
 libraries like the popular SimplexJS, which goes beyond two dimensions
 and allows for greater freedom of configuration (at a cost of size,
-however).
+however).</p>
 
-Before we move on, let's quickly recap what we've covered in this chapter:
+<p>Before we move on, let's quickly recap what we've covered in this chapter:</p>
 
--   The limits of randomness when creating more organic forms and how
-    noise addresses this limitation
+<ul>
+  <li>The limits of randomness when creating more organic forms and how noise addresses 
+    this limitation</li>
+  <li>The theory behind the abstract noise space</li>
+  <li>How to put this into practice with the SvJs Noise module</li>
+  <li>How to traverse the noise space within a loop</li>
+  <li>How to use noise values to modify element coordinates and colors</li>
+  <li>Mapping and constraining noise values to more useful ranges</li>
+  <li>Optimizing repetitive element attributes with CSS</li>
+  <li>Nondestructive element rotations</li>
+</ul>
 
--   The theory behind the abstract noise space
-
--   How to put this into practice with the SvJs Noise module
-
--   How to traverse the noise space within a loop
-
--   How to use noise values to modify element coordinates and colors
-
--   Mapping and constraining noise values to more useful ranges
-
--   Optimizing repetitive element attributes with CSS
-
--   Nondestructive element rotations
-
-In the next chapter, we're going to cover a fundamental part of the SVG
-spec: the very powerful path element.
+<p>In the next chapter, we're going to cover a fundamental part of the SVG
+spec: the very powerful path element.</p>
 <!-- page 137 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 href="#ch6">CHAPTER 6: The All-Powerful Path (137)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Paths are perhaps the most important and most powerful part of the SVG
+<p>Paths are perhaps the most important and most powerful part of the SVG
 spec. Most SVG files, be they simple icons or complex artworks, consist
 primarily of path data. If, for example, you draw anything more advanced
 than a primitive shape in a vector graphics program like Inkscape or
 Illustrator, you are ipso facto working with paths. And no, to program
 paths manually in JavaScript and SvJs, you don't need to be a
-mathematical wizard.
+mathematical wizard.</p>
 
-This chapter will cover the path element and its associated commands,
+<p>This chapter will cover the path element and its associated commands,
 which are sufficiently numerous to need their own subsections. Paths can
 get complicated quickly, so we'll also be covering some SvJs methods to
-make our lives easier.
-
+make our lives easier.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-1">6.1 The Path Element (137)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-It's simple to set up a path; we just call the SvJs create() method as
-we would with most other elements: let path = svg.create(&apos;path&apos;);
+<p>It's simple to set up a path; we just call the SvJs create() method as
+we would with most other elements:</p>
 
-Paths accept the usual fill and stroke attributes that other graphical
+<pre>let path = svg.create(&apos;path&apos;);</pre>
+
+<p>Paths accept the usual fill and stroke attributes that other graphical
 elements do, but unlike other graphical elements (like rect and circle),
 they come with no intrinsic form or shape. This is entirely up to us to
-define, and we do so via the d attribute.
-
+define, and we do so via the d attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-1a">6.1a D for Data (138)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The d attribute allows us to populate a path with data. This data
+<p>The d attribute allows us to populate a path with data. This data
 consists of a series of path commands and accompanying numeric values
 that define the form the path takes. The data as a whole is passed in as
-a string.
+a string.</p>
 
-The creators of the SVG spec knew that paths would feature heavily in
+<p>The creators of the SVG spec knew that paths would feature heavily in
 most SVG files, so creating concise path commands was a crucial part of
 keeping down the overall kilobyte count. They are therefore of single-
 character length, like the d attribute to which they are passed, and the
 values that accompany the commands can also be flexibly formatted to
-conserve space.
+conserve space.</p>
 
 <pre>
 // <i>An example of a string of path data.</i>
@@ -5319,13 +5263,13 @@ demonstrate the once and won't use again.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-2">6.2 Starting and Ending a Path 139</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-All paths start somewhere. And where SVG is concerned, all paths start
+<p>All paths start somewhere. And where SVG is concerned, all paths start
 at the point to which we move our virtual pen. We use the M (or m)
 command for this, which means "move to." We follow this with an x and y
 coordinate pair to define the path's starting point. The M command by
 itself doesn't draw anything -- it merely moves us to the point at which
 we want to begin. Our pen has yet to push down on the paper, so to
-speak.
+speak.</p>
 
 <pre>
 // <i>Syntax for the M/m command.</i>
@@ -5337,22 +5281,21 @@ speak.
 'm 50 100 ...'
 </pre>
 
-We can provide an optional Z command at the very end of a path to close
+<p>We can provide an optional Z command at the very end of a path to close
 it. Paths without a closing Z command remain open (i.e., the starting
 point and end point remain unconnected). Z will draw a straight line to
 connect these two points unless the end point is a curve, in which case
 it will follow the curvature of the last control point (this will make
-more sense later on).
+more sense later on).</p>
 
 <pre>
 // <i>Closing a path.</i>
 'M 50 100 ... 50 150 Z'
 </pre>
 
-Unlike other path commands, the lowercase z and uppercase Z perform
+<p>Unlike other path commands, the lowercase z and uppercase Z perform
 identical operations, as no values follow them. This means you can use
-them interchangeably.
-
+them interchangeably.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch6-3">6.3 Straight Lines</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5410,10 +5353,10 @@ have to change the initial M point.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3b">6.3b Horizontal and Vertical Varieties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If the lines that we're drawing are either horizontal or vertical, we
+<p>If the lines that we're drawing are either horizontal or vertical, we
 can use the H or V commands as a shortcut, as they only need the one
 parameter; in the case of H or h, the x coordinate, and in the case of V
-or v, the y coordinate.
+or v, the y coordinate.</p>
 
 <pre>
 // <i>Syntax for the H/h command.</i>
@@ -5585,8 +5528,8 @@ set up as children of a group to which we'll give an id of slinky.</p>
 svg.create('style').content(`
   #slinky path { 
     fill: none; 
-	stroke-width: 0.75; 
-	stroke-linecap: round;
+    stroke-width: 0.75; 
+    stroke-linecap: round;
   }`
 );
 </pre>
@@ -6083,10 +6026,10 @@ hue = (hue % 360) + (noiseValue / 25);
 if (Gen.chance(10)) {
   svg.create('circle').set({ 
     r: Gen.random(5, 50), 
-	cx: Gen.random(150, 850), 
-	cy: Gen.random(150, 850), 
-	fill: `hsl(0 0% 100% / 0.1)`, 
-	stroke: '#888'
+    cx: Gen.random(150, 850), 
+    cy: Gen.random(150, 850), 
+    fill: `hsl(0 0% 100% / 0.1)`, 
+    stroke: '#888'
   });
 }
 </pre>
@@ -6408,7 +6351,7 @@ method; this is where we add each ellipse to the aforementioned array.</p>
 // <i>Run a loop a random number of times to create the ellipses.</i>
   for (let i = 0; 
     i &lt; iterations; 
-	i += 1) {
+    i += 1) {
 
       // <i>Create our ellipse.</i>
       let ellipse = svg.create('ellipse'); 
@@ -6419,14 +6362,14 @@ method; this is where we add each ellipse to the aforementioned array.</p>
         fill: 'none', 
         stroke: `hsl(${hue} 80% 80% / 0.6)`, 
         transform: `rotate(&dollar;{rotation + (i * 2)} 500 500)` 
-	  });
+      });
 
       // <i>Add the ellipse to the array.</i>
       ellipses.push(ellipse);
 
       // <i>Increment the hue.</i>
       hue = (hue % 360) + 2; 
-	}
+    }
 </pre>
 
 <p>You should now see a static arrangement of ellipses. Our next step is
@@ -6442,7 +6385,7 @@ svg.trackCursor(() => {
   ellipses.forEach((ellipse) =&gt; { 
     ellipse.set({
       cx: svg.cursorX, 
-	  cy: svg.cursorY
+      cy: svg.cursorY
     });
   });
 });
@@ -6521,7 +6464,7 @@ for (let i = 0;
     let size = 500 - (i * 125); 
     let position = 250 + (i * 62.5); 
     let shape = svg.create('rect').set({ 
-	  x: position, y: position, width: size,
+      x: position, y: position, width: size,
       height: size, fill: palette[i], transform_origin: '50% 50%',
       transform: 'rotate(45)'
     });
@@ -7533,19 +7476,19 @@ effect to it. The result (or output) is then named blur.
     first input in and the result of offset as its second input in2,
     recombining them.
 
-We'll go into some of these primitives in more detail later, but next
-we'll look at how to move from markup to scripting filters with SvJs.
+<p>We'll go into some of these primitives in more detail later, but next
+we'll look at how to move from markup to scripting filters with SvJs.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-1b">8.1b The SvJs createFilter( ) Method</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Perhaps unsurprisingly, SvJs has its own createFilter() method to speed up the filter 
+<p>Perhaps unsurprisingly, SvJs has its own createFilter() method to speed up the filter 
 creation process. It requires just one argument: an id, and this id is used when applying 
 the filter to the target element. As with the createGradient() and createPattern() 
 methods, sensible defaults are initialized, and the checking of whether a defs element 
-already exists is taken care of under the hood.
+already exists is taken care of under the hood.</p>
 
-The following is the SvJs equivalent of our first example shown previously, applying a 
-soft blur to a yellow circle (Figure 8-1).
+<p>The following is the SvJs equivalent of our first example shown previously, applying a 
+soft blur to a yellow circle (Figure 8-1).</p>
 
 <pre>
 // <i>Initialise the filter.</i>
@@ -7562,15 +7505,14 @@ svg.create('circle').set({
   filter: 'url(#blur)'
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-1c">8.1c The Filter Region</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-When a filter is applied to an element, its active region extends beyond
+<p>When a filter is applied to an element, its active region extends beyond
 that element. This allows a certain amount of space into which the
 effect can "bleed," to use a print analogy. This space is known as the
 filter region, and once a filter's effect extends beyond this region,
-clipping occurs (see Figure 8-3).
+clipping occurs (see Figure 8-3).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. A clipped filter region (211) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -7581,21 +7523,21 @@ clipping occurs (see Figure 8-3).
 
 <p><small><small><i><b>Figure 8-3.</b> A clipped filter region</i></small></small></p>
 
-In generative art, we'll sometimes stray outside the range of values a
+<p>In generative art, we'll sometimes stray outside the range of values a
 filter effect parameter might anticipate, so it's important to know
 about this region if your filter effects are unexpectedly clipped. A
 filter region is defined just as a rect element is: by x, y, width, and
-height attributes. By default, these values are as follows:
+height attributes. By default, these values are as follows:</p>
 
 <pre>
 &lt;filter x="-10%" y="-10%" width="120%" height="120%"&gt;
 </pre>
 
-The percentage values are relative to the shape to which the filter is
+<p>The percentage values are relative to the shape to which the filter is
 applied, so in the aforementioned, this translates to a 10% padding
 surrounding the filtered element. SvJs enlarges this filter region to
 25%, allowing some more room to experiment. If you need to adjust it
-further, you can easily do so with the set() method:
+further, you can easily do so with the set() method:</p>
 
 <pre>
 filter.set({ 
@@ -7608,12 +7550,12 @@ filter.set({
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-2">8.2 Filter Effects 101</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Let's move on to some simple custom filter effects. We've already seen
+<p>Let's move on to some simple custom filter effects. We've already seen
 the feGaussianBlur primitive in action so I won't give it its own
 section here, but it's worth mentioning before I move on that its main
 attribute stdDeviation can actually accept two values as well as one. If
 you supply two, the first number will control the blur along the x axis
-and the second the blur along the y axis.
+and the second the blur along the y axis.</p>
 
 <pre>
 // <i>Create a 'motion' blur effect.</i>
@@ -7622,17 +7564,17 @@ filter.create('feGaussianBlur').set({ stdDeviation: '20 0' });
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2a">8.2a Shadows</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We implemented a drop shadow earlier using three connected filter
+<p>We implemented a drop shadow earlier using three connected filter
 primitives, but there's actually a much easier way to do this. In a more
 recent revision of the SVG spec, the primitive feDropShadow was
 introduced, which can accept up to five attributes: dx, which defines
 the shadow offset along the x axis; dy, which does the same along the y
 axis; stdDeviation, which controls the blurring of the shadow; and two
 more optional attributes, flood-colour and flood-opacity, which can
-modify the shadow's color and transparency.
+modify the shadow's color and transparency.</p>
 
-Here's how we could rewrite the code for Figure 8-2 using SvJs and the
-feDropShadow primitive.
+<p>Here's how we could rewrite the code for Figure 8-2 using SvJs and the
+feDropShadow primitive.</p>
 
 <pre>
 // <i>Initialise the filter.</i>
@@ -7651,25 +7593,25 @@ filter: 'url(#shadow)' });
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2b">8.2b Coloring</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We mentioned earlier some attributes called flood-colour and flood-
+<p>We mentioned earlier some attributes called flood-colour and flood-
 opacity that can be used with the feDropShadow primitive. There's
 another primitive these can also be applied to and to which they
 originally belonged: feFlood. The feFlood primitive is very basic; it
 requires no input and simply floods the filter region with a specific
 color and opacity. By itself, it's not especially interesting, but it
-can be useful when combined with other primitives.
+can be useful when combined with other primitives.</p>
 
-Other more capable color-related primitives exist called feColorMatrix
+<p>Other more capable color-related primitives exist called feColorMatrix
 and feComponentTransfer. The latter is too advanced to cover in this
-book so we'll limit ourselves to feColorMatrix and feFlood.
+book so we'll limit ourselves to feColorMatrix and feFlood.</p>
 
-Let's set up a sketch and put these to use.
+<p>Let's set up a sketch and put these to use.</p>
 
-Instead of copying our template folder, let's copy our first grid
+<p>Instead of copying our template folder, let's copy our first grid
 example, which I labelled 07-regular-grids (see Chapter 4). Copy and
 rename this folder to something like 21-colour-filter. Leaving the rest
 of the code as is, replace the body of the nested for loop with the
-following:
+following:</p>
 
 <pre>
 if (Gen.chance(55)) { 
@@ -7685,14 +7627,14 @@ if (Gen.chance(55)) {
 }
 </pre>
 
-This should give us a chance arrangement of colorful tiles on each
+<p>This should give us a chance arrangement of colorful tiles on each
 refresh. So far we've been quite restrained in our use of color,
 controlling mainly the hue component of the hsl() function. This time
 we're unleashing the full rgb color spectrum, so the results can range
 from dramatic and dynamic to garish and grating (see Figure 8-4 for some
 sample output). There is something I like about these results; the
 coloring, however, can get a little too incongruous at times. So let's
-use some filters to rein in the colors but retain the dynamic range.
+use some filters to rein in the colors but retain the dynamic range.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. Full-spectrum RGB tiles (214) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -7703,9 +7645,9 @@ use some filters to rein in the colors but retain the dynamic range.
 
 <p><small><small><i><b>Figure 8-4.</b> Full-spectrum RGB tiles</i></small></small></p>
 
-The first step is to desaturate the colors. For this, we can use the
+<p>The first step is to desaturate the colors. For this, we can use the
 feColorMatrix primitive, which takes two arguments: type and values. The
-accepted values depend on the type, which can be as follows:
+accepted values depend on the type, which can be as follows:</p>
 
 -   saturate: This determines the color saturation of the input. It
     accepts values between 0 (no saturation) and 1 (full saturation),
@@ -7725,10 +7667,10 @@ accepted values depend on the type, which can be as follows:
     input source. It's a little too advanced to delve into in this
     chapter.
 
-Of the aforementioned, saturate is what we're looking for. To drain the
+<p>Of the aforementioned, saturate is what we're looking for. To drain the
 colors from our input, we need to set the values to 0. Let's set up a
 filter now to do this. At the bottom of the sketch, initialize a new
-filter as follows:
+filter as follows:</p>
 
 <pre>
 // <i>Initialise the filter.</i>
@@ -7745,10 +7687,10 @@ filter.create('feColorMatrix').set({
 grid.set({ filter: 'url(#colourise)' });
 </pre>
 
-This should result in a grayscale grid. Next, we want to choose a color
+<p>This should result in a grayscale grid. Next, we want to choose a color
 to mix into it, and for this, we'll use the feFlood primitive. Between
 the feColorMatrix primitive and the last line where we apply the filter,
-add the following code:
+add the following code:</p>
 
 <pre>
 // <i>Set a flood colour.</i>
@@ -7758,34 +7700,33 @@ filter.create('feFlood').set({
 });
 </pre>
 
-This should add a sepia-brown color to the composition. The problem? It
+<p>This should add a sepia-brown color to the composition. The problem? It
 simply floods the canvas, covering everything else. We need a way to
-blend it with the result of the feColorMatrix desaturation.
-
+blend it with the result of the feColorMatrix desaturation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2c">8.2c Blending</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Most vector and image editing applications have blending capabilities
+<p>Most vector and image editing applications have blending capabilities
 built in, in the form of layer blending modes. SVG supports this feature
-at the filter level in the form of the feBlend primitive.
+at the filter level in the form of the feBlend primitive.</p>
 
-A blending mode (or just blend mode) defines how colors interact when
+<p>A blending mode (or just blend mode) defines how colors interact when
 elements overlap (whether the elements are individual shapes or entire
 layers). If a blend mode is set to multiply for example, the final color
 is the result of multiplying the top color by the bottom color, which
 creates an effect similar to transparent film cells overlapping. If set
 to screen, the top and bottom colors are inverted, multiplied, and
 re-inverted, resulting in an effect similar to two images shone onto a
-projection screen.
+projection screen.</p>
 
-There are a number of blend modes supported by the SVG spec, and
+<p>There are a number of blend modes supported by the SVG spec, and
 describing each one is beyond the scope of this chapter, but for a
 comprehensive treatment (including interactive examples), check out the
-MDN entry at developer.mozilla.org/docs/Web/CSS/blend-mode.
+MDN entry at developer.mozilla.org/docs/Web/CSS/blend-mode.</p>
 
-There are actually several blend modes that will work well in our case,
+<p>There are actually several blend modes that will work well in our case,
 so what I'm going to do is store these in an array so we can select from
-them later. Include the following code before our filter is initialized:
+them later. Include the following code before our filter is initialized:</p>
 
 <pre>
 // <i>Set up a blend modes array.</i>
@@ -7798,9 +7739,9 @@ let blendModes = ['screen',
 ];
 </pre>
 
-Next, after where we defined the feFlood primitive, set up the feBlend
+<p>Next, after where we defined the feFlood primitive, set up the feBlend
 primitive. We'll randomize its mode attribute and set the first input to
-the flood color and the second input to the desaturated grid.
+the flood color and the second input to the desaturated grid.</p>
 
 <pre>
 // <i>Randomize the blend mode.</i>
@@ -7812,35 +7753,35 @@ filter.create('feBlend').set({
 });
 </pre>
 
-The first input, in, acts as our top color, and the second input, in2,
+<p>The first input, in, acts as our top color, and the second input, in2,
 acts as our background color. Our grid should have re-appeared at this
 point in colorized form, but we've still got our flood color in the
 foreground. We need a way to strip this out, which brings us to the next
-section.
+section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-2d">8.2d Compositing</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-If you've ever watched the behind-the-scenes footage of some of your
+<p>If you've ever watched the behind-the-scenes footage of some of your
 favorite films, you'll likely have come across the green-screen
 technique: the action hero who scales a skyscraper is, in reality,
 hanging from a pulley with green fabric draped in the background. This
 technique makes it easier to strip away the background from the
-foreground and combine it later with separately captured footage.
+foreground and combine it later with separately captured footage.</p>
 
-Compositing is the act of fusing these two disparate elements together;
+<p>Compositing is the act of fusing these two disparate elements together;
 two sources combine and become one. It is similar to blending in many
 respects, but the results are more pronounced and programmable. It has
 more to do with how elements intersect than how their colors merge, and
 the various compositing operations available to us can produce very
 different results. Blending, on the other hand, tends to be more uniform
-in its output.
+in its output.</p>
 
-The feComposite primitive allows us to perform compositing operations in
+<p>The feComposite primitive allows us to perform compositing operations in
 SVG. It takes two inputs, in and in2, and there are seven possible
 values its operator attribute accepts: over, in, atop, xor, out,
 lighter, and arithmetic. In Figure 8-5, I've illustrated six of these;
 the arithmetic operator has no set output (it's fully customizable) and
-is a little too complex to properly cover in this chapter.
+is a little too complex to properly cover in this chapter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 63. Six of the seven SVG compositing operations (218) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -7852,10 +7793,10 @@ is a little too complex to properly cover in this chapter.
 
 <p><small><small><i><b>Figure 8-5.</b> Six of the seven SVG compositing operations</i></small></small></p>
 
-Because the feComposite primitive is so useful and something you'll
+<p>Because the feComposite primitive is so useful and something you'll
 likely lean on if you further explore SVG filters, it's worth describing
 each preset operator. In Figure 8-5, we can think of in as our
-foreground and in2 as our green-screen background.
+foreground and in2 as our green-screen background.</p>
 
 -   over: This is the default operator, where our foreground is simply
     placed over the background.
@@ -7879,22 +7820,21 @@ foreground and in2 as our green-screen background.
 -   arithmetic: If this operator is chosen, four additional attributes
     must be defined, all numeric: k1, k2, k3, and k4. The output is then
     defined via the following formula: (k1 &ast; i1 &ast; i2) + (k2 &ast; i1) +
-    (k3 &ast; i2)
+    (k3 &ast; i2) &plus; k4, where i1 and i2 represent in and in2, respectively. 
 
-&plus; k4, where i1 and i2 represent in and in2, respectively. Yep, told
-you it was complex! But the most subtle and customizable results can
+<p>Yep, told you it was complex! But the most subtle and customizable results can
 be achieved using this operator, so it is well worth independent
-exploration.
+exploration.</p>
 
-If we take the result of the feFlood primitive as our first input (the
+<p>If we take the result of the feFlood primitive as our first input (the
 foreground) and the SourceGraphic as the second input, the operator that
 will achieve the effect we're looking for is atop. To recap, with this
 operator, those portions of the foreground (feFlood) that overlap with
 the background (SourceGraphic) are retained; the rest of feFlood should
-be clipped.
+be clipped.</p>
 
-Let's set this up now. Include the following code after the feBlend
-primitive, before the filter is applied to the grid.
+<p>Let's set this up now. Include the following code after the feBlend
+primitive, before the filter is applied to the grid.</p>
 
 <pre>
 // <i>Composite the blend 'atop' the original.</i>
@@ -7905,13 +7845,13 @@ filter.create('feComposite').set({
 });
 </pre>
 
-For me, this resulted in the output you see in Figure 8-6. I don't know
+<p>For me, this resulted in the output you see in Figure 8-6. I don't know
 about you, but I see a pugnacious pup putting up his dukes, à la
 Scrappy- Doo (though that may well be my pareidolia at work). On each
 refresh, you'll see something quite different, and while the color tones
 vary, a common palette can be discerned due to the single feFlood color
 we're drawing upon. This kind of effect would be quite difficult to
-achieve without filters.
+achieve without filters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 64. The result of the composite operation (220) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -7924,25 +7864,25 @@ achieve without filters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-3">8.3 Noise and Distortion</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section, we'll introduce a new kind of noise, one that's
+<p>In this section, we'll introduce a new kind of noise, one that's
 actually built in to the SVG spec itself. And we'll also explore how to
 add some distortion to our filter pipeline. With these two ingredients,
 along with the basics covered earlier, a whole world of effects opens up
-to us.
+to us.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-3a">8.3a Turbulence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In Chapter 5, we introduced the SvJs Noise module, which allowed us to
+<p>In Chapter 5, we introduced the SvJs Noise module, which allowed us to
 use Perlin noise in our sketches. SVG also implements Perlin noise
-inside its feTurbulence filter primitive, so what's the difference?
+inside its feTurbulence filter primitive, so what's the difference?</p>
 
-Well, with the Noise module, we can extract and play with noise <i>data</i>,
+<p>Well, with the Noise module, we can extract and play with noise <i>data</i>,
 using its values to shape our vectors. With feTurbulence on the other
 hand, we have a filter primitive that renders noise data directly, in
 <i>pixel</i> form. This doesn't give us access to the underlying noise data,
 but what we can do is easily alter the visual output by tweaking its
 attributes and then feed it into other filter primitives. The
-feTurbulence attributes are as follows:
+feTurbulence attributes are as follows:</p>
 
 -   baseFrequency: This is the only mandatory attribute, and we can
     think of it as defining the noise "zoom level." It's typical for the
@@ -7979,10 +7919,10 @@ feTurbulence attributes are as follows:
     turbulence type, on the other hand, is more liquid-like in
     appearance.
 
-In Figure 8-7, we can see two instances of turbulence on the left and
+<p>In Figure 8-7, we can see two instances of turbulence on the left and
 two instances of fractalNoise on the right. The values vary only
 slightly between instances, which should give you a sense of the
-potential variation offered by this filter primitive.
+potential variation offered by this filter primitive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 65. Varying the base frequency and octaves for the two noise types (223) ~~~~~~~~~-->
 <img class="displayed"
@@ -7994,7 +7934,7 @@ potential variation offered by this filter primitive.
 
 <p><small><small><i><b>Figure 8-7.</b> Varying the base frequency and octaves for the two noise types</i></small></small></p>
 
-The best way to get a feel for how feTurbulence works is to tweak an
+<p>The best way to get a feel for how feTurbulence works is to tweak an
 interactive example, so I've created a pen for you here for this
 purpose: <a href="https://davidmatthew.ie/generative-art-javascript-svg#turbulence">
 davidmatthew.ie/generative-art-javascript-svg#turbulence</a>.
@@ -8003,36 +7943,36 @@ spectrum and modifying the seed to select a pattern at random; this can
 produce a huge variety of interesting textures. Very high baseFrequency
 values can be useful however if you want to simulate something more
 granular, like the classic film grain effect or a sandpaper-like
-texture.
+texture.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-3b">8.3b Displacement</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-One filter primitive that works particularly well alongside feTurbulence
+<p>One filter primitive that works particularly well alongside feTurbulence
 is feDisplacementMap. This primitive allows us to distort the first
 input, in, using values from the second input, in2. This second input
 acts as the map from which we can derive the displacement values, that
 is, the values that decide how much distortion we should apply along the
 x and y axes. This means that we could use the output from feTurbulence
-to distort our SourceGraphic by feeding both through feDisplacementMap.
+to distort our SourceGraphic by feeding both through feDisplacementMap.</p>
 
-Besides the aforementioned in and in2, the feDisplacementMap primitive
+<p>Besides the aforementioned in and in2, the feDisplacementMap primitive
 has three other attributes: the first is scale, which determines how
-much distortion to apply (i.e., to what extent is in distorted by in2).
+much distortion to apply (i.e., to what extent is in distorted by in2).</p>
 
-The other two attributes, xChannelSelector and yChannelSelector, allow
+<p>The other two attributes, xChannelSelector and yChannelSelector, allow
 us to specify which channels are responsible for horizontal and vertical
 displacement. They accept values of R, G, B, or A, representing the
-three color channels along with the alpha channel.
+three color channels along with the alpha channel.</p>
 
-If we take a single color channel, R, as an example, its value can range
+<p>If we take a single color channel, R, as an example, its value can range
 from 0 to 255. Values below 127 result in negative displacement (they're
 shifted left along the x axis, or up along the y axis), whereas values
 above 127 result in positive displacement (shifted to the right along
-the x axis, or down along the y axis).
+the x axis, or down along the y axis).</p>
 
-In Figure 8-8, the output of an feTurbulence primitive (center) is used
+<p>In Figure 8-8, the output of an feTurbulence primitive (center) is used
 as the map to displace the source graphic (left), resulting in some soft
-wave-like distortion (right).
+wave-like distortion (right).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 66. Using turbulence as a displacement map source (224) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8046,15 +7986,15 @@ wave-like distortion (right).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-3c">8.3c Creating a Cosmic Bubble</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This next example will piece together several of the filter primitives
+<p>This next example will piece together several of the filter primitives
 we've covered so far and apply it to the simplest of source graphics:
 the circle. Our aim will be to create something a little "cosmic" by
-compositing together some turbulence, blur, and distortion.
+compositing together some turbulence, blur, and distortion.</p>
 
-First things first, make a copy of our template folder and rename it to
+<p>First things first, make a copy of our template folder and rename it to
 22-hubble-bubble (or another name of your choice). In the usual spot
 below the background, let's set up our source graphic in the center of
-the viewBox, randomizing its radius a little.
+the viewBox, randomizing its radius a little.</p>
 
 <pre>
 // <i>Create the source graphic.</i>
@@ -8067,19 +8007,19 @@ svg.create('circle').set({
 });
 </pre>
 
-You'll notice we've referenced our filter already but haven't yet
+<p>You'll notice we've referenced our filter already but haven't yet
 created it. Normally the order of our created elements matters; if we
 create one circle and then another, the latter will be rendered "above"
 the former in a layer-like manner. But as filters are created within a
 defs element, it's ok to define them after the element to which they
 apply. To recap, anything that lives inside the defs element isn't
-directly rendered but must be referenced.
+directly rendered but must be referenced.</p>
 
-In the next step, we'll create the filter (ensuring the id matches the
+<p>In the next step, we'll create the filter (ensuring the id matches the
 reference to #cosmic), and add the first filter primitive to the chain:
 feTurbulence. We'll randomize the seed, keep the dial low on the
 baseFrequency, and crank up the numOctaves to 4, to bring out some of
-the texture details.
+the texture details.</p>
 
 <pre>
 // <i>Initialise the filter.</i>
@@ -8096,14 +8036,14 @@ filter.create('feTurbulence').set({
 });
 </pre>
 
-Like feFlood, feTurbulence is a generator primitive that doesn't require
+<p>Like feFlood, feTurbulence is a generator primitive that doesn't require
 any input; it generates its own output directly. The result of this is
 that once we initialize an feTurbulence primitive as the latest (or
 only) link in the filter chain, it will simply flood the filter region
 with its output (which is what you'll see if you run the code at this
-point). We'll use feComposite to fix this later.
+point). We'll use feComposite to fix this later.</p>
 
-In our next step, we'll create a target region to displace (i.e., apply
+<p>In our next step, we'll create a target region to displace (i.e., apply
 distortion to). To create this target area, what we'll do is soften the
 edges of the source graphic (the circle) using an feGaussianBlur; this
 has the effect of introducing some transparency to the circle's
@@ -8113,7 +8053,7 @@ Figure 8-8 shows the result of using turbulence as a displacement map
 source; this time around we'll be doing the reverse and using turbulence
 as the displacement map destination. The blurred area of our circle will
 instead be our displacement map source. Here's how to set up this up
-(with some randomness mixed in).
+(with some randomness mixed in).</p>
 
 <pre>
 // <i>Blur the edges of the source graphic.</i>
@@ -8132,10 +8072,10 @@ filter.create('feDisplacementMap').set({
 });
 </pre>
 
-This results in a rim of displaced noise, as shown in Figure 8-9. Note
+<p>This results in a rim of displaced noise, as shown in Figure 8-9. Note
 that we've omitted the xChannelSelector and yChannelSelector attributes
 of feDisplacementMap; these both default to the alpha channel, which is
-fine in our case.
+fine in our case.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 67. Displacement using the blurred edge of a circle (227) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8172,29 +8112,29 @@ filter.create('feComposite').set({
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-4">8.4 Lighting and Texture</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Despite SVG being, by definition, a format for two-dimensional vector
-graphics, among its filter primitives, you'll find two lighting effects:
+<p>Despite SVG being, by definition, a format for two-dimensional vector
+graphics, among its filter primitives, you'll find two lighting effects:</p>
 
-feDiffuseLighting and feSpecularLighting. Normally the domain of
+<p>feDiffuseLighting and feSpecularLighting. Normally the domain of
 three-dimensional graphics, lighting typically requires a z-axis
 component to operate so that surfaces or other objects that protrude in
 space, that is, have depth, can catch the light cast by the source. SVG
 coordinate space is devoid of any such third dimension or z axis, so how
-exactly does lighting function in such an environment?
+exactly does lighting function in such an environment?</p>
 
-The answer is that the z axis is simulated by using "bump" maps.
+<p>The answer is that the z axis is simulated by using "bump" maps.
 Specifically, feDiffuseLighting and feSpecularLighting both interpret
 the alpha channel of their connected inputs as a bump map source. A bump
 map is just what it sounds like, a map of bumps, meaning any raised
-regions of a surface, like slopes, peaks, folds, and wrinkles.
+regions of a surface, like slopes, peaks, folds, and wrinkles.</p>
 
-The challenge with these lighting primitives is knowing how to supply
+<p>The challenge with these lighting primitives is knowing how to supply
 them with nicely gradiented bump maps; anything with very sharp
 transitions or a lot of areas of flat color can often appear
 unpleasantly pixelated, or entirely unaffected. In Figure 8-11, we can
 see the rather stark difference between a distant light source shining
 on a circle with a radial gradient (left) vs. a circle of the same size
-with a uniform fill (right).
+with a uniform fill (right).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 69. Lighting cast on a radial gradient vs. a flat fill (229) ~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8206,22 +8146,22 @@ with a uniform fill (right).
 
 <p><small><small><i><b>Figure 8-11.</b> Lighting cast on a radial gradient vs. a flat fill</i></small></small></p>
 
-Lighting is one of those things in SVG that's very easy to get wrong.
+<p>Lighting is one of those things in SVG that's very easy to get wrong.
 When it does go awry, the results often look cheap, choppy, and jagged
 and can put you off playing with lighting altogether. We need to
 remember that with filters, we've moved from the realm of vectors to
 that of pixels, where resolution matters. A more finely gradiented alpha
-channel will translate to a higher-resolution bump map.
+channel will translate to a higher-resolution bump map.</p>
 
-Fortunately, feTurbulence is a first-rate source of gradiented alpha
+<p>Fortunately, feTurbulence is a first-rate source of gradiented alpha
 channel data. In our next sketch, we'll use feTurbulence along with
 feDiffuseLighting and feDisplacementMap to simulate a rough, ripped
 paper effect. But first, we need to delve a little more into the details
-of the two aforementioned lighting primitives.
+of the two aforementioned lighting primitives.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4a">8.4a Diffuse and Specular Lighting</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The feDiffuseLighting primitive simulates diffuse reflection. What this
+<p>The feDiffuseLighting primitive simulates diffuse reflection. What this
 means is that the light that strikes the surface of a diffuse-lit object
 is scattered in all directions, as is characteristic of rough surface
 textures (like linen). The feSpecularLighting primitive, on the other
@@ -8229,7 +8169,7 @@ hand, simulates specular reflection, which is characteristic of smoother
 surfaces (like a bowling ball). With specular reflection, the light that
 strikes the surface bounces at a definite angle. Figure 8-12 shows the
 difference between a point light emitted by feDiffuseLighting (left) vs.
-the same light emitted by feSpecularLighting (right).
+the same light emitted by feSpecularLighting (right).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 70. Diffuse vs. specular lighting (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8241,7 +8181,7 @@ the same light emitted by feSpecularLighting (right).
 
 <p><small><small><i><b>Figure 8-12.</b> Diffuse vs. specular lighting</i></small></small></p>
 
-Both lighting primitives take a single input in as their bump map source
+<p>Both lighting primitives take a single input in as their bump map source
 and a surfaceScale attribute, which defines the relative height of the
 bump map. The color of the light can also be customized using the
 lighting-color attribute, which is white by default. Both primitives
@@ -8251,11 +8191,11 @@ feSpecularLighting. This constant determines the strength of the light
 cast by the source. The feSpecularLighting primitive boasts an
 additional attribute called specularExponent, which controls the focal
 point strength (in Figure 8-12, this would determine the size of the
-point light's reflection).
+point light's reflection).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4b">8.4b Light Sources</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I've mentioned distant lights and point lights a couple of times now but
+<p>I've mentioned distant lights and point lights a couple of times now but
 haven't explained them. These refer to the type of light emitted by
 either an feDiffuseLighting or feSpecularLighting primitive. By
 themselves, these primitives do not emit any light; they require an
@@ -8263,7 +8203,7 @@ extra nested node to define the source. In other words, setting up a
 light in SVG involves defining two elements: one, the outer node, which
 defines whether the target surface of the lighting is diffuse or
 specular; and two, the inner node, which defines the type of light
-source to be used. Here's how an example might look in raw SVG:
+source to be used. Here's how an example might look in raw SVG:</p>
 
 <pre>
 &lt;feDiffuseLighting in="SourceGraphic" surfaceScale="1.5"&gt;
@@ -8271,30 +8211,30 @@ source to be used. Here's how an example might look in raw SVG:
   &lt;/feDiffuseLighting&gt;
 </pre>
 
-There are three light source nodes: feDistantLight, an ambient light
+<p>There are three light source nodes: feDistantLight, an ambient light
 that emits rays uniformly in all directions (such as the sun);
 fePointLight, a more proximate light source that has a defined focal
 point; and feSpotLight, a directional light that emits its rays through
 a conical shape, the dimensions of which can be customized. Addressing
 all three light sources would exceed the scope of this chapter, so we'll
-stick to the first two: feDistantLight and fePointLight.
+stick to the first two: feDistantLight and fePointLight.</p>
 
-The feDistantLight source has two attributes: the azimuth, which
+<p>The feDistantLight source has two attributes: the azimuth, which
 specifies the angle of direction of the light, and the elevation, which
 specifies the height of the light source. Both are expressed in terms of
 degrees. To use the sun analogy, at dawn it would rise in the east (at
 an azimuth and elevation of 0) and by midday at the equator, it would
-have climbed to an elevation of 90, directly overhead.
+have climbed to an elevation of 90, directly overhead.</p>
 
-The fePointLight source has no azimuth or elevation; it is instead
+<p>The fePointLight source has no azimuth or elevation; it is instead
 defined entirely by x, y, and z attributes. The z attribute would
 correspond with the elevation or height of the light source, and the x
 and y attributes refer to the standard two-dimensional position in the
-current coordinate space.
+current coordinate space.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4c">8.4c Simulating Textures</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Let's start a new sketch and flesh out some of the theory mentioned
+<p>Let's start a new sketch and flesh out some of the theory mentioned
 previously. Copy our template folder and rename it to 23-rough-paper,
 and in the usual spot below the background, create a parchment-colored
 gradient that we'll apply to our paper. The paper itself will be a
@@ -8302,7 +8242,7 @@ compound path consisting of two shapes (the result of ripping it in
 two). As you can see, it's possible to extend paths beyond a terminating
 Z command by simply adding a new M command (the equivalent of lifting
 your pen to start a new line elsewhere). Once we have the ripped paper
-set up, we center it.
+set up, we center it.</p>
 
 <pre>
 // <i>Create a parchment-coloured gradient.</i>
@@ -8321,10 +8261,10 @@ let paper = svg.create('path').set({
 paper.moveTo(500, 500);
 </pre>
 
-The composition we're keeping deliberately simple so that we can give
+<p>The composition we're keeping deliberately simple so that we can give
 more focus to the filter effect. We'll initialize this next and add the
 first primitive to the chain: feTurbulence. This will form the basis of
-the paper grain texture.
+the paper grain texture.</p>
 
 <pre>
 // <i>Initialize the filter.</i>
@@ -8340,11 +8280,11 @@ filter.create('feTurbulence').set({
 });
 </pre>
 
-The canvas should now be flooded with feTurbulence. What we'll do next
+<p>The canvas should now be flooded with feTurbulence. What we'll do next
 is shine a light on it, specifically an feDiffuseLighting primitive with
 a nested feDistantLight node as the lighting type. This second node we
 can create directly after the diffuse lighting primitive, using SvJs
-method chaining.
+method chaining.</p>
 
 <pre>
 // <i>Shine diffuse lighting on the turbulence.</i>
@@ -8359,9 +8299,9 @@ filter.create('feDiffuseLighting').set({
 });
 </pre>
 
-We should now have a paper-like texture covering the canvas. Next, we'll
+<p>We should now have a paper-like texture covering the canvas. Next, we'll
 rough up the edges of our source graphic by plugging some turbulence
-into an feDisplacementMap primitive.
+into an feDisplacementMap primitive.</p>
 
 <pre>
 // <i>Distort the paper source graphic with turbulence.</i>
@@ -8373,11 +8313,11 @@ filter.create('feDisplacementMap').set({
 });
 </pre>
 
-This gives us an outline of aging paper with worn edges, but with no
+<p>This gives us an outline of aging paper with worn edges, but with no
 texture. To re-introduce the result of the lighting effect, we need to
 do some compositing. With the lighting output as the foreground and
 rough-edged paper as the background, the in operator will achieve the
-effect we're looking for.
+effect we're looking for.</p>
 
 <pre>
 // <i>Merge the lighting with the rough-edged paper.</i>
@@ -8389,11 +8329,11 @@ filter.create('feComposite').set({
 });
 </pre>
 
-With the shape now in place and the texture showing through, we have a
+<p>With the shape now in place and the texture showing through, we have a
 believable rough and ripped paper texture. However, we're missing one
 final ingredient: the color. To remedy this, we'll blend the output of
 feComposite with the output of feDisplacementMap and use a mode of
-multiply. This should salvage our original parchment gradient.
+multiply. This should salvage our original parchment gradient.</p>
 
 <pre>
 // <i>Re-introduce the parchment gradient.</i>
@@ -8404,10 +8344,10 @@ filter.create('feBlend').set({
 });
 </pre>
 
-Figure 8-13 shows the result. Not bad! While not quite impressive enough
+<p>Figure 8-13 shows the result. Not bad! While not quite impressive enough
 to stand on its own (in my opinion at least), with variations of this
 effect, you have a means of injecting additional visual interest into
-other generative compositions.
+other generative compositions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 71. Our rough and ready paper texture (235) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8420,16 +8360,16 @@ other generative compositions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8-4d">8.4d Generative Textures</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The previous example lays the groundwork for what we'll try next.
+<p>The previous example lays the groundwork for what we'll try next.
 Simulating textures is all well and good, but for the next example,
 we'll go full generative, that is, relinquish some control and relish
 the randomness of the results. In the process, we'll also demonstrate
 the use of specular lighting of the point variety, so you can see how it
-differs from diffuse, distant lighting.
+differs from diffuse, distant lighting.</p>
 
-Copy the template folder and call it 24-rocky-randomness. Below the
+<p>Copy the template folder and call it 24-rocky-randomness. Below the
 background, we'll set up our source graphic, which will be a simple
-circle. To this circle, we'll apply both a gradient and a filter.
+circle. To this circle, we'll apply both a gradient and a filter.</p>
 
 <pre>
 // <i>Create our source graphic.</i>
@@ -8442,9 +8382,9 @@ svg.create('circle').set({
 });
 </pre>
 
-The next step is to set up a linear gradient. For this, we'll use an
+<p>The next step is to set up a linear gradient. For this, we'll use an
 array of three random colors, and we'll also randomize the gradient's
-rotation.
+rotation.</p>
 
 <pre>
 // <i>A random color array.</i>
@@ -8458,11 +8398,11 @@ let colours = [
 svg.createGradient('random-gradient', 'linear', colours, Gen.random(0, 360));
 </pre>
 
-Now to the filter. As with our other examples, our first node will be an
+<p>Now to the filter. As with our other examples, our first node will be an
 feTurbulence primitive, which will act as our primary textural source.
 The numOctaves will vary between 2 and 7, which will allow for quite a
 degree of variation in the level of detail. The baseFrequency and seed
-we'll also randomize.
+we'll also randomize.</p>
 
 <pre>
 // <i>Initalize the filter.</i>
@@ -8476,18 +8416,18 @@ filter.create('feTurbulence').set({
   result: 'turbulence' });
 </pre>
 
-Now we have raw turbulence covering the canvas, and while it does vary
+<p>Now we have raw turbulence covering the canvas, and while it does vary
 on each refresh, it still feels a little too uniform. How can we create
 something more organic and a little less grid-like? Well, we could
-distort it with ... more turbulence!
+distort it with ... more turbulence!</p>
 
-To do this, we'll set up another feTurbulence primitive, this time using
+<p>To do this, we'll set up another feTurbulence primitive, this time using
 fractalNoise. The baseFrequency we'll ramp up a little, but we'll keep
 numOctaves and the seed to a similar range. Then we'll plug both into
 feDisplacementMap, randomize the scale value (which determines the
 strength of the distortion), and set R and G as the x and y channel
 selectors (purely because I didn't really like the default output of
-alpha on this occasion).
+alpha on this occasion).</p>
 
 <pre>
 // <i>Set up another instance of turbulence.</i>
@@ -8510,10 +8450,10 @@ filter.create('feDisplacementMap').set({
 });
 </pre>
 
-We have some more natural-looking noise now, so let's spin up some
+<p>We have some more natural-looking noise now, so let's spin up some
 specular lighting and see how the noise looks when lit up. We'll utilize
 Gen. random() on most of the attributes, including the point light
-coordinates.
+coordinates.</p>
 
 <pre>
 // <i>Shine a specular point light on the distorted output.</i>
@@ -8530,19 +8470,19 @@ filter.create('feSpecularLighting').set({
 });
 </pre>
 
-For the x and y coordinates, you'll notice we're using Gen.random() to
+<p>For the x and y coordinates, you'll notice we're using Gen.random() to
 pick from an array of values rather than a range; if you inspect these
 values, you'll see that these combinations keep the lighting to the
 periphery of the canvas. This is mainly to prevent any direct shine
 (think of an unwelcome camera flash in a photograph). If you load up the
 sketch at this point, you should see some interesting generative terrain
-emerge. We're not done yet though.
+emerge. We're not done yet though.</p>
 
-Before we bring the terrain and the source graphic back together, we're
+<p>Before we bring the terrain and the source graphic back together, we're
 going to soften the edges of the latter with some feGaussianBlur. We'll
 then use feComposite along with the in operator as we've done in
 previous sketches, before recovering the original gradient using another
-feComposite primitive, this time with the atop operator.
+feComposite primitive, this time with the atop operator.</p>
 
 <pre>
 // <i>Blur the source graphic.</i>
@@ -8569,9 +8509,9 @@ filter.create('feComposite').set({
 });
 </pre>
 
-And now we're ready to see some results! Figure 8-14 shows a render I
+<p>And now we're ready to see some results! Figure 8-14 shows a render I
 particularly liked, but the variation in this sketch is quite large so
-it's best to play around until you land on something you like.
+it's best to play around until you land on something you like.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72. Specular random rockiness (240) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -8582,16 +8522,14 @@ it's best to play around until you land on something you like.
 
 <p><small><small><i><b>Figure 8-14.</b> Specular random rockiness</i></small></small></p>
 
-And that concludes our foray into filters. As I mentioned before,
+<p>And that concludes our foray into filters. As I mentioned before,
 there's so much more to explore where filters are concerned, and there
 are quite a few primitives I didn't have the space to touch on. It
-definitely warrants (and rewards) further independent exploration.
-
+definitely warrants (and rewards) further independent exploration.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch8-5">8.5 Summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Let's do a quick recap of what was covered in this our penultimate chapter:
+<p>Let's do a quick recap of what was covered in this our penultimate chapter:</p>
 
 -   How filters are constructed
 
@@ -8614,18 +8552,16 @@ Let's do a quick recap of what was covered in this our penultimate chapter:
 -   How turbulence, displacement, and lighting can be used together to
     simulate and generate textures
 
-In the next chapter, we'll wrap things up and touch on some topics that
-can help take your generative art to the next level.
-
+<p>In the next chapter, we'll wrap things up and touch on some topics that
+can help take your generative art to the next level.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="ch9">CHAPTER 9: The Generative Way</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Congratulations for having come this far! We've covered a lot, so it's
+<p>Congratulations for having come this far! We've covered a lot, so it's
 time to take stock, stretch out those mental muscles, and make sure we
 don't end this book with an injury. We'll wind down by reviewing each
 chapter in little chunks, and we'll wrap up by previewing some of the
-paths you might pursue next in your generative journey.
-
+paths you might pursue next in your generative journey.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch9-1">9.1 The Journey So Far</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9688,4 +9624,3 @@ Ex 1:
 
 &lt;/html&gt;
 </pre>
-
