@@ -1211,21 +1211,21 @@ const countryOfBirth = 'Ireland';
 let age = 21; // <i>I wish!</i>
 </pre>
 
-What's the difference between const and let? When using const, you're
+<p>What's the difference between const and let? When using const, you're
 declaring a value that shouldn't change. My countryOfBirth is an
 example: this is a historical fact that remains constant. If I later
 tried to reassign a new value to countryOfBirth, this would result in an
-error:
+error:</p>
 
 <pre>
 countryOfBirth = 'Brazil'; // <i>uh oh...</i>
 -&gt; TypeError: Assignment to constant variable
 </pre>
 
-My age, however, is (alas) subject to change, so it can be updated
+<p>My age, however, is (alas) subject to change, so it can be updated
 without any issues. Another difference between const and let is that the
 latter can be declared without a value, whereas with const, a value must
-be assigned to it when it is first created.
+be assigned to it when it is first created.</p>
 
 <pre>
 let a; // <i>A-ok.</i>
@@ -1233,24 +1233,24 @@ const b; // <i>asking for trouble.</i>
 -&gt; Uncaught SyntaxError: Missing initializer in const declaration
 </pre>
 
-When unsure, should you use const or let? The general consensus in the
+<p>When unsure, should you use const or let? The general consensus in the
 JavaScript community is that you should use const by default and only
 use let when you think the variable may be assigned a new value later.
 The reasoning is that this can reduce any unintended value
-re-assignments, ruling out a potential source of bugs.
+re-assignments, ruling out a potential source of bugs.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-4">2.4 Operators</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-An operator is a symbol that performs operations on values. We've
+<p>An operator is a symbol that performs operations on values. We've
 actually come across one already: the assignment operator ( = ), which
 assigns a value to a variable. Let's see what other kinds of operators
-are available to us.
+are available to us.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4a">2.4a Arithmetic Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As you might have guessed, arithmetic operators allow us to perform
+<p>As you might have guessed, arithmetic operators allow us to perform
 mathematical operations. The addition operator ( + ) allows us to add
-numbers, but it also allows us to concatenate strings.
+numbers, but it also allows us to concatenate strings.</p>
 
 <pre>
 // <i>Adding numbers.</i>
@@ -1262,8 +1262,8 @@ numbers, but it also allows us to concatenate strings.
 -&gt; 'I am so smrt'
 </pre>
 
-There are also operators for subtraction ( - ), multiplication ( &ast; ),
-and division ( / ).
+<p>There are also operators for subtraction ( - ), multiplication ( &ast; ),
+and division ( / ).</p>
 
 <pre>
 // <i>Subtracting numbers.</i>
@@ -1294,10 +1294,10 @@ multiply one number by a factor of another (i.e., one number to the power of ano
 -&gt; 1024
 </pre>
 
-And finally, there is the modulo operator ( % ). This divides one number
+<p>And finally, there is the modulo operator ( % ). This divides one number
 by another and gives you the remainder. This can be especially useful
 when cycling through arrays (which we'll get to later), or quickly
-finding out if an unknown quantity is even or odd.
+finding out if an unknown quantity is even or odd.</p>
 
 <pre>
 // <i>The modulo operator in action.</i>
@@ -1311,9 +1311,9 @@ finding out if an unknown quantity is even or odd.
 -&gt; 2
 </pre>
 
-At this point, it's worth mentioning rules of precedence, which
+<p>At this point, it's worth mentioning rules of precedence, which
 determine the order in which operations are carried out. The mnemonic
-BEMDAS can help us out here.
+BEMDAS can help us out here.</p>
 
 -   <b>B</b>rackets: Whatever is in brackets or parentheses is evaluated
     first.
@@ -1376,12 +1376,12 @@ This can reduce unexpected surprises (i.e., bugs).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4c">2.4c Logical Operators</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Lastly, there are the logical operators <i>and</i> ( && ), <i>or</i> ( &verbar;&verbar; ), and
+<p>Lastly, there are the logical operators <i>and</i> ( && ), <i>or</i> ( &verbar;&verbar; ), and
 <i>not</i> ( ! ). These emulate the conjunction, disjunction, and negation of
-classical logic.
+classical logic.</p>
 
-When conjoining two conditions with &&, the result is true if and only
-if both conditions are true.
+<p>When conjoining two conditions with &&, the result is true if and only
+if both conditions are true.</p>
 
 <pre>
 true && false -&gt; false
@@ -1389,15 +1389,15 @@ false && true -&gt; false
 true && true -&gt; true
 </pre>
 
-When using the disjunction (fancy word for <i>or</i>), first make sure you
+<p>When using the disjunction (fancy word for <i>or</i>), first make sure you
 use the right characters on your keyboard. The &verbar; character is not a
 capital <i>i</i> or lowercase <i>L</i>; it's what's known as the pipe character.
 Depending on your regional keyboard layout, it might be located near
-either your Enter key or your Shift key.
+either your Enter key or your Shift key.</p>
 
-When using &vert;&vert;, the result is true if one or both conditions are true.
+<p>When using &vert;&vert;, the result is true if one or both conditions are true.
 This makes intuitive sense if we remember that we are essentially asking
-the computer "is at least one of these conditions true?"
+the computer "is at least one of these conditions true?"</p>
 
 <pre>
 true &vert;&vert; <i>false -&gt; true</i>
@@ -1405,9 +1405,9 @@ false &vert;&vert; <i>true -&gt; true</i>
 false &vert;&vert; <i>false -&gt; false</i>
 </pre>
 
-Finally, we have the negation operator !. This "flips" the condition
+<p>Finally, we have the negation operator !. This "flips" the condition
 immediately following it. It can also be uniquely coupled with the
-equality operator to mean not equal to ( !== ).
+equality operator to mean not equal to ( !== ).</p>
 
 <pre>
 !true
@@ -1423,24 +1423,22 @@ equality operator to mean not equal to ( !== ).
 -&gt; false
 </pre>
 
-A common source of error for new programmers is using a single pipe
+<p>A common source of error for new programmers is using a single pipe
 character &vert; or a single ampersand & instead of the two together. By
 themselves, these characters perform bitwise operations (i.e., they
-manipulate binary values) and are for advanced programming only.
-
+manipulate binary values) and are for advanced programming only.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-5">2.5 Conditional Statements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Now that we have comparative and logical operators under our belt, we
+<p>Now that we have comparative and logical operators under our belt, we
 can proceed to conditionals. A conditional statement in JavaScript
 allows us to influence a program's control flow. As an analogy, think of
 rush hour traffic at a four-way intersection, the pavements packed with
-pedestrians.
+pedestrians.</p>
 
-Without some way to control the flow of traffic, mayhem would ensue.
+<p>Without some way to control the flow of traffic, mayhem would ensue.
 Here is where conditionals are needed, such as the various rules that
-might underpin a traffic light system.
+might underpin a traffic light system.</p>
 
 <pre>
 // <i>The basic syntax.</i>
@@ -1454,7 +1452,7 @@ if (pedestrianBtnIsPressed) {
 }
 </pre>
 
-To the basic if statement, we can append else and else if conditions too.
+<p>To the basic if statement, we can append else and else if conditions too.</p>
 
 <pre>
 if (a &gt; b) { 
@@ -1466,9 +1464,9 @@ if (a &gt; b) {
 }
 </pre>
 
-If a given condition isn't true, the code inside its curly braces
+<p>If a given condition isn't true, the code inside its curly braces
 doesn't get executed. Let's take the preceding example again, with the
-values filled in for a and b.
+values filled in for a and b.</p>
 
 <pre>
 let a = 3; 
@@ -1483,54 +1481,54 @@ doOtherThing(); // <i>both the above are false, so this code runs.</i>
 }
 </pre>
 
-The last conditional form I want to cover is the ternary operator. As
+<p>The last conditional form I want to cover is the ternary operator. As
 its name suggests, it is technically an operator, but because it plays
 the role of a conditional check, I felt it was more appropriate to
-include it here.
+include it here.</p>
 
 <pre>
 // <i>The basic structure of the ternary operator.</i>
 conditionA ? expressionIfTrue : expressionIfFalse;
 </pre>
 
-In the aforementioned, we're asking "Is conditionA true? If so, run
-expressionIfTrue. Otherwise, run expressionIfFalse."
+<p>In the aforementioned, we're asking "Is conditionA true? If so, run
+expressionIfTrue. Otherwise, run expressionIfFalse."</p>
 
-The ternary operator is best used when you want to assign a value to a
+<p>The ternary operator is best used when you want to assign a value to a
 variable based on whether a certain condition holds true. If that
 condition doesn't hold true, we then assign it a different value. This
-is exactly what I used it for in our first generative sketch:
+is exactly what I used it for in our first generative sketch:</p>
 
 <pre>
 const svgSize = window.innerWidth &gt; window.innerHeight ?
 window.innerHeight : window.innerWidth;
 </pre>
 
-Here, we're saying "If the window's innerWidth is greater than its
+<p>Here, we're saying "If the window's innerWidth is greater than its
 innerHeight, assign the innerHeight to svgSize. Otherwise, assign to it
-the innerWidth."
+the innerWidth."</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-6">2.6 Loops</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Loops are one of a programmer's superpowers. We're talking sea-parting,
+<p>Loops are one of a programmer's superpowers. We're talking sea-parting,
 earth-splitting powers. Or, at the very least, the ability to send your
 programs spiralling toward infinity, potentially freezing any open
-browser windows and spinning your CPU fan into a frenzy.
+browser windows and spinning your CPU fan into a frenzy.</p>
 
-This is because loops can repeat blocks of code over and over, as many
+<p>This is because loops can repeat blocks of code over and over, as many
 times as we want, or indefinitely if needed. However, it's usually wise
 to set a limit to looping behavior (infinite loops are more often an
 error than an aim). We set a limit to a loop with what's called a
 terminating condition, that is, a condition that tells the loop when to
-stop.
+stop.</p>
 
-We'll cover two main kinds of loops here: the while loop and the for
-loop.
+<p>We'll cover two main kinds of loops here: the while loop and the for
+loop.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6a">2.6a The While Loop</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The while loop is the simpler of the two. It's basic structure is as
-follows:
+<p>The while loop is the simpler of the two. It's basic structure is as
+follows:</p>
 
 <pre>
 while (condition === true) {
@@ -1538,12 +1536,12 @@ while (condition === true) {
 }
 </pre>
 
-Now, if the condition in question <i>always</i> evaluates to true, that would
+<p>Now, if the condition in question <i>always</i> evaluates to true, that would
 lead to an infinite loop. An important ingredient therefore in any
 looping structure is a value that changes while the loop is running.
 This is normally a number that either increments or decrements and is
 known as an iterator. By convention, i tends to be used as the variable
-name.
+name.</p>
 
 <pre>
 // <i>Set up the iterator.</i>
@@ -1558,14 +1556,14 @@ while (i &lt;= 99) {
 }
 </pre>
 
-The preceding loop will run 100 times, starting at 0 and continuing
+<p>The preceding loop will run 100 times, starting at 0 and continuing
 until it is less than or equal to 99, and on each iteration, it will log
 the value of i to the browser console. If we left out the code to
-increment i, it would loop indefinitely.
+increment i, it would loop indefinitely.</p>
 
-It's worth noting at this point that there are shorthand ways of
+<p>It's worth noting at this point that there are shorthand ways of
 incrementing and decrementing -- or indeed multiplying and dividing --
-variable values:
+variable values:</p>
 
 <pre>
 // <i>Long way.</i>
@@ -1578,14 +1576,14 @@ i += 1 i *= 2 i -= 1 i /= 2
 i++ i--
 </pre>
 
-The shorthand notation is what you'll likely encounter in practice, so
-we'll continue to use it here.
+<p>The shorthand notation is what you'll likely encounter in practice, so
+we'll continue to use it here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6b">2.6b The For Loop</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The for loop uses the same logic as our example while loop but bakes the
+<p>The for loop uses the same logic as our example while loop but bakes the
 iterator and incrementation into a single line. Its typical structure is
-as follows:
+as follows:</p>
 
 <pre>
 for (let i = startingNumber; 
@@ -1595,30 +1593,30 @@ for (let i = startingNumber;
   }
 </pre>
 
-The for loop structure is succinctly divided into three sections. We
+<p>The for loop structure is succinctly divided into three sections. We
 first initialize the iterator, then set the terminating condition, and
 then decide how we're going to vary the iterator. Here's the for loop
 version of our previous example, where we logged the value of i to the
-browser console on each iteration.
+browser console on each iteration.</p>
 
 <pre>
 for (let i = 0; i &lt;= 99; 
   i++) { console.log(i); }
 </pre>
 
-You don't always have to increment the iterator. You can just as easily
+<p>You don't always have to increment the iterator. You can just as easily
 reverse the loop and have it count down from 99 to 0 by making a few
-tweaks.
+tweaks.</p>
 
 <pre>
 for (let i = 99; i &gt;= 0; 
   i--) { console.log(i); }
 </pre>
 
-It is common to use the value of the iterator in the body of the for
+<p>It is common to use the value of the iterator in the body of the for
 loop in combination with other variables to achieve some dynamic result.
 In our opening generative sketch for example, I used i to progressively
-increase the radiusX and radiusY of each ellipse.
+increase the radiusX and radiusY of each ellipse.</p>
 
 <pre>
 // <i>Run a loop (a randomised number of times) to create our ellipses.</i>
@@ -1631,22 +1629,22 @@ for (let i = 0;
 }
 </pre>
 
-There's lots more to love about loops, and other variations also exist
+<p>There's lots more to love about loops, and other variations also exist
 (such as the for in, the for of, and the forEach which we'll cover
 later), but for the purposes of generative art, we'll be mainly
-utilizing the standard for loop.
+utilizing the standard for loop.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-7">2.7 Functions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Functions are fundamental to JavaScript as a language and are perhaps
+<p>Functions are fundamental to JavaScript as a language and are perhaps
 the single most important concept we'll cover in this chapter. Functions
 are self-contained blocks of code that perform a particular task. The
 task is defined in the function body, and it might range from adding two
-numbers together to initiating a rocket launch sequence.
+numbers together to initiating a rocket launch sequence.</p>
 
-Standard functions are defined using the function keyword followed by
+<p>Standard functions are defined using the function keyword followed by
 the name you give it, which is then appended with parentheses and
-opening and closing curly braces where the task is defined.
+opening and closing curly braces where the task is defined.</p>
 
 <pre>
 // <i>Basic syntax of a standard function.</i>
@@ -1654,14 +1652,13 @@ function peformSomeTask() {
 // <i>... code defining the task.</i>
 }
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7a">Function Parameters</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Although functions are used in a wide variety of ways, their primary
+<p>Although functions are used in a wide variety of ways, their primary
 purpose is to make code reusable. One way to do this is to add
 parameters to the function, which are defined within the parentheses of
-the function name.
+the function name.</p>
 
 <pre>
 // <i>A function with parameters.</i>
@@ -1671,22 +1668,22 @@ function sayHello(name) {
 }
 </pre>
 
-Functions may or may not explicitly return a value, and if they do, only
+<p>Functions may or may not explicitly return a value, and if they do, only
 one return value is allowed. In the preceding example, a value isn't
 returned, as that isn't the purpose of the function (or to get technical
 about it, an undefined value would be returned if the function was
 queried). In the following example, however, we are specifically looking
 to get a value returned from the function, and this is where we use the
-return keyword.
+return keyword.</p>
 
 <pre>
 // <i>Another function with parameters, this time returning a value.</i>
 function squareNumber(number) { return number * number; }
 </pre>
 
-The preceding function, when called, will return the result we're
+<p>The preceding function, when called, will return the result we're
 looking for, that is, the square of the number we supply it. But how do
-we actually do this in practice?
+we actually do this in practice?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7b">2.7b Invoking Functions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1833,8 +1830,8 @@ variables that then store the returned value.</p>
 const sum = function(a, b) { return a + b; }
 </pre>
 
-In the preceding example, the variable can be used to execute the
-function.
+<p>In the preceding example, the variable can be used to execute the
+function.</p>
 
 <pre>
 sum(5, 4); -&gt; 9
@@ -2522,20 +2519,20 @@ too.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5a">3.5a Rectangles and Squares</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A rectangle is a rect in the SVG spec, so to create one, we'd write
+<p>A rectangle is a rect in the SVG spec, so to create one, we'd write;</p>
 
 <pre>
 svg.create('rect');
 </pre>
 
-Next, we'll chain the set() method, focusing on the following five
+<p>Next, we'll chain the set() method, focusing on the following five
 attributes of the rect element: x and y to set the position of its top
 left corner; width and height to define its size; and fill to define its
-color.
+color.</p>
 
-As we want a square rectangle (as a square is technically just a special
+<p>As we want a square rectangle (as a square is technically just a special
 kind of rectangle), we just need to set our width and height to the same
-value. Add the following code to our template:
+value. Add the following code to our template:</p>
 
 <pre>
 // <i>Background.</i>
@@ -2547,15 +2544,15 @@ svg.create('rect').set({
   fill: '#181818' });
 </pre>
 
-Note that we're defining our background's position and dimensions
+<p>Note that we're defining our background's position and dimensions
 relative to the viewBox, not the viewport. This keeps our values
 consistent, as we don't know in advance what size our viewport will be.
 If you run live-server now, you should see a square canvas just a subtle
-shade darker than the surrounding background.
+shade darker than the surrounding background.</p>
 
-This will suffice for our template. In case you've missed anything
+<p>This will suffice for our template. In case you've missed anything
 earlier or just want to ensure your code is in order, here's the
-template sketch.js file in full:
+template sketch.js file in full:</p>
 
 <pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
@@ -2584,36 +2581,36 @@ svg.create('rect').set({
 });
 </pre>
 
-Any further code we write will be specific to the sketch we're working
+<p>Any further code we write will be specific to the sketch we're working
 on. Make sure you've saved your changes before copying the 00-template
-folder and its contents, renaming it to 02-basic-shapes.
+folder and its contents, renaming it to 02-basic-shapes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5b">3.5b First Strokes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-There are two important attributes that can be used on practically every
+<p>There are two important attributes that can be used on practically every
 graphical SVG element (i.e., elements that are intended to appear on
 screen). These are an element's fill and stroke. As we've already seen,
 the fill defines an element's interior color (or background). The
 stroke, on the other hand, defines the color of an element's outline (or
-border).
+border).</p>
 
-If you don't define a stroke, none will appear. And if you do define
+<p>If you don't define a stroke, none will appear. And if you do define
 one, its stroke-width will default to 1. The stroke-width attribute is
 important to highlight for another reason: it's an example of a
 hyphenated attribute. We can't use hyphens when setting attributes in
-JavaScript, as they will be interpreted as subtraction operators.
+JavaScript, as they will be interpreted as subtraction operators.</p>
 
-We have two options to deal with this: we can turn them into strings,
+<p>We have two options to deal with this: we can turn them into strings,
 that is, write &apos;stroke-width&apos; instead of stroke-width, or we can
 replace hyphens with underscores, that is, stroke-width becomes
 stroke_width. The latter option is facilitated by SvJs, and it's the
 solution I prefer; it's faster and looks less out of place than having
-stringified object properties mixed with others that aren't strings.
+stringified object properties mixed with others that aren't strings.</p>
 
-Enough with the theory for now -- let's create something! The following
+<p>Enough with the theory for now -- let's create something! The following
 sketch is a Josef Albers--inspired color illusion and shows that with
 just plain rectangles, it's possible to create a somewhat interesting
-composition (illustrated in Figure 3-1).
+composition (illustrated in Figure 3-1).</p>
 
 <pre>
 import { SvJs } from '../../node_modules/svjs/src/index.js';
@@ -2698,31 +2695,31 @@ svg.create('rect').set({
 
 <p><small><small><i><b>Figure 3-1.</b> A Josef Albers--inspired color illusion</i></small></small></p>
 
-Do the smaller rectangles on the right and left look like the same shade
+<p>Do the smaller rectangles on the right and left look like the same shade
 of orange? Assuming this illusion was successful, you might have some
 trouble settling on a definite answer. But by browsing the code, you can
-easily verify that they are not only the same shade, but the same shape!
+easily verify that they are not only the same shade, but the same shape!</p>
 
-What gives the rectangles those rounded corners is the rx attribute,
+<p>What gives the rectangles those rounded corners is the rx attribute,
 which means its radius on the x axis. If the corresponding ry attribute
 isn't defined, it's assumed you want the same value (resulting in a
-uniformly curved corner).
+uniformly curved corner).</p>
 
-You also might have spotted another hyphenated attribute in the
+<p>You also might have spotted another hyphenated attribute in the
 preceding code, namely, paint-order. This determines in what order our
-fill and stroke are rendered for a given element.
+fill and stroke are rendered for a given element.</p>
 
-The default order has fill come first (i.e., the fill is beneath so it
+<p>The default order has fill come first (i.e., the fill is beneath so it
 will get partly painted over by the stroke), but sometimes it can be
 useful to have stroke come first, as only then will we see the full fill
 dimensions painted (remove paint_order: &apos;stroke&apos; from the code and
-you'll see what I mean).
+you'll see what I mean).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5c">3.5c Circles and Ellipses</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The circle is the simplest (and arguably the most perfect) of all
+<p>The circle is the simplest (and arguably the most perfect) of all
 shapes. We define the position of its center via cx and cy attributes
-and its radius via the r attribute.
+and its radius via the r attribute.</p>
 
 <pre>
 // <i>A simple circle example.</i>
@@ -2732,14 +2729,14 @@ svg.create('circle').set({
   r: 25 });
 </pre>
 
-In the next sketch, let's shift things up a gear with a for loop. We're
+<p>In the next sketch, let's shift things up a gear with a for loop. We're
 going to play with the effect of layering semitransparent circles of
 different sizes over each other (shown in Figure 3-2). Copy our template
 folder again and rename it to 03-circle-overlay-loop or something
 similar (the names of our folders don't really matter provided we
-maintain a modicum of organization).
+maintain a modicum of organization).</p>
 
-Beneath where we defined our background, include the following code:
+<p>Beneath where we defined our background, include the following code:</p>
 
 <pre>
 // <i>Circle overlay loop.</i>
@@ -2792,15 +2789,15 @@ svg.create('circle').set({
 
 <p><small><small><i><b>Figure 3-2.</b> The result of our circle overlay loop</i></small></small></p>
 
-What we've done here is vary the vertical position of the cy attribute
+<p>What we've done here is vary the vertical position of the cy attribute
 and increase the radius r for two sets of circles each time the loop
 runs. The circle sets are differentiated by their color (slightly) and
 initial positions. A final circle outside the loop provides a subtle
-outline to frame the circle sets.
+outline to frame the circle sets.</p>
 
-Ellipses are similar to circles but offer two radii attributes -- rx and
+<p>Ellipses are similar to circles but offer two radii attributes -- rx and
 ry -- instead of the single r. In the first generative sketch from
-Chapter 1, we saw the ellipse in action. Here's the relevant snippet:
+Chapter 1, we saw the ellipse in action. Here's the relevant snippet:</p>
 
 <pre>
 // <i>Create our ellipse.</i>
@@ -2813,15 +2810,13 @@ ellipse.set({
   ...
 });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5d">3.5d Lines, Polylines, and Polygons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-If you need to draw a simple straight line from one point to another,
+<p>If you need to draw a simple straight line from one point to another,
 you'd use the line element. It requires two sets of coordinates: x1 and
 y1 to define the initial position and x2 and y2 to define the endpoint.
-It also requires the stroke to be defined (as it is a line after all).
+It also requires the stroke to be defined (as it is a line after all).</p>
 
 <pre>
 // <i>The humble line.</i>
@@ -2834,14 +2829,14 @@ svg.create('line').set({
 });
 </pre>
 
-This is a good opportunity to showcase some other stroke-related
+<p>This is a good opportunity to showcase some other stroke-related
 attributes that can alter the appearance of a line. The first is stroke-
 linecap. This defines how the endpoints of a line behave. The default
 value, butt, limits the line length to its endpoints. A value of round
 will close off the line with a semi-circle at each end, whereas a value
 of square will close it off with -- you guessed it -- a square. Figure
 3-3 shows the different values, with vertical lines on either side to
-delineate where the values come into effect.
+delineate where the values come into effect.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 13. Values of butt, round, and square (top to bottom) (69) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -2853,21 +2848,21 @@ delineate where the values come into effect.
 
 <p><small><small><i><b>Figure 3-3.</b> Values of butt, round, and square (top to bottom)</i></small></small></p>
 
-The other attribute I want to highlight is stroke-dasharray. If, rather
+<p>The other attribute I want to highlight is stroke-dasharray. If, rather
 than a solid line, you would prefer a stroke consisting of dashes, this
 is what you would use. More specifically, the stroke-dasharray sets the
 pattern of dashes -- and the gaps between them -- with which to paint a
-stroke.
+stroke.</p>
 
-If we set a single value, say 20, that value will be used for the length
+<p>If we set a single value, say 20, that value will be used for the length
 of the dash and the length of the gap. If we set two values, the first
 is used for the dash and the second for the gap. If however we set three
 values, the first is used for the dash, the second for the gap, and the
 third for the next dash. The values are then cycled through again,
-creating a repeating pattern.
+creating a repeating pattern.</p>
 
-There isn't a strict upper limit on the amount of values you provide, so
-there is scope to get quite creative here.
+<p>There isn't a strict upper limit on the amount of values you provide, so
+there is scope to get quite creative here.</p>
 
 <pre>
 // <i>Setting an irregular stroke-dasharray.</i>
@@ -2875,8 +2870,8 @@ svg.create('line').set({
   ... stroke_dasharray: 10 30 60 });
 </pre>
 
-In Figure 3-4, from top to bottom, we see the following stroke-
-dasharray values (all relative to a viewBox width of 1000):
+<p>In Figure 3-4, from top to bottom, we see the following stroke-
+dasharray values (all relative to a viewBox width of 1000):</p>
 
 -   20
 
@@ -2896,12 +2891,12 @@ dasharray values (all relative to a viewBox width of 1000):
 
 <p><small><small><i><b>Figure 3-4.</b> Various stroke-dasharray values</i></small></small></p>
 
-If you want to connect one straight line to another, you'd use a
+<p>If you want to connect one straight line to another, you'd use a
 polyline element. This takes a points array of space-separated (or
 comma-separated) values to define each x and y coordinate. The array of
 points needs to be converted to a string before being set as the
 attribute value. I show how to do this in the following example using
-the join() array method. The result is shown in Figure 3-5.
+the join() array method. The result is shown in Figure 3-5.</p>
 
 <pre>
 // <i>An array of points.</i>
@@ -2931,13 +2926,13 @@ svg.create('polyline').set({
 
 <p><small><small><i><b>Figure 3-5.</b> A polyline element in action</i></small></small></p>
 
-I've also used the stroke-linejoin attribute in the preceding example;
-this defines the shape to use at point where each line meets the next.
+<p>I've also used the stroke-linejoin attribute in the preceding example;
+this defines the shape to use at point where each line meets the next.</p>
 
-A polygon element is similar to a polyline element but is used for
+<p>A polygon element is similar to a polyline element but is used for
 closed shapes, that is, where the start and end points connect. In
 Figure 3-6, we see an arrangement of polygons that might be familiar to
-gamers of a particular platform.
+gamers of a particular platform.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16. Polygons for the players (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -2949,13 +2944,12 @@ gamers of a particular platform.
 
 <p><small><small><i><b>Figure 3-6.</b> Polygons for the players</i></small></small></p>
 
-Manually creating shapes with either the polygon or polyline elements
+<p>Manually creating shapes with either the polygon or polyline elements
 isn't something we'll focus further on for now, as it can be quite
-tedious.
+tedious.</p>
 
-There are better ways to generate shapes that we'll cover in a later
-chapter.
-
+<p>There are better ways to generate shapes that we'll cover in a later
+chapter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3-6">3.6 Text and Titles</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2974,42 +2968,42 @@ let text = svg.create('text').set({
 });
 </pre>
 
-So how do we define the textual content if the content isn't itself an
+<p>So how do we define the textual content if the content isn't itself an
 attribute? It's not a child node either, so creating a string and
 appending it wouldn't work. Instead, what we need to do is use the SvJs
-content() method.
+content() method.</p>
 
 <pre>
 // <i>Using the content() method to insert text.</i>
 text.content('I have an unhealthy obsession with SVG.');
 </pre>
 
-What if we wanted to get a bit more elaborate with our text and style
+<p>What if we wanted to get a bit more elaborate with our text and style
 them with some web fonts? There are a few ways we could do this, but
 I'll stick with the simplest and pull in some Google fonts via our HTML.
 Let's use this as the basis of a quick sketch; copy our 00-template
-folder and call it 04-chalkboard-gag.
+folder and call it 04-chalkboard-gag.</p>
 
-If you've ever watched <i>The Simpsons</i>, you'll know that the beginning of
+<p>If you've ever watched <i>The Simpsons</i>, you'll know that the beginning of
 most episodes features a chalkboard gag, where Bart is shown scrawling
 lines on a chalkboard as punishment for his errant behavior. One of my
-favorites is featured in the following sketch.
+favorites is featured in the following sketch.</p>
 
-What we need to do first is include the following &lt;link&gt; in our HTML,
+<p>What we need to do first is include the following &lt;link&gt; in our HTML,
 so switch over to the index.html file and add the following line to the
 &lt;head&gt; section. This calls in a Google font called Mynerve, which has
-the handwritten look we're going for.
+the handwritten look we're going for.</p>
 
 <pre>
 &lt;link href="https://fonts.googleapis.com/css2?family=Mynerve
 &display=swap" rel="stylesheet"&gt;
 </pre>
 
-If Bart had the option of running a for loop to minimize the repetitive
+<p>If Bart had the option of running a for loop to minimize the repetitive
 nature of his punishment, I'm sure he would have taken it. Let's do this
-on his behalf (and cheat Skinner out of some satisfaction).
+on his behalf (and cheat Skinner out of some satisfaction).</p>
 
-Add the following code below where we declare our background. Some
+<p>Add the following code below where we declare our background. Some
 points to note: we're calling the toUpperCase() string method to
 capitalize the content; this is a useful method to know, as is the
 related toLowerCase() method. The font_size of 52 is used to optimally
@@ -3017,9 +3011,9 @@ fill the viewBox width, and incrementing the y position on each
 iteration by 80 is what pushes the lines down our chalkboard. We have
 enough space to do this 12 times, which is why we limit incrementation
 to below 960 (960 ÷ 80 = 12). Another iteration would overflow the
-viewport.
+viewport.</p>
 
-The output is shown in Figure 3-7.
+<p>The output is shown in Figure 3-7.</p>
 
 <pre>
 // <i>The line to use for the gag.</i>
