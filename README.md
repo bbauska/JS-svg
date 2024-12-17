@@ -9558,87 +9558,84 @@ Ex 1:
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" 
-          content="width=device-width, initial-scale=1"&gt;
-    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
-    &lt;link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
+    content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+  &lt;link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
     &lt;link rel="stylesheet" href="style.css"&gt;
-
     &lt;script async src=
-"//assets.codepen.io/assets/embed/ei.js"&gt;
+      "//assets.codepen.io/assets/embed/ei.js"&gt;
     &lt;/script&gt;
     &lt;script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+      "https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
     &lt;/script&gt;
     &lt;script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+      "https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
     &lt;/script&gt;
     &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
 
     &lt;style&gt;
         body {
-            background: green;
-            text-align: center;
+          background: green;
+          text-align: center;
         }
          
         .wrapper {
-            height: 1800px;
+          height: 1800px;
         }
          
         /* <i>For visibility</i> */
         svg {
-            position: fixed; 
-            margin: auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+          position: fixed; 
+          margin: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
         }
-    &lt;/style&gt;
+  &lt;/style&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
-    &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
-    &lt;div class="wrapper"&gt;
-        &lt;svg style="background-color:#ffffff00" 
-             xmlns="http://www.w3.org/2000/svg" 
-             width="200" height="150" 
-             viewBox="0 0 200 150"&gt;
+  &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+  &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
+  &lt;div class="wrapper"&gt;
+    &lt;svg style="background-color:#ffffff00" 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="200" height="150" 
+      viewBox="0 0 200 150"&gt;
              
-            &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
+      &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
             
-                &lt;!--The path element is the general shape used in SVG --&gt;
-                &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
+        &lt;!--The path element is the general shape used in SVG --&gt;
+        &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
                          67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
                          31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
                          30.425 67.97 67.958z" /&gt;
-                &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
+        &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
                          48.488-26.772 0-48.48-21.71-48.48-48.488 0-26.776
                          21.708-48.48 48.48-48.48 26.794 0 48.496 21.704 
                          48.496 48.48z" /&gt;
-                &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
-                &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
+        &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
+        &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
                          15.208.007 20.98l-2.886 2.894c-5.752 5.772-15.174 
-                         5.783-20.94.024l-55.128-55.078" /&gt;
-            &lt;/g&gt;
-        &lt;/svg&gt;
-    &lt;/div&gt;
+                        5.783-20.94.024l-55.128-55.078" /&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    var $docVar = $(document),
+    $winVar = $(window),
+    $svgVar = $('svg').drawsvg(),
+    max = $docVar.height() - $winVar.height();
 
-    &lt;script&gt;
-        var $docVar = $(document),
-            $winVar = $(window),
-            $svgVar = $('svg').drawsvg(),
-            max = $docVar.height() - $winVar.height();
-
-        $winVar.on('scroll', function() {
-            var p = $winVar.scrollTop() / max;
-            $svgVar.drawsvg('progress', p);
-        });
-    &lt;/script&gt;
+    $winVar.on('scroll', function() {
+      var p = $winVar.scrollTop() / max;
+      $svgVar.drawsvg('progress', p);
+    });
+  &lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
 </pre>
