@@ -6,6 +6,9 @@ date last editted: "12/16/2024 10+pm"
 output:
   markdown:
 ---
+
+<p><a href="https://webdesignerdepot.com/13-javascript-animation-libraries-for-designers/">
+13 JS Animation Libraries for Designers</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md for JS-SVG.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
