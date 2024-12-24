@@ -3,6 +3,7 @@ title: "JS-SVG-JavaScript"
 author: "Brian Bauska (bbauska)"
 date created: "12/12/2024 5+pm"
 date last editted: "12/16/2024 10+pm"
+date last editted: "12/23/2024 10+pm"
 output:
   markdown:
 ---
@@ -3520,8 +3521,7 @@ predefined palette.</p>
 <h3 id="ch4-2">4.2 Elements Everywhere All at Once</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let's create a sketch and put Gen.random() to work. Copy the 00-template
-file as we usually do and rename it to something like 06-elements-
-everywhere.</p>
+file as we usually do and rename it to something like 06-elements-everywhere.</p>
 
 <p>Below our background code, initialize a variable to store a random
 iteration count, which will determine how many times our for loop (which
@@ -3577,7 +3577,7 @@ and 1.</p>
 separate the lines with a comma):</p>
 
 <pre>
-fill: `hsl(${Gen.random(0, 360)} 80% 80% / ${Gen. random(5, 40)}%)`
+fill: `hsl(${Gen.random(0, 360)} 80% 80% / ${Gen.random(5, 40)}%)`
 </pre>
 
 <p>Now our speckles have come a little more to life (see Figure 4-2). But
@@ -3600,9 +3600,7 @@ considerably, so we'll step through it slowly.</p>
 <p>Below our iterations variable, create an array called elements and
 populate it with a circle, a line, and a rect:</p>
 
-<pre>
-let elements = &lbrack;&apos;circle&apos;, &apos;line&apos;, &apos;rect&apos;&rbrack;;</p>
-</pre>
+<pre>let elements = &lbrack;&apos;circle&apos;, &apos;line&apos;, &apos;rect&apos;&rbrack;;</pre>
 
 <p>Next, delete all the existing code in our for loop, and replace it with
 the following line that will pick a random element from the elements
@@ -3642,7 +3640,7 @@ allows us to populate the props variable on a case-by-case basis (quite
 literally, as you'll see).</p>
 
 <pre>
-// <i>Initialise the properties variable.</i>
+// <i>Initialize the properties variable.</i>
 let props;
 
 // <i>Populate the properties depending on the element chosen.</i>
