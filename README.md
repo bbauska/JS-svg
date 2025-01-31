@@ -89,7 +89,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
           <li><a href="#ch2-2d">Empty Values</a></li>
         </ol>
       </li>
-      <li><a href="#ch2-3">Variables 25</a></li>
+      <li><a href="#ch2-3">Variables</a></li>
       <li><a href="#ch2-4">Operators</a>
         <ol>
           <li><a href="#ch2-4a">Arithmetic Operators</a></li>
@@ -341,9 +341,9 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
       <li><a href="#ch9-1">The Journey So Far</a></li>
       <li><a href="#ch9-2">The Voyage Forward</a>
         <ol>
-      <li><a href="#ch9-2a">9.2a Trigonometry</a></li>
-      <li><a href="#ch9-2b">9.2b Fractals</a></li>
-      <li><a href="#ch9-2c">9.2c Systems Simulations</a></li>
+      <li><a href="#ch9-2a">Trigonometry</a></li>
+      <li><a href="#ch9-2b">Fractals</a></li>
+      <li><a href="#ch9-2c">Systems Simulations</a></li>
         </ol>
         </li>
       <li><a href="#ch9-3">Closing Comments</a></li>
