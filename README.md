@@ -51,11 +51,11 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
 <ol type="1" start="1">
   <li><a href="#ch1">Chapter 1: The Beginner's Path 1</a>
     <ol type="1">
-      <li><a href="#ch1-1">1.1 Why JavaScript and SvJs? 1</a>
+      <li><a href="#ch1-1">Why JavaScript and SvJs? 1</a>
         <ol type="a">
-          <li><a href="#ch1-1a">1.1a Introducing Scalable Vector Graphics 2</a></li>
-          <li><a href="#ch1-1b">1.1b Native SVG 3</li>
-          <li><a href="#ch1-1c">1.1c Generating SVG 5</a></li>
+          <li><a href="#ch1-1a">Introducing Scalable Vector Graphics 2</a></li>
+          <li><a href="#ch1-1b">Native SVG 3</li>
+          <li><a href="#ch1-1c">Generating SVG 5</a></li>
         </ol>
       </li>
       <li><a href="#ch1-2">1.2 Getting Set Up 8</a>
