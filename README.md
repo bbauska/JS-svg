@@ -261,7 +261,7 @@ rel="noreferrer noopener">Source code (SVG)</a>.</p>
     </ol>
   </li>
   <li><a href="#ch7">Chapter 7: Motion and Interactivity</a>
-    <ol><a type="1">
+    <ol type="1">
       <li><a href="#ch7-1">Event Listeners</a>
         <ol>
       <li><a href="#ch7-1a">Event Types</a></li>
