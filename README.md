@@ -15,6 +15,9 @@ output:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>JS - SVG (Scalable Vector Graphics)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h3><a href="https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/">SVG Tools</a>.</h3>
+
 <h2>Generative Art with JavaScript and SVG</h2>
 <h3>Utilizing Scalable Vector Graphics and Algorithms for Creative Coding and Design</h3>
 
