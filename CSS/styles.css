@@ -1,25 +1,25 @@
 ol {
-    list-style-type: none;
-    counter-reset: myCounter;
-    display: table;
-    margin: 0;
-    padding: 5px 0 5px 15px;
+  list-style-type: none;
+  counter-reset: myCounter;
+  display: table;
+  margin: 0;
+  padding: 5px 0 5px 15px;
 }
 
 ol > li {
-    counter-increment: myCounter;
-    display: table-row;
+  counter-increment: myCounter;
+  display: table-row;
 }
 
 ol > li:before {
-    content: counters(myCounter, ".") ". ";
-    display: table-cell;
-    position: relative;
-    left:-12px;
+  content: counters(myCounter, ".") ". ";
+  display: table-cell;
+  position: relative;
+  left:-12px;
 }
 
 li ol > li:before {
-    content: counters(myCounter, ".") " ";
-    position: relative;
-    left:-15px;
+  content: counters(myCounter, ".") " ";
+  position: relative;
+  left:-15px;
 }
