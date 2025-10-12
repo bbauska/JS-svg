@@ -5467,7 +5467,6 @@ svg.create('path').set({ d: 'M 300 200 V 800 H 600' });
 // <i>The second L.</i>
 svg.create('path').set({ d: 'M 675 825 v -600 h -300' });
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3c">6.3c Further Economies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9602,192 +9601,170 @@ Ex 1:
 &lt;/html&gt;
 </pre>
 
-Ex 2:
+<h4>Ex 2:</h4>
 
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" 
-          content="width=device-width, initial-scale=1"&gt;
-    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
-    &lt;link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-
-    &lt;script async src=
-"//assets.codepen.io/assets/embed/ei.js"&gt;
-    &lt;/script&gt;
-    &lt;script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
-    &lt;/script&gt;
-    &lt;script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
-    &lt;/script&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
+    content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+  &lt;link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;script async src=
+    "//assets.codepen.io/assets/embed/ei.js"&gt;
+  &lt;/script&gt;
+  &lt;script src=
+    "https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+  &lt;/script&gt;
+&lt;script src=
+  "https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+  &lt;/script&gt;
     &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
-
-    &lt;style&gt;
-        body {
-            background: green;
-            text-align: center;
-        }
-         
-        .height {
-            height: 10px;
-        }
-         
-        /* <i>SVG element is fixed for visibility</i> */
-        svg {
-            position: fixed; 
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-    &lt;/style&gt;
+  &lt;style&gt;
+    body {
+      background: green;
+      text-align: center;
+    }
+    .height {
+      height: 10px;
+    }
+    /* <i>SVG element is fixed for visibility</i> */
+    svg {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
-    &lt;h1 style="color:white"&gt;GeeksforGeeks &lt;/h1&gt;
-    &lt;b&gt;DrawSVG plugin with callback method&lt;/b&gt;
-    &lt;div class="wrapper"&gt;
-        &lt;svg viewBox="0 0 200 260" 
-             style="background-color:#ffffff00"
-             xmlns="http://www.w3.org/2000/svg" 
-             width="200" height="250"&gt;
-             
-            &lt;g stroke="#FFFFFF" stroke-width="3" fill="none"&gt;
-                &lt;!--The shape of path element is defined
-                    by "d" parameter --&gt;
-                &lt;path d="M157.068 33H165c4.77 0 9 4.464 9
-                         9.706v202.758c0 5.243-4.288 
-                         9.536-9.524 9.536H10.524C5.288
-                         255 1 250.707 1 245.464V42.707C1
-                         37.464 5.06 33 10.017 33h9.203" /&gt;
-              
-                &lt;!--The "Move to" command is called with M  --&gt;
-                &lt;path d="M103.302 33H157v45H19V33h52.72" /&gt;
-              
-                &lt;!--Co-ordinates by "d" are unitless in
-                    the user coordinate system--&gt;
-                &lt;path d="M18.696 103h137.896v.17" /&gt;
-                &lt;path d="M18.738 155h137.854v.068" /&gt;
-                &lt;path d="M18.738 178h137.854v-.006" /&gt;
-                &lt;path d="M18.696 227h137.868v-.21" /&gt;
-            &lt;/g&gt;
-        &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div id="callbackDiv"&gt;&lt;/div&gt;
-
-    &lt;script&gt;
-        var $svg = $("svg").drawsvg({
-            stagger: 2000, // Break is set to 2 seconds
-            duration: 5000,
-            callback: function() {
-                $('#callbackDiv').html('
-                    &lt;p&gt;
-                           &lt;strong&gt;Animation completed !&lt;/strong&gt;
-                       &lt;/p&gt;
-            ');
-            }
-        }).drawsvg("animate");
-    &lt;/script&gt;
+  &lt;h1 style="color:white"&gt;GeeksforGeeks &lt;/h1&gt;
+  &lt;b&gt;DrawSVG plugin with callback method&lt;/b&gt;
+  &lt;div class="wrapper"&gt;
+    &lt;svg viewBox="0 0 200 260" 
+  style="background-color:#ffffff00"
+    xmlns="http://www.w3.org/2000/svg" 
+    width="200" height="250"&gt;
+    &lt;g stroke="#FFFFFF" stroke-width="3" fill="none"&gt;
+      &lt;!--The shape of path element is defined
+        by "d" parameter --&gt;
+        &lt;path d="M157.068 33H165c4.77 0 9 4.464 9
+          9.706v202.758c0 5.243-4.288 
+          9.536-9.524 9.536H10.524C5.288
+          255 1 250.707 1 245.464V42.707C1
+          37.464 5.06 33 10.017 33h9.203" /&gt;
+        &lt;!--The "Move to" command is called with M  --&gt;
+        &lt;path d="M103.302 33H157v45H19V33h52.72" /&gt;
+          &lt;!--Co-ordinates by "d" are unitless in
+          the user coordinate system--&gt;
+        &lt;path d="M18.696 103h137.896v.17" /&gt;
+        &lt;path d="M18.738 155h137.854v.068" /&gt;
+        &lt;path d="M18.738 178h137.854v-.006" /&gt;
+        &lt;path d="M18.696 227h137.868v-.21" /&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;div id="callbackDiv"&gt;&lt;/div&gt;
+&lt;script&gt;
+  var $svg = $("svg").drawsvg({
+    stagger: 2000, // Break is set to 2 seconds
+    duration: 5000,
+    callback: function() {
+      $('#callbackDiv').html('
+        &lt;p&gt;
+          &lt;strong&gt;Animation completed !&lt;/strong&gt;
+        &lt;/p&gt;
+      ');
+    }
+  }).drawsvg("animate");
+&lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
 </pre>
 
-
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" 
-          content="width=device-width, initial-scale=1"&gt;
-    &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
-    &lt;link rel="stylesheet" href=
-"https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-
-    &lt;script async src=
-"//assets.codepen.io/assets/embed/ei.js"&gt;
-    &lt;/script&gt;
-    &lt;script src=
-"https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
-    &lt;/script&gt;
-    &lt;script src=
-"https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
-    &lt;/script&gt;
-    &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
-
-    &lt;style&gt;
-        body {
-            background: green;
-            text-align: center;
-        }
-         
-        .wrapper {
-            height: 1800px;
-        }
-         
-        /* <i>For visibility</i> */
-        svg {
-            position: fixed; 
-            margin: auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-    &lt;/style&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
+    content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;jQuery DrawSVG Plugin&lt;/title&gt;
+  &lt;link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,600"&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;script async src=
+    "//assets.codepen.io/assets/embed/ei.js"&gt;
+  &lt;/script&gt;
+  &lt;script src=
+    "https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src=
+    "https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src="jquery.drawsvg.min.js"&gt;&lt;/script&gt;
+  &lt;style&gt;
+    body {
+      background: green;
+      text-align: center;
+    }
+    .wrapper {
+      height: 1800px;
+    }
+    /* <i>For visibility</i> */
+    svg {
+      position: fixed; 
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
-    &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
-    &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
-    &lt;div class="wrapper"&gt;
-        &lt;svg style="background-color:#ffffff00" 
-             xmlns="http://www.w3.org/2000/svg" 
-             width="200" height="150" 
-             viewBox="0 0 200 150"&gt;
-             
-            &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
-            
-                &lt;!--The path element is the general shape used in SVG --&gt;
-                &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
-                         67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
-                         31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
-                         30.425 67.97 67.958z" /&gt;
-                &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
-                         48.488-26.772 0-48.48-21.71-48.48-48.488 0-26.776
-                         21.708-48.48 48.48-48.48 26.794 0 48.496 21.704 
-                         48.496 48.48z" /&gt;
-                &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
-                &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
-                         15.208.007 20.98l-2.886 2.894c-5.752 5.772-15.174 
-                         5.783-20.94.024l-55.128-55.078" /&gt;
-            &lt;/g&gt;
-        &lt;/svg&gt;
-    &lt;/div&gt;
+  &lt;h1 style="color:white"&gt;GeeksforGeeks&lt;/h1&gt;
+  &lt;b&gt;Draw On Scroll, Please scroll down and up&lt;/b&gt;
+  &lt;div class="wrapper"&gt;
+    &lt;svg style="background-color:#ffffff00" 
+      xmlns="http://www.w3.org/2000/svg" 
+      width="200" height="150" 
+      viewBox="0 0 200 150"&gt;
+      &lt;g stroke="#FFFFFF" stroke-width="2" fill="none"&gt;
+      &lt;!--The path element is the general shape used in SVG --&gt;
+      &lt;path d="M137.484 69.432c0 37.536-30.425 67.96-67.97
+        67.96-37.535 0-67.953-30.424-67.953-67.96C1.56 
+        31.9 31.98 1.474 69.516 1.474c37.544 0 67.97 
+        30.425 67.97 67.958z" /&gt;
+        &lt;path d="M118.228 68.774c0 26.78-21.702 48.488-48.496 
+        48.488-26.772 0-48.48-21.71-48.48-48.488 0-26.776
+        21.708-48.48 48.48-48.48 26.794 0 48.496 21.704 
+        48.496 48.48z" /&gt;
+        &lt;path d="M37 68.998C37 50.773 51.55 36 69.495 36" /&gt;
+        &lt;path d="M128.008 104.035l54.93 55.05c5.754 5.764 5.758
+        15.208.007 20.98l-2.886 2.894c-5.752 5.772-15.174 
+        5.783-20.94.024l-55.128-55.078" /&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;script&gt;
+  var $docVar = $(document),
+  $winVar = $(window),
+  $svgVar = $('svg').drawsvg(),
+  max = $docVar.height() - $winVar.height();
 
-    &lt;script&gt;
-        var $docVar = $(document),
-            $winVar = $(window),
-            $svgVar = $('svg').drawsvg(),
-            max = $docVar.height() - $winVar.height();
-
-        $winVar.on('scroll', function() {
-            var p = $winVar.scrollTop() / max;
-            $svgVar.drawsvg('progress', p);
-        });
-    &lt;/script&gt;
+  $winVar.on('scroll', function() {
+    var p = $winVar.scrollTop() / max;
+    $svgVar.drawsvg('progress', p);
+  });
+&lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
 </pre>
 <!-- last updated 12/12/2024 -->
